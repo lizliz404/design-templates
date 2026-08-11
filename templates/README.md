@@ -32,6 +32,18 @@ Monochrome comic landing page template for content-led service entry pages. Insp
 - `DESIGN.md` — Distilled design system, page architecture, source boundaries
 - `EVIDENCE.md` — Curl/browser capture notes and observed implementation facts
 
+## design/beautiful-ui-ai-interfaces/
+
+AI-native UI primitives (chat agents, thinking states, human-in-the-loop approvals) — 19 copy-paste components rebuilt from observation of https://beautiful-ui-five.vercel.app/ (no public source repo; see EVIDENCE.md).
+
+**When to reuse**: Building Chatbot / AI Agent interfaces from scratch — thinking traces, streaming text, approval cards, tool chips, agent tables, composer.
+
+**Key assets**:
+- `DESIGN.md` — distilled dual-theme token system (page/canvas/field/line/ink/accent…), type ladder, radius/shadow conventions, per-primitive structure grammar
+- `sections/` — 19 primitives as rendered DOM (implementation skeleton)
+- `screenshots/` — full page + one shot per primitive (1440×2x)
+- `source/` — raw capture: SSR HTML + full CSS + fonts (Inter + JetBrains Mono)
+
 ## design/lead-radar/
 
 Editorial SaaS landing page design system. Warm paper aesthetic, Lora + Poppins typography, honest positioning copy. Extracted from lead-radar project (archived 2026-05-03).
