@@ -11,6 +11,7 @@ Also published on **[lizliz.xyz/templates](https://lizliz.xyz/templates)** — s
 ## The Pack
 
 - **`design/`** — design systems & landing templates:
+  - `beautiful-ui-ai-interfaces/` — AI-native interface primitives (19 pieces: thinking / streaming / approval / tool-chips / composer; DESIGN.md + EVIDENCE.md + screenshots + sections)
   - `lead-radar/` — editorial SaaS landing system (DESIGN.md + landing-page.tsx + globals.css)
   - `liz-personal-compact/` — compact personal site variants (landing / v2 / v3 + CSS/JS)
   - `uhoh-inspired-service-entry/` — monochrome comic service-entry template
