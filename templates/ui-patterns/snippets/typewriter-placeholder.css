@@ -1,0 +1,57 @@
+/* Typewriter placeholder overlay (empty + unfocused) */
+.tw-ph-wrap {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+}
+.tw-ph-wrap > input {
+  flex: 1;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+.tw-ph {
+  position: absolute;
+  left: 4px;
+  right: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: var(--font-ui, inherit);
+  font-size: 15.5px;
+  color: #9a8f86;
+  line-height: 1.35;
+}
+.tw-ph-text {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.tw-ph-caret {
+  flex-shrink: 0;
+  width: 1.5px;
+  height: 1.05em;
+  margin-left: 1px;
+  border-radius: 1px;
+  background: color-mix(in srgb, var(--accent, #EA580C) 75%, #9a8f86);
+  animation: tw-caret 1.05s steps(1, end) infinite;
+}
+@keyframes tw-caret {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+@media (max-width: 640px) {
+  .tw-ph { font-size: 14px; left: 2px; right: 2px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tw-ph-caret { animation: none !important; opacity: 0.65; }
+}
+
