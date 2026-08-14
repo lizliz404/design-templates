@@ -14,17 +14,19 @@ Repo root: `~/design-templates/` · Pack index: [	emplates/README.md](templates/
 - Following a DESIGN.md visual system (design/lead-radar, liz-personal-compact, uhoh-inspired-service-entry, hanzilla-personal-site, ercel-geist.md)
 - Applying UI micro-patterns (ui-patterns/: typing placeholder, atomic island chrome, premium one-pager, **shell hotkeys**)
 - Running the high-leverage craft checklist before shipping UI
+- Defining 信息架构 / user journey / default home / nav (read `templates/ia-user-journey.md` first; do not patch a messy page)
 
 ## Key paths
 
 | Asset | Path |
 |-------|------|
-| Pack index | 	emplates/README.md |
-| Craft checklist | 	emplates/high-leverage-craft-checklist.md |
-| Typography prefs | 	emplates/design-typography-font-preferences.md |
+| Pack index | templates/README.md |
+| Craft checklist | templates/high-leverage-craft-checklist.md |
+| IA · user journey | templates/ia-user-journey.md |
+| Typography prefs | templates/design-typography-font-preferences.md |
 | UI patterns | templates/ui-patterns/ |
 | Shell hotkeys | templates/ui-patterns/shell-hotkeys.md |
-| Full page templates | 	emplates/design/ |
+| Full page templates | templates/design/ |
 
 ## Updates
 

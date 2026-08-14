@@ -7,7 +7,9 @@ Reusable assets extracted from finished/archived projects and public design OSIN
 ## Product / engineering craft
 
 - **High-leverage craft checklist** → [`high-leverage-craft-checklist.md`](./high-leverage-craft-checklist.md)  
-  「四两拨千斤」工艺清单 v3：文首 What/Why/How 职责卡 + 38 条机制分组 + 阶段 starter pack。类型=Craft handbook（非 Skill）。历史版见 [`archive/`](./archive/)。
+  「四两拨千斤」工艺清单 v3：文首 What/Why/How 职责卡 + 40 条机制分组 + 阶段 starter pack。类型=Craft handbook（非 Skill）。历史版见 [`archive/`](./archive/)。含 **§40 禁止纯白/纯黑铺底**。
+- **IA · 用户旅程** → [`ia-user-journey.md`](./ia-user-journey.md)  
+  先写可替换的 IA 1.0（对象/分组/命名），再投影成角色路径、页面职责、导航。禁止用库表当导航。Invocable skill: `~/.cursor/skills/ia-user-journey`。Filled example: `D:\dev\qiancheng-yusuan\docs\IA.md`；出海云形状：`D:\dev\chuhai-cloud\docs\prd\v3-2026-08-13.md`。
 
 ## UI micro-patterns → [`ui-patterns/`](./ui-patterns/)
 
