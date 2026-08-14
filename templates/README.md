@@ -15,6 +15,8 @@ Small named patterns (not full pages). Load before reinventing landing micro-int
 
 - **Typing / rotating placeholder** → [`ui-patterns/typing-placeholder-animation.md`](./ui-patterns/typing-placeholder-animation.md) + [`ui-patterns/snippets/`](./ui-patterns/snippets/)
 - **Atomic island chrome** → [`ui-patterns/atomic-island-chrome.md`](./ui-patterns/atomic-island-chrome.md)
+- **Shell hotkeys** → [`ui-patterns/shell-hotkeys.md`](./ui-patterns/shell-hotkeys.md)  
+  Daily-driver keyboard grammar (arrows / Enter / Esc / ? / / / g-then). No Ctrl/⌘K until a palette exists. Invocable skill: `~/.cursor/skills/shell-hotkeys`.
 
 ## Cross-cutting conventions
 

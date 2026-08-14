@@ -7,6 +7,7 @@ Not full page templates — **small, named patterns** agents should load before 
 |---|---|---|
 | **Typing / rotating placeholder** | [`typing-placeholder-animation.md`](./typing-placeholder-animation.md) + [`snippets/`](./snippets/) | Hero (or primary) empty input must demo multiple use-cases without eating layout |
 | **Atomic island chrome** | [`atomic-island-chrome.md`](./atomic-island-chrome.md) | Full-bleed camera/canvas/SaaS nav — chrome must collapse to a pill, not eat ~1/5 of mobile viewport |
+| **Shell hotkeys** | [`shell-hotkeys.md`](./shell-hotkeys.md) | Daily-driver console/OA keyboard grammar (arrows, Enter, Esc, ?, /, g-then). Not Cmd+K. |
 
 **Reference ships:**
 - `projects/reddit-viral` — typewriter placeholder primitives
