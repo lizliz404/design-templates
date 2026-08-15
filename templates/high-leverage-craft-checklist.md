@@ -235,11 +235,11 @@
 
 ### 40. 禁止纯白 / 纯黑铺底 `frontend`
 
-**是什么**：页面底、卡片、侧栏、弹层不要用 `#FFFFFF` / `#000000`，也不要用等价的 `oklch(1 0 0)` / `oklch(0 0 0)` 实底。浅色用带一点色相的纸色（L ≈ 0.96–0.97，C ≈ 0.003–0.008）；深色用抬起来的墨底（L ≈ 0.17–0.22），不是洞。  
-**为何杠杆**：纯白对纯黑是显示器能给的最大刺激，长时间盯表会刺、会累；同时也是「没调过色」的浏览器默认。改一组 token 一杯咖啡，护眼和「做过设计」一起到。  
-**怎么落地**：`paper` / `--background` 带色相；`card` 比 paper 略亮，但 **L < 1**；正文 ink **L ≥ 0.22**（近黑带色相，不是 `#000`）；dark `--background` **L ≥ 0.17**。禁 `bg-white` / `bg-black` / `rgba(255,255,255,1)` 铺满。85% 透明的纯白盖在浅底上，眼睛仍当它是白——透明度不算豁免。  
-**反模式**：用 `#FAFAFA` 冒充已经避白（还是无色相的近白）；dark 用 `#0a0a0a` 装高级；把**例外**也禁掉——彩色填充上的字、视频烧录字幕、logo 反白、玻璃高光 1px，那些不是铺底。  
-**开火路径**：`DESIGN.md` 色板、`:root` token、tour/popover 写死的实色。出海云 / 预算系统 2026-08 已按此改过一轮。
+**是什么**：页面底、卡片、侧栏、弹层不用 `#FFFFFF` / `#000000`（及等价 `oklch(1 0 0)` / `oklch(0 0 0)`）。盯表/OA 走米黄纸，不是冷灰白微偏。完整色温、两条带、token 配方、证据与杀掉标准 → [`design-color-surface-preferences.md`](./design-color-surface-preferences.md)（与 typography 篇同级，数字只维护那边）。  
+**为何杠杆**：纯白对纯黑是显示器能给的最大刺激，也是没调过色的浏览器默认。改一组 token 一杯咖啡。  
+**怎么落地**：日盯产品抄 B 带配方；短会话壳可用 A 带。禁 `bg-white` / `bg-black` 铺满；α≥0.85 的纯白遮罩不算豁免。  
+**反模式**：`#FAFAFA` 无色相近白；`oklch(0.96 0.004 260)` 冒充纸色；把配方数字再抄回本清单（会过期）。例外：彩色底上的字、字幕、logo 反白、1px 高光。  
+**开火路径**：`:root` token、DESIGN.md 色板。
 
 ---
 
@@ -408,7 +408,7 @@
 **是什么**：来自 [Paper Shaders](https://shaders.paper.design/) 的零依赖 shader 纹理（纸纹、Perlin/Simplex/Neuro 噪点等），导出 static webp/png 或 data URI；全页两层 `fixed` 覆盖（multiply + 极低透明度）。静图也可「活」——动的是图层 `transform`，不是文件本身。
 **为何杠杆**：一杯咖啡成本兑现「有质感 / 手作感」，比自绘网格渐变便宜一个数量级；机制可迁移到任何低彩度纸/墨叙事页与 HTML deck，不绑某一品牌皮肤。
 **怎么落地**：
-1. Fetch `paper-texture` + `perlin-noise`（或等价噪点）；单文件交付时 base64 内联（纸纹 ~88KB raw 可接受）。
+1. 预备静图在 [`templates/assets/paper-shaders/`](./assets/paper-shaders/INDEX.md)（`paper-texture` / `perlin-noise` / `simplex-noise` / `neuro-noise` 等）。换底改 `--tex-paper` 路径即可。单文件交付时再 base64 内联（纸纹 ~88KB raw 可接受）。
 2. 两层 veil：`position:fixed; inset:0; pointer-events:none; z-index` 低于 UI、高于舞台底。子层 `inset:-3%` 给漂移留边；`background-size: 640px 480px`；`mix-blend-mode: multiply`。
 3. **已验证透明度（lizliz deck 2026-08）**：纸纹 **0.085**、噪点 **0.05**。可用区间约纸纹 0.03–0.085、噪点 0.02–0.05；逼近上限必须截图验正文对比度。
 4. **动效（四两拨千斤）**：纸纹 `tex-drift` — `90s linear infinite alternate`，`translate3d(-26px, 14px, 0)`；噪点 `tex-grain` — `3.4s ease-in-out infinite`，多关键位胶片抖动（约 ±7px）。两层 `will-change: transform`。配套微交互共用 `--ease-out-expo: cubic-bezier(0.16,1,0.3,1)`：列表行 hover `translateY(-2px)` + 轻影（0.24s）、面板 hover 可走横向 `translateX(4px)`、active 压下 0.08s、进场 reveal `translateY(22px)` 与翻页叠加。
