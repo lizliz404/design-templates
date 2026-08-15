@@ -14,6 +14,8 @@ Repo root: `~/design-templates/` · Pack index: [	emplates/README.md](templates/
 - Following a DESIGN.md visual system (design/lead-radar, liz-personal-compact, uhoh-inspired-service-entry, hanzilla-personal-site, ercel-geist.md)
 - Applying UI micro-patterns (ui-patterns/: typing placeholder, atomic island chrome, premium one-pager, **shell hotkeys**)
 - Running the high-leverage craft checklist before shipping UI
+- Picking page/card/ink tokens (no #FFF/#000 fills; cream paper for long-stare OA) — read `templates/design-color-surface-preferences.md`
+- Swapping deck/long-page 纸纹 — read `templates/paper-shaders/SKILL.md`; stills and veils live in that folder
 - Defining 信息架构 / user journey / default home / nav (read `templates/ia-user-journey.md` first; do not patch a messy page)
 
 ## Key paths
@@ -24,6 +26,8 @@ Repo root: `~/design-templates/` · Pack index: [	emplates/README.md](templates/
 | Craft checklist | templates/high-leverage-craft-checklist.md |
 | IA · user journey | templates/ia-user-journey.md |
 | Typography prefs | templates/design-typography-font-preferences.md |
+| Color & surfaces | templates/design-color-surface-preferences.md |
+| Paper Shaders | templates/paper-shaders/SKILL.md |
 | UI patterns | templates/ui-patterns/ |
 | Shell hotkeys | templates/ui-patterns/shell-hotkeys.md |
 | Full page templates | templates/design/ |

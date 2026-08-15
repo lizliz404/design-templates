@@ -18,7 +18,8 @@ Also published on **[lizliz.xyz/templates](https://lizliz.xyz/templates)** — s
   - `hanzilla-personal-site/` — warm editorial personal-site study (DESIGN.md + EVIDENCE.md + screenshots)
   - `vercel-geist.md` — Geist-oriented UI tone notes
 - **`ui-patterns/`** — micro-patterns with portable snippets: typing placeholder, atomic island chrome, premium one-pager
-- **craft docs** — `high-leverage-craft-checklist.md` (40 mechanics, including no pure-white/black fills), `ia-user-journey.md` (IA before nav; fill `docs/IA.md`), typography font preferences, i18n + Iconify lang switcher
+- **craft docs** — `high-leverage-craft-checklist.md` (40 mechanics; §40 points at the color/surface doc), `ia-user-journey.md` (IA before nav; fill `docs/IA.md`), typography font preferences, **color & surface preferences** (no pure white/black fills; cream paper for long-stare tools), i18n + Iconify lang switcher
+- **Paper Shaders** — `templates/paper-shaders/` (skill + `veils/` + `stills/`). Deck/long-page paper lives here; do not extract a separate user skill.
 - **`README.md`** — pack index: what's where and when to reuse each item
 
 ## Getting It

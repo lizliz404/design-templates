@@ -7,7 +7,7 @@ Reusable assets extracted from finished/archived projects and public design OSIN
 ## Product / engineering craft
 
 - **High-leverage craft checklist** → [`high-leverage-craft-checklist.md`](./high-leverage-craft-checklist.md)  
-  「四两拨千斤」工艺清单 v3：文首 What/Why/How 职责卡 + 40 条机制分组 + 阶段 starter pack。类型=Craft handbook（非 Skill）。历史版见 [`archive/`](./archive/)。含 **§40 禁止纯白/纯黑铺底**。
+  「四两拨千斤」工艺清单 v3：文首 What/Why/How 职责卡 + 40 条机制分组 + 阶段 starter pack。类型=Craft handbook（非 Skill）。历史版见 [`archive/`](./archive/)。§40 禁纯白/纯黑铺底 → 详见色温篇。
 - **IA · 用户旅程** → [`ia-user-journey.md`](./ia-user-journey.md)  
   先写可替换的 IA 1.0（对象/分组/命名），再投影成角色路径、页面职责、导航。禁止用库表当导航。Invocable skill: `~/.cursor/skills/ia-user-journey`。Filled example: `D:\dev\qiancheng-yusuan\docs\IA.md`；出海云形状：`D:\dev\chuhai-cloud\docs\prd\v3-2026-08-13.md`。
 
@@ -23,6 +23,10 @@ Small named patterns (not full pages). Load before reinventing landing micro-int
 ## Cross-cutting conventions
 
 - **Typography** → [`design-typography-font-preferences.md`](./design-typography-font-preferences.md)
+- **Color & surfaces** → [`design-color-surface-preferences.md`](./design-color-surface-preferences.md)  
+  禁纯白/纯黑铺底；A 带微色相壳 / B 带米黄纸（盯表）。Checklist §40 只留指针。
+- **Paper Shaders** → [`paper-shaders/SKILL.md`](./paper-shaders/SKILL.md)  
+  脚手架小工具：换底说明 + `veils/`（铺字）+ `stills/`（官网样张）。不要再抽成单独的 user skill。
 - **i18n + Iconify lang switcher** → [`i18n-iconify-lang-switcher.md`](./i18n-iconify-lang-switcher.md)
 
 ## design/uhoh-inspired-service-entry/

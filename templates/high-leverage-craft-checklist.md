@@ -408,7 +408,7 @@
 **是什么**：来自 [Paper Shaders](https://shaders.paper.design/) 的零依赖 shader 纹理（纸纹、Perlin/Simplex/Neuro 噪点等），导出 static webp/png 或 data URI；全页两层 `fixed` 覆盖（multiply + 极低透明度）。静图也可「活」——动的是图层 `transform`，不是文件本身。
 **为何杠杆**：一杯咖啡成本兑现「有质感 / 手作感」，比自绘网格渐变便宜一个数量级；机制可迁移到任何低彩度纸/墨叙事页与 HTML deck，不绑某一品牌皮肤。
 **怎么落地**：
-1. 预备静图在 [`templates/assets/paper-shaders/`](./assets/paper-shaders/INDEX.md)（`paper-texture` / `perlin-noise` / `simplex-noise` / `neuro-noise` 等）。换底改 `--tex-paper` 路径即可。单文件交付时再 base64 内联（纸纹 ~88KB raw 可接受）。
+1. 预备纸在 [`templates/paper-shaders/`](./paper-shaders/SKILL.md)。铺字用 `veils/`，官网样张在 `stills/`。换底改 `--tex-paper`。单文件交付时再 base64 内联。
 2. 两层 veil：`position:fixed; inset:0; pointer-events:none; z-index` 低于 UI、高于舞台底。子层 `inset:-3%` 给漂移留边；`background-size: 640px 480px`；`mix-blend-mode: multiply`。
 3. **已验证透明度（lizliz deck 2026-08）**：纸纹 **0.085**、噪点 **0.05**。可用区间约纸纹 0.03–0.085、噪点 0.02–0.05；逼近上限必须截图验正文对比度。
 4. **动效（四两拨千斤）**：纸纹 `tex-drift` — `90s linear infinite alternate`，`translate3d(-26px, 14px, 0)`；噪点 `tex-grain` — `3.4s ease-in-out infinite`，多关键位胶片抖动（约 ±7px）。两层 `will-change: transform`。配套微交互共用 `--ease-out-expo: cubic-bezier(0.16,1,0.3,1)`：列表行 hover `translateY(-2px)` + 轻影（0.24s）、面板 hover 可走横向 `translateX(4px)`、active 压下 0.08s、进场 reveal `translateY(22px)` 与翻页叠加。
