@@ -25,11 +25,14 @@ description: >-
 
 tdimino 那份 `paper-design` skill 是 Paper 桌面软件的 MCP，会锁画板。本工具不管那个。
 
-## 换底（讲义 / 长页）
+## Quick start（换底 / 讲义 / 长页）
 
 1. 只从 `veils/` 拿。那是按奶油纸重做过的，能铺字。
 2. `stills/` 是官网预览图，颜色很重，当目录用，不当底。
-3. 单文件讲义：把选中的 webp 编成 `--tex-paper` 的 data URI。
+3. 单文件讲义：把选中的 webp 编成 `--tex-paper` 的 data URI：
+   ```bash
+   base64 -w0 cream-fiber.webp   # → data:image/webp;base64,...
+   ```
 4. 一层就够。透明度先 0.04；能到 0.03–0.085。糊字就降。
 5. 要第二层细噪，再用另一张 veil，透明度 0.02–0.05。
 
@@ -45,6 +48,14 @@ tdimino 那份 `paper-design` skill 是 Paper 桌面软件的 MCP，会锁画板
   mix-blend-mode: multiply;
 }
 ```
+
+## 验证（贴纸后必做，别只靠眼）
+
+- 截图 1280×720，正文区域**不得糊**；深浅两种页面各测一版（白底 + 品牌深色底）。
+- 视觉模型看不出纹理差异 → 透明度低于感知阈值，属安全；要签名感就提到 0.06 再验。
+- 对比度纪律（活 shader 版）：色板必须跨对比度，同族色 + 低透明度 = 隐形；饱和品牌底上透明度 ≈0.2。
+- WebGL 动画不受 CSS `prefers-reduced-motion` 管，必须 JS 层杀：`usePrefersReducedMotion()` → `speed={reduced ? 0 : 0.18}`。
+- 容器卫生：`absolute inset-0` + `pointer-events-none` + `aria-hidden="true"`；不接触按钮/表单/卡片。
 
 ## 预备纸
 
@@ -63,10 +74,10 @@ tdimino 那份 `paper-design` skill 是 Paper 桌面软件的 MCP，会锁画板
 
 ## 活的 shader
 
-页面上要会动,再用组件:`PaperTexture`、`PerlinNoise`、`SimplexNoise`、`NeuroNoise`、`GrainGradient`。
-导出静图后放进 `stills/` 或洗成 `veils/`,不要每次现渲。
+页面上要会动，再用组件：`PaperTexture`、`PerlinNoise`、`SimplexNoise`、`NeuroNoise`、`GrainGradient`。
+导出静图后放进 `stills/` 或洗成 `veils/`，不要每次现渲。
 
-完整 30+ 组件目录、common props 表、PaperTexture 示例、版本 pin 纪律 → `references/shaders-catalog.md`(精选自 tdimino/claude-code-minoan 的 paper-design skill,权威源 shaders.paper.design)。
+完整 30+ 组件目录、common props 表、PaperTexture 示例、版本 pin 纪律 → `references/shaders-catalog.md`（精选自 tdimino/claude-code-minoan 的 paper-design skill，权威源 shaders.paper.design）。
 
 ## 反模式
 

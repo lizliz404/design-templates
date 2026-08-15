@@ -4,6 +4,8 @@
 
 **When to reuse**: Any Chatbot / AI Agent UI that would otherwise be built from scratch — thinking traces, streaming text, approval cards, tool chips, chat composers, agent tables. This is the fastest path from "agent does work" to "agent talks to a human beautifully".
 
+**也适用于任何数据密集 B2B 后台（2026-08-11 扩展）**: §4 的 records-table / filter-table / diff-table 语法（12.5px 密集行、sticky header、hairline 边框 `shadow-hairline`、tint 单元格、ink-3 次级文本、mono 索引标签）是现成的表格工艺，与 AI 场景无关、跨象限可迁移。chuhai-cloud 实战复盘确认：B2B CRM 后台缺的正是这套表格质感（此前只能靠 shadcn 默认 + 现场发明）。使用路径：读 `DESIGN.md` §4 表格条目 + 对照 `sections/records-table.html` 骨架；配套视觉工艺手册见 `~/projects/_templates/ui-patterns/data-dense-app-craft.md`。
+
 ## What's in the pack
 
 | Path | What |
@@ -17,6 +19,8 @@
 ## The 19 primitives
 
 loading-state · thinking-state · streaming-text · approval-card · tool-chips · task-rows · chat-composer · prompt-bar · recommendation-card · context-cards · diff-table · records-table · filter-table · sidebar-nav · search · insight-cards · code-block · fine-tune-card · selection-actions
+
+（表格三件套 records/filter/diff 对 B2B 后台直接可用；selection-actions 即「选中浮现批量操作条」的现成骨架，见 `data-dense-app-craft.md` §1.6。）
 
 ## Rebuild path
 
