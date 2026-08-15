@@ -63,8 +63,10 @@ tdimino 那份 `paper-design` skill 是 Paper 桌面软件的 MCP，会锁画板
 
 ## 活的 shader
 
-页面上要会动，再用组件：`PaperTexture`、`PerlinNoise`、`SimplexNoise`、`NeuroNoise`、`GrainGradient`。
-导出静图后放进 `stills/` 或洗成 `veils/`，不要每次现渲。
+页面上要会动,再用组件:`PaperTexture`、`PerlinNoise`、`SimplexNoise`、`NeuroNoise`、`GrainGradient`。
+导出静图后放进 `stills/` 或洗成 `veils/`,不要每次现渲。
+
+完整 30+ 组件目录、common props 表、PaperTexture 示例、版本 pin 纪律 → `references/shaders-catalog.md`(精选自 tdimino/claude-code-minoan 的 paper-design skill,权威源 shaders.paper.design)。
 
 ## 反模式
 
