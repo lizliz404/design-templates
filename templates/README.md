@@ -64,6 +64,8 @@ Small named patterns (not full pages). Load before reinventing landing micro-int
 ## Cross-cutting conventions
 
 - **Typography** → [`design-typography-font-preferences.md`](./design-typography-font-preferences.md)
+- **Paper Shaders** → [`paper-shaders/SKILL.md`](./paper-shaders/SKILL.md)  
+  三套对参：千成讲义 deck veil、出海云/预算登录 MeshGradient、个人站指针搅动。`recipes/` 里有可抄的 CSS/TSX。`veils/` 铺字，`stills/` 当目录。不要再抽成单独的 user skill。
 - **i18n + Iconify lang switcher** → [`i18n-iconify-lang-switcher.md`](./i18n-iconify-lang-switcher.md)
 
 ## design/uhoh-inspired-service-entry/

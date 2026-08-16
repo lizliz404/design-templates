@@ -2,52 +2,90 @@
 name: paper-shaders
 category: design
 description: >-
-  [design] Paper Shaders stills and cream-paper veils for decks and long pages.
-  Use when swapping 纸纹/底纹, applying a Paper Texture veil, or reaching for
-  @paper-design/shaders-react. Lives inside the design-templates pack — do not
-  install tdimino/paper-design as a separate user skill.
+  [design] Paper Shaders stills, cream-paper veils, login MeshGradient panes,
+  and pointer-reactive backgrounds. Use when swapping 纸纹/底纹, a login left
+  pane, or a long-page atmosphere. Lives inside the design-templates pack —
+  do not install tdimino/paper-design as a separate user skill.
 ---
 
-# Paper Shaders（脚手架小工具）
+# Paper Shaders
 
 家在 design-templates 里：`templates/paper-shaders/`。
-纸和说明放一起。不要再抽到 `~/.cursor/skills/paper-design`。
-
-两件事分开：
-
-| | 干什么 | 别干什么 |
-|---|---|---|
-| **静图 veil** | 讲义/长页铺一层很淡的纸 | 把官网彩色样张直接当底 |
-| **React 组件** | 页面上要活的 shader | 为了换一张纸去开 Paper.app |
+纸、菜谱、说明放一起。不要再抽到 `~/.cursor/skills/paper-design`。
 
 官方目录：[shaders.paper.design](https://shaders.paper.design/)
 包：`npm i @paper-design/shaders-react`
 
 tdimino 那份 `paper-design` skill 是 Paper 桌面软件的 MCP，会锁画板。本工具不管那个。
 
-## Quick start（换底 / 讲义 / 长页）
+## 先选哪一套
 
-1. 只从 `veils/` 拿。那是按奶油纸重做过的，能铺字。
-2. `stills/` 是官网预览图，颜色很重，当目录用，不当底。
-3. 单文件讲义：把选中的 webp 编成 `--tex-paper` 的 data URI：
-   ```bash
-   base64 -w0 cream-fiber.webp   # → data:image/webp;base64,...
-   ```
-4. 一层就够。透明度先 0.04；能到 0.03–0.085。糊字就降。
-5. 要第二层细噪，再用另一张 veil，透明度 0.02–0.05。
+| 场合 | 用什么 | 对参 | 别干什么 |
+|---|---|---|---|
+| 讲义 / 长页 / 16:9 deck | **Deck veil**：双层静图 + `tex-grain` | `lizliz.xyz/qiancheng-yusuan-workbook-…` | 只铺一层 0.04 的纸还说「有质感」 |
+| 登录左栏 / 品牌半屏 | **Login mesh**：`MeshGradient` 50% 叠在实色底上 | 出海云 `/login`、预算系统 `/login` | 后台表格页也挂 mesh |
+| 个人站 / 长盯的首页 | **Login mesh 的墨色盘** + 一层薄 veil；指针搅动 | 上两套合成 | 用出海云那盘饱和蓝紫当个人站底 |
+| 只要一张纸 | 静图 veil，`veils/` | — | 把 `stills/` 彩色样张当底 |
 
-当前预算讲义：一层、`multiply`、0.04、`background-size: 640px 480px`。
+## 1. Deck veil（千成讲义）
 
-```css
-.deck-texture__paper {
-  position: absolute;
-  inset: -3%;
-  background-image: var(--tex-paper);
-  background-size: 640px 480px;
-  opacity: 0.04;
-  mix-blend-mode: multiply;
-}
+机制：固定全屏、`pointer-events: none`、**两层**。
+
+1. `__paper`：`veils/cream-fiber.webp`，`multiply`，opacity **0.085**，`tex-drift` 90s（慢漂，几乎感觉不到，负责「纸在」。）
+2. `__noise`：`veils/cream-perlin.webp`，`multiply`，opacity **0.05**，`tex-grain` **3.4s**（胶片抖，负责「活」。）
+
+单层 0.15 的纸 ≠ 这一套。缺 perlin 那层，讲义会变成塑料。
+
+`prefers-reduced-motion`：两层 animation 关掉，纸还在。
+
+完整 CSS：`recipes/deck-veil.css`。
+
+## 2. Login mesh（出海云 / 预算登录）
+
+机制：左栏 **实色底** + 一层 `MeshGradient` `opacity: 0.5`，`pointer-events: none`。字在 `relative` 上层。
+
+共用旋钮（两站一样，不要改着玩）：
+
 ```
+distortion={0.58}
+swirl={0.42}
+grainMixer={0.12}
+grainOverlay={0.06}
+speed={reduced ? 0 : 0.36}
+```
+
+色盘才是产品签名，不要混用：
+
+| 站 | 底 | colors |
+|---|---|---|
+| 出海云 | `bg-primary`（品牌蓝） | `['#B8D4FF', '#4058EA', '#C4B5FD', '#1A237E', '#7DD3FC']` |
+| 预算 / 个人站 | 米白或墨 | `['#FAFAFA', '#EDE8DF', '#171717', '#4D4D4D', '#321C1C']` |
+
+5 色必须跨亮→深。同族齐平会隐形。
+
+完整组件：`recipes/login-mesh.tsx`。
+
+后台 UI **禁止**挂这套。登录左栏 / 对外 hero 才配。
+
+## 3. 指针 / 点击（个人站）
+
+Shader 层保持 `pointer-events: none`，在 `window` 上听 `pointermove` / `click`，把归一化坐标喂进旋钮：
+
+- `swirl` ← 指针 x
+- `distortion` ← 指针 y
+- click：`boost` 冲到 1，约 700ms 褪回 0，短暂加快 `speed`
+
+不要给 shader 开 `pointer-events: auto`，会吞掉页面点击。
+
+完整组件：`recipes/pointer-mesh.tsx`。lizliz.xyz 首页用的就是这一套。
+
+## 换底（讲义 / 长页，短清单）
+
+1. 只从 `veils/` 拿。
+2. `stills/` 是官网预览图，颜色很重，当目录用，不当底。
+3. 单文件讲义：webp 编成 `--tex-paper` / `--tex-perlin` 的 data URI。
+4. 双层。缺一层就不是千成那张纸。
+5. 动画：`tex-grain` 3.4s 必须在。90s drift 单独不算「换过动画」。
 
 ## 验证（贴纸后必做，别只靠眼）
 
@@ -74,8 +112,8 @@ tdimino 那份 `paper-design` skill 是 Paper 桌面软件的 MCP，会锁画板
 
 ## 活的 shader
 
-页面上要会动，再用组件：`PaperTexture`、`PerlinNoise`、`SimplexNoise`、`NeuroNoise`、`GrainGradient`。
-导出静图后放进 `stills/` 或洗成 `veils/`，不要每次现渲。
+页面上要会动：`MeshGradient`（登录/首页）、`PaperTexture` / `PerlinNoise`（只要纸、不要色团）。
+导出静图后放进 `stills/` 或洗成 `veils/`，不要每个后台页现渲。
 
 完整 30+ 组件目录、common props 表、PaperTexture 示例、版本 pin 纪律 → `references/shaders-catalog.md`（精选自 tdimino/claude-code-minoan 的 paper-design skill，权威源 shaders.paper.design）。
 
@@ -83,5 +121,7 @@ tdimino 那份 `paper-design` skill 是 Paper 桌面软件的 MCP，会锁画板
 
 - 把 tdimino skill 再装一份到用户目录
 - 把 `stills/` 彩色样张直接当讲义底
-- 纸纹透明度往 0.1 上加还不截图
-- 每个后台表格页都铺——只给叙事页 / deck
+- 讲义只铺一层 0.04 的纸，说「有 paper design 了」
+- 个人站用出海云那盘饱和蓝紫
+- 给 shader 开 `pointer-events: auto`
+- 每个后台表格页都铺 mesh

@@ -1,0 +1,50 @@
+/* Deck veil — 对参 qiancheng-yusuan-workbook HTML.
+   两层：fiber 慢漂 + perlin 胶片抖。pointer-events: none。 */
+
+.deck-texture {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.deck-texture__paper,
+.deck-texture__noise {
+  position: absolute;
+  inset: -3%;
+  mix-blend-mode: multiply;
+  will-change: transform;
+}
+
+.deck-texture__paper {
+  background-image: var(--tex-paper);
+  background-size: 640px 480px;
+  opacity: 0.085;
+  animation: tex-drift 90s linear infinite alternate;
+}
+
+.deck-texture__noise {
+  background-image: var(--tex-perlin);
+  background-size: 640px 480px;
+  opacity: 0.05;
+  animation: tex-grain 3.4s ease-in-out infinite;
+}
+
+@keyframes tex-drift {
+  from { transform: translate3d(0, 0, 0); }
+  to   { transform: translate3d(-26px, 14px, 0); }
+}
+
+@keyframes tex-grain {
+  0%   { transform: translate3d(0, 0, 0); }
+  20%  { transform: translate3d(-7px, 5px, 0); }
+  45%  { transform: translate3d(5px, -6px, 0); }
+  70%  { transform: translate3d(-4px, -3px, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .deck-texture__paper,
+  .deck-texture__noise { animation: none; }
+}
