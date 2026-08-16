@@ -31,8 +31,8 @@ tdimino 那份 `paper-design` skill 是 Paper 桌面软件的 MCP，会锁画板
 
 机制：固定全屏、`pointer-events: none`、**两层**。
 
-1. `__paper`：`veils/cream-fiber.webp`，`multiply`，opacity **0.085**，`tex-drift` 90s（慢漂，几乎感觉不到，负责「纸在」。）
-2. `__noise`：`veils/cream-perlin.webp`，`multiply`，opacity **0.05**，`tex-grain` **3.4s**（胶片抖，负责「活」。）
+1. `__paper`：`veils/cream-perlin.webp`（或另一张非花噪声），`multiply`，opacity **0.06**，`tex-drift` 90s（慢漂，几乎感觉不到，负责「纸在」。）
+2. `__noise`：`veils/cream-perlin.webp`，不同 `background-size`，`multiply`，opacity **0.05**，`tex-grain` **3.4s**（胶片抖，负责「活」。）
 
 单层 0.15 的纸 ≠ 这一套。缺 perlin 那层，讲义会变成塑料。
 
@@ -99,10 +99,12 @@ Shader 层保持 `pointer-events: none`，在 `window` 上听 `pointermove` / `c
 
 `veils/`（铺字用）
 
+`cream-fiber.webp` is the cosmos still, NOT fiber — do not tile it as paper.
+
 | 文件 | 从哪来 |
 |---|---|
-| `cream-fiber.webp` | 官网 `paper-texture` 抽成奶油纤维 |
-| `cream-perlin.webp` | 官网 `perlin-noise` 抽成奶油斑 |
+| `cream-fiber.webp` | **cosmos still, NOT fiber — do not tile it as paper** |
+| `cream-perlin.webp` | 官网 `perlin-noise` 抽成奶油斑（铺字用） |
 
 `stills/`（目录，不铺字）
 
