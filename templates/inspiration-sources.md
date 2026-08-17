@@ -19,6 +19,7 @@ Canonical pack: [lizliz404/design-templates](https://github.com/lizliz404/design
 | 我在做… | 先开这些 | 再回 pack |
 |---|---|---|
 | **AI / agent 界面** | [beautifului.dev](https://www.beautifului.dev/) · Vercel AI Elements（实现向） | `design/beautiful-ui-ai-interfaces/` |
+| **站内 / 产品搜索** | [Primer Search](https://www.primer.style/product/scenario-patterns/search/) · [SaaSUI search/palette](https://www.saasui.design/blog/saas-search-command-palette-ux-patterns) · [VitePress Search](https://vitepress.dev/reference/default-theme-search) · [Pagefind](https://pagefind.app/docs/) · [cmdk](https://github.com/pacocoursey/cmdk) | `ui-patterns/search-craft.md` |
 | **B2B 后台真屏** | [saasui.design](https://www.saasui.design/) · [mobbin.com](https://mobbin.com/) | `ui-patterns/data-dense-*.md` |
 | **SaaS 营销整站** | [saaspo.com](https://saaspo.com/) · [saasframe.io](https://www.saasframe.io/) · [landing.gallery](https://www.landing.gallery/) | `design/lead-radar` · `premium-one-pager` |
 | **Landing 分段（hero/pricing/…）** | [land-book.com](https://land-book.com/) sections · [lapa.ninja](https://www.lapa.ninja/) | 组合 landing 模板 + craft checklist |

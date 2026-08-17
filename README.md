@@ -33,6 +33,7 @@ This pack is extracted from real lizliz.xyz work and public design OSINT — not
 ### UI micro-patterns & craft
 
 - **Data-dense B2B app craft** — tables, filters, forms, stop-ship gates
+- **Search craft** — Search vs Filter vs Cmd+K; engines by product type (not VitePress-only)
 - **Icon system craft** — Lucide/Iconify selection + optical discipline (not a custom font kit)
 - **SaaS onboarding two-phase** — aha first, then production setup / usage
 - **Footer craft** — long-landing footer skeletons

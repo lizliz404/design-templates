@@ -20,6 +20,7 @@ On this server the same tree also lives at `<project>/_templates` as a **same-pa
 | 个人站 / 作品集 | [`design/hanzilla-personal-site/`](./design/hanzilla-personal-site/) 或 [`design/liz-personal-compact/`](./design/liz-personal-compact/) | `design-typography-font-preferences.md` · `footer-craft` C 型 | — |
 | 内容→服务承接页（社媒导流） | [`design/uhoh-inspired-service-entry/`](./design/uhoh-inspired-service-entry/) | `typing-placeholder-animation.md`（可选） | 入口屋 ≠ 工厂 |
 | 图标选型 / 线重 / 概念表 | [`ui-patterns/icon-system-craft.md`](./ui-patterns/icon-system-craft.md) | U-R13 Lucide/Iconify | 不自研 icon font，除非产品专有概念爆棚 |
+| **站内 / 产品内搜索** | [`ui-patterns/search-craft.md`](./ui-patterns/search-craft.md) | IA G9 · craft checklist Cmd+K | 先分 Search/Filter/Palette；复杂系统别抄 VitePress MiniSearch |
 | HTML 演示 deck | `beautiful-html-templates`（34 套） | `paper-shaders` · `design-md-visual-system` | tone-first |
 | 品牌/OG/生图 | `design-brief-authoring` / `design-brief-for-image-gen` | [`inspiration-sources.md`](./inspiration-sources.md) OG 行 | Genre B |
 | UI 视觉系统文档（Genre A） | `design-md-visual-system` skill | gold-corpus 34 | — |
@@ -65,6 +66,7 @@ Small named patterns (not full pages). Load before reinventing landing micro-int
 - **Atomic island chrome** → [`ui-patterns/atomic-island-chrome.md`](./ui-patterns/atomic-island-chrome.md)
 - **Data-dense app craft** → [`ui-patterns/data-dense-app-craft.md`](./ui-patterns/data-dense-app-craft.md)（路由表第一行）
 - **Icon system craft** → [`ui-patterns/icon-system-craft.md`](./ui-patterns/icon-system-craft.md)（Lucide/Iconify 选型与光学纪律；Cursor icons 文蒸馏）
+- **Search craft** → [`ui-patterns/search-craft.md`](./ui-patterns/search-craft.md)（Search vs Filter vs Cmd+K；产品类型选型；书站仅脚注）
 - **SaaS onboarding two-phase** → [`ui-patterns/saas-onboarding-two-phase.md`](./ui-patterns/saas-onboarding-two-phase.md)（aha → 生产用量）
 - **Footer craft** → [`ui-patterns/footer-craft.md`](./ui-patterns/footer-craft.md)（长 landing 收口）
 

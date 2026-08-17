@@ -6,6 +6,7 @@ Drop-in recipes for Liz landings, product shells, and full-bleed toys. These are
 |---|---|---|---|
 | **Data-dense B2B app craft** | [`data-dense-app-craft.md`](./data-dense-app-craft.md) + [`data-dense-b2b-app.md`](./data-dense-b2b-app.md) | Tables, filters, forms, inboxes, dashboards, admin | Marketing-only narrative page |
 | **Icon system craft** | [`icon-system-craft.md`](./icon-system-craft.md) | Picking Lucide/Iconify icons, stroke/size, concept table | Brand logo / illustration systems |
+| **Search craft** | [`search-craft.md`](./search-craft.md) | Search vs Filter vs Cmd+K; product-type engine choice | Treating VitePress MiniSearch as the only stack |
 | **SaaS onboarding two-phase** | [`saas-onboarding-two-phase.md`](./saas-onboarding-two-phase.md) | B2B/agent activation: aha then production setup | Pure marketing landing with no product login |
 | **Footer craft** | [`footer-craft.md`](./footer-craft.md) | Marketing long-page footer structure | App shell after login |
 | **Premium one-pager** | [`premium-one-pager.md`](./premium-one-pager.md) + [`snippets/`](./snippets/) | Long marketing/docs needs location/life/finish | Dense app shell |
