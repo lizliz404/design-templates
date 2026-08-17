@@ -70,7 +70,7 @@ description: >-
 
 | 参考 | 学什么 |
 |---|---|
-| **Linear / Notion / Vercel / Raycast / GitHub Cmd+K** | `Cmd+K` 肌肉记忆；实体与动作分区；最近项置顶；快捷键标注 |
+| **Linear / Notion / Vercel / Raycast / GitHub Cmd+K** | `Cmd+K` 肌肉记忆；实体与动作分区；最近项置顶；快捷键标注。Linear 另用 `/` 开 Search（issues/projects/docs）— 搜内容与命令可拆快捷键 |
 | **GitHub Primer · Search** | Search vs Filter 边界；scoped vs global；Dialog 用于 jump-to |
 | **cmdk**（pacocoursey / Vercel 生态） | 无头 combobox 壳：列表、键盘、分组；样式自带 |
 
@@ -139,11 +139,12 @@ description: >-
 |---|---|---|---|
 | **cmdk** / kbar / Mantine Spotlight | UI 壳 | React 应用要 palette | 非 React；只要文档全文 |
 | **MiniSearch** | 客户端索引 | 中小语料、离线、嵌在静态站（VitePress local） | 大体量、强权限、多租户实时 |
-| **Pagefind** | 构建后静态索引 | SSG 站点全文、要更好静态 UX | 动态权限内容；每秒变的数据 |
+| **Pagefind** | 构建后静态索引 | SSG 站点全文、要更好静态 UX；多语言见 [Multilingual](https://pagefind.app/docs/multilingual/)（设好 `html lang`） | 动态权限内容；每秒变的数据 |
 | **Meilisearch / Typesense** | 自托管搜索服务 | 产品数据、要控制与成本 | 纯静态、无运维意愿 |
 | **Algolia**（含 DocSearch） | 托管 | 大文档/电商、要省自建 | 强隐私、CN 网络、书站私有阅读 |
 | **Postgres FTS / 应用 SQL** | DB | 已有 PG、中等复杂度、权限在 SQL | 复杂相关度/拼音/类型ahead 极致 |
-| **Orama** 等 | 可嵌入 JS 索引 | 中等静态/边缘 | 评估维护与生态后再锁 |
+| **Orama** | 可嵌入 JS 索引 | 中等静态/边缘、要浏览器侧全文 | 评估维护与语言支持后再锁 |
+| **cmdk** vs **kbar** / Mantine Spotlight | UI 壳 | React palette；cmdk 生态更贴近 Linear/Vercel 风格 | 非 React |
 
 **成品组件/文档入口（官方优先）：**
 
@@ -169,6 +170,8 @@ description: >-
 |---|---|
 | Primer Search | 先分清 Search vs Filter vs palette |
 | SaaSUI command palette patterns | SaaS 里搜索是主路径，不是装饰 |
+| Linear Search docs | `/` 搜 workspace 内容；与命令快捷键可拆 |
+| Pagefind Multilingual | 静态索引也要正确 `lang` / 多语配置 |
 | cr0x / 137foundry palette 文 | 即时反馈、键盘、空态、可访问性非negotiable |
 | VitePress Search docs | local vs Algolia；miniSearch 可定制 |
 | Pagefind docs | 构建后索引 + 新 Component UI modal |
