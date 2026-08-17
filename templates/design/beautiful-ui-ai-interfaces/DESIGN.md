@@ -1,6 +1,6 @@
 # DESIGN.md — Beautiful UI primitives (rebuilt from observation)
 
-Source: https://beautiful-ui-five.vercel.app/ — captured 2026-08-11 via SSR HTML + full CSS + Playwright screenshots. See `EVIDENCE.md` for the capture trail.
+Source: https://www.beautifului.dev/ (was beautiful-ui-five.vercel.app → 308) — captured 2026-08-11, refreshed 2026-08-17 via SSR HTML + full CSS + Playwright screenshots. See `EVIDENCE.md` for the capture trail.
 
 Design language in one line: **quiet dark-first instrument panel — hairline borders, 6–14px radii, near-black canvas, one accent, tiny mono labels, mechanical micro-motion.**
 

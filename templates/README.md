@@ -3,7 +3,7 @@
 Reusable assets extracted from finished/archived projects and public design OSINT.
 
 **Canonical source:** [lizliz404/design-templates](https://github.com/lizliz404/design-templates) (`templates/` in that repo).  
-On this server the same tree also lives at `/home/ubuntu/projects/_templates` as a **same-pace mirror** — not a second source of truth. Pull/push the GitHub repo; keep the mirror identical.
+On this server the same tree also lives at `<project>/_templates` as a **same-pace mirror** — not a second source of truth. Pull/push the GitHub repo; keep the mirror identical.
 
 ---
 
@@ -13,14 +13,17 @@ On this server the same tree also lives at `/home/ubuntu/projects/_templates` as
 
 | 我要建什么 | 主资产（必读） | 组合资产（按需） | 说明 |
 |---|---|---|---|
-| **B2B 数据密集后台 / CRM / 管理台** | [`ui-patterns/data-dense-app-craft.md`](./ui-patterns/data-dense-app-craft.md)（数据面视觉工艺手册）· [`ui-patterns/data-dense-b2b-app.md`](./ui-patterns/data-dense-b2b-app.md)（交付闸：surface inventory + 10 分 stop-ship gate） | [`design/beautiful-ui-ai-interfaces/`](./design/beautiful-ui-ai-interfaces/)（表格/列表/状态语法直接可用）· [`design-typography-font-preferences.md`](./design-typography-font-preferences.md)（IBM Plex Sans = 工具面首选）· [`high-leverage-craft-checklist.md`](./high-leverage-craft-checklist.md)（UX 机制） | 本库当前**没有**完整 B2B 后台模板；先读手册再发明，别裸奔；交付前过闸 |
-| Chatbot / AI Agent 界面 | [`design/beautiful-ui-ai-interfaces/`](./design/beautiful-ui-ai-interfaces/) | `data-dense-app-craft.md`（表格语法互通） | 19 件套：thinking/streaming/approval/tool chips/composer |
-| 叙事长 landing（营销页） | [`design/lead-radar/`](./design/lead-radar/)（编辑风）或 [`design/uhoh-inspired-service-entry/`](./design/uhoh-inspired-service-entry/)（单色漫画风） | [`ui-patterns/premium-one-pager.md`](./ui-patterns/premium-one-pager.md)（滚动组合拳）· `design/vercel-geist.md`（Vercel 系）· `high-leverage-craft-checklist.md` 附 A | 先定语气（编辑 desk vs 直接 blunt），再选模板 |
-| 个人站 / 作品集 | [`design/hanzilla-personal-site/`](./design/hanzilla-personal-site/)（暖编辑）或 [`design/liz-personal-compact/`](./design/liz-personal-compact/)（compact 变体） | `design-typography-font-preferences.md` | — |
-| 内容→服务承接页（社媒导流） | [`design/uhoh-inspired-service-entry/`](./design/uhoh-inspired-service-entry/) | `ui-patterns/typing-placeholder-animation.md`（可选） | 明确「入口屋 ≠ 工厂」定位 |
-| HTML 演示 deck | `beautiful-html-templates`（34 套，经 AGENTS.md 流程选） | `design-md-visual-system` skill（写 design.md） | deck 走模板库自带 tone-first 流程 |
-| 品牌/OG/生图 | `design-brief-authoring` / `design-brief-for-image-gen` skill（Genre B） | — | 不是 UI 视觉系统 |
-| UI 视觉系统文档（Genre A） | `design-md-visual-system` skill | gold-corpus 34 份当参照 | 产品 repo 用「CSS 数值权威薄变体」（见 skill §产品变体） |
+| **B2B 数据密集后台 / CRM / 管理台** | [`ui-patterns/data-dense-app-craft.md`](./ui-patterns/data-dense-app-craft.md)（数据面视觉工艺手册）· [`ui-patterns/data-dense-b2b-app.md`](./ui-patterns/data-dense-b2b-app.md)（交付闸） | [`design/beautiful-ui-ai-interfaces/`](./design/beautiful-ui-ai-interfaces/)（表格/列表/状态语法）· [`design-typography-font-preferences.md`](./design-typography-font-preferences.md)· [`high-leverage-craft-checklist.md`](./high-leverage-craft-checklist.md)· [`ui-patterns/icon-system-craft.md`](./ui-patterns/icon-system-craft.md) | 无完整后台整页模板；先读手册再发明；交付前过闸 |
+| Chatbot / AI Agent 界面 | [`design/beautiful-ui-ai-interfaces/`](./design/beautiful-ui-ai-interfaces/) | `data-dense-app-craft.md` · `icon-system-craft.md` | 19 件套；源站 beautifului.dev |
+| **SaaS 激活 / Onboarding → Setup** | [`ui-patterns/saas-onboarding-two-phase.md`](./ui-patterns/saas-onboarding-two-phase.md) | [`ia-user-journey.md`](./ia-user-journey.md) · craft checklist §8/§13/§28/§39 | 先 aha 再生产用量；禁止空白 Dashboard |
+| 叙事长 landing（营销页） | [`design/lead-radar/`](./design/lead-radar/) 或 [`design/uhoh-inspired-service-entry/`](./design/uhoh-inspired-service-entry/) | [`ui-patterns/premium-one-pager.md`](./ui-patterns/premium-one-pager.md)· [`ui-patterns/footer-craft.md`](./ui-patterns/footer-craft.md)· craft 附 A | 先定语气再选模板；页脚读 footer-craft |
+| 个人站 / 作品集 | [`design/hanzilla-personal-site/`](./design/hanzilla-personal-site/) 或 [`design/liz-personal-compact/`](./design/liz-personal-compact/) | `design-typography-font-preferences.md` · `footer-craft` C 型 | — |
+| 内容→服务承接页（社媒导流） | [`design/uhoh-inspired-service-entry/`](./design/uhoh-inspired-service-entry/) | `typing-placeholder-animation.md`（可选） | 入口屋 ≠ 工厂 |
+| 图标选型 / 线重 / 概念表 | [`ui-patterns/icon-system-craft.md`](./ui-patterns/icon-system-craft.md) | U-R13 Lucide/Iconify | 不自研 icon font，除非产品专有概念爆棚 |
+| HTML 演示 deck | `beautiful-html-templates`（34 套） | `paper-shaders` · `design-md-visual-system` | tone-first |
+| 品牌/OG/生图 | `design-brief-authoring` / `design-brief-for-image-gen` | [`inspiration-sources.md`](./inspiration-sources.md) OG 行 | Genre B |
+| UI 视觉系统文档（Genre A） | `design-md-visual-system` skill | gold-corpus 34 | — |
+| **灵感检索（先路由再打开）** | [`inspiration-sources.md`](./inspiration-sources.md) | 限时 1–2 站 | **禁止**整站 mirror gallery |
 
 **选择纪律**：先定「产品语气象限」（数据密集工具 / 编辑叙事 / 单色直接 / AI 仪器面板），再选模板；语气不匹配的模板，宁可组合也不要硬套。`data-dense-app-craft.md` 与 `beautiful-ui-ai-interfaces` 的表格语法是**跨象限可迁移**的（任何带表格的后台都能用）。
 
@@ -61,12 +64,17 @@ Small named patterns (not full pages). Load before reinventing landing micro-int
 - **Typing / rotating placeholder** → [`ui-patterns/typing-placeholder-animation.md`](./ui-patterns/typing-placeholder-animation.md) + [`ui-patterns/snippets/`](./ui-patterns/snippets/)
 - **Atomic island chrome** → [`ui-patterns/atomic-island-chrome.md`](./ui-patterns/atomic-island-chrome.md)
 - **Data-dense app craft** → [`ui-patterns/data-dense-app-craft.md`](./ui-patterns/data-dense-app-craft.md)（路由表第一行）
+- **Icon system craft** → [`ui-patterns/icon-system-craft.md`](./ui-patterns/icon-system-craft.md)（Lucide/Iconify 选型与光学纪律；Cursor icons 文蒸馏）
+- **SaaS onboarding two-phase** → [`ui-patterns/saas-onboarding-two-phase.md`](./ui-patterns/saas-onboarding-two-phase.md)（aha → 生产用量）
+- **Footer craft** → [`ui-patterns/footer-craft.md`](./ui-patterns/footer-craft.md)（长 landing 收口）
 
 ## Cross-cutting conventions
 
 - **Typography** → [`design-typography-font-preferences.md`](./design-typography-font-preferences.md)
 - **Paper Shaders** → [`paper-shaders/SKILL.md`](./paper-shaders/SKILL.md)  
   三套对参：千成讲义 deck veil、出海云/预算登录 MeshGradient、个人站指针搅动。`recipes/` 里有可抄的 CSS/TSX。`veils/` 铺字，`stills/` 当目录。不要再抽成单独的 user skill。
+- **Inspiration sources（书签路由）** → [`inspiration-sources.md`](./inspiration-sources.md)  
+  按任务开 1–2 站；禁止整站 mirror gallery。
 - **i18n + Iconify lang switcher** → [`i18n-iconify-lang-switcher.md`](./i18n-iconify-lang-switcher.md)
 
 ## design/uhoh-inspired-service-entry/

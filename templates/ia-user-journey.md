@@ -324,3 +324,24 @@ flowchart LR
 6. 不在本任务里实现 UI，除非用户明确说进入页面实现。
 
 停：骨架填完、三问能审每一片叶子、非正式 tree test 口令已写进文档。不要为「完整」去发明未确认的业务规则。
+
+---
+
+## 9. 附录 · 首登激活（Onboarding → Setup）
+
+内部工具若存在「注册/第一次进工作区」，在 `docs/IA.md` 增加一节，不要只写在增长实验文档：
+
+```text
+## 激活（若适用）
+
+Aha 定义（一句话 + 事件名）:
+Onboarding 入口输入（域名 / URL / 账户 / …）:
+Onboarding 明确不要求的集成:
+Setup 生产里程碑（必须产生 usage）:
+付费/升级教育点:
+失败降级:
+```
+
+机制与清单见 [`ui-patterns/saas-onboarding-two-phase.md`](./ui-patterns/saas-onboarding-two-phase.md)。  
+硬规则：没有可测 aha 事件 → 不准开工做向导 UI；Setup 里程碑禁止用「配置勾选完成」冒充用量。  
+与 G2 关系：Onboarding 可以暂在主链外；Setup 必须接回主链对象生产顺序。

@@ -11,16 +11,17 @@ Also published on **[lizliz.xyz/templates](https://lizliz.xyz/templates)** — s
 ## The Pack
 
 - **`design/`** — design systems & landing templates:
-  - `beautiful-ui-ai-interfaces/` — AI-native interface primitives (19 pieces: thinking / streaming / approval / tool-chips / composer; DESIGN.md + EVIDENCE.md + screenshots + sections)
-  - `lead-radar/` — editorial SaaS landing system (DESIGN.md + landing-page.tsx + globals.css)
-  - `liz-personal-compact/` — compact personal site variants (landing / v2 / v3 + CSS/JS)
+  - `beautiful-ui-ai-interfaces/` — AI-native interface primitives (19 pieces; beautifului.dev; DESIGN + EVIDENCE + screenshots + sections)
+  - `lead-radar/` — editorial SaaS landing system
+  - `liz-personal-compact/` — compact personal site variants
   - `uhoh-inspired-service-entry/` — monochrome comic service-entry template
-  - `hanzilla-personal-site/` — warm editorial personal-site study (DESIGN.md + EVIDENCE.md + screenshots)
+  - `hanzilla-personal-site/` — warm editorial personal-site study
   - `vercel-geist.md` — Geist-oriented UI tone notes
-- **`ui-patterns/`** — micro-patterns with portable snippets: typing placeholder, atomic island chrome, premium one-pager
-- **craft docs** — `high-leverage-craft-checklist.md` (40 mechanics; §40 points at the color/surface doc), `ia-user-journey.md` (IA before nav; fill `docs/IA.md`), typography font preferences, **color & surface preferences** (no pure white/black fills; cream paper for long-stare tools), i18n + Iconify lang switcher
-- **Paper Shaders** — `templates/paper-shaders/` (skill + `veils/` + `stills/`). Deck/long-page paper lives here; do not extract a separate user skill.
-- **`README.md`** — pack index: what's where and when to reuse each item
+- **`ui-patterns/`** — micro-patterns: typing placeholder, atomic island, data-dense craft, **icon-system-craft**, **saas-onboarding-two-phase**, **footer-craft**, premium one-pager
+- **craft docs** — high-leverage checklist (incl. §39 two-phase activation), ia-user-journey (+ activation appendix), typography, color/surface, i18n lang switcher
+- **`inspiration-sources.md`** — job-routed gallery bookmarks (no site mirrors)
+- **Paper Shaders** — `templates/paper-shaders/` (skill + veils + stills + recipes)
+- **`README.md`** — pack index / task router
 
 ## Getting It
 
