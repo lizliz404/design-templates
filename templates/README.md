@@ -1,8 +1,9 @@
-# _templates
+# Design templates pack
 
 Reusable assets extracted from finished/archived projects and public design OSINT.
 
-**Single source of truth** for Liz template material. (Former `projects/template/` UI patterns live under `ui-patterns/`.)
+**Canonical source:** [lizliz404/design-templates](https://github.com/lizliz404/design-templates) (`templates/` in that repo).  
+On this server the same tree also lives at `/home/ubuntu/projects/_templates` as a **same-pace mirror** — not a second source of truth. Pull/push the GitHub repo; keep the mirror identical.
 
 ---
 

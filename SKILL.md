@@ -34,7 +34,13 @@ Repo root: `~/design-templates/` · Pack index: [	emplates/README.md](templates/
 
 ## Updates
 
-```powershell
-cd ~/design-templates
+Canonical = GitHub `lizliz404/design-templates`. Local `_templates` is only a same-pace mirror of `templates/`.
+
+```bash
+cd /home/ubuntu/projects/design-templates
 git pull
+# optional: keep short-path mirror identical
+rsync -a --delete templates/ /home/ubuntu/projects/_templates/
+# after edits: publish zip + mirror + site
+bash scripts/sync.sh
 ```

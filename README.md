@@ -34,9 +34,22 @@ cd design-templates
 git pull   # later updates
 ```
 
-## Updating the Pack (server side)
+## Canonical source
 
-The pack is generated from `/home/ubuntu/projects/_templates` (the local single source of truth) by `scripts/sync.sh`: stage → sanitize absolute paths → zip → refresh `templates/` + `templates-pack.zip` in this repo → copy the zip into the lizliz.xyz site repo (`public/templates-pack.zip`) → commit + push both repos.
+**GitHub is the source of truth:** [lizliz404/design-templates](https://github.com/lizliz404/design-templates).
+
+| Path | Role |
+|---|---|
+| `github.com/lizliz404/design-templates` | Canonical. History, reviews, remote ahead/behind. |
+| `/home/ubuntu/projects/design-templates` | Server clone. Edit `templates/` here (or on any machine → push). |
+| `/home/ubuntu/projects/_templates` | **Same-pace mirror** of `templates/` only — short path for agents. Not a second SoT. |
+| `lizliz.xyz/public/templates-pack.zip` | Published zip snapshot for the site download button. |
+
+There is no “local true original vs cloud export” split. If remote moved, `git pull` first. Keep clone and `_templates` identical after every pull/publish.
+
+## Publishing (server)
+
+`scripts/sync.sh`: sanitize accidental absolute paths in `templates/` → rebuild `templates-pack.zip` → rsync `templates/` → `_templates/` → copy zip into lizliz.xyz → commit + push both repos.
 
 ## License
 
