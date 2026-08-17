@@ -90,7 +90,7 @@ Monochrome comic landing page template for content-led service entry pages. Insp
 
 ## design/beautiful-ui-ai-interfaces/
 
-AI-native UI primitives (chat agents, thinking states, human-in-the-loop approvals) — 19 copy-paste components rebuilt from observation of https://beautiful-ui-five.vercel.app/ (no public source repo; see EVIDENCE.md).
+AI-native UI primitives (chat agents, thinking states, human-in-the-loop approvals) — 19 copy-paste components rebuilt from observation of https://www.beautifului.dev/ (no public source repo; see EVIDENCE.md).
 
 **When to reuse**: Building Chatbot / AI Agent interfaces from scratch — thinking traces, streaming text, approval cards, tool chips, agent tables, composer. **也适用于任何数据密集 B2B 后台**：§4 的 records/diff/filter 表格语法（12.5px 密集行、sticky header、hairline 边框、tint 单元格）是现成的表格工艺，跨象限可迁移（chuhai-cloud 2026-08 实战验证缺口后确认）。
 
