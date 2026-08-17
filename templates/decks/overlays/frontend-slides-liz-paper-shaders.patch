@@ -1,0 +1,216 @@
+diff --git a/SKILL.md b/SKILL.md
+index 9b8374b..6d29d60 100644
+--- a/SKILL.md
++++ b/SKILL.md
+@@ -25,6 +25,7 @@ Focus on:
+ - Color & Theme: Commit to a cohesive aesthetic. Use CSS variables for consistency. Dominant colors with sharp accents outperform timid, evenly-distributed palettes. Draw from IDE themes and cultural aesthetics for inspiration.
+ - Motion: Use animations for effects and micro-interactions. Prioritize CSS-only solutions for HTML. Use Motion library for React when available. Focus on high-impact moments: one well-orchestrated page load with staggered reveals (animation-delay) creates more delight than scattered micro-interactions.
+ - Backgrounds: Create atmosphere and depth rather than defaulting to solid colors. Layer CSS gradients, use geometric patterns, or add contextual effects that match the overall aesthetic.
++- **Texture source (verified)**: fetch real paper/noise/grain textures (static webp) from [Paper Shaders](https://shaders.paper.design/) — zero-dependency shader library (paper-texture / perlin / simplex / neuro-noise / grain-gradient). Use as low-opacity **multiply** overlay layers; verified ceiling on cream-paper decks is **paper 0.085 / noise 0.05** (safe band ≈ paper 0.03–0.085, noise 0.02–0.05). **Animate the layer, not the file** (`tex-drift` 90s + `tex-grain` 3.4s, `prefers-reduced-motion` → static). Pair with fixed-stage chrome: paper-backed chapter indicator (deep ink, no mid-token `word-break`) + optional 3px progress ruler. Full copy-paste CSS in `animation-patterns.md`.
+ 
+ Avoid generic AI-generated aesthetics:
+ 
+diff --git a/animation-patterns.md b/animation-patterns.md
+index 19bb61a..c945d02 100644
+--- a/animation-patterns.md
++++ b/animation-patterns.md
+@@ -53,6 +53,11 @@ Use this reference when generating presentations. Match animations to the intend
+ ## Background Effects
+ 
+ ```css
++/* Shared easing (verified lizliz deck 2026-08) */
++:root {
++    --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
++}
++
+ /* Gradient Mesh — layered radial gradients for depth */
+ .gradient-bg {
+     background:
+@@ -61,11 +66,179 @@ Use this reference when generating presentations. Match animations to the intend
+         var(--bg-primary);
+ }
+ 
+-/* Noise Texture — inline SVG for grain */
++/* Noise Texture — inline SVG for grain (fallback when no fetched webp) */
+ .noise-bg {
+     background-image: url("data:image/svg+xml,..."); /* Inline SVG noise */
+ }
+ 
++/* Paper Shaders texture veil — fetch real textures (paper / perlin / simplex / …)
++   from https://shaders.paper.design/ (zero-dep shader library, static webp exportable).
++   Portable class names below (.tex-veil*). Live deck used .deck-texture* — same params.
++   Verified copy-paste defaults (lizliz 2026-08 cream-paper deck):
++     paper opacity 0.085 · noise opacity 0.05 · drift 90s · grain 3.4s
++   Safe range: paper 0.03–0.085, noise 0.02–0.05. Above ~0.08 → screenshot-verify body contrast. */
++.tex-veil {
++    position: fixed;
++    inset: 0;
++    z-index: 500;
++    pointer-events: none;
++    overflow: hidden;
++}
++.tex-veil__paper {
++    position: absolute;
++    inset: -3%; /* margin for drift animation */
++    background-image: url("data:image/webp;base64,..."); /* paper-texture */
++    background-size: 640px 480px;
++    opacity: 0.085;
++    mix-blend-mode: multiply;
++    animation: tex-drift 90s linear infinite alternate;
++    will-change: transform;
++}
++.tex-veil__noise {
++    position: absolute;
++    inset: -3%;
++    background-image: url("data:image/webp;base64,..."); /* perlin-noise */
++    background-size: 640px 480px;
++    opacity: 0.05;
++    mix-blend-mode: multiply;
++    animation: tex-grain 3.4s ease-in-out infinite;
++    will-change: transform;
++}
++/* Static images CAN be animated — animate the layer, not the file */
++@keyframes tex-drift {
++    from { transform: translate3d(0, 0, 0); }
++    to   { transform: translate3d(-26px, 14px, 0); } /* imperceptible slow drift; alternate = round-trip */
++}
++@keyframes tex-grain {
++    0%   { transform: translate3d(0, 0, 0); }
++    20%  { transform: translate3d(-7px, 5px, 0); }
++    45%  { transform: translate3d(5px, -6px, 0); }
++    70%  { transform: translate3d(-4px, -3px, 0); }
++    100% { transform: translate3d(0, 0, 0); } /* film-grain jitter */
++}
++@media (prefers-reduced-motion: reduce) {
++    .tex-veil__paper,
++    .tex-veil__noise { animation: none; }
++}
++
++/* Micro-interaction kit (verified 2026-08) — shared timing, per-role axes.
++   Do NOT collapse every surface to the same translateY(-2px). */
++.flow-step,
++.panel,
++.terminal,
++.insight,
++.q-box,
++.chip,
++.cover-art {
++    transition:
++        border-color 0.24s var(--ease-out-expo),
++        background 0.24s var(--ease-out-expo),
++        transform 0.24s var(--ease-out-expo),
++        box-shadow 0.24s var(--ease-out-expo);
++}
++.flow-step:hover {
++    transform: translateY(-2px);
++    box-shadow: 0 3px 0 rgba(26, 26, 22, 0.07);
++}
++.flow-step:active { transform: translateY(0); transition-duration: 0.08s; }
++
++.panel:hover { transform: translateX(4px); }          /* horizontal nudge, not lift */
++.panel:active { transform: translateX(2px); transition-duration: 0.08s; }
++
++.terminal:hover { transform: translateY(-2px); }
++.terminal:active { transform: translateY(0); transition-duration: 0.08s; }
++
++.insight:hover {
++    transform: translateY(-3px);
++    box-shadow: 0 5px 0 rgba(26, 26, 22, 0.06);
++}
++.insight:active { transform: translateY(-1px); transition-duration: 0.08s; }
++
++.chip:active { transform: translateY(1px); }
++
++/* Enter replay on active slide (pairs with page-turn, not IntersectionObserver alone) */
++.slide.active:not(.reveal-ready) .reveal,
++.slide.active:not(.reveal-ready) .reveal-left,
++.slide.active:not(.reveal-ready) .reveal-scale {
++    opacity: 0;
++    transform: translateY(22px);
++}
++.slide.active:not(.reveal-ready) .reveal-left { transform: translateX(-36px); }
++.slide.active:not(.reveal-ready) .reveal-scale { transform: scale(0.96); }
++
++@media (prefers-reduced-motion: reduce) {
++    .flow-step:hover, .panel:hover, .terminal:hover, .insight:hover,
++    .q-box:hover, .cover-art:hover {
++        transform: none !important;
++        box-shadow: none !important;
++    }
++    .flow-step:active, .panel:active, .terminal:active, .insight:active,
++    .q-box:active, .chip:active, .cover-art:active {
++        transform: none !important;
++    }
++}
++
++/* Fixed-stage chapter indicator — contrast + no mid-token line breaks */
++.deck-chapter {
++    position: fixed;
++    right: 28px;
++    top: 50%;
++    transform: translateY(-50%);
++    z-index: 1000;
++    pointer-events: none;
++    max-width: 84px;
++    padding: 10px 6px 12px 8px;
++    background: rgba(250, 250, 223, 0.92); /* paper backing → readable on light AND dark slides */
++    border-right: 1px solid rgba(26, 26, 22, 0.32);
++}
++.deck-chapter__page {
++    color: #1a1a16; /* deep ink on paper — do not use light type on light stage */
++    white-space: nowrap;
++}
++.deck-chapter__name {
++    color: rgba(26, 26, 22, 0.68);
++    text-align: right;
++    word-break: normal;       /* avoid mid-word / mid-token breaks */
++    overflow-wrap: normal;
++    display: -webkit-box;
++    -webkit-line-clamp: 2;
++    -webkit-box-orient: vertical;
++    overflow: hidden;
++}
++
++/* Optional: 3px progress ruler with paper grain in the fill */
++.progress-track {
++    position: fixed;
++    left: 0;
++    top: 0;
++    width: 100%;
++    height: 3px;
++    z-index: 1001;
++    pointer-events: none;
++    background:
++        repeating-linear-gradient(
++            90deg,
++            rgba(26, 26, 22, 0.28) 0 1px,
++            transparent 1px calc(100% / 22)
++        ),
++        linear-gradient(180deg, rgba(26, 26, 22, 0.32) 0%, rgba(250, 250, 223, 0.05) 100%);
++}
++.progress {
++    height: 3px;
++    width: 0%;
++    transition: width 0.35s var(--ease-out-expo);
++    overflow: hidden;
++}
++.progress::before {
++    content: "";
++    position: absolute;
++    inset: 0;
++    background-image: url("data:image/webp;base64,..."); /* same paper-texture */
++    background-size: 480px auto;
++    opacity: 0.5;
++    mix-blend-mode: soft-light;
++}
++
+ /* Grid Pattern — subtle structural lines */
+ .grid-bg {
+     background-image:
+@@ -108,3 +281,6 @@ class TiltEffect {
+ | Scroll snap not working | Ensure `scroll-snap-type: y mandatory` on html; each slide needs `scroll-snap-align: start` |
+ | Mobile issues | Disable heavy effects at 768px breakpoint; test touch events; reduce particle count |
+ | Performance issues | Use `will-change` sparingly; prefer `transform`/`opacity` animations; throttle scroll handlers |
++| Texture washes out type | Lower paper/noise opacity; live ceiling ≈ 0.085 / 0.05 on cream paper — screenshot-verify |
++| Chapter label splits mid-word | Set `word-break: normal; overflow-wrap: normal` + line-clamp; never `break-all` on chapter names |
++| Indicator unreadable on dark slide | Give indicator its own paper backing + deep ink; don't inherit slide fg/bg blindly |

@@ -49,7 +49,12 @@ echo "sanitize ok (no /home/ubuntu left)"
 # --- zip (internal root: templates/) ---
 cd "$STAGE"
 rm -f templates-pack.zip
-zip -rq templates-pack.zip templates
+# exclude heavy/unwanted paths if ever present
+zip -rq templates-pack.zip templates \
+  -x 'templates/decks/upstream/*/screenshots/*' \
+  -x 'templates/decks/upstream/*/.git/*' \
+  -x '*/node_modules/*' \
+  -x '*.DS_Store'
 
 # --- write back into this repo ---
 rm -rf "$PACK_DIR/templates"

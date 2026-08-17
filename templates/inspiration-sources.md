@@ -25,7 +25,7 @@ Canonical pack: [lizliz404/design-templates](https://github.com/lizliz404/design
 | **Landing 分段（hero/pricing/…）** | [land-book.com](https://land-book.com/) sections · [lapa.ninja](https://www.lapa.ninja/) | 组合 landing 模板 + craft checklist |
 | **极简 / 编辑向站** | [minimal.gallery](https://minimal.gallery/) · [a1.gallery](https://www.a1.gallery/) | `hanzilla` · `liz-personal-compact` |
 | **高完成度 / 实验向** | [godly.website](https://godly.website/) | 慎用于 B2B 工具面；可偷 motion 纪律 |
-| **Deck / 品牌指南 PDF 风** | [deck.gallery](https://deck.gallery/) | `beautiful-html-templates` + `paper-shaders` |
+| **Deck / 品牌指南 PDF 风** | [deck.gallery](https://deck.gallery/) · upstream [beautiful-html-templates](https://github.com/zarazhangrui/beautiful-html-templates) / [frontend-slides](https://github.com/zarazhangrui/frontend-slides) | `decks/` + `paper-shaders`；先 `visual-economy` |
 | **页脚收口** | [footer.design](https://footer.design/) | `ui-patterns/footer-craft.md` |
 | **OG / 分享图** | [ogfolio.com](https://ogfolio.com/) · land-book OG 例 | Genre-B brief · craft §17 |
 | **Logo 方向** | [logoinspo.com](https://logoinspo.com/) | Genre-B；勿直接盗标 |

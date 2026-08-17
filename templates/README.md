@@ -21,7 +21,8 @@ On this server the same tree also lives at `<project>/_templates` as a **same-pa
 | 内容→服务承接页（社媒导流） | [`design/uhoh-inspired-service-entry/`](./design/uhoh-inspired-service-entry/) | `typing-placeholder-animation.md`（可选） | 入口屋 ≠ 工厂 |
 | 图标选型 / 线重 / 概念表 | [`ui-patterns/icon-system-craft.md`](./ui-patterns/icon-system-craft.md) | U-R13 Lucide/Iconify | 不自研 icon font，除非产品专有概念爆棚 |
 | **站内 / 产品内搜索** | [`ui-patterns/search-craft.md`](./ui-patterns/search-craft.md) | IA G9 · craft checklist Cmd+K | 先分 Search/Filter/Palette；复杂系统别抄 VitePress MiniSearch |
-| HTML 演示 deck | `beautiful-html-templates`（34 套） | `paper-shaders` · `design-md-visual-system` | tone-first |
+| HTML 演示 deck（审美交付） | [`decks/`](./decks/) → `upstream/beautiful-html-templates` + `frontend-slides` | [`decks/visual-economy.md`](./decks/visual-economy.md) · `paper-shaders` | **先** visual-economy；仅 occasion=演讲/课程 才上全套 |
+| 结构图 / 说明图（默认） | [`decks/visual-economy.md`](./decks/visual-economy.md) | ASCII · Mermaid | 禁止默认 React/Three 做说明图 |
 | 品牌/OG/生图 | `design-brief-authoring` / `design-brief-for-image-gen` | [`inspiration-sources.md`](./inspiration-sources.md) OG 行 | Genre B |
 | UI 视觉系统文档（Genre A） | `design-md-visual-system` skill | gold-corpus 34 | — |
 | **灵感检索（先路由再打开）** | [`inspiration-sources.md`](./inspiration-sources.md) | 限时 1–2 站 | **禁止**整站 mirror gallery |
@@ -75,6 +76,7 @@ Small named patterns (not full pages). Load before reinventing landing micro-int
 - **Typography** → [`design-typography-font-preferences.md`](./design-typography-font-preferences.md)
 - **Paper Shaders** → [`paper-shaders/SKILL.md`](./paper-shaders/SKILL.md)  
   三套对参：千成讲义 deck veil、出海云/预算登录 MeshGradient、个人站指针搅动。`recipes/` 里有可抄的 CSS/TSX。`veils/` 铺字，`stills/` 当目录。不要再抽成单独的 user skill。
+- **Decks + visual economy** → [`decks/README.md`](./decks/README.md) · [`decks/visual-economy.md`](./decks/visual-economy.md)
 - **Inspiration sources（书签路由）** → [`inspiration-sources.md`](./inspiration-sources.md)  
   按任务开 1–2 站；禁止整站 mirror gallery。
 - **i18n + Iconify lang switcher** → [`i18n-iconify-lang-switcher.md`](./i18n-iconify-lang-switcher.md)

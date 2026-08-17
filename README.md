@@ -19,6 +19,7 @@ This pack is extracted from real lizliz.xyz work and public design OSINT — not
 | **Craft docs** | High-leverage checklist, IA · user journey, typography, color/surface, i18n switcher |
 | **`templates/paper-shaders/`** | Paper / mesh recipes, veils, stills — deck and login atmosphere without reinventing shaders |
 | **`templates/inspiration-sources.md`** | Job-routed gallery bookmarks (scan, don't mirror whole sites) |
+| **`templates/decks/`** | Visual-economy ladder + vendored zarazhangrui HTML deck packs (upstream sync) |
 | **`templates-pack.zip`** | One-shot download of the whole `templates/` tree |
 
 ### Design systems & landings
@@ -41,6 +42,7 @@ This pack is extracted from real lizliz.xyz work and public design OSINT — not
 - **IA · user journey** — object model → nav projection contract (`docs/IA.md` skeleton)
 - **High-leverage craft checklist** — cheap mechanisms with expensive results
 - **Paper Shaders** — deck veil, login mesh, pointer-reactive recipes
+- **Decks** — zarazhangrui `frontend-slides` + `beautiful-html-templates` (vendored under `templates/decks/upstream/`); **visual-economy** ladder (ASCII/Mermaid first)
 
 Start at **`templates/README.md`** — task router: “what am I building?” → which folder to open.
 
@@ -102,8 +104,11 @@ design-templates/
     design/                 ← systems + landing studies
     ui-patterns/            ← micro-patterns + snippets
     paper-shaders/          ← veils, stills, recipes
+    decks/                  ← visual-economy + zarazhangrui upstream decks
     *.md                    ← craft checklists, IA, type, color, i18n, inspiration
-  scripts/sync.sh           ← maintainers: publish zip + site mirror
+  scripts/
+    sync.sh                 ← maintainers: publish zip + site mirror
+    sync-upstream-decks.sh  ← pull zarazhangrui → decks/upstream + overlays
 ```
 
 Progressive disclosure: start at the pack index → open one item's README/DESIGN → pull snippets only when needed.
@@ -114,17 +119,20 @@ Progressive disclosure: start at the pack index → open one item's README/DESIG
 2. **IA before chrome.** Navigation is a projection of objects and tasks — see `ia-user-journey.md`.  
 3. **Vibes are not verification.** Craft docs ask for screenshots, tree tests, and usage milestones.  
 4. **Unzip and use is the point.** If you need a ceremony to start, something is wrong.  
-5. **Don't mirror the internet.** Inspiration bookmarks point out; the pack stays small and owned.
+5. **Don't mirror the internet.** Inspiration bookmarks point out; the pack stays small and owned.  
+6. **Visual economy.** Explain with prose → ASCII → Mermaid before HTML decks or heavy frontend.
 
 ## Related
 
 - Site hub: [lizliz.xyz/templates](https://lizliz.xyz/templates)  
 - Sibling skill packs: [lizliz404/agent-skills](https://github.com/lizliz404/agent-skills) · [lizliz.xyz/skills](https://lizliz.xyz/skills)  
 - Example AI UI reference studied in-pack: [beautifului.dev](https://www.beautifului.dev/)
+- Deck upstream (vendored): [frontend-slides](https://github.com/zarazhangrui/frontend-slides) · [beautiful-html-templates](https://github.com/zarazhangrui/beautiful-html-templates) under `templates/decks/upstream/`
 
 ## Credits
 
-Created by [@lizliz404](https://x.com/lizliz404).
+Created by [@lizliz404](https://x.com/lizliz404).  
+Deck packs originally by [@zarazhangrui](https://github.com/zarazhangrui) (MIT).
 
 ## License
 
