@@ -23,8 +23,8 @@ tdimino 那份 `paper-design` skill 是 Paper 桌面软件的 MCP，会锁画板
 | 场合 | 用什么 | 对参 | 别干什么 |
 |---|---|---|---|
 | 讲义 / 长页 / 16:9 deck | **Deck veil**：双层静图 + `tex-grain` | `lizliz.xyz/qiancheng-yusuan-workbook-…` | 只铺一层 0.04 的纸还说「有质感」 |
-| 登录左栏 / 品牌半屏 | **Login mesh**：`MeshGradient` 50% 叠在实色底上 | 出海云 `/login`、预算系统 `/login` | 后台表格页也挂 mesh |
-| 个人站 / 长盯的首页 | **Login mesh 的墨色盘** + 一层薄 veil；指针搅动 | 上两套合成 | 用出海云那盘饱和蓝紫当个人站底 |
+| 登录左栏 / 品牌半屏 | **Login mesh**：`MeshGradient` 50% 叠在实色底上 | 出海云 `/login`、预算系统 `/login` | 后台表格页也挂 mesh；个人站套预算墨灰盘 |
+| 个人站 / 长盯的首页 | **个人站 rust/paper 盘** + mesh + 可感知 veil（0.08–0.10）；指针只搅 swirl/distortion | lizliz.xyz 首页 · `recipes/personal-site-stack.md` | 预算 `INK_MESH_COLORS` 当个人站默认；出海云蓝紫；第三套引擎 |
 | 只要一张纸 | 静图 veil，`veils/` | — | 把 `stills/` 彩色样张当底 |
 
 ## 1. Deck veil（千成讲义）
@@ -58,8 +58,10 @@ speed={reduced ? 0 : 0.36}
 
 | 站 | 底 | colors |
 |---|---|---|
-| 出海云 | `bg-primary`（品牌蓝） | `['#B8D4FF', '#4058EA', '#C4B5FD', '#1A237E', '#7DD3FC']` |
-| 预算 / 个人站 | 米白或墨 | `['#FAFAFA', '#EDE8DF', '#171717', '#4D4D4D', '#321C1C']` |
+| 出海云 | `bg-primary`（品牌蓝） | `CHUHAI_MESH_COLORS` `['#B8D4FF', '#4058EA', '#C4B5FD', '#1A237E', '#7DD3FC']` |
+| 预算登录 | 米白或墨（对切开的登录栏） | `INK_MESH_COLORS` `['#FAFAFA', '#EDE8DF', '#171717', '#4D4D4D', '#321C1C']` |
+| 个人站 | 暖纸 `#faf9f5` | `LIZLIZ_MESH_COLORS` `['#fffdf8', '#f1eee6', '#b14e22', '#716d64', '#141413']` |
+| 个人站暗色 | 深墨 | `LIZLIZ_MESH_COLORS_DARK` `['#141413', '#3a3630', '#716d64', '#b14e22', '#fffdf8']` |
 
 5 色必须跨亮→深。同族齐平会隐形。
 
@@ -67,17 +69,24 @@ speed={reduced ? 0 : 0.36}
 
 后台 UI **禁止**挂这套。登录左栏 / 对外 hero 才配。
 
-## 3. 指针 / 点击（个人站）
+## 3. 指针 / 点击 + 双层（个人站）
 
-Shader 层保持 `pointer-events: none`，在 `window` 上听 `pointermove` / `click`，把归一化坐标喂进旋钮：
+两层栈，详见 `recipes/personal-site-stack.md`。
+
+1. **Layer A** `MeshGradient`：`LIZLIZ_MESH_COLORS`（纸 → rust → 墨），`grainMixer` / `grainOverlay`，**`speed={0.36}`**。mesh 自己滚。
+2. **Layer B** 双层 `cream-perlin.webp` veil：`multiply`，透明度 **0.08–0.10**（0.05–0.06 看不见）。可选 90s drift。不要上讲义 3.4s `tex-grain`。
+
+不要第三套引擎（`HomeAmbientBg` canvas、额外 `PaperTexture` WebGL、讲义 jitter）。色盘跨对比度时 A+B 会融；「冲突」只发生在两套 WebGL 大气叠在一起，或 mesh 用了预算墨灰。
+
+Shader 层保持 `pointer-events: none`，在 `window` 上听 `pointermove` / `click`，把归一化坐标 **lerp-offset** 进旋钮（不要改 `speed`）：
 
 - `swirl` ← 指针 x
 - `distortion` ← 指针 y
-- click：`boost` 冲到 1，约 700ms 褪回 0，短暂加快 `speed`
+- click：`boost` 冲到 1，约 700ms 褪回 0，只加 swirl / distortion
 
 不要给 shader 开 `pointer-events: auto`，会吞掉页面点击。
 
-完整组件：`recipes/pointer-mesh.tsx`。lizliz.xyz 首页用的就是这一套。
+完整组件：`recipes/pointer-mesh.tsx`。lizliz.xyz 首页用的就是这一套。预算 `INK_MESH_COLORS` 只给登录左栏。
 
 ## 换底（讲义 / 长页，短清单）
 
@@ -125,5 +134,7 @@ Shader 层保持 `pointer-events: none`，在 `window` 上听 `pointermove` / `c
 - 把 `stills/` 彩色样张直接当讲义底
 - 讲义只铺一层 0.04 的纸，说「有 paper design 了」
 - 个人站用出海云那盘饱和蓝紫
+- 个人站默认用预算 `INK_MESH_COLORS`（灰墨叠暖纸会隐形，不是 veil 的错）
+- 个人站首页叠第三套引擎（`HomeAmbientBg` / 额外 PaperTexture WebGL / 讲义 3.4s jitter）
 - 给 shader 开 `pointer-events: auto`
 - 每个后台表格页都铺 mesh

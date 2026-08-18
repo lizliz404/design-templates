@@ -2,14 +2,20 @@
 
 import { MeshGradient } from '@paper-design/shaders-react';
 import { useEffect, useState } from 'react';
-import { INK_MESH_COLORS } from './login-mesh';
+import { LIZLIZ_MESH_COLORS, LIZLIZ_MESH_COLORS_DARK } from './login-mesh';
 
 /**
- * Full-page mesh that listens on window (not on the canvas).
- * Used by lizliz.xyz HomePaperBg.
+ * Full-page mesh for a personal-site homepage (lizliz.xyz HomePaperBg).
+ *
+ * Pointer/click only lerp-offset swirl + distortion.
+ * Mesh owns speed (0.36). Do not drive speed from the pointer.
+ * Canvas stays pointer-events: none — listen on window.
+ *
+ * Default palette is LIZLIZ paper→rust→ink, not INK_MESH_COLORS.
+ * Two-layer stack: recipes/personal-site-stack.md
  */
 export function PointerMesh({
-  colors = INK_MESH_COLORS,
+  colors,
   dark = false,
 }: {
   colors?: string[];
@@ -24,7 +30,11 @@ export function PointerMesh({
     const sync = () => setReduced(mq.matches);
     sync();
     mq.addEventListener('change', sync);
+    return () => mq.removeEventListener('change', sync);
+  }, []);
 
+  useEffect(() => {
+    if (reduced) return;
     const onMove = (e: PointerEvent) => {
       setPtr({
         x: e.clientX / window.innerWidth,
@@ -38,31 +48,26 @@ export function PointerMesh({
     window.addEventListener('pointermove', onMove, { passive: true });
     window.addEventListener('click', onClick);
     return () => {
-      mq.removeEventListener('change', sync);
       window.removeEventListener('pointermove', onMove);
       window.removeEventListener('click', onClick);
     };
-  }, []);
+  }, [reduced]);
 
-  if (reduced) return null;
-
-  const swirl = 0.42 + (ptr.x - 0.5) * 0.46 + boost * 0.32;
-  const distortion = 0.58 + (ptr.y - 0.5) * 0.3 + boost * 0.18;
-  const speed = 0.28 + boost * 0.45;
-  const palette = dark
-    ? ['#1c1a16', '#2a2620', '#5c564c', '#b9a48a', '#fff8ee']
-    : colors;
+  const swirl = reduced ? 0.42 : 0.42 + (ptr.x - 0.5) * 0.46 + boost * 0.32;
+  const distortion = reduced ? 0.58 : 0.58 + (ptr.y - 0.5) * 0.3 + boost * 0.18;
+  const palette = colors ?? (dark ? LIZLIZ_MESH_COLORS_DARK : LIZLIZ_MESH_COLORS);
 
   return (
-    <MeshGradient
-      className="home-paper-shader"
-      colors={palette}
-      distortion={distortion}
-      swirl={swirl}
-      grainMixer={0.12}
-      grainOverlay={0.06}
-      speed={speed}
-      style={{ width: '100%', height: '100%' }}
-    />
+    <div className="home-paper-shader pointer-events-none absolute inset-0" aria-hidden="true">
+      <MeshGradient
+        colors={palette}
+        distortion={distortion}
+        swirl={swirl}
+        grainMixer={0.12}
+        grainOverlay={0.06}
+        speed={reduced ? 0 : 0.36}
+        style={{ width: '100%', height: '100%' }}
+      />
+    </div>
   );
 }

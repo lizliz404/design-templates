@@ -75,7 +75,7 @@ Small named patterns (not full pages). Load before reinventing landing micro-int
 
 - **Typography** → [`design-typography-font-preferences.md`](./design-typography-font-preferences.md)
 - **Paper Shaders** → [`paper-shaders/SKILL.md`](./paper-shaders/SKILL.md)  
-  三套对参：千成讲义 deck veil、出海云/预算登录 MeshGradient、个人站指针搅动。`recipes/` 里有可抄的 CSS/TSX。`veils/` 铺字，`stills/` 当目录。不要再抽成单独的 user skill。
+  三套对参：千成讲义 deck veil、出海云/预算登录 MeshGradient、个人站 rust/paper 双层（mesh + 0.08–0.10 veil）。预算墨灰盘只给登录左栏，见 [`paper-shaders/recipes/personal-site-stack.md`](./paper-shaders/recipes/personal-site-stack.md)。`veils/` 铺字，`stills/` 当目录。不要再抽成单独的 user skill。
 - **Decks + visual economy** → [`decks/README.md`](./decks/README.md) · [`decks/visual-economy.md`](./decks/visual-economy.md)
 - **Inspiration sources（书签路由）** → [`inspiration-sources.md`](./inspiration-sources.md)  
   按任务开 1–2 站；禁止整站 mirror gallery。
