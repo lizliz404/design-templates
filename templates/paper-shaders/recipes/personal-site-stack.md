@@ -24,8 +24,9 @@
 
 ## Layer C — cream-fiber floral-shadow still（cover, not tile）
 
-- 图：`veils/cream-fiber.webp`（cream paper print of cosmos **shadows**）
+- 图：`veils/cream-fiber.webp`（cosmos 影）或 `veils/cream-lily.webp`（Liz 百合洗成墨影、一张平面里盖多次）
 - **一次**：`background-size: cover` · `background-repeat: no-repeat` · `background-position: center` · `multiply`
+- 不要 tile `cream-lily.webp`：平面里已经复制过了。霓虹原图在 `stills/liz-lily-source.webp`，不当底。单朵 motif 在 `veils/cream-lily-motif.webp`（给 PaperTexture `image=`）
 - 透明度 **0.16–0.22**（0.06 在 1280 截图里看不见，Liz 会以为纸没上）
 - 暗色：`soft-light`，感知上同等
 - 可静止，或 90s 只漂几 px；漂的时候仍必须 cover，禁止 tile

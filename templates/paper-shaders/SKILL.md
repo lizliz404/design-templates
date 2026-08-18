@@ -114,13 +114,15 @@ Shader 层保持 `pointer-events: none`，在 `window` 上听 `pointermove` / `c
 | 文件 | 从哪来 | 怎么用 |
 |---|---|---|
 | `cream-fiber.webp` | cream paper print of cosmos **shadows**（不是饱和橙 `stills/flowers.webp`） | **cover, once, multiply**。禁止 tile |
+| `cream-lily.webp` | Liz 霓虹百合 still 洗成奶油墨影，再在一张平面里盖多次（`scripts/wash-lily-veil.py`） | **cover, once, multiply**。已是「一张里复制很多次」的平面。禁止再 tile 这张平面 |
+| `cream-lily-motif.webp` | 同一洗法的单朵 | `PaperTexture` 的 `image` 输入，或以后做稀疏 motif。不要把霓虹原图当 wallpaper |
 | `cream-perlin.webp` | 官网 `perlin-noise` 抽成奶油斑 | tile 细纤维 |
 
 `stills/`（目录，不铺字）
 
-`paper-texture` / `perlin-noise` / `simplex-noise` / `neuro-noise` / `grain-gradient` / `static-mesh` / `waves` / `warp` / `voronoi` / `mesh-gradient` / `god-rays` / `spiral` / `flowers`
+`paper-texture` / `perlin-noise` / `simplex-noise` / `neuro-noise` / `grain-gradient` / `static-mesh` / `waves` / `warp` / `voronoi` / `mesh-gradient` / `god-rays` / `spiral` / `flowers` / `liz-lily-source`
 
-`flowers.webp` 是 `PaperTexture` 的饱和橙输入样图，不是底，不当 wallpaper。floral-shadow paper 用 `veils/cream-fiber.webp` cover 一次。
+`flowers.webp` 是 `PaperTexture` 的饱和橙输入样图，不是底，不当 wallpaper。`liz-lily-source.webp` 是 2026-08-18 霓虹原图，同样不当底。floral-shadow paper 用 `veils/cream-fiber.webp` 或 `veils/cream-lily.webp` cover 一次。
 
 ## 活的 shader
 
@@ -137,7 +139,7 @@ Shader 层保持 `pointer-events: none`，在 `window` 上听 `pointermove` / `c
 - 个人站用出海云那盘饱和蓝紫
 - 个人站默认用预算 `INK_MESH_COLORS`（灰墨叠暖纸会隐形，不是 veil 的错）
 - 个人站首页叠第二套 WebGL（`HomeAmbientBg` / 额外 PaperTexture / 讲义 3.4s jitter）
-- tile `cream-fiber.webp`（会读成菊花墙纸）
-- 把 `stills/flowers.webp` 当 wallpaper
+- tile `cream-fiber.webp` / `cream-lily.webp`（平面里已经是多朵；再 tile 成墙纸）
+- 把 `stills/flowers.webp` 或 `stills/liz-lily-source.webp` 当 wallpaper
 - 给 shader 开 `pointer-events: auto`
 - 每个后台表格页都铺 mesh
