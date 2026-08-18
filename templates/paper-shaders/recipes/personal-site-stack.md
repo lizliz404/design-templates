@@ -22,23 +22,24 @@
 - 透明度 **0.08–0.10**（0.05–0.06 低于感知。讲义那套 0.06/0.05 是讲义，不是首页）
 - 可选：`tex-drift` 90s。不要上讲义的 3.4s `tex-grain` jitter
 
-## Layer C — cream-fiber floral-shadow still（cover, not tile）
+## Layer C — floral-shadow still（cover, not tile）
 
-- 图：`veils/cream-fiber.webp`（cosmos 影）或 `veils/cream-lily.webp`（Liz 百合洗成墨影、一张平面里盖多次）
+- **lizliz live**：`veils/cream-lily.webp` **cover**（Liz 百合洗成墨影、一张平面里 9 stamps）。不要 tile。
+- cosmos 选项：`veils/cream-fiber.webp` 仍可用，不是 live 默认。
 - **一次**：`background-size: cover` · `background-repeat: no-repeat` · `background-position: center` · `multiply`
 - 不要 tile `cream-lily.webp`：平面里已经复制过了。霓虹原图在 `stills/liz-lily-source.webp`，不当底。单朵 motif 在 `veils/cream-lily-motif.webp`（给 PaperTexture `image=`）
-- 透明度 **0.16–0.22**（0.06 在 1280 截图里看不见，Liz 会以为纸没上）
-- 暗色：`soft-light`，感知上同等
+- 透明度：lily ink 比 cosmos 深。live **0.14** light / **0.18** dark（区间 0.12–0.16 light）。cosmos cream-fiber 仍是 **0.16–0.22**。0.06 在 1280 截图里看不见，Liz 会以为纸没上
+- 暗色：`soft-light`，感知上同等（ink stamps on dark）
 - 可静止，或 90s 只漂几 px；漂的时候仍必须 cover，禁止 tile
 - `pointer-events: none`
 - `prefers-reduced-motion`：mesh 卸掉，Layer C 还在。那才是他们要的纸。
 
-Standing rule「never tile cream-fiber」= 不要 `background-repeat` 成 960px 砖（读成菊花墙纸）。**用一次、cover、multiply** 才是 intended still。
+Standing rule「never tile cream-fiber / cream-lily」= 不要 `background-repeat` 成 960px 砖。**用一次、cover、multiply** 才是 intended still。
 
 ## 禁止
 
 - 第二套 WebGL：`PaperTexture` / `PerlinNoise` / `HomeAmbientBg` canvas
-- tile `cream-fiber.webp`
+- tile `cream-fiber.webp` / `cream-lily.webp`
 - 把 `stills/flowers.webp` 当 wallpaper
 - 讲义 `tex-grain` 3.4s
 

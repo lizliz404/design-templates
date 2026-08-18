@@ -24,7 +24,7 @@ tdimino 那份 `paper-design` skill 是 Paper 桌面软件的 MCP，会锁画板
 |---|---|---|---|
 | 讲义 / 长页 / 16:9 deck | **Deck veil**：双层静图 + `tex-grain` | `lizliz.xyz/qiancheng-yusuan-workbook-…` | 只铺一层 0.04 的纸还说「有质感」 |
 | 登录左栏 / 品牌半屏 | **Login mesh**：`MeshGradient` 50% 叠在实色底上 | 出海云 `/login`、预算系统 `/login` | 后台表格页也挂 mesh；个人站套预算墨灰盘 |
-| 个人站 / 长盯的首页 | **个人站 rust/paper 盘** + mesh foam + cream-fiber **cover** still + cream-perlin tile；指针只搅 swirl/distortion | lizliz.xyz 首页 · `recipes/personal-site-stack.md` | 预算 `INK_MESH_COLORS` 当个人站默认；出海云蓝紫；tile cream-fiber；第二套 WebGL |
+| 个人站 / 长盯的首页 | **个人站 rust/paper 盘** + mesh foam + cream-lily **cover** still + cream-perlin tile；指针只搅 swirl/distortion | lizliz.xyz 首页 · `recipes/personal-site-stack.md` | 预算 `INK_MESH_COLORS` 当个人站默认；出海云蓝紫；tile cream-fiber / cream-lily；第二套 WebGL |
 | 只要一张纸 | 静图 veil，`veils/` | — | 把 `stills/` 彩色样张当底 |
 
 ## 1. Deck veil（千成讲义）
@@ -75,7 +75,7 @@ speed={reduced ? 0 : 0.36}
 
 1. **Layer A** `MeshGradient`：`LIZLIZ_MESH_COLORS`（纸 → rust → 墨），`grainMixer` / `grainOverlay`，**`speed={0.36}`**。mesh 自己滚。色团 + 细颗粒 + hover/click。
 2. **Layer B** `cream-perlin.webp` 细纤维：tile，`multiply`，透明度 **0.08–0.10**（0.05–0.06 看不见）。可选 90s drift。不要上讲义 3.4s `tex-grain`。
-3. **Layer C** `cream-fiber.webp` floral-shadow paper still：`background-size: cover`，`no-repeat`，居中，`multiply`，透明度 **0.16–0.22**（0.06 在 1280 截图里看不见）。用一次，不要 tile。可选 90s 漂几 px，仍必须 cover。
+3. **Layer C** floral-shadow paper still：`background-size: cover`，`no-repeat`，居中，`multiply`。lizliz **live = `cream-lily.webp` cover**（9 stamps already；ink 比 cosmos 深，透明度从 **0.12–0.16** 起，暗色 soft-light **~0.18**）。`cream-fiber.webp` 仍是 cosmos 选项（**0.16–0.22**）。0.06 在 1280 截图里看不见。用一次，不要 tile。可选 90s 漂几 px，仍必须 cover。
 
 不要第二套 WebGL（`HomeAmbientBg` canvas、额外 `PaperTexture`、讲义 jitter）。「冲突」只 = 两套 WebGL 大气叠在一起，或把 cream-fiber / `stills/flowers.webp` tile 成墙纸。
 
