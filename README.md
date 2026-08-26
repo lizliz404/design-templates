@@ -1,138 +1,84 @@
 # Design Templates
 
-Reusable design assets for shipping real UI — DESIGN.md systems, landing templates, AI-interface primitives, micro-patterns, paper shaders, and craft checklists. One zip. Unzip and reuse. No installers, no frameworks, no signup.
+一组可复用的设计资产：已落地页面的 `DESIGN.md`、产品与 Agent 界面原语、微模式、纸张质感配方，以及可执行的 craft / IA 清单。它不是灵感图库；先按任务选一条路由，再只取需要的机制。
 
-Also published on **[lizliz.xyz/templates](https://lizliz.xyz/templates)** — same pack, same zip.
+在线版本：[lizliz.xyz/templates](https://lizliz.xyz/templates)；仓库：[lizliz404/design-templates](https://github.com/lizliz404/design-templates)。
 
-## What This Does
+## What’s Inside
 
-**Design templates are production leftovers you can steal from.** Instead of reinventing a SaaS landing tone, an agent chat panel, a dense table grammar, or a deck paper veil every project, you open a folder that already shipped once, read its `DESIGN.md` / craft note, and lift what fits.
+`templates/README.md` 是唯一的 pack 主路由：资产归属、增删改规则、选择记录和验证要求都以它为准。这里和 `SKILL.md` 只链接到它，避免维护多份清单。
 
-This pack is extracted from real lizliz.xyz work and public design OSINT — not moodboards, not Dribbble dumps. Every item is self-contained: open the folder, read the index, copy the mechanism.
+### 如何使用这个 pack
 
-## What's Inside
+从 [pack 主路由](templates/README.md) 开始：先写 Selection record，再读取一个最小匹配资产，并用真实界面截图验证。
 
-| Area | What you get |
-|---|---|
-| **`templates/design/`** | Full-page / system studies with DESIGN.md, evidence, and often code or DOM skeletons |
-| **`templates/ui-patterns/`** | Named micro-patterns + portable snippets (footer, icons, onboarding, data-dense craft…) |
-| **Craft docs** | High-leverage checklist, IA · user journey, typography, color/surface, i18n switcher |
-| **`templates/paper-shaders/`** | Paper / mesh recipes, veils, stills — deck and login atmosphere without reinventing shaders |
-| **`templates/inspiration-sources.md`** | Job-routed gallery bookmarks (scan, don't mirror whole sites) |
-| **`templates/decks/`** | Visual-economy ladder + vendored zarazhangrui HTML deck packs (upstream sync) |
-| **`templates-pack.zip`** | One-shot download of the whole `templates/` tree |
+### 如何添加、修改、删除
 
-### Design systems & landings
+维护约定和唯一主路由行都在 [pack 主路由](templates/README.md)；不要为同一批资产再建第二份索引。
 
-- **Beautiful UI · AI interfaces** — 19 agent primitives (thinking, streaming, approval, tool chips, dense tables…) studied from [beautifului.dev](https://www.beautifului.dev/) · `templates/design/beautiful-ui-ai-interfaces/`
-- **Lead Radar** — editorial SaaS landing (warm paper, honest copy) · `templates/design/lead-radar/`
-- **Liz personal compact** — compact personal / landing variants · `templates/design/liz-personal-compact/`
-- **uhoh-inspired service entry** — monochrome comic handoff page · `templates/design/uhoh-inspired-service-entry/`
-- **Hanzilla personal site** — warm editorial personal-site study · `templates/design/hanzilla-personal-site/`
-- **Vercel Geist notes** — tone notes for Vercel-adjacent UI · `templates/design/vercel-geist.md`
+### 产品任务
 
-### UI micro-patterns & craft
+B2B 管理台、Agent UI、onboarding、营销 landing、个人站、服务承接页、产品搜索和图标系统都从 [pack 主路由](templates/README.md) 按任务进入。
 
-- **Data-dense B2B app craft** — tables, filters, forms, stop-ship gates
-- **Search craft** — Search vs Filter vs Cmd+K; engines by product type (not VitePress-only)
-- **Icon system craft** — Lucide/Iconify selection + optical discipline (not a custom font kit)
-- **SaaS onboarding two-phase** — aha first, then production setup / usage
-- **Footer craft** — long-landing footer skeletons
-- **Premium one-pager** · **typing placeholder** · **atomic island chrome**
-- **IA · user journey** — object model → nav projection contract (`docs/IA.md` skeleton)
-- **High-leverage craft checklist** — cheap mechanisms with expensive results
-- **Paper Shaders** — deck veil, login mesh, pointer-reactive recipes
-- **Decks** — zarazhangrui `frontend-slides` + `beautiful-html-templates` (vendored under `templates/decks/upstream/`); **visual-economy** ladder (ASCII/Mermaid first)
+### Agent / motion chrome
 
-Start at **`templates/README.md`** — task router: “what am I building?” → which folder to open.
+Beautiful UI 的 Agent 原语、thinking orb、Paper Shaders、ThreeUI hero 和 UI SFX 在 [pack 主路由](templates/README.md) 相邻展示：它们服务同一类 AI surface chrome，但保留各自的文件夹、来源和复用边界。
 
-## Key Features
+### Decks / diagrams
 
-- **Unzip and use** — clone the repo or grab `templates-pack.zip`; no npm install required to read and copy.
-- **Production-tested** — lifted from shipped pages and internal tools, then cleaned for reuse.
-- **Mechanism over skin** — DESIGN.md tokens, craft gates, and acceptance checks beat “make it pretty.”
-- **Agent-friendly** — pack index + per-item README/EVIDENCE so coding agents can load the right file instead of guessing.
-- **Free, MIT** — use it, modify it, share it.
+演示 deck、结构图和说明图先走 visual-economy，再按需进入 [pack 主路由](templates/README.md) 中的 deck / shader 路由。
 
-## Getting It
+### Craft / tokens
+
+高杠杆检查、字体、颜色与表面、i18n、IA / user journey 的入口在 [pack 主路由](templates/README.md)。
+
+### 灵感书签
+
+[inspiration-sources.md](templates/inspiration-sources.md) 只做任务化书签；查完回到 [pack 主路由](templates/README.md) 选资产，不镜像外站。
+
+### 已知缺口
+
+完整的 B2B 后台模板、可直接安装的表格组件，以及跨静态站 / React landing 的统一规则仍是明确缺口，详见 [pack 主路由](templates/README.md)。
+
+## 获取与使用
 
 ```bash
-# One shot — zip from the site
 curl -LO https://lizliz.xyz/templates-pack.zip
 unzip templates-pack.zip
 
-# Or clone (this repo IS the pack)
 git clone https://github.com/lizliz404/design-templates.git
 cd design-templates
-git pull   # later updates
-```
-
-Browse online: **[lizliz.xyz/templates](https://lizliz.xyz/templates)** · zip: **[templates-pack.zip](https://lizliz.xyz/templates-pack.zip)**
-
-## Usage
-
-Point yourself or your agent at the pack index, then open one folder:
-
-```text
-Open design-templates/templates/README.md — I need a B2B dense admin table grammar and an agent approval card. Use beautiful-ui-ai-interfaces + data-dense-app-craft.
 ```
 
 ```text
-用 design-templates 的 ia-user-journey：先写 docs/IA.md 对象链和调度页，再改侧栏。禁止直接画导航。
+Open design-templates/templates/README.md — I need an agent approval card and a dense B2B table grammar.
 ```
 
 ```text
-Swap deck paper using templates/paper-shaders — dual-layer veil recipe, not a single 0.04 texture.
+用 design-templates/templates/README.md 先选任务路由，再打开一个对应资产；不要从空白页面开始拼风格。
 ```
 
-Rules of thumb:
-
-1. Read `templates/README.md` task table first.  
-2. Prefer the smallest folder that matches the job.  
-3. Adapt tokens to the project DESIGN.md — don't graft foreign chrome wholesale.  
-4. Screenshots / acceptance beats “build passed.”
-
-## How The Pack Is Structured
+## 结构
 
 ```text
 design-templates/
-  README.md                 ← you are here (public front door)
-  SKILL.md                  ← optional agent pointer into the pack
-  templates-pack.zip        ← full templates/ snapshot
+  README.md                 ← 对外入口；链接到唯一主路由
+  SKILL.md                  ← Agent 入口；链接到唯一主路由
   templates/
-    README.md               ← task router / pack index
-    design/                 ← systems + landing studies
-    ui-patterns/            ← micro-patterns + snippets
-    paper-shaders/          ← veils, stills, recipes
-    decks/                  ← visual-economy + zarazhangrui upstream decks
-    *.md                    ← craft checklists, IA, type, color, i18n, inspiration
-  scripts/
-    sync.sh                 ← maintainers: publish zip + site mirror
-    sync-upstream-decks.sh  ← pull zarazhangrui → decks/upstream + overlays
+    README.md               ← 唯一 pack 主路由与 CRUD 约定
+    design/                 ← 页面 / 系统研究
+    ui-patterns/            ← 微模式
+    paper-shaders/          ← 氛围配方
+    decks/                  ← visual-economy 与上游 deck
 ```
 
-Progressive disclosure: start at the pack index → open one item's README/DESIGN → pull snippets only when needed.
+## 原则
 
-## Philosophy
-
-1. **Shipped work teaches faster than theory.** These folders are leftovers from real launches.  
-2. **IA before chrome.** Navigation is a projection of objects and tasks — see `ia-user-journey.md`.  
-3. **Vibes are not verification.** Craft docs ask for screenshots, tree tests, and usage milestones.  
-4. **Unzip and use is the point.** If you need a ceremony to start, something is wrong.  
-5. **Don't mirror the internet.** Inspiration bookmarks point out; the pack stays small and owned.  
-6. **Visual economy.** Explain with prose → ASCII → Mermaid before HTML decks or heavy frontend.
-
-## Related
-
-- Site hub: [lizliz.xyz/templates](https://lizliz.xyz/templates)  
-- Sibling skill packs: [lizliz404/agent-skills](https://github.com/lizliz404/agent-skills) · [lizliz.xyz/skills](https://lizliz.xyz/skills)  
-- Example AI UI reference studied in-pack: [beautifului.dev](https://www.beautifului.dev/)
-- Deck upstream (vendored): [frontend-slides](https://github.com/zarazhangrui/frontend-slides) · [beautiful-html-templates](https://github.com/zarazhangrui/beautiful-html-templates) under `templates/decks/upstream/`
-
-## Credits
-
-Created by [@lizliz404](https://x.com/lizliz404).  
-Deck packs originally by [@zarazhangrui](https://github.com/zarazhangrui) (MIT).
+1. 先选任务，再取机制；不要用无关模板硬套视觉。
+2. IA 先于 chrome；可复用机制先于单页皮肤。
+3. 构建通过不等于视觉验收；必须看关键状态和真实截图。
+4. 外部站点只作书签，不把互联网复制进 pack。
+5. 说明优先级是 prose → ASCII → Mermaid → deck / heavy frontend。
 
 ## License
 

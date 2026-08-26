@@ -1,7 +1,8 @@
 ---
 name: icon-system-craft
 description: >-
-  Icon selection and optical discipline for product UI (Iconify/Lucide default).
+  Two-track icon craft for product UI: Track A in-app chrome (production
+  line set + optical discipline); Track B brand/favicon is not this file.
   Distilled from Marek Minor / Minor Adventures “The making of Cursor's icons”
   (2026-07) plus Liz stack conventions. Not an icon asset pack.
 ---
@@ -12,25 +13,60 @@ description: >-
 
 | | |
 |---|---|
-| **What** | 产品图标的**选型、尺寸、光学一致性、禁止事项**。默认栈 = Iconify + Lucide（见全局 U-R13）；缺的是纪律，不是再画 600 个。 |
-| **Why** | 散装图标会让界面「像拼盘」：线宽不齐、方框填满、斜线方向乱跳。系统感来自规则，不是来自换库。 |
+| **What** | 产品内 **chrome 图标**（toolbar / nav / empty-state）的选型、尺寸、光学一致性、禁止事项。缺的是纪律，不是再画 600 个。 |
+| **Why** | Lucide / Heroicons / Iconify 到处都是（shadcn + Tailwind），会显得「默认 SaaS」。系统感来自规则 + 同档里更有味道的线标，不是来自换库圣战。 |
 | **Who** | 工具面 / agent UI / SaaS 后台 / 个人站导航。 |
-| **How to use** | 新功能选 icon 前过 §2–§4；整站换库前过 §6。需要产品专属概念（agent / 并行线程 / Bugbot 类）再考虑定制，不要默认定制。 |
-| **Not this** | 不是让你 fork Cursor 图标；不是替换 Lucide 的命令；不是品牌 logo 指南（logo → Genre-B brief）。 |
-| **Source** | [The making of Cursor's icons — Minor Adventures](https://www.minoradventures.co/blog/the-making-of-cursors-icons)（Marek Minor, Jul 2026）。机制提炼，非逐字复制。 |
+| **How to use** | 先分 Track A / B；chrome 过 §0–§4；整站换库前过 §6。需要产品专属概念再考虑定制，不要默认定制。 |
+| **Not this** | 不是 favicon / wordmark / OG 指南；不是让现有 qiancheng-yusuan / chuhai-cloud 换库；不是 fork Cursor 图标；不是 Imagine prompt 手册。 |
+| **Source** | [The making of Cursor's icons — Minor Adventures](https://www.minoradventures.co/blog/the-making-of-cursors-icons)（Marek Minor, Jul 2026）。**只服务 Track A 光学/纪律**，非逐字复制。 |
 
 ---
 
-## 1. Liz 默认栈（先执行，再谈定制）
+## 0. Two tracks（先分轨，再选库）
 
-1. **库**：Iconify 拉 **Lucide** 为主；语言切换用 Heroicons `LanguageIcon` inline（U-R13），**不要换字形**，只调 stroke。
-2. **描边**：产品 UI 默认 **1.5–2**；游戏/像素字体旁可到 **2.5 + round cap/join**。全站统一一个 stroke 档，禁止一页混 1 / 1.5 / 2.5。
+| Track | Job | Default |
+|---|---|---|
+| **A. Chrome**（in-app tool icons） | Quiet, `currentColor`, one stroke, one concept one glyph | 一套生产级线标 + 纪律。toolbar / nav / empty-state chrome。 |
+| **B. Brand / favicon / OG mark** | IP, recognition, tab icon | Custom SVG 或外部生图。**禁止**把 chrome 线标放大当 favicon。 |
+
+Quiet chrome vs loud brand。Cursor making-of = Track A 光学源，不要偷它的场面去做 logo。
+
+**Iconify is a pipe, not a look.** 它只负责取 glyph。Heroicons = Tailwind 家徽；Lucide = Feather fork / shadcn 默认。所以它们看起来「正常」——到处都是，不是因为它们差。
+
+### Same-class, more character（仍 MIT/open，仍产品 UI）
+
+同档 = 已 ship 的生产级线标，不是小众实验集。
+
+- **[Radix Icons](https://www.radix-ui.com/icons)** — 15×15，WorkOS/Modulz，dense tools，非常安静，16px 档比 Lucide 更「被设计过」。新 B2B chrome 要少一点 starter 味，首选。
+- **[Phosphor](https://phosphoricons.com/)** — 六档字重，metaphor 更全，略更 authored。导航选中需要 regular+bold 时用。
+- **[Iconoir](https://iconoir.com/)** — 更手绘一点，仍是系统。
+- **[Tabler](https://tabler.io/icons)** — 体量巨大，比 Lucide 多一点个性，仍偏 generic-adjacent。
+
+**不要：** Hugeicons / Solar 3D、emoji、国旗当语言、同一 toolbar 混两套线标。
+
+### Liz default（本手册之后）
+
+- **已上线 OA**（qiancheng-yusuan / chuhai-cloud）：**继续 Lucide**。优化 stroke + 概念表，**不要迁库**。
+- **新内部工具**想少一点「每个 shadcn starter」：优先 **Radix Icons**（dense）或 **Phosphor**（字重）。语言切换仍用 Heroicons `LanguageIcon`（U-R13）。
+- **个人站**：Heroicons 即可（已经是家徽）。
+- **永远不要**把 chrome 集当 favicon。
+
+### Track B stub
+
+本仓库**没有** Genre-B 文件。品牌 mark = 手绘 SVG 或仓库外的 Imagine / brief；**不要在本文件写 Imagine prompt**。路由：pack README「品牌/OG/生图」行 · [`inspiration-sources.md`](../inspiration-sources.md) 的 Logo / OG 行。Quiet chrome 与 loud brand 分轨。
+
+---
+
+## 1. Chrome 执行栈（先执行，再谈定制）
+
+1. **库**：按 §0 选**一套**线标，写进 DESIGN.md。Iconify 若已在项目里，只当管道，不当风格。语言切换用 Heroicons `LanguageIcon` inline（U-R13），**不要换字形**，只调 stroke / 字重。
+2. **描边 / 字重**：可调 stroke 的集（Lucide / Tabler / Iconoir）产品 UI 默认 **1.5–2**；游戏/像素字体旁可到 **2.5 + round cap/join**。Phosphor 用 **regular** 作 chrome，选中可用 **bold**；Radix 按 15 光学，不要硬调 stroke。全站统一一档，禁止一页混 1 / 1.5 / 2.5 或 regular+duotone 乱炖。
 3. **尺寸档**（光学尺寸思维，不是单一 SVG 瞎放大）：
 
 | 用途 | 渲染边长 | 备注 |
 |---|---|---|
 | 表格内联 / meta | 14–16px | 与 12.5–13px 正文并排 |
-| 默认控件 / 导航 | 16–18px | 主档 |
+| 默认控件 / 导航 | 16–18px | 主档；Radix 按 15 光学贴近此档 |
 | 空状态 / 营销强调 | 20–24px | 可稍加细节；勿把 16 档直接 scale×2 当「大图标」却不换视觉重量 |
 | ≥28px | 少用 | 更像 illustration；考虑插画或品牌 mark，而不是线标放大 |
 
@@ -48,14 +84,14 @@ Cursor 原作对「双光学尺寸」的论证：16@1.25 stroke 适合 12–20�
 4. **斜线/取消是平切**，不要「投下的假深度阴影」。
 5. **自然比例**：高的物体保持高（pencil），宽的保持宽（banknote）。把一切塞进正方形再描边 = 玩具感（toy look）来源。
 6. **方向跟品牌指针**：若产品有明确对角线（logo / pointer），可走同一方向；**slash / ban** 走反向。没有品牌指针时：统一「右上为前进」，slash 左上→右下，并写进 DESIGN.md 一句。
-7. **圆角「刚好够」**：不要几何到冷，不要泡到 sticky-note。Lucide 默认 round 通常可用；若项目改 `stroke-linecap`，全局一致。
+7. **圆角「刚好够」**：不要几何到冷，不要泡到 sticky-note。所选集的默认 cap/join 通常可用；若项目改 `stroke-linecap`，全局一致。
 8. **Filled vs Outline**：导航选中态可用 filled/加重；默认 chrome 用 outline。不要同一层级随机混。
 
 ---
 
 ## 3. 光学修正（定制或审稿时）
 
-自绘或改 path 时才深挖；用 Lucide 时用它们检查「并排是否违和」：
+自绘或改 path 时才深挖；用现成线标时用它们检查「并排是否违和」：
 
 | 问题 | 做法 |
 |---|---|
@@ -81,12 +117,13 @@ Cursor 原作对「双光学尺寸」的论证：16@1.25 stroke 适合 12–20�
 
 ## 5. 验收（贴图标后必做）
 
-- [ ] 同一屏 stroke 档位只有一种  
+- [ ] 同一屏 stroke / 字重档位只有一种  
 - [ ] 同一概念未出现第二枚 glyph  
 - [ ] 14/16/24 三档并排不「一头细一头粗」  
 - [ ] 深/浅主题下对比度足够（灰 on 灰失败 = 不及格）  
 - [ ] 窄屏导航 icon+label 不溢出；无 label 时有 aria  
-- [ ] 无 emoji 充当产品 icon（U-R13）
+- [ ] 无 emoji 充当产品 icon（U-R13）  
+- [ ] 未把 chrome 线标放大当 favicon / OG mark  
 
 ---
 
@@ -94,10 +131,11 @@ Cursor 原作对「双光学尺寸」的论证：16@1.25 stroke 适合 12–20�
 
 | 信号 | 动作 |
 |---|---|
-| Lucide 覆盖 95%+ 常规 chrome | **停止**，只维护概念表 |
+| 所选线标集覆盖 95%+ 常规 chrome | **停止**，只维护概念表 |
 | 反复出现产品专有对象（并行 agent、计费 compute、行业器械） | 先组合现有 icon + 文案；仍不够再定制 1 个 metaphor |
 | 继承旧库 codepoint 必须无断替换 | 才需要 Cursor 级 font + migration dashboard（多数 Liz 项目 **不需要**） |
-| 品牌 logo / 文件类型色标 | 走品牌资产，不进 Lucide 混排 |
+| 品牌 logo / 文件类型色标 | 走 Track B 品牌资产，不进 chrome 线标混排 |
+| 已上线产品「Lucide 到处都是」的不适 | **不迁库**。先修概念表与 stroke；新项目再选 Radix / Phosphor |
 
 配套交付若真做定制集：Explorations（尝试）/ Overviews（审计 recurring parts）/ Icons（终稿组件）三层；外加「概念→icon」唯一表。多数项目一张 markdown 概念表就够。
 
@@ -110,13 +148,15 @@ Cursor 原作对「双光学尺寸」的论证：16@1.25 stroke 适合 12–20�
 - 用国旗、emoji、Lottie 代替系统 icon  
 - 16px 路径直接 `scale(2)` 当 empty-state 主视觉  
 - 无概念表导致 settings 三兄弟并存  
-- 为「有自己的 icon font」而启动一年工程（除非你是 Cursor）
+- 为「有自己的 icon font」而启动一年工程（除非你是 Cursor）  
+- 逼已上线 OA 从 Lucide 迁到另一套「更有味道」的线标  
+- 把 Lucide / Radix / Phosphor 当 favicon 或 wordmark  
 
 ---
 
 ## 8. 开火路径（一杯咖啡）
 
-1. 打开项目 DESIGN.md，写死：`icon stack = Iconify/Lucide`、`stroke = X`、`sizes = 16/18/24`。  
+1. 打开项目 DESIGN.md，写死：`icon track = A`、`icon stack = <Radix | Phosphor | Lucide-keep | Heroicons>`、`stroke/weight = X`、`sizes = 16/18/24`。已上线 Lucide **填 Lucide-keep**。  
 2. 建 `docs/icon-concepts.md`：10–30 行 `概念 | icon名 | 备注`。  
 3. 扫一遍主导航 + 表格行操作，杀掉重复概念。  
 4. 截图 1440 与 390 宽各一，看线重与对齐。  

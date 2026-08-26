@@ -1,10 +1,9 @@
 ﻿---
 name: design-templates
 description: >-
-  Reusable design template pack — DESIGN.md systems, landings, AI UI primitives,
-  micro-patterns, paper shaders, craft/IA checklists. Use when building landing
-  pages, personal sites, SaaS/admin UI, or applying Liz design conventions.
-  Canonical: https://github.com/lizliz404/design-templates · https://lizliz.xyz/templates
+  Reusable design template pack for product jobs, AI surface chrome, decks,
+  diagrams, and craft/IA checks. Canonical: https://github.com/lizliz404/design-templates
+  · https://lizliz.xyz/templates
 disable-model-invocation: true
 ---
 
@@ -12,35 +11,51 @@ disable-model-invocation: true
 
 Public repo: [lizliz404/design-templates](https://github.com/lizliz404/design-templates)  
 Site: [lizliz.xyz/templates](https://lizliz.xyz/templates)  
-Pack index: [templates/README.md](templates/README.md)
+唯一 pack 主路由：[templates/README.md](templates/README.md)
 
-## When to load
+## 何时加载
 
-- Building a landing page, personal site, or service entry page
-- Following a DESIGN.md visual system (`templates/design/*`)
-- AI / agent UI primitives (`templates/design/beautiful-ui-ai-interfaces/`)
-- UI micro-patterns (`templates/ui-patterns/`)
-- High-leverage craft checklist before shipping UI
-- Color/surface (no pure #FFF/#000 page fills) · typography · i18n lang switcher
-- Deck/long-page paper or login mesh (`templates/paper-shaders/`)
-- IA / user journey / default home / nav (`templates/ia-user-journey.md`)
+当任务涉及 B2B / Agent UI、onboarding、landing、个人站、服务入口、产品搜索、图标系统、deck / diagram，或设计 token / IA / i18n 工艺时加载。先读主路由，选择最小匹配资产；不要把本文件当作第二份资产索引。
 
 ## Key paths
 
-| Asset | Path |
-|-------|------|
-| Pack index (task router) | templates/README.md |
-| Craft checklist | templates/high-leverage-craft-checklist.md |
-| IA · user journey | templates/ia-user-journey.md |
-| Inspiration bookmarks | templates/inspiration-sources.md |
-| Typography | templates/design-typography-font-preferences.md |
-| Color & surfaces | templates/design-color-surface-preferences.md |
-| Paper Shaders | templates/paper-shaders/SKILL.md |
-| UI patterns | templates/ui-patterns/ |
-| Full page / system studies | templates/design/ |
-| One-shot zip | templates-pack.zip · https://lizliz.xyz/templates-pack.zip |
+### 如何使用这个 pack
 
-## Updates
+[Selection record 与验证约定](templates/README.md)
+
+### 如何添加、修改、删除
+
+[唯一主路由与 CRUD 约定](templates/README.md)
+
+### 产品任务
+
+[B2B admin、Agent UI、onboarding、landing、personal、service entry、search、icons](templates/README.md)
+
+### Agent / motion chrome
+
+[Beautiful UI primitives、thinking orb、Paper Shaders、ThreeUI hero、UI SFX](templates/README.md)
+
+### Decks / diagrams
+
+[visual-economy、deck templates 与 diagram routing](templates/README.md)
+
+### Craft / tokens
+
+[checklist、type、color、i18n、IA](templates/README.md)
+
+### 灵感书签
+
+[inspiration-sources.md](templates/inspiration-sources.md)
+
+### 已知缺口
+
+[当前缺口与回填规则](templates/README.md)
+
+### Sibling skill
+
+[landing-page-replication-v5 软路由](templates/sibling-routes.md) — 可测量营销 / WebGL 复刻走 agent-skills；本 pack 只提供 theater 资产。
+
+## 更新
 
 ```bash
 git clone https://github.com/lizliz404/design-templates.git
