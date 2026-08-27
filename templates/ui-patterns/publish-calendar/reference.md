@@ -115,7 +115,8 @@ type MonthRange = {
 
 - 壳层热键实装：`web/src/hooks/useShellHotkeys.ts` 于 window capture 阶段注册监听，处理器在 `web/src/lib/shellHotkeys.ts`；↑/↓ 与 ←/→ 两分支的目标守卫均已含 `[role="grid"]`（与 `[role="listbox"], [role="menu"], [role="combobox"]` 并列）。
 - 组件本体：`web/src/features/publish/calendar.tsx`（PublishCalendar，手写网格）；挂载点 `web/src/pages/PublishHub.tsx:8/:107` 发布子 tab。实装形态：固定六行 + 邻居月格可点跳月、点未来日直进新建（≈ POLICY 默认档）、状态点 presence 型。
-- 待清欠（v3 合同 vs 本实装的差距）：① 网格无 roving tabindex / onKeyDown——壳割让方向键后组件侧导航未接上，「割让必须成对交付」欠一半；② grid 直下平铺 button，缺 row 层；③ 今天格只有加粗主色号码无 ring，双通道偏弱；④ aria-label 计数挂在普通 div 且用 `+N` 偏移而非绝对计数，需迁到 button name 配方；⑤ **年月切换是原生 `<select>` 长列表（违反 2026-08-27 裁决，升大 label 点击展开宫格 picker）**；⑥ 观感停留在 shadcn 冷灰线框档（消费者判词「像十年前」），需按 Host profile 表整套 restyle 过一遍。
+- 待清欠（2026-08-27 晚间已按 v3 合同以最低复杂度结算，同日自查通过）：① roving tabindex 键盘导航 ✔（`data-day` 选择器 + 提交后 effect focus）；② row>gridcell>button 四层结构 ✔（态属性迁至 button）；③ 今天 ring vs 选中 wash 双通道 ✔；④ button name 完整配方 + 绝对计数（可视 >1 显示总数）✔；⑤ select 长列表替换为年月宫格 picker ✔（含外点/Esc 关闭）。遗留：⑥ Host profile 整体 restyle 仍待做——当前仍是 shadcn 冷灰线框档，只加了今天圆环这一处通道修复。
+- 结算时的两处实现档位记录：网格走**动态行数 + min-height 吸收**路线（非固定六行，同为合规解）；焦点跨月交接因变行下邻格可能不在 DOM，采用「pending target 跨 remount 交接」的 Base UI #4462 式方案而非六行 DOM 直落型——两条合同路线各自成立，此处自洽。
 
 ## Vendor 政策
 
