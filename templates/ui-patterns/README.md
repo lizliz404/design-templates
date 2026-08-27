@@ -8,6 +8,7 @@
 - **Icon system craft** → [`icon-system-craft.md`](./icon-system-craft.md)：Track A product chrome 的线重、尺寸与概念表；不是 favicon / wordmark / OG。
 - **Search craft** → [`search-craft.md`](./search-craft.md)：Search、Filter、Cmd+K 与按产品类型选引擎。
 - **SaaS onboarding two-phase** → [`saas-onboarding-two-phase.md`](./saas-onboarding-two-phase.md)：B2B / Agent 的 aha 之后才进入生产设置。
+- **Publish calendar** → [`publish-calendar/SKILL.md`](./publish-calendar/SKILL.md)：发布/排期月历的 anatomy、Aurora 奶油纸 token 映射与不与 shell hotkeys 冲突的键盘合同；页面级工作台，不是 date picker。
 
 ## Motion chrome
 
