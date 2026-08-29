@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Case 02 · Glass Ribbon — 60 plates</title>
+<style>
+  :root { color-scheme: light; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: #f2f3f6; color: #16181d;
+    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    overflow-x: hidden;
+  }
+  #stage { position: fixed; inset: 0; z-index: 0; display: block; touch-action: pan-y; cursor: grab; }
+  #stage.dragging { cursor: grabbing; }
+
+  /* ---- fixed nav (floating pill chrome) ---- */
+  nav {
+    position: fixed; top: 12px; left: 16px; right: 16px; z-index: 10;
+    display: flex; align-items: center; gap: 32px;
+    padding: 13px 24px; background: rgba(255,255,255,0.86);
+    backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+    border-radius: 16px;
+    border: 1px solid rgba(22,24,29,0.05);
+    box-shadow: 0 12px 32px rgba(22,24,29,0.07);
+  }
+  .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 17px; letter-spacing: -0.01em; }
+  .brand svg { display: block; }
+  .links { display: flex; gap: 26px; margin: 0 auto; }
+  .links a, .signin {
+    font-size: 14px; color: #2a2d34; text-decoration: none; pointer-events: auto;
+  }
+  .signin {
+    background: #16181d; color: #fff; padding: 9px 20px; border-radius: 999px; font-weight: 600;
+    border: 0; cursor: pointer;
+  }
+  @media (max-width: 760px) { .links { display: none; } }
+
+  /* ---- scrolling content over the fixed canvas ---- */
+  main { position: relative; z-index: 2; pointer-events: none; }
+  section { min-height: 100vh; padding: 0 6vw; display: flex; flex-direction: column; justify-content: center; }
+  #benefits { min-height: 220vh; justify-content: flex-start; padding-top: 22vh; }
+
+  .hero-tag { font-size: 15px; color: #7a7f8a; max-width: 300px; align-self: flex-end; text-align: right; line-height: 1.5; }
+  h1 {
+    margin-top: 24vh; font-size: clamp(52px, 8.6vw, 124px); font-weight: 700;
+    letter-spacing: -0.035em; line-height: 1.02; color: #16181d;
+  }
+  h1 em { font-family: Georgia, "Times New Roman", serif; font-style: italic; font-weight: 500; color: #5a4fe0; letter-spacing: -0.01em; }
+  .scrolldown {
+    position: absolute; bottom: 34px; left: 50%; transform: translateX(-50%);
+    font: 600 11px/1 "Cascadia Mono", Consolas, monospace; letter-spacing: 0.34em; color: #8a8f99;
+  }
+  .scrolldown::after { content: "↓"; display: block; text-align: center; margin-top: 10px; font-size: 14px; }
+
+  #benefits h2 { font-size: clamp(30px, 3.6vw, 52px); letter-spacing: -0.02em; max-width: 18ch; }
+  .row {
+    margin-top: 38vh; max-width: 620px;
+    opacity: 0; transform: translateY(34px); transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+  .row.on { opacity: 1; transform: none; }
+  .row .num { font: 600 12px/1 "Cascadia Mono", Consolas, monospace; letter-spacing: 0.3em; color: #5a4fe0; }
+  .row h3 { margin: 14px 0 10px; font-size: clamp(24px, 2.6vw, 38px); letter-spacing: -0.02em; }
+  .row p { color: #6d7280; font-size: 16px; line-height: 1.6; max-width: 46ch; }
+
+  #footer { justify-content: space-between; padding-bottom: 8vh; }
+  #footer .cta { font-size: clamp(34px, 4.6vw, 68px); letter-spacing: -0.03em; font-weight: 700; max-width: 14ch; }
+  #footer .cta a { pointer-events: auto; color: #5a4fe0; text-decoration: none; border-bottom: 2px solid currentColor; }
+  #footer .meta { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; font-size: 12px; color: #9298a3; letter-spacing: 0.08em; }
+
+  /* chrome captions for verification */
+  .cap {
+    position: fixed; z-index: 5; font: 500 10px/1.6 "Cascadia Mono", Consolas, monospace;
+    letter-spacing: 0.18em; color: rgba(22,24,29,0.5); user-select: none; pointer-events: none;
+  }
+  #cap-pose { left: 16px; bottom: 14px; }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .row { opacity: 1; transform: none; transition: none; }
+  }
+</style>
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+  }
+}
+</script>
+</head>
+<body>
+<canvas id="stage" aria-label="Sixty iridescent glass plates forming a ribbon that follows the page"></canvas>
+
+<nav>
+  <div class="brand">
+    <svg width="20" height="14" viewBox="0 0 20 14" fill="none" aria-hidden="true">
+      <path d="M1 13 L6 1 L10 9 L14 1 L19 13" stroke="#16181d" stroke-width="2.4" stroke-linejoin="round"/>
+    </svg>
+    Skein
+  </div>
+  <div class="links">
+    <a href="#benefits">Product</a><a href="#benefits">Studio</a><a href="#benefits">Process</a>
+    <a href="#footer">Journal</a><a href="#footer">Contact</a>
+  </div>
+  <button class="signin" type="button">Sign in</button>
+</nav>
+
+<main>
+  <section id="hero">
+    <p class="hero-tag">Bring clarity and craft to digital production</p>
+    <h1>Shape the pace<br>of <em>Making</em></h1>
+    <div class="scrolldown">SCROLL DOWN</div>
+  </section>
+
+  <section id="benefits">
+    <h2>One ribbon of work, from first sketch to shipped surface.</h2>
+    <div class="row"><div class="num">01 — PIPELINE</div><h3>Deterministic handoffs</h3><p>Every stage of production is versioned and reviewable, so nothing melts between design and deploy.</p></div>
+    <div class="row"><div class="num">02 — MATERIAL</div><h3>Glass-grade surfaces</h3><p>Real refraction, real dispersion — the interface keeps its physics under any lighting you throw at it.</p></div>
+    <div class="row"><div class="num">03 — TEMPO</div><h3>Scroll-shaped narrative</h3><p>The story of the product is told by distance, not by modal dialogs. Keep scrolling; the ribbon follows.</p></div>
+  </section>
+
+  <section id="footer">
+    <div class="cta">Ready when you are — <a href="mailto:studio@skein.example">start a project</a></div>
+    <div class="meta"><span>© 2026 SKEIN STUDIO</span><span>60 PLATES · THREE r170</span><span>SET IN SYSTEM SERIF + SANS</span></div>
+  </section>
+</main>
+
+<div class="cap" id="cap-pose">POSE · HERO</div>
+
+<script type="module">
+import * as THREE from 'three';
+import { RoundedBoxGeometry } from 'three/addons/geometries/RoundedBoxGeometry.js';
+
+/* ============================================================ TUNING */
+const T = {
+  N: 60,
+  plate: { w: 1.0, h: 2.1, d: 0.055, bevel: 0.07 },   // rounded-corner cards, real slab thickness
+  spine: { halfSpanX: 7.6, ampY: 1.65, freqY: 1.9, ampZ: 1.7, freqZ: 1.35 },
+  twist: 0.20,             // base roll per plate — the tail multiplies this into a coiled fan
+  rollRamp: { from: 0.22, gain: 3.2 }, // extra roll bunched into a radial right-end fan
+  breathe: { roll: 0.11, y: 0.10, speed: 0.45 },
+  cam: { fov: 40, z: 9.0 },
+  glass: {
+    transmission: 1.0, ior: 1.45, dispersion: 7.0, iridescence: 0.32, iridescenceIOR: 1.3,
+    roughness: 0.09, metalness: 0.0, thickness: 0.5, envIntensity: 1.25,
+  },
+  // pastel zoning read off the stills: periwinkle → milk → pink → blush → sky → rose tail
+  zones: [
+    { uMin: -1.01, att: '#96a8ff', dist: 2.6 },   // periwinkle head
+    { uMin: -0.48, att: '#f2ecfa', dist: 7.0 },   // milk
+    { uMin: -0.18, att: '#ff9fd0', dist: 2.4 },   // pink bloom (wider band — stills' hot core)
+    { uMin:  0.28, att: '#ffe6f8', dist: 5.5 },   // blush milk
+    { uMin:  0.62, att: '#7fc0ff', dist: 2.4 },   // sky coil
+    { uMin:  0.86, att: '#ffb1e2', dist: 2.8 },   // rose tail
+  ],
+  poses: [ // Hero diagonal → Benefits right vortex → Footer left
+    { pos: [ 0.0,  0.55,  0.0], rot: [ 0.18, -0.36, -0.46] },
+    { pos: [ 3.0,  1.05, -2.0], rot: [ 0.30, -1.12,  0.38] },
+    { pos: [-2.6,  1.10, -1.3], rot: [-0.20,  0.74,  0.52] },
+  ],
+  poseLambda: 4.5, dragGain: 0.005, inertiaDecay: 2.6, dragLambda: 8.0,
+  hoverLift: 0.38, hoverLambda: 8.0,
+  fog: [7.5, 17.0],
+  bg: 0xf2f3f6,
+};
+
+const REDUCED = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const damp = (cur, tgt, l, dt) => cur + (tgt - cur) * (1 - Math.exp(-l * dt));
+const smooth = (x) => x * x * (3 - 2 * x);
+
+function webglAvailable() {
+  try { const c = document.createElement('canvas'); return !!(c.getContext('webgl2') || c.getContext('webgl')); }
+  catch { return false; }
+}
+
+function build() {
+  const canvas = document.getElementById('stage');
+  const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: false, powerPreference: 'high-performance' });
+  renderer.setPixelRatio(Math.min(devicePixelRatio, 1.75));
+  renderer.setSize(innerWidth, innerHeight);
+  renderer.outputColorSpace = THREE.SRGBColorSpace;
+  renderer.toneMapping = THREE.ACESFilmicToneMapping;
+  renderer.toneMappingExposure = 1.0;
+
+  const scene = new THREE.Scene();
+  scene.background = new THREE.Color(T.bg);
+  scene.fog = new THREE.Fog(T.bg, T.fog[0], T.fog[1]);
+  const camera = new THREE.PerspectiveCamera(T.cam.fov, innerWidth / innerHeight, 0.1, 60);
+  camera.position.set(0, 0, T.cam.z);
+
+  // --- procedural HDR: cyan / magenta / violet emissive panels in a dim room → PMREM
+  const pmrem = new THREE.PMREMGenerator(renderer);
+  const envScene = new THREE.Scene();
+  envScene.add(new THREE.Mesh(
+    new THREE.BoxGeometry(14, 14, 14),
+    new THREE.MeshBasicMaterial({ color: 0x1c1f27, side: THREE.BackSide })
+  ));
+  const panel = (w, h, rgb, x, y, z) => {
+    const m = new THREE.Mesh(new THREE.PlaneGeometry(w, h),
+      new THREE.MeshBasicMaterial({ color: new THREE.Color(...rgb) }));
+    m.position.set(x, y, z); m.lookAt(0, 0, 0); envScene.add(m);
+  };
+  panel(5, 3, [0.6, 5.2, 6.4], -5, 3.5, 3);    // cyan
+  panel(5, 3, [5.6, 1.2, 4.2],  5, 1.5, 3);    // magenta
+  panel(4, 2.4, [2.6, 1.0, 5.4], 0, -4.5, 3);  // violet
+  panel(3, 1.2, [2.2, 2.2, 2.4], 0, 4.5, -3);  // faint white top-back for edge streaks
+  const envRT = pmrem.fromScene(envScene, 0.05);
+  scene.environment = envRT.texture;
+  pmrem.dispose();
+
+  // --- structure: poseGroup(scroll) → yawGroup(drag) → 60 plates
+  const poseGroup = new THREE.Group();
+  const yawGroup = new THREE.Group();
+  poseGroup.add(yawGroup);
+  scene.add(poseGroup);
+
+  // one physical material per color zone — attenuation tints each card's transmitted pastel
+  const zoneMats = T.zones.map((z) => new THREE.MeshPhysicalMaterial({
+    transmission: T.glass.transmission, ior: T.glass.ior, dispersion: T.glass.dispersion,
+    iridescence: T.glass.iridescence, iridescenceIOR: T.glass.iridescenceIOR,
+    roughness: T.glass.roughness, metalness: T.glass.metalness, thickness: T.glass.thickness,
+    envMapIntensity: T.glass.envIntensity,
+    attenuationColor: new THREE.Color(z.att), attenuationDistance: z.dist,
+    side: THREE.FrontSide,
+  }));
+  const zoneFor = (u) => { let k = 0; for (let i = 0; i < T.zones.length; i++) if (u >= T.zones[i].uMin) k = i; return k; };
+  const plateGeo = new RoundedBoxGeometry(T.plate.w, T.plate.h, T.plate.d, 3, T.plate.bevel);
+
+  const plates = [];
+  for (let i = 0; i < T.N; i++) {
+    const u = (i / (T.N - 1)) * 2 - 1;
+    const mesh = new THREE.Mesh(plateGeo, zoneMats[zoneFor(u)]);
+    yawGroup.add(mesh);
+    plates.push({ mesh, u, lift: 0, liftTarget: 0 });
+  }
+
+  // --- spine + orientation: tangent-aligned plates, rolled around their normal (accordion + spiral)
+  const spinePos = (u, t) => new THREE.Vector3(
+    u * T.spine.halfSpanX,
+    Math.sin(u * T.spine.freqY * Math.PI) * T.spine.ampY + Math.sin(t * T.breathe.speed + u * 3.0) * T.breathe.y,
+    -Math.cos(u * T.spine.freqZ * Math.PI) * T.spine.ampZ
+  );
+  const UP = new THREE.Vector3(0, 1, 0);
+  const _p = new THREE.Vector3(), _pa = new THREE.Vector3(), _pb = new THREE.Vector3();
+  const _tan = new THREE.Vector3(), _upv = new THREE.Vector3(), _nrm = new THREE.Vector3();
+  const _x = new THREE.Vector3(), _y = new THREE.Vector3(), _z = new THREE.Vector3();
+  const _m = new THREE.Matrix4();
+
+  function placePlate(pl, t) {
+    _pa.copy(spinePos(Math.max(-1, pl.u - 0.02), t));
+    _pb.copy(spinePos(Math.min(1, pl.u + 0.02), t));
+    _tan.subVectors(_pb, _pa).normalize();
+
+    // rolled normal: base accordion plus a tapering multiplier that coils the tail into a fan
+    const ramp = smooth(Math.max(0, (pl.u - T.rollRamp.from) / (1 - T.rollRamp.from)));
+    const roll = (pl.u * 0.5 + 0.5) * (T.N - 1) * T.twist * (1 + T.rollRamp.gain * ramp) + t * T.breathe.roll;
+    _upv.copy(UP).addScaledVector(_tan, -UP.dot(_tan)).normalize();
+    _nrm.crossVectors(_tan, _upv).multiplyScalar(-1);
+    _z.copy(_upv).multiplyScalar(Math.cos(roll)).addScaledVector(_nrm, Math.sin(roll)).normalize();
+    _y.copy(_tan);
+    _x.crossVectors(_y, _z).normalize();
+    _z.crossVectors(_x, _y).normalize();
+    _m.makeBasis(_x, _y, _z);
+    pl.mesh.quaternion.setFromRotationMatrix(_m);
+
+    // hover lift along the plate's own normal
+    pl.lift = damp(pl.lift, pl.liftTarget, T.hoverLambda, dtGlobal);
+    _p.copy(spinePos(pl.u, t)).addScaledVector(_z, pl.lift);
+    pl.mesh.position.copy(_p);
+  }
+
+  /* ============================================================ INPUT */
+  const raycaster = new THREE.Raycaster();
+  const ndc = new THREE.Vector2();
+  const drag = { on: false, vx: 0, lx: 0, yaw: 0, tYaw: 0 };
+  let dtGlobal = 0.016;
+
+  canvas.addEventListener('pointerdown', (e) => {
+    if (REDUCED) return;
+    drag.on = true; drag.lx = e.clientX; drag.vx = 0;
+    canvas.classList.add('dragging');
+    canvas.setPointerCapture(e.pointerId);
+  });
+  canvas.addEventListener('pointermove', (e) => {
+    ndc.set((e.clientX / innerWidth) * 2 - 1, -(e.clientY / innerHeight) * 2 + 1);
+    if (drag.on) {
+      const dx = e.clientX - drag.lx;
+      drag.tYaw += dx * T.dragGain;
+      drag.vx = dx * T.dragGain;
+      drag.lx = e.clientX;
+    }
+    // hover: exactly ONE plate lifts
+    if (!REDUCED) {
+      raycaster.setFromCamera(ndc, camera);
+      const hit = raycaster.intersectObjects(yawGroup.children, false)[0];
+      const hitIdx = hit ? plates.findIndex((p) => p.mesh === hit.object) : -1;
+      plates.forEach((p, i) => { p.liftTarget = i === hitIdx ? T.hoverLift : 0; });
+    }
+  });
+  const endDrag = () => { drag.on = false; canvas.classList.remove('dragging'); };
+  canvas.addEventListener('pointerup', endDrag);
+  canvas.addEventListener('pointercancel', endDrag);
+
+  /* ============================================================ SCROLL POSES */
+  const poseCap = document.getElementById('cap-pose');
+  const POSE_NAMES = ['HERO', 'BENEFITS', 'FOOTER'];
+  const cur = {
+    px: T.poses[0].pos[0], py: T.poses[0].pos[1], pz: T.poses[0].pos[2],
+    rx: T.poses[0].rot[0], ry: T.poses[0].rot[1], rz: T.poses[0].rot[2],
+  };
+  function scrollProgress() {
+    const max = document.documentElement.scrollHeight - innerHeight;
+    return max > 0 ? Math.min(1, Math.max(0, scrollY / max)) : 0;
+  }
+  function poseTarget(p) {
+    const seg = p * (T.poses.length - 1);
+    const i = Math.min(T.poses.length - 2, Math.floor(seg));
+    const f = smooth(seg - i);
+    const a = T.poses[i], b = T.poses[i + 1];
+    const L = (x, y) => x + (y - x) * f;
+    return {
+      pos: [L(a.pos[0], b.pos[0]), L(a.pos[1], b.pos[1]), L(a.pos[2], b.pos[2])],
+      rot: [L(a.rot[0], b.rot[0]), L(a.rot[1], b.rot[1]), L(a.rot[2], b.rot[2])],
+      name: f < 0.5 ? POSE_NAMES[i] : POSE_NAMES[i + 1],
+    };
+  }
+
+  /* ============================================================ LOOP + LIFECYCLE */
+  const clock = new THREE.Clock();
+  document.addEventListener('visibilitychange', () => { if (!document.hidden) clock.getDelta(); });
+
+  function frame() {
+    const dt = Math.min(clock.getDelta(), 0.05);
+    dtGlobal = dt;
+    const t = clock.elapsedTime;
+
+    // scroll pose with easing
+    const tgt = poseTarget(scrollProgress());
+    cur.px = damp(cur.px, tgt.pos[0], T.poseLambda, dt);
+    cur.py = damp(cur.py, tgt.pos[1], T.poseLambda, dt);
+    cur.pz = damp(cur.pz, tgt.pos[2], T.poseLambda, dt);
+    cur.rx = damp(cur.rx, tgt.rot[0], T.poseLambda, dt);
+    cur.ry = damp(cur.ry, tgt.rot[1], T.poseLambda, dt);
+    cur.rz = damp(cur.rz, tgt.rot[2], T.poseLambda, dt);
+    poseGroup.position.set(cur.px, cur.py, cur.pz);
+    poseGroup.rotation.set(cur.rx, cur.ry, cur.rz);
+    if (POSE_NAMES) poseCap.textContent = 'POSE · ' + tgt.name;
+
+    // drag yaw + inertia
+    if (!drag.on) { drag.tYaw += drag.vx; drag.vx *= Math.exp(-T.inertiaDecay * dt); }
+    drag.yaw = damp(drag.yaw, drag.tYaw, T.dragLambda, dt);
+    yawGroup.rotation.y = drag.yaw;
+
+    // ribbon layout (breathing baked into placePlate)
+    for (const pl of plates) placePlate(pl, t);
+
+    renderer.render(scene, camera);
+    if (!REDUCED) requestAnimationFrame(frame);
+  }
+
+  addEventListener('resize', () => {
+    camera.aspect = innerWidth / innerHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize(innerWidth, innerHeight);
+    if (REDUCED) frame();
+  });
+  addEventListener('pagehide', () => {
+    plateGeo.dispose(); zoneMats.forEach((m) => m.dispose()); envRT.dispose(); renderer.dispose();
+  });
+
+  // benefits rows reveal on scroll
+  const io = new IntersectionObserver((es) => {
+    es.forEach((e) => { if (e.isIntersecting) e.target.classList.add('on'); });
+  }, { threshold: 0.35 });
+  document.querySelectorAll('.row').forEach((r) => io.observe(r));
+
+  frame();
+}
+
+if (webglAvailable()) build();
+else document.getElementById('cap-pose').textContent = 'WEBGL UNAVAILABLE — CONTENT ONLY';
+</script>
+</body>
+</html>

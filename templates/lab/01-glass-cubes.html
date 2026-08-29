@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Case 01 · Glass Cubes — Hazy Kingdom of Aurelia</title>
+<style>
+  :root { color-scheme: light; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { height: 100%; overflow: hidden; background: #f3f1ea; }
+  body { font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif; }
+  #stage { position: fixed; inset: 0; display: block; cursor: grab; }
+  #stage.dragging { cursor: grabbing; }
+  /* chrome captions live OUTSIDE the artboard texture — they are page chrome, not the poster */
+  .cap {
+    position: fixed; z-index: 5; font: 500 10px/1.6 "Cascadia Mono", "SFMono-Regular", Consolas, monospace;
+    letter-spacing: 0.18em; color: rgba(24, 28, 48, 0.55); user-select: none; pointer-events: none;
+  }
+  #cap-tl { top: 14px; left: 16px; }
+  #cap-br { bottom: 14px; right: 16px; text-align: right; }
+  #fallback { display: none; position: fixed; inset: 0; width: 100%; height: 100%; object-fit: contain; background: #f3f1ea; }
+</style>
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+  }
+}
+</script>
+</head>
+<body>
+<canvas id="stage" aria-label="Two glass cubes refracting a serif type poster"></canvas>
+<img id="fallback" alt="Static poster: Hazy Kingdom of Aurelia">
+<div class="cap" id="cap-tl">CASE 01 · GLASS CUBES — DRAG TO ROTATE</div>
+<div class="cap" id="cap-br">OX ALPHA BUILD · THREE r170</div>
+
+<script type="module">
+import * as THREE from 'three';
+import { RoundedBoxGeometry } from 'three/addons/geometries/RoundedBoxGeometry.js';
+
+/* ============================================================ TUNING */
+const T = {
+  planeH: 4.62,                           // world height of the portrait sheet (landscape cover-crops instead)
+  camFov: 34, camZ: 8.0,
+  parallaxCam: 0.30, parallaxType: 0.17, parallaxMist: 0.09, parallaxLambda: 5.0,
+  dragGain: 0.0042, inertiaDecay: 3.1, dragLambda: 9.0,
+  idleSpin: 0.055, idleBob: 0.045, idleBobSpeed: 0.5,
+  lineworkSpin: 0.02, breatheAmp: 0.004, breatheSpeed: 0.3,
+  mistOpacity: 0.34, mistSpeed: 0.07,
+  grainOpacity: 0.085, grainScale: 2.4,   // grain pixel size in CSS px
+  // wide screens get the COVER crop: a landscape type canvas scaled past the frame,
+  // so serif lines bleed off the edges like the printed sheet viewed up close
+  coverBreakpoint: 1.05,
+  // stills read: glass takes ~1/3 of the frame width and sits ON the serif rows
+  cubeA: { size: 2.30, pos: [-0.52, 0.94, 0.0],  rot: [0.48, 0.58, -0.08] },
+  cubeB: { size: 1.96, pos: [ 0.68, -0.84, 0.16], rot: [0.06, -0.26, 0.05] },
+  glass: {
+    transmission: 1.0, ior: 1.44, dispersion: 1.6, clearcoat: 1.0, clearcoatRoughness: 0.06,
+    roughness: 0.03, metalness: 0.0, thickness: 1.7, envIntensity: 1.0,
+    attenuationColor: 0xdfe9ff, attenuationDistance: 3.4,
+  },
+  ink: '#191d30', paper: '#f3f1ea', blue: '#2b50d8', faint: 'rgba(25,29,48,0.62)',
+};
+
+const REDUCED = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const damp = (cur, tgt, l, dt) => cur + (tgt - cur) * (1 - Math.exp(-l * dt));
+
+/* ============================================================ POSTER TEXTURE (offscreen 2D canvas)
+   All typography lives here so the glass transmission refracts REAL type.
+   Two sheets: the tall printed poster, and a landscape sheet sized so that
+   cover-cropping on wide screens makes the serif lines bleed past the frame
+   (the poster viewed close-up — not a contained picture-in-page). */
+const SHEETS = {
+  portrait:   { w: 2048, h: 2896 },
+  landscape:  { w: 2304, h: 1296 },
+};
+function paintPoster(mode) {
+  const land = mode === 'landscape';
+  const { w: W, h: H } = land ? SHEETS.landscape : SHEETS.portrait;
+  const cv = document.createElement('canvas');
+  cv.width = W; cv.height = H;
+  const c = cv.getContext('2d');
+
+  c.fillStyle = T.paper; c.fillRect(0, 0, W, H);
+
+  // faint registration cross grid — print-shop feel
+  c.strokeStyle = 'rgba(25,29,48,0.10)'; c.lineWidth = 2;
+  for (let x = 128; x < W; x += 256) for (let y = 128; y < H; y += 256) {
+    c.beginPath(); c.moveTo(x - 9, y); c.lineTo(x + 9, y); c.moveTo(x, y - 9); c.lineTo(x, y + 9); c.stroke();
+  }
+
+  const SERIF = 'Georgia, "Times New Roman", "Songti SC", serif';
+  const SANS = '"Segoe UI", "Helvetica Neue", Arial, sans-serif';
+  const KANA = '"Yu Gothic", "Hiragino Kaku Gothic ProN", "MS Gothic", "Noto Sans JP", sans-serif';
+
+  // crest badge (original geometric mark, not borrowed IP)
+  const badge = (x, y, s) => {
+    c.save(); c.translate(x, y); c.scale(s, s);
+    c.fillStyle = T.blue;
+    c.beginPath();
+    c.moveTo(-52, -58); c.lineTo(52, -58); c.lineTo(52, 30);
+    c.quadraticCurveTo(52, 78, 0, 104); c.quadraticCurveTo(-52, 78, -52, 30);
+    c.closePath(); c.fill();
+    c.strokeStyle = T.paper; c.lineWidth = 7;
+    c.beginPath(); c.moveTo(0, -30); c.lineTo(30, 8); c.lineTo(0, 52); c.lineTo(-30, 8); c.closePath(); c.stroke();
+    c.beginPath(); c.moveTo(0, -30); c.lineTo(0, 52); c.stroke();
+    c.restore();
+  };
+
+  if (!land) {
+    // ---- tall printed sheet (mobile / portrait windows) ----
+    c.strokeStyle = T.blue; c.lineWidth = 3;
+    c.beginPath(); c.arc(W * 0.36, H * 0.40, W * 0.335, 0, Math.PI * 2); c.stroke();
+    c.beginPath(); c.arc(W * 0.78, H * 0.68, W * 0.16, 0, Math.PI * 2); c.stroke();
+
+    c.fillStyle = T.ink; c.textBaseline = 'alphabetic';
+    const lines = ['Hazy', 'Kingdom', 'Of', 'Aurelia', 'Glasshouse'];
+    c.font = `400 392px ${SERIF}`;
+    lines.forEach((ln, i) => c.fillText(ln, 96, 512 + i * 378));
+
+    c.textAlign = 'right';
+    c.font = `600 44px ${SANS}`; c.fillText('AURELIA', W - 340, 190);
+    c.font = `500 40px ${SANS}`;
+    c.fillText('GLASS STUDY', W - 340, 246);
+    c.fillText('N°02 — DISPERSION', W - 340, 300);
+    c.font = `500 42px ${KANA}`;
+    c.fillText('ハゼノウミ ガラスノクニ', W - 340, 366);
+    badge(W - 190, 152, 1.15);
+
+    c.textAlign = 'left'; c.fillStyle = T.faint;
+    c.font = `500 38px ${SANS}`;
+    c.fillText('Location', 112, 986); c.fillText('Season', 872, 986); c.fillText('Region', 1630, 986);
+    c.fillStyle = T.ink; c.font = `500 52px ${SERIF}`;
+    c.fillText('Verre Academy', 112, 1048);
+    c.fillText('Clear Days', 872, 1048); c.fillText('In MMXXVI', 872, 1108);
+    c.fillText('Coast Of Lumen', 1630, 1048);
+
+    c.fillStyle = T.ink; c.font = `500 54px ${SANS}`;
+    ['MIRA', 'SOLEN', 'ADELINE', 'KESTREL', 'IVOR'].forEach((n, i) => c.fillText(n, 112, 2148 + i * 74));
+    c.textAlign = 'right';
+    ['NOA', 'JUNE', 'PERRIN', 'VESNA'].forEach((n, i) => c.fillText(n, W - 112, 2148 + i * 74));
+    c.textAlign = 'left'; c.fillStyle = T.faint; c.font = `500 40px ${SANS}`;
+    c.fillText('ATELIER. GLASS', 880, 2196);
+
+    c.fillStyle = T.ink; c.font = `500 64px ${KANA}`;
+    c.fillText('ハゼノウミ', 112, 2496);
+    c.fillText('ガラスノクニ', 112, 2576);
+
+    c.fillStyle = T.blue; c.font = `700 96px ${SANS}`;
+    c.fillText('2026', 112, 2724);
+    c.fillStyle = T.ink; c.font = `400 150px ${SERIF}`;
+    c.fillText('7.13 — 8.22', 560, 2736);
+  } else {
+    // ---- landscape sheet: cover-cropped, serif lines run off the edges ----
+    c.textBaseline = 'alphabetic';
+
+    // thin blue construction linework
+    c.strokeStyle = T.blue; c.lineWidth = 3.5;
+    c.beginPath(); c.arc(W * 0.185, H * 0.66, W * 0.20, 0, Math.PI * 2); c.stroke();
+    c.beginPath(); c.arc(W * 0.865, H * 0.145, W * 0.105, 0, Math.PI * 2); c.stroke();
+    c.beginPath(); c.moveTo(W * 0.04, H * 0.13); c.lineTo(W * 0.30, H * 0.97); c.stroke();
+
+    // eyebrow over the bleeding first letter
+    c.fillStyle = T.faint; c.font = `600 25px ${SANS}`;
+    c.fillText('HAZY KINGDOM OF AURELIA', 64, 62);
+    c.fillText('GLASS TYPE STUDY · WEBGL', 64, 96);
+
+    // giant serif stack — negatives push glyphs past the edges on purpose
+    c.fillStyle = T.ink;
+    const row = (ln, x, y, px) => { c.font = `400 ${px}px ${SERIF}`; c.fillText(ln, x, y); return c.measureText(ln).width; };
+    row('Hazy', -140, 320, 340);
+    const kw = row('Kingdom', 315, 738, 430);
+    c.font = `italic 400 195px ${SERIF}`; c.fillText('of', 315 + kw + 42, 752);
+    row('Faerghus', -85, 1200, 480);
+    row('Aurelia', 1010, H + 158, 430);        // crops off the bottom like a rolled sheet
+
+    // meta trio woven through the letterforms (drawn after them — editorial overlap)
+    const trio = (label, value, x) => {
+      c.fillStyle = T.faint; c.font = `500 31px ${SANS}`; c.fillText(label, x, 884);
+      c.fillStyle = T.ink; c.font = `500 50px ${SERIF}`; c.fillText(value, x, 948);
+    };
+    trio('Location', 'Verre Academy', 318);
+    trio('Season', 'Clear Days MMXXVI', 1048);
+    trio('Region', 'Coast Of Lumen', 1700);
+
+    // roster rails
+    c.fillStyle = T.ink; c.font = `500 38px ${SANS}`;
+    ['MIRA', 'SOLEN', 'ADELINE', 'KESTREL'].forEach((n, i) => c.fillText(n, 108, 850 + i * 56));
+    c.textAlign = 'right';
+    ['NOA', 'JUNE', 'PERRIN', 'VESNA'].forEach((n, i) => c.fillText(n, W - 108, 850 + i * 56));
+
+    // top-right meta + kana + badge
+    c.fillStyle = T.ink;
+    c.font = `600 46px ${SANS}`; c.fillText('AURELIA', W - 96, 88);
+    c.font = `500 34px ${SANS}`;
+    c.fillText('GLASS STUDY', W - 96, 136);
+    c.fillStyle = T.faint;
+    c.fillText('N°02 — DISPERSION', W - 96, 178);
+    c.font = `500 32px ${KANA}`; c.fillStyle = T.ink;
+    c.fillText('ハゼノウミ ガラスノクニ', W - 96, 224);
+    badge(W - 160, 148, 0.78);
+
+    // bottom-left kana + blue year, bottom-right dates
+    c.textAlign = 'left';
+    c.font = `500 44px ${KANA}`;
+    c.fillText('ハゼノウミ', 120, 1180);
+    c.fillText('ガラスノクニ', 120, 1232);
+    c.textAlign = 'right';
+    c.fillStyle = T.blue; c.font = `700 46px ${SANS}`;
+    c.fillText('2026', W - 96, 1190);
+    c.fillStyle = T.ink; c.font = `400 132px ${SERIF}`;
+    c.fillText('7.13 — 8.22', W - 96, 1268);
+  }
+
+  const tex = new THREE.CanvasTexture(cv);
+  tex.colorSpace = THREE.SRGBColorSpace;
+  tex.anisotropy = 8;
+  return { tex, cv };
+}
+
+/* soft radial blob texture for the blue mist veil */
+function paintMist() {
+  const s = 512, cv = document.createElement('canvas');
+  cv.width = cv.height = s;
+  const c = cv.getContext('2d');
+  const g = c.createRadialGradient(s / 2, s / 2, 0, s / 2, s / 2, s / 2);
+  g.addColorStop(0, 'rgba(64,104,214,0.55)');
+  g.addColorStop(0.55, 'rgba(96,132,222,0.22)');
+  g.addColorStop(1, 'rgba(120,150,230,0)');
+  c.fillStyle = g; c.fillRect(0, 0, s, s);
+  const tex = new THREE.CanvasTexture(cv);
+  tex.colorSpace = THREE.SRGBColorSpace;
+  return tex;
+}
+
+/* thin blue line-work circles on their own (slowly rotating) layer */
+function paintLinework() {
+  const s = 1024, cv = document.createElement('canvas');
+  cv.width = cv.height = s;
+  const c = cv.getContext('2d');
+  c.strokeStyle = T.blue; c.lineWidth = 3;
+  c.beginPath(); c.arc(s * 0.34, s * 0.62, s * 0.30, 0, Math.PI * 2); c.stroke();
+  c.beginPath(); c.arc(s * 0.72, s * 0.30, s * 0.17, 0, Math.PI * 2); c.stroke();
+  c.beginPath(); c.moveTo(s * 0.05, s * 0.14); c.lineTo(s * 0.95, s * 0.86); c.stroke();
+  const tex = new THREE.CanvasTexture(cv);
+  tex.colorSpace = THREE.SRGBColorSpace;
+  return tex;
+}
+
+/* ============================================================ SCENE */
+function webglAvailable() {
+  try { const t = document.createElement('canvas'); return !!(t.getContext('webgl2') || t.getContext('webgl')); }
+  catch { return false; }
+}
+
+let sheetMode = innerWidth / innerHeight >= T.coverBreakpoint ? 'landscape' : 'portrait';
+const { tex: posterTex, cv: posterCanvas } = paintPoster(sheetMode);
+
+if (!webglAvailable()) {
+  // graceful no-WebGL fallback: show the painted poster itself
+  const fb = document.getElementById('fallback');
+  fb.src = posterCanvas.toDataURL('image/png');
+  fb.style.display = 'block';
+} else {
+  build();
+}
+
+function build() {
+  const canvas = document.getElementById('stage');
+  const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: false, powerPreference: 'high-performance' });
+  renderer.setPixelRatio(Math.min(devicePixelRatio, 1.75));
+  renderer.setSize(innerWidth, innerHeight);
+  renderer.outputColorSpace = THREE.SRGBColorSpace;
+  renderer.toneMapping = THREE.ACESFilmicToneMapping;
+  renderer.toneMappingExposure = 1.0;
+  renderer.autoClear = false;
+
+  const scene = new THREE.Scene();
+  scene.background = new THREE.Color(T.paper);
+  const camera = new THREE.PerspectiveCamera(T.camFov, innerWidth / innerHeight, 0.1, 60);
+  camera.position.set(0, 0, T.camZ);
+
+  // --- procedural environment: white room + bright soft panels → PMREM
+  const pmrem = new THREE.PMREMGenerator(renderer);
+  const envScene = new THREE.Scene();
+  const room = new THREE.Mesh(
+    new THREE.BoxGeometry(12, 12, 12),
+    new THREE.MeshBasicMaterial({ color: 0x777c88, side: THREE.BackSide })
+  );
+  envScene.add(room);
+  const panel = (w, h, color, x, y, z) => {
+    const m = new THREE.Mesh(new THREE.PlaneGeometry(w, h), new THREE.MeshBasicMaterial({ color }));
+    m.position.set(x, y, z); m.lookAt(0, 0, 0); envScene.add(m);
+  };
+  panel(6, 3, new THREE.Color(4.5, 4.5, 4.8), -4, 3, 4);   // key: cool white overhead-left
+  panel(4, 2, new THREE.Color(1.4, 1.9, 2.8), 5, 1, 3);    // fill: cool blue right
+  panel(3, 1.4, new THREE.Color(2.6, 2.3, 2.1), 2, -4, 4); // low warm kicker
+  const envRT = pmrem.fromScene(envScene, 0.04);
+  scene.environment = envRT.texture;
+  pmrem.dispose();
+
+  // --- depth layers: mist (back) → linework → type plane → mist veil (front) → cubes → grain
+  // Type/linework are UNIT planes resized by applySheet(): on wide windows the landscape
+  // sheet is scaled past the frame so serif lines bleed offscreen (a cropped poster view).
+  const ASPECT_P = SHEETS.portrait.w / SHEETS.portrait.h;
+  const ASPECT_L = SHEETS.landscape.w / SHEETS.landscape.h;
+  const TYPE_Z = -1.2, LINE_Z = -1.65;
+
+  const fitScale = (ar, z) => {
+    const vh = 2 * (T.camZ - z) * Math.tan(THREE.MathUtils.degToRad(T.camFov / 2));
+    const vw = vh * camera.aspect;
+    if (sheetMode === 'landscape') {
+      const w = Math.max(vw, vh * ar) + 1.5;        // margin: serif lines bleed hard off both edges
+      return [w, w / ar];
+    }
+    return [T.planeH * ar, T.planeH];
+  };
+  const applySheet = () => {
+    const ar = sheetMode === 'landscape' ? ASPECT_L : ASPECT_P;
+    const [tw, th] = fitScale(ar, TYPE_Z);
+    typePlane.scale.set(tw, th, 1);
+    const [lw, lh] = fitScale(ar, LINE_Z);
+    linework.scale.set(lw, lh, 1);
+  };
+
+  const mistBack = new THREE.Mesh(
+    new THREE.PlaneGeometry(7.2, 6.9),
+    new THREE.MeshBasicMaterial({ map: paintMist(), transparent: true, opacity: 0.5, depthWrite: false })
+  );
+  mistBack.position.set(-0.6, 0.4, -2.4);
+  scene.add(mistBack);
+
+  const linework = new THREE.Mesh(
+    new THREE.PlaneGeometry(1, 1),
+    new THREE.MeshBasicMaterial({ map: paintLinework(), transparent: true, opacity: 0.85, depthWrite: false })
+  );
+  linework.position.z = LINE_Z;
+  scene.add(linework);
+
+  const typePlane = new THREE.Mesh(
+    new THREE.PlaneGeometry(1, 1),
+    new THREE.MeshBasicMaterial({ map: posterTex }) // OPAQUE on purpose: transmission RT must capture the type
+  );
+  typePlane.position.z = TYPE_Z;
+  scene.add(typePlane);
+
+  const mistFront = new THREE.Mesh(
+    new THREE.PlaneGeometry(8.0, 5.5),
+    new THREE.MeshBasicMaterial({ map: paintMist(), transparent: true, opacity: T.mistOpacity, depthWrite: false })
+  );
+  mistFront.position.set(0.5, -0.3, -0.55);
+  scene.add(mistFront);
+  applySheet();
+
+  // --- glass cubes (drag target)
+  const cubeGroup = new THREE.Group();
+  scene.add(cubeGroup);
+  const glassMat = new THREE.MeshPhysicalMaterial({
+    transmission: T.glass.transmission,
+    ior: T.glass.ior,
+    dispersion: T.glass.dispersion,
+    clearcoat: T.glass.clearcoat,
+    clearcoatRoughness: T.glass.clearcoatRoughness,
+    roughness: T.glass.roughness,
+    metalness: T.glass.metalness,
+    thickness: T.glass.thickness,
+    envMapIntensity: T.glass.envIntensity,
+    attenuationColor: new THREE.Color(T.glass.attenuationColor),
+    attenuationDistance: T.glass.attenuationDistance,
+  });
+  const mkCube = (spec) => {
+    const geo = new RoundedBoxGeometry(spec.size, spec.size, spec.size, 5, spec.size * 0.075);
+    const m = new THREE.Mesh(geo, glassMat);
+    m.position.set(...spec.pos);
+    m.rotation.set(...spec.rot);
+    cubeGroup.add(m);
+    return m;
+  };
+  const cubeA = mkCube(T.cubeA);
+  const cubeB = mkCube(T.cubeB);
+
+  // --- fullscreen film grain (second render pass, same pipeline — no composer)
+  const grainScene = new THREE.Scene();
+  const grainCam = new THREE.OrthographicCamera(-1, 1, 1, -1, 0, 1);
+  const grainMat = new THREE.ShaderMaterial({
+    transparent: true, depthTest: false, depthWrite: false,
+    uniforms: {
+      uTime: { value: 0 },
+      uRes: { value: new THREE.Vector2(innerWidth, innerHeight) },
+      uOpacity: { value: T.grainOpacity },
+      uScale: { value: T.grainScale * Math.min(devicePixelRatio, 1.75) },
+    },
+    vertexShader: /* glsl */`
+      void main() { gl_Position = vec4(position.xy, 0.0, 1.0); }`,
+    fragmentShader: /* glsl */`
+      uniform float uTime; uniform vec2 uRes; uniform float uOpacity; uniform float uScale;
+      float hash(vec2 p) {
+        p = fract(p * vec2(443.897, 441.423));
+        p += dot(p, p.yx + 19.19);
+        return fract((p.x + p.y) * p.x);
+      }
+      void main() {
+        vec2 px = floor(gl_FragCoord.xy / uScale);
+        float n = hash(px + floor(uTime * 24.0) * 37.0);
+        float v = n - 0.5;                       // centered: light AND dark specks on paper
+        gl_FragColor = vec4(vec3(0.5 + v), uOpacity);
+      }`,
+  });
+  grainScene.add(new THREE.Mesh(new THREE.PlaneGeometry(2, 2), grainMat));
+
+  /* ============================================================ INPUT */
+  const pointer = { x: 0, y: 0 };            // smoothed NDC
+  const parallax = { camX: 0, camY: 0, typeX: 0, typeY: 0 };
+  const drag = { on: false, vx: 0, vy: 0, lx: 0, ly: 0, rx: 0, ry: 0, trx: 0, try_: 0 };
+
+  canvas.addEventListener('pointerdown', (e) => {
+    if (REDUCED) return;
+    drag.on = true; drag.lx = e.clientX; drag.ly = e.clientY; drag.vx = drag.vy = 0;
+    canvas.classList.add('dragging');
+    canvas.setPointerCapture(e.pointerId);
+  });
+  canvas.addEventListener('pointermove', (e) => {
+    pointer.x = (e.clientX / innerWidth) * 2 - 1;
+    pointer.y = (e.clientY / innerHeight) * 2 - 1;
+    if (drag.on) {
+      const dx = e.clientX - drag.lx, dy = e.clientY - drag.ly;
+      drag.try_ += dx * T.dragGain;
+      drag.trx = Math.max(-0.7, Math.min(0.7, drag.trx + dy * T.dragGain));
+      drag.vx = dx * T.dragGain; drag.vy = dy * T.dragGain;
+      drag.lx = e.clientX; drag.ly = e.clientY;
+    }
+  });
+  const endDrag = () => { drag.on = false; canvas.classList.remove('dragging'); };
+  canvas.addEventListener('pointerup', endDrag);
+  canvas.addEventListener('pointercancel', endDrag);
+
+  /* ============================================================ LIFECYCLE + LOOP */
+  const clock = new THREE.Clock();
+  document.addEventListener('visibilitychange', () => { if (!document.hidden) clock.getDelta(); }); // flush dt spike
+
+  function frame() {
+    const dt = Math.min(clock.getDelta(), 0.05);
+    const t = clock.elapsedTime;
+
+    // parallax: camera and type plane drift in OPPOSITE directions
+    parallax.camX = damp(parallax.camX, pointer.x * T.parallaxCam, T.parallaxLambda, dt);
+    parallax.camY = damp(parallax.camY, -pointer.y * T.parallaxCam * 0.6, T.parallaxLambda, dt);
+    parallax.typeX = damp(parallax.typeX, -pointer.x * T.parallaxType, T.parallaxLambda, dt);
+    parallax.typeY = damp(parallax.typeY, pointer.y * T.parallaxType * 0.6, T.parallaxLambda, dt);
+    camera.position.set(parallax.camX, parallax.camY, T.camZ);
+    camera.lookAt(0, 0, 0);
+    typePlane.position.x = parallax.typeX;
+    typePlane.position.y = parallax.typeY;
+    mistFront.position.x = 0.5 - pointer.x * T.parallaxMist;
+    linework.position.x = parallax.typeX * 0.5;
+
+    // drag rotation + inertia
+    if (!drag.on) {
+      drag.try_ += drag.vx; drag.trx = Math.max(-0.7, Math.min(0.7, drag.trx + drag.vy));
+      const k = Math.exp(-T.inertiaDecay * dt);
+      drag.vx *= k; drag.vy *= k;
+      drag.try_ += T.idleSpin * dt;          // idle drift
+    }
+    drag.ry = damp(drag.ry, drag.try_, T.dragLambda, dt);
+    drag.rx = damp(drag.rx, drag.trx, T.dragLambda, dt);
+    cubeGroup.rotation.set(drag.rx, drag.ry, 0);
+
+    // idle life
+    const bob = Math.sin(t * T.idleBobSpeed);
+    cubeA.position.y = T.cubeA.pos[1] + bob * T.idleBob;
+    cubeB.position.y = T.cubeB.pos[1] - bob * T.idleBob * 0.8;
+    linework.rotation.z = t * T.lineworkSpin;
+    typePlane.scale.setScalar(1 + Math.sin(t * T.breatheSpeed) * T.breatheAmp);
+    mistBack.position.x = -0.6 + Math.sin(t * T.mistSpeed) * 0.5;
+    mistBack.position.y = 0.4 + Math.cos(t * T.mistSpeed * 0.7) * 0.3;
+    mistFront.position.y = -0.3 + Math.sin(t * T.mistSpeed * 1.3 + 2.0) * 0.25;
+
+    grainMat.uniforms.uTime.value = t;
+
+    renderer.clear();
+    renderer.render(scene, camera);
+    renderer.render(grainScene, grainCam);
+
+    if (!REDUCED) requestAnimationFrame(frame);
+  }
+
+  addEventListener('resize', () => {
+    camera.aspect = innerWidth / innerHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize(innerWidth, innerHeight);
+    grainMat.uniforms.uRes.value.set(innerWidth, innerHeight);
+    const m = innerWidth / innerHeight >= T.coverBreakpoint ? 'landscape' : 'portrait';
+    if (m !== sheetMode) {                    // repaint the sheet for the new crop
+      sheetMode = m;
+      const next = paintPoster(m);
+      typePlane.material.map.dispose();
+      typePlane.material.map = next.tex;
+    }
+    applySheet();
+    if (REDUCED) frame(); // re-compose the still
+  });
+
+  addEventListener('pagehide', () => {
+    scene.traverse((o) => {
+      if (o.geometry) o.geometry.dispose();
+      if (o.material) {
+        const mats = Array.isArray(o.material) ? o.material : [o.material];
+        mats.forEach((m) => { if (m.map) m.map.dispose(); m.dispose(); });
+      }
+    });
+    grainMat.dispose();
+    envRT.dispose();
+    renderer.dispose();
+  });
+
+  frame(); // REDUCED: renders the composed still once and stops
+}
+</script>
+</body>
+</html>

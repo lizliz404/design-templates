@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Case 03 · Segmint 2023 — Voxel Reveal</title>
+<style>
+  :root { color-scheme: light; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #2450c8; overflow-x: hidden; }
+  /* 2D backdrop: blue field + pixel-dither headline + dither band + wordmark (generated, not pasted) */
+  #backdrop { position: fixed; inset: 0; z-index: 0; }
+  /* WebGL layer: the voxel coin + falling covers */
+  #stage { position: fixed; inset: 0; z-index: 1; display: block; }
+  #scroll-space { position: relative; z-index: 2; height: 460vh; pointer-events: none; }
+  .cap {
+    position: fixed; z-index: 5; font: 500 10px/1.7 "Cascadia Mono", Consolas, monospace;
+    letter-spacing: 0.18em; color: rgba(232,230,223,0.72); user-select: none; pointer-events: none;
+  }
+  #cap-tr { top: 14px; right: 16px; text-align: right; }
+  /* pixel REVEAL counter, bitmap-rendered then upscaled hard */
+  #counter {
+    position: fixed; left: 24px; bottom: 24px; z-index: 5;
+    image-rendering: pixelated; pointer-events: none;
+  }
+</style>
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js"
+  }
+}
+</script>
+</head>
+<body>
+<canvas id="backdrop" aria-hidden="true"></canvas>
+<canvas id="stage" aria-label="Voxel coin whose cover voxels fall away while scrolling, revealing an Ethereum diamond in relief"></canvas>
+<div id="scroll-space"></div>
+<canvas id="counter" width="66" height="7" style="width: 264px; height: 28px;"></canvas>
+<div class="cap" id="cap-tr">CASE 03 · SCROLL TO REVEAL<br>COVERS FALL EDGE → CENTER</div>
+
+<script type="module">
+import * as THREE from 'three';
+
+/* ============================================================ TUNING */
+const T = {
+  colors: {
+    field: '#2450c8', paper: '#e8e6df',
+    voxelFace: '#4d7ce4', voxelFaceLit: '#ccd9f6', voxelMarkDim: '#9fb4ec', voxelSide: '#0d2a7a',
+    groove: '#16368f', cover: '#4d7ce4', spike: '#6d95ea',
+  },
+  grid: { R: 20, cell: 0.29, gap: 0.02 },        // finer minted grain at the same ~12.3-world disc
+  relief: { full: 0.72, low: 0.18, ss: 16 },     // coverage thresholds + 16x supersampling
+  grooveRing: { inner: 0.78, outer: 0.94 },      // r/R band machined into the face
+  tilt: { x: -0.55, z: 0.10, spin: 0.05 },
+  cam: { fov: 38, pos: [0, 3.2, 23], look: [0, 0.2, 0] },
+  fall: {
+    scrollStart: 0.03, scrollEnd: 0.63,          // edge→center trigger window (~66% of scroll = done)
+    gravity: [9.0, 15.0], drift: 0.9, spin: 3.0, killY: -14,
+  },
+  dither: { cell: 12, bandStart: 0.58, bandEnd: 0.74 }, // 12px grid dissolve band
+  headline: { l1: 'THANKS', l2: 'FOR WATCHING', cell: 10, fontPx: 180 },
+  wordmark: { text: 'SEGMINT 2023', cell: 6, fontPx: 72 },
+};
+
+const REDUCED = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const damp = (cur, tgt, l, dt) => cur + (tgt - cur) * (1 - Math.exp(-l * dt));
+// deterministic hash so the dither pattern is stable across redraws
+const hash = (x, y) => {
+  let h = (x * 374761393 + y * 668265263) | 0;
+  h = (h ^ (h >> 13)) * 1274126177;
+  return (((h ^ (h >> 16)) >>> 0) / 4294967295);
+};
+
+function webglAvailable() {
+  try { const c = document.createElement('canvas'); return !!(c.getContext('webgl2') || c.getContext('webgl')); }
+  catch { return false; }
+}
+
+/* ============================================================ 2D BACKDROP (runtime-generated poster) */
+const backdrop = document.getElementById('backdrop');
+const bctx = backdrop.getContext('2d');
+
+function drawBackdrop() {
+  const W = innerWidth, H = innerHeight;
+  backdrop.width = W; backdrop.height = H;
+
+  bctx.fillStyle = T.colors.field;
+  bctx.fillRect(0, 0, W, H);
+
+  // pixel-dither headline: rasterize tiny → threshold+dither → chunky cells
+  const pixText = (text, cssX, cssY, fontPx, cell, color) => {
+    const tw = Math.ceil(W / cell), th = Math.ceil(H / cell);
+    const tc = document.createElement('canvas');
+    tc.width = tw; tc.height = th;
+    const g = tc.getContext('2d');
+    g.fillStyle = '#fff';
+    g.textAlign = 'center'; g.textBaseline = 'alphabetic';
+    g.font = `900 ${Math.max(6, Math.round(fontPx / cell))}px "Segoe UI", Arial, sans-serif`;
+    g.fillText(text, cssX / cell, cssY / cell);
+    const d = g.getImageData(0, 0, tw, th).data;
+    bctx.fillStyle = color;
+    for (let y = 0; y < th; y++) for (let x = 0; x < tw; x++) {
+      const a = d[(y * tw + x) * 4 + 3] / 255;
+      if (a > 0.04 && hash(x * 7 + y, x) < a) bctx.fillRect(x * cell, y * cell, cell, cell);
+    }
+  };
+  pixText(T.headline.l1, W / 2, H * 0.24, T.headline.fontPx, T.headline.cell, T.colors.paper);
+  pixText(T.headline.l2, W / 2, H * 0.24 + T.headline.fontPx * 1.05, T.headline.fontPx, T.headline.cell, T.colors.paper);
+
+  // dither band: blue field dissolves into paper, probability falls with height
+  const cell = T.dither.cell;
+  const bandTop = H * T.dither.bandStart;
+  const bandEnd = H * T.dither.bandEnd;
+  const rows = Math.max(1, Math.ceil((bandEnd - bandTop) / cell));
+  for (let r = 0; r < rows; r++) {
+    const p = 1 - r / rows; // probability of blue, falls with height
+    for (let cx = 0; cx * cell < W; cx++) {
+      const keep = hash(cx * 13, r * 7) < p * p * 1.25;
+      const solid = r === 0 || p > 0.96;
+      if (solid || keep) {
+        bctx.fillStyle = T.colors.field;
+        bctx.fillRect(cx * cell, bandTop + r * cell, cell, cell);
+      }
+    }
+  }
+  bctx.fillStyle = T.colors.paper;
+  bctx.fillRect(0, bandTop + rows * cell, W, H);
+
+  // sparse floaters — the dissolve keeps shedding single cells into the paper zone
+  bctx.fillStyle = T.colors.field;
+  const fRows = Math.max(2, Math.round((H - bandEnd) * 0.14 / cell));
+  for (let r = 0; r < fRows; r++) {
+    for (let cx = 0; cx * cell < W; cx++) {
+      if (hash(cx * 31 + 11, r * 97 + 404) < 0.055 * (1 - r / fRows)) {
+        bctx.fillRect(cx * cell, bandTop + (rows + 2 + r) * cell, cell, cell);
+      }
+    }
+  }
+
+  // paper zone: wordmark + meta
+  const baseY = bandTop + rows * cell;
+  pixText(T.wordmark.text, W * 0.20, baseY + Math.min(52, (H - baseY) * 0.42), T.wordmark.fontPx, T.wordmark.cell, T.colors.field);
+  bctx.fillStyle = '#3a3d45';
+  bctx.font = '700 11px "Cascadia Mono", Consolas, monospace';
+  bctx.textAlign = 'left';
+  const meta = ['MARKETING APPROACH IN', 'WEBSITE DEVELOPMENT WITH', 'OUTSTANDING DESIGN'];
+  meta.forEach((ln, i) => bctx.fillText(ln, W * 0.46, baseY + 22 + i * 16));
+  bctx.font = '500 9px "Cascadia Mono", Consolas, monospace';
+  bctx.fillStyle = '#8a8d96';
+  bctx.fillText('INTERESTED TO START A PROJECT WITH US?', W * 0.46, baseY + 84);
+  bctx.textAlign = 'right';
+  bctx.fillText("LET'S FIND OUT WHAT WE CAN DO FOR YOU.", W - 24, baseY + 84);
+}
+drawBackdrop();
+addEventListener('resize', drawBackdrop);
+
+/* ============================================================ REVEAL COUNTER (5x7 bitmap font) */
+const FONT57 = {
+  R: ['11110','10001','10001','11110','10100','10010','10001'],
+  E: ['11111','10000','10000','11110','10000','10000','11111'],
+  V: ['10001','10001','10001','10001','10001','01010','00100'],
+  A: ['01110','10001','10001','11111','10001','10001','10001'],
+  L: ['10000','10000','10000','10000','10000','10000','11111'],
+  '0': ['01110','10001','10011','10101','11001','10001','01110'],
+  '1': ['00100','01100','00100','00100','00100','00100','01110'],
+  '2': ['01110','10001','00001','00110','01000','10000','11111'],
+  '3': ['11110','00001','00001','01110','00001','00001','11110'],
+  '4': ['00010','00110','01010','10010','11111','00010','00010'],
+  '5': ['11111','10000','11110','00001','00001','10001','01110'],
+  '6': ['01110','10000','11110','10001','10001','10001','01110'],
+  '7': ['11111','00001','00010','00100','01000','01000','01000'],
+  '8': ['01110','10001','10001','01110','10001','10001','01110'],
+  '9': ['01110','10001','10001','01111','00001','00001','01110'],
+  '%': ['11001','11010','00010','00100','01000','01011','10011'],
+  ' ': ['00000','00000','00000','00000','00000','00000','00000'],
+};
+const counter = document.getElementById('counter');
+const cctx = counter.getContext('2d');
+let lastPct = -1;
+function drawCounter(pct) {
+  if (pct === lastPct) return;
+  lastPct = pct;
+  const str = `REVEAL ${String(pct).padStart(3, '0')}%`;
+  counter.width = str.length * 6; counter.height = 7;
+  cctx.clearRect(0, 0, counter.width, counter.height);
+  cctx.fillStyle = T.colors.field;
+  [...str].forEach((ch, i) => {
+    const g = FONT57[ch]; if (!g) return;
+    for (let y = 0; y < 7; y++) for (let x = 0; x < 5; x++) {
+      if (g[y][x] === '1') cctx.fillRect(i * 6 + x, y, 1, 1);
+    }
+  });
+}
+drawCounter(0);
+
+/* stable per-cell face tone — speckled blue field from the stills, darker rim, rare pale flecks */
+function faceTone(gx, gy, r01) {
+  const v = hash(gx * 17 + 3, gy * 29 + 7);
+  const c = new THREE.Color('#4a79e6').lerp(new THREE.Color('#87a7ef'), v);
+  if (v > 0.94) c.set('#bcd0f8');
+  if (r01 > 0.80) c.lerp(new THREE.Color('#274bb4'), 0.6); // dark navy ring before the groove
+  return c;
+}
+
+/* ============================================================ ETH DIAMOND → VOXEL COVERAGE MAP
+   Vector path on offscreen canvas, 16x supersampled onto the voxel grid. */
+function diamondCoverage(R) {
+  const G = R * 2;
+  const S = T.relief.ss;
+  const cv = document.createElement('canvas');
+  cv.width = cv.height = G * S;
+  const c = cv.getContext('2d');
+  c.fillStyle = '#fff';
+  c.translate((G * S) / 2, (G * S) / 2);
+  const u = (G * S) / (R * 2.6); // diamond spans ~77% of the grid
+  // ETH mark: upper rhombus, lower wedge, mid bar — one continuous vector shape set
+  c.beginPath();
+  c.moveTo(0, -2.05 * u); c.lineTo(1.35 * u, 0); c.lineTo(0, 2.05 * u); c.lineTo(-1.35 * u, 0);
+  c.closePath(); c.fill();
+  c.beginPath();
+  c.moveTo(0, 2.5 * u); c.lineTo(1.35 * u, 0.45 * u); c.lineTo(0, 3.1 * u); c.lineTo(-1.35 * u, 0.45 * u);
+  c.closePath(); c.fill();
+  // supersample → per-cell coverage
+  const data = c.getImageData(0, 0, cv.width, cv.height).data;
+  const cov = new Float32Array(G * G);
+  for (let gy = 0; gy < G; gy++) for (let gx = 0; gx < G; gx++) {
+    let hit = 0;
+    for (let sy = 0; sy < S; sy++) for (let sx = 0; sx < S; sx++) {
+      const px = gx * S + sx, py = gy * S + sy;
+      if (data[(py * cv.width + px) * 4 + 3] > 127) hit++;
+    }
+    cov[gy * G + gx] = hit / (S * S);
+  }
+  return cov;
+}
+
+/* ============================================================ SCENE */
+if (webglAvailable()) { build(); } else {
+  document.getElementById('cap-tr').innerHTML = 'WEBGL UNAVAILABLE —<br>BACKDROP ONLY';
+}
+
+function build() {
+  const canvas = document.getElementById('stage');
+  const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
+  renderer.setPixelRatio(Math.min(devicePixelRatio, 1.75));
+  renderer.setSize(innerWidth, innerHeight);
+  renderer.setClearColor(0x000000, 0);
+  renderer.outputColorSpace = THREE.SRGBColorSpace;
+  renderer.toneMapping = THREE.NoToneMapping; // flat print colors, poster-faithful
+
+  const scene = new THREE.Scene();
+  const camera = new THREE.PerspectiveCamera(T.cam.fov, innerWidth / innerHeight, 0.1, 80);
+  camera.position.set(...T.cam.pos);
+  camera.lookAt(...T.cam.look);
+
+  scene.add(new THREE.AmbientLight(0xdfe6ff, 0.85));
+  const key = new THREE.DirectionalLight(0xffffff, 1.5);
+  key.position.set(4, 7, 8);
+  scene.add(key);
+  const rim = new THREE.DirectionalLight(0x9db9ff, 0.5);
+  rim.position.set(-5, -2, -6);
+  scene.add(rim);
+
+  const disc = new THREE.Group();          // world tilt
+  const spinner = new THREE.Group();       // slow face spin
+  disc.add(spinner);
+  disc.rotation.set(T.tilt.x, 0, T.tilt.z);
+  scene.add(disc);
+
+  const { R, cell, gap } = T.grid;
+  const G = R * 2;
+  const step = cell + gap;
+  const cov = diamondCoverage(R);
+
+  // column layout: grid cells inside the disc; the mark is carved into the TOP voxel layer
+  // (full coverage → lit plateau, low coverage → mid tone) so the flat cover slab hides it
+  // flush with no rim cavities; after the covers fall the tone depth reads as relief.
+  const columns = []; // {gx, gy, x, z, r01, c, inGroove}
+  for (let gy = 0; gy < G; gy++) for (let gx = 0; gx < G; gx++) {
+    const dx = (gx - R + 0.5), dy = (gy - R + 0.5);
+    const r = Math.hypot(dx, dy);
+    if (r > R) continue;
+    const r01 = r / R;
+    columns.push({ gx, gy, x: dx * step, z: dy * step, r01, c: cov[gy * G + gx],
+      inGroove: r01 >= T.grooveRing.inner && r01 <= T.grooveRing.outer });
+  }
+
+  // --- materials: box faces split (top light / sides dark) via geometry groups
+  // top faces stay WHITE: instanceColor multiplies the material diffuse, so every
+  // visible top cell is tinted by the shared speckle function below
+  const voxelGeo = new THREE.BoxGeometry(cell, 1, cell);
+  const faceMat = (hex, flat = true) => new THREE.MeshStandardMaterial({ color: hex, roughness: 0.85, metalness: 0.0, flatShading: flat });
+  const TOP_WHITE = '#ffffff';
+  const bodyMats = [ // order: +x, -x, +y(top), -y, +z, -z
+    faceMat(T.colors.voxelSide), faceMat(T.colors.voxelSide),
+    faceMat(TOP_WHITE), faceMat(T.colors.voxelSide),
+    faceMat(T.colors.voxelSide), faceMat(T.colors.voxelSide),
+  ];
+  const coverMats = bodyMats.map((m, i) => i === 2 ? faceMat(TOP_WHITE) : m.clone());
+
+  // --- BODY: stays; 3 filled levels per column, mark carved into the top level
+  const LEVELS = 3;
+  const bodyCount = columns.length * LEVELS;
+  const body = new THREE.InstancedMesh(voxelGeo, bodyMats, bodyCount);
+  body.frustumCulled = false; // matrices set once; keep culling deterministic (pitfall #16)
+  {
+    const m = new THREE.Matrix4();
+    const grooveC = new THREE.Color(T.colors.groove);
+    const markC = new THREE.Color(T.colors.voxelFaceLit);   // pale lavender relief mark
+    const markJit = new THREE.Color(T.colors.voxelMarkDim);
+    const recessC = new THREE.Color('#5b86e8');
+    const q0 = new THREE.Quaternion();
+    let idx = 0;
+    for (const col of columns) {
+      for (let lv = 0; lv < LEVELS; lv++) {
+        const top = lv === LEVELS - 1;
+        if (top && col.inGroove) { // machined groove: inset + navy
+          m.compose(new THREE.Vector3(col.x, lv - 0.06, col.z), q0, new THREE.Vector3(0.88, 0.94, 0.88));
+          body.setMatrixAt(idx, m);
+          body.setColorAt(idx, grooveC);
+        } else {
+          m.makeTranslation(col.x, lv, col.z);
+          body.setMatrixAt(idx, m);
+          // relief depths with dithered thresholds — staircase mark edges like the printed sheet
+          const jF = (hash(col.gx * 7 + 1, col.gy * 11 + 5) - 0.5) * 0.16;
+          const jL = (hash(col.gx * 5 + 9, col.gy * 3 + 2) - 0.5) * 0.14;
+          const deep = top && !col.inGroove && col.c >= T.relief.full + jF;
+          const shallow = top && !col.inGroove && col.c >= Math.min(T.relief.full - 0.04, T.relief.low + jL);
+          if (shallow && !deep) {
+            m.makeTranslation(col.x, lv - 0.35, col.z);
+            body.setMatrixAt(idx, m);
+          }
+          // speckle on every face cell; mark cells lift to pale lavender
+          if (top && !col.inGroove) {
+            const tone = faceTone(col.gx, col.gy, col.r01);
+            if (deep) tone.lerp(markC, 0.82).lerp(markJit, hash(col.gx * 13, col.gy * 17) * 0.45);
+            else if (shallow) tone.lerp(recessC, 0.35);
+            body.setColorAt(idx, tone);
+          }
+        }
+        idx++;
+      }
+    }
+    body.instanceMatrix.needsUpdate = true;
+    if (body.instanceColor) body.instanceColor.needsUpdate = true;
+  }
+  spinner.add(body);
+
+  // --- spikes: stray voxels hovering above the face (poster detail)
+  {
+    const spikeN = 42;
+    const spikes = new THREE.InstancedMesh(new THREE.BoxGeometry(cell * 0.85, cell * 0.85, cell * 0.85),
+      faceMat(T.colors.spike), spikeN);
+    spikes.frustumCulled = false;
+    const m = new THREE.Matrix4(), q = new THREE.Quaternion(), e = new THREE.Euler(), s = new THREE.Vector3(1, 1, 1);
+    for (let i = 0; i < spikeN; i++) {
+      const col = columns[Math.floor(hash(i * 3.1, i * 7.7) * columns.length)];
+      e.set(hash(i, 1) * 0.6 - 0.3, hash(i, 2) * 0.6 - 0.3, hash(i, 3) * 0.6 - 0.3);
+      q.setFromEuler(e);
+      m.compose(
+        new THREE.Vector3(col.x * (0.55 + hash(i, 4) * 0.45), LEVELS + 0.55 + hash(i, 5) * 0.3, col.z * (0.55 + hash(i, 6) * 0.45)),
+        q, s
+      );
+      spikes.setMatrixAt(i, m);
+    }
+    spikes.instanceMatrix.needsUpdate = true;
+    spinner.add(spikes);
+  }
+
+  // --- COVERS: flat blue slab hiding the mark; falls edge→center on scroll
+  const coverN = columns.length;
+  const covers = new THREE.InstancedMesh(voxelGeo, coverMats, coverN);
+  covers.frustumCulled = false;
+  const coverTopY = LEVELS + 0.0; // center 3.0 → bottom 2.5 sits flush on the body plane
+  const coverState = [];
+  {
+    const m = new THREE.Matrix4();
+    for (let i = 0; i < coverN; i++) {
+      const col = columns[i];
+      m.makeTranslation(col.x, coverTopY, col.z);
+      covers.setMatrixAt(i, m);
+      covers.setColorAt(i, faceTone(col.gx, col.gy, col.r01)); // same speckle field as the body
+      const a = hash(i * 1.7, i * 9.3), b = hash(i * 5.1, i * 2.9), c = hash(i * 8.7, i * 4.1);
+      coverState.push({
+        col,
+        trigger: T.fall.scrollStart + (1 - col.r01) * (T.fall.scrollEnd - T.fall.scrollStart) * (0.86 + a * 0.14),
+        state: 'wait', // wait | fall | done
+        pos: new THREE.Vector3(col.x, coverTopY, col.z),
+        vel: new THREE.Vector3((b - 0.5) * T.fall.drift, 0, (c - 0.5) * T.fall.drift),
+        axis: new THREE.Vector3(b - 0.5, a - 0.5, c - 0.5).normalize(),
+        ang: (a + b) * T.fall.spin, rot: 0,
+        g: T.fall.gravity[0] + c * (T.fall.gravity[1] - T.fall.gravity[0]),
+      });
+    }
+    covers.instanceMatrix.needsUpdate = true;
+    if (covers.instanceColor) covers.instanceColor.needsUpdate = true;
+  }
+  spinner.add(covers);
+
+  /* ============================================================ SCROLL + PHYSICS */
+  let progress = 0;
+  const readScroll = () => {
+    const max = document.documentElement.scrollHeight - innerHeight;
+    progress = max > 0 ? Math.min(1, Math.max(0, scrollY / max)) : 0;
+  };
+  readScroll();
+  addEventListener('scroll', readScroll, { passive: true });
+
+  const _m = new THREE.Matrix4(), _q = new THREE.Quaternion(), _s = new THREE.Vector3(1, 1, 1);
+  let coversDone = 0;
+
+  function syncCoverMatrices() {
+    for (let i = 0; i < coverN; i++) {
+      const cs = coverState[i];
+      if (cs.state === 'fall') {
+        _q.setFromAxisAngle(cs.axis, cs.rot);
+        _m.compose(cs.pos, _q, _s);
+      } else { // wait | done: plain translation (done covers rest at killY)
+        _m.makeTranslation(cs.pos.x, cs.pos.y, cs.pos.z);
+      }
+      covers.setMatrixAt(i, _m);
+    }
+    covers.instanceMatrix.needsUpdate = true;
+  }
+
+  if (REDUCED) {
+    // theater rule: show the final reveal state as the still
+    for (const cs of coverState) { cs.state = 'done'; cs.pos.set(cs.col.x, T.fall.killY, cs.col.z); }
+    syncCoverMatrices();
+    renderer.render(scene, camera);
+    drawCounter(100);
+    addEventListener('resize', () => {
+      camera.aspect = innerWidth / innerHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(innerWidth, innerHeight);
+      renderer.render(scene, camera);
+    });
+    return;
+  }
+
+  const clock = new THREE.Clock();
+  document.addEventListener('visibilitychange', () => { if (!document.hidden) clock.getDelta(); });
+
+  function frame() {
+    const dt = Math.min(clock.getDelta(), 0.05);
+    const t = clock.elapsedTime;
+
+    // slow face spin
+    spinner.rotation.z = t * T.tilt.spin;
+
+    // covers: trigger by scroll (edge→center), then each with own gravity/drift/axis
+    let revealed = 0;
+    for (const cs of coverState) {
+      if (cs.state === 'wait' && progress >= cs.trigger) { cs.state = 'fall'; cs.vel.y = 0; }
+      if (cs.state === 'fall') {
+        cs.vel.y -= cs.g * dt;
+        cs.pos.addScaledVector(cs.vel, dt);
+        cs.rot += cs.ang * dt;
+        if (cs.pos.y < T.fall.killY) { cs.state = 'done'; cs.pos.y = T.fall.killY; coversDone++; }
+      }
+      if (cs.state !== 'wait') revealed++;
+    }
+    syncCoverMatrices();
+    drawCounter(Math.floor((revealed / coverN) * 100));
+
+    renderer.render(scene, camera);
+    requestAnimationFrame(frame);
+  }
+
+  addEventListener('resize', () => {
+    camera.aspect = innerWidth / innerHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize(innerWidth, innerHeight);
+  });
+  addEventListener('pagehide', () => {
+    voxelGeo.dispose();
+    [...bodyMats, ...coverMats].forEach((m) => m.dispose());
+    renderer.dispose();
+  });
+
+  frame();
+}
+</script>
+</body>
+</html>
