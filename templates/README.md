@@ -45,7 +45,7 @@ Acceptance screenshots / checks:
 这些资产相邻，是因为它们都在解决 **AI surface chrome**：Agent 的可见思考与操作反馈、页面的状态感和氛围。但相邻只是路由关系，不能合并文件夹：Beautiful UI 是可挑选的 DOM 原语；orb、shader、hero 与 sound 各有来源、许可与消费方式。
 
 - **Beautiful UI primitives** → [`design/beautiful-ui-ai-interfaces/`](./design/beautiful-ui-ai-interfaces/)；thinking、streaming、approval、agent tables 等 19 个原语。优先用于 Agent UI，也可组合进数据密集后台。
-- **Thinking orb** → [`ui-patterns/thinking-orb/SKILL.md`](./ui-patterns/thinking-orb/SKILL.md)；`FluidOrb` 或 `Liquid Orb` 二选一。Liquid Orb 的 MIT `effect.wgsl` / `effect.metal` 已抓到 `thinking-orb/upstream/lersent-orb/`。与 live Paper shader 互斥：同一视图最多一套动态大气。
+- **AI thinking orb** → [`ui-patterns/ai-thinking-orb/SKILL.md`](./ui-patterns/ai-thinking-orb/SKILL.md)；`FluidOrb` 或 `Liquid Orb` 二选一。两个上游都已收进包：Liquid Orb 的 MIT `effect.wgsl` / `effect.metal` 在 `ai-thinking-orb/upstream/lersent-orb/`，FluidOrb 参考拷贝（带 PROVENANCE）+ 生产级 plain-React 移植在 `ai-thinking-orb/upstream/rare-ui-fluid-orb/` 与 `ai-thinking-orb/recipes/`。与 live Paper shader 互斥：同一视图最多一套动态大气。
 - **Paper Shaders** → [`paper-shaders/SKILL.md`](./paper-shaders/SKILL.md)；纸张 / mesh / veil 是背景氛围，不承担状态 orb 的语义。
 - **ThreeUI one-hero** → [`ui-patterns/threeui-hero-adapter.md`](./ui-patterns/threeui-hero-adapter.md)；只作产品交互表面，先通过 visual-economy gate，说明图不使用它。
 - **UI SFX** → [`ui-patterns/uisfx-semantic-cues.md`](./ui-patterns/uisfx-semantic-cues.md)；声音是可见状态的补充，绝不是唯一状态通道。
@@ -62,6 +62,7 @@ Acceptance screenshots / checks:
 - **Color / surface** → [`high-leverage-craft-checklist.md`](./high-leverage-craft-checklist.md) 的 color / surface 规则
 - **i18n / language switcher** → [`i18n-iconify-lang-switcher.md`](./i18n-iconify-lang-switcher.md)
 - **IA / user journey / default home / nav** → [`ia-user-journey.md`](./ia-user-journey.md)
+- **渲染选型 / SSG vs SSR vs SPA** → [`rendering-strategy-map.md`](./rendering-strategy-map.md)：按表面选渲染策略的坐标轴与决策启发；生成式 site factory 的特殊视角与 unknown unknowns 清单。
 
 ## 灵感书签
 
