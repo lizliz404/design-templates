@@ -12,11 +12,12 @@
 
 ## Motion chrome
 
-- **Thinking orb** → [`thinking-orb/SKILL.md`](./thinking-orb/SKILL.md)：landing 或 Agent surface 上只放一个环境状态球；不与 live Paper shader 叠加。
+- **AI thinking orb** → [`ai-thinking-orb/SKILL.md`](./ai-thinking-orb/SKILL.md)：landing 或 Agent surface 上只放一个环境状态球（上游源码与移植 recipe 已收进包）；不与 live Paper shader 叠加。
 - **Beautiful UI primitives** → [`../design/beautiful-ui-ai-interfaces/`](../design/beautiful-ui-ai-interfaces/)：本目录之外的同族资产，提供 thinking、streaming、approval、tables 等可挑选的 Agent DOM 原语。
 - **Paper Shaders** → [`../paper-shaders/SKILL.md`](../paper-shaders/SKILL.md)：本目录之外的背景氛围配方；不是 orb，也不承担状态语义。
 - **ThreeUI hero** → [`threeui-hero-adapter.md`](./threeui-hero-adapter.md)：一个 MIT Community 3D product hero；说明图仍走 visual-economy。
 - **UI SFX cues** → [`uisfx-semantic-cues.md`](./uisfx-semantic-cues.md)：稀疏的 hover / press / success / error 声音；必须有同时可见的状态。
+- **Liquid gooey micro-interactions** → [`liquid-gooey-micro-interactions.md`](./liquid-gooey-micro-interactions.md)：React 液滴黏滞融合微交互（npm `liquid-gooey`，MIT）；小面积 chrome 的手感层，剪影层过滤镜、内容层保持清晰；不承担语义状态。
 
 ## Landing chrome
 
