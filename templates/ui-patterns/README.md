@@ -18,6 +18,7 @@
 - **ThreeUI hero** → [`threeui-hero-adapter.md`](./threeui-hero-adapter.md)：一个 MIT Community 3D product hero；说明图仍走 visual-economy。
 - **UI SFX cues** → [`uisfx-semantic-cues.md`](./uisfx-semantic-cues.md)：稀疏的 hover / press / success / error 声音；必须有同时可见的状态。
 - **Liquid gooey micro-interactions** → [`liquid-gooey-micro-interactions.md`](./liquid-gooey-micro-interactions.md)：React 液滴黏滞融合微交互（npm `liquid-gooey`，MIT）；小面积 chrome 的手感层，剪影层过滤镜、内容层保持清晰；不承担语义状态。
+- **vgpu WebGPU effects** → [`vgpu-webgpu-effects.md`](./vgpu-webgpu-effects.md)：vercel-labs 的 WebGPU 渲染库（typed WGSL 导入、单 `Gpu` 上下文、25KB gz 预算、browser / node / mock 三运行时）；orb / Paper / ThreeUI 覆盖不到的自定义 shader 特效施工层，WebGPU-only 无自动兜底。
 
 ## Landing chrome
 
