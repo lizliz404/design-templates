@@ -26,6 +26,7 @@ Lucide 本身没错，错在它成了「基础设施级默认脸」：npm 周下
 2. **Provider 锁语言**：应用根部包一层 `IconoirProvider`，全局锁 `strokeWidth` + 默认尺寸——产品的 icon visual language 只允许在这一处调。
    - chuhai-cloud：`strokeWidth: 1.75`（对齐 DESIGN.md 的 stroke band 1.75），chrome 尺寸 16px。
    - inquiry-foundry：以该仓 DESIGN.md/现网口径为准。
+   - **最佳实践**：Iconoir 线条偏轻，小尺寸易渲染出「蚊子字」感——尺寸比直觉**加大 1~3px**，并**加粗一档 stroke**（如默认 1.5 → 1.75）。
 3. **离线纪律**：npm dependency + lockfile + tree shaking = 构建期进 bundle，**运行时零第三方请求**。禁止 Iconify API/CDN runtime 模式、禁止把成套 SVG 复制进 repo（那是在给自己找活）。
 4. **分工边界**：产品语义图标（导航、对象、状态、按钮主图标）→ Iconoir；shadcn/ui 原语内部的功能图标 → lucide 保留；两者不得混在同一组件里表达同一语义。
 5. **命名对照**：Iconoir 与 Lucide 无 1:1 官方映射，迁移时按语义挑（如 `home`/`graph-up`/`send-diagram`…），挑完在仓内 DESIGN.md/等价视觉契约里登记字形表，之后新图标先查表再引。
