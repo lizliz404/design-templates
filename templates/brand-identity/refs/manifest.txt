@@ -1,0 +1,6 @@
+﻿ref-13-64 | lane=bl-qwen3.8-flash | errs=gemini-3.5-flash: 请求被中止: 连接被意外关闭。 ;; qwen3.8-flash: 远程服务器返回错误: (400) 错误的请求。
+ref-13-67 | lane=bl-qwen3.8-flash | errs=gemini-3.5-flash: 请求被中止: 连接被意外关闭。 ;; qwen3.8-flash: 远程服务器返回错误: (400) 错误的请求。
+ref-13-70 | lane=bl-qwen3.8-flash | errs=gemini-3.5-flash: 请求被中止: 连接被意外关闭。 ;; qwen3.8-flash: 远程服务器返回错误: (400) 错误的请求。
+ref-13-73 | lane=bl-qwen3.8-flash | errs=gemini-3.5-flash: 请求被中止: 连接被意外关闭。 ;; qwen3.8-flash: 远程服务器返回错误: (400) 错误的请求。
+ref-13-76 | lane=bl-qwen3.8-flash | errs=gemini-3.5-flash: 请求被中止: 连接被意外关闭。 ;; qwen3.8-flash: 远程服务器返回错误: (400) 错误的请求。
+ref-13-79 | lane=bl-qwen3.8-flash | errs=gemini-3.5-flash: 请求被中止: 连接被意外关闭。 ;; qwen3.8-flash: 远程服务器返回错误: (400) 错误的请求。
