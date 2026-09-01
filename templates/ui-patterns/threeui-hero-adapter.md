@@ -24,4 +24,4 @@ description: >-
 
 - 164 条整目录、`node_modules`、CLI、付费 Pro
 - 用 ThreeUI 画架构图、权限模型、时序
-- 与 thinking-orb 或 Paper live shader 同屏叠第二套 WebGL/WebGPU 大气
+- 与 ai-thinking-orb 或 Paper live shader 同屏叠第二套 WebGL/WebGPU 大气

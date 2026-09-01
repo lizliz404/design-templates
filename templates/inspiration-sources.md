@@ -14,7 +14,7 @@ description: >-
 | 我在做… | 先开这些 | 再回 pack |
 |---|---|---|
 | **AI / agent 界面** | [beautifului.dev](https://www.beautifului.dev/) · Vercel AI Elements（实现向） | `design/beautiful-ui-ai-interfaces/` |
-| **单文件 React 动效元件** | [Rare UI](https://www.rareui.com/) | `ui-patterns/thinking-orb/`；2026-08 无 repo LICENSE，勿 mirror、勿把源码写进 pack |
+| **单文件 React 动效元件** | [Rare UI](https://www.rareui.com/) | `ui-patterns/ai-thinking-orb/`；2026-08 无 repo LICENSE，勿 mirror；参考拷贝已按 PROVENANCE 收进 pack（`upstream/rare-ui-fluid-orb/`），保留署名、勿转售 |
 | **3D product hero（交互表面）** | [ThreeUI Community](https://threeui.com/) | `ui-patterns/threeui-hero-adapter.md`；只抄一个免费 MIT hero；禁止当说明图 |
 | **ASCII / dither 运动节奏** | [ASCII motion cards](https://design-on-x.com/praveenisomer/status/2066483905394618552/) | `paper-shaders/`；重做机制，勿截帧或复制皮肤 |
 
@@ -73,7 +73,7 @@ description: >-
 | Awwwards 奖项流 | 噪音大；用 posts/inspora 筛选流更省 |
 | 无来源的「SaaS UI Kit」打包站 | 授权与一致性风险 |
 | 直接复制竞品文案/插图 | 侵权 + 无差异 |
-| MetalForge | 付费 SwiftUI / RN Skia 目录，不进 pack。原生液态球用已抓的 LerSent `thinking-orb/upstream/lersent-orb/effect.metal` |
+| MetalForge | 付费 SwiftUI / RN Skia 目录，不进 pack。原生液态球用已抓的 LerSent `ai-thinking-orb/upstream/lersent-orb/effect.metal` |
 | Recent「Lucid Treats」单条目 | 只有 3D 静图构图，无产品交互证据；勿入库图片 |
 
 ## 与 pack 反哺
