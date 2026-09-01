@@ -94,6 +94,24 @@ For serif CJK:
 "Noto Serif CJK SC", "Source Han Serif SC", "Songti SC", "SimSun", "STSong", serif
 ```
 
+## Small-Size Collapse (蚊子字陷阱)
+
+**Phenomenon (mechanical, not taste):** below ~14px, ALL faces converge into the same generic "mosquito text" — information-only, aesthetically inert, and barely legible. Font choice stops mattering entirely.
+
+Three mechanisms, in order of importance:
+
+1. **Pixel budget.** A display face's identity lives in high-contrast strokes, tight apertures, and stylized terminals. At 12–13px those features have no pixels to survive hinting and antialiasing — every face rounds down to the same neutral skeleton. Symmetrically, the design space for a *text* face at small sizes is narrow (x-height, width, weight), so all UI faces occupy the same solution. Convergence is mechanical, not a curation failure.
+2. **Word-shape reading.** At small sizes humans read word outlines, not letterforms. The font-identity channel is simply closed — you cannot see WHICH font it is, only that it is small.
+3. **The size cliff amplifies it.** A page that pairs 72px display moments with a body floor of 12–13px pushes its median text into the collapse zone and makes the cliff feel bigger: the display size reads as "decoration", the small text as "mosquito wall", with nothing in between carrying the font's character.
+
+**Rules:**
+
+- Differentiation is only carried at **≥20px**. Do not spend display-face budget on text that will render under 16px.
+- Body floor **15px** (14px absolute minimum for dense data tables). **12–13px is for labels/meta/eyebrows only — never paragraphs.** A paragraph at 12px is a defect, not a style.
+- Adjacent steps in a type ladder should stay within ~1.333×; keep the whole page at **≤7 distinct sizes**. A 72→13px cliff is a hierarchy failure, not "strong contrast".
+- Small text earns beauty from **weight, color contrast, spacing, and mono-for-data** — channels that survive the collapse — not from the face itself.
+- If a design only works when its body text is tiny, the problem is the layout's information density, not the fonts.
+
 ## Usage Notes
 
 - **Priority order** matters: Latin font first, then CJK fallbacks, then system fonts.
