@@ -42,7 +42,7 @@ description: >-
 本 skill 全文只覆盖 Tier A；扩容时先读 [`reference.md`](./reference.md)「月历工作台主体样本」节换参考对象：
 
 - **Tier A 月核（= 本 pack）**：固定高度月网格、presence 状态通道、picked-day 面板、键盘与壳热键共存。消费项目从零到一从这里起步。
-- **Tier B 工作台扩展**：每格事件容量、overflow 计数与展开浮层、事件排序（`nEventsPerDay` 类问题）→ 参考对象切 TOAST UI Calendar / Schedule-X / vkurko calendar；Tier A 的 MUST 全部继续生效。
+- **Tier B 工作台扩展**：每格事件容量、overflow 计数与展开浮层、事件排序（`nEventsPerDay` 类问题）→ 参考对象切 TOAST UI Calendar / Schedule-X / vkurko calendar，外加 Postiz（成品实证：每格容量 3＋计数行就地展开＋拖拽状态守卫模态，账本见 reference.md）；Tier A 的 MUST 全部继续生效。
 - **Tier C 执行层视图**：周/日时间轴、拖拽排程、resource view → 超出本 pack，以 FullCalendar 的 core/day-grid/interaction 分层架构为实现参照重新立合同。
 
 ## 合同
@@ -68,7 +68,7 @@ description: >-
    - [PROFILE] 数字 `tabular-nums` 13–14px 左上角、muted-fill ~8% alpha 均为示例值。
 5. **状态通道与溢出（数据压缩算法）**
    - [MUST] 圆点是**类别存在性**信号：每个状态类别至多一枚语义色点，全格 ≤2 色（如 已排期=warning、已发=success）；点永不编码数量。
-   - [MUST] 数量走**绝对计数**：accessible name 含分类细目（「已排期 5 条、已发 3 条」），可视文本显示绝对总数。`+N` 偏移形式只允许出现在打开溢出详情的点击目标上；本月核无格内浮层，默认不用——明细去 picked-day 面板。
+   - [MUST] 数量走**绝对计数**：accessible name 含分类细目（「已排期 5 条、已发 3 条」），可视文本显示绝对总数。`+N` 偏移形式只允许出现在打开溢出详情的点击目标上；本月核无格内浮层，默认不用——明细去 picked-day 面板。（Postiz 实证「点计数行就地格内展开」同样满足这条——它禁的是无目标偏移展示与来路不明的浮层，不是禁展开面本身；Tier B 抬走该限制的方式记在 reference.md Postiz 节。）
    - [MUST] 第三种语义色不许出现；格子内不塞卡片列表。
 6. **日期激活语义**
    - [MUST] 「选定日」（更新 picked-day、面板联动）与「新建排期」是两层语义；激活（点击 / Enter / Space）永远至少完成「选定」，不得对任意未来日一律弹创建流程。
@@ -105,6 +105,8 @@ description: >-
 - Home/End/PageUp/PageDown 无壳冲突，网格 onKeyDown 直接处理。
 - `?`、`/`、`g+h/c/i` 等壳热键继续可达；IME 组字不抢字符键；Enter 走原生 button 点击语义即可。
 
+**边缘跨月两机制等价：** 固定六行走法即 DOM 直落；动态行数走法下邻月格同样常在 DOM、可立即聚焦，但翻月重排会重建其所属 row 节点——须把目标日挂共享 state、渲染提交后 `focus()` 回新节点（Base UI #4462 的教训转正用）。验收锁行为（焦点落格＋即时同步月份与明细），不锁机制。
+
 ## Host profile — Aurora / chuhai 示例
 
 除右列红线（≡ MUST）外整表可替换成消费项目的 DESIGN.md：
@@ -127,8 +129,9 @@ description: >-
 
 - [ ] 年月标两击内到达任意目标月年；chevron 只微调。
 - [ ] 今天 vs 选中双通道肉眼可辨；DOM 里 grid>row>gridcell>button 四层齐全；`aria-selected` 恰一格、`aria-current` 在今天格。
-- [ ] 换月纵向高度恒定；←→ 边缘直落邻月格并即时同步月份与明细（DOM 直落型回归）。
+- [ ] 换月纵向高度恒定；←→ 边缘直落邻月格并即时同步月份与明细。
 - [ ] 方向键壳守卫生效（网格内按 ←/→ 移动日格、连按 ↓ 不切侧栏页），且组件自身导航可用——割让成对验收。
+- [ ] roving tabindex 不变量：任意键盘导航后全网格恰一格 `tabindex=0`；连按 → 跨月三次焦点不丢。
 - [ ] Enter 至少切换明细面板；空白未来日直达 composer 仅在产品政策启用时生效；过去日文案符合所选政策。
 - [ ] 点=presence、分类细目在 accessible name 中完整、无第三色。
 - [ ] 材质红线：无 blur、无冷灰块、hairline、无第三强调色。
@@ -137,6 +140,6 @@ description: >-
 
 ## 关联资产
 
-- **data-dense-app-craft.md**：表格/密度/状态点/focus ring 通条目适用本面板。
-- **high-leverage-craft-checklist.md**：等待/撤销/微反馈等 UX 机制。
-- **reference.md**：全部轮子 URL · 证据分级 · 偷什么 · 不偷什么 · license。
+- **[`../data-dense-app-craft.md`](../data-dense-app-craft.md)**：表格/密度/状态点/focus ring 通条目适用本面板。
+- **[`../../high-leverage-craft-checklist.md`](../../high-leverage-craft-checklist.md)**：等待/撤销/微反馈等 UX 机制。
+- **[`./reference.md`](./reference.md)**：全部轮子 URL · 证据分级 · 偷什么 · 不偷什么 · license。

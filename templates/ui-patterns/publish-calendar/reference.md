@@ -69,6 +69,17 @@ type MonthRange = {
 };
 ```
 
+### Postiz — [gitroomhq/postiz-app](https://github.com/gitroomhq/postiz-app)（MIT）
+
+2026-08-27 补录：开源社交排程产品的发布日历，Tier B 档被生产环境跑通的一份成品样本。证据为本次 code-reading——逐行阅读 benchmark 快照 `D:\dev\chuhai-cloud-benchmarks\postiz\apps\frontend\src\components\launches\calendar.tsx` 与 `calendar.context.tsx`（非文档转述）。偷证的机制：
+
+- **每格容量 3＋绝对计数开关**：`postList.slice(0, 3)` 封顶每格事件卡；超出时格子底部出现唯一可点计数行 `+ Show more (N)`（N = 绝对余量），展开后同位置变 `- Show less`。
+- **展开面＝格内就地展开，不是浮层**：点计数行后剩余条目直接渲染进同一列、撑高所在行、由容器整体滚动吸收。这实测厘清了 SKILL 合同 §5 的字面禁令只针对两件事——`+N` 偏移出现在非点击目标上、月核引入来路不明的浮层；「点击目标＋就地展开」不踩线。**Tier B 抬走「本月核无格内浮层」限制的方式即此**：把 picked-day 面板换成或叠加这类就地展开面，代价是把恒高合同改成固定行高、增量交给容器滚动。
+- **拖拽改期带状态守卫**：react-dnd 投放；过去小时格整体灰化（grayscale ＋ cursor-not-allowed）拒收；对 PUBLISHED / 已过期 QUEUE 帖落格先弹三选一模态（仅更新详情 / 重排 / 取消）再提交，乐观 `changeDate` 先改本地日期随后 PUT。
+- **chip 解剖学与状态语义**：事件卡 24px 标签色顶栏承载 hover 才浮现的操作图标（复制/预览/统计/删除）＋栏身集成头像叠 12px 平台角标＋单行 clamp 文案；ERROR 态整卡红色 ring 2px、左上 `!` 圆徽 tooltip 挂错误原文；每格独立 loading shimmer、drop 目标主色描边。
+
+**刻意不采纳**：① 格内渲染完整事件卡属 Tier B 关注面，本 pack 月核保持 presence 点通道不动；② 其月视图写死 42 格（`for i < 42` 恒六周）与本 pack「固定六行或动态 5/6 行＋min-height」恒高规则冲突——Postiz 是证据不是覆盖；③ week/day/list 四视图切换（cookie＋URL `display` 持久化）与 SWR 区间计算属 Tier C 架构参考，届时扩容再回看。
+
 ## 交互基础设施样本（date-picker 系；只偷 focus/a11y/date-state，不当 event calendar 主样本）
 
 | 来源 | 级别 | 偷的机制 | 不偷 / 风险 | License |
@@ -85,8 +96,8 @@ type MonthRange = {
 | 来源 | 级别 | 偷的机制 | 不偷 |
 |---|---|---|---|
 | [飞书开放平台 · 日期选择器设计规范](https://open.feishu.cn/document/design-specification/component---data-entry/date-picker?lang=zh-CN) | primary | 导航区四件套语义：月份选择器、年份选择器、单箭头±月、双箭头±年；hover 高亮提示 label 可点；跨年箭头有明确文案 | 截图与双面板 range UI 细节 |
-| [Buffer 新版 calendar 发布文](https://buffer.com/resources/new-social-media-calendar/) | secondary | monthly=规划俯视 / weekly=执行明细的双层心智；channel 过滤下拉；Create Post 常驻 CTA。留作**产品意图**证据；实现机制证据以本页工作台样本为准 | drag-drop timeslot（非承诺项） |
-| [Metricool 教程](https://metricool.com/metricool-mega-tutorial/) | secondary | 点日历槽位预填 composer 时间；"This week" 复位钮；Calendar zoom 三档密度 ← 密度档 token 化参照 | best-times heatmap；跨品牌 Studio 视图 |
+| [Buffer 新版 calendar 发布文](https://buffer.com/resources/new-social-media-calendar/) | secondary | monthly=规划俯视 / weekly=执行明细的双层心智；channel 过滤下拉；Create Post CTA 存在（常驻性与具体位置未逐帧核验）。留作**产品意图**证据；实现机制证据以本页工作台样本为准 | drag-drop timeslot（非承诺项） |
+| [Metricool 规划指南](https://metricool.com/planning-social-media-content-with-metricool/) ＋ [mega 教程](https://metricool.com/metricool-mega-tutorial/) | secondary | 点日历进 composer 预设时间的心智（预填程度未逐帧核验）；"This week" 复位钮；Calendar zoom 三档密度 ← 密度档 token 化参照（见教程页） | best-times heatmap；跨品牌 Studio 视图 |
 | [Notion 日历帮助](https://www.notion.com/help/calendars) | secondary | 记住上次浏览的月区间，重进不重置 | 无限滚动翻月的页内模式 |
 | [Setproduct · Date picker anatomy](https://www.setproduct.com/blog/date-picker-ui-design) | secondary（立论句为转述非原文引用） | 核心主张大意：month/year 应直接可点、强迫连点 chevron 过一年是最常见的 sin——月年标规格立论；today≠selected 双通道警告；Home/End/PageUp 键位表思路 | paid kit；40px 类数值属其 kit 档仅作示例 |
 | [uxpatterns.dev · Date picker](https://uxpatterns.dev/patterns/forms/date-picker) | secondary | ARIA 对照表；header `aria-live` 换月播报；事件埋点清单 | 表单输入框联动部分 |
@@ -95,11 +106,11 @@ type MonthRange = {
 
 ## 与 SKILL.md 的映射速查
 
-- 高度恒定两走法 ← TOAST `month.isAlways6Weeks`（上游先例，默认 true=固定六行；chuhai 实装即此）＋ rdp `weeksInMonth` 动态行数。
+- 高度恒定两走法 ← TOAST `month.isAlways6Weeks`（上游先例，默认 true=固定六行）＋ rdp `weeksInMonth` 动态行数；chuhai 实装走动态行数路线。
 - 容量→溢出→展开链 ← TOAST `visibleEventCount` → overflow → `moreView`；本 pack expansion surface = picked-day panel，preview 压缩 = presence 点＋绝对计数。
 - 区间模型 ← FullCalendar/vkurko current vs active 口径（派生 `MonthRange` 形状）。
 - 键盘表 ← W3C APG Date Picker Dialog 例（权威逐行源）+ React Aria grid 合同 + Setproduct 思路。
-- 邻居月焦点 DOM 直落型 ← fixed-six-row 实现策略 + Base UI #4462 反面教材。
+- 邻居月焦点**两机制等价** ← 固定六行＝DOM 直落；动态行数＝pending target 挂共享 state、渲染提交后 `focus()` 回新节点（Base UI #4462 教训转正用）。验收锁行为（焦点落格＋即时同步月份与明细），不锁机制。
 - 邻居格可点的边界 ← React Spectrum #3257 反方三坑 + 单月工作台适用声明。
 - 一级月年标 ← 飞书四件套 + Setproduct 立论（转述）；**picker 形态一屏宫格直达为 MUST，原生 select 长列表为工程过渡不达终态**（见下方裁决记录）。
 - 密度档 token 化 ← Metricool zoom 三档收成两档常量。
@@ -114,8 +125,8 @@ type MonthRange = {
 ## 消费侧账本（chuhai-cloud，2026-08-27 核）
 
 - 壳层热键实装：`web/src/hooks/useShellHotkeys.ts` 于 window capture 阶段注册监听，处理器在 `web/src/lib/shellHotkeys.ts`；↑/↓ 与 ←/→ 两分支的目标守卫均已含 `[role="grid"]`（与 `[role="listbox"], [role="menu"], [role="combobox"]` 并列）。
-- 组件本体：`web/src/features/publish/calendar.tsx`（PublishCalendar，手写网格）；挂载点 `web/src/pages/PublishHub.tsx:8/:107` 发布子 tab。实装形态：固定六行 + 邻居月格可点跳月、点未来日直进新建（≈ POLICY 默认档）、状态点 presence 型。
-- 待清欠（2026-08-27 晚间已按 v3 合同以最低复杂度结算，同日自查通过）：① roving tabindex 键盘导航 ✔（`data-day` 选择器 + 提交后 effect focus）；② row>gridcell>button 四层结构 ✔（态属性迁至 button）；③ 今天 ring vs 选中 wash 双通道 ✔；④ button name 完整配方 + 绝对计数（可视 >1 显示总数）✔；⑤ select 长列表替换为年月宫格 picker ✔（含外点/Esc 关闭）。遗留：⑥ Host profile 整体 restyle 仍待做——当前仍是 shadcn 冷灰线框档，只加了今天圆环这一处通道修复。
+- 组件本体：`web/src/features/publish/calendar.tsx`（PublishCalendar，手写网格），挂发布子 tab（`pages/PublishHub.tsx`）。实装形态：动态周数 5/6 行 + `min-height` 吸收高度、邻居月格可点跳月、点未来日直进新建（≈ POLICY 默认档）、状态点 presence 型。
+- 待清欠（2026-08-27 晚间已按 v3 合同以最低复杂度结算，同日自查通过）：① roving tabindex 键盘导航 ✔（`data-day` 选择器 + 提交后 effect focus）；② grid>row>gridcell>button 四层结构 ✔（aria-selected/current 归 gridcell 容器——`button` 非 `aria-selected` 合法宿主角色；button 承载完整人话 name 与交互）；③ 今天 ring vs 选中 wash 双通道 ✔；④ button name 完整配方 + 绝对计数（可视 >1 显示总数）✔；⑤ select 长列表替换为年月宫格 picker ✔（含外点/Esc 关闭）。遗留：⑥ Host profile 整体 restyle 仍待做——当前仍是 shadcn 冷灰线框档，只加了今天圆环这一处通道修复。
 - 结算时的两处实现档位记录：网格走**动态行数 + min-height 吸收**路线（非固定六行，同为合规解）；焦点跨月交接因变行下邻格可能不在 DOM，采用「pending target 跨 remount 交接」的 Base UI #4462 式方案而非六行 DOM 直落型——两条合同路线各自成立，此处自洽。
 
 ## Vendor 政策
