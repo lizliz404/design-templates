@@ -52,6 +52,7 @@ Acceptance screenshots / checks:
 - **Drafting resolve hero** → [`ui-patterns/drafting-resolve-hero.md`](./ui-patterns/drafting-resolve-hero.md)；three.js batched 线稿的「虚线草图 = 未确认方案、注意力 = 人工确认、实线 = 可交付」hero，产品承诺是「先确认后生成」类叙事时用；机制源头与生命周期合同在 webgl-threejs-background-animation skill；同一视图最多一套动态大气。
 - **vgpu 自研 GPU 特效** → [`ui-patterns/vgpu-webgpu-effects.md`](./ui-patterns/vgpu-webgpu-effects.md)；vercel-labs 的 WebGPU 库（typed WGSL、25KB gz 预算、browser / node / mock 三运行时）。vendored 资产（orb / Paper / ThreeUI / theater）覆盖不到的自定义 shader 特效才上手；WebGPU-only 无兜底；同一视图最多一套动态大气。
 - **UI SFX** → [`ui-patterns/uisfx-semantic-cues.md`](./ui-patterns/uisfx-semantic-cues.md)；声音是可见状态的补充，绝不是唯一状态通道。
+- **Hand-drawn controls** → [`ui-patterns/hand-drawn-controls.md`](./ui-patterns/hand-drawn-controls.md)；手绘 boiling 控件（drawably 蒸馏，MIT）：seeded SVG 叠在真控件下，a11y 来自真控件；playful / landing 表面专用，dense B2B admin 换资产。
 
 ## Decks / diagrams
 
@@ -64,6 +65,8 @@ Acceptance screenshots / checks:
 - **Typography** → [`design-typography-font-preferences.md`](./design-typography-font-preferences.md)
 - **Color / surface** → [`high-leverage-craft-checklist.md`](./high-leverage-craft-checklist.md) 的 color / surface 规则
 - **i18n / language switcher** → [`i18n-iconify-lang-switcher.md`](./i18n-iconify-lang-switcher.md)
+- **i18n / 翻译存活排版规则** → [`i18n-translation-survival.md`](./i18n-translation-survival.md)：atom、换行、层级通道、RTL、IME、voice 的规则级手册；做切换器组件走上一行的 lang-switcher 文档。
+- **On-brand AI 生成合同 / 压 AI 味** → [`on-brand-ai-generation-craft.md`](./on-brand-ai-generation-craft.md)：Hallmark 58 gates + macrostructure 轮换，Vercel design.md 单文件合同与 eval 方法；agent 生成官网 / 活动页 / 报告页前先过它。
 - **IA / user journey / default home / nav** → [`ia-user-journey.md`](./ia-user-journey.md)
 - **渲染选型 / SSG vs SSR vs SPA** → [`rendering-strategy-map.md`](./rendering-strategy-map.md)：按表面选渲染策略的坐标轴与决策启发；生成式 site factory 的特殊视角与 unknown unknowns 清单。
 
