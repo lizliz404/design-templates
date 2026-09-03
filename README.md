@@ -4,6 +4,16 @@
 
 在线版本：[lizliz.xyz/templates](https://lizliz.xyz/templates)；仓库：[lizliz404/design-templates](https://github.com/lizliz404/design-templates)。
 
+```mermaid
+graph TD
+    ENTRY["README.md / SKILL.md"] --> ROUTER["templates/README.md<br/>唯一主路由 + CRUD 约定 + lint"]
+    ROUTER -->|"产品任务"| PRODUCT["design/ 页面系统研究<br/>ui-patterns/ 微模式"]
+    ROUTER -->|"Agent / motion chrome"| CHROME["beautiful-ui · orb · paper-shaders<br/>threeui · vgpu · hand-drawn"]
+    ROUTER -->|"Decks / diagrams"| DECKS["decks/ · visual-economy 先行"]
+    ROUTER -->|"Craft / tokens"| CRAFT["checklist · typography · i18n<br/>IA · on-brand 生成合同"]
+    ROUTER -->|"找灵感"| INSPIRE["inspiration-sources.md 书签<br/>查完回路由，不 mirror"]
+```
+
 ## What’s Inside
 
 `templates/README.md` 是唯一的 pack 主路由：资产归属、增删改规则、选择记录和验证要求都以它为准。这里和 `SKILL.md` 只链接到它，避免维护多份清单。
