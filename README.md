@@ -43,9 +43,6 @@ Beautiful UI 的 Agent 原语、thinking orb、Paper Shaders、ThreeUI hero 和 
 ## 获取与使用
 
 ```bash
-curl -LO https://lizliz.xyz/templates-pack.zip
-unzip templates-pack.zip
-
 git clone https://github.com/lizliz404/design-templates.git
 cd design-templates
 ```

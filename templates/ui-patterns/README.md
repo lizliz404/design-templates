@@ -6,6 +6,8 @@
 
 - **Data-dense B2B app craft** → [`data-dense-app-craft.md`](./data-dense-app-craft.md) + [`data-dense-b2b-app.md`](./data-dense-b2b-app.md)：tables、filters、forms、inboxes、dashboards、admin。
 - **Icon system craft** → [`icon-system-craft.md`](./icon-system-craft.md)：Track A product chrome 的线重、尺寸与概念表；不是 favicon / wordmark / OG。
+- **Recover at point of failure** → [`recover-at-point-of-failure.md`](./recover-at-point-of-failure.md)：系统消息按 L0–L3 可执行性分级，失败点就地恢复；PACK DOCTRINE + EVIDENCE 双轨标注。
+- **Consent gate** → [`consent-gate.md`](./consent-gate.md)：条款 / 隐私 / 营销同意流的三策略与选择轴，recover 学派的具体应用。
 - **Search craft** → [`search-craft.md`](./search-craft.md)：Search、Filter、Cmd+K 与按产品类型选引擎。
 - **SaaS onboarding two-phase** → [`saas-onboarding-two-phase.md`](./saas-onboarding-two-phase.md)：B2B / Agent 的 aha 之后才进入生产设置。
 - **Publish calendar** → [`publish-calendar/SKILL.md`](./publish-calendar/SKILL.md)：发布/排期月历的 MUST/POLICY/PROFILE 分层合同、四层 DOM/ARIA 结构、Aurora 示例 profile 与不与 shell hotkeys 冲突的键盘合同；页面级工作台，不是 date picker。

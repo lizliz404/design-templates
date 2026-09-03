@@ -60,6 +60,6 @@ Site: [lizliz.xyz/templates](https://lizliz.xyz/templates)
 ```bash
 git clone https://github.com/lizliz404/design-templates.git
 cd design-templates && git pull
-# maintainers after editing templates/:
-bash scripts/sync.sh
+# 改完 templates/ 后跑 pack lint（orphan / 绝对路径 / zip 退役检查）：
+bash scripts/lint-pack.sh
 ```

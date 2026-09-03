@@ -87,7 +87,7 @@ Both packs: **MIT** © Zara Zhang (zarazhangrui). Keep their \`LICENSE\` files. 
 
 \`\`\`bash
 bash scripts/sync-upstream-decks.sh
-bash scripts/sync.sh
+bash scripts/lint-pack.sh
 \`\`\`
 
 Local mirror paths (this machine): clone both upstreams, set \`FRONTEND_SLIDES_DIR\` / \`BEAUTIFUL_HTML_DIR\` if not under \`~/frontend-slides\` and \`~/tools/beautiful-html-templates\`.

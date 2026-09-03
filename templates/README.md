@@ -20,13 +20,35 @@ Acceptance screenshots / checks:
 
 ## 如何添加、修改、删除
 
-1. 新增一个资产时，只新增一个文件夹或一个 `.md`，并在本主路由加一条任务路由。
-2. 修改资产时，更新资产本身和它在本主路由中的那一条路由；不要再建平行索引。
-3. 删除资产时，删除资产与本主路由行；若是 micro-pattern，再删 `ui-patterns/README.md` 的本地行。
-4. 新增 micro-pattern 时，除主路由外只补 `ui-patterns/README.md` 的一行；它是局部清单，不是第二主索引。
-5. 只有外部参考价值才在 [`inspiration-sources.md`](./inspiration-sources.md) 加书签行；不 vendor 外站，不另写资产说明册。
+不变量：一次改动 = 一个资产文件 + 本主路由恰好一行；micro-pattern 另补 `ui-patterns/README.md` 一行（局部清单，不是第二主索引）；外部站点只有书签价值才进 [`inspiration-sources.md`](./inspiration-sources.md)——不 vendor 外站，不写资产说明册。
 
-一次新增或删除应只改一处主路由；其他入口只链接这里，不要求同步四份散文。
+**新增（复制骨架）：**
+
+```markdown
+---
+name: <slug>
+description: >-
+  <是什么>。Use when <分支 1 触发条件>; <分支 2>…（第三人称，触发分支前置）
+---
+
+# <标题>
+
+<一行定位 + 上游链接>
+
+## 流程（何时跑、按序做什么、终点怎么判）
+
+## 机制依据（按需查的平铺规则，co-location）
+
+## 边界（硬性 guardrail，正面措辞）
+```
+
+路由行格式：`- **<任务触发词>** → [`<路径>`](./<路径>)；<一句话边界>。`
+
+**修改**：改资产本身 + 它在本主路由的那一行；跨文件引用保持单向。
+
+**删除**：删资产 + 主路由行；micro-pattern 再删 `ui-patterns/README.md` 的本地行。
+
+**收尾（必须）**：`bash scripts/lint-pack.sh`——零 orphan、无机器绝对路径、zip 退役、`ui-patterns` 本地清单齐，全绿才算改完。
 
 ## 产品任务
 
@@ -38,6 +60,8 @@ Acceptance screenshots / checks:
 - **内容到服务承接页** → [`design/uhoh-inspired-service-entry/`](./design/uhoh-inspired-service-entry/)；入口屋不是交付工厂。
 - **站内 / 产品内搜索** → [`ui-patterns/search-craft.md`](./ui-patterns/search-craft.md)；先区分 Search、Filter 与 Cmd+K。
 - **图标选型 / 线重 / 概念表** → [`ui-patterns/icon-system-craft.md`](./ui-patterns/icon-system-craft.md)；不是 favicon，也不默认自研 icon font。
+- **图标库拍板记录** → [`icon-decision.md`](./icon-decision.md)；Iconoir 决策与候选评估（2026-08-31，Liz），适用 chuhai-cloud / inquiry-foundry；线重与概念表规则走上一行。
+- **系统消息 / 错误恢复** → [`ui-patterns/recover-at-point-of-failure.md`](./ui-patterns/recover-at-point-of-failure.md)；toast / alert / modal 按 L0–L3 可执行性分级，失败点就地恢复；补 data-dense 后台与 onboarding 的消息纪律。
 - **发布 / 排期月历** → [`ui-patterns/publish-calendar/SKILL.md`](./ui-patterns/publish-calendar/SKILL.md)；一级年月控制、状态点密度与 shell-hotkey 共存的键盘合同，规则分 MUST/POLICY/PROFILE 三层（Aurora 参数是示例 profile）；是页面级工作台，不是 date picker。
 - **Logo / favicon / app icon / OG 卡 / 品牌资产** → [`brand-identity/SKILL.md`](./brand-identity/SKILL.md)；七层级 skill 地图 + 媒介匹配规则（几何 → 手写 SVG，材质 → image-gen）+ 16px gate + diverge→converge 流水线；不是 UI 图标系统（那走 [`ui-patterns/icon-system-craft.md`](./ui-patterns/icon-system-craft.md)）。
 
