@@ -60,7 +60,7 @@ description: >-
 - **内容到服务承接页** → [`design/uhoh-inspired-service-entry/`](./design/uhoh-inspired-service-entry/)；入口屋不是交付工厂。
 - **站内 / 产品内搜索** → [`ui-patterns/search-craft.md`](./ui-patterns/search-craft.md)；先区分 Search、Filter 与 Cmd+K。
 - **图标选型 / 线重 / 概念表** → [`ui-patterns/icon-system-craft.md`](./ui-patterns/icon-system-craft.md)；不是 favicon，也不默认自研 icon font。
-- **图标库拍板记录** → [`icon-decision.md`](./icon-decision.md)；Iconoir 决策与候选评估（2026-08-31，Liz），适用 chuhai-cloud / inquiry-foundry；线重与概念表规则走上一行。
+- **UI 栈拍板记录** → [`ui-stack-decision.md`](./ui-stack-decision.md)；管道层/可见层边界、换依赖成本分级 L0–L3、候选分级与 agent-friendly 真标准 + Iconoir 图标决策并入（2026-09-05，Liz），适用 chuhai-cloud / inquiry-foundry；线重与概念表规则走上一行。
 - **现有界面 audit → refine / Libraries.dev 效果选型 / Astryx 组件研究 / Light Rails 动效实验** → [`ui-patterns/interface-audit-refine-toolchain.md`](./ui-patterns/interface-audit-refine-toolchain.md)；Interfaces skills 管审计与修复，Libraries.dev 与 Astryx 只填已证明的效果 / 组件缺口，Light Rails 只做许可隔离的单层 motion spike。
 - **系统消息 / 错误恢复** → [`ui-patterns/recover-at-point-of-failure.md`](./ui-patterns/recover-at-point-of-failure.md)；toast / alert / modal 按 L0–L3 可执行性分级，失败点就地恢复；补 data-dense 后台与 onboarding 的消息纪律。
 - **发布 / 排期月历** → [`ui-patterns/publish-calendar/SKILL.md`](./ui-patterns/publish-calendar/SKILL.md)；一级年月控制、状态点密度与 shell-hotkey 共存的键盘合同，规则分 MUST/POLICY/PROFILE 三层（Aurora 参数是示例 profile）；是页面级工作台，不是 date picker。
