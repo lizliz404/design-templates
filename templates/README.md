@@ -66,6 +66,7 @@ description: >-
 - **系统消息 / 错误恢复** → [`ui-patterns/recover-at-point-of-failure.md`](./ui-patterns/recover-at-point-of-failure.md)；toast / alert / modal 按 L0–L3 可执行性分级，失败点就地恢复；补 data-dense 后台与 onboarding 的消息纪律。
 - **发布 / 排期月历** → [`ui-patterns/publish-calendar/SKILL.md`](./ui-patterns/publish-calendar/SKILL.md)；一级年月控制、状态点密度与 shell-hotkey 共存的键盘合同，规则分 MUST/POLICY/PROFILE 三层（Aurora 参数是示例 profile）；是页面级工作台，不是 date picker。
 - **Logo / favicon / app icon / OG 卡 / 品牌资产** → [`brand-identity/SKILL.md`](./brand-identity/SKILL.md)；七层级 skill 地图 + 媒介匹配规则（几何 → 手写 SVG，材质 → image-gen）+ 16px gate + diverge→converge 流水线；不是 UI 图标系统（那走 [`ui-patterns/icon-system-craft.md`](./ui-patterns/icon-system-craft.md)）。
+- **集成 logo / 技术栈标 / 占位 logo 墙 / 外部品牌标** → [`brand-logo-sources.md`](./brand-logo-sources.md)；真品牌标库（Simple Icons / theSVG / SVGL…）× 虚构占位标（Hugeicons Logos / Untitled UI Logos…）的验真源头表 + 商标与构建期离线纪律；不是功能图标（那走 [`ui-patterns/icon-system-craft.md`](./ui-patterns/icon-system-craft.md)），也不是自研 logo 流水线（那走上一行 brand-identity）。
 
 ## Agent / motion chrome
 
