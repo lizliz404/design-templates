@@ -93,6 +93,7 @@ description: >-
 - **i18n / 翻译存活排版规则** → [`i18n-translation-survival.md`](./i18n-translation-survival.md)：atom、换行、层级通道、RTL、IME、voice 的规则级手册；做切换器组件走上一行的 lang-switcher 文档。
 - **On-brand AI 生成合同 / 压 AI 味** → [`on-brand-ai-generation-craft.md`](./on-brand-ai-generation-craft.md)：Hallmark 58 gates + macrostructure 轮换，Vercel design.md 单文件合同与 eval 方法；agent 生成官网 / 活动页 / 报告页前先过它。
 - **IA / user journey / default home / nav** → [`ia-user-journey.md`](./ia-user-journey.md)
+- **Header 控件分置 / 状态切换器 vs 入口 vs 外链** → [`chrome-controls-placement.md`](./chrome-controls-placement.md)：高频状态切换（theme/locale）必须 Header 一键 icon switcher，menu 只收低频入口与外链；审"统一 dropdown"混装时开它。
 - **渲染选型 / SSG vs SSR vs SPA** → [`rendering-strategy-map.md`](./rendering-strategy-map.md)：按表面选渲染策略的坐标轴与决策启发；生成式 site factory 的特殊视角与 unknown unknowns 清单。
 
 ## 灵感书签
