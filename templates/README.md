@@ -70,9 +70,9 @@ description: >-
 
 ## Agent / motion chrome
 
-这些资产相邻，是因为它们都在解决 **AI surface chrome**：Agent 的可见思考与操作反馈、页面的状态感和氛围。但相邻只是路由关系，不能合并文件夹：Beautiful UI 是可挑选的 DOM 原语；orb、shader、hero 与 sound 各有来源、许可与消费方式。
+这些资产相邻，是因为它们都在解决 **AI surface chrome**：Agent 的可见思考与操作反馈、页面的状态感和氛围。但相邻只是路由关系，不能合并文件夹：Beautiful UI 是可挑选的 React 源码组件；orb、shader、hero 与 sound 各有来源、许可与消费方式。
 
-- **Beautiful UI primitives** → [`design/beautiful-ui-ai-interfaces/`](./design/beautiful-ui-ai-interfaces/)；thinking、streaming、approval、agent tables 等 19 个原语。优先用于 Agent UI，也可组合进数据密集后台。
+- **Beautiful UI primitives** → [`design/beautiful-ui-ai-interfaces/`](./design/beautiful-ui-ai-interfaces/)；21 个组件的完整官方 TSX、共享样式、依赖锁文件和 MIT 许可；固定版本与官网 Copy code 逐项核验，包含 Prompt Bar、Insight Cards、Flowchart 和 Agent Screen。
 - **AI thinking orb** → [`ui-patterns/ai-thinking-orb/SKILL.md`](./ui-patterns/ai-thinking-orb/SKILL.md)；`FluidOrb` 或 `Liquid Orb` 二选一。两个上游都已收进包：Liquid Orb 的 MIT `effect.wgsl` / `effect.metal` 在 `ai-thinking-orb/upstream/lersent-orb/`，FluidOrb 参考拷贝（带 PROVENANCE）+ 生产级 plain-React 移植在 `ai-thinking-orb/upstream/rare-ui-fluid-orb/` 与 `ai-thinking-orb/recipes/`。与 live Paper shader 互斥：同一视图最多一套动态大气。
 - **Paper Shaders** → [`paper-shaders/SKILL.md`](./paper-shaders/SKILL.md)；纸张 / mesh / veil 是背景氛围，不承担状态 orb 的语义。
 - **ThreeUI one-hero** → [`ui-patterns/threeui-hero-adapter.md`](./ui-patterns/threeui-hero-adapter.md)；只作产品交互表面，先通过 visual-economy gate，说明图不使用它。
@@ -105,6 +105,5 @@ description: >-
 ## 已知缺口
 
 - **没有完整 B2B 数据密集后台模板**：现有 `data-dense-app-craft.md` 是手册，`data-dense-b2b-app.md` 是交付闸。若沉淀出 tokens、表格 / 表单语法和截图，应回填 `design/<slug>/` 并在本节更新。
-- **没有可安装的 App 内表格组件**：只有语法手册和 `beautiful-ui-ai-interfaces/sections/records-table.html` 的 DOM 骨架。
-- **Beautiful UI `Flowchart` 尚未收录**：源站已是 20 项，pack 仍为 19 primitives；仅当产品确实需要可编辑工作流画布时再复核，不把它当文档图表。
+- **没有可安装的 App 内表格组件**：已有 Beautiful UI Records / Diff / Filter 原始 TSX；仍需在消费项目接入真实数据、分页与权限。
 - **静态站与 React landing 的统一规则仍缺**：双营销面的共同 token、组件边界和回归检查尚未沉淀为通用资产。

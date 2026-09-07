@@ -5,7 +5,11 @@
 - Canonical URL: **https://www.beautifului.dev/**（旧 `https://beautiful-ui-five.vercel.app/` 308 → 此域）
 - Title: "Beautiful UI — Crafted primitives for AI-native interfaces"
 - Description (from page meta): "A small library of extremely crafted, copy-paste components for chat agents, thinking states, human-in-the-loop approvals, and everything agents need to talk to humans beautifully."
-- **No public GitHub/source repo found** — components are copy-paste from the page itself. This pack is a rebuild-from-observation study, not a fork.
+- 官方源码仓库已确认：[slev12397/beautiful-ui](https://github.com/slev12397/beautiful-ui)。当前完整源码与清单以 README / manifest 为准；下面两轮记录仅描述历史 DOM 采集。
+
+## Current source verification — 2026-09-07
+
+官网 globals.css 链接指向官方仓库；`app/page.tsx` 在构建时用 `readSources()` 读取 `lib/meta.ts` 的 21 个 TSX，作为 `sources` 传给 Grid 的 Copy code / View code。固定 commit 与实时官网 21 项源码逐字节一致，98 个源码文件及共享依赖已存档。官方 registry 目前仅覆盖 20 个展示组件（缺 Agent Screen）；手动源码覆盖 21/21。逐项来源、哈希、递归本地依赖与锁定 npm 版本见 `manifest.json`。
 
 ## Capture method
 
@@ -24,9 +28,9 @@
 4. Playwright Chromium headless 1440×900 @ 2x: full-page + 19 section viewport shots → `screenshots/` (overwrote).
 5. Inventory still **19 primitives**; in-demo variants observed (not separate sections): Loading `Drive|Dots|Orbit`, Task rows `Capsules|List`, Prompt bar `Rounded|Pill`.
 
-`sections/` DOM skeletons from pass 1 retained as implementation grammar unless a future pass shows structural breakage.
+`sections/` DOM skeletons from pass 1 remain historical visual evidence. Current implementation source is the pinned TSX snapshot linked in README.
 
-## Component inventory (19 primitives)
+## Historical component inventory (2026-08; 19 primitives)
 
 1. `loading-state` — agent boot/loading indicator (+ Drive/Dots/Orbit variants)
 2. `thinking-state` — expandable thought traces (steps/reasoning/search/coding)
@@ -62,4 +66,4 @@
 
 ## License / attribution
 
-No license found on the source page. Study-only capture; rebuilt primitives in this pack are independent re-implementations. See `README.md` reuse notes.
+上游 LICENSE 确认 MIT，Copyright (c) 2026 Shane Levine。复制源码须保留许可；外链演示媒体的独立授权未验证，详见 README。

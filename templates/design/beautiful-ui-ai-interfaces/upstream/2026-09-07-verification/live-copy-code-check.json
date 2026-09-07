@@ -1,0 +1,215 @@
+{
+  "method": "Next flight text records passed as sources to Grid; app/page.tsx readSources reads these exact TSX files",
+  "components": [
+    {
+      "number": 1,
+      "id": "loading-state",
+      "title": "Loading State",
+      "path": "upstream/06557d7ff33a1eb70d5987bae9ac4c70fa0e20c4/components/primitives/LoadingState.tsx",
+      "source": "https://www.beautifului.dev/#loading-state",
+      "source_sha256": "1b1ee1273717be0b2dfc12abc6853a3c118e543c05bc522b4c80378dd88e8a0d",
+      "live_copy_code_matches": true,
+      "registry_available": true
+    },
+    {
+      "number": 2,
+      "id": "thinking-state",
+      "title": "Thinking",
+      "path": "upstream/06557d7ff33a1eb70d5987bae9ac4c70fa0e20c4/components/primitives/ThinkingState.tsx",
+      "source": "https://www.beautifului.dev/#thinking-state",
+      "source_sha256": "8806141f0d94f461ba2086b4e0780dafa08577fb5b055a6b25560fabe52f8449",
+      "live_copy_code_matches": true,
+      "registry_available": true
+    },
+    {
+      "number": 3,
+      "id": "streaming-text",
+      "title": "Streaming Text",
+      "path": "upstream/06557d7ff33a1eb70d5987bae9ac4c70fa0e20c4/components/primitives/StreamingText.tsx",
+      "source": "https://www.beautifului.dev/#streaming-text",
+      "source_sha256": "8b17569fbc9c75aef1f82a5310f2402209cc8ab1b13f65fdd71251cb1e1f14d3",
+      "live_copy_code_matches": true,
+      "registry_available": true
+    },
+    {
+      "number": 4,
+      "id": "approval-card",
+      "title": "Approval Card",
+      "path": "upstream/06557d7ff33a1eb70d5987bae9ac4c70fa0e20c4/components/primitives/ApprovalCard.tsx",
+      "source": "https://www.beautifului.dev/#approval-card",
+      "source_sha256": "5e90ba19b79f4d385a34e9cf703b15e819c72df93d70a72c8c01aa85d500ca95",
+      "live_copy_code_matches": true,
+      "registry_available": true
+    },
+    {
+      "number": 5,
+      "id": "tool-chips",
+      "title": "Tool Chips",
+      "path": "upstream/06557d7ff33a1eb70d5987bae9ac4c70fa0e20c4/components/primitives/ToolChips.tsx",
+      "source": "https://www.beautifului.dev/#tool-chips",
+      "source_sha256": "dc06a0ec805825622bf622f0f56cc8305f79751fe7fcb55727a59869b443c9c8",
+      "live_copy_code_matches": true,
+      "registry_available": true
+    },
+    {
+      "number": 6,
+      "id": "task-rows",
+      "title": "Task Rows",
+      "path": "upstream/06557d7ff33a1eb70d5987bae9ac4c70fa0e20c4/components/primitives/TaskRows.tsx",
+      "source": "https://www.beautifului.dev/#task-rows",
+      "source_sha256": "7a81c2a264528405826b8ac9db9e92d4c14ef6fa3fcdb39010022df3cf4c0920",
+      "live_copy_code_matches": true,
+      "registry_available": true
+    },
+    {
+      "number": 7,
+      "id": "chat-composer",
+      "title": "Chat",
+      "path": "upstream/06557d7ff33a1eb70d5987bae9ac4c70fa0e20c4/components/primitives/ChatComposer.tsx",
+      "source": "https://www.beautifului.dev/#chat-composer",
+      "source_sha256": "1b8ac6cd342a5ccab92c0e0265d7431a35703e23496bd85c4cf64d883e6cc7f5",
+      "live_copy_code_matches": true,
+      "registry_available": true
+    },
+    {
+      "number": 8,
+      "id": "prompt-bar",
+      "title": "Prompt Bar",
+      "path": "upstream/06557d7ff33a1eb70d5987bae9ac4c70fa0e20c4/components/primitives/PromptBar.tsx",
+      "source": "https://www.beautifului.dev/#prompt-bar",
+      "source_sha256": "1f2ff02adae3f1fe80b00fd0ef1c54c3558e8638502c1b7d71b1d0000dfceb5a",
+      "live_copy_code_matches": true,
+      "registry_available": true
+    },
+    {
+      "number": 9,
+      "id": "recommendation-card",
+      "title": "Recommendation Card",
+      "path": "upstream/06557d7ff33a1eb70d5987bae9ac4c70fa0e20c4/components/primitives/RecommendationCard.tsx",
+      "source": "https://www.beautifului.dev/#recommendation-card",
+      "source_sha256": "fe4c56f271f147bb84cdef3f2c7238bdc9eb9a5643a0e4a949e62adb9e25abba",
+      "live_copy_code_matches": true,
+      "registry_available": true
+    },
+    {
+      "number": 10,
+      "id": "context-cards",
+      "title": "Context Cards",
+      "path": "upstream/06557d7ff33a1eb70d5987bae9ac4c70fa0e20c4/components/primitives/ContextCards.tsx",
+      "source": "https://www.beautifului.dev/#context-cards",
+      "source_sha256": "64cdf631c76bbe1516a9580237599e45657f8ce2691a512286c1ce062da78ee0",
+      "live_copy_code_matches": true,
+      "registry_available": true
+    },
+    {
+      "number": 11,
+      "id": "diff-table",
+      "title": "Diff Table",
+      "path": "upstream/06557d7ff33a1eb70d5987bae9ac4c70fa0e20c4/components/primitives/DiffTable.tsx",
+      "source": "https://www.beautifului.dev/#diff-table",
+      "source_sha256": "e15f0958af2c25dc112a8b90b16f20243a34392f96b300cee513afe82ec55460",
+      "live_copy_code_matches": true,
+      "registry_available": true
+    },
+    {
+      "number": 12,
+      "id": "records-table",
+      "title": "Records Table",
+      "path": "upstream/06557d7ff33a1eb70d5987bae9ac4c70fa0e20c4/components/primitives/RecordsTable.tsx",
+      "source": "https://www.beautifului.dev/#records-table",
+      "source_sha256": "e96875352a82d06cdb96e7657db2adbf51d70c8697e4f8ef584086e933f38f29",
+      "live_copy_code_matches": true,
+      "registry_available": true
+    },
+    {
+      "number": 13,
+      "id": "filter-table",
+      "title": "Filter Table",
+      "path": "upstream/06557d7ff33a1eb70d5987bae9ac4c70fa0e20c4/components/primitives/FilterTable.tsx",
+      "source": "https://www.beautifului.dev/#filter-table",
+      "source_sha256": "7075a6ff652f2a539f835a4ed77e4357404906aff4ba5fb786255965d7aefa74",
+      "live_copy_code_matches": true,
+      "registry_available": true
+    },
+    {
+      "number": 14,
+      "id": "sidebar-nav",
+      "title": "Sidebar Nav",
+      "path": "upstream/06557d7ff33a1eb70d5987bae9ac4c70fa0e20c4/components/primitives/SidebarNav.tsx",
+      "source": "https://www.beautifului.dev/#sidebar-nav",
+      "source_sha256": "06a0685ab35c16789231ee1947b4efd7f49adc50ae1f0ce4e0f7a2f2e35a6a59",
+      "live_copy_code_matches": true,
+      "registry_available": true
+    },
+    {
+      "number": 15,
+      "id": "search",
+      "title": "Search",
+      "path": "upstream/06557d7ff33a1eb70d5987bae9ac4c70fa0e20c4/components/primitives/SearchList.tsx",
+      "source": "https://www.beautifului.dev/#search",
+      "source_sha256": "9fdb3720c5bc06f62915317f967f7ae0fe340e4f9c6181731794558e2248b3bf",
+      "live_copy_code_matches": true,
+      "registry_available": true
+    },
+    {
+      "number": 16,
+      "id": "flowchart",
+      "title": "Flowchart",
+      "path": "upstream/06557d7ff33a1eb70d5987bae9ac4c70fa0e20c4/components/primitives/Flowchart.tsx",
+      "source": "https://www.beautifului.dev/#flowchart",
+      "source_sha256": "2f1a0e7c29df38916a06cdbc00f6d1ce043bf9052bc2bb3e780beaa339077d23",
+      "live_copy_code_matches": true,
+      "registry_available": true
+    },
+    {
+      "number": 17,
+      "id": "insight-cards",
+      "title": "Insight Cards",
+      "path": "upstream/06557d7ff33a1eb70d5987bae9ac4c70fa0e20c4/components/primitives/InsightCards.tsx",
+      "source": "https://www.beautifului.dev/#insight-cards",
+      "source_sha256": "7d6def83506070a8316759f82e531dc56b2d2d1b9e76bf6c95e2ef0c3fb69ff2",
+      "live_copy_code_matches": true,
+      "registry_available": true
+    },
+    {
+      "number": 18,
+      "id": "code-block",
+      "title": "Code Block",
+      "path": "upstream/06557d7ff33a1eb70d5987bae9ac4c70fa0e20c4/components/primitives/CodeBlock.tsx",
+      "source": "https://www.beautifului.dev/#code-block",
+      "source_sha256": "8a6226378fae2334cc3070abf3b768cc09c99e47f711cca4db013a3441b5abe5",
+      "live_copy_code_matches": true,
+      "registry_available": true
+    },
+    {
+      "number": 19,
+      "id": "fine-tune-card",
+      "title": "Fine-tune Card",
+      "path": "upstream/06557d7ff33a1eb70d5987bae9ac4c70fa0e20c4/components/primitives/FineTuneCard.tsx",
+      "source": "https://www.beautifului.dev/#fine-tune-card",
+      "source_sha256": "fb8df4d8c5aabbb399d115b143af39fcf3bf8a00b77bd7375a01a77ee8e93c24",
+      "live_copy_code_matches": true,
+      "registry_available": true
+    },
+    {
+      "number": 20,
+      "id": "selection-actions",
+      "title": "Selection Actions",
+      "path": "upstream/06557d7ff33a1eb70d5987bae9ac4c70fa0e20c4/components/primitives/SelectionActions.tsx",
+      "source": "https://www.beautifului.dev/#selection-actions",
+      "source_sha256": "5447a5488c3d390bc877acde5e0c3c04096ec89b2ee5b12d11e2523032c007c6",
+      "live_copy_code_matches": true,
+      "registry_available": true
+    },
+    {
+      "number": 21,
+      "id": "agent-screen",
+      "title": "Agent Screen",
+      "path": "upstream/06557d7ff33a1eb70d5987bae9ac4c70fa0e20c4/components/primitives/AgentScreen.tsx",
+      "source": "https://www.beautifului.dev/#agent-screen",
+      "source_sha256": "84f53af5b565de34741c656914fdd38b9700fc8765e24fcbba41ac2f6b5da002",
+      "live_copy_code_matches": true,
+      "registry_available": false
+    }
+  ]
+}

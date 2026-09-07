@@ -63,3 +63,8 @@ Both themes are defined side by side; the page ships dark by default (`html.dark
 - The whole system is **token-driven**: port the token table first, everything else follows.
 - Dark mode is the default and the better-looking one — ship dark-first for agent UIs.
 - Don't copy the original site's copy/logo verbatim; rebuild the primitives, write your own content.
+
+
+## Current implementation source
+
+以上为 2026-08 的视觉观察。复用时以 README 中固定版本的 21 个原始 TSX 和 `app/globals.css` 为准；本文件的旧 token 数值不覆盖当前源码。

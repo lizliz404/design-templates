@@ -30,13 +30,13 @@ description: >-
 
 过门（承接 §3 A 行审计裁定）：评估任何新名字前先回答**「它是不是又一个聊天框」**——聊天框只是状态原语的一种宿主；一个只会把 Thread 渲染出来的轮子不进状态原语比较。
 
-## 2 · 验真结论表（2026-09-06 · Exa 检索 + GitHub API 实证）
+## 2 · 验真结论表（2026-09-06 初查；Beautiful UI 条目于 2026-09-07 官网源码与官方仓库复核）
 
 新名字进池前必须先过这张表；同名再查不必重搜。栈列以 orgbrain（React 19 + Tailwind 4 + Astryx，非 Next.js）为基准。
 
 | 名字 | 判定 | repo / npm | license | 栈 | 真实卖的 primitives | agent 通道 | 本栈适配 |
 |---|---|---|---|---|---|---|---|
-| **Beautiful UI** | ✅ 真，站点活跃 | [beautifului.dev](https://www.beautifului.dev/)；**无公开 repo** | 无 OSS license | React + Tailwind，copy-paste；Turbo 工作室出品，无 npm | 20 个 agent 状态原语（pack 已收 19，`Flowchart` 未收录）：loading / thinking / streaming / approval / tool chips / task rows / prompt bar / context cards / diff·records·filter 表… | **无官方 registry / CLI / MCP**——纯人肉 copy-paste；`TyCoding/beautiful-ui-vue` 的 `/agent/` 端点是第三方 Vue 移植，不算原厂通道 | 只抄 pattern；本体已 rebuild 进本 pack，无安装问题 |
+| **Beautiful UI** | ✅ 真，官网与原始源码已对照 | [beautifului.dev](https://www.beautifului.dev/) · [slev12397/beautiful-ui](https://github.com/slev12397/beautiful-ui) | MIT，Copyright 2026 Shane Levine（源码 LICENSE 实核） | React 19 + Tailwind 4；部分件需 glimm / liveline / icon 包 | 21 个展示组件；本 pack 原件 21/21 齐全，含 Flowchart、Agent Screen 及共享组件 / foundation | 官方 shadcn 兼容 registry：`beautifului.dev/r/<name>.json`，目前覆盖 20 件；Agent Screen 须直接取 TSX。第三方 Vue `/agent/` 不算官方 | 按 [完整源码入口](./design/beautiful-ui-ai-interfaces/) 取固定原件与依赖；保留结构和交互，再接真实数据并建立明确的主题映射 |
 | **Vercel AI Elements** | ✅ 真 | [github.com/vercel/ai-elements](https://github.com/vercel/ai-elements) · npm `ai-elements`（CLI） | Apache-2.0（LICENSE 文件实核；GitHub API 报 NOASSERTION 是误报） | shadcn/ui + AI SDK（`@ai-sdk/react`）+ Tailwind CSS variables 模式 | ~29 组件：conversation、message+branch、prompt-input、reasoning、tool、task、plan、queue、terminal、file-tree、checkpoint、code-block、sources、inline-citation、web-preview、actions、suggestion… | shadcn registry（`elements.ai-sdk.dev/api/registry/*.json`）+ 自有 CLI `npx ai-elements@latest` | Tailwind 4 即插；数据形状绑 AI SDK message parts——TanStack Start 可用，但要把自己的 agent 事件流映射成 AI SDK 形状 |
 | **assistant-ui** | ✅ 真 | [github.com/assistant-ui/assistant-ui](https://github.com/assistant-ui/assistant-ui) · npm `@assistant-ui/react` | MIT | React headless 原语，Radix `asChild` / Base UI `render` 双味（2026-07 起 `base-` style 为 shadcn init 默认） | Thread / Message / Composer / ThreadList / ActionBar + reasoning、tool-group、mcp-config、model-selector、threadlist-sidebar 等；runtime 适配 AI SDK / LangGraph / AG-UI / A2A / data-stream | shadcn registry `@assistant-ui`（`r.assistant-ui.com/styles/{style}/{name}.json`）+ `llms.txt` / `.md` 机器可读文档 | 框架不是素材：接它 = 接受 runtime 契约；与「Astryx 已承载组件层」冲突，默认不装 |
 | **CopilotKit** | ✅ 真 | [github.com/CopilotKit/CopilotKit](https://github.com/CopilotKit/CopilotKit) | MIT | React / Angular / Vue / RN SDK；AG-UI 协议作者 | Generative UI 三模式（static AG-UI / declarative A2UI / open MCP Apps）、HITL、共享状态、多渠道（Slack / Teams） | AG-UI 协议 + MCP Apps | 协议/运行时层选项；引入 = 同时定死 agent 线协议，不在组件赛道比较 |
@@ -47,7 +47,7 @@ description: >-
 
 ## 3 · agent 交互状态清单（本资产核心）
 
-每个状态先问「它必须表达什么」，再对照烂做法。本地参照指向 `design/beautiful-ui-ai-interfaces/sections/` 的 DOM 骨架；可装件列 §2 验真过的对应物。
+每个状态先问「它必须表达什么」，再对照烂做法。本地源码从 [21 件原始组件目录](./design/beautiful-ui-ai-interfaces/) 取用。下表 `.html` 名称仅为历史视觉参照；实际实现使用相应 TSX、共享件和 foundation。可装件列 §2 验真过的对应物。
 
 | 状态 | 必须表达 | 常见烂做法 | 取用 |
 |---|---|---|---|
@@ -66,7 +66,7 @@ description: >-
 
 | 级 | 动作 | 何时 | orgbrain 落点 |
 |---|---|---|---|
-| **L0 · 抄 pattern** | 读本地 DOM 骨架 + DESIGN.md token，自写实现进本项目形态 | 默认态。状态卡体积小、token 绑定深，Astryx 已承载组件层 | **主路径**：L3 signature 自研 + 借 Beautiful UI 的 DOM 语法与 AI Elements 的 state 命名法；§3 八态里大半走这条 |
+| **L0 · 复制源码并适配** | 有官方可用源码时先取源码；没有源码才读 DOM 骨架重建 | 默认态。状态卡体积小、token 绑定深，Astryx 已承载组件层 | **主路径**：Beautiful UI 原始源码 + OrgBrain 真实事件/数据适配；保留原件显式几何与交互，主题映射不能抹平组件形态 |
 | **L1 · 装 registry 单件** | shadcn CLI 单件拉入，装后过 DESIGN.md token 改写 | 该状态的边界行为自己写太贵（a11y、stick-to-bottom、branch 树、IME 细节），且件是 presentational 不带 runtime 契约 | LocalMode `@localmode`（Tailwind 4 + 零运行时依赖）是首选源；AI Elements 次之（要接 AI SDK 数据形状） |
 | **L2 · 上框架** | 引入 chat 框架 / runtime 契约 | 仅当会话编排（thread 持久化、多 runtime 切换、generative UI 注册）成为产品主轴 | 不走。过 §3 A 行的门：先回答「是不是又一个聊天框」；真到那步，assistant-ui（headless，MIT）优于 CopilotKit（连协议一起定死） |
 
@@ -84,7 +84,7 @@ description: >-
 1. 会话历史走既有导航体系：把会话侧栏树塞进 chat 页 = 造出第二套导航，违反 IA 单门（[`ia-user-journey.md`](./ia-user-journey.md)）。
 2. composer 周边控件按 [`chrome-controls-placement.md`](./chrome-controls-placement.md) 分置：模型/模式切换是高频状态切换 → 一键 switcher，禁止藏进 menu。
 3. registry 件必须过 DESIGN.md token 改写再入库；默认值直出 = 同质化加速器（ui-stack-decision §7）。
-4. 无 license 的源（Beautiful UI）只抄行为 pattern + 自写实现，不逐字节 vendor；闭源 Pro 件（BoardUI Pro）不引入生产路径。
+4. Beautiful UI 官网已提供 MIT 许可与可复制 TSX；用户要求复用源码时，直接取原件并保留许可，不能再用旧的“无许可 / 只能重写”判断拒绝。闭源 Pro 件按其实际许可处理。
 5. license 以 LICENSE 文件为准，不信 API 字段与营销页；未实核不安装。
 6. 四层不混：评估任何新名字先落 §2 表格验真，再决定它属于哪层、进不进池。
 

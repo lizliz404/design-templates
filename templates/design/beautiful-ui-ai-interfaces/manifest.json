@@ -1,0 +1,475 @@
+{
+  "repository": "https://github.com/slev12397/beautiful-ui",
+  "commit": "06557d7ff33a1eb70d5987bae9ac4c70fa0e20c4",
+  "archive_url": "https://codeload.github.com/slev12397/beautiful-ui/tar.gz/06557d7ff33a1eb70d5987bae9ac4c70fa0e20c4",
+  "archive_sha256": "98e99d1dd0e9fee51cc885e28169f23fe9227100d80a7dfb8bab17a3b32749e2",
+  "snapshot": "upstream/06557d7ff33a1eb70d5987bae9ac4c70fa0e20c4",
+  "components": [
+    {
+      "number": 1,
+      "id": "loading-state",
+      "title": "Loading State",
+      "path": "upstream/06557d7ff33a1eb70d5987bae9ac4c70fa0e20c4/components/primitives/LoadingState.tsx",
+      "source": "https://www.beautifului.dev/#loading-state",
+      "source_sha256": "1b1ee1273717be0b2dfc12abc6853a3c118e543c05bc522b4c80378dd88e8a0d",
+      "live_copy_code_matches": true,
+      "registry_available": true,
+      "local_dependency_closure": [],
+      "npm_dependency_versions": {
+        "react": "19.2.7"
+      }
+    },
+    {
+      "number": 2,
+      "id": "thinking-state",
+      "title": "Thinking",
+      "path": "upstream/06557d7ff33a1eb70d5987bae9ac4c70fa0e20c4/components/primitives/ThinkingState.tsx",
+      "source": "https://www.beautifului.dev/#thinking-state",
+      "source_sha256": "8806141f0d94f461ba2086b4e0780dafa08577fb5b055a6b25560fabe52f8449",
+      "live_copy_code_matches": true,
+      "registry_available": true,
+      "local_dependency_closure": [],
+      "npm_dependency_versions": {
+        "react": "19.2.7"
+      }
+    },
+    {
+      "number": 3,
+      "id": "streaming-text",
+      "title": "Streaming Text",
+      "path": "upstream/06557d7ff33a1eb70d5987bae9ac4c70fa0e20c4/components/primitives/StreamingText.tsx",
+      "source": "https://www.beautifului.dev/#streaming-text",
+      "source_sha256": "8b17569fbc9c75aef1f82a5310f2402209cc8ab1b13f65fdd71251cb1e1f14d3",
+      "live_copy_code_matches": true,
+      "registry_available": true,
+      "local_dependency_closure": [],
+      "npm_dependency_versions": {
+        "react": "19.2.7"
+      }
+    },
+    {
+      "number": 4,
+      "id": "approval-card",
+      "title": "Approval Card",
+      "path": "upstream/06557d7ff33a1eb70d5987bae9ac4c70fa0e20c4/components/primitives/ApprovalCard.tsx",
+      "source": "https://www.beautifului.dev/#approval-card",
+      "source_sha256": "5e90ba19b79f4d385a34e9cf703b15e819c72df93d70a72c8c01aa85d500ca95",
+      "live_copy_code_matches": true,
+      "registry_available": true,
+      "local_dependency_closure": [
+        "components/atoms/Button.tsx",
+        "components/primitives/GlideMenu.tsx",
+        "lib/utils.ts"
+      ],
+      "npm_dependency_versions": {
+        "class-variance-authority": "0.7.1",
+        "clsx": "2.1.1",
+        "react": "19.2.7",
+        "tailwind-merge": "3.6.0"
+      }
+    },
+    {
+      "number": 5,
+      "id": "tool-chips",
+      "title": "Tool Chips",
+      "path": "upstream/06557d7ff33a1eb70d5987bae9ac4c70fa0e20c4/components/primitives/ToolChips.tsx",
+      "source": "https://www.beautifului.dev/#tool-chips",
+      "source_sha256": "dc06a0ec805825622bf622f0f56cc8305f79751fe7fcb55727a59869b443c9c8",
+      "live_copy_code_matches": true,
+      "registry_available": true,
+      "local_dependency_closure": [],
+      "npm_dependency_versions": {
+        "react": "19.2.7",
+        "react-dom": "19.2.7"
+      }
+    },
+    {
+      "number": 6,
+      "id": "task-rows",
+      "title": "Task Rows",
+      "path": "upstream/06557d7ff33a1eb70d5987bae9ac4c70fa0e20c4/components/primitives/TaskRows.tsx",
+      "source": "https://www.beautifului.dev/#task-rows",
+      "source_sha256": "7a81c2a264528405826b8ac9db9e92d4c14ef6fa3fcdb39010022df3cf4c0920",
+      "live_copy_code_matches": true,
+      "registry_available": true,
+      "local_dependency_closure": [],
+      "npm_dependency_versions": {
+        "react": "19.2.7"
+      }
+    },
+    {
+      "number": 7,
+      "id": "chat-composer",
+      "title": "Chat",
+      "path": "upstream/06557d7ff33a1eb70d5987bae9ac4c70fa0e20c4/components/primitives/ChatComposer.tsx",
+      "source": "https://www.beautifului.dev/#chat-composer",
+      "source_sha256": "1b8ac6cd342a5ccab92c0e0265d7431a35703e23496bd85c4cf64d883e6cc7f5",
+      "live_copy_code_matches": true,
+      "registry_available": true,
+      "local_dependency_closure": [],
+      "npm_dependency_versions": {
+        "react": "19.2.7"
+      }
+    },
+    {
+      "number": 8,
+      "id": "prompt-bar",
+      "title": "Prompt Bar",
+      "path": "upstream/06557d7ff33a1eb70d5987bae9ac4c70fa0e20c4/components/primitives/PromptBar.tsx",
+      "source": "https://www.beautifului.dev/#prompt-bar",
+      "source_sha256": "1f2ff02adae3f1fe80b00fd0ef1c54c3558e8638502c1b7d71b1d0000dfceb5a",
+      "live_copy_code_matches": true,
+      "registry_available": true,
+      "local_dependency_closure": [],
+      "npm_dependency_versions": {
+        "glimm": "0.3.0",
+        "react": "19.2.7"
+      }
+    },
+    {
+      "number": 9,
+      "id": "recommendation-card",
+      "title": "Recommendation Card",
+      "path": "upstream/06557d7ff33a1eb70d5987bae9ac4c70fa0e20c4/components/primitives/RecommendationCard.tsx",
+      "source": "https://www.beautifului.dev/#recommendation-card",
+      "source_sha256": "fe4c56f271f147bb84cdef3f2c7238bdc9eb9a5643a0e4a949e62adb9e25abba",
+      "live_copy_code_matches": true,
+      "registry_available": true,
+      "local_dependency_closure": [
+        "components/atoms/Button.tsx",
+        "components/atoms/EntityChip.tsx",
+        "components/atoms/ValuePill.tsx",
+        "lib/utils.ts"
+      ],
+      "npm_dependency_versions": {
+        "class-variance-authority": "0.7.1",
+        "clsx": "2.1.1",
+        "react": "19.2.7",
+        "tailwind-merge": "3.6.0"
+      }
+    },
+    {
+      "number": 10,
+      "id": "context-cards",
+      "title": "Context Cards",
+      "path": "upstream/06557d7ff33a1eb70d5987bae9ac4c70fa0e20c4/components/primitives/ContextCards.tsx",
+      "source": "https://www.beautifului.dev/#context-cards",
+      "source_sha256": "64cdf631c76bbe1516a9580237599e45657f8ce2691a512286c1ce062da78ee0",
+      "live_copy_code_matches": true,
+      "registry_available": true,
+      "local_dependency_closure": [],
+      "npm_dependency_versions": {
+        "react": "19.2.7"
+      }
+    },
+    {
+      "number": 11,
+      "id": "diff-table",
+      "title": "Diff Table",
+      "path": "upstream/06557d7ff33a1eb70d5987bae9ac4c70fa0e20c4/components/primitives/DiffTable.tsx",
+      "source": "https://www.beautifului.dev/#diff-table",
+      "source_sha256": "e15f0958af2c25dc112a8b90b16f20243a34392f96b300cee513afe82ec55460",
+      "live_copy_code_matches": true,
+      "registry_available": true,
+      "local_dependency_closure": [
+        "components/atoms/Button.tsx",
+        "lib/utils.ts"
+      ],
+      "npm_dependency_versions": {
+        "class-variance-authority": "0.7.1",
+        "clsx": "2.1.1",
+        "react": "19.2.7",
+        "tailwind-merge": "3.6.0"
+      }
+    },
+    {
+      "number": 12,
+      "id": "records-table",
+      "title": "Records Table",
+      "path": "upstream/06557d7ff33a1eb70d5987bae9ac4c70fa0e20c4/components/primitives/RecordsTable.tsx",
+      "source": "https://www.beautifului.dev/#records-table",
+      "source_sha256": "e96875352a82d06cdb96e7657db2adbf51d70c8697e4f8ef584086e933f38f29",
+      "live_copy_code_matches": true,
+      "registry_available": true,
+      "local_dependency_closure": [
+        "components/primitives/GlideMenu.tsx"
+      ],
+      "npm_dependency_versions": {
+        "react": "19.2.7"
+      }
+    },
+    {
+      "number": 13,
+      "id": "filter-table",
+      "title": "Filter Table",
+      "path": "upstream/06557d7ff33a1eb70d5987bae9ac4c70fa0e20c4/components/primitives/FilterTable.tsx",
+      "source": "https://www.beautifului.dev/#filter-table",
+      "source_sha256": "7075a6ff652f2a539f835a4ed77e4357404906aff4ba5fb786255965d7aefa74",
+      "live_copy_code_matches": true,
+      "registry_available": true,
+      "local_dependency_closure": [],
+      "npm_dependency_versions": {
+        "react": "19.2.7"
+      }
+    },
+    {
+      "number": 14,
+      "id": "sidebar-nav",
+      "title": "Sidebar Nav",
+      "path": "upstream/06557d7ff33a1eb70d5987bae9ac4c70fa0e20c4/components/primitives/SidebarNav.tsx",
+      "source": "https://www.beautifului.dev/#sidebar-nav",
+      "source_sha256": "06a0685ab35c16789231ee1947b4efd7f49adc50ae1f0ce4e0f7a2f2e35a6a59",
+      "live_copy_code_matches": true,
+      "registry_available": true,
+      "local_dependency_closure": [
+        "components/primitives/GlideMenu.tsx"
+      ],
+      "npm_dependency_versions": {
+        "@central-icons-react/round-outlined-radius-2-stroke-2": "1.1.315",
+        "react": "19.2.7",
+        "react-dom": "19.2.7"
+      }
+    },
+    {
+      "number": 15,
+      "id": "search",
+      "title": "Search",
+      "path": "upstream/06557d7ff33a1eb70d5987bae9ac4c70fa0e20c4/components/primitives/SearchList.tsx",
+      "source": "https://www.beautifului.dev/#search",
+      "source_sha256": "9fdb3720c5bc06f62915317f967f7ae0fe340e4f9c6181731794558e2248b3bf",
+      "live_copy_code_matches": true,
+      "registry_available": true,
+      "local_dependency_closure": [
+        "components/primitives/GlideMenu.tsx"
+      ],
+      "npm_dependency_versions": {
+        "react": "19.2.7"
+      }
+    },
+    {
+      "number": 16,
+      "id": "flowchart",
+      "title": "Flowchart",
+      "path": "upstream/06557d7ff33a1eb70d5987bae9ac4c70fa0e20c4/components/primitives/Flowchart.tsx",
+      "source": "https://www.beautifului.dev/#flowchart",
+      "source_sha256": "2f1a0e7c29df38916a06cdbc00f6d1ce043bf9052bc2bb3e780beaa339077d23",
+      "live_copy_code_matches": true,
+      "registry_available": true,
+      "local_dependency_closure": [],
+      "npm_dependency_versions": {
+        "react": "19.2.7"
+      }
+    },
+    {
+      "number": 17,
+      "id": "insight-cards",
+      "title": "Insight Cards",
+      "path": "upstream/06557d7ff33a1eb70d5987bae9ac4c70fa0e20c4/components/primitives/InsightCards.tsx",
+      "source": "https://www.beautifului.dev/#insight-cards",
+      "source_sha256": "7d6def83506070a8316759f82e531dc56b2d2d1b9e76bf6c95e2ef0c3fb69ff2",
+      "live_copy_code_matches": true,
+      "registry_available": true,
+      "local_dependency_closure": [],
+      "npm_dependency_versions": {
+        "liveline": "0.0.7",
+        "react": "19.2.7"
+      }
+    },
+    {
+      "number": 18,
+      "id": "code-block",
+      "title": "Code Block",
+      "path": "upstream/06557d7ff33a1eb70d5987bae9ac4c70fa0e20c4/components/primitives/CodeBlock.tsx",
+      "source": "https://www.beautifului.dev/#code-block",
+      "source_sha256": "8a6226378fae2334cc3070abf3b768cc09c99e47f711cca4db013a3441b5abe5",
+      "live_copy_code_matches": true,
+      "registry_available": true,
+      "local_dependency_closure": [],
+      "npm_dependency_versions": {
+        "react": "19.2.7"
+      }
+    },
+    {
+      "number": 19,
+      "id": "fine-tune-card",
+      "title": "Fine-tune Card",
+      "path": "upstream/06557d7ff33a1eb70d5987bae9ac4c70fa0e20c4/components/primitives/FineTuneCard.tsx",
+      "source": "https://www.beautifului.dev/#fine-tune-card",
+      "source_sha256": "fb8df4d8c5aabbb399d115b143af39fcf3bf8a00b77bd7375a01a77ee8e93c24",
+      "live_copy_code_matches": true,
+      "registry_available": true,
+      "local_dependency_closure": [
+        "components/primitives/GlideMenu.tsx"
+      ],
+      "npm_dependency_versions": {
+        "react": "19.2.7"
+      }
+    },
+    {
+      "number": 20,
+      "id": "selection-actions",
+      "title": "Selection Actions",
+      "path": "upstream/06557d7ff33a1eb70d5987bae9ac4c70fa0e20c4/components/primitives/SelectionActions.tsx",
+      "source": "https://www.beautifului.dev/#selection-actions",
+      "source_sha256": "5447a5488c3d390bc877acde5e0c3c04096ec89b2ee5b12d11e2523032c007c6",
+      "live_copy_code_matches": true,
+      "registry_available": true,
+      "local_dependency_closure": [
+        "components/atoms/Button.tsx",
+        "components/atoms/Shimmer.tsx",
+        "components/atoms/StreamText.tsx",
+        "lib/utils.ts"
+      ],
+      "npm_dependency_versions": {
+        "class-variance-authority": "0.7.1",
+        "clsx": "2.1.1",
+        "iconoir-react": "7.11.1",
+        "react": "19.2.7",
+        "tailwind-merge": "3.6.0"
+      }
+    },
+    {
+      "number": 21,
+      "id": "agent-screen",
+      "title": "Agent Screen",
+      "path": "upstream/06557d7ff33a1eb70d5987bae9ac4c70fa0e20c4/components/primitives/AgentScreen.tsx",
+      "source": "https://www.beautifului.dev/#agent-screen",
+      "source_sha256": "84f53af5b565de34741c656914fdd38b9700fc8765e24fcbba41ac2f6b5da002",
+      "live_copy_code_matches": true,
+      "registry_available": false,
+      "local_dependency_closure": [
+        "components/atoms/Button.tsx",
+        "lib/utils.ts"
+      ],
+      "npm_dependency_versions": {
+        "class-variance-authority": "0.7.1",
+        "clsx": "2.1.1",
+        "react": "19.2.7",
+        "react-dom": "19.2.7",
+        "tailwind-merge": "3.6.0"
+      }
+    }
+  ],
+  "files": {
+    ".env.example": "45e84874a50933aac60781f603441fb0d01dae1000ba8b906a15ecea84635045",
+    ".gitignore": "9e106313cccfe9693c501c94a1cbece2e91751862020dfed3eeb4c4f7c0cc62b",
+    ".vercelignore": "05db564d2a29a918dc04f23dae8a3dc813da7e49858ecd654a601ef40a8ab916",
+    "LICENSE": "dcd98784bcd83e727fad4612bfdd20d1363860149e2ca6829f546273b2f8d063",
+    "README.md": "f01febd374c50eb3d41c4ffc09132c63b0f78127186d59f4f57d589c3c3b2a2b",
+    "app/api/subscribe/route.ts": "1741a9125466795e483e9aee2755f5dcd439c7c224af6937073bb693e012659b",
+    "app/global-error.tsx": "ab5e45db5145f9c6b9d732aae26430515309b9a198c04d57d1db8634968e7ae6",
+    "app/globals.css": "c16c15f45ad5661f1fdaf54e8645e239b189ee2f86b98501edde6f33082c4ef6",
+    "app/harness/page.tsx": "c5e2ce8a8a167dd34e74d0d5ce70df63bc5a5270ecaa40b3ba6e315b20628138",
+    "app/icon.png": "e8ee41883e46b5bdfe4f1a913e598de00d024baadcbc88a571086dbe2475a5fc",
+    "app/layout.tsx": "11e4397cb8a5806e42510548ee098486c56c5c9aa3c4f1f62372cf90f8c5aef2",
+    "app/license/page.tsx": "0f4338109ef1c6adfee13e4ed24df9b99f99f1b95927168464bcea920de594dc",
+    "app/page.tsx": "3dbc3659ea0a9b6663d226dd591d9b95f7d8254c6d4465a5607988702c90cc61",
+    "components/atoms/Button.tsx": "1d939f68820366648a7b3292b88001da41253154bc49494be60cb8188100f0b0",
+    "components/atoms/Chip.tsx": "6138d55e03357698c377a0db9c42595f68ebeee58474e1a6f95642a87631ac73",
+    "components/atoms/EntityChip.tsx": "d8c194f2adf0a48af9ab20c70361cd3ba4f89636f267200ef6263a32af432e52",
+    "components/atoms/ProgressRing.tsx": "0c481bbb6d05d3923525fd01edbe662650b2531e55dfbb447961156ad72de738",
+    "components/atoms/SegmentedControl.tsx": "15feddaeba3a8a482d3e4e4d0715138b5e76d37ade0957179fd5a04988d3397c",
+    "components/atoms/Shimmer.tsx": "f93280df5726018b9efec117ea9fe90e6e128d0b530250553bf4a4aee9363c28",
+    "components/atoms/StatusPill.tsx": "7ba3c04113d529355ce73d96d14c3f728528d0848fc972a67b3c43b09541f6f2",
+    "components/atoms/StreamText.tsx": "a98d273d90965b7691e97520e12f6f32df7555ccf08ea60e3eed1b24966bae6f",
+    "components/atoms/Switch.tsx": "2b3831fa32ec89b67ba177bddcc62bfbeac602d15f6aac0012894fb2b096c4f6",
+    "components/atoms/TextRow.tsx": "85aa7a320db28f0cd6d809fdc38780070ff4aaf352da7048c56b342cdf6d1637",
+    "components/atoms/ValuePill.tsx": "685ca5fba3cccfc1bc23bc6203c066567c200809e83d5d81d3c3491d0a4c9a0a",
+    "components/primitives/AgentScreen.tsx": "84f53af5b565de34741c656914fdd38b9700fc8765e24fcbba41ac2f6b5da002",
+    "components/primitives/ApprovalCard.tsx": "5e90ba19b79f4d385a34e9cf703b15e819c72df93d70a72c8c01aa85d500ca95",
+    "components/primitives/ChatComposer.tsx": "1b8ac6cd342a5ccab92c0e0265d7431a35703e23496bd85c4cf64d883e6cc7f5",
+    "components/primitives/CodeBlock.tsx": "8a6226378fae2334cc3070abf3b768cc09c99e47f711cca4db013a3441b5abe5",
+    "components/primitives/ContextCards.tsx": "64cdf631c76bbe1516a9580237599e45657f8ce2691a512286c1ce062da78ee0",
+    "components/primitives/DiffTable.tsx": "e15f0958af2c25dc112a8b90b16f20243a34392f96b300cee513afe82ec55460",
+    "components/primitives/FilterTable.tsx": "7075a6ff652f2a539f835a4ed77e4357404906aff4ba5fb786255965d7aefa74",
+    "components/primitives/FineTuneCard.tsx": "fb8df4d8c5aabbb399d115b143af39fcf3bf8a00b77bd7375a01a77ee8e93c24",
+    "components/primitives/Flowchart.tsx": "2f1a0e7c29df38916a06cdbc00f6d1ce043bf9052bc2bb3e780beaa339077d23",
+    "components/primitives/GlideMenu.tsx": "2b8b64092740dad23aed3367b1e7eaa3e15a8bc0a2ed559c3dec13bb4ba2e00f",
+    "components/primitives/InsightCards.tsx": "7d6def83506070a8316759f82e531dc56b2d2d1b9e76bf6c95e2ef0c3fb69ff2",
+    "components/primitives/LoadingState.tsx": "1b1ee1273717be0b2dfc12abc6853a3c118e543c05bc522b4c80378dd88e8a0d",
+    "components/primitives/PromptBar.tsx": "1f2ff02adae3f1fe80b00fd0ef1c54c3558e8638502c1b7d71b1d0000dfceb5a",
+    "components/primitives/RecommendationCard.tsx": "fe4c56f271f147bb84cdef3f2c7238bdc9eb9a5643a0e4a949e62adb9e25abba",
+    "components/primitives/RecordsTable.tsx": "e96875352a82d06cdb96e7657db2adbf51d70c8697e4f8ef584086e933f38f29",
+    "components/primitives/SearchList.tsx": "9fdb3720c5bc06f62915317f967f7ae0fe340e4f9c6181731794558e2248b3bf",
+    "components/primitives/SelectionActions.tsx": "5447a5488c3d390bc877acde5e0c3c04096ec89b2ee5b12d11e2523032c007c6",
+    "components/primitives/SidebarNav.tsx": "06a0685ab35c16789231ee1947b4efd7f49adc50ae1f0ce4e0f7a2f2e35a6a59",
+    "components/primitives/StreamingText.tsx": "8b17569fbc9c75aef1f82a5310f2402209cc8ab1b13f65fdd71251cb1e1f14d3",
+    "components/primitives/TaskRows.tsx": "7a81c2a264528405826b8ac9db9e92d4c14ef6fa3fcdb39010022df3cf4c0920",
+    "components/primitives/ThinkingState.tsx": "8806141f0d94f461ba2086b4e0780dafa08577fb5b055a6b25560fabe52f8449",
+    "components/primitives/ToolChips.tsx": "dc06a0ec805825622bf622f0f56cc8305f79751fe7fcb55727a59869b443c9c8",
+    "components/site/ChatExperience.tsx": "d046b415c52ef1061210b7726c9a89f29a5ce994fa48e3d1275220b7813fed53",
+    "components/site/DevToolbar.tsx": "f2d7c420cc4b6f73f1fedd48ee2a8c4d5597f3e649890792a471fa7dd9437f2a",
+    "components/site/EmailCapture.tsx": "7ec4fc03040fa1da4378debb3d13ae139a4b2436485a3a915c8b8d34bee92b76",
+    "components/site/EmailNudge.tsx": "d82554c1d2520287865bc130cd3d6a9be36ca343812a6a062e8a7d545ebca4ae",
+    "components/site/Foundations.tsx": "4850405886d834c90a032b888e81a6430db3894f05954589800d6a95b4acac34",
+    "components/site/Grid.tsx": "12b7cdf6d735bfb6a91ea130a4d0209ea80e3fbcf7c83f58416c5ebb375282c1",
+    "components/site/IceCreamHarness.tsx": "f55a58cf2077c8befb04f977ddf81275f27e9217f5336c4cb9564ad739a5e2ef",
+    "components/site/InteractionSounds.tsx": "a654cb3f8977deaf580a9405145a238fe1b199b0532b2bb116b0256e1e362b92",
+    "components/site/Nav.tsx": "9b6f4d53013191057fc8806f6968ecb3c5525bb4c2149b56fae76dc0c9f6e06b",
+    "components/site/ThemeSync.tsx": "666a6169b46577c7783d247f2d1ce822ff5c9c3a3589a96132857d8e3f7f86a5",
+    "components/site/ThemeToggle.tsx": "865c14c974292373ab9c79091041f45f8643fd15adad4cb11bc5861b9332dd85",
+    "components/site/UseThisHarness.tsx": "3c6ce6c7423c0e6ed4b10db3c7f845cdd850682ae4782f74ce7f58845acb7abc",
+    "instrumentation-client.ts": "55c9ff904d9b21e8bf304484d40084158f0bfb8b3c1b2a14ebef716a30307b42",
+    "lib/meta.ts": "e8ad160e1be7611247d820524c52a304c665f13a4c5bd91b1c039e3257acfbdb",
+    "lib/registry.tsx": "f9f865d416a5b3f76b1c00aa06f8f5bb11e690d57e64cba48021be6e0948cc51",
+    "lib/utils.ts": "b5a457e52f20e9f91cfd606e21e69168d5744e15c9223f7aebf08fbbb204b46d",
+    "next.config.ts": "23c1e48bad267a432f93805ccb6c44802aebb8d9578db61bef5122658b9cd0fd",
+    "package-lock.json": "8fb4ba5fef9a37d27821c6c27cfd47ec24fab5c61d584fee014841560a9a5691",
+    "package.json": "5900bb5fe79ebc033d96d982ee3f14b1fd4e05087da8ad9e1a01ceac6e7f597d",
+    "postcss.config.mjs": "141ef24ca27a99d08962210fdf20212d3435fdcfa21b46cd88b44d22f751dfae",
+    "public/logo.png": "e8ee41883e46b5bdfe4f1a913e598de00d024baadcbc88a571086dbe2475a5fc",
+    "public/r/approval-card.json": "b10c4670c04c6510c4364561d06cc5a670317993a0fd1473b1af254de64b244e",
+    "public/r/button.json": "3da0fa4a699a3237a4872575e2e0ef73184b92f2cc5dec112f4b85121579a619",
+    "public/r/chat-composer.json": "79c9f3f70215d1b36b7f68d5f2956ec3ffad5c61a16e79c1314536a9625c5dce",
+    "public/r/code-block.json": "ffc7dabbef3aafe076320101f5dc61ef9549592c2535ad45bce17cffc97939e2",
+    "public/r/context-cards.json": "086d3e60ef3381498a74dde8e9019e9936310c39e71044cae28df8c668c2c38d",
+    "public/r/diff-table.json": "640eb8f40a4d503062b862484e42b8a9715b8725fdf20a7685f3e20603a7eeb9",
+    "public/r/entity-chip.json": "2575a4995808154e91acdf0ce94d7185e8c5dab1cddb099f224c3aa64d115390",
+    "public/r/filter-table.json": "92a895c0c38d533c7f4f794b2ac4cfe1abe185aae93b1268def812082fa04a03",
+    "public/r/fine-tune-card.json": "2bfcb0277ab73e4a79ed169f128820f8b395a263d4a09de5ec0b15c272c1e371",
+    "public/r/flowchart.json": "dfe46b0b95f3536d25bcda2fd1d36fcd8067419756a884b9734fab82e1001fb2",
+    "public/r/foundation.json": "3b7c86c5cb11cb43ddc1d7d6baf11634b001190382622497318730b374836790",
+    "public/r/glide-menu.json": "8ca85bd9719332b57c5a16306cbb7548ac1c17ad5b9e0061358d231b60a30462",
+    "public/r/insight-cards.json": "7d41e700df440cec4981481f4e485f46dbf92ee851cf94e05a2d4555f97ce23e",
+    "public/r/loading-state.json": "0564d7ed96b42b79118b4bb3ae183fd88ef5a5eb86069d2eb2edcf20f8be5884",
+    "public/r/prompt-bar.json": "68968526b7464d291a3a395bf6b336e7c1916420171fe543f81624f368b27dd7",
+    "public/r/recommendation-card.json": "40f4567ee36cb8136da20eb8e90898a67b2111b56ea348175a0cf6d03410f796",
+    "public/r/records-table.json": "916d714c8716fae60a5a70d58a8589780f3c2e2f951f129fce22856ce1684adc",
+    "public/r/registry.json": "96ab0f5b7f30fe8b6b37fc77c9dce7cf4c8816d38d06c9eb59137ba0a90f7da5",
+    "public/r/search.json": "22993a95c0d0cf35ed65eb2c94b0cb4e6f4393a00a35c9b4283efe95500425c5",
+    "public/r/selection-actions.json": "d20877569884ef34f3327b5515962576d8590cff3f8b871ad6803a81db1e4789",
+    "public/r/shimmer.json": "3f7e02ba2ad044b8a717d162a69f48efbdb7bb22f3eaeb576eb349cd72619a8e",
+    "public/r/sidebar-nav.json": "9c8a060fcbddbcc18cd3c0430fd1b9f6a4b927f048347569f8677d30577c4e2f",
+    "public/r/stream-text.json": "99b82b8960aacc752c20f359b4258c2b1a07f5e211448cf7d55e067c2195621b",
+    "public/r/streaming-text.json": "f2dd3322858f99a92c19f92ce1f4dad7162237f176d3775e7320f857363fcba8",
+    "public/r/task-rows.json": "a195e9caa440f795fb42d11001e00d29066b78a353850b054069fd32236742ef",
+    "public/r/thinking-state.json": "3a537a94b11b62ce5bebd59ac982cada66601a38a6372bedff7f5eadc034305a",
+    "public/r/tool-chips.json": "67035ec579eb8d4cb7d714d67e5c945760c1855d37fb37fea6cd8c37bc617938",
+    "public/r/value-pill.json": "070958ca2f12154a943733d65d781931ed51260fffcb0f2c7d52a632dff5e2c8",
+    "public/turbo-flourish.png": "8b741dca545735c41bf3c30bc5191aa69b1345584da584dfea1c4c0c912346e5",
+    "scripts/build-registry.mjs": "6f5a1f1fce5b488ffdb5ce252373ce3af570d8a4b1fadaaa0467df08155b66d2",
+    "tsconfig.json": "059a8544d87457aabee0c22eecb4a02b4fe4c8270c5b75abb03b1aa0cd906062"
+  },
+  "external_assets": [
+    {
+      "path": "upstream/external-assets/agent-desktop-v3.png",
+      "url": "https://95dnc2a95qgwt9ff.public.blob.vercel-storage.com/agent-desktop-v3.png",
+      "sha256": "4e12c121afe5dbf37af69dcf20742ceb9e10c8016c5656298febe56f39162f0f",
+      "bytes": 2555832,
+      "license": "External demo media; separate license not verified. Preserve provenance; replace for product use."
+    },
+    {
+      "path": "upstream/external-assets/subway-surfers.mp4",
+      "url": "https://95dnc2a95qgwt9ff.public.blob.vercel-storage.com/subway-surfers.mp4",
+      "sha256": "237ef3c01fb22ccd5165c6fe6ddc0582408450baadead1053cf2ea624494aee9",
+      "bytes": 1121649,
+      "license": "External demo media; separate license not verified. Preserve provenance; replace for product use."
+    }
+  ],
+  "foundation_dependency_versions": {
+    "react": "19.2.7",
+    "react-dom": "19.2.7",
+    "tailwindcss": "4.3.3",
+    "shadow-plugin": "2.1.0"
+  }
+}
