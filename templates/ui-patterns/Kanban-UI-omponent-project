@@ -1,0 +1,456 @@
+“
+kanban，对应需求或赛道里，最受欢迎、流量最大、最牛逼的开源轮子有哪些？
+
+---
+
+如果你说的是“我现在要在自己的 React / Next.js 产品里做一个真正好用的 Kanban，而不是找一个现成的项目管理软件”，那这个赛道其实要分两层看：
+
+1. Kanban UI / Component / Headless primitives
+
+
+2. 完整的开源 Kanban / Project Management 产品
+
+
+
+而如果你问“最受欢迎、流量最大、最牛逼”，我会重点看下面这些。
+
+第一梯队：真正值得你研究的
+
+项目 定位 GitHub Stars* 我的评价
+
+react-trello React Kanban Component ~2.3k 🥇 老牌、成熟、生态认知强
+react-kanban React Kanban Component ~650 🥈 简洁，直接拿来改
+Plane 完整 PM / Issue / Kanban ~50k+ 🥇 产品级、现代、AI时代值得研究
+WeKan Trello-like 完整 Kanban ~21k 🥇 开源 Kanban 的大体量代表
+Focalboard Notion/Trello-like ~26k 🥇 数据模型/多视图值得研究
+Planka Modern Kanban ~12k ⭐ UI/交互方向很值得看
+OpenProject 企业级 PM ~12k+ 🏢 太重，但复杂系统值得研究
+
+
+* Stars 会持续变化，数字以搜索时看到的 GitHub 数据为准。当前开源 Kanban 产品里，Plane、Focalboard、WeKan、OneDev、Planka 等明显属于高热度项目。
+
+
+---
+
+但如果是你做产品，我最推荐研究的其实不是 WeKan
+
+而是：
+
+1. react-trello
+
+[react-trello GitHub](https://github.com/rcdexta/react-trello?utm_source=chatgpt.com)
+
+这是非常经典的：
+
+> “把 Kanban 当成一个 UI Component 嵌入自己的 React App。”
+
+
+
+它支持：
+
+columns / lanes
+
+cards
+
+drag & drop
+
+card editing
+
+lane editing
+
+pagination
+
+custom card
+
+custom lane
+
+backend event bus
+
+touch device
+
+
+而且已经有 2.3k stars / 492 forks。
+
+如果你想找一个“我不想自己从零造 Trello board”的轮子，它是第一批应该看的。
+
+
+---
+
+2. react-kanban
+
+[react-kanban GitHub](https://github.com/asseinfo/react-kanban?utm_source=chatgpt.com)
+
+这个反而很符合：
+
+> “我自己有业务逻辑，只需要一个 Kanban View。”
+
+
+
+它目前大约 647 stars / 161 forks，MIT。
+
+比完整 PM 系统轻很多。
+
+
+---
+
+但真正让我觉得“牛逼”的，是这一层
+
+如果你现在是在做一个现代 SaaS / AI-native 产品，我反而建议你把：
+
+Plane + Linear + dnd-kit
+
+放在一起研究。
+
+因为你真正需要的可能不是：
+
+> “一个 Kanban 组件”
+
+
+
+而是：
+
+> 一个现代 Work Management UI 的底层交互范式。
+
+
+
+
+---
+
+Plane
+
+[Plane GitHub](https://github.com/makeplane/plane?utm_source=chatgpt.com)
+
+这个我会给很高评价。
+
+它已经不是：
+
+> Kanban library
+
+
+
+而是：
+
+> 完整的 Linear/Jira alternative
+
+
+
+里面有：
+
+Issues
+
+Kanban
+
+Cycles
+
+Modules
+
+Pages
+
+Projects
+
+Views
+
+Analytics
+
+GitHub integration
+
+Slack integration
+
+
+当前开源 Kanban 项目排行榜里，Plane 的 GitHub 热度已经到了 5 万+ stars 这个量级。
+
+所以：
+
+如果你研究“Kanban 产品应该长什么样” → Plane 非常值得拆。
+
+
+---
+
+WeKan
+
+[WeKan GitHub](https://github.com/wekan/wekan?utm_source=chatgpt.com)
+
+这个是：
+
+> Open Source Trello
+
+
+
+的典型代表。
+
+目前约 21k stars。
+
+它最大的价值不是 UI 多么惊艳，而是：
+
+Kanban 作为一个完整协作系统，到底需要哪些东西。
+
+比如：
+
+Board
+ ├── List
+ │    ├── Card
+ │    │    ├── Label
+ │    │    ├── Member
+ │    │    ├── Checklist
+ │    │    ├── Attachment
+ │    │    └── Comment
+ │    └── ...
+ └── ...
+
+如果你在设计自己的数据模型，这种项目非常值得扒。
+
+
+---
+
+Planka
+
+[Planka GitHub](https://github.com/plankanban/planka?utm_source=chatgpt.com)
+
+这个我反而觉得审美和产品设计方向值得你重点看。
+
+它属于：
+
+> Modern / self-hosted / Trello-like Kanban
+
+
+
+大约 12k stars。
+
+相比 WeKan 那种“传统开源软件味”，Planka 更接近：
+
+> 现代 Web SaaS Kanban
+
+
+
+如果你关心：
+
+UI + interaction + visual hierarchy + density
+
+Planka 比单纯看 Kanban component 更有价值。
+
+
+---
+
+Focalboard
+
+[Focalboard GitHub](https://github.com/mattermost-community/focalboard?utm_source=chatgpt.com)
+
+这个体量更大，约 26k stars。
+
+它的价值在于：
+
+> Kanban 不一定只是 Kanban。
+
+
+
+它把：
+
+Board
+Table
+Calendar
+Kanban
+
+这些东西统一到一个数据模型里。
+
+这其实已经开始触碰你之前经常讨论的那个问题：
+
+> 复杂系统的核心不是某一个 View，而是底层 Model 是否足够好。
+
+
+
+这点很值得借鉴。
+
+
+---
+
+然后是一个容易被忽略的东西：dnd-kit
+
+如果你是自己造 Kanban UI，我反而会把它放到最重要的位置。
+
+[dnd-kit GitHub](https://github.com/clauderic/dnd-kit?utm_source=chatgpt.com)
+
+因为 Kanban 最麻烦的部分根本不是：
+
+<div>Card</div>
+
+而是：
+
+drag
+ ↓
+collision detection
+ ↓
+sortable
+ ↓
+cross-column movement
+ ↓
+reordering
+ ↓
+optimistic update
+ ↓
+persist
+ ↓
+rollback
+
+这才是 Kanban 的核心交互基础设施。
+
+所以现代 React Kanban 项目大量建立在 drag-and-drop primitives 之上；例如新的 react-kanban-kit 就直接采用 Atlassian 的 pragmatic-drag-and-drop。
+
+
+---
+
+如果让我给你排一个“研究价值榜”
+
+不是单纯按 GitHub stars，而是按照你真的要做产品时的价值：
+
+🥇 第一档
+
+dnd-kit
+
+> 底层交互基础设施
+
+
+
+Plane
+
+> 现代产品级 Kanban / Issue Management
+
+
+
+react-trello
+
+> 成熟 React Kanban component
+
+
+
+
+---
+
+🥈 第二档
+
+Planka
+
+> 看现代 Kanban UI / UX
+
+
+
+Focalboard
+
+> 看 Board / Table / Calendar 的统一数据模型
+
+
+
+WeKan
+
+> 看完整 Trello-like Kanban 的领域模型
+
+
+
+
+---
+
+🥉 第三档
+
+react-kanban
+
+> 轻量 React component
+
+
+
+SVAR React Kanban
+
+> 更 enterprise component 化的路线，提供 TS、编辑器、过滤、排序、分组等能力，但开源仓库目前体量还小。
+
+
+
+
+---
+
+最关键的一句话
+
+如果你现在是想给自己的产品“装一个 Kanban”：
+
+> 不要直接抄 Plane。
+
+
+
+更合理的技术路线往往是：
+GitHub
+GitHub - rcdexta/react-trello: Pluggable components to add a kanban board to your application
+Pluggable components to add a kanban board to your application - rcdexta/react-trello
+Your App
+   │
+   ├── Your Domain Model
+   │
+   └── Kanban View
+          │
+          ├── dnd-kit / pragmatic-dnd
+          ├── your Card
+          ├── your Column
+          ├── your optimistic update
+          └── your persistence
+
+然后去抄 Plane / Planka / Linear 的产品交互。
+
+也就是说：
+
+组件层看 react-trello / dnd-kit，产品层看 Plane / Planka，数据模型看 Focalboard / WeKan。
+
+这比找一个“最牛逼的 Kanban npm 包”更靠谱。
+
+如果你现在是在 Next.js + Tailwind + shadcn/ui 这一套里做东西，我甚至会进一步缩小到 “2026 年最值得直接拿来魔改的 5 个 React Kanban / drag-and-drop primitives”，这个名单会和上面完全不一样。
+
+”
+“
+那如果再加上 AI native 、Agent friendly 程度，这个维度呢？
+会有哪些反超吗？还是说当前这些就已经很够了？
+但我觉得应该很少，因为这个地方很难玩出花来，而且本质上就是数据呈现嘛，能怎么样呢？
+
+---
+
+加上「AI native / Agent friendly」这个维度后，排名会明显分化，但不会全面反超传统头部。
+
+你的直觉基本对：Kanban 本质是可视化工作流 + 状态机 + 数据呈现，核心交互（拖卡片、列、标签、WIP）很难玩出革命性花样。真正的差异点在于：
+
+- 工具是否把 Agent 当作一等公民（而不是事后通过 API 硬接）
+- 是否原生支持 工作区隔离、并行执行、上下文注入、人机协作闭环
+- 是否有 MCP / 专用 Agent API / 自动状态同步 / 审查门控
+
+### 传统头部在 AI 维度的真实水平
+
+| 工具 | AI/Agent 友好度 | 说明 |
+|------|-----------------|------|
+| WeKan | 中低 | 有 REST API，可被 Agent 调用，但完全是人类中心设计，无原生 Agent 工作流 |
+| Planka | 中低 | 同上，实时协作强，但对 Agent 只是“另一个用户” |
+| Kanboard | 中 | 插件 + 自动化规则 + JSON-RPC，容易被脚本/Agent 驱动，但仍是人类工具 |
+| Focalboard | 中 | 多视图好，Mattermost 集成可间接服务 Agent，但无专门 Agent 特性 |
+| Plane | 中高 | 官方强调 AI（总结、洞察等），API 完善，社区在推 Agent 集成，最接近“现代 PM + AI 辅助” |
+
+这些工具对 Agent 来说属于“可被调用”，而不是“为 Agent 而生”。日常人类看板用它们完全够用，Agent 通过 API/MCP 也能干活，但体验是二流的。
+
+### 真正反超/拉开差距的是「Agent-Native」专用轮子
+
+这些工具把 Kanban 当成 Agent 编排界面，而不是给人看的看板：
+
+1. Vibe Kanban（目前最成熟的标杆）
+   - Stars 约 23k–28k 量级（高峰更高）
+   - 核心设计：卡片 = 任务 → 自动创建隔离 git worktree + 终端 + dev server → 派发 Claude Code / Codex / Gemini CLI / Cursor 等
+   - 支持并行 Agent、diff 审查、PR 一键、状态自动流转
+   - 2026 年公司关掉了 Cloud，项目转社区维护，但仍是这个赛道里功能最完整、使用最广的
+   - 如果你主要用 coding agents，它会直接反超所有传统工具
+
+2. 新兴专用选手（2025–2026 快速出现，Stars 还不高但方向明确）
+   - agentic-kanban、Kangentic、kandev、KanBots：拖卡片启动 Agent，支持多 CLI、worktree 隔离、实时终端观察
+   - itsaplan：把 Agent 当成项目成员，拥有角色、权限、assignee 槽位
+   - Veritas Kanban、Flow、Kanbu、Anban 等：local-first + MCP server + 人机审批门控，Agent 可自主读/写/移动卡片
+   - 这些普遍强调：Agent 是 first-class citizen，而不是“通过 webhook 调一下”
+
+它们在纯人类看板体验上通常不如 WeKan/Planka 成熟，但在 Agent 编排效率 上完胜。
+
+### 结论：会不会反超？取决于你的使用场景
+
+- 普通团队 / 人类为主 + 偶尔用 Agent：传统头部（WeKan、Plane、Planka）已经足够。加个 MCP/API 包装就能让 Agent 读写看板，没必要换。
+- 重度 coding agent 用户 / 多 Agent 并行开发：Vibe Kanban 类工具会直接反超。这里 Kanban 不再是“数据呈现”，而是 Agent 调度与审查的控制台，价值完全不同。
+- 未来趋势：真正难玩出花的是“人类看板本身”，容易出差异的是 Agent 生命周期管理（隔离、并行、上下文、审计、人机切换）。所以你会看到越来越多“Kanban + Agent Orchestrator”的专用工具，而不是传统看板强行加 AI 按钮。
+
+简单说：数据呈现层面确实很难颠覆，但“谁在操作这些数据”一旦从人变成 Agent 集群，整个产品形态就会重写。 目前 Vibe Kanban 是这个方向最明显的领先者，其他传统工具还在追赶或通过 API 兼容。
+”
