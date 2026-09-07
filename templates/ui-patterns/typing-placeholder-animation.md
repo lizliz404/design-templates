@@ -1,197 +1,53 @@
-# Typing Placeholder Animation
+# 会定格、可采纳的示例占位符
 
-**Aliases:** Rotating Placeholder · Animated Input Placeholder · Typewriter Placeholder  
-**Job:** In one hero input, cycle multiple use-cases → 打字 → 停顿 → 删除 → 下一句 → 循环.  
-**Why:** AI/SaaS products do many things; listing all of them is clutter. Placeholder rotation compresses capability demos into empty-state seconds.
+适用于 AI landing 的主输入框：让用户先看到可做的事，再把当前示例变成自己的草稿。当前交互合同在 [`high-leverage-craft-checklist.md` 条目 40](../high-leverage-craft-checklist.md#40-会定格的示例轮播输入框空投占位符-frontend-copy)；本文说明接入方式与现存代码边界。
 
-**Reference implementation (shipped):**
-- `<project>/reddit-viral/src/primitives/typewriter-placeholder.ts`
-- CSS: `.tw-ph-*` in `reddit-viral/src/styles/base.css`
-- Wire: `HERO.inputPlaceholders[]` + `attachTypewriterPlaceholder(input, phrases)`
-- Snippets (copy): `./snippets/typewriter-placeholder.ts` + `./snippets/typewriter-placeholder.css`
+## 当前交互合同
 
----
-
-## 1. Names vs essence
-
-Industry has no single official name. Use any alias above in search. Essence is always a **state machine**:
-
-```
-type  →  hold  →  delete  →  gap  →  next phrase  →  (loop)
+```text
+空闲轮播 → pointer 点击 → 补完当前句并冻结预览
+                         → 显式采纳 → 写入草稿，仍不提交
+                         → 开始打字 → 让位给用户输入
+                         → 无操作且仍为空 6–8 秒 → 淡回占位，再轮播下一条
 ```
 
-Not a CSS-only `placeholder` trick. Native `::placeholder` cannot host a real caret or clean pause-on-focus.
+- **预览不是 value。** 点击输入框只表达兴趣，不应直接写值或触发提交。用常驻的轻按钮「用这条」采纳；手机不能依赖 hover。若支持 Enter 采纳，只能在空值预览态触发，并消费该次按键，避免同时提交。
+- Pointer 点击时补完当前整句；键盘 Tab 只暂停、维持灰色占位样式。程序自动聚焦不代表采纳意图。
+- 已有值、IME 组词或用户选区期间停止轮播。恢复计时由最后一次真实互动计算，不是从 focus 固定倒数。用户开始输入时预览立即让位；删除内容也不能擅自回填示例。
+- `prefers-reduced-motion` 显示静态示例，但保留采纳入口。监听设置变化；页面隐藏或组件卸载时停止定时器。
+- Label 保持稳定，视觉预览 `aria-hidden`，不把每次轮播放进 `aria-live`。采纳按钮应有清晰可访问名称。
 
----
+## 文案与布局
 
-## 2. When to use / when not
+准备 5–8 条真实、可执行的示例，覆盖不同能力；第一条放最主要的用途。每句用用户会说的话，例如「看看这周有哪些工作被卡住了」，不要写功能名或虚构能力。
 
-| Use | Skip |
+桌面和手机分别提供短句，中文和英文都要有对应数组。每句补完后停留 2.5–4 秒；用已有轮播代码的打字/删除节奏作起点。预览层对齐真实输入文字，避免额外 banner；按钮与正文不能互相覆盖。
+
+仅在承担能力发现的主输入框使用。登录、邮箱、设置表单不适用；已进入持续对话后不应在每个回复框重复轮播。
+
+## 源码边界：现有 snippet 是旧版基础轮播
+
+[`snippets/typewriter-placeholder.ts`](./snippets/typewriter-placeholder.ts) 与 [CSS](./snippets/typewriter-placeholder.css) 来自 reddit-viral，保留为普通输入框的基础轮播参考。**它不是上述完整合同的现成实现**：
+
+| 现有行为 | 新合同需要 |
 |---|---|
-| Hero primary prompt (ChatGPT / Cursor / Lovable-style) | Secondary form fields (email, password) |
-| Product does **3–6** clear jobs | One job only — static placeholder is enough |
-| Empty-state marketing | Inside logged-in product workspace (noise) |
-| Copy is **use-case shaped** (“Draft a comment that won’t get me banned”) | Generic fluff (“Ask me anything…”) on every line |
+| Focus 立即隐藏预览 | Pointer 点击补完并冻结；Tab 只暂停 |
+| 没有采纳动作 | 显式写入草稿、采纳不提交 |
+| DOM 包裹 `HTMLInputElement` | React controlled textarea 用状态与受控 `onChange`，不手动重排 React DOM |
+| reduced-motion 仅初始化读取 | 运行中变化也能停动画 |
+| cleanup 清定时器和监听，但不恢复 wrapper | 消费者负责完整卸载；不能反复 attach 到同一节点 |
 
-**Anti-patterns**
-- Two typewriters on the same viewport (hero + report) fighting for attention.
-- Cycling `aria-label` (screen readers spam).
-- Fighting the user: keep animating while focused or while `value !== ""`.
-- Ignoring `prefers-reduced-motion`.
-- First phrase is weak — many users only “see” the first cycle.
+可以复用它的打字、停顿、删除、手机短句和页面隐藏暂停思路；不要直接粘贴后声称已实现「空投占位符」。新实现优先使用明确的 `cycling / preview / editing` 状态，并把草稿交给现有 composer 持有。不要用 DOM `input.value = ...` 绕过 React 状态或已有草稿持久化逻辑。
 
----
+原 snippet 仍导出 `attachTypewriterPlaceholder(input, phrases, opts)`，只适用于愿意接受旧版 focus-hide 行为的普通、非受控输入框。此用途应明确标为基础轮播，不是本页推荐的 AI 主输入框交互。
 
-## 3. State machine (the whole trick)
+## 消费项目验收
 
-```
-phrases: string[]
-i: phrase index
-char: cursor within phrase
-mode: typing | deleting
+- 空值时轮播；pointer 点击正在输入的半句后显示完整预览，真实 value 仍为空。
+- 点击「用这条」后 value 与草稿持久化一致，网络提交次数仍为零；随后由用户发送。
+- Tab 聚焦、手动输入、IME、粘贴与删除不会被建议覆盖。
+- 空值且无互动 6–8 秒才恢复；触摸和键盘互动会推迟恢复。
+- 窄屏 320–390px、双语言、深浅色可读，按钮不盖文字。
+- reduced-motion 在初始和运行中生效；切页和卸载无遗留定时器。
 
-typing:
-  char++
-  show phrases[i].slice(0, char)
-  if char === len → wait(holdMs) → mode = deleting
-
-deleting:
-  char--
-  show slice
-  if char === 0 → i = (i+1) % n → wait(gapMs) → mode = typing
-```
-
-Visual surface (preferred over mutating `input.placeholder`):
-
-```
-[ wrap.tw-ph-wrap ]
-  input (real, empty placeholder, stable aria-label)
-  span.tw-ph[aria-hidden]  →  text + caret   (hidden when focused or has value)
-```
-
-**Upgrade path (optional immersion):** some landings put text in a fake “value” layer, clear on first focus. Same machine; different paint. Overlay is enough for most portfolio/SaaS heroes and safer for a11y.
-
----
-
-## 4. Rhythm (where quality lives)
-
-Defaults that feel human (reddit-viral):
-
-| Knob | Default | Note |
-|---|---|---|
-| `typeMs` | ~36ms | + random jitter up to `typeJitterMs` (default 36) |
-| `deleteMs` | ~20ms | Delete faster than type |
-| `holdMs` | ~1600ms | Let them read the full line |
-| `gapMs` | ~420ms | Breath before next phrase |
-| Start delay | ~500ms | Don’t animate in the first paint flash |
-| `phrasesNarrow` | optional | **Mobile/narrow set** — short lines so nothing clips |
-
-Further polish:
-- Caret **keeps blinking during hold**.
-- Pause when `document.hidden`.
-- Tear down timers when input disconnects (SPA re-render / locale swap).
-- On `matchMedia('(max-width: 640px)')` change, swap to narrow phrases and reset the cycle.
-
-### Mobile truncation (real bug, not polish)
-
-Long desktop phrases **will clip** in a phone-width input. Fix is not marquee.
-
-1. Ship `inputPlaceholdersMobile` (shorter, same intent).  
-2. Pass `phrasesNarrow` into `attachTypewriterPlaceholder`.  
-3. Slightly smaller overlay font ≤640px.  
-4. `text-overflow: ellipsis` only as last-resort safety net.
-
----
-
-## 5. Accessibility & honesty
-
-1. **Stable** `aria-label` = first / primary phrase (or a dedicated short label). Never cycle it.
-2. Overlay is `aria-hidden="true"`.
-3. `prefers-reduced-motion: reduce` → show phrase[0] static, no caret blink / no type loop.
-4. Focus or non-empty value → hide overlay immediately; do not steal keystrokes.
-5. Don’t put marketing lies in the cycle if the CTA can’t fulfill them (same honesty bar as dead footer links).
-
----
-
-## 6. Copy rules (the non-code half)
-
-- **3–6** phrases. More = no one finishes a cycle.
-- **Phrase 0 = sharpest product promise** (or the #1 job-to-be-done).
-- Prefer **verb + object + constraint** over feature nouns:
-  - Good: `Draft a comment that won't get me banned…`
-  - Weak: `AI-powered engagement suite…`
-- Align with the page’s real wedge (reddit-viral = survival / anti-ban, not “write more posts”).
-- EN/ZH both need full arrays if the site is bilingual; don’t leave ZH stuck on one English line.
-
-i18n shape:
-
-```ts
-HERO: {
-  inputPlaceholder: string;           // a11y + reduced-motion fallback
-  inputPlaceholders: string[];        // wide / desktop cycle; [0] = money line
-  inputPlaceholdersMobile: string[];  // short cycle ≤640px — prevent clip
-}
-```
-
----
-
-## 7. Drop-in usage (vanilla)
-
-```ts
-import { attachTypewriterPlaceholder } from "./typewriter-placeholder";
-// after input is in the DOM:
-attachTypewriterPlaceholder(input, copy.inputPlaceholders, {
-  phrasesNarrow: copy.inputPlaceholdersMobile, // required on real phones
-});
-// returns cleanup() — call if you unmount without destroying the tree
-```
-
-CSS: import `snippets/typewriter-placeholder.css` (or paste `.tw-ph-*` into global base).
-
-Wire input:
-
-```ts
-input.setAttribute("aria-label", HERO.inputPlaceholder);
-input.placeholder = ""; // overlay owns empty state
-input.autocomplete = "off";
-```
-
----
-
-## 8. Checklist before ship
-
-- [ ] Only one rotating field above the fold  
-- [ ] Focus / type stops animation  
-- [ ] Reduced motion static  
-- [ ] First phrase is the money line  
-- [ ] **Mobile short-phrase set** — no clipped mid-word on ~320–390px  
-- [ ] Phrases match real product capability (no fake storefront)  
-- [ ] Locale arrays complete (wide + mobile)  
-- [ ] Caret contrast OK on cream/dark  
-- [ ] No `console` noise; timers die on disconnect  
-
----
-
-## 9. Related landing craft (same honesty family)
-
-From reddit-viral residual audit — patterns that pair with this:
-
-| Pattern | Point |
-|---|---|
-| Conversion spine | Empty prompt CTA → one real human endpoint, not dead `#` |
-| Mock chrome inert | Decorative Follow/Chat: `tabindex=-1` + `aria-hidden` |
-| Schema price = UI price | Don’t animate trust then lie in JSON-LD |
-| Footer = real anchors only | Typewriter shows capability; footer must not undo honesty |
-
-Typewriter shows **breadth of jobs**. Honesty of CTA shows **you’re not a toy**. Need both.
-
----
-
-## 10. Don’t reinvent
-
-1. Read this file.  
-2. Copy `snippets/*` or import from reddit-viral primitive if same stack.  
-3. Write **phrases** for the product wedge; leave timing defaults unless user asks.  
-4. One hero instance unless there’s a strong reason.
-
-*Captured 2026-07-27 from Liz thread + reddit-viral ship (`5603a24` era).*
+源码与产品验证分开记录。通过基础轮播演示不能替代上述采纳流程验收。

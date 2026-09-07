@@ -29,7 +29,7 @@
 
 - **Footer craft** → [`footer-craft.md`](./footer-craft.md)：营销长页的收口。
 - **Premium one-pager** → [`premium-one-pager.md`](./premium-one-pager.md) + [`snippets/`](./snippets/)：长营销页或文档的 location / life / finish。
-- **Typing / rotating placeholder** → [`typing-placeholder-animation.md`](./typing-placeholder-animation.md) + [`snippets/`](./snippets/)：输入演示多个 use case，不能替代标签或关键指令。
+- **会定格、可采纳的示例占位符** → [`typing-placeholder-animation.md`](./typing-placeholder-animation.md)：条目 40 的当前合同，点击冻结、显式写入草稿；[`snippets/`](./snippets/) 中的 typewriter 仍是旧版基础轮播，不含采纳流程。
 - **Atomic island chrome** → [`atomic-island-chrome.md`](./atomic-island-chrome.md)：full-bleed camera / canvas / toy 的可收起 chrome，不适合需要持续导航的 dense desktop shell。
 
 ## 使用与维护

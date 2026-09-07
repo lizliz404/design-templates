@@ -1,7 +1,11 @@
 /**
- * Rotating typewriter “placeholder” for empty inputs.
- * Overlay (not native placeholder) so we get a caret + clean pause-on-focus.
+ * Legacy basic rotating placeholder for ordinary, uncontrolled HTML inputs.
+ * This implements focus-hide, NOT the current craft checklist item 40 contract
+ * (pointer freeze + explicit accept into draft + resume after abandonment).
+ * See ../typing-placeholder-animation.md before using it in an AI composer.
+ * Do not attach to a React-controlled input/textarea: it reparents DOM nodes.
  * Narrow viewports can swap to a shorter phrase set to avoid clipping.
+ * Cleanup stops timers/listeners but does not restore the original wrapper.
  */
 export type TypewriterOpts = {
   typeMs?: number;
