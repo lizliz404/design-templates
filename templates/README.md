@@ -77,7 +77,7 @@ description: >-
 - **Paper Shaders** → [`paper-shaders/SKILL.md`](./paper-shaders/SKILL.md)；纸张 / mesh / veil 是背景氛围，不承担状态 orb 的语义。
 - **ThreeUI one-hero** → [`ui-patterns/threeui-hero-adapter.md`](./ui-patterns/threeui-hero-adapter.md)；只作产品交互表面，先通过 visual-economy gate，说明图不使用它。
 - **Drafting resolve hero** → [`ui-patterns/drafting-resolve-hero.md`](./ui-patterns/drafting-resolve-hero.md)；three.js batched 线稿的「虚线草图 = 未确认方案、注意力 = 人工确认、实线 = 可交付」hero，产品承诺是「先确认后生成」类叙事时用；机制源头与生命周期合同在 webgl-threejs-background-animation skill；同一视图最多一套动态大气。
-- **vgpu 自研 GPU 特效** → [`ui-patterns/vgpu-webgpu-effects.md`](./ui-patterns/vgpu-webgpu-effects.md)；vercel-labs 的 WebGPU 库（typed WGSL、25KB gz 预算、browser / node / mock 三运行时）。vendored 资产（orb / Paper / ThreeUI / theater）覆盖不到的自定义 shader 特效才上手；WebGPU-only 无兜底；同一视图最多一套动态大气。
+- **vgpu 自研 GPU 特效** → [`ui-patterns/vgpu-webgpu-effects.md`](./ui-patterns/vgpu-webgpu-effects.md)；vercel-labs 的 WebGPU 库（typed WGSL、版本化 gzip 预算、browser / node / mock 三运行时；0.4.0 库主入口预算 38,912 bytes，产品包体另测）。vendored 资产（orb / Paper / ThreeUI / theater）覆盖不到的自定义 shader 特效才上手；WebGPU-only 无兜底；同一视图最多一套动态大气。
 - **UI SFX** → [`ui-patterns/uisfx-semantic-cues.md`](./ui-patterns/uisfx-semantic-cues.md)；声音是可见状态的补充，绝不是唯一状态通道。
 - **Hand-drawn controls** → [`ui-patterns/hand-drawn-controls.md`](./ui-patterns/hand-drawn-controls.md)；手绘 boiling 控件（drawably 蒸馏，MIT）：seeded SVG 叠在真控件下，a11y 来自真控件；playful / landing 表面专用，dense B2B admin 换资产。
 

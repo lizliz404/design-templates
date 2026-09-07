@@ -3,7 +3,7 @@ name: vgpu-webgpu-effects
 category: design
 description: >-
   [design] vgpu — vercel-labs 的 WebGPU 渲染库（typed WGSL 导入、单 Gpu 上下文、
-  25KB gz 预算、browser / node / mock 三运行时）。Use when building 自定义
+  版本化 gzip 预算、browser / node / mock 三运行时）。Use when building 自定义
   fullscreen / GPU shader 特效（生成式背景、math viz、GPU 粒子）且 pack 内
   vendored 资产（orb / Paper / ThreeUI / theater）覆盖不到时。Lives inside the
   design-templates pack — 按项目 `pnpm add vgpu` 安装，不 vendor 进包。
@@ -24,7 +24,7 @@ Pack 里已有 vendored 默认答案，**先走它们**：
 | 现成 3D product hero | [ThreeUI hero adapter](./threeui-hero-adapter.md) |
 | 静图转交互 WebGL theater | [still-to-webgl-theater](../../still-to-webgl-theater/SKILL.md) |
 
-vgpu 只在**自定义特效**时上场：上述资产覆盖不到的 fullscreen shader、生成式背景、GPU 粒子、math viz。选它的机制理由：typed WGSL 导入（`.wgsl` 当 TS 模块 import/export，反射自动保住 binding 名与布局）+ 未用声明剪枝（完整 fullscreen effect 25KB gzipped，CI 强制预算）——比拖整个 three.js 或手写裸 WebGPU 便宜得多。
+vgpu 只在**自定义特效**时上场：上述资产覆盖不到的 fullscreen shader、生成式背景、GPU 粒子、math viz。选它的机制理由：typed WGSL 导入（`.wgsl` 当 TS 模块 import/export，反射自动保住 binding 名与布局）+ 未用声明剪枝。包体由实际入口、shader 与消费项目构建决定，不能把上游某一 fixture 的预算当成所有特效的体积承诺。
 
 ## 安装与最小用法
 
@@ -52,6 +52,14 @@ frameLoop(gpu, (frame) => {
 
 可复用 WGSL 声明（hash / noise / color / sampling…）在 `@vgpu/wgsl-std`，不要每个项目重写噪声函数。
 
+## 可直接取得的官方示例
+
+[Triangle LED Hero](https://vgpu.sh/examples/triangle-led-front) 提供可复制的官方示例源码，examples API 可取得完整 **17 件** TypeScript / TSX / WGSL 文件，采用 MIT 许可。它包含 LED 发光源、近远距离衰减、地面与三角几何；需要品牌灯光时可先复用这些机制，再替换形状。
+
+OrgBrain 已将这一版存于消费项目 `docs/design/reference/brand-light/`，包括 `triangle-led-front/`、MIT notice、不可变 artifact URL / SHA-256 清单及核验脚本。API revision 为 `69160a127bc8c2b54c5963763469d55909a349857129d91b3bc76c10839222a9`。产品适配保留自己的 SVG 几何单一来源；参考原件与实际运行代码分别记录，不将改写实现称为原件逐字复制。
+
+**参考站与许可源码要分开。** 2026-09-07 对 `vercel.com` 首页部署包的检查发现 `canvas.getContext("webgl2")` 与 GLSL `#version 300 es`，这是 WebGL2 证据，不能证明该首页使用 vgpu。首页视觉可作参考；可按 MIT 复用的代码来源是上面的官方 vgpu 示例。检查证据与说明保存在 OrgBrain 同目录 README。
+
 ## 三个运行时
 
 | 运行时 | 用途 |
@@ -68,7 +76,7 @@ Agent 自举：`npx vgpu docs` / `npx vgpu examples` / `npx vgpu check`（shader
 - 同一视图**最多一套动态大气**——orb / Paper / vgpu 互相都互斥，规矩不变。
 - 动画不受 CSS `prefers-reduced-motion` 管，必须在 `frameLoop` 层杀（`reduced ? 停 : 跑`）。
 - shader 层 `pointer-events: none` + `aria-hidden`，指针交互在 `window` 上监听后 lerp 进 uniform，不吞页面点击。
-- 25KB gz 预算是硬约束：新特效先估包体，别把 three.js 混进来。
+- 预算按锁定版本和实际构建核对。`vgpu@0.4.0` 的 `package.json` 中，`vgpuExportBundleBudgetsGzipBytes["."]` 是 **38,912 bytes**；`vgpuExperienceBundleBudgetsGzipBytes["effect-only"]` 是 **25,600 bytes**。后者只是特定测试 fixture，不是通用 25KB 保证。OrgBrain 的品牌光效异步入口实测约 **43KB gzip**，包含消费端集成；不能拿库入口预算代替产品测量。更新依赖后重新记录异步 chunk 和初始加载体积。
 
 ## 反模式
 
