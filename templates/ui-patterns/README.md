@@ -5,6 +5,7 @@
 ## Product craft
 
 - **Data-dense B2B app craft** → [`data-dense-app-craft.md`](./data-dense-app-craft.md) + [`data-dense-b2b-app.md`](./data-dense-b2b-app.md)：tables、filters、forms、inboxes、dashboards、admin。
+- **AI workspace surfaces** → [`ai-workspace-surfaces.md`](./ai-workspace-surfaces.md)：Workspace 常驻切换与管理、主对象 + 右侧 Agent rail、低优先级 Activity 聚合、Board drag/edit/side peek，以及 Stepper → Mermaid → React Flow 可视化梯子；单个 chat 状态走 `../agentic-ui-primitives.md`。
 - **Icon system craft** → [`icon-system-craft.md`](./icon-system-craft.md)：Track A product chrome 的线重、尺寸与概念表；不是 favicon / wordmark / OG。
 - **Interface audit → refine toolchain** → [`interface-audit-refine-toolchain.md`](./interface-audit-refine-toolchain.md)：Jakub Interfaces skills 负责跨域审计与修复；Libraries.dev 与 Astryx 只填已证明的效果 / 组件缺口；Light Rails 只做许可隔离的单层 motion spike。
 - **Recover at point of failure** → [`recover-at-point-of-failure.md`](./recover-at-point-of-failure.md)：系统消息按 L0–L3 可执行性分级，失败点就地恢复；PACK DOCTRINE + EVIDENCE 双轨标注。
