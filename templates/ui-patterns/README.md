@@ -21,7 +21,7 @@
 - **Paper Shaders** → [`../paper-shaders/SKILL.md`](../paper-shaders/SKILL.md)：本目录之外的背景氛围配方；不是 orb，也不承担状态语义。
 - **ThreeUI hero** → [`threeui-hero-adapter.md`](./threeui-hero-adapter.md)：一个 MIT Community 3D product hero；说明图仍走 visual-economy。
 - **Drafting resolve hero** → [`drafting-resolve-hero.md`](./drafting-resolve-hero.md)：虚线草图 → 实线成稿的注意力 resolve 线稿 hero；完整三源考察与机制在 webgl-threejs-background-animation skill 的 references。
-- **UI SFX cues** → [`uisfx-semantic-cues.md`](./uisfx-semantic-cues.md)：稀疏的 hover / press / success / error 声音；必须有同时可见的状态。
+- **UI SFX cues** → [`uisfx-semantic-cues.md`](./uisfx-semantic-cues.md)：语义界面声音完整纪律——pack 选型法、cue 语义映射、播放器生命周期、loop 清理、声音偏好；必须有同时可见的状态。
 - **Liquid gooey micro-interactions** → [`liquid-gooey-micro-interactions.md`](./liquid-gooey-micro-interactions.md)：React 液滴黏滞融合微交互（npm `liquid-gooey`，MIT）；小面积 chrome 的手感层，剪影层过滤镜、内容层保持清晰；不承担语义状态。
 - **Hand-drawn controls** → [`hand-drawn-controls.md`](./hand-drawn-controls.md)：drawably（MIT）手绘 boiling 控件；seeded SVG 叠在真控件下，a11y 来自真控件；playful 表面专用，dense B2B admin 换资产。
 - **vgpu WebGPU effects** → [`vgpu-webgpu-effects.md`](./vgpu-webgpu-effects.md)：vercel-labs 的 WebGPU 渲染库（typed WGSL 导入、单 `Gpu` 上下文、按版本与入口实测包体、browser / node / mock 三运行时）；orb / Paper / ThreeUI 覆盖不到的自定义 shader 特效施工层，WebGPU-only 无自动兜底。
