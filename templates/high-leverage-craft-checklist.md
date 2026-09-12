@@ -274,6 +274,65 @@
 
 **开火路径**：侧栏开合与扩页、hover 预览、原地编辑、图节点详情、列表重排、Tab / 路由上下文切换。
 
+#### 22C. 双轨披露（Duplicated disclosure） `frontend`
+
+**是什么**：同一个事实被渲染进两个内容区域：触发器内嵌一段"裁短的预览"（hover/focus 透出的 ghost 文案），真正的完整内容又在点击后的披露体（`<details>` 正文 / expanded region）里第二遍出现。两个区域背后各挂一套状态：CSS `:hover` / `:focus-within` 与原生 details toggle / `aria-expanded` 是两个独立状态机。硬门槛一句话：**一个事实 → 一个内容区域 → 一个真源 → 一个披露状态机**。这不是 22A 的分层意图——22A 是同一区域用低承诺动作逐层展开；本条是"看似分层，实为两块平行真相"。
+
+**为何杠杆（为何要禁）**：诱惑在于"预览显得信息密度高、hover 一眼聪明"。真实成本五笔：
+① 同一段文案两份 DOM，文案一改必须改两处，注定漂移；
+② 两套状态机永远可能同时为真——生产事故里：点击（展开）时 summary 仍带 focus-within/悬停，ghost 预览与完整正文同时可见，用户读到同一句话两遍；
+③ 指针路径（hover 有预览）与触屏路径（`pointer: coarse` 没有预览，tap 直接切换正文）行为不一致，同一交互在两类设备上学到的是两种规则；
+④ 预览是被截断的 slice（源里常见 `answer.slice(0, N)` 这类硬编码长度），真源一改长度就失同步；
+⑤ 可达性面与测试面爆炸：hover/focus/open 状态组合 × pointer/keyboard/touch × reduced-motion 全要过一遍，却没有一个叙事解释"这两块为什么同时存在"。
+删掉 ghost 区后，行为、测试、文案三者同时归一——这才是四两拨千斤的反方向：省掉的是负杠杆。
+
+**怎么落地**：
+1. 只渲染一份事实：正文进唯一的披露体，触发器（summary / button）只换代告(current) + `aria-expanded`（原生 `<details>` 自带）。
+2. hover/focus 是**同一个披露体的打开信号**，与 click/tap/Enter 写同一个状态机；pointer-leave/blur 是它的关闭信号（若用户已显式 open 则不收回）。
+3. 优先级预防抖动：显式 toggle（click/tap/Enter/Space）> hover/focus 进入；显式关闭 > 悬停离开；触发器到披露体之间覆盖连续 hover 区，穿过空隙不得闪关。
+4. 触屏：tap = 同一区域 toggle，durable；绝不依赖 hover 通道交出信息。
+5. 降低用户跳跃优先：hover/focus 提前打开**那个披露体本身**（不另造 ghost 文案区），pointer-leave 立即收回；click/Enter 把同一披露体固定为 durable open（`pinned` 只有显式 close 能解）。
+
+**Bad**（匿名化真实事故：FAQ 预览 28 码点 + `<details>` 正文）：
+
+```html
+<details class="faq">
+  <summary>
+    问题
+    <span class="preview" aria-hidden="true">答案前 28 码点…</span> <!-- ghost 区 -->
+  </summary>
+  <p>完整答案</p> <!-- 真源区 -->
+</details>
+```
+
+```css
+@media (pointer: fine) { .preview { display:inline; opacity:0 }
+  .faq:hover .preview, .faq:focus-within .preview { opacity:1 } }
+/* click → <details> 原生 toggle → open 时 preview 与正文同屏共存 */
+```
+
+**Good**（唯一区域 + 单一状态机）：
+
+| 事件 | closed | open（无 pinned） | open（pinned） |
+|---|---|---|---|
+| hover/focus 进入 | open 立即 | 保持 open | 保持 open |
+| pointer-leave/blur | 保持 closed | close（立即） | 保持 open |
+| click / tap / Enter / Space | open 且 pinned | open 且 pinned | close |
+| 显式关闭动作 | （无） | close | close |
+
+一行状态机：`closed —(hover/focus/click/pinned? open)→ open —(无 pinned 且 pointer-leave/blur? close)→ closed`；pinned 只由显式 click/Enter 设立，也只由显式动作解除。
+
+**检查清单 / lint 口问**：
+- 这一事实在 DOM 里是不是只出现一次（没有 slice/预览/tooltip 文案的第二份拷贝）？
+- preview 和正文是不是**同一个**状态变量驱动的同一个区域？hover+click 同时生效时会不会两块都可见？
+- 触屏有没有独立可推断的路径，还是暗示了不存在的 hover？
+- 有没有硬编码长度（如 slice 28）只出现在预览侧？真源一改长度，预览会不会先碎（漂移先兆）？
+- collapsed 提示和 expanded 正文是否互斥而非并成（如果两者可同时可见 than it's a two-region bug）？
+
+**生产反面示例（匿名化真实事故）**：公开营销长页 FAQ（原生 `<details>` + summary 内 28 码点 ghost 预览行，hover/focus-within 透出预览、click/Enter 展开正文）。点击展开时 summary 仍处 focus-within，预览与正文同屏；触屏用户永远见不到 hover 提示；文案改动需要在模板里维护两处字符串。修复即本条：删 ghost 区，hover/focus 与 click 全部写进同一个 disclosure 状态机，行为、测试、文案同时归一。
+
+**开火路径**：FAQ/disclosure/accordion、卡片 peek 预览、summary+detail 组合、任何"顺手加一个 hover 预览行"的评审现场；见到"触发器内嵌被截断的正文 slice"停下过审本条。
+
 ### 41. 铺底禁纯白纯黑（色/面偏好指针） `frontend` `copy`
 
 **是什么**：page / card / sidebar / popover / sheet 铺底禁 `#FFF`×`#000`（含 α≥0.85 纯白盖浅底、纯黑正文）；按场景二选一：A 微色相壳（营销壳/短会话）或 B 米黄纸（盯表长会话）。数字、证据与杀掉标准只维护专文：[`design-color-surface-preferences.md`](./design-color-surface-preferences.md)——本条只留禁令与指针，不抄数字。  
