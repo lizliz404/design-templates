@@ -283,11 +283,11 @@
 ② 两套状态机永远可能同时为真——生产事故里：点击（展开）时 summary 仍带 focus-within/悬停，ghost 预览与完整正文同时可见，用户读到同一句话两遍；
 ③ 指针路径（hover 有预览）与触屏路径（`pointer: coarse` 没有预览，tap 直接切换正文）行为不一致，同一交互在两类设备上学到的是两种规则；
 ④ 预览是被截断的 slice（源里常见 `answer.slice(0, N)` 这类硬编码长度），真源一改长度就失同步；
-⑤ 可达性面与测试面爆炸：hover/focus/open 状态组合 × pointer/keyboard/touch × reduced-motion 全要过一遍，却没有一个叙事解释"这两块为什么同时存在"。
+⑤ 可访问性面与测试面爆炸：hover/focus/open 状态组合 × pointer/keyboard/touch × reduced-motion 全要过一遍，却没有一个叙事解释"这两块为什么同时存在"。
 删掉 ghost 区后，行为、测试、文案三者同时归一——这才是四两拨千斤的反方向：省掉的是负杠杆。
 
 **怎么落地**：
-1. 只渲染一份事实：正文进唯一的披露体，触发器（summary / button）只换代告(current) + `aria-expanded`（原生 `<details>` 自带）。
+1. 只渲染一份事实：正文进唯一的披露体，触发器（summary / button）只承担 toggle 语义并携带状态——原生 `<details>` 自带披露语义（浏览器以 expanded 态反应给 AT，无需手工补）；button 变体显式维护 `aria-expanded` + `aria-controls`。
 2. hover/focus 是**同一个披露体的打开信号**，与 click/tap/Enter 写同一个状态机；pointer-leave/blur 是它的关闭信号（若用户已显式 open 则不收回）。
 3. 优先级预防抖动：显式 toggle（click/tap/Enter/Space）> hover/focus 进入；显式关闭 > 悬停离开；触发器到披露体之间覆盖连续 hover 区，穿过空隙不得闪关。
 4. 触屏：tap = 同一区域 toggle，durable；绝不依赖 hover 通道交出信息。
@@ -320,9 +320,9 @@
 | click / tap / Enter / Space | open 且 pinned | open 且 pinned | close |
 | 显式关闭动作 | （无） | close | close |
 
-一行状态机：`closed —(hover/focus/click/pinned? open)→ open —(无 pinned 且 pointer-leave/blur? close)→ closed`；pinned 只由显式 click/Enter 设立，也只由显式动作解除。
+一个状态机读法（表格为准，箭头句只作速记）：`closed —(hover/focus/click/Enter/tap)→ open →(再次显式 toggle 或显式关闭)→ closed`；`open —(无 pinned 且 pointer-leave/blur)→ closed`；`pinned` 只由显式 click/Enter 设立，也只由显式动作解除。
 
-**检查清单 / lint 口问**：
+**检查清单（lint 评审四问+一问）**：
 - 这一事实在 DOM 里是不是只出现一次（没有 slice/预览/tooltip 文案的第二份拷贝）？
 - preview 和正文是不是**同一个**状态变量驱动的同一个区域？hover+click 同时生效时会不会两块都可见？
 - 触屏有没有独立可推断的路径，还是暗示了不存在的 hover？
