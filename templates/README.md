@@ -104,6 +104,23 @@ description: >-
 
 [`inspiration-sources.md`](./inspiration-sources.md) 按同一任务族群整理外部站点。一次只开 1–2 个站，记下可复用机制和明确不抄的部分，然后回到本路由选择资产；禁止整站 mirror gallery。
 
+## 复用选择记录
+
+```text
+Job: yashe DESIGN.md —— 为香木雅舍内容工作台写 canonical 设计合同，替换 Aurora Glass 遗产（2026-09-12）
+Chosen asset(s): design/kami-document-dna.md（主源：parchment+ink-blue+暖灰四档+衬线 400/500+proximity law）
+  + design-color-surface-preferences.md（Band B 暖纸盯表带）+ design-typography-font-preferences.md（zh/en 衬线配对）
+  + ui-patterns/ai-workspace-surfaces.md（主对象居中 + Agent rail + 状态不靠颜色单通道）
+  + on-brand-ai-generation-craft.md（design.md 合同法 + 数字诚实）+ brand-identity/SKILL.md（只取规则层）
+Why these fit: 新中式珠宝语境要"纸墨印"而非玻璃拟态——kami 是纸感 token 的唯一机制层；
+  产品是 agent-as-a-service 工作台，ai-workspace-surfaces 给右侧 rail 与状态原语的页面合同。
+Explicitly skipped: design/beautiful-ui-ai-interfaces（未接源码，只取状态语义）、ai-thinking-orb / Paper Shaders
+  （静态演示不用动态大气）、premium-one-pager / footer-craft（yashe 静态页是工作流 demo 非叙事长 landing）、
+  data-dense-app-craft（leads/publish 剥离候选，阿里后置）。
+Acceptance screenshots / checks: 见 yashe repo `DESIGN.md §9`（font-size 阶梯 grep、墨蓝 ≤5% / 朱砂 ≤2%、
+  serif 400/500、无 transition-all/hover-scale/冷灰、工作台 src/index.css 单文件换血编译通过）。
+```
+
 ## 已知缺口
 
 - **没有完整 B2B 数据密集后台模板**：现有 `data-dense-app-craft.md` 是手册，`data-dense-b2b-app.md` 是交付闸。若沉淀出 tokens、表格 / 表单语法和截图，应回填 `design/<slug>/` 并在本节更新。
