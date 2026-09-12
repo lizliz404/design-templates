@@ -62,8 +62,9 @@ description: >-
 - **个人站 / 作品集** → [`design/hanzilla-personal-site/`](./design/hanzilla-personal-site/) 或 [`design/liz-personal-compact/`](./design/liz-personal-compact/)。
 - **内容到服务承接页** → [`design/uhoh-inspired-service-entry/`](./design/uhoh-inspired-service-entry/)；入口屋不是交付工厂。
 - **站内 / 产品内搜索** → [`ui-patterns/search-craft.md`](./ui-patterns/search-craft.md)；先区分 Search、Filter 与 Cmd+K。
-- **图标选型 / 线重 / 概念表** → [`ui-patterns/icon-system-craft.md`](./ui-patterns/icon-system-craft.md)；不是 favicon，也不默认自研 icon font。
-- **UI 栈拍板记录** → [`ui-stack-decision.md`](./ui-stack-decision.md)；管道层/可见层边界、换依赖成本分级 L0–L3、候选分级与 agent-friendly 真标准 + Iconoir 图标决策并入（2026-09-05，Liz），适用 chuhai-cloud / inquiry-foundry；线重与概念表规则走上一行。
+- **图标选型 / 线重 / 概念表** → [`ui-patterns/icon-system-craft.md`](./ui-patterns/icon-system-craft.md)；稳定产品 chrome 用 Iconoir 等生产线库，产品专属少量语义图标可组合下一行 Runeicons authoring；不是 favicon，也不默认自研 icon font。
+- **可编辑 / 可动效的产品专属图标** → [`ui-patterns/runeicons-authoring-workbench.md`](./ui-patterns/runeicons-authoring-workbench.md)；Runeicons 与 Iconoir 同为一等图标候选但分工不同：前者当前只作 Apache-2.0 编辑/导出工作台，WIP private packages 不作运行时依赖。
+- **UI 栈拍板记录** → [`ui-stack-decision.md`](./ui-stack-decision.md)；管道层/可见层边界、换依赖成本分级 L0–L3、候选分级与 agent-friendly 真标准 + Iconoir / Runeicons 图标决策并入，适用 chuhai-cloud / inquiry-foundry；线重与概念表规则走上一行。
 - **现有界面 audit → refine / Libraries.dev 效果选型 / Astryx 组件研究 / Light Rails 动效实验** → [`ui-patterns/interface-audit-refine-toolchain.md`](./ui-patterns/interface-audit-refine-toolchain.md)；Interfaces skills 管审计与修复，Libraries.dev 与 Astryx 只填已证明的效果 / 组件缺口，Light Rails 只做许可隔离的单层 motion spike。
 - **系统消息 / 错误恢复** → [`ui-patterns/recover-at-point-of-failure.md`](./ui-patterns/recover-at-point-of-failure.md)；toast / alert / modal 按 L0–L3 可执行性分级，失败点就地恢复；补 data-dense 后台与 onboarding 的消息纪律。
 - **发布 / 排期月历** → [`ui-patterns/publish-calendar/SKILL.md`](./ui-patterns/publish-calendar/SKILL.md)；一级年月控制、状态点密度与 shell-hotkey 共存的键盘合同，规则分 MUST/POLICY/PROFILE 三层（Aurora 参数是示例 profile）；是页面级工作台，不是 date picker。
@@ -81,6 +82,9 @@ description: >-
 - **Drafting resolve hero** → [`ui-patterns/drafting-resolve-hero.md`](./ui-patterns/drafting-resolve-hero.md)；three.js batched 线稿的「虚线草图 = 未确认方案、注意力 = 人工确认、实线 = 可交付」hero，产品承诺是「先确认后生成」类叙事时用；机制源头与生命周期合同在 webgl-threejs-background-animation skill；同一视图最多一套动态大气。
 - **vgpu 自研 GPU 特效** → [`ui-patterns/vgpu-webgpu-effects.md`](./ui-patterns/vgpu-webgpu-effects.md)；vercel-labs 的 WebGPU 库（typed WGSL、版本化 gzip 预算、browser / node / mock 三运行时；0.4.0 库主入口预算 38,912 bytes，产品包体另测）。vendored 资产（orb / Paper / ThreeUI / theater）覆盖不到的自定义 shader 特效才上手；WebGPU-only 无兜底；同一视图最多一套动态大气。
 - **UI SFX** → [`ui-patterns/uisfx-semantic-cues.md`](./ui-patterns/uisfx-semantic-cues.md)；声音是可见状态的补充，绝不是唯一状态通道。
+- **React 微动效 registry 选件** → [`ui-patterns/amicro-motion-registry-intake.md`](./ui-patterns/amicro-motion-registry-intake.md)；Amicro 只按真实状态缺口取一件 MIT 源码，拒绝整包 motion system、cursor tricks 与 loader 自助餐。
+- **Proof-first 产品 launch film** → [`ui-patterns/proof-first-launch-storyboard.md`](./ui-patterns/proof-first-launch-storyboard.md)；真实 proof → 系统装配 → 单一 tension → 一句收口，不复制 Cloudflare 视频或数字。
+- **Progressive 3D assembly** → [`ui-patterns/progressive-assembly-3d.md`](./ui-patterns/progressive-assembly-3d.md)；一动作一块、k/N 常显、可暂停/检查与同义 2D fallback；来源页无可核许可，只独立重做机制。
 - **Hand-drawn controls** → [`ui-patterns/hand-drawn-controls.md`](./ui-patterns/hand-drawn-controls.md)；手绘 boiling 控件（drawably 蒸馏，MIT）：seeded SVG 叠在真控件下，a11y 来自真控件；playful / landing 表面专用，dense B2B admin 换资产。
 
 ## Decks / diagrams

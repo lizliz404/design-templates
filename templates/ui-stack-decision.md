@@ -4,18 +4,16 @@ description: >-
   Decision record on UI-stack homogenization: the pipeline layer (headless
   primitives + styling engine) carries no personality — do not swap or chase
   novelty; differentiation lives only in the visible layer (tokens, component
-  defaults, signature components, icons). Covers an L0-L3 cost ladder for
-  "should we swap dependencies", a graded candidate pool, agent-friendly
-  criteria, and the folded-in Iconoir icon decision. Use when judging a
-  library swap, planning anti-homogenization work, or picking UI stack
-  dependencies for chuhai-cloud / inquiry-foundry.
+  defaults, signature components, icons). Covers an L0-L3 cost ladder, a
+  graded candidate pool, agent-friendly criteria, and the folded-in Iconoir
+  production-line + Runeicons authoring-workbench decision.
 ---
 
 # UI Stack Decision · UI 栈同质化决策（2026-09-05 拍板）
 
 > 结论先行：**管道层（headless 原语 + 样式引擎）不承载个性——不换、不追新；同质化的脸长在可见层；差异化只在可见层做。**
 > 决策人：Liz · 适用：chuhai-cloud + inquiry-foundry · 本文件是 UI 栈唯一决策记录，引用勿粘对话原文。
-> 图标层决策（Iconoir，2026-08-31）已并入 §5，本文件取代旧 icon-decision.md，未保留细节以 git 历史为准。
+> 图标层决策（Iconoir，2026-08-31；Runeicons authoring 补充，2026-09-12）已并入 §5，本文件取代旧 icon-decision.md，未保留细节以 git 历史为准。
 
 ## 1 · 病理：同质化的脸怎么长出来的
 
@@ -66,18 +64,19 @@ Base UI 已成 shadcn/ui 官方默认（2026-07 起，新项目 2:1 选择），
 
 落点：**对 agent 而言，比换新库更能压同质化的是合同**——chuhai 的 `DESIGN.md` + `design-lint.sh` + 本 pack 的路由与验收约定就是这套。换库只是让 agent 重背一套默认值；合同才让 agent 在任何栈上都输出本项目形态。
 
-## 5 · 图标层（2026-08-31 拍板，并入本文件）
+## 5 · 图标层（2026-08-31 拍板；2026-09-12 补 Runeicons）
 
-> 产品图标系统 = **Iconoir**（`iconoir-react`）；Lucide 降级为「功能性兜底层」，不再承担产品视觉语言。
-> 为什么不是 Lucide：它成了基础设施级默认脸（周下载 ~1 亿、shadcn / AI 生成代码默认内置）；Iconoir 是平面设计师画的「有设计人格但仍然中性」的库，DX 同级、MIT、零依赖、tree-shaking、离线可构建，撞脸概率低（~12 万 vs ~1 亿）。
-> 未选：Untitled UI Icons / MingCute（同价位或命名负担）；备选池 Hugeicons / Solar / Teenyicons 留档待用。
+> **稳定产品图标生产线 = Iconoir**（`iconoir-react`）；**产品专属少量语义图标制作台 = Runeicons**。二者在图标决策中平级，但职责不重叠。Lucide 降级为功能兜底，不再承担产品视觉语言。
+>
+> 为什么不是 Lucide：它成了基础设施级默认脸（shadcn / AI 生成代码默认内置）；Iconoir 是「有设计人格但仍然中性」的已发布库。Runeicons 则补上 Iconoir 不负责的 authoring：浏览器内改路径、五 style、渐变/effects、per-path motion、SVG/JSX export。它当前仍 WIP、无 release、framework packages private，故**可用编辑器与导出源码，不装 runtime**。固定审计与发布闸见 [`ui-patterns/runeicons-authoring-workbench.md`](./ui-patterns/runeicons-authoring-workbench.md)。
 
 | 结论 | 内容 |
 |---|---|
-| 产品语义图标 | 导航、对象、状态、按钮主图标 → **Iconoir**；自绘仅限 brand / logo / empty-state 插画 / 重要 AI feature |
+| 稳定产品语义图标 | 导航、对象、状态、按钮主图标 → **Iconoir** |
+| Authored exceptions | 通用库表达不了的 3–8 枚产品专属语义 → **Runeicons 制作后导出静态 SVG / owned JSX**；记录 Apache-2.0 与固定 commit，不引未发布包 |
 | 功能兜底 | `x / chevron / search / plus` 纯功能图标与 shadcn 原语内部（Dialog/Sheet 的 close、Select 的 chevron）**保留 lucide，不强迁** |
 
-采用协议（两仓统一）：① named import + `<Icon />`，props 透传，安装即用。② **Provider 锁线重**：根部 `IconoirProvider` 全局锁 `strokeWidth` + 默认尺寸——chuhai-cloud 锁 1.75（对齐 DESIGN.md 的 stroke band）、chrome 16px；Iconoir 线条偏轻，小尺寸比直觉加大 1–3px 并加粗一档。③ **离线纪律**：npm + lockfile + tree-shaking 进 bundle，运行时零第三方请求；禁 Iconify runtime API/CDN、禁成套 SVG 复制进 repo。④ **混用禁令**：Iconoir 与 lucide 不得在同一组件表达同一语义。⑤ 命名无 1:1 官方映射，按语义挑（`home` / `graph-up` / `send-diagram`…），字形表登记进仓内 DESIGN.md，新图标先查表再引。
+采用协议（两仓统一）：① Iconoir named import + `<Icon />`，props 透传，安装即用。② **Provider 锁线重**：根部 `IconoirProvider` 全局锁 `strokeWidth` + 默认尺寸——chuhai-cloud 锁 1.75、chrome 16px；小尺寸按光学需要加大 1–3px。③ **Runeicons 只走 exception export**：先登记产品概念，固定上游 commit，导出后改成 `currentColor` 与项目 motion/reduced-motion 合同。④ **离线纪律**：运行时零第三方请求；禁 Iconify runtime API/CDN，禁整套 Runeicons SVG 复制进 repo。⑤ **混用禁令**：Iconoir、Runeicons export 与 lucide 不得在同一组件表达同一语义。⑥ 命名无 1:1 官方映射，按语义挑并登记进仓内 DESIGN.md。
 
 ## 6 · 各仓落地状态（随迁移更新）
 

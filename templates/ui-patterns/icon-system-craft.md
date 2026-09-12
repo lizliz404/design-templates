@@ -1,10 +1,10 @@
 ---
 name: icon-system-craft
 description: >-
-  Two-track icon craft for product UI: Track A in-app chrome (production
-  line set + optical discipline); Track B brand/favicon is not this file.
-  Distilled from Marek Minor / Minor Adventures “The making of Cursor's icons”
-  (2026-07) plus Liz stack conventions. Not an icon asset pack.
+  Two-track icon craft for product UI: Track A in-app chrome separates a
+  stable production line from a small authored-exception path; Track B
+  brand/favicon is not this file. Distilled from Marek Minor / Minor
+  Adventures and the Runeicons authoring workbench audit. Not an icon asset pack.
 ---
 
 # Icon system craft
@@ -13,7 +13,7 @@ description: >-
 
 | | |
 |---|---|
-| **What** | 产品内 **chrome 图标**（toolbar / nav / empty-state）的选型、尺寸、光学一致性、禁止事项。缺的是纪律，不是再画 600 个。 |
+| **What** | 产品内 **chrome 图标**（toolbar / nav / empty-state）的选型、尺寸、光学一致性、禁止事项。默认缺的是纪律，不是再画 600 个；只有产品专属语义进入 authored exceptions。 |
 | **Why** | Lucide / Heroicons / Iconify 到处都是（shadcn + Tailwind），会显得「默认 SaaS」。系统感来自规则 + 同档里更有味道的线标，不是来自换库圣战。 |
 | **Who** | 工具面 / agent UI / SaaS 后台 / 个人站导航。 |
 | **How to use** | 先分 Track A / B；chrome 过 §0–§4；整站换库前过 §6。需要产品专属概念再考虑定制，不要默认定制。 |
@@ -33,13 +33,22 @@ Quiet chrome vs loud brand。Cursor making-of = Track A 光学源，不要偷它
 
 **Iconify is a pipe, not a look.** 它只负责取 glyph。Heroicons = Tailwind 家徽；Lucide = Feather fork / shadcn 默认。所以它们看起来「正常」——到处都是，不是因为它们差。
 
+### 一等图标决策：生产线与制作台
+
+| 路径 | 候选 | 适用 | 边界 |
+|---|---|---|---|
+| **稳定生产线** | **[Iconoir](https://iconoir.com/)** | 常规 nav / toolbar / object / status；中性但有设计人格，React 包已发布 | 一项目一套，Provider 锁 stroke / size |
+| **Authored exceptions 制作台** | **[Runeicons](https://runeicons.com/)** | 通用库表达不了的 3–8 枚产品专属语义；浏览器改路径、style、motion 后导出 SVG / JSX | 与 Iconoir 平级进入决策，但当前 WIP、无 release、packages private；只导出源码，不装 runtime，详见 [`runeicons-authoring-workbench.md`](./runeicons-authoring-workbench.md) |
+
+“平级”指两条路径都合法，不指同一 toolbar 两套字形轮流上。普通 glyph 仍走稳定生产线；Runeicons 只做可登记、可解释、数量封顶的 signature semantics。
+
 ### Same-class, more character（仍 MIT/open，仍产品 UI）
 
 同档 = 已 ship 的生产级线标，不是小众实验集。
 
 - **[Radix Icons](https://www.radix-ui.com/icons)** — 15×15，WorkOS/Modulz，dense tools，非常安静，16px 档比 Lucide 更「被设计过」。新 B2B chrome 要少一点 starter 味，首选。
 - **[Phosphor](https://phosphoricons.com/)** — 六档字重，metaphor 更全，略更 authored。导航选中需要 regular+bold 时用。
-- **[Iconoir](https://iconoir.com/)** — 更手绘一点，仍是系统。
+- **[Iconoir](https://iconoir.com/)** — 当前稳定生产线首选；更手绘一点，仍是系统。
 - **[Tabler](https://tabler.io/icons)** — 体量巨大，比 Lucide 多一点个性，仍偏 generic-adjacent。
 
 **不要：** Hugeicons / Solar 3D、emoji、国旗当语言、同一 toolbar 混两套线标。
@@ -59,7 +68,7 @@ Quiet chrome vs loud brand。Cursor making-of = Track A 光学源，不要偷它
 
 ## 1. Chrome 执行栈（先执行，再谈定制）
 
-1. **库**：按 §0 选**一套**线标，写进 DESIGN.md。Iconify 若已在项目里，只当管道，不当风格。语言切换用 Heroicons `LanguageIcon` inline（U-R13），**不要换字形**，只调 stroke / 字重。
+1. **库**：按 §0 选**一套稳定生产线**写进 DESIGN.md；若启用 Runeicons，再单列 `authored exceptions = <3–8 concepts>`，导出物必须遵守同一 viewBox / stroke / size。Iconify 若已在项目里，只当管道，不当风格。语言切换用 Heroicons `LanguageIcon` inline（U-R13），**不要换字形**，只调 stroke / 字重。
 2. **描边 / 字重**：可调 stroke 的集（Lucide / Tabler / Iconoir）产品 UI 默认 **1.5–2**；游戏/像素字体旁可到 **2.5 + round cap/join**。Phosphor 用 **regular** 作 chrome，选中可用 **bold**；Radix 按 15 光学，不要硬调 stroke。全站统一一档，禁止一页混 1 / 1.5 / 2.5 或 regular+duotone 乱炖。
 3. **尺寸档**（光学尺寸思维，不是单一 SVG 瞎放大）：
 
@@ -132,7 +141,7 @@ Cursor 原作对「双光学尺寸」的论证：16@1.25 stroke 适合 12–20�
 | 信号 | 动作 |
 |---|---|
 | 所选线标集覆盖 95%+ 常规 chrome | **停止**，只维护概念表 |
-| 反复出现产品专有对象（并行 agent、计费 compute、行业器械） | 先组合现有 icon + 文案；仍不够再定制 1 个 metaphor |
+| 反复出现产品专有对象（并行 agent、计费 compute、行业器械） | 先组合现有 icon + 文案；仍不够再用 Runeicons 制作台定制 1 个 metaphor，按固定 commit 导出源码 |
 | 继承旧库 codepoint 必须无断替换 | 才需要 Cursor 级 font + migration dashboard（多数 Liz 项目 **不需要**） |
 | 品牌 logo / 文件类型色标 | 走 Track B 品牌资产，不进 chrome 线标混排 |
 | 已上线产品「Lucide 到处都是」的不适 | **不迁库**。先修概念表与 stroke；新项目再选 Radix / Phosphor |
@@ -156,7 +165,7 @@ Cursor 原作对「双光学尺寸」的论证：16@1.25 stroke 适合 12–20�
 
 ## 8. 开火路径（一杯咖啡）
 
-1. 打开项目 DESIGN.md，写死：`icon track = A`、`icon stack = <Radix | Phosphor | Lucide-keep | Heroicons>`、`stroke/weight = X`、`sizes = 16/18/24`。已上线 Lucide **填 Lucide-keep**。  
+1. 打开项目 DESIGN.md，写死：`icon track = A`、`production line = <Iconoir | Radix | Phosphor | Lucide-keep | Heroicons>`、`authored exceptions = none | <最多 3–8 concepts>`、`stroke/weight = X`、`sizes = 16/18/24`。已上线 Lucide **填 Lucide-keep**；Runeicons 只能填 exceptions，不能冒充已发布生产线。
 2. 建 `docs/icon-concepts.md`：10–30 行 `概念 | icon名 | 备注`。  
 3. 扫一遍主导航 + 表格行操作，杀掉重复概念。  
 4. 截图 1440 与 390 宽各一，看线重与对齐。  
