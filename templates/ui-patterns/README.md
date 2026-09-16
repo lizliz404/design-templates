@@ -14,6 +14,8 @@
 - **Search craft** → [`search-craft.md`](./search-craft.md)：Search、Filter、Cmd+K 与按产品类型选引擎。
 - **SaaS onboarding two-phase** → [`saas-onboarding-two-phase.md`](./saas-onboarding-two-phase.md)：B2B / Agent 的 aha 之后才进入生产设置。
 - **Publish calendar** → [`publish-calendar/SKILL.md`](./publish-calendar/SKILL.md)：发布/排期月历的 MUST/POLICY/PROFILE 分层合同、四层 DOM/ARIA 结构、Aurora 示例 profile 与不与 shell hotkeys 冲突的键盘合同；页面级工作台，不是 date picker。
+- **Linear method philosophy** → [`linear-method-philosophy.md`](./linear-method-philosophy.md)：产品哲学纯复用层——八原则 + 方法流 + 七对象 + 取舍纪律；项目映射不进 pack。
+- **Agent interaction guidelines** → [`agent-interaction-guidelines.md`](./agent-interaction-guidelines.md)：Agent 交互契约纯复用层——六原则 + Session×Activity + delegation + 时序合同 + loops；项目选型不进 pack。
 
 ## Motion chrome
 
