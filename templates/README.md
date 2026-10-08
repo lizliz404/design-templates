@@ -53,6 +53,7 @@ description: >-
 ## 产品任务
 
 - **B2B 数据密集后台 / CRM / 管理台** → [`ui-patterns/data-dense-app-craft.md`](./ui-patterns/data-dense-app-craft.md) + [`ui-patterns/data-dense-b2b-app.md`](./ui-patterns/data-dense-b2b-app.md)。需要 records / diff / filter 表格语法时，再组合下一节的 Beautiful UI。
+- **Telegram Web A/K 借鉴 / Chat-first 工作区 / 未发送草稿 / 阅读位置 / 附件异步所有权** → [`telegram-web-chat/README.md`](./telegram-web-chat/README.md)；固定版本研究、离线原型及出海云实施/失败到通过的执行对账，不搬 IM 服务层，不把历史候选当成当前缺口。
 - **Chatbot / AI Agent 界面** → [Agent / motion chrome](#agent--motion-chrome) 的 **Beautiful UI primitives**；它覆盖 thinking、streaming、approval、tool chips、composer 和 dense tables。
 - **Agent 界面选轮子 / agentic UI 组件赛道验真** → [`agentic-ui-primitives.md`](./agentic-ui-primitives.md)；状态原语 × chat 框架 × 协议 × 生成式 UI 四层坐标、六轮子验真表与抄/装/上框架阶梯；承接 ui-stack-decision §3 A 行，Beautiful UI 本体研究走上一行。
 - **AI 工作台页面编排 / Workspace 管理 / Agent 侧栏 / Activity / Board 编辑 / 流程可视化** → [`ui-patterns/ai-workspace-surfaces.md`](./ui-patterns/ai-workspace-surfaces.md)；主对象 + 可调宽右侧 Agent rail、Workspace 常驻上下文、按对象聚合 Activity、drag + side peek 编辑，以及 Astryx Stepper → Mermaid → React Flow 的分级合同；单个 agent 状态原语仍走上一行。

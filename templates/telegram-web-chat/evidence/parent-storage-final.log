@@ -1,0 +1,13 @@
+
+Running 8 tests using 1 worker
+
+  ✓  1 e2e/hunjian-goal-draft.spec.ts:115:1 › harness 未发送稿刷新恢复，快速刷新不丢 (3.5s)
+  ✓  2 e2e/hunjian-goal-draft.spec.ts:131:1 › harness 发送清稿，失败同ID续跑且刷新不复活 (2.8s)
+  ✓  3 e2e/hunjian-goal-draft.spec.ts:165:1 › harness 问题选项与历史重发不清除无关新稿 (1.9s)
+  ✓  4 e2e/hunjian-goal-draft.spec.ts:202:1 › harness 新会话成功清稿、失败保留 (2.8s)
+  ✓  5 e2e/hunjian-goal-draft.spec.ts:227:1 › harness 同挂载换身份不泄漏，blocked storage 照常输入 (2.9s)
+  ✓  6 e2e/hunjian-goal-draft.spec.ts:269:1 › harness 确认失败保留稿，确认成功才清稿 (3.1s)
+  ✓  7 e2e/hunjian-goal-draft.spec.ts:386:1 › /hunjian 未发送稿刷新后恢复 (4.4s)
+  ✓  8 e2e/hunjian-goal-draft.spec.ts:423:1 › /hunjian 504 同ID续跑，刷新不复活失败文字 (3.7s)
+
+  8 passed (26.5s)

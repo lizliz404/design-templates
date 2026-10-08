@@ -1,0 +1,35 @@
+
+Running 6 tests using 1 worker
+
+  ✘  1 e2e/telegram-reading-lifecycle.spec.ts:261:1 › A1 贴底跟随 + pinSignal 发送 + jump 回到底 (7.3s)
+  ✓  2 e2e/telegram-reading-lifecycle.spec.ts:261:1 › A1 贴底跟随 + pinSignal 发送 + jump 回到底 (4.4s)
+  ✓  3 e2e/telegram-reading-lifecycle.spec.ts:261:1 › A1 贴底跟随 + pinSignal 发送 + jump 回到底 (4.3s)
+  ✓  4 e2e/telegram-reading-lifecycle.spec.ts:261:1 › A1 贴底跟随 + pinSignal 发送 + jump 回到底 (4.3s)
+  ✓  5 e2e/telegram-reading-lifecycle.spec.ts:261:1 › A1 贴底跟随 + pinSignal 发送 + jump 回到底 (4.3s)
+  ✓  6 e2e/telegram-reading-lifecycle.spec.ts:261:1 › A1 贴底跟随 + pinSignal 发送 + jump 回到底 (5.3s)
+
+
+  1) e2e/telegram-reading-lifecycle.spec.ts:261:1 › A1 贴底跟随 + pinSignal 发送 + jump 回到底 ──────────────
+
+    Error: expect(received).toBeLessThan(expected)
+
+    Expected: < 50
+    Received:   69
+
+    Call Log:
+    - Timeout 5000ms exceeded while waiting on the predicate
+
+      279 |   await expect
+      280 |     .poll(() => el.evaluate((n) => n.scrollHeight - n.scrollTop - n.clientHeight))
+    > 281 |     .toBeLessThan(50);
+          |      ^
+      282 |
+      283 |   // 贴底时下方 append 跟随（stickRef=true 路径）。
+      284 |   await el.evaluate((n) => {
+        at chuhai-cloud/web/e2e/telegram-reading-lifecycle.spec.ts:281:6
+
+    Error Context: ../../_archived/telegram-web-learning-20261007/impl/parent-test-results/telegram-reading-lifecycle-A1-贴底跟随-pinSignal-发送-jump-回到底/error-context.md
+
+  1 failed
+    e2e/telegram-reading-lifecycle.spec.ts:261:1 › A1 贴底跟随 + pinSignal 发送 + jump 回到底 ───────────────
+  5 passed (36.9s)

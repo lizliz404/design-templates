@@ -1,0 +1,20 @@
+[
+  {
+    "source": "https://raw.githubusercontent.com/morethanwords/tweb/125a31da7665d5ee09ceb9c5de66e2615e3276b6/src/components/chat/input.ts",
+    "sha256": "a626f1b477f1ea70e4da1d866343a0b8f8512da6ae6007543f5c16a957f95c40",
+    "matches_earlier": true,
+    "original_snapshot_filename": "pinned-src_components_chat_input.ts"
+  },
+  {
+    "source": "https://raw.githubusercontent.com/morethanwords/tweb/125a31da7665d5ee09ceb9c5de66e2615e3276b6/src/components/chat/inputEditor/draftContent.ts",
+    "sha256": "709fd8d97b6d7ec1cc69069e87298dbb132ad5733d6e9bfc6d1c751b2d40ebdf",
+    "matches_earlier": true,
+    "original_snapshot_filename": "pinned-src_components_chat_inputEditor_draftContent.ts"
+  },
+  {
+    "source": "https://raw.githubusercontent.com/morethanwords/tweb/125a31da7665d5ee09ceb9c5de66e2615e3276b6/src/components/chat/chatToast.tsx",
+    "sha256": "36b84bb868b1975db71fd8fd0825af06d690c7facf4a9b4b49b8d18a25d19daf",
+    "matches_earlier": true,
+    "original_snapshot_filename": "pinned-src_components_chat_chatToast.tsx"
+  }
+]
