@@ -96,7 +96,7 @@ description: >-
 
 ## Craft / tokens
 
-- **高杠杆 craft checklist** → [`high-leverage-craft-checklist.md`](./high-leverage-craft-checklist.md)；条目 22C「双轨披露」= 一个事实只允许一个内容区域与一个披露状态机
+- **高杠杆 craft checklist / 解耦与 Agent 维护预算** → [`high-leverage-craft-checklist.md`](./high-leverage-craft-checklist.md)；22C 单一披露真源；43 按职责解耦与源码单文件 ≤1,500 行，不按行数机械切块
 - **Typography** → [`design-typography-font-preferences.md`](./design-typography-font-preferences.md)
 - **Color / surface** → [`high-leverage-craft-checklist.md`](./high-leverage-craft-checklist.md) 的 color / surface 规则
 - **i18n / language switcher** → [`i18n-iconify-lang-switcher.md`](./i18n-iconify-lang-switcher.md)
