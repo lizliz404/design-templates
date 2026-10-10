@@ -100,7 +100,7 @@ description: >-
 
 - **高杠杆 craft checklist / 解耦与 Agent 维护预算** → [`high-leverage-craft-checklist.md`](./high-leverage-craft-checklist.md)；22C 单一披露真源；43 按职责解耦与源码单文件 ≤1,500 行，不按行数机械切块
 - **Typography** → [`design-typography-font-preferences.md`](./design-typography-font-preferences.md)
-- **Color / surface** → [`high-leverage-craft-checklist.md`](./high-leverage-craft-checklist.md) 的 color / surface 规则
+- **Color / surface / 品牌色阶 / 第三色搭配与 token 解耦** → [`design-color-surface-preferences.md`](./design-color-surface-preferences.md)；先复用现有研究，微暖纸白 + 成熟色板关系 + primitive→semantic 接线，不重做整轮 due diligence。
 - **i18n / language switcher** → [`i18n-iconify-lang-switcher.md`](./i18n-iconify-lang-switcher.md)
 - **i18n / 翻译存活排版规则** → [`i18n-translation-survival.md`](./i18n-translation-survival.md)：atom、换行、层级通道、RTL、IME、voice 的规则级手册；做切换器组件走上一行的 lang-switcher 文档。
 - **On-brand AI 生成合同 / 压 AI 味** → [`on-brand-ai-generation-craft.md`](./on-brand-ai-generation-craft.md)：Hallmark 58 gates + macrostructure 轮换，Vercel design.md 单文件合同与 eval 方法；agent 生成官网 / 活动页 / 报告页前先过它。
