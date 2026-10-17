@@ -30,6 +30,7 @@
 - **Progressive 3D assembly** → [`progressive-assembly-3d.md`](./progressive-assembly-3d.md)：一动作一块、k/N、pause/rotate/zoom 和 2D fallback；把 3D 变成状态解释器而非装饰球。
 - **Liquid gooey micro-interactions** → [`liquid-gooey-micro-interactions.md`](./liquid-gooey-micro-interactions.md)：React 液滴黏滞融合微交互（npm `liquid-gooey`，MIT）；小面积 chrome 的手感层，剪影层过滤镜、内容层保持清晰；不承担语义状态。
 - **Hand-drawn controls** → [`hand-drawn-controls.md`](./hand-drawn-controls.md)：drawably（MIT）手绘 boiling 控件；seeded SVG 叠在真控件下，a11y 来自真控件；playful 表面专用，dense B2B admin 换资产。
+- **Stretchy dog password meter** → [`stretchy-dog-password-meter.md`](./stretchy-dog-password-meter.md) + [`snippets/stretchy-dog-password-meter.html`](./snippets/stretchy-dog-password-meter.html)：单一指标映射为真实变长的角色，表情 / 文案分档与奖励态；playful 表面专用。
 - **vgpu WebGPU effects** → [`vgpu-webgpu-effects.md`](./vgpu-webgpu-effects.md)：vercel-labs 的 WebGPU 渲染库（typed WGSL 导入、单 `Gpu` 上下文、按版本与入口实测包体、browser / node / mock 三运行时）；orb / Paper / ThreeUI 覆盖不到的自定义 shader 特效施工层，WebGPU-only 无自动兜底。
 
 ## Landing chrome

@@ -89,6 +89,7 @@ description: >-
 - **Proof-first 产品 launch film** → [`ui-patterns/proof-first-launch-storyboard.md`](./ui-patterns/proof-first-launch-storyboard.md)；真实 proof → 系统装配 → 单一 tension → 一句收口，不复制 Cloudflare 视频或数字。
 - **Progressive 3D assembly** → [`ui-patterns/progressive-assembly-3d.md`](./ui-patterns/progressive-assembly-3d.md)；一动作一块、k/N 常显、可暂停/检查与同义 2D fallback；来源页无可核许可，只独立重做机制。
 - **等距 SVG 物体 / 指针交互线稿 / Hairline empty state / 轻量 hero** → [`isometric-figures/SKILL.md`](./isometric-figures/SKILL.md)；固定版本 hairline-create 完整引擎、构建与检查脚本已收录，单物体单动作；邻近 isometric-objects 原帖暂存同入口，未取得源码、不冒名替代。
+- **Playful 密码强度 / 指标即身体** → [`ui-patterns/stretchy-dog-password-meter.md`](./ui-patterns/stretchy-dog-password-meter.md)；输入框变宽、腊肠狗等宽拉伸、表情与毒舌文案分档（Ramin Nasibov 原作）；鼓励长度不拦人，严肃产品换普通强度提示。
 - **Hand-drawn controls** → [`ui-patterns/hand-drawn-controls.md`](./ui-patterns/hand-drawn-controls.md)；手绘 boiling 控件（drawably 蒸馏，MIT）：seeded SVG 叠在真控件下，a11y 来自真控件；playful / landing 表面专用，dense B2B admin 换资产。
 
 ## Decks / diagrams
@@ -99,6 +100,7 @@ description: >-
 ## Craft / tokens
 
 - **高杠杆 craft checklist / 解耦与 Agent 维护预算** → [`high-leverage-craft-checklist.md`](./high-leverage-craft-checklist.md)；22C 单一披露真源；43 按职责解耦与源码单文件 ≤1,500 行，不按行数机械切块
+- **间距审计 / 灰块 pass / 密度模式** → [`spacing-audit-checklist.md`](./spacing-audit-checklist.md)；“大概率是间距问题”（Michael Filipiuk）：外层 > 区块 > 卡片 > 元素、收紧相关对、4/8 token、comfortable/compact，附 agent 审计 prompt。
 - **Typography** → [`design-typography-font-preferences.md`](./design-typography-font-preferences.md)
 - **Color / surface / 品牌色阶 / 第三色搭配与 token 解耦** → [`design-color-surface-preferences.md`](./design-color-surface-preferences.md)；先复用现有研究，微暖纸白 + 成熟色板关系 + primitive→semantic 接线，不重做整轮 due diligence。
 - **i18n / language switcher** → [`i18n-iconify-lang-switcher.md`](./i18n-iconify-lang-switcher.md)
