@@ -54,7 +54,7 @@
 
 ### Surface A: Landing 导航胶囊
 
-文件：`/home/ubuntu/dev/chuhai-cloud/web/src/landing/hero.tsx:29-73`
+文件：`chuhai-cloud/web/src/landing/hero.tsx:29-73`
 
 - `Nav` 是固定在页面顶部的 chrome，不是数据内容面。
 - 未滚动时是透明导航；滚动后切换为 `.glass mt-3 ... rounded-full ... bg-popover` 的胶囊。
@@ -64,7 +64,7 @@
 
 ### Surface B: Tooltip overlay
 
-文件：`/home/ubuntu/dev/chuhai-cloud/web/src/components/ui/tooltip.tsx:5-53`
+文件：`chuhai-cloud/web/src/components/ui/tooltip.tsx:5-53`
 
 - 文件注释已经把它限定为 overlay chrome，并要求短内容、不放到 data card。
 - `TooltipContent` 通过 Radix Portal 渲染，当前使用 `.glass`、`bg-popover`、边框和短时进出动画。
@@ -126,12 +126,12 @@
 ### 本地文件
 
 - 历史原文：[`sources.md`](./sources.md)。核验前 SHA-256：`6d9e8fe59d38500a123fa3e57889bcee1f1fc7be3f781aa7e85497b3baa1979d`。
-- 视觉合同：`/home/ubuntu/dev/chuhai-cloud/DESIGN.md`。
-- 当前 token 和 `.glass`：`/home/ubuntu/dev/chuhai-cloud/web/src/index.css`。
-- Landing Nav 和现有 Motion：`/home/ubuntu/dev/chuhai-cloud/web/src/landing/hero.tsx`。
-- Landing reduced-motion helper：`/home/ubuntu/dev/chuhai-cloud/web/src/landing/ui.tsx`。
-- Radix Tooltip overlay：`/home/ubuntu/dev/chuhai-cloud/web/src/components/ui/tooltip.tsx`。
-- 当前依赖清单：`/home/ubuntu/dev/chuhai-cloud/web/package.json`。
+- 视觉合同：`chuhai-cloud/DESIGN.md`。
+- 当前 token 和 `.glass`：`chuhai-cloud/web/src/index.css`。
+- Landing Nav 和现有 Motion：`chuhai-cloud/web/src/landing/hero.tsx`。
+- Landing reduced-motion helper：`chuhai-cloud/web/src/landing/ui.tsx`。
+- Radix Tooltip overlay：`chuhai-cloud/web/src/components/ui/tooltip.tsx`。
+- 当前依赖清单：`chuhai-cloud/web/package.json`。
 
 ### 官方和上游资料
 
