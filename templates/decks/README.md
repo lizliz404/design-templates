@@ -11,6 +11,7 @@ HTML slide skills and template packs live here — **under design-templates** so
 | Path | Role |
 |---|---|
 | [`visual-economy.md`](./visual-economy.md) | Cost ladder + text:viz ratio (Liz craft) |
+| [`diagram-skills.md`](./diagram-skills.md) | Which agent skill renders the diagram (live-panel, diagram-design, drawio…) |
 | [`upstream/UPSTREAM.md`](./upstream/UPSTREAM.md) | Pinned zarazhangrui commits + license |
 | [`upstream/frontend-slides/`](./upstream/frontend-slides/) | Vendored [zarazhangrui/frontend-slides](https://github.com/zarazhangrui/frontend-slides) (+ Liz paper-shaders overlay) |
 | [`upstream/beautiful-html-templates/`](./upstream/beautiful-html-templates/) | Vendored [zarazhangrui/beautiful-html-templates](https://github.com/zarazhangrui/beautiful-html-templates) (no `screenshots/`) |

@@ -95,6 +95,7 @@ description: >-
 ## Decks / diagrams
 
 - **结构图 / 说明图（默认）** → [`decks/visual-economy.md`](./decks/visual-economy.md)：先 prose，再 ASCII、Mermaid；不要默认上 React / Three。
+- **选画图 skill / 动态架构图 / 社媒动图 / 可编辑 .drawio** → [`decks/diagram-skills.md`](./decks/diagram-skills.md)；live-panel、diagram-design、drawio 等 12 个 diagram skill 的对比表与「何时选哪个」，先过上一行 visual-economy 再来选工具。
 - **HTML 演示 deck（审美交付）** → [`decks/README.md`](./decks/README.md)；确认 occasion 是演讲或课程后，才进入 `upstream/beautiful-html-templates`、`frontend-slides` 和可选 Paper Shaders。
 
 ## Craft / tokens

@@ -118,6 +118,7 @@ sequenceDiagram
 - `mmdc` / mermaid.live → 提交 **svg + .mmd 源**  
 - 单文件 HTML：图 + 短说明；**不要**上 slide runtime  
 - 升档信号：必须在 GitHub 外仍像图；或要红圈/尺寸标注  
+- 选哪个现成 skill 出图（含 live-panel 动态架构图 mp4）→ [`diagram-skills.md`](./diagram-skills.md)  
 
 ### 3.4 全套 HTML deck（阶 5）
 
