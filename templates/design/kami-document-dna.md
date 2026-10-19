@@ -4,7 +4,7 @@ description: >-
   tw93/Kami（"Good content deserves good paper"）的文档排版 DNA 笔记：暖羊皮纸
   底 + 墨蓝单强调 + 衬线层级 + 三档行高的 print-first 约束系统。Use when
   做文本型 Help / 长文档 / 法务或产品文档页、PDF / 一页纸 / 白皮书 / 简历 /
-  信函排版，或给 landing 页要纸感编辑风（parchment+ink-blue）时;需要真实
+  信函排版、商品图文研究／设计参照报告，或给 landing 页要纸感编辑风（parchment+ink-blue）时;需要真实
   可编辑 PDF 时直接装上游 skill 而不是从笔记重建。不适用：多强调色品牌、
   活泼/游戏化表面、需要复杂动效编排的 landing。
 source: https://github.com/tw93/Kami
@@ -24,6 +24,15 @@ Kami（紙，かみ）是 tw93 的 AI agent 文档排版系统：8 个文档模�
 2. **选媒介**：真 PDF/打印产出 → 装上游 Kami skill 跑模板；web 页 → 只借 DNA（下节 token + 规则），按本站系统重写 CSS，不搬它的 HTML。
 3. **套 token**：canvas/文字/强调色按下表取值；行高按三档落带；间距按 4pt 基 + proximity law。
 4. **自检终点**（Kami 的 ladder 纪律）：`grep 'font-size:' <file> | sort | uniq -c` 每个值都落在阶梯上、prose ≥14px、12px 只给徽章；行高值在三档带内；墨蓝出现面积目测 ≤5%;正文四档灰全是暖色调（R≈G>B）；无硬阴影、无 transition-all。
+
+## 商品图文研究报告：复用资产，不重画整页
+
+2026-10-19核对上游：[`Portfolio模板`](https://github.com/tw93/Kami/blob/main/plugins/kami/skills/kami/assets/templates/portfolio.html) 已有 `.project-hero`、`.project-visuals-2col`（并排双图）、标题／短说明／证据的层级与模块间距；[`writing.md`](https://github.com/tw93/Kami/blob/main/plugins/kami/skills/kami/references/writing.md) 要求具体事实优先于形容词、少套话、先核来源再措辞。图文参照优先从这套现成结构取法，长篇论述再取 Long Doc，不因是HTML就默认slides。
+
+- **真正采用**：选择记录必须写具体资产、采用的图片区／双列／标题层级／间距／写作方法及消费项目代码落点；只套纸色和衬线不等于模板复用。源码入口以当前上游为准，不猜旧路径。
+- **媒介适配**：保留已有站点主题、阅读器和导出链；不搬打印固定页高、空封面、字体CDN、强制三段履历叙事或 `object-fit:cover` 到商品证据页。图片不裁切，单／双图沿用同一区域，双图缩放并排；图类型留元数据，不重复角标。系列／变体差异若改变判断，放商品旁的短事实。
+- **证据先于气氛**：设计参照、当期新品、经典款、货架、销量估算不是一个证据角色；不用统一漂亮卡片掩平区别，也不强制每卡重复免责声明。保持数字、范围、未知与来源不变。
+- **验收不是仿DOM**：在消费项目既有浏览器流程测单／双图实际占位、并排、窄屏可辨和无裁切，故意注入上下堆图／第二图抬高等反例；独立审阅者用真实正文与截图回答“什么商品、为什么看、依据支持什么”，不是只看测试passed。
 
 ## 机制依据（按需查的平铺规则，co-location）
 

@@ -60,7 +60,7 @@ description: >-
 - **产品哲学 / 对象模型 / 工作流取舍（建什么对象、不建什么）** → [`ui-patterns/linear-method-philosophy.md`](./ui-patterns/linear-method-philosophy.md)；Linear Method 蒸馏：八原则 + 方法流 + Issue/Team/Project/Milestone/Initiative/Cycle/View 七件套 + 取舍纪律；Agent 契约走下一节。
 - **SaaS 激活 / onboarding → setup** → [`ui-patterns/saas-onboarding-two-phase.md`](./ui-patterns/saas-onboarding-two-phase.md) + [`ia-user-journey.md`](./ia-user-journey.md)；先 aha，再进入生产用量。
 - **叙事长 landing** → [`design/lead-radar/`](./design/lead-radar/) 或 [`design/uhoh-inspired-service-entry/`](./design/uhoh-inspired-service-entry/)；按需组合 [`ui-patterns/premium-one-pager.md`](./ui-patterns/premium-one-pager.md) 和 [`ui-patterns/footer-craft.md`](./ui-patterns/footer-craft.md)。**按目标站做可测量复刻**（IMR / SLR / behavior）→ sibling [landing-page-replication-v5](https://github.com/lizliz404/agent-skills/tree/main/skills/landing-page-replication-v5)；软路由 [`sibling-routes.md`](./sibling-routes.md)。
-- **文本型 Help / 长文档 / PDF 排版（简历 / 一页纸 / 白皮书 / 信函）或纸感 landing** → [`design/kami-document-dna.md`](./design/kami-document-dna.md)；暖纸 + 墨蓝单强调 + 衬线层级的文档 DNA（Kami，MIT），字体再分发受限、只借 token 不搬字体。
+- **文本型 Help / 长文档 / PDF 排版（简历 / 一页纸 / 白皮书 / 信函）、商品图文研究报告或纸感 landing** → [`design/kami-document-dna.md`](./design/kami-document-dna.md)；Kami文档 DNA + Portfolio现成双图／编辑层级与写作方法；记录实际采用机制，不只借纸色，不搬字体。
 - **个人站 / 作品集** → [`design/hanzilla-personal-site/`](./design/hanzilla-personal-site/) 或 [`design/liz-personal-compact/`](./design/liz-personal-compact/)。
 - **内容到服务承接页** → [`design/uhoh-inspired-service-entry/`](./design/uhoh-inspired-service-entry/)；入口屋不是交付工厂。
 - **站内 / 产品内搜索** → [`ui-patterns/search-craft.md`](./ui-patterns/search-craft.md)；先区分 Search、Filter 与 Cmd+K。
