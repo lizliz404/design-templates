@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Hamster cookie consent — minimal demo</title>
+<style>
+  :root { color-scheme: light; --bg:#ececee; --card:#fff; --ink:#111; --muted:#6b7280; --on:#22c55e; --off:#e5e7eb; }
+  * { box-sizing: border-box; }
+  body { margin:0; min-height:100vh; display:grid; place-items:center; background:var(--bg); font:15px/1.4 system-ui,sans-serif; color:var(--ink); }
+  .card { width:min(360px,92vw); background:var(--card); border-radius:20px; padding:28px 24px 22px; box-shadow:0 12px 40px rgba(0,0,0,.08); }
+  h1 { margin:0; font-size:1.35rem; text-align:center; }
+  .sub { margin:.35rem 0 1.1rem; text-align:center; color:var(--muted); font-size:.9rem; }
+  .stage { height:140px; display:grid; place-items:center; position:relative; margin-bottom:.5rem; }
+  .hamster { font-size:4.5rem; line-height:1; transition:transform .2s ease-out; transform-origin:50% 70%; user-select:none; }
+  .hamster[data-n="0"] { transform:scale(.92); filter:saturate(.85); }
+  .hamster[data-n="1"] { transform:scale(1); }
+  .hamster[data-n="2"] { transform:scale(1.08); }
+  .hamster[data-n="3"] { transform:scale(1.18); }
+  .cheeks { position:absolute; font-size:1.15rem; letter-spacing:.15em; transition:opacity .15s; pointer-events:none; }
+  .row { display:flex; align-items:center; justify-content:space-between; padding:.7rem 0; border-top:1px solid #eee; }
+  .row:first-of-type { border-top:0; }
+  .sw { width:46px; height:28px; border-radius:999px; background:var(--off); border:0; cursor:pointer; position:relative; transition:background .15s; }
+  .sw[aria-checked="true"] { background:var(--on); }
+  .sw::after { content:""; position:absolute; top:3px; left:3px; width:22px; height:22px; border-radius:50%; background:#fff; box-shadow:0 1px 3px rgba(0,0,0,.2); transition:transform .15s; }
+  .sw[aria-checked="true"]::after { transform:translateX(18px); }
+  .actions { display:flex; gap:1rem; align-items:center; justify-content:center; margin-top:1.1rem; }
+  .accept { background:#111; color:#fff; border:0; border-radius:999px; padding:.65rem 1.25rem; font-weight:600; cursor:pointer; }
+  .reject { background:none; border:0; color:var(--muted); cursor:pointer; text-decoration:underline; text-underline-offset:3px; }
+  .fly { position:fixed; pointer-events:none; font-size:1.2rem; z-index:9; transition:transform .22s ease-out, opacity .22s; }
+  @media (prefers-reduced-motion: reduce) {
+    .hamster, .sw::after, .fly { transition:none !important; }
+  }
+</style>
+</head>
+<body>
+  <div class="card" id="card">
+    <h1>Cookie settings</h1>
+    <p class="sub">Every cookie you accept goes to the hamster</p>
+    <div class="stage">
+      <div class="hamster" id="hamster" data-n="0" aria-hidden="true">🐹</div>
+      <div class="cheeks" id="cheeks" aria-hidden="true"></div>
+    </div>
+    <div id="rows"></div>
+    <div class="actions">
+      <button type="button" class="accept" id="accept">Accept all</button>
+      <button type="button" class="reject" id="reject">Reject all</button>
+    </div>
+  </div>
+<script>
+const labels = ["Analytics","Marketing","Personalization"];
+const faces = ["🥺","😐","😊","🥰"];
+const state = [false,false,false];
+const rows = document.getElementById("rows");
+const hamster = document.getElementById("hamster");
+const cheeks = document.getElementById("cheeks");
+
+function count(){ return state.filter(Boolean).length; }
+function render(){
+  const n = count();
+  hamster.dataset.n = n;
+  hamster.textContent = faces[n] === "🥺" ? "🐹" : "🐹";
+  cheeks.textContent = "🍪".repeat(n);
+  cheeks.style.opacity = n ? "1" : "0";
+  [...rows.querySelectorAll(".sw")].forEach((btn,i)=>{
+    btn.setAttribute("aria-checked", state[i] ? "true" : "false");
+  });
+}
+function flyFrom(btn){
+  if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  const r = btn.getBoundingClientRect();
+  const h = hamster.getBoundingClientRect();
+  const el = document.createElement("div");
+  el.className = "fly"; el.textContent = "🍪";
+  el.style.left = r.left + r.width/2 + "px";
+  el.style.top = r.top + "px";
+  document.body.appendChild(el);
+  requestAnimationFrame(()=>{
+    el.style.transform = `translate(${h.left+h.width/2-r.left-r.width/2}px, ${h.top+h.height/2-r.top}px) scale(.6)`;
+    el.style.opacity = "0";
+  });
+  setTimeout(()=>el.remove(), 240);
+}
+labels.forEach((label,i)=>{
+  const row = document.createElement("div");
+  row.className = "row";
+  row.innerHTML = `<span>${label}</span>`;
+  const btn = document.createElement("button");
+  btn.type = "button"; btn.className = "sw";
+  btn.setAttribute("role","switch");
+  btn.setAttribute("aria-label", label);
+  btn.addEventListener("click", ()=>{
+    state[i] = !state[i];
+    if (state[i]) flyFrom(btn);
+    render();
+  });
+  row.appendChild(btn); rows.appendChild(row);
+});
+document.getElementById("accept").onclick = ()=>{ state.fill(true); render(); };
+document.getElementById("reject").onclick = ()=>{ state.fill(false); render(); };
+render();
+</script>
+</body>
+</html>
