@@ -89,6 +89,7 @@ description: >-
 - **Proof-first 产品 launch film** → [`ui-patterns/proof-first-launch-storyboard.md`](./ui-patterns/proof-first-launch-storyboard.md)；真实 proof → 系统装配 → 单一 tension → 一句收口，不复制 Cloudflare 视频或数字。
 - **Progressive 3D assembly** → [`ui-patterns/progressive-assembly-3d.md`](./ui-patterns/progressive-assembly-3d.md)；一动作一块、k/N 常显、可暂停/检查与同义 2D fallback；来源页无可核许可，只独立重做机制。
 - **等距 SVG 物体 / 指针交互线稿 / Hairline empty state / 轻量 hero** → [`isometric-figures/SKILL.md`](./isometric-figures/SKILL.md)；固定版本 hairline-create 完整引擎、构建与检查脚本已收录，单物体单动作；邻近 isometric-objects 原帖暂存同入口，未取得源码、不冒名替代。
+- **Playful Cookie 同意 / 同意即投喂** → [`ui-patterns/hamster-cookie-consent.md`](./ui-patterns/hamster-cookie-consent.md)；开关喂仓鼠鼓腮，Accept all 高对比、Reject all 弱化（Ramin Nasibov）；美、值得学，to-B / 受监管场景不要上。
 - **Playful 密码强度 / 指标即身体** → [`ui-patterns/stretchy-dog-password-meter.md`](./ui-patterns/stretchy-dog-password-meter.md)；输入框变宽、腊肠狗等宽拉伸、表情与毒舌文案分档（Ramin Nasibov 原作）；鼓励长度不拦人，严肃产品换普通强度提示。
 - **Hand-drawn controls** → [`ui-patterns/hand-drawn-controls.md`](./ui-patterns/hand-drawn-controls.md)；手绘 boiling 控件（drawably 蒸馏，MIT）：seeded SVG 叠在真控件下，a11y 来自真控件；playful / landing 表面专用，dense B2B admin 换资产。
 
