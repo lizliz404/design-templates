@@ -24,7 +24,7 @@ HTML slide skills and template packs live here — **under design-templates** so
 | Job | Open |
 |---|---|
 | Internal doc / IA / audit diagram | `visual-economy.md` only (ASCII/Mermaid) |
-| PPTX → HTML or fixed 1920×1080 stage / motion kit | `upstream/frontend-slides/` — start `SKILL.md` |
+| PPTX → HTML or fixed 1920×1080 stage / motion kit | global `frontend-slides` at `~/.agents/skills/frontend-slides` (`pi --skill ~/.agents/skills/frontend-slides`); pack copy stays `upstream/frontend-slides/` |
 | Mood-tagged full HTML deck from brief | `upstream/beautiful-html-templates/` — **AGENTS.md** then `index.json` |
 | Paper veil on a deck | `../paper-shaders/` + overlay already in vendored frontend-slides `animation-patterns.md` |
 

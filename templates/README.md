@@ -60,7 +60,7 @@ description: >-
 - **产品哲学 / 对象模型 / 工作流取舍（建什么对象、不建什么）** → [`ui-patterns/linear-method-philosophy.md`](./ui-patterns/linear-method-philosophy.md)；Linear Method 蒸馏：八原则 + 方法流 + Issue/Team/Project/Milestone/Initiative/Cycle/View 七件套 + 取舍纪律；Agent 契约走下一节。
 - **SaaS 激活 / onboarding → setup** → [`ui-patterns/saas-onboarding-two-phase.md`](./ui-patterns/saas-onboarding-two-phase.md) + [`ia-user-journey.md`](./ia-user-journey.md)；先 aha，再进入生产用量。
 - **叙事长 landing** → [`design/lead-radar/`](./design/lead-radar/) 或 [`design/uhoh-inspired-service-entry/`](./design/uhoh-inspired-service-entry/)；按需组合 [`ui-patterns/premium-one-pager.md`](./ui-patterns/premium-one-pager.md) 和 [`ui-patterns/footer-craft.md`](./ui-patterns/footer-craft.md)。**按目标站做可测量复刻**（IMR / SLR / behavior）→ sibling [landing-page-replication-v5](https://github.com/lizliz404/agent-skills/tree/main/skills/landing-page-replication-v5)；软路由 [`sibling-routes.md`](./sibling-routes.md)。
-- **文本型 Help / 长文档 / PDF 排版（简历 / 一页纸 / 白皮书 / 信函）、商品图文研究报告或纸感 landing** → [`design/kami-document-dna.md`](./design/kami-document-dna.md)；Kami文档 DNA + Portfolio现成双图／编辑层级与写作方法；记录实际采用机制，不只借纸色，不搬字体。
+- **文本型 Help / 长文档 / PDF 排版（简历 / 一页纸 / 白皮书 / 信函）、商品图文研究报告或纸感 landing** → [`design/kami-document-dna.md`](./design/kami-document-dna.md) + 已装 skill `kami`（`~/.agents/skills/kami`，`pi --skill ~/.agents/skills/kami`）；DNA 只记纸感令牌，Portfolio 双图、Long Doc 密度与写作门走实际 skill；记录实际采用机制，不搬字体。
 - **个人站 / 作品集** → [`design/hanzilla-personal-site/`](./design/hanzilla-personal-site/) 或 [`design/liz-personal-compact/`](./design/liz-personal-compact/)。
 - **内容到服务承接页** → [`design/uhoh-inspired-service-entry/`](./design/uhoh-inspired-service-entry/)；入口屋不是交付工厂。
 - **站内 / 产品内搜索** → [`ui-patterns/search-craft.md`](./ui-patterns/search-craft.md)；先区分 Search、Filter 与 Cmd+K。
@@ -96,7 +96,7 @@ description: >-
 
 - **结构图 / 说明图（默认）** → [`decks/visual-economy.md`](./decks/visual-economy.md)：先 prose，再 ASCII、Mermaid；不要默认上 React / Three。
 - **选画图 skill / 动态架构图 / 社媒动图 / 可编辑 .drawio** → [`decks/diagram-skills.md`](./decks/diagram-skills.md)；live-panel、diagram-design、drawio 等 12 个 diagram skill 的对比表与「何时选哪个」，先过上一行 visual-economy 再来选工具。
-- **HTML 演示 deck（审美交付）** → [`decks/README.md`](./decks/README.md)；确认 occasion 是演讲或课程后，才进入 `upstream/beautiful-html-templates`、`frontend-slides` 和可选 Paper Shaders。
+- **HTML 演示 deck（审美交付）** → [`decks/README.md`](./decks/README.md) + 已装 skill `frontend-slides`（`~/.agents/skills/frontend-slides`，`pi --skill ~/.agents/skills/frontend-slides`）；确认 occasion 是演讲或课程后，才进入 `upstream/beautiful-html-templates`、全局 frontend-slides 和可选 Paper Shaders。
 
 ## Craft / tokens
 
