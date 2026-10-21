@@ -40,6 +40,8 @@
 - **Premium one-pager** → [`premium-one-pager.md`](./premium-one-pager.md) + [`snippets/`](./snippets/)：长营销页或文档的 location / life / finish。
 - **会定格、可采纳的示例占位符** → [`typing-placeholder-animation.md`](./typing-placeholder-animation.md)：条目 40 的当前合同，点击冻结、显式写入草稿；[`snippets/`](./snippets/) 中的 typewriter 仍是旧版基础轮播，不含采纳流程。
 - **Atomic island chrome** → [`atomic-island-chrome.md`](./atomic-island-chrome.md)：full-bleed camera / canvas / toy 的可收起 chrome，不适合需要持续导航的 dense desktop shell。
+- **Landing CTA economy** → [`landing-cta-economy.md`](./landing-cta-economy.md)：按「竞争的下一步」做预算而不是按按钮个数；CTA 重复的权重递减、首屏与段落字数上限、hedge 三类与五问判据；定价页与受监管品类有例外。
+- **Scroll-shrink glass capsule nav** → [`scroll-shrink-glass-capsule-nav.md`](./scroll-shrink-glass-capsule-nav.md)：整条透明导航滚动后收成居中玻璃胶囊的三档实现（CSS blur / SVG 折射 / WebGL）、最坏背景对比度算法、四路降级与 iOS blur 边界；点按展开的岛式 chrome 走上一行。
 
 ## 使用与维护
 

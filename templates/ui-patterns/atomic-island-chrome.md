@@ -100,7 +100,7 @@ Idle collapse (optional, camera toys):
 --island-safe-top: env(safe-area-inset-top)
 ```
 
-Hit targets ≥ 40px on coarse pointers. Collapsed row must not wrap to 3 lines.
+Hit targets ≥ 40px on coarse pointers（WCAG 2.5.8 的 AA 下限是 24×24 CSS px，40 是舒适值；收缩态最容易掉到下限以下，几何缩小、命中区不缩）。Collapsed row must not wrap to 3 lines.
 
 **Mobile budget**
 - Collapsed chrome ≤ ~5% of viewport height; ≤ ~45% of viewport **width** (iPhone Dynamic Island vibe — a bead, not a toolbar).
@@ -188,6 +188,19 @@ Do not recycle the whole island as a single unlabeled div click target without a
 ```
 
 Desktop optional: default `expanded` when `(pointer: fine) and (min-width: 768px)`; still allow collapse.
+
+---
+
+## 8b. 与玻璃材质的交叉边界
+
+本文件的 `glass` 写法是**示例级的**：`border` + `backdrop-filter` 直接画在同一元素上，没有降级分支。当成产品代码复用前，按 [`scroll-shrink-glass-capsule-nav.md`](./scroll-shrink-glass-capsule-nav.md) 修正这四处：
+
+1. **hairline 用 `inset box-shadow`，不用 `border`**——Motion `layout` 用 `transform: scale()` 实现，官方明确说带 `border` 的元素动画期间会被拉伸，而 1px 的 scale 校正有下限。
+2. **必须写 `@supports not (backdrop-filter)` 兜底**——不支持时回实色，别指望 blur。
+3. **`prefers-reduced-transparency` 在 Safari 不支持**（mdn/browser-compat-data，2026-10），只写这一条等于没写；与 `prefers-contrast: more` 合并写。
+4. **对比度按最坏背景算**（纯黑/纯白两极 alpha 合成取最小值），不靠肉眼判断“看着能看清”。
+
+滚动驱动（整条 → 胶囊）而不是点按驱动的收缩，走新资产；两者共用同一套材质层与降级，但状态来源、阈值抖动处理完全不同。
 
 ---
 
