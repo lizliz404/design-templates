@@ -52,6 +52,7 @@ description: >-
 
 ## 产品任务
 
+- **网页视频播放器 / 原生控件 / 审片 UI / HLS 与 DASH 选型** → [`web-video-player-due-diligence.md`](./web-video-player-due-diligence.md)；控件、状态、引擎与交付分层，维护状态和第一方尽调；不因皮肤需求默认改造媒体后端。
 - **B2B 数据密集后台 / CRM / 管理台** → [`ui-patterns/data-dense-app-craft.md`](./ui-patterns/data-dense-app-craft.md) + [`ui-patterns/data-dense-b2b-app.md`](./ui-patterns/data-dense-b2b-app.md)。需要 records / diff / filter 表格语法时，再组合下一节的 Beautiful UI。
 - **Telegram Web A/K 借鉴 / Chat-first 工作区 / 未发送草稿 / 阅读位置 / 附件异步所有权** → [`telegram-web-chat/README.md`](./telegram-web-chat/README.md)；固定版本研究、离线原型及出海云实施/失败到通过的执行对账，不搬 IM 服务层，不把历史候选当成当前缺口。
 - **Chatbot / AI Agent 界面** → [Agent / motion chrome](#agent--motion-chrome) 的 **Beautiful UI primitives**；它覆盖 thinking、streaming、approval、tool chips、composer 和 dense tables。
@@ -98,6 +99,8 @@ description: >-
 - **结构图 / 说明图（默认）** → [`decks/visual-economy.md`](./decks/visual-economy.md)：先 prose，再 ASCII、Mermaid；不要默认上 React / Three。
 - **选画图 skill / 动态架构图 / 社媒动图 / 可编辑 .drawio** → [`decks/diagram-skills.md`](./decks/diagram-skills.md)；live-panel、diagram-design、drawio 等 12 个 diagram skill 的对比表与「何时选哪个」，先过上一行 visual-economy 再来选工具。
 - **HTML 演示 deck（审美交付）** → [`decks/README.md`](./decks/README.md) + 已装 skill `frontend-slides`（`~/.agents/skills/frontend-slides`，`pi --skill ~/.agents/skills/frontend-slides`）；确认 occasion 是演讲或课程后，才进入 `upstream/beautiful-html-templates`、全局 frontend-slides 和可选 Paper Shaders。
+- **复杂流程 / SOP / 角色协作 / 数据流 / Stage-Gate / 反馈回路 / 系统边界的解释型 SVG 或自包含 HTML** → [`visual-explainer-method.md`](./visual-explainer-method.md)：按需加载的方法文件，不是新 Skill；静态默认，先理解受众与核心问题再选图法；渲染图法查只读 vendored 包 `~/dev/repos/diagram-design/skills/diagram-design/`； due diligence 见同目录 `visual-explainer-research-2026-09-30.md`。
+- **演讲叙事（先论证后 slides）** → `~/dev/agent-skills/skills/presentation-logic/SKILL.md`（主线→叙事文档→质疑→用户确认）→ `~/dev/agent-skills/skills/html-slides/SKILL.md`（1920×1080 学术 slides；Linux 下改写截图/转格式步骤，explainer 用途以 inline SVG 代 CDN Chart.js）。两者皆本地 canonical、未暴露，经本 router 按需读取。
 
 ## Craft / tokens
 
