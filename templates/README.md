@@ -67,6 +67,7 @@ description: >-
 - **个人站 / 作品集** → [`design/hanzilla-personal-site/`](./design/hanzilla-personal-site/) 或 [`design/liz-personal-compact/`](./design/liz-personal-compact/)。
 - **内容到服务承接页** → [`design/uhoh-inspired-service-entry/`](./design/uhoh-inspired-service-entry/)；入口屋不是交付工厂。
 - **站内 / 产品内搜索** → [`ui-patterns/search-craft.md`](./ui-patterns/search-craft.md)；先区分 Search、Filter 与 Cmd+K。
+- **筛选胶囊「输入搜索 + 点选」共存 / 可搜索单选·多选 / 已选项被过滤掉** → [`ui-patterns/searchable-filter-choice.md`](./ui-patterns/searchable-filter-choice.md)；值=合法 id、菜单输入=草稿、页面 query 草稿、查询结果四层分开，逐条标 [硬] 与 [POLICY]（hover 不抢焦点、IME Enter、不匹配回滚、常驻行不计匹配、无匹配不清空、触屏）；不做全文搜索，也不做自由输入。
 - **图标选型 / 线重 / 概念表** → [`ui-patterns/icon-system-craft.md`](./ui-patterns/icon-system-craft.md)；稳定产品 chrome 用 Iconoir 等生产线库，产品专属少量语义图标可组合下一行 Runeicons authoring；不是 favicon，也不默认自研 icon font。
 - **可编辑 / 可动效的产品专属图标** → [`ui-patterns/runeicons-authoring-workbench.md`](./ui-patterns/runeicons-authoring-workbench.md)；Runeicons 与 Iconoir 同为一等图标候选但分工不同：前者当前只作 Apache-2.0 编辑/导出工作台，WIP private packages 不作运行时依赖。
 - **UI 栈拍板记录** → [`ui-stack-decision.md`](./ui-stack-decision.md)；管道层/可见层边界、换依赖成本分级 L0–L3、候选分级与 agent-friendly 真标准 + Iconoir / Runeicons 图标决策并入，适用 chuhai-cloud / inquiry-foundry；线重与概念表规则走上一行。

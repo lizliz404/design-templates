@@ -12,6 +12,7 @@
 - **Recover at point of failure** → [`recover-at-point-of-failure.md`](./recover-at-point-of-failure.md)：系统消息按 L0–L3 可执行性分级，失败点就地恢复；PACK DOCTRINE + EVIDENCE 双轨标注。
 - **Consent gate** → [`consent-gate.md`](./consent-gate.md)：条款 / 隐私 / 营销同意流的三策略与选择轴，recover 学派的具体应用。
 - **Search craft** → [`search-craft.md`](./search-craft.md)：Search、Filter、Cmd+K 与按产品类型选引擎。
+- **Searchable filter choice** → [`searchable-filter-choice.md`](./searchable-filter-choice.md)：筛选菜单里输入过滤与点选共存的单/多选合同——过滤绝不改已选值、已选标签与取消入口始终可达；列表置顶/草稿去留/匹配语义属声明过的 POLICY；含常驻行不计匹配、IME Enter、接法取舍与验收清单。
 - **SaaS onboarding two-phase** → [`saas-onboarding-two-phase.md`](./saas-onboarding-two-phase.md)：B2B / Agent 的 aha 之后才进入生产设置。
 - **Publish calendar** → [`publish-calendar/SKILL.md`](./publish-calendar/SKILL.md)：发布/排期月历的 MUST/POLICY/PROFILE 分层合同、四层 DOM/ARIA 结构、Aurora 示例 profile 与不与 shell hotkeys 冲突的键盘合同；页面级工作台，不是 date picker。
 - **Linear method philosophy** → [`linear-method-philosophy.md`](./linear-method-philosophy.md)：产品哲学纯复用层——八原则 + 方法流 + 七对象 + 取舍纪律；项目映射不进 pack。
