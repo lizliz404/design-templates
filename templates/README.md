@@ -110,6 +110,7 @@ description: >-
 - **高杠杆 craft checklist / 解耦与 Agent 维护预算** → [`high-leverage-craft-checklist.md`](./high-leverage-craft-checklist.md)；22C 单一披露真源；43 按职责解耦与源码单文件 ≤1,500 行，不按行数机械切块
 - **间距审计 / 灰块 pass / 密度模式** → [`spacing-audit-checklist.md`](./spacing-audit-checklist.md)；“大概率是间距问题”（Michael Filipiuk）：外层 > 区块 > 卡片 > 元素、收紧相关对、4/8 token、comfortable/compact，附 agent 审计 prompt。
 - **Typography** → [`design-typography-font-preferences.md`](./design-typography-font-preferences.md)
+- **Web 字体瘦身 / subset / unicode-range 拆分 / 字体拖慢首屏** → [`web-font-subset-optimization.md`](./web-font-subset-optimization.md)；Shu Ding 的逐字 Agent prompt（像素 diff 验收、core+extended 双文件、不进 build）+ Rauch 的 fx.sh 终端字形实例；选字体走上一行。
 - **Color / surface / 品牌色阶 / 第三色搭配与 token 解耦** → [`design-color-surface-preferences.md`](./design-color-surface-preferences.md)；先复用现有研究，微暖纸白 + 成熟色板关系 + primitive→semantic 接线，不重做整轮 due diligence。
 - **i18n / language switcher** → [`i18n-iconify-lang-switcher.md`](./i18n-iconify-lang-switcher.md)
 - **i18n / 翻译存活排版规则** → [`i18n-translation-survival.md`](./i18n-translation-survival.md)：atom、换行、层级通道、RTL、IME、voice 的规则级手册；做切换器组件走上一行的 lang-switcher 文档。
