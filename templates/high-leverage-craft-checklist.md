@@ -594,3 +594,5 @@
 4. **机制可迁移，清单条目不可宗教化**——Cmd+K、三档定价、one-pager 动效都有「不适合」的时候。
 
 一句话：高杠杆细节的本质不是审美，是**廉价兑现承诺感**——在用户不确定的瞬间，让他觉得「这东西在替我兜底」。这就是四两拨千斤。
+
+延伸：kepano 对 Dieter Rams 十条的改写与原版对照，可当第二把审查尺子 → [`reading-notes/kepano-rams-10-rules-2026-10-31.md`](./reading-notes/kepano-rams-10-rules-2026-10-31.md)

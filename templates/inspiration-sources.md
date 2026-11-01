@@ -20,6 +20,7 @@ description: >-
 | **WebGL / GSAP 动效机制调研（demo + 源码）** | [Codrops Creative Hub](https://tympanus.net/codrops/hub/all/) | `ui-patterns/vgpu-webgpu-effects.md` + `threeui-hero-adapter.md`；只移植带 LICENSE 的 repo；同一视图最多一套动态大气；勿 mirror |
 | **背景渐变 / mesh·grainy·aurora 生成** | [Feralui Gradients](https://feralui.dev/gradients)（免费，无 signup 无水印） | `paper-shaders/` + craft checklist color/surface 规则；导出物作一次性资产；同一视图一套动态大气 |
 | **Shader 目录（付费导出，机制速览）** | [MetalForge](https://metalforge.xyz/)（免费可玩全编辑器与参数空间；Pro €5/mo 才给文件；目标 SwiftUI / RN Skia 非 Web） | 文件不进 pack；免费编辑器只拆机制与参数空间；原生液态球用 LerSent `ai-thinking-orb/upstream/lersent-orb/effect.metal`，Web 动态大气走 `paper-shaders/` + vgpu |
+| **Agent 产出假 UI 静帧 / 动画 / bento 展示图** | [Stageshow skill](https://x.com/benjitaylor/status/2116593247854453244)（Benji Taylor，2026-11-01 02:08 UTC+8；`npx skills add benjitaylor/skills --skill stageshow`；未试） | share 页 / 讲解页配图；试用后再决定是否收进 agent-skills |
 
 ## Product UX
 
