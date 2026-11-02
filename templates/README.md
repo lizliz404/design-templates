@@ -108,6 +108,7 @@ description: >-
 ## Craft / tokens
 
 - **高杠杆 craft checklist / 解耦与 Agent 维护预算** → [`high-leverage-craft-checklist.md`](./high-leverage-craft-checklist.md)；22C 单一披露真源；43 按职责解耦与源码单文件 ≤1,500 行，不按行数机械切块
+- **「这是哪个元素」定位 / UI 精修期点选元素发 agent** → [`element-picker-playbook.md`](./element-picker-playbook.md)；首选 Devin `browser_preview` 注入式选择器（零安装、组件名+源码位置进对话），其次 DevTools/其他选择器，稳定锚点才埋少量 `data-ui-id`（checklist §44）
 - **间距审计 / 灰块 pass / 密度模式** → [`spacing-audit-checklist.md`](./spacing-audit-checklist.md)；“大概率是间距问题”（Michael Filipiuk）：外层 > 区块 > 卡片 > 元素、收紧相关对、4/8 token、comfortable/compact，附 agent 审计 prompt。
 - **Typography** → [`design-typography-font-preferences.md`](./design-typography-font-preferences.md)
 - **Web 字体瘦身 / subset / unicode-range 拆分 / 字体拖慢首屏** → [`web-font-subset-optimization.md`](./web-font-subset-optimization.md)；Shu Ding 的逐字 Agent prompt（像素 diff 验收、core+extended 双文件、不进 build）+ Rauch 的 fx.sh 终端字形实例；选字体走上一行。
