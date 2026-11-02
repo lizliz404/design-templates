@@ -360,6 +360,18 @@
 **反模式**：每个状态一个颜色顶条（orange top slab）；错位浮层假装「另一块卡伸出来」却无任何语义；多个嵌套卡各自再带顶条；与选中态无关的橙色只为了「好看」。
 **开火路径**：仪表盘节点图、状态卡、看板卡片、 swarm of feature cards；见到「colored top slab + peeking offset layer」的组合先整块停工审查。
 
+### 45. 内部容器不挤原生滚动条 `frontend`
+
+**是什么**：除最右侧整页（viewport）滚动条外，任何内层滚动容器——侧栏、抽屉面板、聊天记录、picker 列表、预览区、横向表、code block——都不得把原生滚动条挤出来。滚动功能完整保留，只是轨道不可见。  
+**为何杠杆**：原生滚动条是没调过的浏览器默认零件：粗、灰、占 12–17px 还把内容顶歪；在内层面板里冒出一条，「这产品不专业」的信号 3 秒即达。成本是每处两行 CSS，一杯咖啡换整页干净。  
+**怎么落地**：  
+1. 每个 `overflow:auto/scroll` 的内层容器配两条：`scrollbar-width: none`（标准/Firefox）+ `::-webkit-scrollbar { display: none }`（Chrome/Safari）；老 Edge 再补 `-ms-overflow-style: none`。  
+2. **只隐藏不禁滚**：`overflow` 保持 `auto`，滚轮、触摸、键盘（PageUp/Down、方向键、可聚焦容器的上下滚）、`scroll-snap` 全部照常；绝不用 `overflow:hidden` 冒充隐藏。  
+3. 唯一例外：最外层页面滚动条（`html`/`body` 的 viewport 条）在宽屏可保留，`scrollbar-gutter: stable` 之类只用在它身上。  
+4. 横向滚动轨同样隐藏；「这里还能滚」的提示用边缘渐变遮罩或 snap 节奏表达，不靠滚动条本身。  
+**反模式**：为藏条改 `overflow:hidden`（内容直接砍死、键盘也滚不了）；只在 Chrome 验完忘写 `scrollbar-width`（Firefox 漏一条）；把 viewport 条也 `display:none` 弄丢页面滚动；隐藏后又塞一条自定义粗滚动条换色不换噪音；内容「刚好差一点」没触发滚动条就漏配。  
+**开火路径**：app shell / dashboard / chat log / dock panel / picker / preview / 横向表与 code block 的 CSS 评审；新组件写 `overflow:auto` 时顺手配齐两条。
+
 ---
 
 ## 八、后端：不炫技的稳定
