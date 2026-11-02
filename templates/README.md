@@ -82,6 +82,7 @@ description: >-
 这些资产相邻，是因为它们都在解决 **AI surface chrome**：Agent 的可见思考与操作反馈、页面的状态感和氛围。但相邻只是路由关系，不能合并文件夹：Beautiful UI 是可挑选的 React 源码组件；orb、shader、hero 与 sound 各有来源、许可与消费方式。
 
 - **Beautiful UI primitives** → [`design/beautiful-ui-ai-interfaces/`](./design/beautiful-ui-ai-interfaces/)；21 个组件的完整官方 TSX、共享样式、依赖锁文件和 MIT 许可；固定版本与官网 Copy code 逐项核验，包含 Prompt Bar、Insight Cards、Flowchart 和 Agent Screen。
+- **Liquid Glass 轮子 / Dynamic Island 组件 / 丝滑 composer 浮条 / ask-user 点选卡 / iOS 滚轴选择器选型** → [`liquid-glass-island-wheels.md`](./liquid-glass-island-wheels.md)；2026-11 五表面验真表（license 实核、抄/装/参照阶梯、shelf-radar 落点），玻璃机制本身仍走 scroll-shrink / glass-motion-landscape / atomic-island 机制资产，不重复收录。
 - **Agent 交互契约（身份 / Session×Activity / delegation / loops）** → [`ui-patterns/agent-interaction-guidelines.md`](./ui-patterns/agent-interaction-guidelines.md)；AIG 六原则 + Session 六态 + Activity 五类 + actor=app/scopes/时序合同；产品哲学走上一节。
 - **AI thinking orb** → [`ui-patterns/ai-thinking-orb/SKILL.md`](./ui-patterns/ai-thinking-orb/SKILL.md)；`FluidOrb` 或 `Liquid Orb` 二选一。两个上游都已收进包：Liquid Orb 的 MIT `effect.wgsl` / `effect.metal` 在 `ai-thinking-orb/upstream/lersent-orb/`，FluidOrb 参考拷贝（带 PROVENANCE）+ 生产级 plain-React 移植在 `ai-thinking-orb/upstream/rare-ui-fluid-orb/` 与 `ai-thinking-orb/recipes/`。与 live Paper shader 互斥：同一视图最多一套动态大气。
 - **Paper Shaders** → [`paper-shaders/SKILL.md`](./paper-shaders/SKILL.md)；纸张 / mesh / veil 是背景氛围，不承担状态 orb 的语义。
