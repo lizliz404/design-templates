@@ -53,6 +53,7 @@ description: >-
 ## 产品任务
 
 - **网页视频播放器 / 原生控件 / 审片 UI / HLS 与 DASH 选型** → [`web-video-player-due-diligence.md`](./web-video-player-due-diligence.md)；控件、状态、引擎与交付分层，维护状态和第一方尽调；不因皮肤需求默认改造媒体后端。
+- **Landing 首屏背景视频 / hero loop / 海报优先 / 4 秒体感** → [`landing-hero-background-video.md`](./landing-hero-background-video.md)；装饰性 muted autoplay 循环：文件体积 + 海报 LCP + CDN 优先于播放器；带控件 / HLS / 审片仍走上一行。
 - **B2B 数据密集后台 / CRM / 管理台** → [`ui-patterns/data-dense-app-craft.md`](./ui-patterns/data-dense-app-craft.md) + [`ui-patterns/data-dense-b2b-app.md`](./ui-patterns/data-dense-b2b-app.md)。需要 records / diff / filter 表格语法时，再组合下一节的 Beautiful UI。
 - **Telegram Web A/K 借鉴 / Chat-first 工作区 / 未发送草稿 / 阅读位置 / 附件异步所有权** → [`telegram-web-chat/README.md`](./telegram-web-chat/README.md)；固定版本研究、离线原型及出海云实施/失败到通过的执行对账，不搬 IM 服务层，不把历史候选当成当前缺口。
 - **Chatbot / AI Agent 界面** → [Agent / motion chrome](#agent--motion-chrome) 的 **Beautiful UI primitives**；它覆盖 thinking、streaming、approval、tool chips、composer 和 dense tables。
