@@ -1,0 +1,412 @@
+<!doctype html>
+<!-- Minimal, framework-free demo of the four mechanisms in ../header-nav-and-jump-bar.md
+     1) two-pass underline replay  2) chromeless dropdown + :has() page scrim
+     3) runtime --header-h sync    4) sticky jump bar + IntersectionObserver scrollspy
+     Tokens are generic placeholders; map them onto the consuming project's DESIGN.md. -->
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Header nav + jump bar</title>
+<style>
+  :root {
+    /* --- project tokens (replace with DESIGN.md values) --- */
+    --paper: #faf9f7;
+    --ink: #1c1c1e;
+    --soft: #5a5a5e;
+    --line: #d8d6d0;
+    --accent: #8a6b3a;
+    --ease-out: cubic-bezier(0.25, 1, 0.5, 1);
+    --dur-ui: 250ms;
+    --dur-micro: 150ms;
+    /* --- chrome geometry --- */
+    /* First-paint literal only. JS overwrites it with the measured height. */
+    --header-h: 4rem;
+    --jump-h: 3rem;
+    --gutter: clamp(1.25rem, 5vw, 4rem);
+    --maxw: 68rem;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html {
+    scroll-behavior: smooth;
+    /* Anchored scrolls and focus jumps clear the sticky header + jump bar. */
+    scroll-padding-top: calc(var(--header-h) + var(--jump-h) + 0.5rem);
+  }
+  body { margin: 0; background: var(--paper); color: var(--ink); font: 17px/1.6 system-ui, sans-serif; }
+  .wrap { max-width: var(--maxw); margin-inline: auto; padding-inline: var(--gutter); }
+
+  /* ---------- 3) sticky header: the panel's containing block ---------- */
+  .site-header {
+    position: sticky; top: 0; z-index: 50;
+    /* Named so the hover corridor can re-use the exact values. */
+    --header-pad-y: 0.65rem;
+    --header-rule: 1px;
+    display: flex; align-items: center; gap: 1rem;
+    padding: var(--header-pad-y) var(--gutter);
+    background: var(--paper);
+    border-bottom: var(--header-rule) solid var(--line);
+  }
+  .brand { font-weight: 600; letter-spacing: -0.02em; text-decoration: none; color: inherit; }
+  .brand em { font-style: normal; color: var(--accent); }
+
+  .desktop-nav { display: flex; margin-left: auto; align-self: stretch; }
+  .desktop-nav > ul { display: flex; gap: 1.4rem; list-style: none; margin: 0; padding: 0; }
+  .nav-item { display: flex; align-items: center; position: static; }
+  /* Hover corridor. The panel is anchored to the HEADER's bottom edge, so the
+     header's own bottom padding is dead space: the pointer leaves the item,
+     :hover drops, and the panel closes mid-travel. Grow the item's box down
+     through that padding (negative margin keeps the link optically centred and
+     the row height unchanged) so the corridor is continuous.
+     "Items stretch to full header height" is not enough on its own: stretch
+     stops at the header's content box, and a padded header always has a band
+     below it. */
+  .nav-item.has-panel {
+    padding-bottom: calc(var(--header-pad-y, 0.65rem) + var(--header-rule, 1px));
+    margin-bottom: calc(-1 * (var(--header-pad-y, 0.65rem) + var(--header-rule, 1px)));
+  }
+
+  /* ---------- 1) underline: state-driven draw, replay on leave ---------- */
+  .nav-link {
+    position: relative;
+    font-size: 0.875rem; text-decoration: none; color: var(--soft);
+    padding-block: 0.35rem;
+    transition: color var(--dur-micro) var(--ease-out);
+  }
+  .nav-link::after {
+    content: ''; position: absolute; left: 0; right: 0; bottom: -0.3rem;
+    height: 1px; background: var(--accent);
+    transform: scaleX(0); transform-origin: right;
+    transition: transform var(--dur-ui) var(--ease-out);
+  }
+  /* Current page is marked by type weight + ink, not by a permanent bar:
+     a resting bar would compete with the open-panel state. */
+  .nav-link[aria-current='page'] { color: var(--ink); font-weight: 500; }
+  .nav-link:hover { color: var(--ink); }
+  .nav-link:hover::after,
+  .nav-link:focus-visible::after,
+  .nav-item:focus-within > .nav-link::after,
+  .nav-item:hover > .nav-link::after { transform: scaleX(1); transform-origin: left; }
+  /* One 550ms double pass: retract right → flip anchor at zero width → draw
+     left → sweep back out right. Ends at scaleX(0), the resting state, so
+     dropping the class never snaps. */
+  .nav-link.is-replaying::after { animation: nav-underline-replay 550ms var(--ease-out); }
+  @keyframes nav-underline-replay {
+    0%   { transform-origin: right; transform: scaleX(1); }
+    45%  { transform-origin: right; transform: scaleX(0); }
+    55%  { transform-origin: left;  transform: scaleX(0); }
+    90%  { transform-origin: left;  transform: scaleX(1); }
+    100% { transform-origin: right; transform: scaleX(0); }
+  }
+
+  /* ---------- 2) chromeless panel: full-width band under the header ---------- */
+  .nav-panel {
+    position: absolute; top: 100%; left: 0; right: 0;
+    background: var(--paper);
+    border-bottom: 1px solid var(--line);
+    opacity: 0; visibility: hidden; transform: translateY(6px); pointer-events: none;
+    transition:
+      opacity var(--dur-ui) var(--ease-out),
+      transform var(--dur-ui) var(--ease-out),
+      visibility 0s linear var(--dur-ui);   /* hide after the fade, not during */
+  }
+  .nav-item:hover .nav-panel,
+  .nav-item:focus-within .nav-panel {
+    opacity: 1; visibility: visible; transform: none; pointer-events: auto;
+    transition-delay: 0s;
+  }
+  /* Escape wins over hover until pointer/focus leaves the item. */
+  .nav-item.is-suppressed .nav-panel {
+    opacity: 0; visibility: hidden; transform: translateY(6px); pointer-events: none;
+  }
+  .nav-panel-inner {
+    display: grid; grid-template-columns: minmax(12rem, 1fr) 2fr; gap: 3rem;
+    max-width: var(--maxw); margin-inline: auto; padding: 2rem var(--gutter);
+  }
+  .nav-panel-intro p { margin: 0; }
+  .nav-panel-title { font-size: 1.5rem; font-weight: 500; line-height: 1.15; }
+  .nav-panel-desc { margin-top: 0.5rem !important; font-size: 0.875rem; color: var(--soft); max-width: 34ch; }
+  .nav-panel-all {
+    display: inline-flex; align-items: center; margin-top: 1rem;
+    font-size: 0.875rem; font-weight: 600; color: var(--ink); text-decoration: none;
+    border: 1px solid var(--line); padding: 0.45rem 0.8rem;
+    transition: border-color var(--dur-micro) var(--ease-out), color var(--dur-micro) var(--ease-out);
+  }
+  .nav-panel-all:hover, .nav-panel-all:focus-visible { border-color: var(--accent); color: var(--accent); }
+  .nav-panel-links {
+    list-style: none; margin: 0; padding-left: 3rem; border-left: 1px solid var(--line);
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 0.5rem 2rem; align-content: start;
+  }
+  .nav-panel-links a {
+    display: block; padding-block: 0.45rem; color: var(--ink); text-decoration: none;
+    transition: color var(--dur-micro) var(--ease-out);
+  }
+  .nav-panel-links a:hover, .nav-panel-links a:focus-visible { color: var(--accent); }
+
+  /* Page scrim as a pseudo-element: zero extra markup, and it is a pure
+     function of the hover/focus state that already opens the panel.
+     z-index 40 < header 50 → dims the page, never the panel. */
+  body::after {
+    content: ''; position: fixed; inset: var(--header-h) 0 0 0;
+    background: rgba(28, 28, 30, 0.28);
+    opacity: 0; pointer-events: none; z-index: 40;
+    transition: opacity var(--dur-ui) var(--ease-out);
+  }
+  body:has(.nav-item.has-panel:is(:hover, :focus-within):not(.is-suppressed))::after { opacity: 1; }
+
+  /* ---------- 4) jump bar: second wayfinding layer, same chrome height ---------- */
+  .jump-bar {
+    position: sticky; top: var(--header-h); z-index: 40;
+    background: var(--paper); border-bottom: 1px solid var(--line);
+  }
+  .jump-bar-inner {
+    display: flex; align-items: stretch; gap: 1.5rem;
+    height: var(--jump-h); overflow-x: auto;
+    scrollbar-width: none; white-space: nowrap;
+  }
+  .jump-bar-inner::-webkit-scrollbar { display: none; }
+  .jump-bar-label { align-self: center; flex: none; font-size: 0.875rem; color: var(--soft); }
+  .jump-bar a {
+    position: relative; display: flex; align-items: center; flex: none;
+    font-size: 0.875rem; color: var(--soft); text-decoration: none;
+    transition: color var(--dur-micro) var(--ease-out);
+  }
+  .jump-bar a::after {
+    content: ''; position: absolute; left: 0; right: 0; bottom: -1px;
+    height: 1px; background: transparent;
+  }
+  .jump-bar a:hover { color: var(--ink); }
+  .jump-bar a.is-active { color: var(--accent); }
+  .jump-bar a.is-active::after { background: var(--accent); }
+
+  /* ---------- demo page body ---------- */
+  /* padding-block only: the shorthand would zero out .wrap's gutter. */
+  .hero { padding-block: 4rem 3rem; border-bottom: 1px solid var(--line); }
+  .hero h1 { font-size: clamp(2rem, 5vw, 3rem); line-height: 1.1; margin: 0 0 1rem; letter-spacing: -0.03em; font-weight: 400; }
+  .hero p { margin: 0; max-width: 56ch; color: var(--soft); }
+  /* min-height keeps each section taller than the observation band. If two
+     sections both overlap the band, the spy marks the later one — the rule is
+     "last in DOM order inside the band", so short sections read as jumping
+     ahead. Section height is a real input to this mechanism, not decoration. */
+  section[id] { padding-block: 3rem; min-height: 68vh; border-bottom: 1px solid var(--line); }
+  section h2 { font-size: 1.5rem; font-weight: 500; margin: 0 0 1rem; }
+  section p { max-width: 62ch; color: var(--soft); }
+  footer { padding-block: 2rem 4rem; color: var(--soft); font-size: 0.875rem; }
+
+  @media (max-width: 55.99rem) { .desktop-nav { display: none; } }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .nav-panel, .nav-link::after, .jump-bar a, body::after { transition: none; }
+    .nav-link.is-replaying::after { animation: none; }
+  }
+  @media print { .site-header, .jump-bar { display: none; } }
+</style>
+</head>
+<body>
+<a class="wrap" href="#main" style="position:absolute;left:-9999px">Skip to content</a>
+
+<header class="site-header" id="site-header">
+  <a class="brand" href="#">Northwind <em>Marine</em></a>
+  <nav class="desktop-nav" aria-label="Main navigation">
+    <ul>
+      <li class="nav-item"><a class="nav-link" href="#" aria-current="page">Home</a></li>
+      <li class="nav-item has-panel">
+        <a class="nav-link" href="#capabilities" aria-haspopup="true" aria-expanded="false">Capabilities</a>
+        <div class="nav-panel">
+          <div class="nav-panel-inner">
+            <div class="nav-panel-intro">
+              <p class="nav-panel-title">Capabilities</p>
+              <p class="nav-panel-desc">Three scopes, each scoped per project against your drawings and specification.</p>
+              <a class="nav-panel-all" href="#capabilities">All capabilities →</a>
+            </div>
+            <ul class="nav-panel-links">
+              <li><a href="#capabilities">Fabrication</a></li>
+              <li><a href="#capabilities">Machinery</a></li>
+              <li><a href="#capabilities">Engineering design</a></li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item has-panel">
+        <a class="nav-link" href="#products" aria-haspopup="true" aria-expanded="false">Products</a>
+        <div class="nav-panel">
+          <div class="nav-panel-inner">
+            <div class="nav-panel-intro">
+              <p class="nav-panel-title">Products</p>
+              <p class="nav-panel-desc">Six manufacturing scopes for subsea projects.</p>
+              <a class="nav-panel-all" href="#products">All products →</a>
+            </div>
+            <ul class="nav-panel-links">
+              <li><a href="#products">Structures</a></li>
+              <li><a href="#products">Pipe spools</a></li>
+              <li><a href="#products">ROV tooling</a></li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item"><a class="nav-link" href="#enquiry">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+  <div class="hero wrap">
+    <h1>Subsea fabrication and machinery, scoped per project.</h1>
+    <p>Demo page for the header nav + jump bar mechanisms. Hover a nav item, then move down into the panel: the underline holds, the page dims, no extra markup.</p>
+  </div>
+
+  <nav class="jump-bar" aria-label="On this page">
+    <div class="jump-bar-inner wrap">
+      <span class="jump-bar-label">Jump to</span>
+      <a href="#overview">Overview</a>
+      <a href="#capabilities">Capabilities</a>
+      <a href="#products">Products</a>
+      <a href="#enquiry">Enquiry</a>
+    </div>
+  </nav>
+
+  <section id="overview" class="wrap">
+    <h2>Overview</h2>
+    <p>Scroll slowly: the jump bar marks the section whose top most recently crossed the band under the pinned chrome, and exposes it as <code>aria-current="location"</code>.</p>
+  </section>
+  <section id="capabilities" class="wrap">
+    <h2>Capabilities</h2>
+    <p>Fabrication, machinery and engineering design. The panel above is the same band, anchored to the header rather than to the item, so it spans gutter to gutter.</p>
+  </section>
+  <section id="products" class="wrap">
+    <h2>Products</h2>
+    <p>Six manufacturing scopes. Resize the window: the header height is measured at runtime, so the jump bar and the scrim never drift from it.</p>
+  </section>
+  <section id="enquiry" class="wrap">
+    <h2>Enquiry</h2>
+    <p>End of page. The last section stays marked until another one crosses the band.</p>
+  </section>
+  <footer class="wrap">Demo content only. No proprietary copy, imagery or brand assets.</footer>
+</main>
+
+<script>
+  const $ = (s, root = document) => root.querySelector(s);
+  const $$ = (s, root = document) => [...root.querySelectorAll(s)];
+  const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  const header = $('#site-header');
+
+  /* ---------- 3) --header-h: measure once, then on resize ---------- */
+  if (header) {
+    const syncHeaderH = () =>
+      document.documentElement.style.setProperty('--header-h', `${header.offsetHeight}px`);
+    syncHeaderH();
+    addEventListener('resize', syncHeaderH, { passive: true });
+  }
+
+  /* ---------- 2) panel: CSS owns open/close, JS owns aria + Escape ---------- */
+  $$('.desktop-nav .nav-item.has-panel').forEach((item) => {
+    const trigger = $('a.nav-link', item);
+    const setExpanded = (v) => trigger?.setAttribute('aria-expanded', String(v));
+    item.addEventListener('pointerenter', () => setExpanded(true));
+    item.addEventListener('pointerleave', () => { setExpanded(false); item.classList.remove('is-suppressed'); });
+    item.addEventListener('focusin', (e) => {
+      setExpanded(true);
+      // After Escape, tabbing forward into the panel is intent: reopen it.
+      if (e.target instanceof Element && e.target.closest('.nav-panel')) item.classList.remove('is-suppressed');
+    });
+    item.addEventListener('focusout', (e) => {
+      if (!item.contains(e.relatedTarget)) { setExpanded(false); item.classList.remove('is-suppressed'); }
+    });
+    item.addEventListener('keydown', (e) => {
+      if (e.key !== 'Escape') return;
+      e.preventDefault();
+      item.classList.add('is-suppressed');
+      setExpanded(false);
+      trigger?.focus();
+    });
+  });
+
+  /* ---------- 1) underline replay ----------
+     Listener on the ITEM, not the link: moving down into the panel leaves the
+     item's box only after the pointer has crossed into the panel, so the
+     underline stays drawn instead of replaying under the open panel. */
+  if (!reduceMotion) {
+    $$('.desktop-nav .nav-item').forEach((item) => {
+      const link = $('a.nav-link', item);
+      if (!link) return;
+      item.addEventListener('pointerleave', () => {
+        link.classList.remove('is-replaying');
+        void link.offsetWidth;          // restart if it was mid-flight
+        link.classList.add('is-replaying');
+      });
+      link.addEventListener('animationend', () => link.classList.remove('is-replaying'));
+      // Not in the source implementation: re-entering mid-replay hands control
+      // back to :hover instead of letting the leftover animation finish.
+      link.addEventListener('pointerenter', () => link.classList.remove('is-replaying'));
+    });
+  }
+
+  /* ---------- 4) jump bar scrollspy ----------
+     Targets come from the links' own hashes: the markup is the contract.
+     One render path (`render`) reads both inputs — the observer's band set and
+     the document-end flags — so a late observer callback cannot clobber a
+     forced state and vice versa. */
+  const jumpBar = $('.jump-bar');
+  if (jumpBar && 'IntersectionObserver' in window) {
+    const links = $$('a[href^="#"]', jumpBar);
+    const sections = links.map((a) => document.getElementById(a.hash.slice(1))).filter(Boolean);
+    if (sections.length) {
+      const inBand = new Set();
+      let atTop = false;
+      let atBottom = false;
+
+      const render = () => {
+        // Last section in DOM order inside the band = the one whose top most
+        // recently crossed the trigger zone under the pinned chrome.
+        let current;
+        for (const s of sections) if (inBand.has(s.id)) current = s;
+        /* The band can be legitimately empty while the bar is pinned and
+           visible: the first section may start below it (tall hero), and a
+           short page may never scroll its last section up into it. Empty reads
+           as "no current section", so at the two ends of the document the
+           first / last section is current by definition. This is a render
+           branch, not an inBand insert: a forced id left in the set would stay
+           marked after scrolling away. */
+        if (!current) {
+          if (atTop) current = sections[0];
+          else if (atBottom) current = sections.at(-1);
+        }
+        links.forEach((a) => {
+          const on = current !== undefined && a.hash === `#${current.id}`;
+          a.classList.toggle('is-active', on);
+          if (on) a.setAttribute('aria-current', 'location');
+          else a.removeAttribute('aria-current');
+        });
+      };
+
+      new IntersectionObserver((entries) => {
+        for (const e of entries) {
+          if (e.isIntersecting) inBand.add(e.target.id);
+          else inBand.delete(e.target.id);
+        }
+        render();
+      }, { rootMargin: `-${header?.offsetHeight ?? 64}px 0px -55% 0px` });
+
+      const spy = new IntersectionObserver((entries) => {
+        for (const e of entries) {
+          if (e.isIntersecting) inBand.add(e.target.id);
+          else inBand.delete(e.target.id);
+        }
+        render();
+      }, { rootMargin: `-${header?.offsetHeight ?? 64}px 0px -55% 0px` });
+      sections.forEach((s) => spy.observe(s));
+
+      const syncEnds = () => {
+        const doc = document.documentElement;
+        atTop = scrollY <= 2;
+        atBottom = scrollY + innerHeight >= doc.scrollHeight - 2;
+        render();
+      };
+      addEventListener('scroll', syncEnds, { passive: true });
+      addEventListener('resize', syncEnds, { passive: true });
+      syncEnds();
+    }
+  }
+</script>
+</body>
+</html>

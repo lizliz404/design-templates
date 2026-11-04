@@ -63,8 +63,12 @@ description: >-
 - **SaaS 激活 / onboarding → setup** → [`ui-patterns/saas-onboarding-two-phase.md`](./ui-patterns/saas-onboarding-two-phase.md) + [`ia-user-journey.md`](./ia-user-journey.md)；先 aha，再进入生产用量。
 - **叙事长 landing** → [`design/lead-radar/`](./design/lead-radar/) 或 [`design/uhoh-inspired-service-entry/`](./design/uhoh-inspired-service-entry/)；按需组合 [`ui-patterns/premium-one-pager.md`](./ui-patterns/premium-one-pager.md) 和 [`ui-patterns/footer-craft.md`](./ui-patterns/footer-craft.md)。**按目标站做可测量复刻**（IMR / SLR / behavior）→ sibling [landing-page-replication-v5](https://github.com/lizliz404/agent-skills/tree/main/skills/landing-page-replication-v5)；软路由 [`sibling-routes.md`](./sibling-routes.md)。
 - **B2B 复杂销售营销站 / 海工·能源对标 / 学谁不学谁 / 流量≠询盘** → [`b2b-complex-sales-site-exemplars.md`](./b2b-complex-sales-site-exemplars.md)；产品驱动 vs 复杂销售两宇宙、活站栈指纹与询盘路径；首屏背景视频交付正交走 [`landing-hero-background-video.md`](./landing-hero-background-video.md)。
+- **严肃 B2B 宣传册站 / 工业·能源·工程·防务企业官网 / brochure 站 audit** → [`design/b2b-brochure-sites.md`](./design/b2b-brochure-sites.md)；14 站模式目录与边界，已纠正单族/颜色面积等过度概括；两站精确字体/配色走下一行，产品内 UI 与电商/内容门户不适用。
+- **Anduril / Saronic 原站字体与配色 / 工业编辑式 hero、规格、缝线与响应式** → [`design/anduril-saronic-dna.md`](./design/anduril-saronic-dna.md)；11 页双视口量尺 + 平台字体/网络 JSON，区分事实/推断/缺口与商业授权；不代替项目 DESIGN.md、不自动选字体。
+- **Franklin Offshore / 海工集团业务呈现 / 制造与项目证据 / 分享名片对照** → [`design/franklin-offshore-dna.md`](./design/franklin-offshore-dna.md)；七主样本+Products双端、Articulat实字形/色板与OG/索引缺口，借买家证据链不复制集团资质或皮肤。
 - **落地页按钮太多 / 页面「乱」「累」/ 首屏文案过密 / 清理 AI 自我防御式免责文案** → [`ui-patterns/landing-cta-economy.md`](./ui-patterns/landing-cta-economy.md)；按「竞争的下一步」而不是按钮实例数做预算：1 主动作 + 1 辅助、权重递减的重复、首屏/段落字数上限、hedge 三类与五问判据；定价页/受监管品类另有边界。
 - **顶部导航滚动收缩 / 玻璃胶囊导航 / Liquid Glass 仿制 / 毛玻璃上文字可读性** → [`ui-patterns/scroll-shrink-glass-capsule-nav.md`](./ui-patterns/scroll-shrink-glass-capsule-nav.md)；整条透明导航 → 居中玻璃胶囊的三档实现（CSS blur / SVG 折射 / WebGL）、最坏背景对比度算法、四路降级与 iOS blur 边界；点按展开的岛式 chrome 走 atomic-island-chrome，不做内容层玻璃。
+- **顶部导航下划线手势 / 通栏 dropdown 与页面压暗 / sticky header 高度同步 / 页内跳转条与 scrollspy** → [`ui-patterns/header-nav-and-jump-bar.md`](./ui-patterns/header-nav-and-jump-bar.md) + [`snippets/header-nav-and-jump-bar.html`](./ui-patterns/snippets/header-nav-and-jump-bar.html)；双程下划线 replay（550ms 右收→翻原点→左绘→归位）、chromeless panel + `:has()` 零 markup scrim、`--header-h` 运行时实测、`aria-current="location"` 滚动高亮；含 hover 死带与 band 空态三个实测缺陷及修法，滚动收缩玻璃胶囊走上一行。
 - **文本型 Help / 长文档 / PDF 排版（简历 / 一页纸 / 白皮书 / 信函）、商品图文研究报告或纸感 landing** → [`design/kami-document-dna.md`](./design/kami-document-dna.md) + 已装 skill `kami`（`~/.agents/skills/kami`，`pi --skill ~/.agents/skills/kami`）；DNA 只记纸感令牌，Portfolio 双图、Long Doc 密度与写作门走实际 skill；记录实际采用机制，不搬字体。
 - **个人站 / 作品集** → [`design/hanzilla-personal-site/`](./design/hanzilla-personal-site/) 或 [`design/liz-personal-compact/`](./design/liz-personal-compact/)。
 - **内容到服务承接页** → [`design/uhoh-inspired-service-entry/`](./design/uhoh-inspired-service-entry/)；入口屋不是交付工厂。
@@ -76,7 +80,7 @@ description: >-
 - **现有界面 audit → refine / Libraries.dev 效果选型 / Astryx 组件研究 / Light Rails 动效实验** → [`ui-patterns/interface-audit-refine-toolchain.md`](./ui-patterns/interface-audit-refine-toolchain.md)；Interfaces skills 管审计与修复，Libraries.dev 与 Astryx 只填已证明的效果 / 组件缺口，Light Rails 只做许可隔离的单层 motion spike。
 - **系统消息 / 错误恢复** → [`ui-patterns/recover-at-point-of-failure.md`](./ui-patterns/recover-at-point-of-failure.md)；toast / alert / modal 按 L0–L3 可执行性分级，失败点就地恢复；补 data-dense 后台与 onboarding 的消息纪律。
 - **发布 / 排期月历** → [`ui-patterns/publish-calendar/SKILL.md`](./ui-patterns/publish-calendar/SKILL.md)；一级年月控制、状态点密度与 shell-hotkey 共存的键盘合同，规则分 MUST/POLICY/PROFILE 三层（Aurora 参数是示例 profile）；是页面级工作台，不是 date picker。
-- **Logo / favicon / app icon / OG 卡 / 品牌资产** → [`brand-identity/SKILL.md`](./brand-identity/SKILL.md)；七层级 skill 地图 + 媒介匹配规则（几何 → 手写 SVG，材质 → image-gen）+ 16px gate + diverge→converge 流水线；不是 UI 图标系统（那走 [`ui-patterns/icon-system-craft.md`](./ui-patterns/icon-system-craft.md)）。
+- **Logo / favicon / OG 与聊天分享名片 / title-description / 品牌资产** → [`brand-identity/SKILL.md`](./brand-identity/SKILL.md)；先合同与原站实测，核真实图像尺寸/缩略图/源HTML身份，再走媒介匹配与16px gate；有标签不等于分享/SEO/GEO验收，UI图标仍走 [`ui-patterns/icon-system-craft.md`](./ui-patterns/icon-system-craft.md)。
 - **集成 logo / 技术栈标 / 占位 logo 墙 / 外部品牌标** → [`brand-logo-sources.md`](./brand-logo-sources.md)；真品牌标库（Simple Icons / theSVG / SVGL…）× 虚构占位标（Hugeicons Logos / Untitled UI Logos…）的验真源头表 + 商标与构建期离线纪律；不是功能图标（那走 [`ui-patterns/icon-system-craft.md`](./ui-patterns/icon-system-craft.md)），也不是自研 logo 流水线（那走上一行 brand-identity）。
 
 ## Agent / motion chrome
@@ -113,12 +117,12 @@ description: >-
 - **高杠杆 craft checklist / 解耦与 Agent 维护预算** → [`high-leverage-craft-checklist.md`](./high-leverage-craft-checklist.md)；22C 单一披露真源；43 按职责解耦与源码单文件 ≤1,500 行，不按行数机械切块
 - **「这是哪个元素」定位 / UI 精修期点选元素发 agent** → [`element-picker-playbook.md`](./element-picker-playbook.md)；首选 Devin `browser_preview` 注入式选择器（零安装、组件名+源码位置进对话），其次 DevTools/其他选择器，稳定锚点才埋少量 `data-ui-id`（checklist §44）
 - **间距审计 / 灰块 pass / 密度模式** → [`spacing-audit-checklist.md`](./spacing-audit-checklist.md)；“大概率是间距问题”（Michael Filipiuk）：外层 > 区块 > 卡片 > 元素、收紧相关对、4/8 token、comfortable/compact，附 agent 审计 prompt。
-- **Typography** → [`design-typography-font-preferences.md`](./design-typography-font-preferences.md)
+- **Typography / 原站字族与角色验真** → [`design-typography-font-preferences.md`](./design-typography-font-preferences.md)；先读项目 DESIGN.md，通用字体栈不自动生效；Anduril/Saronic 的 PS、static 映射与授权缺口由入口路由到实测 DNA，不擅自替代。
 - **Web 字体瘦身 / subset / unicode-range 拆分 / 字体拖慢首屏** → [`web-font-subset-optimization.md`](./web-font-subset-optimization.md)；Shu Ding 的逐字 Agent prompt（像素 diff 验收、core+extended 双文件、不进 build）+ Rauch 的 fx.sh 终端字形实例；选字体走上一行。
-- **Color / surface / 品牌色阶 / 第三色搭配与 token 解耦** → [`design-color-surface-preferences.md`](./design-color-surface-preferences.md)；先复用现有研究，微暖纸白 + 成熟色板关系 + primitive→semantic 接线，不重做整轮 due diligence。
+- **Color / surface / 品牌色阶 / 第三色搭配与 token 解耦** → [`design-color-surface-preferences.md`](./design-color-surface-preferences.md)；先核项目 DESIGN.md，复用微暖纸白与 primitive→semantic 接线；两站原始 HEX/实际 seam/对比走实测 DNA，研究色板与面积推断不自动生效。
 - **i18n / language switcher** → [`i18n-iconify-lang-switcher.md`](./i18n-iconify-lang-switcher.md)
 - **i18n / 翻译存活排版规则** → [`i18n-translation-survival.md`](./i18n-translation-survival.md)：atom、换行、层级通道、RTL、IME、voice 的规则级手册；做切换器组件走上一行的 lang-switcher 文档。
-- **On-brand AI 生成合同 / 压 AI 味** → [`on-brand-ai-generation-craft.md`](./on-brand-ai-generation-craft.md)：Hallmark 58 gates + macrostructure 轮换，Vercel design.md 单文件合同与 eval 方法；agent 生成官网 / 活动页 / 报告页前先过它。
+- **On-brand AI 生成合同 / 先定 guideline 再执行 / 压 AI 味** → [`on-brand-ai-generation-craft.md`](./on-brand-ai-generation-craft.md)：先读唯一 DESIGN.md、核对标真实选择与生效状态，再选资产/写 token/验收；Hallmark gates 只补缺，不覆盖已定品牌。
 - **IA / user journey / default home / nav** → [`ia-user-journey.md`](./ia-user-journey.md)
 - **Header 控件分置 / 状态切换器 vs 入口 vs 外链** → [`chrome-controls-placement.md`](./chrome-controls-placement.md)：高频状态切换（theme/locale）必须 Header 一键 icon switcher，menu 只收低频入口与外链；审"统一 dropdown"混装时开它。
 - **渲染选型 / SSG vs SSR vs SPA** → [`rendering-strategy-map.md`](./rendering-strategy-map.md)：按表面选渲染策略的坐标轴与决策启发；生成式 site factory 的特殊视角与 unknown unknowns 清单。

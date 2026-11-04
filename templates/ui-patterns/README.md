@@ -43,6 +43,7 @@
 - **Atomic island chrome** → [`atomic-island-chrome.md`](./atomic-island-chrome.md)：full-bleed camera / canvas / toy 的可收起 chrome，不适合需要持续导航的 dense desktop shell。
 - **Landing CTA economy** → [`landing-cta-economy.md`](./landing-cta-economy.md)：按「竞争的下一步」做预算而不是按按钮个数；CTA 重复的权重递减、首屏与段落字数上限、hedge 三类与五问判据；定价页与受监管品类有例外。
 - **Scroll-shrink glass capsule nav** → [`scroll-shrink-glass-capsule-nav.md`](./scroll-shrink-glass-capsule-nav.md)：整条透明导航滚动后收成居中玻璃胶囊的三档实现（CSS blur / SVG 折射 / WebGL）、最坏背景对比度算法、四路降级与 iOS blur 边界；点按展开的岛式 chrome 走上一行。
+- **Header nav + jump bar（下划线 replay / chromeless dropdown / 实测 header 高 / scrollspy）** → [`header-nav-and-jump-bar.md`](./header-nav-and-jump-bar.md) + [`snippets/header-nav-and-jump-bar.html`](./snippets/header-nav-and-jump-bar.html)：双程下划线 replay、`:has()` 零 markup 整页 scrim、`--header-h` 运行时同步、`aria-current="location"` 页内 scrollspy；含 hover 死带 / band 空态 / 强制状态污染三个实测缺陷与修法，可运行演示即骨架。
 
 ## 使用与维护
 
