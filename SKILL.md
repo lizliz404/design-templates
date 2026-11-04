@@ -15,7 +15,7 @@ Site: [lizliz.xyz/templates](https://lizliz.xyz/templates)
 
 ## 何时加载
 
-当任务涉及 B2B / Agent UI、onboarding、landing、个人站、服务入口、产品搜索、图标系统、deck / diagram，或设计 token / IA / i18n 工艺时加载。先读主路由，选择最小匹配资产；不要把本文件当作第二份资产索引。
+当任务涉及 B2B / Agent UI、onboarding、landing、个人站、服务入口、产品搜索、图标系统、deck / diagram，或设计 token / IA / i18n 工艺时加载。**先完整读消费项目的 canonical `DESIGN.md` / `design.md`，确认生效约束和待定项，再读主路由选择最小匹配资产。** 缺失或冲突先补合同，不能从散落 CSS、已安装字体或模板默认倒推设计。指定对标时先查原站真实选择；原版字体与免费替代分开，候选不自动生效。不要把本文件当作第二份资产索引。
 
 ## Key paths
 

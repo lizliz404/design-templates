@@ -1,6 +1,8 @@
 # Typography Preferences
 
-Collected from all active projects. Use these stacks instead of system defaults. Never ship unbranded browser defaults.
+Collected from active projects, not an automatic font decision for the next project. Read its canonical `DESIGN.md` first; an approved project choice outranks this generic palette, and a candidate does not become active by being listed here. Never silently substitute a font.
+
+**Measured references, not replacement recommendations:** [Anduril / Saronic DNA](./design/anduril-saronic-dna.md) records Helvetica Now Display + Elios / Suisse Int'l + Suisse Int'l Mono, actual platform fonts, static-file weight mappings, desktop/390 role measurements and licensing gaps. Do not infer that every site uses Inter or must use exactly one/two families; unavailable originals are explicit gaps, not permission to choose a free lookalike.
 
 ## Serif Display / Editorial
 

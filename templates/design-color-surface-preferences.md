@@ -2,7 +2,9 @@
 
 类型：Craft convention（与 [`design-typography-font-preferences.md`](./design-typography-font-preferences.md) 同级；**不是** checklist 条目全文）
 
-Checklist §40 只留指针。数字、色温、证据、杀掉标准只维护本文。改色先读这篇，再动 `:root`。
+Checklist §40 只留指针。数字、色温、证据、杀掉标准只维护本文。改色先完整读消费项目 canonical `DESIGN.md`，核对生效约束，再按需读本文与动 `:root`；候选不因出现在资产里而生效。
+
+**原站实测而非主题批准**：[Anduril / Saronic DNA](./design/anduril-saronic-dna.md) 保存黑/纸与 midnight/sunlight 原始 HEX、强调色用途、实际 seam 与 token 的差异和对比计算。原站纯黑/浅底是研究事实，不受本文改写；本文的工作面默认也不被原站色板自动覆盖。未测像素面积就不报“≥90%中性色”。
 
 | | |
 |---|---|

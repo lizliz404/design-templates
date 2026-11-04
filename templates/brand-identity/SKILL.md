@@ -12,7 +12,8 @@ description: >
 # Brand identity assets (logo · favicon · OG)
 
 Status: landscape synthesis 2026-08-31 (external skill survey) calibrated
-by the Foundry favicon case (`inquiry-foundry/docs/design/FAVICON.md`).
+by the Foundry favicon case (`inquiry-foundry/docs/design/FAVICON.md`), with
+reference-led share/metadata acceptance added 2026-11-03.
 Baseline expectation: no single dominant skill exists in this category yet —
 repo stars ≠ skill installs; many skills寄生 in large repos. Steal layers,
 don't adopt one wholesale.
@@ -28,6 +29,38 @@ into brand kit)      (system + constraints)       favicon/light/dark,           
                                                      ↑ critique layer: logo-design-board (lenses + rubric)
                                                      ↓ OG / campaign layer: Colater (brand kit → graphics)
 ```
+
+## Before making assets: reference facts and project contract
+
+Read the consumer project's canonical `DESIGN.md` first. Share cards, favicon,
+page title/description and machine-readable identity belong in that contract
+from the start; record roles/acceptance there, not a parallel branding policy.
+Keep detailed asset-production prompts or source layers separate.
+
+1. **Inspect named reference sites, not an imagined industry style.** Read the
+   actual source head and rendered page: HTML title/description, OG/Twitter,
+   canonical, favicon/Apple icon/manifest and JSON-LD. Fetch the referenced
+   image/icon, verify real dimensions/MIME/status, then inspect composition.
+   A label such as `1200x630` or `sizes=192x192` is not proof of file dimensions.
+2. **Share preview is its own surface.** Check the brand/object at about320px
+   width and central crop safety. 1200×630 is a useful default deliverable, not
+   a guarantee all platforms crop identically. Inspect exact copy: `Home` or
+   `Homepage` may be a reference site's weak point, not a rule to imitate.
+3. **Favicon is independently legible at16/32px**, on light/dark backgrounds.
+   Match declared sizes/type to real bytes; keep legal entity attribution
+   consistent with the page and share card.
+4. **Identity must survive without JS.** Use correct absolute public URLs,
+   source-HTML metadata, accurate per-page descriptions, self-consistent
+   canonical/schema/sitemap and crawlable assets. JSON-LD may only state
+   verified facts; group capabilities must not silently become subsidiary facts.
+5. **Separate checks.** A local card mockup, working `og:image`, platform cache
+   refresh, search indexing/ranking and AI answer citations are different
+   observations. Validate actual Telegram/client preview after authorized
+   deployment; do not claim SEO/GEO performance from tag presence or llms.txt.
+
+Research assets can retain source URLs/hash/measurements. Do not redistribute
+reference logos, commercial fonts, photos or videos as reusable brand assets.
+A reference's accessible image URL is not a license.
 
 ## The seven, by layer
 
@@ -69,11 +102,13 @@ the pipeline manually with this file as the router.
 - **Favicon gates.** 16px survival (strokes ≥2px, gaps ≥1.5px at 16), one
   accent hue, at most one gradient (the beacon), asymmetric balance, tile
   corner radius ≈ 23% of edge.
-- **Genre B separation.** Brand/OG briefs are their own artifact class —
-  never merge into a Genre-A DESIGN.md. The Foldy pair (icon prompt + OG
-  card prompt, 2026-08) is the gold-standard prompt anatomy: subject with
-  material truth → composition percentages → shadow spec → 3-tone palette →
-  mood sentence → "absolutely no" list → explicit small-size gate.
+- **Separate production briefs, not brand decisions.** The consumer project’s
+  canonical DESIGN.md still defines identity, share-copy roles and asset
+  acceptance. Detailed logo/OG production prompts live beside their source
+  assets, not as a competing design contract or a long appendix. The Foldy
+  pair (icon + OG prompt, 2026-08) shows useful production anatomy: subject
+  with material truth → composition percentages → shadow spec → palette →
+  explicit exclusions → small-size gate.
 
 ## Canon refs — inspectable construction (2026-08-31)
 
