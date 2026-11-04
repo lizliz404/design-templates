@@ -46,6 +46,7 @@ description: >-
 | **Logo 方向** | [logoinspo.com](https://logoinspo.com/) | Genre-B；勿直接盗标 |
 | **社媒帖 / 大厂 announcement** | [inspora.design](https://www.inspora.design/) · [posts.design](https://posts.design/) | cover-design skill；非 UI shell |
 | **转换向 landing 评分浏览** | [webanatomy.ai](https://www.webanatomy.ai/best-landing-pages) | 学结构，别迷信分数 |
+| **免费商用拉丁字体短名单（社区）** | [@ricouii 字体帖](https://x.com/ricouii/status/2117661223764537612) | `reading-notes/ricouii-free-commercial-fonts-2026-11.md` + `design-typography-font-preferences.md` Community shortlists；书签非批准；项目最终字族仍走 DESIGN |
 | **QR / 链接分享物** | [tree.icqr.com](https://tree.icqr.com)（WebGPU，纯前端，URL 不上传） | 借「功能图案伪装进场景 + payload 派生生成」机制；无公开 repo 勿 mirror，产物截图进项目 evidence |
 
 ## Meta

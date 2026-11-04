@@ -136,3 +136,11 @@ Three mechanisms, in order of importance:
 - One stack for everything — the "I'll just use the pretty serif everywhere" move. Headings look great, body text strains eyes, UI looks out of place.
 - Adding fonts to the display stack without a concrete platform-coverage gap to fill. The current list already covers macOS / Windows / Linux CJK / Linux Latin. More fonts here is diminishing returns — not "curation," just hoarding.
 - Putting Hoefler Text in body stacks. It's a display face. Treat it as such.
+
+## Community shortlists（书签，非批准）
+
+外部作者推荐的免费商用拉丁字名单，只作灵感检索；**不自动并入上文已批准字栈，也不改写任何项目 DESIGN 的最终字族。**
+
+| 来源 | 收录 | 内容 |
+|---|---|---|
+| [@ricouii 2026-11-03](https://x.com/ricouii/status/2117661223764537612) | [`reading-notes/ricouii-free-commercial-fonts-2026-11.md`](./reading-notes/ricouii-free-commercial-fonts-2026-11.md) | 避开 Inter/Roboto；无衬线 Figtree / Rubik / Switzer / Satoshi / Work Sans / Public Sans / Quicksand / Plus Jakarta Sans；衬线 Brygada 1918 / PT Serif / Playfair Display / Zodiak / Gambarino |
