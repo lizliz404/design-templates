@@ -1,0 +1,43 @@
+{
+  "browser": {
+    "mode": "launch",
+    "executable_path": "/home/liz/.cache/ms-playwright/chromium-1248/chrome-linux64/chrome",
+    "headless": true
+  },
+  "environment": {
+    "viewport": { "width": 1440, "height": 900, "device_scale_factor": 1 },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "color_scheme": "light",
+    "reduced_motion": "no-preference",
+    "service_workers": "block"
+  },
+  "start_url": { "url": "https://www.saronic.com/" },
+  "actions": [
+    { "step_id": "settle", "action": "wait_for_timeout", "duration_ms": 4000 },
+    {
+      "step_id": "open-menu",
+      "action": "click",
+      "locator": { "kind": "role", "role": "button", "name": "Menu" },
+      "timeout_ms": 10000
+    },
+    { "step_id": "menu-open", "action": "wait_for_timeout", "duration_ms": 1500 },
+    {
+      "step_id": "close-menu",
+      "action": "press",
+      "locator": { "kind": "css", "selector": "body" },
+      "key": "Escape",
+      "timeout_ms": 5000
+    }
+  ],
+  "capture": {
+    "after_each_step": ["url", "dom", "accessibility", "screenshot"],
+    "at_end": ["url"],
+    "events": ["page-errors"],
+    "network": {
+      "request_body": false,
+      "response_body": false,
+      "header_values": false
+    }
+  }
+}

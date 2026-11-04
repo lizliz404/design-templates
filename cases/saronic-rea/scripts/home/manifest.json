@@ -1,0 +1,379 @@
+{
+  "capture_path": "/home/liz/dev/repos/design-templates/cases/saronic-rea/evidence/page-inspect-home.json",
+  "capture_sha256": "ab59d1a37bc6ed87df8c7de194a72500b99ffcd0f23e69e38546265e3f5e7f69",
+  "capture_kind": "page-inspection",
+  "source_evidence_id": "ev_a467725bd352dd805f47bd02aac322b37424b94cd85b4cf87ae7666d384fa40d",
+  "capture_completeness": {
+    "status": "policy_filtered",
+    "conditions": [
+      "attach_limited",
+      "policy_filtered"
+    ],
+    "policy_filtered_sections": [
+      "accessibility",
+      "console_text",
+      "json_body_shapes",
+      "metadata",
+      "resources",
+      "scripts",
+      "storage_keys",
+      "websocket_shapes"
+    ],
+    "attach_limited_sections": [
+      "console_events",
+      "metadata",
+      "network_requests",
+      "websocket_connections",
+      "websocket_frames",
+      "workers"
+    ],
+    "truncated_sections": [],
+    "unavailable_sections": [],
+    "excluded": [
+      {
+        "section": "accessibility",
+        "reason": "not_approved",
+        "count": 239
+      },
+      {
+        "section": "console_text",
+        "reason": "not_approved",
+        "count": null
+      },
+      {
+        "section": "json_body_shapes",
+        "reason": "not_approved",
+        "count": null
+      },
+      {
+        "section": "metadata",
+        "reason": "disallowed_origin",
+        "count": 12
+      },
+      {
+        "section": "resources",
+        "reason": "disallowed_origin",
+        "count": 1
+      },
+      {
+        "section": "resources",
+        "reason": "unsupported_url",
+        "count": 1
+      },
+      {
+        "section": "scripts",
+        "reason": "disallowed_origin",
+        "count": 1
+      },
+      {
+        "section": "scripts",
+        "reason": "unattributed_origin",
+        "count": 1
+      },
+      {
+        "section": "storage_keys",
+        "reason": "not_approved",
+        "count": null
+      },
+      {
+        "section": "websocket_shapes",
+        "reason": "not_approved",
+        "count": null
+      }
+    ],
+    "dropped_events": {
+      "scripts": 0,
+      "network_requests": 0,
+      "console_events": 0,
+      "websocket_connections": 0,
+      "websocket_frames": 0,
+      "webmcp_tools": 0,
+      "timeline_events": 0,
+      "total": 0
+    }
+  },
+  "output_directory": "/home/liz/dev/repos/design-templates/cases/saronic-rea/scripts/home",
+  "analysis_input": {
+    "input_path": "/home/liz/dev/repos/design-templates/cases/saronic-rea/scripts/home/files",
+    "format": "directory"
+  },
+  "scripts": [
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_055eee246a286bfa55b77a1f1d8cfa7ebb50074af87aae8cf9c13378999f7ee1",
+        "frame_id": "4074EB61445CA40757929B66404FFB18",
+        "is_module": false,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.saronic.com/_next/static/chunks/117-38470c10a1ab79ac.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/e56ffaa8d505db86edf69e8f89898841027ff0522201e72b7579a26b2edaa2fe/_next/static/chunks/117-38470c10a1ab79ac.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "e90ee6d68cdf5b8f044a4eb7b28efd7458020952a4f4466028490e388992e7e5",
+        "bytes": 123527,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_2d5edcf165d34cb7687ada7d5e9096b40e5e89467b4c1392c2870204073f297e",
+        "frame_id": "4074EB61445CA40757929B66404FFB18",
+        "is_module": false,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.saronic.com/_next/static/chunks/app/layout-3ad69d4ebb7f8db2.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/e56ffaa8d505db86edf69e8f89898841027ff0522201e72b7579a26b2edaa2fe/_next/static/chunks/app/layout-3ad69d4ebb7f8db2.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "94d0c0abbb4fae31e6e026eaba6b3a1fb1157d751b9d9f11ca26eda6de07b0ee",
+        "bytes": 21837,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_51c704a9c2b9f368f1e61e4a3156c7a01b4f000a439efda6626ea24fecba99fa",
+        "frame_id": "4074EB61445CA40757929B66404FFB18",
+        "is_module": false,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.saronic.com/_next/static/chunks/main-app-7cc7b41e3f9b63cd.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/e56ffaa8d505db86edf69e8f89898841027ff0522201e72b7579a26b2edaa2fe/_next/static/chunks/main-app-7cc7b41e3f9b63cd.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "2cdfe430771b54f0535f81318c1a5b8f1636c06d57450c2d543f631fff9a8294",
+        "bytes": 461,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_5f1d3dfc31109fa4f4a1d8e3a4114003891f7c33d4540e1aa3a719b17c56d883",
+        "frame_id": "4074EB61445CA40757929B66404FFB18",
+        "is_module": false,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.saronic.com/_next/static/chunks/498-29d7d409bb4d607c.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/e56ffaa8d505db86edf69e8f89898841027ff0522201e72b7579a26b2edaa2fe/_next/static/chunks/498-29d7d409bb4d607c.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "6d23c72e0890f2f67e55c6822cfd3ef24a1f4777cdae9dfaba36d66dde4305d4",
+        "bytes": 18651,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_8adac6534973f2c0f5a728e685b9e5f34b3d96ea4b1a7b11a2448b80682eea01",
+        "frame_id": "4074EB61445CA40757929B66404FFB18",
+        "is_module": false,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.saronic.com/_next/static/chunks/976-f0f00d386fd4f8a2.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/e56ffaa8d505db86edf69e8f89898841027ff0522201e72b7579a26b2edaa2fe/_next/static/chunks/976-f0f00d386fd4f8a2.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "5b594fe76453f82a25ad8b6649678d766ceb2c423ff2b107ec40b46fad3d0eb9",
+        "bytes": 9495,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_8df9906b5bf89d47d93d4164e8714bac5603b9fff2ee601853894e3e5b8a57e4",
+        "frame_id": "4074EB61445CA40757929B66404FFB18",
+        "is_module": false,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.saronic.com/_next/static/chunks/app/page-bf7d552ad9de1876.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/e56ffaa8d505db86edf69e8f89898841027ff0522201e72b7579a26b2edaa2fe/_next/static/chunks/app/page-bf7d552ad9de1876.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "56d3e66da877f6d7a6f77901e2a4f419225f3a5e838e68d353ed190a2914cccc",
+        "bytes": 21643,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_9f56904ad5b840f512840ebb238e5ad56b56473d001af874cf952cf613f8ba30",
+        "frame_id": "4074EB61445CA40757929B66404FFB18",
+        "is_module": false,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.saronic.com/_next/static/chunks/84-f696929e8f6e0c85.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/e56ffaa8d505db86edf69e8f89898841027ff0522201e72b7579a26b2edaa2fe/_next/static/chunks/84-f696929e8f6e0c85.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "f5c4b66f91f88b0762b7e5a997ae9d7c93320edbc1e907c53353962c954ccfd1",
+        "bytes": 42114,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_c2b732995b685aa91a84bd738c8bf41c86a64908d7a5b457126bb2d7f255e11b",
+        "frame_id": "4074EB61445CA40757929B66404FFB18",
+        "is_module": false,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.saronic.com/_next/static/chunks/851-91db4db3354ef20a.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/e56ffaa8d505db86edf69e8f89898841027ff0522201e72b7579a26b2edaa2fe/_next/static/chunks/851-91db4db3354ef20a.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "253a651e4853fa3a0e0f43451e61edc7b914d2371b92e1aca939ca3e4e1738e8",
+        "bytes": 10057,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_ca951e010c572c2af2aff488d025c097216044bdebc12154ca1500141dffb248",
+        "frame_id": "4074EB61445CA40757929B66404FFB18",
+        "is_module": false,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.saronic.com/_next/static/chunks/972-35ad8fde08f4de14.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/e56ffaa8d505db86edf69e8f89898841027ff0522201e72b7579a26b2edaa2fe/_next/static/chunks/972-35ad8fde08f4de14.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "293ea251bde5f589c18b05404c0dda7ca4ea48575cc6f3967a938de7fdca985b",
+        "bytes": 20578,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_ce7aa220281e2c75a0f70923d363ec9964d544c2a086a35118938a67d87fc1ed",
+        "frame_id": "4074EB61445CA40757929B66404FFB18",
+        "is_module": false,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.saronic.com/_next/static/chunks/c15bf2b0-19ff368ffb2158b2.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/e56ffaa8d505db86edf69e8f89898841027ff0522201e72b7579a26b2edaa2fe/_next/static/chunks/c15bf2b0-19ff368ffb2158b2.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "97d656bec75af8fa4bda1c75278c8c299cb90d3aca102dd5a592cd04506d0f7f",
+        "bytes": 51663,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_dc5d575feeb2c78e98399d521bdc7fc5226ea0abbd369827d043635e7436b3fb",
+        "frame_id": "4074EB61445CA40757929B66404FFB18",
+        "is_module": false,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.saronic.com/_next/static/chunks/webpack-32c7d60d087d7cf9.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/e56ffaa8d505db86edf69e8f89898841027ff0522201e72b7579a26b2edaa2fe/_next/static/chunks/webpack-32c7d60d087d7cf9.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "4daaec79d80b53e4bb3d593fc33b1e8435d838e7158b3a9b7423ec1da30c3968",
+        "bytes": 3624,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_ddedbbf863f8e416d680ace79d4fbfbd5373f82f537e72c3c58b0f817d34cc73",
+        "frame_id": "4074EB61445CA40757929B66404FFB18",
+        "is_module": false,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.saronic.com/_next/static/chunks/fd9d1056-743a94bb1bd81472.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/e56ffaa8d505db86edf69e8f89898841027ff0522201e72b7579a26b2edaa2fe/_next/static/chunks/fd9d1056-743a94bb1bd81472.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "3fe395fafbd0eee9874dff87e6261b938c345f9ff4bdd23e63f805c10d7f6446",
+        "bytes": 172831,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    }
+  ],
+  "limitations": [
+    "Observation starts when REA attaches; prior network and console activity is unavailable.",
+    "Worker targets are a final inventory snapshot, not worker-session observation. Their attached flag describes any debugging client; this page-session collector does not observe worker network, console, or script events, and short-lived workers may be absent from the snapshot.",
+    "Raw network headers, bodies, cookies, storage values, console objects, and WebSocket payloads are never retained; explicitly requested primitive console text is retained verbatim, while payload captures retain value-free shapes.",
+    "Source maps are reported only as declarative URLs and are not fetched.",
+    "URL-less scripts and console events without an allowed source URL are excluded because their origin cannot be proven.",
+    "CDP discovery omitted the target attachment state; attached is reported as unknown.",
+    "Only script bytes retained in this capture are exported. Sources are not refetched or executed, and a response or Debugger source does not prove execution.",
+    "Ordinary unambiguous URL paths preserve relative module layouts by origin, including case-distinct spellings. Query variants, exact path collisions, file/directory prefixes, inline sources, and unrepresentable paths are isolated. A case-distinct pair is isolated only when the destination filesystem cannot store both spellings; the record names that pair. Browser module relationships of isolated paths remain unknown.",
+    "Local JavaScript analysis does not implement browser import maps, root-relative URL resolution, remote URL loading, or browser runtime behavior. It may strip import queries and fragments; isolated variants are not canonical targets.",
+    "Source-map declarations are retained as metadata. No source maps or missing dependencies are fetched or reconstructed.",
+    "Scenario response bytes preserve the output of Playwright's Response.body() API; any source-body provenance caveat from the capture is retained in this manifest. Debugger sources are the exposed text encoded as UTF-8. Redacted bytes are exported exactly as retained, and may no longer parse as JavaScript."
+  ]
+}

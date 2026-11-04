@@ -1,0 +1,199 @@
+{
+ "browser": {
+  "mode": "launch",
+  "executable_path": "/usr/bin/chromium",
+  "headless": true
+ },
+ "start_url": {
+  "url": "https://www.anduril.com/"
+ },
+ "environment": {
+  "viewport": {
+   "width": 1440,
+   "height": 900,
+   "device_scale_factor": 1
+  },
+  "reduced_motion": "no-preference"
+ },
+ "actions": [
+  {
+   "step_id": "goto-home",
+   "action": "goto",
+   "destination": {
+    "url": "https://www.anduril.com/"
+   },
+   "wait_until": "load",
+   "timeout_ms": 45000
+  },
+  {
+   "step_id": "settle-home",
+   "action": "wait_for_timeout",
+   "duration_ms": 2500
+  },
+  {
+   "step_id": "goto-ghost",
+   "action": "goto",
+   "destination": {
+    "url": "https://www.anduril.com/ghost"
+   },
+   "wait_until": "load",
+   "timeout_ms": 45000
+  },
+  {
+   "step_id": "settle-ghost",
+   "action": "wait_for_timeout",
+   "duration_ms": 2500
+  },
+  {
+   "step_id": "goto-air-domain",
+   "action": "goto",
+   "destination": {
+    "url": "https://www.anduril.com/air/air-dominance-and-strike"
+   },
+   "wait_until": "load",
+   "timeout_ms": 45000
+  },
+  {
+   "step_id": "settle-air-domain",
+   "action": "wait_for_timeout",
+   "duration_ms": 2500
+  },
+  {
+   "step_id": "goto-lattice-c2",
+   "action": "goto",
+   "destination": {
+    "url": "https://www.anduril.com/lattice/command-and-control"
+   },
+   "wait_until": "load",
+   "timeout_ms": 45000
+  },
+  {
+   "step_id": "settle-lattice-c2",
+   "action": "wait_for_timeout",
+   "duration_ms": 2500
+  },
+  {
+   "step_id": "goto-mission",
+   "action": "goto",
+   "destination": {
+    "url": "https://www.anduril.com/mission"
+   },
+   "wait_until": "load",
+   "timeout_ms": 45000
+  },
+  {
+   "step_id": "settle-mission",
+   "action": "wait_for_timeout",
+   "duration_ms": 2500
+  },
+  {
+   "step_id": "goto-rebuild-arsenal",
+   "action": "goto",
+   "destination": {
+    "url": "https://www.anduril.com/rebuild-the-arsenal"
+   },
+   "wait_until": "load",
+   "timeout_ms": 45000
+  },
+  {
+   "step_id": "settle-rebuild-arsenal",
+   "action": "wait_for_timeout",
+   "duration_ms": 2500
+  },
+  {
+   "step_id": "goto-arsenal",
+   "action": "goto",
+   "destination": {
+    "url": "https://www.anduril.com/arsenal"
+   },
+   "wait_until": "load",
+   "timeout_ms": 45000
+  },
+  {
+   "step_id": "settle-arsenal",
+   "action": "wait_for_timeout",
+   "duration_ms": 2500
+  },
+  {
+   "step_id": "goto-news",
+   "action": "goto",
+   "destination": {
+    "url": "https://www.anduril.com/news"
+   },
+   "wait_until": "load",
+   "timeout_ms": 45000
+  },
+  {
+   "step_id": "settle-news",
+   "action": "wait_for_timeout",
+   "duration_ms": 2500
+  },
+  {
+   "step_id": "goto-news-article",
+   "action": "goto",
+   "destination": {
+    "url": "https://www.anduril.com/news/anduril-u-s-navy-invest-usd6-6-billion-to-expand-america-s-submarine-industrial-base"
+   },
+   "wait_until": "load",
+   "timeout_ms": 45000
+  },
+  {
+   "step_id": "settle-news-article",
+   "action": "wait_for_timeout",
+   "duration_ms": 2500
+  },
+  {
+   "step_id": "goto-careers",
+   "action": "goto",
+   "destination": {
+    "url": "https://www.anduril.com/careers"
+   },
+   "wait_until": "load",
+   "timeout_ms": 45000
+  },
+  {
+   "step_id": "settle-careers",
+   "action": "wait_for_timeout",
+   "duration_ms": 2500
+  },
+  {
+   "step_id": "goto-connected-warfare",
+   "action": "goto",
+   "destination": {
+    "url": "https://www.anduril.com/connected-warfare"
+   },
+   "wait_until": "load",
+   "timeout_ms": 45000
+  },
+  {
+   "step_id": "settle-connected-warfare",
+   "action": "wait_for_timeout",
+   "duration_ms": 2500
+  },
+  {
+   "step_id": "goto-air-defense",
+   "action": "goto",
+   "destination": {
+    "url": "https://www.anduril.com/air-defense"
+   },
+   "wait_until": "load",
+   "timeout_ms": 45000
+  },
+  {
+   "step_id": "settle-air-defense",
+   "action": "wait_for_timeout",
+   "duration_ms": 2500
+  }
+ ],
+ "capture": {
+  "after_each_step": [
+   "accessibility",
+   "screenshot",
+   "url"
+  ],
+  "at_end": [
+   "dom",
+   "url"
+  ]
+ }
+}

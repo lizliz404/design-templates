@@ -1,0 +1,352 @@
+{
+  "capture_path": "/home/liz/dev/repos/design-templates/cases/anduril-rea/evidence/inspect-home.json",
+  "capture_sha256": "056595447ed9212de63982b88924915278aca2ad2068bae6e8437aa69c543133",
+  "capture_kind": "page-inspection",
+  "source_evidence_id": "ev_2e0cbc19913be1174f9e3744f05ca72910caaf2f6aab35737fe310f28bc4e78b",
+  "capture_completeness": {
+    "status": "policy_filtered",
+    "conditions": [
+      "attach_limited",
+      "policy_filtered"
+    ],
+    "policy_filtered_sections": [
+      "accessibility",
+      "console_text",
+      "json_body_shapes",
+      "metadata",
+      "resources",
+      "scripts",
+      "websocket_shapes",
+      "workers"
+    ],
+    "attach_limited_sections": [
+      "console_events",
+      "metadata",
+      "network_requests",
+      "websocket_connections",
+      "websocket_frames",
+      "workers"
+    ],
+    "truncated_sections": [],
+    "unavailable_sections": [
+      "workers"
+    ],
+    "excluded": [
+      {
+        "section": "accessibility",
+        "reason": "not_approved",
+        "count": 334
+      },
+      {
+        "section": "console_text",
+        "reason": "not_approved",
+        "count": null
+      },
+      {
+        "section": "json_body_shapes",
+        "reason": "not_approved",
+        "count": null
+      },
+      {
+        "section": "metadata",
+        "reason": "disallowed_origin",
+        "count": 38
+      },
+      {
+        "section": "metadata",
+        "reason": "unsupported_url",
+        "count": 3
+      },
+      {
+        "section": "resources",
+        "reason": "disallowed_origin",
+        "count": 16
+      },
+      {
+        "section": "resources",
+        "reason": "unsupported_url",
+        "count": 2
+      },
+      {
+        "section": "scripts",
+        "reason": "disallowed_origin",
+        "count": 2
+      },
+      {
+        "section": "scripts",
+        "reason": "unattributed_origin",
+        "count": 40
+      },
+      {
+        "section": "scripts",
+        "reason": "unsupported_url",
+        "count": 1
+      },
+      {
+        "section": "websocket_shapes",
+        "reason": "not_approved",
+        "count": null
+      },
+      {
+        "section": "workers",
+        "reason": "unattributed_origin",
+        "count": 8
+      },
+      {
+        "section": "workers",
+        "reason": "unattributed_target",
+        "count": 2
+      }
+    ],
+    "dropped_events": {
+      "scripts": 0,
+      "network_requests": 0,
+      "console_events": 0,
+      "websocket_connections": 0,
+      "websocket_frames": 0,
+      "webmcp_tools": 0,
+      "timeline_events": 0,
+      "total": 0
+    }
+  },
+  "output_directory": "/home/liz/dev/repos/design-templates/cases/anduril-rea/scripts-export",
+  "analysis_input": {
+    "input_path": "/home/liz/dev/repos/design-templates/cases/anduril-rea/scripts-export/files",
+    "format": "directory"
+  },
+  "scripts": [
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_4ea3adfcb3d17d60c121525b8905b7a82debf27889323a4e01ddb0d1703c3bef",
+        "frame_id": "8E6FF1C0892CE0E5E970007A69CEF60A",
+        "is_module": true,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.anduril.com/assets/js/lib/algolia.RtFWnwuB.esm.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/9918974c499e582fd96df07bfb1f3716ae84d4bb6703501d0aa93f488d269a30/assets/js/lib/algolia.RtFWnwuB.esm.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "0dcf5ebdb7af9a0aaedeb424cc2c5bd989c3721a9d9f646cc74801180913d45c",
+        "bytes": 37740,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_5bcc72a9889f3dd2a2a7e69ee551a0a2963a43507e6b61467d0aa4a9a459aff5",
+        "frame_id": "8E6FF1C0892CE0E5E970007A69CEF60A",
+        "is_module": false,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.anduril.com/",
+      "content": {
+        "state": "exported",
+        "relative_path": "isolated/source-2-57f60a77a57f6c4a1264807e3b724a1e9cc629c6dd88a82024e6c279198141d5.js",
+        "layout": "isolated",
+        "layout_reason": "URL path is not an ordinary portable JavaScript module path.",
+        "sha256": "4d9e070fe8cae82b704d552476ff19ac71d3bba79dd9ed3ba00bce2fe599c13f",
+        "bytes": 37071,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_6f51ac8198a41b6a17a112861db65916e1160c6e2b9797b82344a4b6ec1cb02e",
+        "frame_id": "8E6FF1C0892CE0E5E970007A69CEF60A",
+        "is_module": false,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.anduril.com/",
+      "content": {
+        "state": "exported",
+        "relative_path": "isolated/source-3-42420cd24fa4fb218cbb1e6ace45c9876a7009e7793fa50303006cc78da42c1f.js",
+        "layout": "isolated",
+        "layout_reason": "URL path is not an ordinary portable JavaScript module path.",
+        "sha256": "a1323a6ed51f651e7bcd5289e20ca738e72ebbf7933f42401115b328e1393345",
+        "bytes": 1831,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_816965ba3dd5558e841370c1b9b8832b66f24e3e75cdfe3d83f47cb053508a8c",
+        "frame_id": "8E6FF1C0892CE0E5E970007A69CEF60A",
+        "is_module": false,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.anduril.com/",
+      "content": {
+        "state": "exported",
+        "relative_path": "isolated/source-4-1671f4c5db3997e6159e61c9e49e893f6db646aee20e1612995c8d91141ad894.js",
+        "layout": "isolated",
+        "layout_reason": "URL path is not an ordinary portable JavaScript module path.",
+        "sha256": "8a9dc52e32239359d8bfdf1cd99c08c09c5cd725af3154568bf7e1d2aaf92b03",
+        "bytes": 1184,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_91459afeb30e18970552d26f94f56fb82b1f7ce07086b5a97ddd37138dba5955",
+        "frame_id": "8E6FF1C0892CE0E5E970007A69CEF60A",
+        "is_module": false,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.anduril.com/",
+      "content": {
+        "state": "exported",
+        "relative_path": "isolated/source-5-0cee84abfb8fc894b603a8ad448a6be5c3e778de7107b74c9202878e0d26b2c6.js",
+        "layout": "isolated",
+        "layout_reason": "URL path is not an ordinary portable JavaScript module path.",
+        "sha256": "6d339caa0491aa983fb93c66f222e1a75ba9d6af486d9a336fe4ad3b83941fac",
+        "bytes": 1336,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_94f47441013cbee1a8095b041ac570b4434fff4f55ac1b48426e34ddde3d47e4",
+        "frame_id": "8E6FF1C0892CE0E5E970007A69CEF60A",
+        "is_module": false,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.anduril.com/assets/js/app.xxR_cdSYJQ.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/9918974c499e582fd96df07bfb1f3716ae84d4bb6703501d0aa93f488d269a30/assets/js/app.xxR_cdSYJQ.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "7e4192c97b9586195a7b20ccb9a934687f035a214f836aae64895c077da83e44",
+        "bytes": 1529845,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_bc97ef9d2818ebb9958451ffbfeb9cb97eb8959ca3638a757eefcb8dc06f23ed",
+        "frame_id": "8E6FF1C0892CE0E5E970007A69CEF60A",
+        "is_module": false,
+        "language": "JavaScript",
+        "source_map_url": "https://www.anduril.com/assets/js/lib/lenis.min.js.map"
+      },
+      "url": "https://www.anduril.com/assets/js/lib/lenis.xxGyAE8JBT.min.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/9918974c499e582fd96df07bfb1f3716ae84d4bb6703501d0aa93f488d269a30/assets/js/lib/lenis.xxGyAE8JBT.min.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "37a973712338fd6b2e635f863646eea21a4176d903dd646bcc0d789f69492932",
+        "bytes": 17683,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_de1b0bd89fda8e0da081366ec6c0f1cc7103e62a39f987b983292c5cf87b932b",
+        "frame_id": "8E6FF1C0892CE0E5E970007A69CEF60A",
+        "is_module": false,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.anduril.com/",
+      "content": {
+        "state": "exported",
+        "relative_path": "isolated/source-8-bac3e0cb22a58172e7e1f9d0cd69844b0505036329c716e9d8c1ebbb8cbbd05b.js",
+        "layout": "isolated",
+        "layout_reason": "URL path is not an ordinary portable JavaScript module path.",
+        "sha256": "d2938e7ae20675fd54007bbf91dbab0e85426c4aa112217ecc5b452dcaa21c3d",
+        "bytes": 942,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_e84cd5fe88010bae292ed1d2a8f72a41a184ef0537e3319960a8cde76bc65765",
+        "frame_id": "8E6FF1C0892CE0E5E970007A69CEF60A",
+        "is_module": false,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.anduril.com/",
+      "content": {
+        "state": "exported",
+        "relative_path": "isolated/source-9-155a2d27111ac6ad721208ae4219c21a7debb0ee2037ee94b484562606b791c7.js",
+        "layout": "isolated",
+        "layout_reason": "URL path is not an ordinary portable JavaScript module path.",
+        "sha256": "f34fcc3231c5c68fa35394e2e86f10bd6d647f6c1c662aa7013788ca512e1efe",
+        "bytes": 1309,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_fdabe34f82dd6a63a1e6d42400ebb8925799ff17597298eb25c25618a6f60571",
+        "frame_id": "8E6FF1C0892CE0E5E970007A69CEF60A",
+        "is_module": false,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.anduril.com/assets/js/lib/theatrejs.xxwlD09FFh.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/9918974c499e582fd96df07bfb1f3716ae84d4bb6703501d0aa93f488d269a30/assets/js/lib/theatrejs.xxwlD09FFh.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "9cb2ec6e0dd7d847e1913f321e76d48320d441c5a0127246f5b44831f004558f",
+        "bytes": 98116,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    }
+  ],
+  "limitations": [
+    "Observation starts when REA attaches; prior network and console activity is unavailable.",
+    "Worker targets are a final inventory snapshot, not worker-session observation. Their attached flag describes any debugging client; this page-session collector does not observe worker network, console, or script events, and short-lived workers may be absent from the snapshot.",
+    "Raw network headers, bodies, cookies, storage values, console objects, and WebSocket payloads are never retained; explicitly requested primitive console text is retained verbatim, while payload captures retain value-free shapes.",
+    "Source maps are reported only as declarative URLs and are not fetched.",
+    "URL-less scripts and console events without an allowed source URL are excluded because their origin cannot be proven.",
+    "CDP discovery omitted the target attachment state; attached is reported as unknown.",
+    "Only script bytes retained in this capture are exported. Sources are not refetched or executed, and a response or Debugger source does not prove execution.",
+    "Ordinary unambiguous URL paths preserve relative module layouts by origin, including case-distinct spellings. Query variants, exact path collisions, file/directory prefixes, inline sources, and unrepresentable paths are isolated. A case-distinct pair is isolated only when the destination filesystem cannot store both spellings; the record names that pair. Browser module relationships of isolated paths remain unknown.",
+    "Local JavaScript analysis does not implement browser import maps, root-relative URL resolution, remote URL loading, or browser runtime behavior. It may strip import queries and fragments; isolated variants are not canonical targets.",
+    "Source-map declarations are retained as metadata. No source maps or missing dependencies are fetched or reconstructed.",
+    "Scenario response bytes preserve the output of Playwright's Response.body() API; any source-body provenance caveat from the capture is retained in this manifest. Debugger sources are the exposed text encoded as UTF-8. Redacted bytes are exported exactly as retained, and may no longer parse as JavaScript."
+  ]
+}

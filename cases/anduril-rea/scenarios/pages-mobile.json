@@ -1,0 +1,59 @@
+{
+ "browser": {
+  "mode": "launch",
+  "executable_path": "/usr/bin/chromium",
+  "headless": true
+ },
+ "start_url": {
+  "url": "https://www.anduril.com/"
+ },
+ "environment": {
+  "viewport": {
+   "width": 390,
+   "height": 844,
+   "device_scale_factor": 2
+  },
+  "reduced_motion": "no-preference"
+ },
+ "actions": [
+  {
+   "step_id": "settle-home",
+   "action": "wait_for_timeout",
+   "duration_ms": 3000
+  },
+  {
+   "step_id": "goto-ghost",
+   "action": "goto",
+   "destination": {
+    "url": "https://www.anduril.com/ghost"
+   },
+   "wait_until": "load",
+   "timeout_ms": 45000
+  },
+  {
+   "step_id": "settle-ghost",
+   "action": "wait_for_timeout",
+   "duration_ms": 2500
+  },
+  {
+   "step_id": "goto-news",
+   "action": "goto",
+   "destination": {
+    "url": "https://www.anduril.com/news"
+   },
+   "wait_until": "load",
+   "timeout_ms": 45000
+  },
+  {
+   "step_id": "settle-news",
+   "action": "wait_for_timeout",
+   "duration_ms": 2500
+  }
+ ],
+ "capture": {
+  "after_each_step": [
+   "screenshot",
+   "url"
+  ]
+ }
+}

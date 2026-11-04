@@ -1,0 +1,102 @@
+{
+  "browser": {
+    "mode": "launch",
+    "executable_path": "/home/liz/.cache/ms-playwright/chromium-1248/chrome-linux64/chrome",
+    "headless": true
+  },
+  "environment": {
+    "viewport": {
+      "width": 1440,
+      "height": 900,
+      "device_scale_factor": 1
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "color_scheme": "light",
+    "reduced_motion": "no-preference",
+    "service_workers": "block"
+  },
+  "start_url": {
+    "url": "https://www.saronic.com/"
+  },
+  "actions": [
+    {
+      "step_id": "goto-careers",
+      "action": "goto",
+      "destination": {
+        "url": "https://www.saronic.com/careers"
+      },
+      "wait_until": "domcontentloaded",
+      "timeout_ms": 30000
+    },
+    {
+      "step_id": "settle-careers",
+      "action": "wait_for_timeout",
+      "duration_ms": 3500
+    },
+    {
+      "step_id": "goto-newsroom",
+      "action": "goto",
+      "destination": {
+        "url": "https://www.saronic.com/newsroom"
+      },
+      "wait_until": "domcontentloaded",
+      "timeout_ms": 30000
+    },
+    {
+      "step_id": "settle-newsroom",
+      "action": "wait_for_timeout",
+      "duration_ms": 3500
+    },
+    {
+      "step_id": "goto-contact",
+      "action": "goto",
+      "destination": {
+        "url": "https://www.saronic.com/contact"
+      },
+      "wait_until": "domcontentloaded",
+      "timeout_ms": 30000
+    },
+    {
+      "step_id": "settle-contact",
+      "action": "wait_for_timeout",
+      "duration_ms": 3500
+    },
+    {
+      "step_id": "goto-privacy",
+      "action": "goto",
+      "destination": {
+        "url": "https://www.saronic.com/privacy"
+      },
+      "wait_until": "domcontentloaded",
+      "timeout_ms": 30000
+    },
+    {
+      "step_id": "settle-privacy",
+      "action": "wait_for_timeout",
+      "duration_ms": 3500
+    }
+  ],
+  "capture": {
+    "after_each_step": [
+      "url",
+      "dom",
+      "accessibility",
+      "screenshot"
+    ],
+    "at_end": [
+      "url",
+      "history"
+    ],
+    "events": [
+      "console",
+      "page-errors",
+      "network"
+    ],
+    "network": {
+      "request_body": false,
+      "response_body": false,
+      "header_values": false
+    }
+  }
+}

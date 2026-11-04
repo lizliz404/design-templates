@@ -1,0 +1,31 @@
+{
+  "browser": {
+    "mode": "launch",
+    "executable_path": "/home/liz/.cache/ms-playwright/chromium-1248/chrome-linux64/chrome",
+    "headless": true
+  },
+  "environment": {
+    "viewport": { "width": 390, "height": 844, "device_scale_factor": 2 },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "color_scheme": "light",
+    "reduced_motion": "no-preference",
+    "service_workers": "block"
+  },
+  "start_url": { "url": "https://www.saronic.com/" },
+  "actions": [
+    { "step_id": "settle-home", "action": "wait_for_timeout", "duration_ms": 5000 },
+    { "step_id": "goto-vessels", "action": "goto", "destination": { "url": "https://www.saronic.com/vessels" }, "wait_until": "domcontentloaded", "timeout_ms": 30000 },
+    { "step_id": "settle-vessels", "action": "wait_for_timeout", "duration_ms": 3500 }
+  ],
+  "capture": {
+    "after_each_step": ["url", "dom", "screenshot"],
+    "at_end": ["url"],
+    "events": ["page-errors"],
+    "network": {
+      "request_body": false,
+      "response_body": false,
+      "header_values": false
+    }
+  }
+}
