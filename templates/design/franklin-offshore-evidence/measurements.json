@@ -1,0 +1,3421 @@
+{
+  "sourceSite": "https://franklinoffshore.com/",
+  "researchDate": "2026-11-03",
+  "method": "one private Chromium, CDP actual glyphs plus computed leaf styles, actual interaction, font-byte metadata in memory; browser closed",
+  "coverage": "seven main pages plus Products double-width discovery sample; not a whole-site audit. Six main pages have consistent 1440/390 captures; Services narrow typography was captured during a 433-to-390 viewport transition and is excluded from stable 390 claims.",
+  "sourceRepo": "cfe-app/docs/redesign-2026-11-03/benchmark-franklin-offshore/",
+  "pages": [
+    {
+      "name": "home",
+      "viewports": [
+        {
+          "width": 1440,
+          "url": "https://franklinoffshore.com/",
+          "at": "2026-11-03T05:21:42.609Z",
+          "samples": [
+            {
+              "selector": "[data-id=\"0e87772\"] > div:nth-of-type(1) > div:nth-of-type(1) > a:nth-of-type(1) > span:nth-of-type(1) > span:nth-of-type(1)",
+              "tag": "SPAN",
+              "text": "Contact Us",
+              "family": "articulat-cf, sans-serif",
+              "weight": "400",
+              "size": "14.4px",
+              "lh": "21.6px",
+              "tracking": "normal",
+              "color": "rgb(255, 255, 255)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Normal",
+                  "postScriptName": "ArticulatCF-Normal",
+                  "isCustomFont": true,
+                  "glyphCount": 10
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"b182404\"] > div:nth-of-type(1) > h1:nth-of-type(1)",
+              "tag": "H1",
+              "text": "TOTAL+",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "122.4px",
+              "lh": "122.4px",
+              "tracking": "normal",
+              "color": "rgb(255, 255, 255)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 6
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"11e9abc\"] > div:nth-of-type(1) > h1:nth-of-type(1)",
+              "tag": "H1",
+              "text": "SOLUTIONS",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "79.2px",
+              "lh": "79.2px",
+              "tracking": "normal",
+              "color": "rgb(255, 255, 255)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 9
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"5870110\"] > div:nth-of-type(1) > p:nth-of-type(1)",
+              "tag": "P",
+              "text": "Your Global Partner for Integrated Rigging, Mooring, and Renewable Energy Solutions",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "18.72px",
+              "lh": "28.08px",
+              "tracking": "normal",
+              "color": "rgb(255, 255, 255)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 82
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"3020aed\"] > div:nth-of-type(1) > h2:nth-of-type(1)",
+              "tag": "H2",
+              "text": "ONE PARTNER, \nEVERY STEP",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "50.4px",
+              "lh": "60.48px",
+              "tracking": "normal",
+              "color": "rgb(0, 22, 42)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 22
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"14f51e5\"] > div:nth-of-type(1) > p:nth-of-type(1)",
+              "tag": "P",
+              "text": "With decades of expertise, we deliver high-quality rigging, mooring, and lifting solutions tailored to the demanding needs of the offshore i",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "14.4px",
+              "lh": "21.6px",
+              "tracking": "normal",
+              "color": "rgb(0, 22, 42)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 289
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"f437efa\"] > div:nth-of-type(1) > p:nth-of-type(1)",
+              "tag": "P",
+              "text": "Franklin Offshore has a strong global footprint, delivering reliable offshore solutions to key markets worldwide. With strategic locations a",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "17.28px",
+              "lh": "25.92px",
+              "tracking": "normal",
+              "color": "rgb(255, 255, 255)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 281
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"4589872\"] > div:nth-of-type(1) > p:nth-of-type(1)",
+              "tag": "P",
+              "text": "Our rigorous compliance with global safety, quality, and environmental regulations ensures reliable, high-performance offshore solutions.",
+              "family": "articulat-cf, sans-serif",
+              "weight": "400",
+              "size": "14.4px",
+              "lh": "21.6px",
+              "tracking": "normal",
+              "color": "rgb(0, 22, 42)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Normal",
+                  "postScriptName": "ArticulatCF-Normal",
+                  "isCustomFont": true,
+                  "glyphCount": 137
+                }
+              ]
+            }
+          ],
+          "layout": {
+            "w": 1440,
+            "scrollWidth": 1425,
+            "height": 5663
+          }
+        },
+        {
+          "width": 390,
+          "url": "https://franklinoffshore.com/",
+          "at": "2026-11-03T05:21:43.142Z",
+          "samples": [
+            {
+              "selector": "[data-id=\"b182404\"] > div:nth-of-type(1) > h1:nth-of-type(1)",
+              "tag": "H1",
+              "text": "TOTAL+",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "39px",
+              "lh": "39px",
+              "tracking": "normal",
+              "color": "rgb(255, 255, 255)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 6
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"11e9abc\"] > div:nth-of-type(1) > h1:nth-of-type(1)",
+              "tag": "H1",
+              "text": "SOLUTIONS",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "33.15px",
+              "lh": "33.15px",
+              "tracking": "normal",
+              "color": "rgb(255, 255, 255)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 9
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"5870110\"] > div:nth-of-type(1) > p:nth-of-type(1)",
+              "tag": "P",
+              "text": "Your Global Partner for Integrated Rigging, Mooring, and Renewable Energy Solutions",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "13.65px",
+              "lh": "20.475px",
+              "tracking": "normal",
+              "color": "rgb(255, 255, 255)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 82
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"3020aed\"] > div:nth-of-type(1) > h2:nth-of-type(1)",
+              "tag": "H2",
+              "text": "ONE PARTNER, \nEVERY STEP",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "29.25px",
+              "lh": "35.1px",
+              "tracking": "normal",
+              "color": "rgb(0, 22, 42)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 22
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"5fb3eb8\"] > div:nth-of-type(1) > div:nth-of-type(1) > a:nth-of-type(1) > span:nth-of-type(1) > span:nth-of-type(1)",
+              "tag": "SPAN",
+              "text": "Contact Us",
+              "family": "articulat-cf, sans-serif",
+              "weight": "400",
+              "size": "13.65px",
+              "lh": "20.475px",
+              "tracking": "normal",
+              "color": "rgb(255, 255, 255)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Normal",
+                  "postScriptName": "ArticulatCF-Normal",
+                  "isCustomFont": true,
+                  "glyphCount": 10
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"4589872\"] > div:nth-of-type(1) > p:nth-of-type(1)",
+              "tag": "P",
+              "text": "Our rigorous compliance with global safety, quality, and environmental regulations ensures reliable, high-performance offshore solutions.",
+              "family": "articulat-cf, sans-serif",
+              "weight": "400",
+              "size": "13.65px",
+              "lh": "20.475px",
+              "tracking": "normal",
+              "color": "rgb(0, 22, 42)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Normal",
+                  "postScriptName": "ArticulatCF-Normal",
+                  "isCustomFont": true,
+                  "glyphCount": 136
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"d92a15f\"] > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > h3:nth-of-type(1)",
+              "tag": "H3",
+              "text": "ISO 9001:2015",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "17.55px",
+              "lh": "21.06px",
+              "tracking": "normal",
+              "color": "rgb(255, 255, 255)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 13
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"42acb9e\"] > div:nth-of-type(1) > h2:nth-of-type(1)",
+              "tag": "H2",
+              "text": "Leading the Future of Safe & Successful Operations",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "33.15px",
+              "lh": "33.15px",
+              "tracking": "normal",
+              "color": "rgb(255, 255, 255)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 48
+                }
+              ]
+            }
+          ],
+          "layout": {
+            "w": 390,
+            "scrollWidth": 390,
+            "height": 6396
+          }
+        }
+      ]
+    },
+    {
+      "name": "about",
+      "viewports": [
+        {
+          "width": 1440,
+          "url": "https://franklinoffshore.com/about/",
+          "at": "2026-11-03T05:21:44.484Z",
+          "samples": [
+            {
+              "selector": "[data-id=\"0e87772\"] > div:nth-of-type(1) > div:nth-of-type(1) > a:nth-of-type(1) > span:nth-of-type(1) > span:nth-of-type(1)",
+              "tag": "SPAN",
+              "text": "Contact Us",
+              "family": "articulat-cf, sans-serif",
+              "weight": "400",
+              "size": "14.4px",
+              "lh": "21.6px",
+              "tracking": "normal",
+              "color": "rgb(255, 255, 255)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Normal",
+                  "postScriptName": "ArticulatCF-Normal",
+                  "isCustomFont": true,
+                  "glyphCount": 10
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"ba04591\"] > div:nth-of-type(1) > h1:nth-of-type(1)",
+              "tag": "H1",
+              "text": "Global Leaders in Offshore Rigging",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "86.4px",
+              "lh": "86.4px",
+              "tracking": "normal",
+              "color": "rgb(255, 255, 255)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 33
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"d6a2d5a\"] > div:nth-of-type(1) > p:nth-of-type(1)",
+              "tag": "P",
+              "text": "Built on a foundation of technical excellence and global operations, we set the standard in offshore rigging across the world’s most challen",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "14.4px",
+              "lh": "21.6px",
+              "tracking": "normal",
+              "color": "rgb(255, 255, 255)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 149
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"52a2785\"] > div:nth-of-type(1) > h2:nth-of-type(1)",
+              "tag": "H2",
+              "text": "A Singapore Company\nwith a Global Reach",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "50.4px",
+              "lh": "60.48px",
+              "tracking": "normal",
+              "color": "rgb(0, 22, 42)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 38
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"a55987a\"] > div:nth-of-type(1) > h2:nth-of-type(1)",
+              "tag": "H2",
+              "text": "To be the Best",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "17.28px",
+              "lh": "25.92px",
+              "tracking": "normal",
+              "color": "rgb(255, 255, 255)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 14
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"d9e577f\"] > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > h3:nth-of-type(1)",
+              "tag": "H3",
+              "text": "ISO 9001:2015",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "28.8px",
+              "lh": "34.56px",
+              "tracking": "normal",
+              "color": "rgb(255, 255, 255)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 13
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"d9e577f\"] > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > p:nth-of-type(1)",
+              "tag": "P",
+              "text": "Quality Assurance Management System",
+              "family": "articulat-cf, sans-serif",
+              "weight": "400",
+              "size": "14.4px",
+              "lh": "21.6px",
+              "tracking": "normal",
+              "color": "rgb(255, 255, 255)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Normal",
+                  "postScriptName": "ArticulatCF-Normal",
+                  "isCustomFont": true,
+                  "glyphCount": 35
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"c9f5e88\"] > div:nth-of-type(1) > h2:nth-of-type(1)",
+              "tag": "H2",
+              "text": "01",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "86.4px",
+              "lh": "86.4px",
+              "tracking": "normal",
+              "color": "rgb(255, 255, 255)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 2
+                }
+              ]
+            }
+          ],
+          "layout": {
+            "w": 1440,
+            "scrollWidth": 1425,
+            "height": 6200
+          }
+        },
+        {
+          "width": 390,
+          "url": "https://franklinoffshore.com/about/",
+          "at": "2026-11-03T05:21:44.986Z",
+          "samples": [
+            {
+              "selector": "[data-id=\"ba04591\"] > div:nth-of-type(1) > h1:nth-of-type(1)",
+              "tag": "H1",
+              "text": "Global Leaders in Offshore Rigging",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "33.15px",
+              "lh": "33.15px",
+              "tracking": "normal",
+              "color": "rgb(255, 255, 255)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 33
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"d6a2d5a\"] > div:nth-of-type(1) > p:nth-of-type(1)",
+              "tag": "P",
+              "text": "Built on a foundation of technical excellence and global operations, we set the standard in offshore rigging across the world’s most challen",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "13.65px",
+              "lh": "20.475px",
+              "tracking": "normal",
+              "color": "rgb(255, 255, 255)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 148
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"52a2785\"] > div:nth-of-type(1) > h2:nth-of-type(1)",
+              "tag": "H2",
+              "text": "A Singapore Company\nwith a Global Reach",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "29.25px",
+              "lh": "35.1px",
+              "tracking": "normal",
+              "color": "rgb(0, 22, 42)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 38
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"a55987a\"] > div:nth-of-type(1) > h2:nth-of-type(1)",
+              "tag": "H2",
+              "text": "To be the Best",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "17.55px",
+              "lh": "26.325px",
+              "tracking": "normal",
+              "color": "rgb(255, 255, 255)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 14
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"d9e577f\"] > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > h3:nth-of-type(1)",
+              "tag": "H3",
+              "text": "ISO 9001:2015",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "17.55px",
+              "lh": "21.06px",
+              "tracking": "normal",
+              "color": "rgb(255, 255, 255)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 13
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"d9e577f\"] > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > p:nth-of-type(1)",
+              "tag": "P",
+              "text": "Quality Assurance Management System",
+              "family": "articulat-cf, sans-serif",
+              "weight": "400",
+              "size": "13.65px",
+              "lh": "20.475px",
+              "tracking": "normal",
+              "color": "rgb(255, 255, 255)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Normal",
+                  "postScriptName": "ArticulatCF-Normal",
+                  "isCustomFont": true,
+                  "glyphCount": 35
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"f4f47b3\"] > div:nth-of-type(1) > h2:nth-of-type(1)",
+              "tag": "H2",
+              "text": "01",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "33.15px",
+              "lh": "33.15px",
+              "tracking": "normal",
+              "color": "rgb(0, 22, 42)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 2
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"6c4ec4e\"] > div:nth-of-type(1) > h2:nth-of-type(1)",
+              "tag": "H2",
+              "text": "Longest Cable Laid Steel Wire Rope Grommet Sling",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "17.55px",
+              "lh": "21.06px",
+              "tracking": "normal",
+              "color": "rgb(0, 22, 42)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 47
+                }
+              ]
+            }
+          ],
+          "layout": {
+            "w": 390,
+            "scrollWidth": 390,
+            "height": 4850
+          }
+        }
+      ]
+    },
+    {
+      "name": "services",
+      "narrowEvidenceStatus": "requested width 390; original viewport.w 433, later content.layout.w 390. Raw retained unchanged; narrow typography excluded from stable-width claims.",
+      "viewports": [
+        {
+          "width": 1440,
+          "url": "https://franklinoffshore.com/services/",
+          "at": "2026-11-03T05:21:47.019Z",
+          "samples": [
+            {
+              "selector": "[data-id=\"0e87772\"] > div:nth-of-type(1) > div:nth-of-type(1) > a:nth-of-type(1) > span:nth-of-type(1) > span:nth-of-type(1)",
+              "tag": "SPAN",
+              "text": "Contact Us",
+              "family": "articulat-cf, sans-serif",
+              "weight": "400",
+              "size": "14.4px",
+              "lh": "21.6px",
+              "tracking": "normal",
+              "color": "rgb(255, 255, 255)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Normal",
+                  "postScriptName": "ArticulatCF-Normal",
+                  "isCustomFont": true,
+                  "glyphCount": 10
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"9545339\"] > div:nth-of-type(1) > h1:nth-of-type(1)",
+              "tag": "H1",
+              "text": "Services",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "86.4px",
+              "lh": "86.4px",
+              "tracking": "normal",
+              "color": "rgb(255, 255, 255)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 8
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"6156955\"] > div:nth-of-type(1) > p:nth-of-type(1)",
+              "tag": "P",
+              "text": "Franklin Offshore offers offshore services including inspection, mooring, fabrication, load testing, rope installation, and training.",
+              "family": "articulat-cf, sans-serif",
+              "weight": "400",
+              "size": "14.4px",
+              "lh": "21.6px",
+              "tracking": "normal",
+              "color": "rgb(255, 255, 255)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Normal",
+                  "postScriptName": "ArticulatCF-Normal",
+                  "isCustomFont": true,
+                  "glyphCount": 133
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"fa3556f\"] > div:nth-of-type(1) > h2:nth-of-type(1)",
+              "tag": "H2",
+              "text": "Inspection",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "50.4px",
+              "lh": "60.48px",
+              "tracking": "normal",
+              "color": "rgb(0, 22, 42)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 10
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"7976012\"] > div:nth-of-type(1) > h2:nth-of-type(1)",
+              "tag": "H2",
+              "text": "Suction Pile \nFabrication",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "17.28px",
+              "lh": "25.92px",
+              "tracking": "normal",
+              "color": "rgb(0, 22, 42)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 22
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"9761053\"] > div:nth-of-type(1) > h2:nth-of-type(1)",
+              "tag": "H2",
+              "text": "Conventional and bespoke mooring solutions",
+              "family": "articulat-cf, sans-serif",
+              "weight": "400",
+              "size": "14.4px",
+              "lh": "21.6px",
+              "tracking": "normal",
+              "color": "rgb(0, 22, 42)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Normal",
+                  "postScriptName": "ArticulatCF-Normal",
+                  "isCustomFont": true,
+                  "glyphCount": 41
+                }
+              ]
+            }
+          ],
+          "layout": {
+            "w": 1440,
+            "scrollWidth": 1425,
+            "height": 9700
+          }
+        },
+        {
+          "width": 390,
+          "url": "https://franklinoffshore.com/services/",
+          "at": "2026-11-03T05:21:47.871Z",
+          "samples": [
+            {
+              "selector": "[data-id=\"9545339\"] > div:nth-of-type(1) > h1:nth-of-type(1)",
+              "tag": "H1",
+              "text": "Services",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "33.15px",
+              "lh": "33.15px",
+              "tracking": "normal",
+              "color": "rgb(255, 255, 255)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 8
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"6156955\"] > div:nth-of-type(1) > p:nth-of-type(1)",
+              "tag": "P",
+              "text": "Franklin Offshore offers offshore services including inspection, mooring, fabrication, load testing, rope installation, and training.",
+              "family": "articulat-cf, sans-serif",
+              "weight": "400",
+              "size": "13.65px",
+              "lh": "20.475px",
+              "tracking": "normal",
+              "color": "rgb(255, 255, 255)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Normal",
+                  "postScriptName": "ArticulatCF-Normal",
+                  "isCustomFont": true,
+                  "glyphCount": 131
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"f5685bf\"] > div:nth-of-type(1) > div:nth-of-type(1) > a:nth-of-type(1) > span:nth-of-type(1) > span:nth-of-type(1)",
+              "tag": "SPAN",
+              "text": "Download Brochure",
+              "family": "articulat-cf, sans-serif",
+              "weight": "400",
+              "size": "13.65px",
+              "lh": "20.475px",
+              "tracking": "normal",
+              "color": "rgb(0, 22, 42)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Normal",
+                  "postScriptName": "ArticulatCF-Normal",
+                  "isCustomFont": true,
+                  "glyphCount": 17
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"fa3556f\"] > div:nth-of-type(1) > h2:nth-of-type(1)",
+              "tag": "H2",
+              "text": "Inspection",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "29.25px",
+              "lh": "35.1px",
+              "tracking": "normal",
+              "color": "rgb(0, 22, 42)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 10
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"7976012\"] > div:nth-of-type(1) > h2:nth-of-type(1)",
+              "tag": "H2",
+              "text": "Suction Pile \nFabrication",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "17.55px",
+              "lh": "26.325px",
+              "tracking": "normal",
+              "color": "rgb(0, 22, 42)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 24
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"9761053\"] > div:nth-of-type(1) > h2:nth-of-type(1)",
+              "tag": "H2",
+              "text": "Conventional and bespoke mooring solutions",
+              "family": "articulat-cf, sans-serif",
+              "weight": "400",
+              "size": "13.65px",
+              "lh": "20.475px",
+              "tracking": "normal",
+              "color": "rgb(0, 22, 42)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Normal",
+                  "postScriptName": "ArticulatCF-Normal",
+                  "isCustomFont": true,
+                  "glyphCount": 42
+                }
+              ]
+            }
+          ],
+          "layout": {
+            "w": 390,
+            "scrollWidth": 390,
+            "height": 11042
+          }
+        }
+      ]
+    },
+    {
+      "name": "products",
+      "viewports": [
+        {
+          "width": 1440,
+          "url": "https://franklinoffshore.com/products/",
+          "at": "2026-11-03T05:21:50.399Z",
+          "samples": [
+            {
+              "selector": "[data-id=\"20264f1\"] > div:nth-of-type(1) > nav:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > a:nth-of-type(1)",
+              "tag": "A",
+              "text": "About",
+              "family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+              "weight": "400",
+              "size": "16px",
+              "lh": "24px",
+              "tracking": "normal",
+              "color": "rgb(0, 22, 42)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 5
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"20264f1\"] > div:nth-of-type(1) > nav:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > a:nth-of-type(1) > span:nth-of-type(1)",
+              "tag": "SPAN",
+              "text": "About",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "14.4px",
+              "lh": "21.6px",
+              "tracking": "normal",
+              "color": "rgb(0, 22, 42)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 5
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"0e87772\"] > div:nth-of-type(1) > div:nth-of-type(1) > a:nth-of-type(1) > span:nth-of-type(1) > span:nth-of-type(1)",
+              "tag": "SPAN",
+              "text": "Contact Us",
+              "family": "articulat-cf, sans-serif",
+              "weight": "400",
+              "size": "14.4px",
+              "lh": "21.6px",
+              "tracking": "normal",
+              "color": "rgb(255, 255, 255)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Normal",
+                  "postScriptName": "ArticulatCF-Normal",
+                  "isCustomFont": true,
+                  "glyphCount": 10
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"d7e0400\"] > div:nth-of-type(1) > h1:nth-of-type(1)",
+              "tag": "H1",
+              "text": "Products",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "86.4px",
+              "lh": "86.4px",
+              "tracking": "normal",
+              "color": "rgb(255, 255, 255)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 8
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"55d32da\"] > div:nth-of-type(1) > p:nth-of-type(1)",
+              "tag": "P",
+              "text": "With decades of technical excellence and global capability, We power offshore projects where reliability matters most.",
+              "family": "articulat-cf, sans-serif",
+              "weight": "400",
+              "size": "14.4px",
+              "lh": "21.6px",
+              "tracking": "normal",
+              "color": "rgb(255, 255, 255)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Normal",
+                  "postScriptName": "ArticulatCF-Normal",
+                  "isCustomFont": true,
+                  "glyphCount": 118
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"f4eee50\"] > div:nth-of-type(1) > h2:nth-of-type(1)",
+              "tag": "H2",
+              "text": "Rigging",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "50.4px",
+              "lh": "60.48px",
+              "tracking": "normal",
+              "color": "rgb(0, 22, 42)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 7
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"f907f7e\"] > div:nth-of-type(1) > p:nth-of-type(1)",
+              "tag": "P",
+              "text": "We operate a large, high-volume rigging shop complete with a range of hydraulic rigging vices and swaging machines. Using hydraulic wire rop",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "14.4px",
+              "lh": "21.6px",
+              "tracking": "normal",
+              "color": "rgb(0, 22, 42)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 319
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"edb3b91\"] > div:nth-of-type(1) > h2:nth-of-type(1)",
+              "tag": "H2",
+              "text": "Inventory we carry",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "28.8px",
+              "lh": "34.56px",
+              "tracking": "normal",
+              "color": "rgb(255, 255, 255)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 17
+                }
+              ]
+            }
+          ],
+          "layout": {
+            "w": 1440,
+            "scrollWidth": 1425,
+            "height": 5523
+          }
+        },
+        {
+          "width": 390,
+          "url": "https://franklinoffshore.com/products/",
+          "at": "2026-11-03T05:21:50.915Z",
+          "samples": [
+            {
+              "selector": "[data-id=\"d7e0400\"] > div:nth-of-type(1) > h1:nth-of-type(1)",
+              "tag": "H1",
+              "text": "Products",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "33.15px",
+              "lh": "33.15px",
+              "tracking": "normal",
+              "color": "rgb(255, 255, 255)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 8
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"55d32da\"] > div:nth-of-type(1) > p:nth-of-type(1)",
+              "tag": "P",
+              "text": "With decades of technical excellence and global capability, We power offshore projects where reliability matters most.",
+              "family": "articulat-cf, sans-serif",
+              "weight": "400",
+              "size": "13.65px",
+              "lh": "20.475px",
+              "tracking": "normal",
+              "color": "rgb(255, 255, 255)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Normal",
+                  "postScriptName": "ArticulatCF-Normal",
+                  "isCustomFont": true,
+                  "glyphCount": 116
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"3540396\"] > div:nth-of-type(1) > div:nth-of-type(1) > a:nth-of-type(1) > span:nth-of-type(1) > span:nth-of-type(1)",
+              "tag": "SPAN",
+              "text": "Download Brochure",
+              "family": "articulat-cf, sans-serif",
+              "weight": "400",
+              "size": "13.65px",
+              "lh": "20.475px",
+              "tracking": "normal",
+              "color": "rgb(0, 22, 42)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Normal",
+                  "postScriptName": "ArticulatCF-Normal",
+                  "isCustomFont": true,
+                  "glyphCount": 17
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"f4eee50\"] > div:nth-of-type(1) > h2:nth-of-type(1)",
+              "tag": "H2",
+              "text": "Rigging",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "29.25px",
+              "lh": "35.1px",
+              "tracking": "normal",
+              "color": "rgb(0, 22, 42)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 7
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"f907f7e\"] > div:nth-of-type(1) > p:nth-of-type(1)",
+              "tag": "P",
+              "text": "We operate a large, high-volume rigging shop complete with a range of hydraulic rigging vices and swaging machines. Using hydraulic wire rop",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "13.65px",
+              "lh": "20.475px",
+              "tracking": "normal",
+              "color": "rgb(0, 22, 42)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 316
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"edb3b91\"] > div:nth-of-type(1) > h2:nth-of-type(1)",
+              "tag": "H2",
+              "text": "Inventory we carry",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "17.55px",
+              "lh": "21.06px",
+              "tracking": "normal",
+              "color": "rgb(255, 255, 255)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 18
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"c2f845e\"] > div:nth-of-type(1) > h2:nth-of-type(1)",
+              "tag": "H2",
+              "text": "Effective Working Length",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "17.55px",
+              "lh": "26.325px",
+              "tracking": "normal",
+              "color": "rgb(0, 74, 152)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 24
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"42acb9e\"] > div:nth-of-type(1) > h2:nth-of-type(1)",
+              "tag": "H2",
+              "text": "Leading the Future of Safe & Successful Operations",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "33.15px",
+              "lh": "33.15px",
+              "tracking": "normal",
+              "color": "rgb(255, 255, 255)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 48
+                }
+              ]
+            }
+          ],
+          "layout": {
+            "w": 390,
+            "scrollWidth": 390,
+            "height": 6103
+          }
+        }
+      ]
+    },
+    {
+      "name": "fabrication",
+      "viewports": [
+        {
+          "width": 1440,
+          "url": "https://franklinoffshore.com/product-service-post/fabrication/",
+          "at": "2026-11-03T05:21:26.511Z",
+          "samples": [
+            {
+              "selector": "[data-id=\"0e87772\"] > div:nth-of-type(1) > div:nth-of-type(1) > a:nth-of-type(1) > span:nth-of-type(1) > span:nth-of-type(1)",
+              "tag": "SPAN",
+              "text": "Contact Us",
+              "family": "articulat-cf, sans-serif",
+              "weight": "400",
+              "size": "14.4px",
+              "lh": "21.6px",
+              "tracking": "normal",
+              "color": "rgb(255, 255, 255)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Normal",
+                  "postScriptName": "ArticulatCF-Normal",
+                  "isCustomFont": true,
+                  "glyphCount": 10
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"f2f0782\"] > div:nth-of-type(1) > h1:nth-of-type(1)",
+              "tag": "H1",
+              "text": "Fabrication",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "50.4px",
+              "lh": "60.48px",
+              "tracking": "normal",
+              "color": "rgb(0, 22, 42)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 11
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"325d53c\"] > div:nth-of-type(1) > h2:nth-of-type(1)",
+              "tag": "H2",
+              "text": "Service Overview",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "21.6px",
+              "lh": "25.92px",
+              "tracking": "normal",
+              "color": "rgb(0, 22, 42)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 16
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"b85534f\"] > div:nth-of-type(1) > p:nth-of-type(1)",
+              "tag": "P",
+              "text": "We complement our rigging and mooring business with our fabrication services that includes project management, engineering design, procureme",
+              "family": "articulat-cf, sans-serif",
+              "weight": "400",
+              "size": "14.4px",
+              "lh": "21.6px",
+              "tracking": "normal",
+              "color": "rgb(0, 22, 42)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Normal",
+                  "postScriptName": "ArticulatCF-Normal",
+                  "isCustomFont": true,
+                  "glyphCount": 401
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"42acb9e\"] > div:nth-of-type(1) > h2:nth-of-type(1)",
+              "tag": "H2",
+              "text": "Leading the Future of Safe & Successful Operations",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "64.8px",
+              "lh": "64.8px",
+              "tracking": "normal",
+              "color": "rgb(255, 255, 255)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 48
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"6c73d54\"] > div:nth-of-type(1) > p:nth-of-type(1)",
+              "tag": "P",
+              "text": "Partner with us today – With decades of experience and a worldwide network, Franklin Offshore delivers precision-engineered rigging, mooring",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "14.4px",
+              "lh": "21.6px",
+              "tracking": "normal",
+              "color": "rgb(255, 255, 255)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 180
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"4f943e6\"] > div:nth-of-type(1) > h2:nth-of-type(1)",
+              "tag": "H2",
+              "text": "Copyright 2026 Franklin Offshore Pte. Ltd. All Rights Reserved\n Designed with ♡ by  Wondertabs",
+              "family": "articulat-cf, sans-serif",
+              "weight": "400",
+              "size": "12.96px",
+              "lh": "19.44px",
+              "tracking": "normal",
+              "color": "rgb(255, 255, 255)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Normal",
+                  "postScriptName": "ArticulatCF-Normal",
+                  "isCustomFont": true,
+                  "glyphCount": 80
+                },
+                {
+                  "familyName": "Adwaita Mono",
+                  "postScriptName": "Adwaita-Mono",
+                  "isCustomFont": false,
+                  "glyphCount": 1
+                }
+              ]
+            }
+          ],
+          "layout": {
+            "w": 1440,
+            "scrollWidth": 1425,
+            "height": 3137
+          }
+        },
+        {
+          "width": 390,
+          "url": "https://franklinoffshore.com/product-service-post/fabrication/",
+          "at": "2026-11-03T05:21:26.953Z",
+          "samples": [
+            {
+              "selector": "[data-id=\"f2f0782\"] > div:nth-of-type(1) > h1:nth-of-type(1)",
+              "tag": "H1",
+              "text": "Fabrication",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "29.25px",
+              "lh": "35.1px",
+              "tracking": "normal",
+              "color": "rgb(0, 22, 42)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 11
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"325d53c\"] > div:nth-of-type(1) > h2:nth-of-type(1)",
+              "tag": "H2",
+              "text": "Service Overview",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "18.72px",
+              "lh": "22.464px",
+              "tracking": "normal",
+              "color": "rgb(0, 22, 42)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 16
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"b85534f\"] > div:nth-of-type(1) > p:nth-of-type(1)",
+              "tag": "P",
+              "text": "We complement our rigging and mooring business with our fabrication services that includes project management, engineering design, procureme",
+              "family": "articulat-cf, sans-serif",
+              "weight": "400",
+              "size": "13.65px",
+              "lh": "20.475px",
+              "tracking": "normal",
+              "color": "rgb(0, 22, 42)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Normal",
+                  "postScriptName": "ArticulatCF-Normal",
+                  "isCustomFont": true,
+                  "glyphCount": 398
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"3ec8ec3\"] > div:nth-of-type(1) > div:nth-of-type(1) > a:nth-of-type(1) > span:nth-of-type(1) > span:nth-of-type(1)",
+              "tag": "SPAN",
+              "text": "Download Brochure",
+              "family": "articulat-cf, sans-serif",
+              "weight": "400",
+              "size": "13.65px",
+              "lh": "20.475px",
+              "tracking": "normal",
+              "color": "rgb(255, 255, 255)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Normal",
+                  "postScriptName": "ArticulatCF-Normal",
+                  "isCustomFont": true,
+                  "glyphCount": 17
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"42acb9e\"] > div:nth-of-type(1) > h2:nth-of-type(1)",
+              "tag": "H2",
+              "text": "Leading the Future of Safe & Successful Operations",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "33.15px",
+              "lh": "33.15px",
+              "tracking": "normal",
+              "color": "rgb(255, 255, 255)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 48
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"6c73d54\"] > div:nth-of-type(1) > p:nth-of-type(1)",
+              "tag": "P",
+              "text": "Partner with us today – With decades of experience and a worldwide network, Franklin Offshore delivers precision-engineered rigging, mooring",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "13.65px",
+              "lh": "20.475px",
+              "tracking": "normal",
+              "color": "rgb(255, 255, 255)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 179
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"4f943e6\"] > div:nth-of-type(1) > h2:nth-of-type(1)",
+              "tag": "H2",
+              "text": "Copyright 2026 Franklin Offshore Pte. Ltd. All Rights Reserved\n Designed with ♡ by  Wondertabs",
+              "family": "articulat-cf, sans-serif",
+              "weight": "400",
+              "size": "12.87px",
+              "lh": "19.305px",
+              "tracking": "normal",
+              "color": "rgb(255, 255, 255)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Normal",
+                  "postScriptName": "ArticulatCF-Normal",
+                  "isCustomFont": true,
+                  "glyphCount": 79
+                },
+                {
+                  "familyName": "Adwaita Mono",
+                  "postScriptName": "Adwaita-Mono",
+                  "isCustomFont": false,
+                  "glyphCount": 1
+                }
+              ]
+            }
+          ],
+          "layout": {
+            "w": 390,
+            "scrollWidth": 390,
+            "height": 2594
+          }
+        }
+      ]
+    },
+    {
+      "name": "product-detail",
+      "viewports": [
+        {
+          "width": 1440,
+          "url": "https://franklinoffshore.com/product-service-post/steel-wire-rope/",
+          "at": "2026-11-03T05:25:32.306Z",
+          "samples": [
+            {
+              "selector": "[data-id=\"20264f1\"] > div:nth-of-type(1) > nav:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > a:nth-of-type(1)",
+              "tag": "A",
+              "text": "About",
+              "family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+              "weight": "400",
+              "size": "16px",
+              "lh": "24px",
+              "tracking": "normal",
+              "color": "rgb(0, 22, 42)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 5
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"20264f1\"] > div:nth-of-type(1) > nav:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > a:nth-of-type(1) > span:nth-of-type(1)",
+              "tag": "SPAN",
+              "text": "About",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "14.4px",
+              "lh": "21.6px",
+              "tracking": "normal",
+              "color": "rgb(0, 22, 42)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 5
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"0e87772\"] > div:nth-of-type(1) > div:nth-of-type(1) > a:nth-of-type(1) > span:nth-of-type(1) > span:nth-of-type(1)",
+              "tag": "SPAN",
+              "text": "Contact Us",
+              "family": "articulat-cf, sans-serif",
+              "weight": "400",
+              "size": "14.4px",
+              "lh": "21.6px",
+              "tracking": "normal",
+              "color": "rgb(255, 255, 255)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Normal",
+                  "postScriptName": "ArticulatCF-Normal",
+                  "isCustomFont": true,
+                  "glyphCount": 10
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"9cc494a\"] > div:nth-of-type(1) > h1:nth-of-type(1)",
+              "tag": "H1",
+              "text": "Stainless Steel Wire Rope",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "50.4px",
+              "lh": "60.48px",
+              "tracking": "normal",
+              "color": "rgb(0, 22, 42)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 25
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"dfa5d5c\"] > div:nth-of-type(1) > h2:nth-of-type(1)",
+              "tag": "H2",
+              "text": "Product Overview",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "21.6px",
+              "lh": "25.92px",
+              "tracking": "normal",
+              "color": "rgb(0, 22, 42)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 16
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"f023734\"] > div:nth-of-type(1) > p:nth-of-type(1)",
+              "tag": "P",
+              "text": "We stock a wide range of stainless steel wire ropes for high-corrosion environments. Known for their strength and durability, these ropes ar",
+              "family": "articulat-cf, sans-serif",
+              "weight": "400",
+              "size": "14.4px",
+              "lh": "21.6px",
+              "tracking": "normal",
+              "color": "rgb(0, 22, 42)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Normal",
+                  "postScriptName": "ArticulatCF-Normal",
+                  "isCustomFont": true,
+                  "glyphCount": 230
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"264fa91\"] > div:nth-of-type(1) > h2:nth-of-type(1)",
+              "tag": "H2",
+              "text": "Inventory we carry",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "17.28px",
+              "lh": "25.92px",
+              "tracking": "normal",
+              "color": "rgb(0, 22, 42)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 18
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"42acb9e\"] > div:nth-of-type(1) > h2:nth-of-type(1)",
+              "tag": "H2",
+              "text": "Leading the Future of Safe & Successful Operations",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "64.8px",
+              "lh": "64.8px",
+              "tracking": "normal",
+              "color": "rgb(255, 255, 255)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 48
+                }
+              ]
+            }
+          ],
+          "layout": {
+            "w": 1440,
+            "scrollWidth": 1425,
+            "height": 2501
+          }
+        },
+        {
+          "width": 390,
+          "url": "https://franklinoffshore.com/product-service-post/steel-wire-rope/",
+          "at": "2026-11-03T05:25:32.488Z",
+          "samples": [
+            {
+              "selector": "[data-id=\"9cc494a\"] > div:nth-of-type(1) > h1:nth-of-type(1)",
+              "tag": "H1",
+              "text": "Stainless Steel Wire Rope",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "29.25px",
+              "lh": "35.1px",
+              "tracking": "normal",
+              "color": "rgb(0, 22, 42)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 24
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"dfa5d5c\"] > div:nth-of-type(1) > h2:nth-of-type(1)",
+              "tag": "H2",
+              "text": "Product Overview",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "18.72px",
+              "lh": "22.464px",
+              "tracking": "normal",
+              "color": "rgb(0, 22, 42)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 16
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"f023734\"] > div:nth-of-type(1) > p:nth-of-type(1)",
+              "tag": "P",
+              "text": "We stock a wide range of stainless steel wire ropes for high-corrosion environments. Known for their strength and durability, these ropes ar",
+              "family": "articulat-cf, sans-serif",
+              "weight": "400",
+              "size": "13.65px",
+              "lh": "20.475px",
+              "tracking": "normal",
+              "color": "rgb(0, 22, 42)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Normal",
+                  "postScriptName": "ArticulatCF-Normal",
+                  "isCustomFont": true,
+                  "glyphCount": 228
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"264fa91\"] > div:nth-of-type(1) > h2:nth-of-type(1)",
+              "tag": "H2",
+              "text": "Inventory we carry",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "17.55px",
+              "lh": "26.325px",
+              "tracking": "normal",
+              "color": "rgb(0, 22, 42)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 18
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"f754767\"] > div:nth-of-type(1) > div:nth-of-type(1) > a:nth-of-type(1) > span:nth-of-type(1) > span:nth-of-type(1)",
+              "tag": "SPAN",
+              "text": "Download Brochure",
+              "family": "articulat-cf, sans-serif",
+              "weight": "400",
+              "size": "13.65px",
+              "lh": "20.475px",
+              "tracking": "normal",
+              "color": "rgb(255, 255, 255)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Normal",
+                  "postScriptName": "ArticulatCF-Normal",
+                  "isCustomFont": true,
+                  "glyphCount": 17
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"42acb9e\"] > div:nth-of-type(1) > h2:nth-of-type(1)",
+              "tag": "H2",
+              "text": "Leading the Future of Safe & Successful Operations",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "33.15px",
+              "lh": "33.15px",
+              "tracking": "normal",
+              "color": "rgb(255, 255, 255)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 48
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"6c73d54\"] > div:nth-of-type(1) > p:nth-of-type(1)",
+              "tag": "P",
+              "text": "Partner with us today – With decades of experience and a worldwide network, Franklin Offshore delivers precision-engineered rigging, mooring",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "13.65px",
+              "lh": "20.475px",
+              "tracking": "normal",
+              "color": "rgb(255, 255, 255)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 179
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"4f943e6\"] > div:nth-of-type(1) > h2:nth-of-type(1)",
+              "tag": "H2",
+              "text": "Copyright 2026 Franklin Offshore Pte. Ltd. All Rights Reserved\n Designed with ♡ by  Wondertabs",
+              "family": "articulat-cf, sans-serif",
+              "weight": "400",
+              "size": "12.87px",
+              "lh": "19.305px",
+              "tracking": "normal",
+              "color": "rgb(255, 255, 255)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Normal",
+                  "postScriptName": "ArticulatCF-Normal",
+                  "isCustomFont": true,
+                  "glyphCount": 79
+                },
+                {
+                  "familyName": "Adwaita Mono",
+                  "postScriptName": "Adwaita-Mono",
+                  "isCustomFont": false,
+                  "glyphCount": 1
+                }
+              ]
+            }
+          ],
+          "layout": {
+            "w": 390,
+            "scrollWidth": 390,
+            "height": 2625
+          }
+        }
+      ]
+    },
+    {
+      "name": "project",
+      "viewports": [
+        {
+          "width": 1440,
+          "url": "https://franklinoffshore.com/news-events-posts/conquering-challenges-delivering-offshore-excellence/",
+          "at": "2026-11-03T05:21:29.595Z",
+          "samples": [
+            {
+              "selector": "[data-id=\"0e87772\"] > div:nth-of-type(1) > div:nth-of-type(1) > a:nth-of-type(1) > span:nth-of-type(1) > span:nth-of-type(1)",
+              "tag": "SPAN",
+              "text": "Contact Us",
+              "family": "articulat-cf, sans-serif",
+              "weight": "400",
+              "size": "14.4px",
+              "lh": "21.6px",
+              "tracking": "normal",
+              "color": "rgb(255, 255, 255)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Normal",
+                  "postScriptName": "ArticulatCF-Normal",
+                  "isCustomFont": true,
+                  "glyphCount": 10
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"9d4cfd2\"] > div:nth-of-type(1) > h1:nth-of-type(1)",
+              "tag": "H1",
+              "text": "Conquering Challenges, Delivering Offshore Excellence",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "86.4px",
+              "lh": "86.4px",
+              "tracking": "normal",
+              "color": "rgb(255, 255, 255)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 52
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"98cf96e\"] > div:nth-of-type(1) > p:nth-of-type(1)",
+              "tag": "P",
+              "text": "Overcoming challenges to deliver success!This project came with its fair share of challenges—difficult seabed conditions, complex logistics,",
+              "family": "articulat-cf, sans-serif",
+              "weight": "400",
+              "size": "14.4px",
+              "lh": "21.6px",
+              "tracking": "normal",
+              "color": "rgb(0, 22, 42)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Normal",
+                  "postScriptName": "ArticulatCF-Normal",
+                  "isCustomFont": true,
+                  "glyphCount": 897
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"4e5597b\"] > div:nth-of-type(1) > h2:nth-of-type(1)",
+              "tag": "H2",
+              "text": "Discover More Stories",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "50.4px",
+              "lh": "60.48px",
+              "tracking": "normal",
+              "color": "rgb(0, 74, 152)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 21
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"cbac4e1\"] > div:nth-of-type(1) > h2:nth-of-type(1)",
+              "tag": "H2",
+              "text": "Events",
+              "family": "articulat-cf, sans-serif",
+              "weight": "400",
+              "size": "14.4px",
+              "lh": "21.6px",
+              "tracking": "normal",
+              "color": "rgb(0, 22, 42)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Normal",
+                  "postScriptName": "ArticulatCF-Normal",
+                  "isCustomFont": true,
+                  "glyphCount": 6
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"e7a66cb\"] > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > h2:nth-of-type(1)",
+              "tag": "H2",
+              "text": "MERLION Heavy Lift Slings Steal the Spotlight",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "21.6px",
+              "lh": "25.92px",
+              "tracking": "normal",
+              "color": "rgb(0, 22, 42)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 44
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"42acb9e\"] > div:nth-of-type(1) > h2:nth-of-type(1)",
+              "tag": "H2",
+              "text": "Leading the Future of Safe & Successful Operations",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "64.8px",
+              "lh": "64.8px",
+              "tracking": "normal",
+              "color": "rgb(255, 255, 255)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 48
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"6c73d54\"] > div:nth-of-type(1) > p:nth-of-type(1)",
+              "tag": "P",
+              "text": "Partner with us today – With decades of experience and a worldwide network, Franklin Offshore delivers precision-engineered rigging, mooring",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "14.4px",
+              "lh": "21.6px",
+              "tracking": "normal",
+              "color": "rgb(255, 255, 255)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 180
+                }
+              ]
+            }
+          ],
+          "layout": {
+            "w": 1440,
+            "scrollWidth": 1425,
+            "height": 3047
+          }
+        },
+        {
+          "width": 390,
+          "url": "https://franklinoffshore.com/news-events-posts/conquering-challenges-delivering-offshore-excellence/",
+          "at": "2026-11-03T05:21:30.014Z",
+          "samples": [
+            {
+              "selector": "[data-id=\"9d4cfd2\"] > div:nth-of-type(1) > h1:nth-of-type(1)",
+              "tag": "H1",
+              "text": "Conquering Challenges, Delivering Offshore Excellence",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "33.15px",
+              "lh": "33.15px",
+              "tracking": "normal",
+              "color": "rgb(255, 255, 255)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 51
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"98cf96e\"] > div:nth-of-type(1) > p:nth-of-type(1)",
+              "tag": "P",
+              "text": "Overcoming challenges to deliver success!This project came with its fair share of challenges—difficult seabed conditions, complex logistics,",
+              "family": "articulat-cf, sans-serif",
+              "weight": "400",
+              "size": "13.65px",
+              "lh": "20.475px",
+              "tracking": "normal",
+              "color": "rgb(0, 22, 42)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Normal",
+                  "postScriptName": "ArticulatCF-Normal",
+                  "isCustomFont": true,
+                  "glyphCount": 887
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"4e5597b\"] > div:nth-of-type(1) > h2:nth-of-type(1)",
+              "tag": "H2",
+              "text": "Discover More Stories",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "29.25px",
+              "lh": "35.1px",
+              "tracking": "normal",
+              "color": "rgb(0, 74, 152)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 20
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"cbac4e1\"] > div:nth-of-type(1) > h2:nth-of-type(1)",
+              "tag": "H2",
+              "text": "Events",
+              "family": "articulat-cf, sans-serif",
+              "weight": "400",
+              "size": "13.65px",
+              "lh": "20.475px",
+              "tracking": "normal",
+              "color": "rgb(0, 22, 42)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Normal",
+                  "postScriptName": "ArticulatCF-Normal",
+                  "isCustomFont": true,
+                  "glyphCount": 6
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"e7a66cb\"] > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > h2:nth-of-type(1)",
+              "tag": "H2",
+              "text": "MERLION Heavy Lift Slings Steal the Spotlight",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "18.72px",
+              "lh": "22.464px",
+              "tracking": "normal",
+              "color": "rgb(0, 22, 42)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 44
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"6fa98be\"] > div:nth-of-type(1) > div:nth-of-type(1) > a:nth-of-type(1) > span:nth-of-type(1) > span:nth-of-type(1)",
+              "tag": "SPAN",
+              "text": "Continue Reading",
+              "family": "articulat-cf, sans-serif",
+              "weight": "400",
+              "size": "13.65px",
+              "lh": "20.475px",
+              "tracking": "normal",
+              "color": "rgb(0, 22, 42)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Normal",
+                  "postScriptName": "ArticulatCF-Normal",
+                  "isCustomFont": true,
+                  "glyphCount": 16
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"42acb9e\"] > div:nth-of-type(1) > h2:nth-of-type(1)",
+              "tag": "H2",
+              "text": "Leading the Future of Safe & Successful Operations",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "33.15px",
+              "lh": "33.15px",
+              "tracking": "normal",
+              "color": "rgb(255, 255, 255)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 48
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"6c73d54\"] > div:nth-of-type(1) > p:nth-of-type(1)",
+              "tag": "P",
+              "text": "Partner with us today – With decades of experience and a worldwide network, Franklin Offshore delivers precision-engineered rigging, mooring",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "13.65px",
+              "lh": "20.475px",
+              "tracking": "normal",
+              "color": "rgb(255, 255, 255)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 179
+                }
+              ]
+            }
+          ],
+          "layout": {
+            "w": 390,
+            "scrollWidth": 390,
+            "height": 3008
+          }
+        }
+      ]
+    },
+    {
+      "name": "contact",
+      "viewports": [
+        {
+          "width": 1440,
+          "url": "https://franklinoffshore.com/contact-us/",
+          "at": "2026-11-03T05:21:21.052Z",
+          "samples": [
+            {
+              "selector": "[data-id=\"20264f1\"] > div:nth-of-type(1) > nav:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > a:nth-of-type(1)",
+              "tag": "A",
+              "text": "About",
+              "family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+              "weight": "400",
+              "size": "16px",
+              "lh": "24px",
+              "tracking": "normal",
+              "color": "rgb(0, 22, 42)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 5
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"20264f1\"] > div:nth-of-type(1) > nav:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > a:nth-of-type(1) > span:nth-of-type(1)",
+              "tag": "SPAN",
+              "text": "About",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "14.4px",
+              "lh": "21.6px",
+              "tracking": "normal",
+              "color": "rgb(0, 22, 42)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 5
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"0e87772\"] > div:nth-of-type(1) > div:nth-of-type(1) > a:nth-of-type(1) > span:nth-of-type(1) > span:nth-of-type(1)",
+              "tag": "SPAN",
+              "text": "Contact Us",
+              "family": "articulat-cf, sans-serif",
+              "weight": "400",
+              "size": "14.4px",
+              "lh": "21.6px",
+              "tracking": "normal",
+              "color": "rgb(255, 255, 255)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Normal",
+                  "postScriptName": "ArticulatCF-Normal",
+                  "isCustomFont": true,
+                  "glyphCount": 10
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"0510658\"] > div:nth-of-type(1) > h1:nth-of-type(1)",
+              "tag": "H1",
+              "text": "Connect with Us Now",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "86.4px",
+              "lh": "86.4px",
+              "tracking": "normal",
+              "color": "rgb(255, 255, 255)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 18
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"9c60273\"] > div:nth-of-type(1) > h2:nth-of-type(1)",
+              "tag": "H2",
+              "text": "Franklin Offshore Global Headquarters",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "50.4px",
+              "lh": "60.48px",
+              "tracking": "normal",
+              "color": "rgb(0, 22, 42)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 36
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"371d816\"] > div:nth-of-type(1) > article:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > p:nth-of-type(1)",
+              "tag": "P",
+              "text": "Connect with Franklin Offshore today to discover a comprehensive range of industry-leading marine and offshore solutions, meticulously engin",
+              "family": "articulat-cf, sans-serif",
+              "weight": "400",
+              "size": "14.4px",
+              "lh": "21.6px",
+              "tracking": "normal",
+              "color": "rgb(0, 22, 42)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Normal",
+                  "postScriptName": "ArticulatCF-Normal",
+                  "isCustomFont": true,
+                  "glyphCount": 248
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"51bfd92\"] > div:nth-of-type(1) > h2:nth-of-type(1)",
+              "tag": "H2",
+              "text": "Franklin Offshore International",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "28.8px",
+              "lh": "34.56px",
+              "tracking": "normal",
+              "color": "rgb(0, 22, 42)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 31
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"c9ce8d0\"] > div:nth-of-type(1) > form:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > label:nth-of-type(1)",
+              "tag": "LABEL",
+              "text": "First Name",
+              "family": "articulat-cf, sans-serif",
+              "weight": "400",
+              "size": "14.4px",
+              "lh": "21.6px",
+              "tracking": "normal",
+              "color": "rgb(0, 22, 42)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Normal",
+                  "postScriptName": "ArticulatCF-Normal",
+                  "isCustomFont": true,
+                  "glyphCount": 9
+                }
+              ]
+            }
+          ],
+          "layout": {
+            "w": 1440,
+            "scrollWidth": 1425,
+            "height": 3888
+          }
+        },
+        {
+          "width": 390,
+          "url": "https://franklinoffshore.com/contact-us/",
+          "at": "2026-11-03T05:21:21.513Z",
+          "samples": [
+            {
+              "selector": "[data-id=\"0510658\"] > div:nth-of-type(1) > h1:nth-of-type(1)",
+              "tag": "H1",
+              "text": "Connect with Us Now",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "33.15px",
+              "lh": "33.15px",
+              "tracking": "normal",
+              "color": "rgb(255, 255, 255)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 19
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"9c60273\"] > div:nth-of-type(1) > h2:nth-of-type(1)",
+              "tag": "H2",
+              "text": "Franklin Offshore Global Headquarters",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "29.25px",
+              "lh": "35.1px",
+              "tracking": "normal",
+              "color": "rgb(0, 22, 42)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 36
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"371d816\"] > div:nth-of-type(1) > article:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > p:nth-of-type(1)",
+              "tag": "P",
+              "text": "Connect with Franklin Offshore today to discover a comprehensive range of industry-leading marine and offshore solutions, meticulously engin",
+              "family": "articulat-cf, sans-serif",
+              "weight": "400",
+              "size": "13.65px",
+              "lh": "20.475px",
+              "tracking": "normal",
+              "color": "rgb(0, 22, 42)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Normal",
+                  "postScriptName": "ArticulatCF-Normal",
+                  "isCustomFont": true,
+                  "glyphCount": 248
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"1b4fdb6\"] > div:nth-of-type(1) > h2:nth-of-type(1)",
+              "tag": "H2",
+              "text": "Franklin Offshore International",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "17.55px",
+              "lh": "21.06px",
+              "tracking": "normal",
+              "color": "rgb(0, 22, 42)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 31
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"81f8ad5\"] > div:nth-of-type(1) > h2:nth-of-type(1)",
+              "tag": "H2",
+              "text": "Get In Touch",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "33.93px",
+              "lh": "40.716px",
+              "tracking": "normal",
+              "color": "rgb(0, 22, 42)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 12
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"c9ce8d0\"] > div:nth-of-type(1) > form:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > label:nth-of-type(1)",
+              "tag": "LABEL",
+              "text": "First Name",
+              "family": "articulat-cf, sans-serif",
+              "weight": "400",
+              "size": "13.65px",
+              "lh": "20.475px",
+              "tracking": "normal",
+              "color": "rgb(0, 22, 42)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Normal",
+                  "postScriptName": "ArticulatCF-Normal",
+                  "isCustomFont": true,
+                  "glyphCount": 9
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"c9ce8d0\"] > div:nth-of-type(1) > form:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(7) > button:nth-of-type(1) > span:nth-of-type(1) > span:nth-of-type(1)",
+              "tag": "SPAN",
+              "text": "Submit Now",
+              "family": "articulat-cf, sans-serif",
+              "weight": "400",
+              "size": "14.4px",
+              "lh": "21.6px",
+              "tracking": "normal",
+              "color": "rgb(255, 255, 255)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Normal",
+                  "postScriptName": "ArticulatCF-Normal",
+                  "isCustomFont": true,
+                  "glyphCount": 10
+                }
+              ]
+            },
+            {
+              "selector": "[data-id=\"3155f68\"] > div:nth-of-type(1) > h2:nth-of-type(1)",
+              "tag": "H2",
+              "text": "11",
+              "family": "articulat-cf, sans-serif",
+              "weight": "600",
+              "size": "46.8px",
+              "lh": "46.8px",
+              "tracking": "normal",
+              "color": "rgb(0, 74, 152)",
+              "bg": "rgba(0, 0, 0, 0)",
+              "platformFonts": [
+                {
+                  "familyName": "Articulat CF Medium",
+                  "postScriptName": "ArticulatCF-Medium",
+                  "isCustomFont": true,
+                  "glyphCount": 2
+                }
+              ]
+            }
+          ],
+          "layout": {
+            "w": 390,
+            "scrollWidth": 390,
+            "height": 4082
+          }
+        }
+      ]
+    }
+  ],
+  "fontFiles": {
+    "date": "2026-11-03T13:23:46.403756",
+    "note": "WOFF2 table directory parsed in memory; no font binaries persisted",
+    "files": [
+      {
+        "url": "https://use.typekit.net/af/2c0cee/000000000000000077524f49/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3",
+        "contentType": "application/font-woff2",
+        "length": 21556,
+        "sha256": "a1509b249da65255fcb917aedbdd0f38058dfe1650da1e92bccaeee87445ccf4",
+        "signature": "wOF2",
+        "numTables": 14,
+        "tableTags": [
+          "CFF ",
+          "DYNA",
+          "GDEF",
+          "GDYN",
+          "GPOS",
+          "GSUB",
+          "OS/2",
+          "cmap",
+          "head",
+          "hhea",
+          "hmtx",
+          "maxp",
+          "name",
+          "post"
+        ],
+        "variable_fvar_present": false,
+        "fontFace": "@font-face {\nfont-family:\"articulat-cf\";\nsrc:url(\"https://use.typekit.net/af/2c0cee/000000000000000077524f49/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3\") format(\"woff2\"),url(\"https://use.typekit.net/af/2c0cee/000000000000000077524f49/31/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3\") format(\"woff\"),url(\"https://use.typekit.net/af/2c0cee/000000000000000077524f49/31/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3\") format(\"opentype\");\nfont-display:auto;font-style:normal;font-weight:400;font-stretch:normal;\n}"
+      },
+      {
+        "url": "https://use.typekit.net/af/610a9a/000000000000000077524f50/31/l?subset_id=2&fvd=n5&v=3",
+        "contentType": "application/font-woff2",
+        "length": 17464,
+        "sha256": "62f2393cb9a93834e09b2ec148d943ea31615f89ecdb1c9dd6e8b867bbc1b18a",
+        "signature": "wOF2",
+        "numTables": 13,
+        "tableTags": [
+          "CFF ",
+          "DYNA",
+          "GDEF",
+          "GDYN",
+          "GPOS",
+          "OS/2",
+          "cmap",
+          "head",
+          "hhea",
+          "hmtx",
+          "maxp",
+          "name",
+          "post"
+        ],
+        "variable_fvar_present": false,
+        "fontFace": "@font-face {\nfont-family:\"articulat-cf\";\nsrc:url(\"https://use.typekit.net/af/610a9a/000000000000000077524f50/31/l?subset_id=2&fvd=n5&v=3\") format(\"woff2\"),url(\"https://use.typekit.net/af/610a9a/000000000000000077524f50/31/d?subset_id=2&fvd=n5&v=3\") format(\"woff\"),url(\"https://use.typekit.net/af/610a9a/000000000000000077524f50/31/a?subset_id=2&fvd=n5&v=3\") format(\"opentype\");\nfont-display:auto;font-style:normal;font-weight:500;font-stretch:normal;\n}"
+      },
+      {
+        "url": "https://use.typekit.net/af/d33214/000000000000000077524f4e/31/l?subset_id=2&fvd=n6&v=3",
+        "contentType": "application/font-woff2",
+        "length": 17588,
+        "sha256": "2202430e267f374b739595c364d60f1543bed29a026f577586bb66630526153a",
+        "signature": "wOF2",
+        "numTables": 13,
+        "tableTags": [
+          "CFF ",
+          "DYNA",
+          "GDEF",
+          "GDYN",
+          "GPOS",
+          "OS/2",
+          "cmap",
+          "head",
+          "hhea",
+          "hmtx",
+          "maxp",
+          "name",
+          "post"
+        ],
+        "variable_fvar_present": false,
+        "fontFace": "@font-face {\nfont-family:\"articulat-cf\";\nsrc:url(\"https://use.typekit.net/af/d33214/000000000000000077524f4e/31/l?subset_id=2&fvd=n6&v=3\") format(\"woff2\"),url(\"https://use.typekit.net/af/d33214/000000000000000077524f4e/31/d?subset_id=2&fvd=n6&v=3\") format(\"woff\"),url(\"https://use.typekit.net/af/d33214/000000000000000077524f4e/31/a?subset_id=2&fvd=n6&v=3\") format(\"opentype\");\nfont-display:auto;font-style:normal;font-weight:600;font-stretch:normal;\n}"
+      }
+    ]
+  },
+  "fontFaces": {
+    "url": "https://use.typekit.net/xws0qwn.css",
+    "date": "2026-11-03T13:22:54.198370",
+    "fontFaces": [
+      "@font-face {\nfont-family:\"articulat-cf\";\nsrc:url(\"https://use.typekit.net/af/2c0cee/000000000000000077524f49/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3\") format(\"woff2\"),url(\"https://use.typekit.net/af/2c0cee/000000000000000077524f49/31/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3\") format(\"woff\"),url(\"https://use.typekit.net/af/2c0cee/000000000000000077524f49/31/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3\") format(\"opentype\");\nfont-display:auto;font-style:normal;font-weight:400;font-stretch:normal;\n}",
+      "@font-face {\nfont-family:\"articulat-cf\";\nsrc:url(\"https://use.typekit.net/af/610a9a/000000000000000077524f50/31/l?subset_id=2&fvd=n5&v=3\") format(\"woff2\"),url(\"https://use.typekit.net/af/610a9a/000000000000000077524f50/31/d?subset_id=2&fvd=n5&v=3\") format(\"woff\"),url(\"https://use.typekit.net/af/610a9a/000000000000000077524f50/31/a?subset_id=2&fvd=n5&v=3\") format(\"opentype\");\nfont-display:auto;font-style:normal;font-weight:500;font-stretch:normal;\n}",
+      "@font-face {\nfont-family:\"articulat-cf\";\nsrc:url(\"https://use.typekit.net/af/d33214/000000000000000077524f4e/31/l?subset_id=2&fvd=n6&v=3\") format(\"woff2\"),url(\"https://use.typekit.net/af/d33214/000000000000000077524f4e/31/d?subset_id=2&fvd=n6&v=3\") format(\"woff\"),url(\"https://use.typekit.net/af/d33214/000000000000000077524f4e/31/a?subset_id=2&fvd=n6&v=3\") format(\"opentype\");\nfont-display:auto;font-style:normal;font-weight:600;font-stretch:normal;\n}",
+      "@font-face {\nfont-family:\"articulat-cf\";\nsrc:url(\"https://use.typekit.net/af/df7eab/000000000000000077524f45/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3\") format(\"woff2\"),url(\"https://use.typekit.net/af/df7eab/000000000000000077524f45/31/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3\") format(\"woff\"),url(\"https://use.typekit.net/af/df7eab/000000000000000077524f45/31/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3\") format(\"opentype\");\nfont-display:auto;font-style:normal;font-weight:700;font-stretch:normal;\n}",
+      "@font-face {\nfont-family:\"articulat-cf\";\nsrc:url(\"https://use.typekit.net/af/eb68ab/000000000000000077524f46/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3\") format(\"woff2\"),url(\"https://use.typekit.net/af/eb68ab/000000000000000077524f46/31/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3\") format(\"woff\"),url(\"https://use.typekit.net/af/eb68ab/000000000000000077524f46/31/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3\") format(\"opentype\");\nfont-display:auto;font-style:italic;font-weight:700;font-stretch:normal;\n}",
+      "@font-face {\nfont-family:\"articulat-cf\";\nsrc:url(\"https://use.typekit.net/af/019781/000000000000000077524f48/31/l?subset_id=2&fvd=i6&v=3\") format(\"woff2\"),url(\"https://use.typekit.net/af/019781/000000000000000077524f48/31/d?subset_id=2&fvd=i6&v=3\") format(\"woff\"),url(\"https://use.typekit.net/af/019781/000000000000000077524f48/31/a?subset_id=2&fvd=i6&v=3\") format(\"opentype\");\nfont-display:auto;font-style:italic;font-weight:600;font-stretch:normal;\n}",
+      "@font-face {\nfont-family:\"articulat-cf\";\nsrc:url(\"https://use.typekit.net/af/cd85a9/000000000000000077524f47/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3\") format(\"woff2\"),url(\"https://use.typekit.net/af/cd85a9/000000000000000077524f47/31/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3\") format(\"woff\"),url(\"https://use.typekit.net/af/cd85a9/000000000000000077524f47/31/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3\") format(\"opentype\");\nfont-display:auto;font-style:italic;font-weight:400;font-stretch:normal;\n}",
+      "@font-face {\nfont-family:\"articulat-cf\";\nsrc:url(\"https://use.typekit.net/af/5d517a/000000000000000077524f4d/31/l?subset_id=2&fvd=i5&v=3\") format(\"woff2\"),url(\"https://use.typekit.net/af/5d517a/000000000000000077524f4d/31/d?subset_id=2&fvd=i5&v=3\") format(\"woff\"),url(\"https://use.typekit.net/af/5d517a/000000000000000077524f4d/31/a?subset_id=2&fvd=i5&v=3\") format(\"opentype\");\nfont-display:auto;font-style:italic;font-weight:500;font-stretch:normal;\n}",
+      "@font-face {\nfont-family:\"articulat-heavy-cf\";\nsrc:url(\"https://use.typekit.net/af/768025/000000000000000077524f4a/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3\") format(\"woff2\"),url(\"https://use.typekit.net/af/768025/000000000000000077524f4a/31/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3\") format(\"woff\"),url(\"https://use.typekit.net/af/768025/000000000000000077524f4a/31/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3\") format(\"opentype\");\nfont-display:auto;font-style:normal;font-weight:900;font-stretch:normal;\n}",
+      "@font-face {\nfont-family:\"articulat-heavy-cf\";\nsrc:url(\"https://use.typekit.net/af/b5ab6b/000000000000000077524f41/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i9&v=3\") format(\"woff2\"),url(\"https://use.typekit.net/af/b5ab6b/000000000000000077524f41/31/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i9&v=3\") format(\"woff\"),url(\"https://use.typekit.net/af/b5ab6b/000000000000000077524f41/31/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i9&v=3\") format(\"opentype\");\nfont-display:auto;font-style:italic;font-weight:900;font-stretch:normal;\n}"
+    ]
+  },
+  "colors": {
+    "url": "https://franklinoffshore.com/",
+    "date": "2026-11-03T05:24:35.770Z",
+    "nodes": [
+      {
+        "selector": "body",
+        "color": "rgb(51, 51, 51)",
+        "bg": "rgb(255, 255, 255)",
+        "border": "0px none rgb(51, 51, 51)",
+        "borderBottom": "0px none rgb(51, 51, 51)",
+        "backgroundImage": "none",
+        "transition": "all",
+        "radius": "0px"
+      },
+      {
+        "selector": "[data-id=\"2e60a74\"]",
+        "color": "rgb(51, 51, 51)",
+        "bg": "rgb(255, 255, 255)",
+        "border": "0px none rgb(51, 51, 51)",
+        "borderBottom": "0px none rgb(51, 51, 51)",
+        "backgroundImage": "none",
+        "transition": "background 0.3s, border 0.3s, box-shadow 0.3s, transform 0.4s",
+        "radius": "0px"
+      },
+      {
+        "selector": "[data-id=\"0e87772\"] a",
+        "color": "rgb(255, 255, 255)",
+        "bg": "rgb(0, 74, 152)",
+        "border": "0px none rgb(255, 255, 255)",
+        "borderBottom": "0px none rgb(255, 255, 255)",
+        "backgroundImage": "none",
+        "transition": "transform 0.3s",
+        "radius": "72px"
+      },
+      {
+        "selector": "[data-id=\"3020aed\"] h2",
+        "color": "rgb(0, 22, 42)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(0, 22, 42)",
+        "borderBottom": "0px none rgb(0, 22, 42)",
+        "backgroundImage": "none",
+        "transition": "all",
+        "radius": "0px"
+      },
+      {
+        "selector": "[data-id=\"14f51e5\"] p",
+        "color": "rgb(0, 22, 42)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "border": "0px none rgb(0, 22, 42)",
+        "borderBottom": "0px none rgb(0, 22, 42)",
+        "backgroundImage": "none",
+        "transition": "all",
+        "radius": "0px"
+      },
+      {
+        "selector": "[data-id=\"1954c68\"]",
+        "color": "rgb(51, 51, 51)",
+        "bg": "rgb(0, 40, 77)",
+        "border": "0px none rgb(51, 51, 51)",
+        "borderBottom": "0px none rgb(51, 51, 51)",
+        "backgroundImage": "none",
+        "transition": "background 0.3s, border 0.3s, box-shadow 0.3s, transform 0.4s",
+        "radius": "0px"
+      },
+      {
+        "selector": "[data-id=\"c9cf1e2\"]",
+        "color": "rgb(51, 51, 51)",
+        "bg": "rgb(0, 22, 42)",
+        "border": "0px none rgb(51, 51, 51)",
+        "borderBottom": "0px none rgb(51, 51, 51)",
+        "backgroundImage": "url(\"https://franklinoffshore.com/wp-content/uploads/2025/10/AdobeStock_994451747-scaled.jpeg\")",
+        "transition": "background 0.3s, border 0.3s, box-shadow 0.3s, transform 0.4s",
+        "radius": "0px"
+      },
+      {
+        "selector": ".elementor-divider-separator",
+        "missing": true
+      }
+    ],
+    "hover": [
+      {
+        "selector": "[data-id=\"0e87772\"] a",
+        "style": {
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgb(0, 74, 152)",
+          "transition": "transform 0.3s",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        }
+      },
+      {
+        "selector": "[data-id=\"20264f1\"] .jet-nav-link-text",
+        "style": {
+          "color": "rgb(0, 22, 42)",
+          "bg": "rgba(0, 0, 0, 0)",
+          "transition": "all",
+          "transform": "none"
+        }
+      }
+    ]
+  },
+  "metadataSamples": [
+    {
+      "page": "home",
+      "url": "https://franklinoffshore.com/",
+      "at": "2026-11-03T05:25:34.340Z",
+      "title": "Homepage - Franklin Offshore",
+      "meta": [
+        {
+          "name": "robots",
+          "property": null,
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+          "httpEquiv": ""
+        },
+        {
+          "name": "description",
+          "property": null,
+          "content": "Franklin Offshore delivers trusted rigging and mooring services for the offshore oil and gas industry worldwide.",
+          "httpEquiv": ""
+        },
+        {
+          "name": "",
+          "property": "og:locale",
+          "content": "en_US",
+          "httpEquiv": ""
+        },
+        {
+          "name": "",
+          "property": "og:type",
+          "content": "website",
+          "httpEquiv": ""
+        },
+        {
+          "name": "",
+          "property": "og:title",
+          "content": "Homepage - Franklin Offshore",
+          "httpEquiv": ""
+        },
+        {
+          "name": "",
+          "property": "og:description",
+          "content": "Franklin Offshore delivers trusted rigging and mooring services for the offshore oil and gas industry worldwide.",
+          "httpEquiv": ""
+        },
+        {
+          "name": "",
+          "property": "og:url",
+          "content": "https://franklinoffshore.com/",
+          "httpEquiv": ""
+        },
+        {
+          "name": "",
+          "property": "og:site_name",
+          "content": "Franklin Offshore",
+          "httpEquiv": ""
+        },
+        {
+          "name": "",
+          "property": "og:image",
+          "content": "https://franklinoffshore.com/wp-content/uploads/2025/10/DJI_20250318193812_0168_D-1-1024x767.webp",
+          "httpEquiv": ""
+        },
+        {
+          "name": "twitter:card",
+          "property": null,
+          "content": "summary_large_image",
+          "httpEquiv": ""
+        }
+      ],
+      "links": [
+        {
+          "rel": "canonical",
+          "href": "https://franklinoffshore.com/",
+          "type": "",
+          "sizes": ""
+        },
+        {
+          "rel": "icon",
+          "href": "https://franklinoffshore.com/wp-content/uploads/2025/05/Favicon-1.png",
+          "type": "",
+          "sizes": "32x32"
+        },
+        {
+          "rel": "icon",
+          "href": "https://franklinoffshore.com/wp-content/uploads/2025/05/Favicon-1.png",
+          "type": "",
+          "sizes": "192x192"
+        },
+        {
+          "rel": "apple-touch-icon",
+          "href": "https://franklinoffshore.com/wp-content/uploads/2025/05/Favicon-1.png",
+          "type": "",
+          "sizes": ""
+        }
+      ],
+      "schemaTypes": [
+        "BreadcrumbList",
+        "EntryPoint",
+        "ImageObject",
+        "ListItem",
+        "Organization",
+        "PropertyValueSpecification",
+        "ReadAction",
+        "SearchAction",
+        "WebPage",
+        "WebSite"
+      ]
+    },
+    {
+      "page": "contact",
+      "url": "https://franklinoffshore.com/contact-us/",
+      "at": "2026-11-03T05:25:30.653Z",
+      "title": "Contact Us - Franklin Offshore",
+      "meta": [
+        {
+          "name": "robots",
+          "property": null,
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+          "httpEquiv": ""
+        },
+        {
+          "name": "description",
+          "property": null,
+          "content": "Connect with Franklin Offshore to explore offshore solutions that enhance safety, efficiency, and operational excellence.",
+          "httpEquiv": ""
+        },
+        {
+          "name": "",
+          "property": "og:locale",
+          "content": "en_US",
+          "httpEquiv": ""
+        },
+        {
+          "name": "",
+          "property": "og:type",
+          "content": "article",
+          "httpEquiv": ""
+        },
+        {
+          "name": "",
+          "property": "og:title",
+          "content": "Contact Us - Franklin Offshore",
+          "httpEquiv": ""
+        },
+        {
+          "name": "",
+          "property": "og:description",
+          "content": "Connect with Franklin Offshore to explore offshore solutions that enhance safety, efficiency, and operational excellence.",
+          "httpEquiv": ""
+        },
+        {
+          "name": "",
+          "property": "og:url",
+          "content": "https://franklinoffshore.com/contact-us/",
+          "httpEquiv": ""
+        },
+        {
+          "name": "",
+          "property": "og:site_name",
+          "content": "Franklin Offshore",
+          "httpEquiv": ""
+        },
+        {
+          "name": "",
+          "property": "og:image",
+          "content": "https://franklinoffshore.com/wp-content/uploads/2025/09/Frame-127018-1.png",
+          "httpEquiv": ""
+        },
+        {
+          "name": "",
+          "property": "og:image:width",
+          "content": "1334",
+          "httpEquiv": ""
+        },
+        {
+          "name": "",
+          "property": "og:image:height",
+          "content": "732",
+          "httpEquiv": ""
+        },
+        {
+          "name": "",
+          "property": "og:image:type",
+          "content": "image/png",
+          "httpEquiv": ""
+        },
+        {
+          "name": "twitter:card",
+          "property": null,
+          "content": "summary_large_image",
+          "httpEquiv": ""
+        }
+      ],
+      "links": [
+        {
+          "rel": "canonical",
+          "href": "https://franklinoffshore.com/contact-us/",
+          "type": "",
+          "sizes": ""
+        },
+        {
+          "rel": "icon",
+          "href": "https://franklinoffshore.com/wp-content/uploads/2025/05/Favicon-1.png",
+          "type": "",
+          "sizes": "32x32"
+        },
+        {
+          "rel": "icon",
+          "href": "https://franklinoffshore.com/wp-content/uploads/2025/05/Favicon-1.png",
+          "type": "",
+          "sizes": "192x192"
+        },
+        {
+          "rel": "apple-touch-icon",
+          "href": "https://franklinoffshore.com/wp-content/uploads/2025/05/Favicon-1.png",
+          "type": "",
+          "sizes": ""
+        }
+      ],
+      "schemaTypes": [
+        "BreadcrumbList",
+        "EntryPoint",
+        "ImageObject",
+        "ListItem",
+        "Organization",
+        "PropertyValueSpecification",
+        "ReadAction",
+        "SearchAction",
+        "WebPage",
+        "WebSite"
+      ]
+    },
+    {
+      "page": "fabrication",
+      "url": "https://franklinoffshore.com/product-service-post/fabrication/",
+      "at": "2026-11-03T05:25:33.603Z",
+      "title": "Fabrication - Franklin Offshore",
+      "meta": [
+        {
+          "name": "robots",
+          "property": null,
+          "content": "noindex, follow",
+          "httpEquiv": ""
+        },
+        {
+          "name": "",
+          "property": "og:locale",
+          "content": "en_US",
+          "httpEquiv": ""
+        },
+        {
+          "name": "",
+          "property": "og:type",
+          "content": "article",
+          "httpEquiv": ""
+        },
+        {
+          "name": "",
+          "property": "og:title",
+          "content": "Fabrication - Franklin Offshore",
+          "httpEquiv": ""
+        },
+        {
+          "name": "",
+          "property": "og:description",
+          "content": "Fabrication Service Overview We complement our rigging and mooring business with our fabrication services that includes project management, engineering design, procurement, steel work, piping, E&I, testing and commissioning. With our waterfront fabrication facility this provides the competitive edge to undertake large scale projects in terms of mass and size without any technical limitation on the […]",
+          "httpEquiv": ""
+        },
+        {
+          "name": "",
+          "property": "og:url",
+          "content": "https://franklinoffshore.com/product-service-post/fabrication/",
+          "httpEquiv": ""
+        },
+        {
+          "name": "",
+          "property": "og:site_name",
+          "content": "Franklin Offshore",
+          "httpEquiv": ""
+        },
+        {
+          "name": "",
+          "property": "og:image",
+          "content": "https://franklinoffshore.com/wp-content/uploads/2025/04/17188.jpg",
+          "httpEquiv": ""
+        },
+        {
+          "name": "",
+          "property": "og:image:width",
+          "content": "1000",
+          "httpEquiv": ""
+        },
+        {
+          "name": "",
+          "property": "og:image:height",
+          "content": "667",
+          "httpEquiv": ""
+        },
+        {
+          "name": "",
+          "property": "og:image:type",
+          "content": "image/jpeg",
+          "httpEquiv": ""
+        },
+        {
+          "name": "twitter:card",
+          "property": null,
+          "content": "summary_large_image",
+          "httpEquiv": ""
+        }
+      ],
+      "links": [
+        {
+          "rel": "icon",
+          "href": "https://franklinoffshore.com/wp-content/uploads/2025/05/Favicon-1.png",
+          "type": "",
+          "sizes": "32x32"
+        },
+        {
+          "rel": "icon",
+          "href": "https://franklinoffshore.com/wp-content/uploads/2025/05/Favicon-1.png",
+          "type": "",
+          "sizes": "192x192"
+        },
+        {
+          "rel": "apple-touch-icon",
+          "href": "https://franklinoffshore.com/wp-content/uploads/2025/05/Favicon-1.png",
+          "type": "",
+          "sizes": ""
+        }
+      ],
+      "schemaTypes": [
+        "BreadcrumbList",
+        "EntryPoint",
+        "ImageObject",
+        "ListItem",
+        "Organization",
+        "PropertyValueSpecification",
+        "ReadAction",
+        "SearchAction",
+        "WebPage",
+        "WebSite"
+      ]
+    },
+    {
+      "page": "product-detail",
+      "url": "https://franklinoffshore.com/product-service-post/steel-wire-rope/",
+      "at": "2026-11-03T05:25:32.298Z",
+      "title": "Steel Wire Rope - Franklin Offshore",
+      "meta": [
+        {
+          "name": "robots",
+          "property": null,
+          "content": "noindex, follow",
+          "httpEquiv": ""
+        },
+        {
+          "name": "",
+          "property": "og:locale",
+          "content": "en_US",
+          "httpEquiv": ""
+        },
+        {
+          "name": "",
+          "property": "og:type",
+          "content": "article",
+          "httpEquiv": ""
+        },
+        {
+          "name": "",
+          "property": "og:title",
+          "content": "Steel Wire Rope - Franklin Offshore",
+          "httpEquiv": ""
+        },
+        {
+          "name": "",
+          "property": "og:description",
+          "content": "We have the right product for your specific use, from lifting & rigging equipment to high-performance cranes and riser tensioner cables. These include: 6- and 8-strand, non-rotating | non-compacted, non-rotating | compacted, stainless steel, swaged forestry ropes and branded special wire ropes. Stainless Steel Wire Rope Product Overview We stock a wide range of stainless […]",
+          "httpEquiv": ""
+        },
+        {
+          "name": "",
+          "property": "og:url",
+          "content": "https://franklinoffshore.com/product-service-post/steel-wire-rope/",
+          "httpEquiv": ""
+        },
+        {
+          "name": "",
+          "property": "og:site_name",
+          "content": "Franklin Offshore",
+          "httpEquiv": ""
+        },
+        {
+          "name": "",
+          "property": "og:image",
+          "content": "https://franklinoffshore.com/wp-content/uploads/2025/04/Mask-group-2025-04-25T094409.988.png",
+          "httpEquiv": ""
+        },
+        {
+          "name": "",
+          "property": "og:image:width",
+          "content": "425",
+          "httpEquiv": ""
+        },
+        {
+          "name": "",
+          "property": "og:image:height",
+          "content": "536",
+          "httpEquiv": ""
+        },
+        {
+          "name": "",
+          "property": "og:image:type",
+          "content": "image/png",
+          "httpEquiv": ""
+        },
+        {
+          "name": "twitter:card",
+          "property": null,
+          "content": "summary_large_image",
+          "httpEquiv": ""
+        }
+      ],
+      "links": [
+        {
+          "rel": "icon",
+          "href": "https://franklinoffshore.com/wp-content/uploads/2025/05/Favicon-1.png",
+          "type": "",
+          "sizes": "32x32"
+        },
+        {
+          "rel": "icon",
+          "href": "https://franklinoffshore.com/wp-content/uploads/2025/05/Favicon-1.png",
+          "type": "",
+          "sizes": "192x192"
+        },
+        {
+          "rel": "apple-touch-icon",
+          "href": "https://franklinoffshore.com/wp-content/uploads/2025/05/Favicon-1.png",
+          "type": "",
+          "sizes": ""
+        }
+      ],
+      "schemaTypes": [
+        "BreadcrumbList",
+        "EntryPoint",
+        "ImageObject",
+        "ListItem",
+        "Organization",
+        "PropertyValueSpecification",
+        "ReadAction",
+        "SearchAction",
+        "WebPage",
+        "WebSite"
+      ]
+    }
+  ],
+  "sourceHashes": [
+    {
+      "source": "home-1440.json",
+      "sha256": "33cfbc0d53428edd8148fc6ff1d9f9f9b3a6b589ba8f291c7130836dfa60fa37"
+    },
+    {
+      "source": "home-390.json",
+      "sha256": "13829d4f442b2e945b9fa2fe1eba7c372cab39edebea9e3e7ada1d76226bee9c"
+    },
+    {
+      "source": "about-1440.json",
+      "sha256": "a505206b51aa1809faf119a1d686865d959f0d7434bef756a30862bedf12c594"
+    },
+    {
+      "source": "about-390.json",
+      "sha256": "7c4553c78a54c6146d118d87c8f20a4e19d505fbbbcc512a072b42d9895e8854"
+    },
+    {
+      "source": "services-1440.json",
+      "sha256": "d6c9a2f6e29f068715c9bc53d2226534584fb048c7555dc4b03ae77957c221ab"
+    },
+    {
+      "source": "services-390.json",
+      "sha256": "e9622791a003888887e12d02292328cea75af287d81c05e8ac3508358b61481a"
+    },
+    {
+      "source": "products-1440.json",
+      "sha256": "19c19b1c3d6ce57653bdbebdc634e5b52a37298e24f7ab2b9805bd12f1c41ec1"
+    },
+    {
+      "source": "products-390.json",
+      "sha256": "ef6c05a7ab61bf89250ccea09e5bc6469ab82048308063c44500006390d6e85f"
+    },
+    {
+      "source": "fabrication-1440.json",
+      "sha256": "e70bf81ca6e4dbcf191b4ee8ef6dbfe2b41a7fc449db34a27665f8c1cd1427e6"
+    },
+    {
+      "source": "fabrication-390.json",
+      "sha256": "c37cd0d62630be6a77a229ef5443540eef99e6cf2dc1590e734304c17b37e7f4"
+    },
+    {
+      "source": "product-detail-1440.json",
+      "sha256": "2324b551c6111bd259107c123d395193c102c36916c0def3220c18c40f12f4ee"
+    },
+    {
+      "source": "product-detail-390.json",
+      "sha256": "cb4234ac93e1664482802eada0c393c08b64256f6776116824483e44aa82d351"
+    },
+    {
+      "source": "project-1440.json",
+      "sha256": "246034b6f7d114cae505cc0d8a55fdd97600ce76d5f35d4e99100defb5fafcd1"
+    },
+    {
+      "source": "project-390.json",
+      "sha256": "14f196c7253e22fd30259d0868e0ca85d972fdaee36b12b8686c728065bf7e57"
+    },
+    {
+      "source": "contact-1440.json",
+      "sha256": "7a31d75ba40b693e3c4cb51356ce784d6f503642716297788f791574e0574dce"
+    },
+    {
+      "source": "contact-390.json",
+      "sha256": "45747236713303c528a4b5b16aa8eaa76c8b28d8542508f37f2ab344514d5302"
+    }
+  ],
+  "rights": "metadata and measurements only; no fonts/photos/videos/logos/complete HTML/CSS copied as reusable assets"
+}

@@ -1,0 +1,456 @@
+{
+  "researchDate": "2026-11-03",
+  "scope": "homepages only; source HTML and actual image metadata, no platform cache/ranking verification",
+  "sites": [
+    {
+      "label": "anduril",
+      "requestedUrl": "https://www.anduril.com/",
+      "url": "https://www.anduril.com/",
+      "at": "2026-11-03T05:26:12.935265+00:00",
+      "status": 200,
+      "title": "Transforming U.S. Defense Capabilities with Advanced Technology | Anduril",
+      "meta": [
+        {
+          "charset": "UTF-8"
+        },
+        {
+          "http-equiv": "X-UA-Compatible",
+          "content": "IE=edge,chrome=1"
+        },
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1.0, maximum-scale=5.0, minimal-ui, viewport-fit=cover"
+        },
+        {
+          "name": "description",
+          "content": "Anduril Industries builds advanced autonomous systems and defense technology to protect US and allied forces. Creating the future of national security through AI, robotics, and cutting-edge engineering. "
+        },
+        {
+          "property": "og:site_name",
+          "content": "Anduril"
+        },
+        {
+          "property": "og:url",
+          "content": "https://www.anduril.com/"
+        },
+        {
+          "property": "og:type",
+          "content": "website"
+        },
+        {
+          "property": "og:title",
+          "content": "Transforming U.S. Defense Capabilities with Advanced Technology | Anduril"
+        },
+        {
+          "property": "og:description",
+          "content": "Anduril Industries builds advanced autonomous systems and defense technology to protect US and allied forces. Creating the future of national security through AI, robotics, and cutting-edge engineering. "
+        },
+        {
+          "property": "og:image",
+          "content": "https://cdn.sanity.io/images/61nocsj5/production/f7d0f077c398e8e24666e9430611395186d347bd-1200x630.png?w=1200&h=630&fit=min&auto=format"
+        },
+        {
+          "property": "og:image:width",
+          "content": "1200"
+        },
+        {
+          "property": "og:image:height",
+          "content": "630"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:url",
+          "content": "https://www.anduril.com/"
+        },
+        {
+          "name": "twitter:title",
+          "content": "Transforming U.S. Defense Capabilities with Advanced Technology | Anduril"
+        },
+        {
+          "name": "twitter:description",
+          "content": "Anduril Industries builds advanced autonomous systems and defense technology to protect US and allied forces. Creating the future of national security through AI, robotics, and cutting-edge engineering. "
+        },
+        {
+          "name": "twitter:image",
+          "content": "https://cdn.sanity.io/images/61nocsj5/production/f7d0f077c398e8e24666e9430611395186d347bd-1200x630.png?w=1200&h=630&fit=min&auto=format"
+        },
+        {
+          "name": "msvalidate.01",
+          "content": "8C6FA41E627D43CDF562929F4FB48843"
+        },
+        {
+          "name": "theme-color",
+          "content": "#000000",
+          "media": "(prefers-color-scheme: light)"
+        },
+        {
+          "name": "theme-color",
+          "content": "#ffffff",
+          "media": "(prefers-color-scheme: dark)"
+        }
+      ],
+      "links": [
+        {
+          "rel": "canonical",
+          "href": "https://www.anduril.com/"
+        },
+        {
+          "rel": "alternate",
+          "type": "application/rss+xml",
+          "title": "Anduril RSS Feed",
+          "href": "https://www.anduril.com/feed.xml"
+        },
+        {
+          "rel": "icon",
+          "href": "assets/favicon/favicon.xxWKiVhdqu.ico",
+          "sizes": "32x32"
+        },
+        {
+          "rel": "icon",
+          "href": "assets/favicon/favicon.xxQR7xb3fo.svg",
+          "type": "image/svg+xml"
+        },
+        {
+          "rel": "apple-touch-icon",
+          "href": "assets/favicon/apple-touch-icon.xxx1TpF2gg.png"
+        },
+        {
+          "rel": "manifest",
+          "href": "assets/favicon/site.xxxI1dIWJH.webmanifest"
+        }
+      ],
+      "jsonldTypes": [
+        "ImageObject",
+        "Organization",
+        "WebPage",
+        "WebSite"
+      ],
+      "assets": [
+        {
+          "requestedUrl": "https://cdn.sanity.io/images/61nocsj5/production/f7d0f077c398e8e24666e9430611395186d347bd-1200x630.png?w=1200&h=630&fit=min&auto=format",
+          "url": "https://cdn.sanity.io/images/61nocsj5/production/f7d0f077c398e8e24666e9430611395186d347bd-1200x630.png?w=1200&h=630&fit=min&auto=format",
+          "status": 200,
+          "contentType": "image/png",
+          "xRobotsTag": null,
+          "bytesRead": 8142,
+          "truncated": false,
+          "kind": "og-image",
+          "sha256": "b1812ff78dee291e1952c8eff59e681a275d4a4de9035ba5a68bf96ca466a1c5",
+          "dimensions": "PNG 1200x630",
+          "identifyError": null
+        },
+        {
+          "requestedUrl": "https://www.anduril.com/assets/favicon/favicon.xxWKiVhdqu.ico",
+          "url": "https://www.anduril.com/assets/favicon/favicon.xxWKiVhdqu.ico",
+          "status": 200,
+          "contentType": "image/vnd.microsoft.icon",
+          "xRobotsTag": null,
+          "bytesRead": 15086,
+          "truncated": false,
+          "kind": "icon",
+          "sha256": "34da642785d5d1eee5e4dfb8dd5e4f3d1eb97a5513f21a9315d804ef0aeb8cab",
+          "dimensions": "ICO 48x48; 32x32; 16x16",
+          "identifyError": null,
+          "dimensionMethod": "explicit ICO coder after MIME/path auto-detection was inconclusive"
+        }
+      ]
+    },
+    {
+      "label": "saronic",
+      "requestedUrl": "https://www.saronic.com/",
+      "url": "https://www.saronic.com/",
+      "at": "2026-11-03T05:26:12.753735+00:00",
+      "status": 200,
+      "title": "Home | Saronic Technologies",
+      "meta": [
+        {
+          "charset": "utf-8"
+        },
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1"
+        },
+        {
+          "name": "description",
+          "content": "Providing the most advanced and capable autonomous vessels in the maritime domain."
+        },
+        {
+          "property": "og:title",
+          "content": "Home"
+        },
+        {
+          "property": "og:description",
+          "content": "Providing the most advanced and capable autonomous vessels in the maritime domain."
+        },
+        {
+          "property": "og:site_name",
+          "content": "Saronic Technologies"
+        },
+        {
+          "property": "og:locale",
+          "content": "en_US"
+        },
+        {
+          "property": "og:image:type",
+          "content": "image/png"
+        },
+        {
+          "property": "og:image:width",
+          "content": "1200"
+        },
+        {
+          "property": "og:image:height",
+          "content": "630"
+        },
+        {
+          "property": "og:image",
+          "content": "https://www.saronic.com/opengraph-image.png?8c80515d4d71c781"
+        },
+        {
+          "property": "og:type",
+          "content": "website"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:title",
+          "content": "Home"
+        },
+        {
+          "name": "twitter:description",
+          "content": "Providing the most advanced and capable autonomous vessels in the maritime domain."
+        },
+        {
+          "name": "twitter:image:type",
+          "content": "image/png"
+        },
+        {
+          "name": "twitter:image:width",
+          "content": "1200"
+        },
+        {
+          "name": "twitter:image:height",
+          "content": "630"
+        },
+        {
+          "name": "twitter:image",
+          "content": "https://www.saronic.com/opengraph-image.png?8c80515d4d71c781"
+        },
+        {
+          "name": "next-size-adjust"
+        }
+      ],
+      "links": [
+        {
+          "rel": "icon",
+          "href": "/icon.png?74e253651fc7b0d2",
+          "type": "image/png",
+          "sizes": "64x64"
+        }
+      ],
+      "jsonldTypes": [],
+      "assets": [
+        {
+          "requestedUrl": "https://www.saronic.com/opengraph-image.png?8c80515d4d71c781",
+          "url": "https://www.saronic.com/opengraph-image.png?8c80515d4d71c781",
+          "status": 200,
+          "contentType": "image/png",
+          "xRobotsTag": null,
+          "bytesRead": 6047,
+          "truncated": false,
+          "kind": "og-image",
+          "sha256": "228759c7a0d4ca44606ed346b7646f9e79c0e89256065d095d2c64073782d937",
+          "dimensions": "PNG 1200x630",
+          "identifyError": null
+        },
+        {
+          "requestedUrl": "https://www.saronic.com/icon.png?74e253651fc7b0d2",
+          "url": "https://www.saronic.com/icon.png?74e253651fc7b0d2",
+          "status": 200,
+          "contentType": "image/png",
+          "xRobotsTag": null,
+          "bytesRead": 1334,
+          "truncated": false,
+          "kind": "icon",
+          "sha256": "d52613b5c59e8bf140e054403361f27f4da3fc242844dffbdb6eed6469ae914a",
+          "dimensions": "PNG 64x64",
+          "identifyError": null
+        }
+      ]
+    },
+    {
+      "label": "franklin",
+      "requestedUrl": "https://franklinoffshore.com/",
+      "url": "https://franklinoffshore.com/",
+      "at": "2026-11-03T05:26:14.292279+00:00",
+      "status": 200,
+      "title": "Homepage - Franklin Offshore",
+      "meta": [
+        {
+          "charset": "UTF-8"
+        },
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1"
+        },
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        },
+        {
+          "name": "description",
+          "content": "Franklin Offshore delivers trusted rigging and mooring services for the offshore oil and gas industry worldwide."
+        },
+        {
+          "property": "og:locale",
+          "content": "en_US"
+        },
+        {
+          "property": "og:type",
+          "content": "website"
+        },
+        {
+          "property": "og:title",
+          "content": "Homepage - Franklin Offshore"
+        },
+        {
+          "property": "og:description",
+          "content": "Franklin Offshore delivers trusted rigging and mooring services for the offshore oil and gas industry worldwide."
+        },
+        {
+          "property": "og:url",
+          "content": "https://franklinoffshore.com/"
+        },
+        {
+          "property": "og:site_name",
+          "content": "Franklin Offshore"
+        },
+        {
+          "property": "article:modified_time",
+          "content": "2025-10-31T05:17:26+00:00"
+        },
+        {
+          "property": "og:image",
+          "content": "https://franklinoffshore.com/wp-content/uploads/2025/10/DJI_20250318193812_0168_D-1-1024x767.webp"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "generator",
+          "content": "WordPress 6.9.11"
+        },
+        {
+          "name": "generator",
+          "content": "Elementor 4.3.5; features: e_font_icon_svg, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap"
+        },
+        {
+          "name": "msapplication-TileImage",
+          "content": "https://franklinoffshore.com/wp-content/uploads/2025/05/Favicon-1.png"
+        }
+      ],
+      "links": [
+        {
+          "rel": "canonical",
+          "href": "https://franklinoffshore.com/"
+        },
+        {
+          "rel": "alternate",
+          "type": "application/rss+xml",
+          "title": "Franklin Offshore » Feed",
+          "href": "https://franklinoffshore.com/feed/"
+        },
+        {
+          "rel": "alternate",
+          "type": "application/rss+xml",
+          "title": "Franklin Offshore » Comments Feed",
+          "href": "https://franklinoffshore.com/comments/feed/"
+        },
+        {
+          "rel": "alternate",
+          "type": "application/rss+xml",
+          "title": "Franklin Offshore » Homepage Comments Feed",
+          "href": "https://franklinoffshore.com/homepage/feed/"
+        },
+        {
+          "rel": "alternate",
+          "title": "oEmbed (JSON)",
+          "type": "application/json+oembed",
+          "href": "https://franklinoffshore.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ffranklinoffshore.com%2F"
+        },
+        {
+          "rel": "alternate",
+          "title": "oEmbed (XML)",
+          "type": "text/xml+oembed",
+          "href": "https://franklinoffshore.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ffranklinoffshore.com%2F&format=xml"
+        },
+        {
+          "rel": "alternate",
+          "title": "JSON",
+          "type": "application/json",
+          "href": "https://franklinoffshore.com/wp-json/wp/v2/pages/7"
+        },
+        {
+          "rel": "icon",
+          "href": "https://franklinoffshore.com/wp-content/uploads/2025/05/Favicon-1.png",
+          "sizes": "32x32"
+        },
+        {
+          "rel": "icon",
+          "href": "https://franklinoffshore.com/wp-content/uploads/2025/05/Favicon-1.png",
+          "sizes": "192x192"
+        },
+        {
+          "rel": "apple-touch-icon",
+          "href": "https://franklinoffshore.com/wp-content/uploads/2025/05/Favicon-1.png"
+        }
+      ],
+      "jsonldTypes": [
+        "BreadcrumbList",
+        "EntryPoint",
+        "ImageObject",
+        "ListItem",
+        "Organization",
+        "PropertyValueSpecification",
+        "ReadAction",
+        "SearchAction",
+        "WebPage",
+        "WebSite"
+      ],
+      "assets": [
+        {
+          "requestedUrl": "https://franklinoffshore.com/wp-content/uploads/2025/10/DJI_20250318193812_0168_D-1-1024x767.webp",
+          "url": "https://franklinoffshore.com/wp-content/uploads/2025/10/DJI_20250318193812_0168_D-1-1024x767.webp",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": null,
+          "bytesRead": 59166,
+          "truncated": false,
+          "kind": "og-image",
+          "sha256": "b3e59c5bcd7c0b61aee04e3dcefc5f9f3343ecbdaa1d36833d32429a19ac5bd4",
+          "dimensions": "WEBP 1024x767",
+          "identifyError": null
+        },
+        {
+          "requestedUrl": "https://franklinoffshore.com/wp-content/uploads/2025/05/Favicon-1.png",
+          "url": "https://franklinoffshore.com/wp-content/uploads/2025/05/Favicon-1.png",
+          "status": 200,
+          "contentType": "image/png",
+          "xRobotsTag": null,
+          "bytesRead": 9364,
+          "truncated": false,
+          "kind": "icon",
+          "sha256": "cc1dbaf4810ff1ec848ee1e67d8df5895ccc8067caa4414a98d3910319abe62c",
+          "dimensions": "PNG 100x100",
+          "identifyError": null
+        }
+      ]
+    }
+  ]
+}

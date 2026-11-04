@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Vibe Coder CS 基础课 00｜小林的 Idea Box 拆解课</title>
+  <style>
+    /*
+      VISUAL SYSTEM
+      Editorial teaching notebook: warm paper, ink, tomato-red actions, cobalt system annotations.
+      Rhythm: one concrete scene -> one causal diagram -> precise terms -> teacher script.
+      Type scale: 13 / 15 / 18 / 25 / 42 / clamp(48–84). No external assets; works offline.
+    */
+    :root{
+      --paper:#f4f0e6;--sheet:#fffdf8;--ink:#17201d;--muted:#66706b;--line:#cfc9bb;
+      --red:#d94732;--red-soft:#f7ded6;--blue:#2457d6;--blue-soft:#e2e9fb;
+      --green:#2e7653;--green-soft:#deeee6;--yellow:#f2c84b;--dark:#17201d;
+      --shadow:0 20px 65px rgb(46 40 29 / 10%);--radius:22px;
+    }
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:"Avenir Next","Noto Sans SC","PingFang SC",sans-serif;line-height:1.75;text-wrap:pretty}
+    button,input{font:inherit}button{cursor:pointer}code,.mono{font-family:"SFMono-Regular",Consolas,"Liberation Mono",monospace}
+    .progress{position:fixed;left:0;top:0;height:4px;background:var(--red);width:0;z-index:100}
+    .topbar{height:58px;border-bottom:1px solid rgb(23 32 29 / 13%);display:flex;align-items:center;justify-content:space-between;padding:0 4vw;position:sticky;top:0;z-index:20;background:rgb(244 240 230 / 90%);backdrop-filter:blur(12px)}
+    .brand{font-size:13px;font-weight:800;letter-spacing:.08em}.brand b{color:var(--red)}.topbar a{color:var(--ink);text-decoration:none;font-size:13px;border-bottom:1px solid var(--ink)}
+    .hero{min-height:calc(100vh - 58px);display:grid;place-items:center;padding:70px 5vw 90px;border-bottom:1px solid var(--line);background:radial-gradient(circle at 88% 20%,rgb(36 87 214 / 8%),transparent 25%),var(--sheet)}
+    .hero-inner{width:min(1220px,100%)}.eyebrow{font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--red);margin-bottom:18px}
+    h1,h2,h3,p{margin-top:0}h1{font-family:"Songti SC","STSong",serif;font-size:clamp(48px,7.5vw,88px);line-height:1.03;letter-spacing:-.045em;margin-bottom:24px;max-width:1000px}h1 em{font-style:normal;color:var(--red)}
+    .hero-lead{font-size:clamp(19px,2vw,26px);line-height:1.55;max-width:900px;margin-bottom:42px}.hero-grid{display:grid;grid-template-columns:.82fr 1.18fr;gap:28px;align-items:stretch}
+    .prompt-card{background:var(--dark);color:#eef3ef;border-radius:var(--radius);padding:26px;box-shadow:var(--shadow);display:flex;flex-direction:column}.prompt-card .who{display:flex;align-items:center;justify-content:space-between;color:#9ea8a2;font-size:12px;border-bottom:1px solid #3c4541;padding-bottom:14px;margin-bottom:18px}.prompt-card blockquote{font-size:18px;line-height:1.8;margin:0}.prompt-card .reply{margin-top:auto;padding-top:26px;color:#a7d8bd;font-size:14px}
+    .browser{background:#fff;border:1px solid #bfc4c0;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}.browser-top{height:46px;background:#e8eae7;display:grid;grid-template-columns:78px 1fr 78px;align-items:center;padding:0 13px;gap:10px}.dots{display:flex;gap:6px}.dots i{width:10px;height:10px;border-radius:50%;background:#b2b7b3}.dots i:first-child{background:#e76c5b}.address{height:26px;border-radius:7px;background:#fff;color:#808783;font-size:11px;display:grid;place-items:center}.defer{font-size:9px;color:#767d79;text-align:right}
+    .idea-app{padding:30px;background:#fbfaf6;min-height:340px}.app-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:23px}.app-head h3{font-family:"Songti SC","STSong",serif;font-size:30px;margin:0;line-height:1}.app-head span{font-size:12px;color:#7b817d}.idea-form{display:flex;gap:8px;margin-bottom:18px}.idea-form input{min-width:0;flex:1;border:1px solid #bfc5bf;background:#fff;padding:11px 13px;border-radius:8px;outline:none}.idea-form input:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgb(36 87 214 / 12%)}.idea-form button{border:0;background:var(--red);color:white;border-radius:8px;padding:10px 16px;font-weight:700;min-height:44px}.ideas{display:grid;grid-template-columns:1fr 1fr;gap:10px}.idea{background:#fff;border:1px solid #d8d8d1;padding:14px;border-radius:9px;min-height:74px;display:flex;justify-content:space-between;gap:10px;align-items:start}.idea p{font-size:13px;line-height:1.45;margin:0}.star{border:0;background:none;font-size:18px;line-height:1;color:#b8bab5;padding:2px}.star.on{color:#d89e00}.mock-note{font-size:11px;color:#747b76;margin:14px 0 0}
+    .pause{background:var(--red);color:#fff;padding:48px 5vw}.pause-inner{width:min(1120px,100%);margin:auto;display:grid;grid-template-columns:190px 1fr;gap:36px;align-items:start}.pause-word{font-size:15px;letter-spacing:.16em;font-weight:800;border-top:1px solid rgb(255 255 255 / 60%);padding-top:10px}.pause h2{font-family:"Songti SC","STSong",serif;font-size:clamp(28px,4vw,52px);line-height:1.25;margin:0}.pause h2 span{color:#ffd6cc}
+    .layout{width:min(1260px,92vw);margin:auto;display:grid;grid-template-columns:218px minmax(0,1fr);gap:54px}.toc{position:sticky;top:85px;align-self:start;padding:54px 0}.toc b{font-size:11px;letter-spacing:.15em;color:var(--muted)}.toc ol{list-style:none;margin:18px 0 0;padding:0;border-left:1px solid var(--line)}.toc a{display:block;text-decoration:none;color:#747a76;font-size:12px;padding:7px 0 7px 15px}.toc a.active{color:var(--red);font-weight:800;border-left:3px solid var(--red);margin-left:-2px}.toc .boundary{margin-top:26px;font-size:11px;line-height:1.55;color:var(--muted)}
+    main{min-width:0;padding:80px 0 140px}section{scroll-margin-top:82px;margin-bottom:120px}.act{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--ink);border-radius:99px;padding:5px 12px;font-size:11px;letter-spacing:.12em;font-weight:800;margin-bottom:18px}.act i{width:7px;height:7px;border-radius:50%;background:var(--red)}
+    h2{font-family:"Songti SC","STSong",serif;font-size:clamp(34px,4vw,53px);line-height:1.18;letter-spacing:-.025em;margin-bottom:20px}.lead{font-size:20px;line-height:1.7;max-width:830px;color:#38413d}.bridge{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);padding:25px 0;margin:35px 0;font-family:"Songti SC","STSong",serif;font-size:24px;line-height:1.45}.bridge b{color:var(--red)}
+    .scene{display:grid;grid-template-columns:140px 1fr;border-top:1px solid var(--line);padding:20px 0}.scene:last-child{border-bottom:1px solid var(--line)}.scene-label{font-size:11px;color:var(--muted);letter-spacing:.1em;font-weight:800;padding-top:4px}.scene p{margin:0;font-size:16px}.scene.teacher .scene-label{color:var(--red)}.scene.teacher p{font-family:"Songti SC","STSong",serif;font-size:19px;line-height:1.65}.scene.truth .scene-label{color:var(--blue)}
+    .chain{display:grid;grid-template-columns:repeat(6,1fr);margin:34px 0 42px;border:1px solid var(--ink);background:var(--sheet)}.chain-item{min-width:0;padding:17px 13px;border-right:1px solid var(--ink);position:relative}.chain-item:last-child{border:0}.chain-item:not(:last-child)::after{content:"→";position:absolute;right:-10px;top:18px;width:19px;text-align:center;background:var(--sheet);z-index:2;color:var(--red);font-weight:900}.chain-item small{display:block;color:var(--red);font-weight:800;margin-bottom:6px}.chain-item b{display:block;font-size:13px;line-height:1.35}.chain-item span{display:block;color:var(--muted);font-size:11px;line-height:1.45;margin-top:6px}
+    .layer-stack{margin:34px 0}.layer{display:grid;grid-template-columns:180px 1fr;gap:20px;padding:20px 24px;border:1px solid var(--ink);border-bottom:0;background:var(--sheet)}.layer:last-child{border-bottom:1px solid var(--ink)}.layer:nth-child(2){margin:0 16px}.layer:nth-child(3){margin:0 32px}.layer:nth-child(4){margin:0 48px}.layer:nth-child(5){margin:0 64px}.layer b{color:var(--blue)}.layer span{font-size:14px}.layer code{font-size:12px}
+    .terms{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:30px 0}.term{background:var(--sheet);border:1px solid var(--line);padding:22px}.term h3{font-size:17px;line-height:1.35;margin-bottom:9px}.term h3 span{display:block;font-size:11px;color:var(--red);letter-spacing:.08em;margin-bottom:3px}.term p{font-size:14px;line-height:1.65;margin:0;color:#3e4743}.term .example{margin-top:12px;background:var(--blue-soft);color:#223764;padding:10px 12px;font-size:12px;line-height:1.55}.term.full{grid-column:1/-1}
+    .file-stage{display:grid;grid-template-columns:.9fr 1.1fr;gap:18px;margin:32px 0}.tree{background:var(--dark);color:#d9e7df;padding:25px;border-radius:4px;overflow:auto;font-size:13px;line-height:1.9}.tree .folder{color:#83a9ff}.tree .source{color:#ff9b87}.tree .output{color:#a5dfba}.callouts{display:flex;flex-direction:column;justify-content:space-between;gap:10px}.callout{background:var(--sheet);border:1px solid var(--line);padding:16px}.callout b{display:block;font-size:13px;margin-bottom:4px}.callout p{margin:0;font-size:12px;color:var(--muted);line-height:1.5}
+    .path-lab{background:var(--sheet);border:1px solid var(--ink);margin:30px 0}.path-row{display:grid;grid-template-columns:155px 1fr;border-bottom:1px solid var(--line);padding:17px 20px;gap:20px}.path-row:last-child{border:0}.path-row b{font-size:12px;color:var(--blue)}.path-row code{font-size:13px;overflow-wrap:anywhere}.path-row span{display:block;font-size:12px;color:var(--muted);margin-top:4px}.cwd-switch{display:flex;gap:8px;flex-wrap:wrap}.cwd-switch button{border:1px solid var(--ink);background:transparent;padding:7px 10px;border-radius:0;font-size:11px;min-height:38px}.cwd-switch button.active{background:var(--ink);color:white}.resolved{color:var(--red)!important;font-weight:800}
+    .permission{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--ink);border:1px solid var(--ink);margin:30px 0}.perm{background:var(--sheet);padding:25px}.perm strong{display:block;font-size:40px;font-family:"Songti SC","STSong",serif;color:var(--red);line-height:1}.perm b{font-size:15px}.perm p{font-size:12px;color:var(--muted);margin:10px 0 0}
+    .transform{margin:32px 0;border:1px solid var(--ink);background:var(--sheet)}.transform-row{display:grid;grid-template-columns:1fr 55px 1fr 55px 1fr;align-items:stretch}.station{padding:24px}.station span{display:block;color:var(--red);font-size:11px;font-weight:800;letter-spacing:.08em}.station b{display:block;font-size:16px;margin:5px 0}.station p{font-size:12px;color:var(--muted);margin:0}.arrow{display:grid;place-items:center;border-left:1px solid var(--line);border-right:1px solid var(--line);color:var(--red);font-size:23px}.runtime-band{background:var(--blue);color:#fff;padding:17px 24px;display:grid;grid-template-columns:160px 1fr;gap:20px}.runtime-band b{font-size:13px}.runtime-band span{font-size:12px;color:#dfe7ff}
+    .process-board{position:relative;background:var(--dark);color:#ecf1ed;padding:30px;margin:30px 0;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.proc{border:1px solid #69726d;padding:18px;min-height:130px}.proc small{color:#9fa8a3}.proc b{display:block;color:#a8c0ff;margin:4px 0 10px}.thread{height:9px;background:#56615b;margin:7px 0;position:relative}.thread::before{content:"Thread";position:absolute;left:7px;top:-5px;font-size:8px;color:#d9dfdb}.cpu-note{grid-column:1/-1;border-top:1px solid #59635d;padding-top:16px;font-size:12px;color:#b5beb8}.cpu-note b{color:#ff9b87}
+    .compare{width:100%;border-collapse:collapse;background:var(--sheet);margin:28px 0;font-size:13px}.compare th,.compare td{border:1px solid var(--line);padding:14px;text-align:left;vertical-align:top}.compare th{background:#e9e5da;font-size:11px;letter-spacing:.06em}.compare td:first-child{font-weight:800}.compare code{font-size:11px}
+    .truth-ladder{counter-reset:truth;margin:30px 0}.truth-step{counter-increment:truth;display:grid;grid-template-columns:56px 190px 1fr;gap:15px;border-top:1px solid var(--line);padding:18px 0}.truth-step::before{content:counter(truth,decimal-leading-zero);font-family:"Songti SC","STSong",serif;font-size:28px;color:var(--red);line-height:1}.truth-step b{font-size:14px}.truth-step span{font-size:13px;color:var(--muted)}
+    .rebuild{background:var(--sheet);border:1px solid var(--ink);padding:30px;margin-top:32px}.rebuild-center{text-align:center;background:var(--red);color:white;padding:18px;font-family:"Songti SC","STSong",serif;font-size:23px}.branches{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:24px}.branch{border-top:4px solid var(--blue);padding-top:14px}.branch:nth-child(2){border-color:var(--green)}.branch:nth-child(3){border-color:var(--red)}.branch h3{font-size:16px}.branch ol{margin:0;padding-left:20px}.branch li{font-size:12px;margin:7px 0}.branch code{font-size:11px}
+    .one-sentence{font-family:"Songti SC","STSong",serif;font-size:clamp(26px,3.2vw,42px);line-height:1.45;padding:45px 0;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);margin:44px 0}.one-sentence b{color:var(--red)}
+    .glossary{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}.glossary div{background:var(--sheet);padding:13px}.glossary b{font-size:12px;display:block}.glossary span{font-size:11px;color:var(--muted);line-height:1.4;display:block}
+    .boundary-box{background:var(--yellow);padding:22px 25px;margin-top:30px}.boundary-box b{display:block;margin-bottom:7px}.boundary-box p{font-size:13px;margin:0}
+    footer{background:var(--dark);color:#dfe6e1;padding:70px 5vw}.foot-inner{width:min(1050px,100%);margin:auto}.foot-inner h2{color:white}.foot-inner p{max-width:760px;color:#aeb8b2}.foot-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}.foot-tags span{border:1px solid #65706a;padding:5px 9px;font-size:10px}
+    @media(max-width:900px){.hero-grid,.pause-inner,.layout,.file-stage{grid-template-columns:1fr}.toc{display:none}.hero{padding-top:48px}.chain{grid-template-columns:repeat(2,1fr)}.chain-item{border-bottom:1px solid var(--ink)}.chain-item:nth-child(2n){border-right:0}.layer,.layer:nth-child(n){margin:0}.transform-row{grid-template-columns:1fr}.arrow{border:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);min-height:42px;transform:rotate(90deg)}.runtime-band{grid-template-columns:1fr}.process-board,.branches{grid-template-columns:1fr}.glossary{grid-template-columns:1fr 1fr}}
+    @media(max-width:600px){.topbar{padding:0 18px}.topbar a{display:none}.hero{padding:38px 18px 62px}.hero-lead{font-size:17px}.idea-app{padding:20px}.ideas,.terms,.permission,.glossary{grid-template-columns:1fr}.layout{width:auto;margin:0 18px}.pause{padding:35px 18px}.pause-inner{gap:14px}.chain{grid-template-columns:1fr}.chain-item{border-right:0}.chain-item:not(:last-child)::after{content:"↓";right:auto;left:16px;top:auto;bottom:-13px}.scene{grid-template-columns:1fr;gap:5px}.path-row{grid-template-columns:1fr}.truth-step{grid-template-columns:44px 1fr}.truth-step span{grid-column:2}.app-head{align-items:start;gap:8px}.idea-form{flex-direction:column}.layer{grid-template-columns:1fr;gap:5px}.rebuild{padding:18px}main{padding-top:60px}section{margin-bottom:90px}}
+    @media print{.progress,.topbar,.toc,.mock-note{display:none}.hero{min-height:0}.layout{display:block;width:100%}main{padding:40px 0}.hero,.pause,footer{break-after:page}.browser,.prompt-card{box-shadow:none}section{break-before:page;margin:0;padding:25mm 0}.idea-form button,.cwd-switch button{border:1px solid #000}.scene.teacher p{font-size:16px}}
+  </style>
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+  <header class="topbar"><div class="brand"><b>00</b> · 电脑、文件和程序</div><a href="#map">直接看完整拆解图 ↓</a></header>
+
+  <header class="hero" id="start">
+    <div class="hero-inner">
+      <div class="eyebrow">A teardown lesson for vibe coders</div>
+      <h1>你就是小林。<br>AI 做了一个<em>像模像样</em>的网页。</h1>
+      <p class="hero-lead">先不要背 CPU、文件、进程。我们只盯住这一次真实的 Vibe coding：从一句 prompt 开始，到浏览器里出现一个能点的 Idea Box，然后把它一层层拆开。</p>
+      <div class="hero-grid">
+        <div class="prompt-card">
+          <div class="who"><span>小林 → Work Buddy / Codex</span><span>PROMPT</span></div>
+          <blockquote>“帮我做一个叫 <b>Idea Box</b> 的本地网页。我可以输入一条灵感，点击保存，它会变成卡片；卡片可以标星。请在我的电脑上运行，让我能在浏览器里看到。”</blockquote>
+          <div class="reply">✓ 已完成。Idea Box 正在本地运行。</div>
+        </div>
+        <div class="browser" aria-label="Idea Box 教学模型">
+          <div class="browser-top"><div class="dots"><i></i><i></i><i></i></div><div class="address">Idea Box · local preview</div><div class="defer">地址留到 01</div></div>
+          <div class="idea-app">
+            <div class="app-head"><h3>Idea Box</h3><span id="idea-count">2 ideas</span></div>
+            <div class="idea-form"><input id="idea-input" aria-label="输入一条灵感" placeholder="写下一条灵感……"><button id="save-idea">保存灵感</button></div>
+            <div class="ideas" id="ideas">
+              <div class="idea"><p>给产品加一个深色模式</p><button class="star on" aria-label="取消标星">★</button></div>
+              <div class="idea"><p>做一场周末陶艺体验课</p><button class="star" aria-label="标星">☆</button></div>
+            </div>
+            <p class="mock-note">可以真的输入、保存、标星。这是本讲义内的教学模型，用来建立“小林眼前看到了什么”。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="pause">
+    <div class="pause-inner"><div class="pause-word">老师：按下暂停</div><h2>它看起来能用，只能证明一件事：<span>浏览器此刻画出了一个能互动的页面。</span><br>它还没有自动证明“AI 到底改了什么”。</h2></div>
+  </div>
+
+  <div class="layout">
+    <aside class="toc">
+      <b>沿着小林的一次操作</b>
+      <ol>
+        <li><a href="#chain">0. 先看整条链</a></li>
+        <li><a href="#computer">1. 页面下面的电脑</a></li>
+        <li><a href="#files">2. AI 留下了哪些文件</a></li>
+        <li><a href="#paths">3. 它到底写到哪里</a></li>
+        <li><a href="#permissions">4. 为什么能读、能改、能跑</a></li>
+        <li><a href="#program">5. 代码怎样变成运行</a></li>
+        <li><a href="#process">6. 程序怎样“活起来”</a></li>
+        <li><a href="#install">7. 换一台电脑会怎样</a></li>
+        <li><a href="#proof">8. “做完了”究竟证明什么</a></li>
+        <li><a href="#map">9. 重新拼回一张图</a></li>
+      </ol>
+      <div class="boundary">本节只拆“电脑、文件、程序”。浏览器地址、HTTP、Client / Server 留到 01；变量与函数留到 02；Terminal / Shell 留到 10。</div>
+    </aside>
+
+    <main>
+      <section id="chain">
+        <div class="act"><i></i> ACT 1 · 先看见，不急着解释</div>
+        <h2>一句 prompt 到一个页面，中间没有魔法</h2>
+        <p class="lead">对小林来说，AI 似乎“啪”一下就把产品变出来了。对电脑来说，它必须经过一连串可以定位、可以失败的状态。</p>
+        <div class="chain" aria-label="从 prompt 到浏览器的因果链">
+          <div class="chain-item"><small>01</small><b>小林提需求</b><span>AI 工具收到文字</span></div>
+          <div class="chain-item"><small>02</small><b>生成 Source Code</b><span>先产生代码内容</span></div>
+          <div class="chain-item"><small>03</small><b>写成 Files</b><span>保存进某个目录</span></div>
+          <div class="chain-item"><small>04</small><b>Build / 准备</b><span>得到可交付产物</span></div>
+          <div class="chain-item"><small>05</small><b>产生 Process</b><span>程序开始一次运行</span></div>
+          <div class="chain-item"><small>06</small><b>浏览器画出来</b><span>小林看到结果</span></div>
+        </div>
+        <div class="scene teacher"><div class="scene-label">老师可以这样说</div><p>“今天所有名词，都挂在这条线上。我们不按词典顺序背。小林每往回追问一次‘这个页面怎么来的’，就会自然撞见一组概念。”</p></div>
+        <div class="scene truth"><div class="scene-label">第一条判断</div><p>页面看起来像模像样，是链路最后一格的证据；不能倒推前面每一格都正确。</p></div>
+      </section>
+
+      <section id="computer">
+        <div class="act"><i></i> ACT 2 · 第一次往下拆</div>
+        <h2>小林看到的是 Application；托住它的是整台电脑</h2>
+        <p class="lead">小林眼前同时开着两个应用：AI 编程工具和浏览器。Idea Box 显示在浏览器里面，但真正执行工作的不只有浏览器。</p>
+        <div class="layer-stack" aria-label="从人到硬件的分层图">
+          <div class="layer"><b>人 · 小林</b><span>提出目的：“帮我做 Idea Box。”</span></div>
+          <div class="layer"><b>Application</b><span>AI 编程工具帮助写项目；Browser 显示并操作 Idea Box。应用是面向人完成任务的软件。</span></div>
+          <div class="layer"><b>Operating System</b><span>macOS / Windows / Linux 管文件、内存、进程、设备和权限，让上面的应用不必自己直接控制硬件。</span></div>
+          <div class="layer"><b>CPU + RAM</b><span>CPU 正在执行指令；RAM 暂时放着正在运行所需的代码和数据。</span></div>
+          <div class="layer"><b>Disk / Storage</b><span>SSD 把 <code>idea-box</code> 项目保存下来；关机后通常还在。</span></div>
+        </div>
+        <div class="terms">
+          <article class="term"><h3><span>CPU · CENTRAL PROCESSING UNIT</span>中央处理器</h3><p>执行机器指令的硬件。它不会直接理解“做个网页”这句自然语言；它执行的是 AI 工具、浏览器、操作系统等软件最终变成的底层指令。</p><div class="example">小林点击“保存灵感”时，CPU 在执行浏览器和页面相关的指令。</div></article>
+          <article class="term"><h3><span>MEMORY / RAM</span>内存</h3><p>正在运行时使用的高速临时工作区。断电后通常不保留。RAM 越紧张，同时开的编辑器、浏览器标签和构建任务越容易变慢。</p><div class="example">此刻输入框里的文字、页面当前状态、运行中的代码，都可能正在 RAM 里。</div></article>
+          <article class="term"><h3><span>DISK / STORAGE</span>磁盘 / 存储</h3><p>长期保存文件和应用的硬件介质，例如 SSD。保存到 Storage 与“当前在 RAM 里看见”不是一回事。</p><div class="example">AI 真正写入的 <code>index.html</code> 保存在 SSD 上，关掉工具再打开仍可读取。</div></article>
+          <article class="term"><h3><span>OPERATING SYSTEM · OS</span>操作系统</h3><p>协调硬件并向应用提供文件、窗口、进程、内存、权限等基础能力的系统软件。</p><div class="example">小林的 macOS 决定浏览器进程能拿多少资源、AI 工具能不能写那个目录。</div></article>
+          <article class="term full"><h3><span>APPLICATION</span>应用程序</h3><p>为用户完成一类任务的完整软件。浏览器、编辑器、AI 编程工具都是 Application。Idea Box 如果被做成独立产品，也可以成为 Application；此刻它首先是浏览器里运行的一个网页。</p><div class="example">“浏览器”和“浏览器里展示的 Idea Box”不要一口气混成一个东西：前者是承载它的应用，后者是这次项目产生的页面体验。</div></article>
+        </div>
+        <div class="scene teacher"><div class="scene-label">老师可以这样说</div><p>“把电脑想成一家正在营业的工作室：Storage 是仓库，RAM 是今天摊开的工作台，CPU 是实际动手的工人，OS 是调度和门禁，Application 是你来这里要使用的具体服务。”</p></div>
+        <div class="bridge">接着往回追：<b>AI 说“我做完了”，它在磁盘上究竟留下了什么？</b></div>
+      </section>
+
+      <section id="files">
+        <div class="act"><i></i> ACT 2 · 找到项目的身体</div>
+        <h2>Idea Box 不是“一个代码”，而是一棵文件树</h2>
+        <p class="lead">小林在屏幕上看到一个整体；OS 在磁盘上看到的是一组有名字、有位置的文件和目录。AI 修改的真正对象通常就在这里。</p>
+        <div class="file-stage">
+          <pre class="tree"><span class="folder">idea-box/</span>
+├── <span class="source">index.html</span>       页面结构
+├── <span class="source">styles.css</span>      视觉样式
+├── <span class="source">app.js</span>          交互逻辑
+├── <span class="folder">assets/</span>
+│   └── star.svg       星星图形
+├── package.json       项目说明
+└── <span class="folder">dist/</span>
+    ├── <span class="output">index.html</span>   构建产物
+    └── <span class="output">app.js</span></pre>
+          <div class="callouts">
+            <div class="callout"><b>Directory · 目录</b><p><code>idea-box/</code>、<code>assets/</code>、<code>dist/</code> 是用来组织文件与子目录的容器；也常被口语叫 folder。</p></div>
+            <div class="callout"><b>File · 文件</b><p><code>app.js</code> 是 OS 可按名字读写的一段持久化数据，不等于“正在运行的 app”。</p></div>
+            <div class="callout"><b>Filename · 文件名</b><p><code>styles.css</code> 是完整文件名；名字让人和程序能够指向它。</p></div>
+            <div class="callout"><b>File Extension · 文件扩展名</b><p><code>.css</code>、<code>.js</code> 是文件名的一部分，通常提示格式或用途；改后缀不会自动改变里面的内容。</p></div>
+          </div>
+        </div>
+        <div class="scene truth"><div class="scene-label">回到小林</div><p>当小林说“把星星改成红色”，AI 可能改的是 <code>styles.css</code>，也可能改 <code>star.svg</code>，还可能只改了构建后的 <code>dist/</code>。视觉结果相似，修改位置却决定以后能否维护。</p></div>
+        <div class="scene teacher"><div class="scene-label">老师可以这样说</div><p>“页面是你看到的成品，文件树是它在磁盘上的身体。以后 AI 说改好了，你先问：改了哪个文件？这是 Source 还是 Build 之后的产物？”</p></div>
+      </section>
+
+      <section id="paths">
+        <div class="act"><i></i> ACT 2 · 给文件一个准确地址</div>
+        <h2>知道“有 app.js”还不够：它到底是哪一个？</h2>
+        <p class="lead">小林的电脑里可能有十个项目都叫 <code>app.js</code>。Path 解决的不是“文件叫什么”，而是“从哪里走到这个文件”。</p>
+        <div class="path-lab">
+          <div class="path-row"><b>Absolute Path<br>绝对路径</b><div><code>/Users/xiaolin/Projects/idea-box/app.js</code><span>从文件系统的固定起点写起，地址比较完整。Windows 可能写作 <code>C:\Users\xiaolin\Projects\idea-box\app.js</code>。</span></div></div>
+          <div class="path-row"><b>Working Directory<br>工作目录 / CWD</b><div class="cwd-switch"><button class="active" data-cwd="idea">站在 idea-box</button><button data-cwd="other">站在 another-project</button><span>程序或工具此刻把哪个目录当作相对路径的起点。</span></div></div>
+          <div class="path-row"><b>Relative Path<br>相对路径</b><div><code>./app.js</code><span>从当前 Working Directory 出发；写法短，但意义会随“站在哪里”变化。</span></div></div>
+          <div class="path-row"><b>实际解析成</b><div><code class="resolved" id="resolved-path">/Users/xiaolin/Projects/idea-box/app.js</code><span id="path-warning">✓ 正在指向 Idea Box 的 app.js</span></div></div>
+        </div>
+        <div class="scene truth"><div class="scene-label">小林会遇到的坑</div><p>AI 回答“已修改 <code>./app.js</code>”，但如果工具的 Working Directory 错了，它可能改到另一个项目，或者报“找不到文件”。同一个 Relative Path，在不同起点会指向不同地方。</p></div>
+        <div class="scene teacher"><div class="scene-label">老师可以这样说</div><p>“Absolute Path 像写完整门牌；Relative Path 像说‘从我现在站的位置往前走两步’；Working Directory 就是你现在站的位置。AI 站错房间，路线写得再对也会走错。”</p></div>
+        <div class="boundary-box"><b>那我怎样告诉电脑这些路径？</b><p>以后你会经常在 Terminal 里通过 Shell 输入命令、切换 Working Directory。本节只先理解“路径依赖起点”；Terminal / Shell 的交互方式留到第 10 节系统讲。</p></div>
+      </section>
+
+      <section id="permissions">
+        <div class="act"><i></i> ACT 2 · 有地址，不等于有钥匙</div>
+        <h2>Path 回答“在哪”；Permission 回答“准不准”</h2>
+        <p class="lead">AI 即使找对了 Idea Box 的目录，也未必被允许查看、修改或启动里面的对象。权限是 OS 对主体能做什么的规则。</p>
+        <div class="permission">
+          <div class="perm"><strong>R</strong><b>Read Permission · 读权限</b><p>允许读取内容。没有它，AI 可能知道文件存在，却打不开 <code>app.js</code>。</p></div>
+          <div class="perm"><strong>W</strong><b>Write Permission · 写权限</b><p>允许修改文件，或在相应目录中新建、删除条目。能读不代表能保存。</p></div>
+          <div class="perm"><strong>X</strong><b>Execute Permission · 执行权限</b><p>允许把适用对象当作可执行程序启动。它不等于“能阅读代码”，具体规则也因 OS 和启动方式而异。</p></div>
+        </div>
+        <div class="scene truth"><div class="scene-label">回到小林</div><p>AI 能解释 <code>app.js</code>，说明它至少获得了某种读取能力；它真正保存修改还需要写入能力；点击“Run”时，启动脚本或程序又涉及相应执行规则。<b>文件存在、路径正确、权限允许</b>是三道不同的门。</p></div>
+        <div class="scene teacher"><div class="scene-label">老师可以这样说</div><p>“告诉外卖员门牌号是 Path；小区保安让不让进是 Permission。地址正确不会自动发一张通行证。这也是为什么 Vibe coding 工具会问你‘是否允许访问这个文件夹’。”</p></div>
+      </section>
+
+      <section id="program">
+        <div class="act"><i></i> ACT 2 · 从文字材料到可运行产物</div>
+        <h2>Source Code 描述“怎么做”；运行才真的“在做”</h2>
+        <p class="lead">磁盘上的 <code>app.js</code> 只是一段文本。它描述点击以后应该发生什么，但静静躺着时不会自己监听按钮，也不会自己画出卡片。</p>
+        <div class="transform">
+          <div class="transform-row">
+            <div class="station"><span>SOURCE CODE</span><b>人能维护的源代码</b><p><code>index.html</code>、<code>styles.css</code>、<code>app.js</code></p></div>
+            <div class="arrow">→</div>
+            <div class="station"><span>COMPILE / INTERPRET + BUILD</span><b>翻译、处理、组合</b><p>检查、转换、打包、复制资源；项目不一定每一步都有。</p></div>
+            <div class="arrow">→</div>
+            <div class="station"><span>PROGRAM ARTIFACT</span><b>可交付的程序材料</b><p>例如 <code>dist/</code> 里的页面文件。</p></div>
+          </div>
+          <div class="runtime-band"><b>Runtime · 运行时环境</b><span>浏览器提供执行网页代码时需要的环境；启动后，程序产物才在这个环境里产生真实行为。</span></div>
+        </div>
+        <div class="terms">
+          <article class="term"><h3><span>SOURCE CODE</span>源代码</h3><p>开发者和 AI 编写、阅读、维护的原始程序表达。它是程序的来源材料，不等于某一次运行。</p><div class="example">Idea Box 的 <code>app.js</code> 写着“点击保存后新增卡片”的逻辑。</div></article>
+          <article class="term"><h3><span>PROGRAM</span>程序</h3><p>一组可以让计算机执行特定任务的指令及相关材料。一个 Program 可以被关闭、复制，也可以启动多次。</p><div class="example">构建后的 Idea Box 页面文件可以作为可运行的程序材料被浏览器加载。</div></article>
+          <article class="term"><h3><span>COMPILE</span>编译</h3><p>把一种程序表示翻译成另一种更接近目标执行环境的表示，常在运行前完成。不同语言和工具链做法不同。</p><div class="example">如果小林用 TypeScript，构建流程可能先把它编译成浏览器能处理的 JavaScript。</div></article>
+          <article class="term"><h3><span>INTERPRET</span>解释执行</h3><p>由解释器在运行时读取程序表示并执行。现实实现常混合编译与解释，不必把语言粗暴分成永远只有一种方式。</p><div class="example">“浏览器直接执行 JavaScript”是入门近似说法；浏览器内部可能还有即时编译等优化。</div></article>
+          <article class="term"><h3><span>BUILD</span>构建</h3><p>把源代码与资源加工成目标产物的一套流程，可能包含编译、检查、合并、压缩和复制。</p><div class="example">Idea Box 的 Build 把可维护的源文件整理到 <code>dist/</code>，供预览或发布。</div></article>
+          <article class="term"><h3><span>RUNTIME</span>运行时 / 运行时环境</h3><p>程序真正执行时所依赖的一组环境和能力。它既可以指运行阶段，也常指提供执行能力的软件环境。</p><div class="example">这个网页的关键 Runtime 是 Browser；其他项目也可能依赖 Node.js、Python 等 Runtime。</div></article>
+        </div>
+        <div class="scene teacher"><div class="scene-label">老师可以这样说</div><p>“菜谱是 Source Code，备好的半成品和出餐流程像 Build 产物，厨房设备和当班条件像 Runtime，真正开火才叫运行。菜谱写完，不等于菜已经端到桌上。”</p></div>
+        <div class="scene truth"><div class="scene-label">别混为一谈</div><p><b>Compile</b> 是一种翻译动作；<b>Interpret</b> 是一种执行方式；<b>Build</b> 是得到目标产物的整套加工流程；<b>Runtime</b> 是程序执行所处的环境。四个词有关系，但不是同义词。</p></div>
+      </section>
+
+      <section id="process">
+        <div class="act"><i></i> ACT 2 · 程序开始一次真实运行</div>
+        <h2>Program 是材料；Process 是它“活着的一次”</h2>
+        <p class="lead">小林点击 Run / Preview 后，OS 会管理一个或多个运行实例。磁盘上的同一套程序可以启动两次；每一次运行都有自己的身份、内存和资源状态。</p>
+        <div class="process-board" aria-label="程序、进程和线程关系图">
+          <div class="proc"><small>PROCESS A</small><b>AI 编程工具</b><div class="thread"></div><div class="thread"></div></div>
+          <div class="proc"><small>PROCESS B</small><b>预览 / 构建工具</b><div class="thread"></div></div>
+          <div class="proc"><small>PROCESS C</small><b>Browser</b><div class="thread"></div><div class="thread"></div><div class="thread"></div></div>
+          <div class="cpu-note"><b>CPU</b> 在许多可运行任务之间快速安排执行；<b>RAM</b> 承载这些进程当前所需的数据；<b>OS</b> 负责创建、隔离、调度和结束它们。</div>
+        </div>
+        <div class="terms">
+          <article class="term"><h3><span>PROCESS</span>进程</h3><p>程序的一次运行实例，由 OS 管理，拥有自己的身份、地址空间和资源。程序文件不动，Process 可以启动、崩溃、重启、同时存在多个。</p><div class="example">小林关掉预览再重新 Run，通常是结束一次运行，再创建新的 Process。</div></article>
+          <article class="term"><h3><span>THREAD</span>线程</h3><p>进程内部可被调度的执行路线。同一进程可以有一条或多条 Thread，并共享该进程的许多资源。</p><div class="example">“页面同时能响应点击和处理别的工作”不自动证明有两条 Thread；线程数量要看真实实现，不能凭界面猜。</div></article>
+        </div>
+        <div class="scene teacher"><div class="scene-label">老师可以这样说</div><p>“剧本是 Program；今晚这场演出是 Process；同一场演出里灯光、演员、音响各自推进的工作路线，可以帮助你近似理解 Thread。剧本可以只有一份，演出却能开很多场。”</p></div>
+        <div class="scene truth"><div class="scene-label">回看最底层</div><p>现在硬件概念串回来了：Source Code 和构建产物长期放在 Storage；启动后，OS 创建 Process，把运行所需内容放入 RAM；CPU 按调度执行 Thread 上的指令；浏览器最终把结果显示给小林。</p></div>
+      </section>
+
+      <section id="install">
+        <div class="act"><i></i> ACT 2 · 离开小林这台电脑</div>
+        <h2>“在我电脑能跑”与“别人拿去能跑”之间，还隔着环境</h2>
+        <p class="lead">如果小林把项目发给 Windows 同事，对方有了同一批文件，也未必拥有同样的 OS、Runtime、已安装工具和权限。</p>
+        <table class="compare">
+          <thead><tr><th>概念</th><th>专业解释</th><th>放进 Idea Box</th></tr></thead>
+          <tbody>
+            <tr><td>Install<br>安装</td><td>把软件及所需组件准备到目标系统，并进行必要登记或配置，使它能按预期启动。</td><td>安装 Browser、编辑器或所需 Runtime；不只是“下载了一个文件”。</td></tr>
+            <tr><td>Uninstall<br>卸载</td><td>移除已安装的软件及相应系统集成。是否保留用户数据或项目文件要看范围和产品设计。</td><td>卸载开发工具不应被默认理解为删除 <code>idea-box/</code> 源项目。</td></tr>
+            <tr><td>macOS</td><td>Unix 风格路径常以 <code>/</code> 开始；应用与权限模型有自己的约定。</td><td><code>/Users/xiaolin/Projects/idea-box</code></td></tr>
+            <tr><td>Windows</td><td>路径、可执行格式、权限和安装约定不同。</td><td><code>C:\Users\xiaolin\Projects\idea-box</code></td></tr>
+            <tr><td>Linux</td><td>同属类 Unix 系统，但发行版、依赖与桌面环境仍可能不同。</td><td><code>/home/xiaolin/projects/idea-box</code></td></tr>
+          </tbody>
+        </table>
+        <div class="scene teacher"><div class="scene-label">老师可以这样说</div><p>“项目文件像家具设计图；Install 更像把家具和必要配件真正安置进某套房子。换了房型、门宽、电压，不能只说‘图纸一样，所以肯定能用’。”</p></div>
+        <div class="scene truth"><div class="scene-label">给 Vibe coder 的问法</div><p>不要只对 AI 说“它跑不起来”。告诉它：目标 Operating System、Absolute Path、如何启动、依赖的 Runtime、出现了什么错误。环境越明确，AI 越不容易拿另一套系统的答案硬套。</p></div>
+      </section>
+
+      <section id="proof">
+        <div class="act"><i></i> ACT 3 · 从“看起来好了”走向可验证</div>
+        <h2>AI 说“完成了”，小林应该把证明拆成几层</h2>
+        <p class="lead">每一层只能证明自己的那一点。越往下走，越接近“用户真的得到一个能用的东西”。</p>
+        <div class="truth-ladder">
+          <div class="truth-step"><b>AI 回复成功</b><span>只证明工具给出了这个结论；不是文件、构建或运行证据。</span></div>
+          <div class="truth-step"><b>文件确实存在</b><span>检查目标 Absolute Path 下的 Source Code，而不是只看聊天里的代码块。</span></div>
+          <div class="truth-step"><b>Build 成功</b><span>证明构建流程得到目标产物；不证明页面交互符合需求。</span></div>
+          <div class="truth-step"><b>Process 正在运行</b><span>证明有一次运行实例活着；不证明它没有卡住，也不证明打开的是正确项目。</span></div>
+          <div class="truth-step"><b>Browser 能显示</b><span>证明页面被 Runtime 加载并渲染；不证明所有按钮和状态都正确。</span></div>
+          <div class="truth-step"><b>小林走完操作</b><span>输入一条灵感 → 保存成卡片 → 标星 → 重新检查。这才验证了 prompt 里的真实用户行为。</span></div>
+        </div>
+        <div class="scene teacher"><div class="scene-label">老师可以这样说</div><p>“Vibe coding 最危险的不是 AI 会犯错，而是我们把一句‘Done’当成跨越所有层的证明。以后你要问：Done 到哪一层？”</p></div>
+      </section>
+
+      <section id="map">
+        <div class="act"><i></i> ACT 3 · 把拆开的东西重新拼起来</div>
+        <h2>现在再看 Idea Box：它是一条系统，不是一张页面</h2>
+        <p class="lead">同一个例子已经把本节所有概念连成三条支线：电脑提供承载，文件提供持久化材料，运行把材料变成当下行为。</p>
+        <div class="rebuild">
+          <div class="rebuild-center">小林在 Browser 里操作 Idea Box</div>
+          <div class="branches">
+            <div class="branch"><h3>电脑：谁在承载？</h3><ol><li><b>Application</b> 面向小林</li><li><b>OS</b> 管理资源与边界</li><li><b>CPU</b> 执行指令</li><li><b>RAM</b> 承载当前状态</li><li><b>Storage</b> 长期保存材料</li></ol></div>
+            <div class="branch"><h3>文件：材料在哪里？</h3><ol><li><b>Directory</b> 组织项目</li><li><b>File / Filename / Extension</b> 定位对象与格式线索</li><li><b>Absolute / Relative Path</b> 描述位置</li><li><b>Working Directory</b> 决定相对起点</li><li><b>R / W / X Permission</b> 决定允许的动作</li></ol></div>
+            <div class="branch"><h3>运行：怎样活起来？</h3><ol><li><b>Source Code</b> 描述行为</li><li><b>Compile / Interpret</b> 翻译或执行</li><li><b>Build</b> 生成目标产物</li><li><b>Runtime</b> 提供执行环境</li><li><b>Program → Process → Thread</b></li><li><b>Install / Uninstall</b> 准备或移除环境</li></ol></div>
+          </div>
+        </div>
+        <div class="one-sentence">小林的一句 prompt 最终落到某个 <b>Working Directory</b> 里的 <b>Source Files</b>；经过需要的 <b>Build</b>，由 <b>Runtime</b> 启动成 <b>Process</b>；<b>OS</b> 调度 CPU、RAM、Storage 和权限；浏览器才把结果画成眼前的 Idea Box。</div>
+        <h3>最后用一句追问判断你是否真的懂了</h3>
+        <p>如果小林说：“浏览器里还是旧页面，但 AI 明明说已经改好了。”你应该能沿链路往回查：它改的是不是正确的 <b>File</b>？路径的起点对不对？是否有 <b>Write Permission</b>？改的是 Source 还是旧 Build 产物？有没有重新 Build？Browser 连接的是不是那次新的 Process？——这就是这些 jargon 对 Vibe coder 的实际价值。</p>
+        <div class="glossary" aria-label="本节术语速查">
+          <div><b>CPU</b><span>执行指令的硬件</span></div><div><b>Memory / RAM</b><span>运行中的临时工作区</span></div><div><b>Disk / Storage</b><span>长期保存材料</span></div>
+          <div><b>Operating System</b><span>管理硬件、文件、进程与权限</span></div><div><b>Application</b><span>面向用户任务的软件</span></div><div><b>File</b><span>可按名字读写的持久化数据对象</span></div>
+          <div><b>Directory</b><span>组织文件与子目录</span></div><div><b>Filename / Extension</b><span>名称与格式线索</span></div><div><b>Absolute / Relative Path</b><span>完整位置 / 相对起点的位置</span></div>
+          <div><b>Working Directory</b><span>相对路径当前的起点</span></div><div><b>R / W / X Permission</b><span>允许读、写、执行的规则</span></div><div><b>Source Code / Program</b><span>可维护的来源表达 / 可执行任务材料</span></div>
+          <div><b>Compile / Interpret</b><span>翻译程序表示 / 由解释器执行</span></div><div><b>Build / Runtime</b><span>加工目标产物 / 执行所需环境</span></div><div><b>Process / Thread</b><span>程序的一次运行 / 进程内的执行路线</span></div>
+          <div><b>Install / Uninstall</b><span>在目标系统准备 / 移除软件</span></div>
+        </div>
+        <div class="boundary-box"><b>我们故意没有在这里继续拆什么？</b><p>浏览器地址为什么长成那样、localhost 是什么、Client / Server 如何通信、HTTP 与 API 是什么——这些属于第 01 节 Web。JavaScript 里的变量和函数属于第 02 节。Terminal 与 Shell 怎样输入命令属于第 10 节。今天先把它们在系统中的“位置”留出来，但不抢跑。</p></div>
+      </section>
+    </main>
+  </div>
+
+  <footer><div class="foot-inner"><div class="eyebrow">LESSON 00 · END</div><h2>不是记住 25 个词，<br>而是学会沿一条链路追问。</h2><p>以后每当 AI 说“已经做好并运行了”，小林都可以从屏幕往下拆：我看见什么？它由哪个应用承载？对应哪些文件？文件在哪里？谁允许修改？如何变成程序产物？由什么 Runtime 启动成哪个 Process？最后，哪一层已经有证据，哪一层还只是猜测？</p><div class="foot-tags"><span>电脑</span><span>文件</span><span>路径</span><span>权限</span><span>源代码</span><span>构建</span><span>运行时</span><span>进程</span><span>线程</span></div></div></footer>
+
+  <script>
+    const input=document.getElementById('idea-input');
+    const ideas=document.getElementById('ideas');
+    const count=document.getElementById('idea-count');
+    function updateCount(){const n=ideas.children.length;count.textContent=n+' idea'+(n===1?'':'s')}
+    document.getElementById('save-idea').addEventListener('click',()=>{
+      const value=input.value.trim(); if(!value){input.focus();return}
+      const card=document.createElement('div'); card.className='idea';
+      const p=document.createElement('p'); p.textContent=value;
+      const star=document.createElement('button'); star.className='star';star.setAttribute('aria-label','标星');star.textContent='☆';
+      card.append(p,star);ideas.prepend(card);input.value='';updateCount();input.focus();
+    });
+    input.addEventListener('keydown',e=>{if(e.key==='Enter')document.getElementById('save-idea').click()});
+    ideas.addEventListener('click',e=>{if(!e.target.classList.contains('star'))return;const on=e.target.classList.toggle('on');e.target.textContent=on?'★':'☆';e.target.setAttribute('aria-label',on?'取消标星':'标星')});
+    document.querySelectorAll('[data-cwd]').forEach(btn=>btn.addEventListener('click',()=>{
+      document.querySelectorAll('[data-cwd]').forEach(b=>b.classList.remove('active'));btn.classList.add('active');
+      const good=btn.dataset.cwd==='idea';
+      document.getElementById('resolved-path').textContent=good?'/Users/xiaolin/Projects/idea-box/app.js':'/Users/xiaolin/Projects/another-project/app.js';
+      document.getElementById('path-warning').textContent=good?'✓ 正在指向 Idea Box 的 app.js':'✕ 同一个 ./app.js 已经指向另一个项目';
+    }));
+    const sections=[...document.querySelectorAll('main section')], links=[...document.querySelectorAll('.toc a')];
+    const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){links.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+entry.target.id))}}),{rootMargin:'-20% 0px -70%'});
+    sections.forEach(s=>observer.observe(s));
+    addEventListener('scroll',()=>{const h=document.documentElement;document.getElementById('progress').style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%'},{passive:true});
+  </script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "url": "https://microsoft.ai/",
+  "route": "curl",
+  "fingerprint": {
+    "nextjs": false,
+    "vercel": false,
+    "framer": false,
+    "webflow": false,
+    "vite_spa": false,
+    "challenge": false,
+    "has_h1": true,
+    "has_canvas": true,
+    "has_lenis": false,
+    "http_status": 200
+  },
+  "note": ""
+}
