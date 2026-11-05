@@ -1,0 +1,136 @@
+{
+  "browser": {
+    "mode": "launch",
+    "executable_path": "/home/liz/.cache/ms-playwright/chromium-1248/chrome-linux64/chrome",
+    "headless": true
+  },
+  "environment": {
+    "viewport": {
+      "width": 1440,
+      "height": 900,
+      "device_scale_factor": 1
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "color_scheme": "light",
+    "reduced_motion": "no-preference",
+    "service_workers": "block"
+  },
+  "start_url": {
+    "url": "https://www.fugro.com/industries"
+  },
+  "actions": [
+    {
+      "step_id": "settle-industries",
+      "action": "wait_for_timeout",
+      "duration_ms": 4000
+    },
+    {
+      "step_id": "decline-cookies",
+      "action": "click",
+      "locator": {
+        "kind": "role",
+        "role": "button",
+        "name": "Decline all"
+      },
+      "timeout_ms": 8000
+    },
+    {
+      "step_id": "cookies-gone",
+      "action": "wait_for_timeout",
+      "duration_ms": 1200
+    },
+    {
+      "step_id": "goto-energy",
+      "action": "goto",
+      "destination": {
+        "url": "https://www.fugro.com/industries/energy"
+      },
+      "wait_until": "load",
+      "timeout_ms": 30000
+    },
+    {
+      "step_id": "settle-energy",
+      "action": "wait_for_timeout",
+      "duration_ms": 4000
+    },
+    {
+      "step_id": "goto-expertise",
+      "action": "goto",
+      "destination": {
+        "url": "https://www.fugro.com/expertise"
+      },
+      "wait_until": "load",
+      "timeout_ms": 30000
+    },
+    {
+      "step_id": "settle-expertise",
+      "action": "wait_for_timeout",
+      "duration_ms": 4000
+    },
+    {
+      "step_id": "goto-case-studies",
+      "action": "goto",
+      "destination": {
+        "url": "https://www.fugro.com/expertise/case-studies"
+      },
+      "wait_until": "load",
+      "timeout_ms": 30000
+    },
+    {
+      "step_id": "settle-case-studies",
+      "action": "wait_for_timeout",
+      "duration_ms": 4000
+    },
+    {
+      "step_id": "goto-case-study",
+      "action": "goto",
+      "destination": {
+        "url": "https://www.fugro.com/expertise/case-studies/transforming-a-high-risk-river-crossing-into-design-certainty"
+      },
+      "wait_until": "load",
+      "timeout_ms": 30000
+    },
+    {
+      "step_id": "settle-case-study",
+      "action": "wait_for_timeout",
+      "duration_ms": 4000
+    },
+    {
+      "step_id": "goto-purpose",
+      "action": "goto",
+      "destination": {
+        "url": "https://www.fugro.com/about-us/our-purpose"
+      },
+      "wait_until": "load",
+      "timeout_ms": 30000
+    },
+    {
+      "step_id": "settle-purpose",
+      "action": "wait_for_timeout",
+      "duration_ms": 4000
+    }
+  ],
+  "capture": {
+    "after_each_step": [
+      "url",
+      "dom",
+      "accessibility",
+      "screenshot"
+    ],
+    "at_end": [
+      "url",
+      "history"
+    ],
+    "events": [
+      "console",
+      "page-errors",
+      "network"
+    ],
+    "network": {
+      "request_body": false,
+      "response_body": false,
+      "header_values": false
+    }
+  }
+}

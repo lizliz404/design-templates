@@ -1,0 +1,225 @@
+- document:
+  - banner:
+    - link "Home":
+      - /url: /en
+      - img
+    - list:
+      - listitem:
+        - link "Industries":
+          - /url: /industries
+      - listitem:
+        - link "Expertise":
+          - /url: /expertise
+      - listitem:
+        - link "Careers":
+          - /url: /careers
+      - listitem:
+        - link "Investors":
+          - /url: /investors
+      - listitem:
+        - link "News":
+          - /url: /news
+      - listitem:
+        - link "About us":
+          - /url: /about-us
+    - button "Search":
+      - img
+    - link "Profile":
+      - /url: /portals
+      - img
+    - link "Get in touch":
+      - /url: /contact
+  - main:
+    - heading "Creating a safe and liveable world" [level=1]
+    - img "FUG 2301 - Windfarm VNR Colour D4 19.jpg"
+    - list:
+      - listitem:
+        - paragraph: Jump to
+      - listitem:
+        - button "Introduction"
+      - listitem:
+        - button "Energy"
+      - listitem:
+        - button "Water"
+      - listitem:
+        - button "Infrastructure"
+    - heading "Introduction" [level=2]
+    - paragraph: "With our wide range of assets, skills, and solutions tailored to our clients, we serve customers in our three key markets: energy, water and infrastructure. Together with our partners and clients, we're building a safer and more liveable world."
+    - link "Read about our purpose":
+      - /url: /about-us/what-we-do
+      - text: Read about our purpose
+      - img
+    - link "shutterstock_2064279029.jpg Energy Supporting the energy transition for safer, sustainable world View energy industry":
+      - /url: /industries/energy
+      - img "shutterstock_2064279029.jpg"
+      - paragraph: Energy
+      - heading "Supporting the energy transition for safer, sustainable world" [level=2]
+      - button "Read more":
+        - img
+      - paragraph: View energy industry
+    - heading "Case studies in energy" [level=2]
+    - link "All case studies":
+      - /url: /expertise/case-studies
+      - text: All case studies
+      - img
+    - link "Seacalf MkV DeepDrive on back deck of vessel 01.jpg Case study Site characterisation for Revolution Wind, Ørsted and Eversource Rhode Island, USA":
+      - /url: /expertise/case-studies/site-characterisation-revolution-wind-fugro
+      - img "Seacalf MkV DeepDrive on back deck of vessel 01.jpg"
+      - paragraph: Case study
+      - heading "Site characterisation for Revolution Wind, Ørsted and Eversource" [level=2]
+      - paragraph: Rhode Island, USA
+    - link "block-island.jpeg Case study Structural Integrity for Offshore Wind Farm Block Island, off the coast of Rhode Island, US":
+      - /url: /expertise/case-studies/ensuring-structural-integrity-for-first-us-offshore-wind-farm
+      - img "block-island.jpeg"
+      - paragraph: Case study
+      - heading "Structural Integrity for Offshore Wind Farm" [level=2]
+      - paragraph: Block Island, off the coast of Rhode Island, US
+    - link "Blue Essence USV entering port, Australia.png Case study Our first remote USV inspection Offshore North West Shelf, Western Australia":
+      - /url: /expertise/case-studies/fugro-completes-first-remote-usv-inspection-for-woodside
+      - img "Blue Essence USV entering port, Australia.png"
+      - paragraph: Case study
+      - heading "Our first remote USV inspection" [level=2]
+      - paragraph: Offshore North West Shelf, Western Australia
+    - link "Seawatch Buoy in Norway 01.JPG Water Geo-data-driven solutions for climate adaptation and nature conservation View water industry":
+      - /url: /industries/water
+      - img "Seawatch Buoy in Norway 01.JPG"
+      - paragraph: Water
+      - heading "Geo-data-driven solutions for climate adaptation and nature conservation" [level=2]
+      - button "Read more":
+        - img
+      - paragraph: View water industry
+    - heading "Case studies in water" [level=2]
+    - link "All case studies":
+      - /url: /expertise/case-studies
+      - text: All case studies
+      - img
+    - link "main-image486de9f2f3db67859f9dff250019aa6e.jpeg Case study Fibre-optic cave monitoring assures public safety in Dutch marl quarries Marl quarries and Sibber cave Valkenburg, Netherlands":
+      - /url: /expertise/case-studies/fibre-optic-cave-monitoring-dutch-marl-quarries-fugro
+      - img "main-image486de9f2f3db67859f9dff250019aa6e.jpeg"
+      - paragraph: Case study
+      - heading "Fibre-optic cave monitoring assures public safety in Dutch marl quarries" [level=2]
+      - paragraph: Marl quarries and Sibber cave Valkenburg, Netherlands
+    - 'link "Comoe dam Panorama.JPG Case study Stopping the leak: how we helped bolster Burkina Faso''s most important dam. Burkina Faso"':
+      - /url: /expertise/case-studies/geophysical-leakage-survey-safeguards-future-of-comoe-dam-fugro
+      - img "Comoe dam Panorama.JPG"
+      - paragraph: Case study
+      - 'heading "Stopping the leak: how we helped bolster Burkina Faso''s most important dam." [level=2]'
+      - paragraph: Burkina Faso
+    - 'link "AdobeStock_217495708.jpeg Case study Texas coastal Lidar: Mapping in full flow Houston, Texas"':
+      - /url: /expertise/case-studies/texas-coastal-lidar-mapping-full-flow-fugro
+      - img "AdobeStock_217495708.jpeg"
+      - paragraph: Case study
+      - 'heading "Texas coastal Lidar: Mapping in full flow" [level=2]'
+      - paragraph: Houston, Texas
+    - link "AdobeStock_92939777.jpeg Infrastructure Infrastructure View infrastructure industry":
+      - /url: /industries/infrastructure
+      - img "AdobeStock_92939777.jpeg"
+      - paragraph: Infrastructure
+      - heading "Infrastructure" [level=2]
+      - button "Read more":
+        - img
+      - paragraph: View infrastructure industry
+    - heading "Case studies in infrastructure" [level=2]
+    - link "All case studies":
+      - /url: /expertise/case-studies
+      - text: All case studies
+      - img
+    - link "Seismic sensors on site continuously recording ambient noise used by swans to build a 3d ground model.jpg Case study Ambient noise tomography demonstrates a 50% time-saving screening for pumping station Qatar":
+      - /url: /expertise/case-studies/ambient-noise-tomography-demonstrates-a-50-time-saving-screening-for-pumping-station
+      - img "Seismic sensors on site continuously recording ambient noise used by swans to build a 3d ground model.jpg"
+      - paragraph: Case study
+      - heading "Ambient noise tomography demonstrates a 50% time-saving screening for pumping station" [level=2]
+      - paragraph: Qatar
+    - link "iStock-1169173299.jpg Case study Digitalising Western Power Distribution’s vegetation management United Kingdom":
+      - /url: /expertise/case-studies/digitalising-western-power-distribution-s-vegetation-management
+      - img "iStock-1169173299.jpg"
+      - paragraph: Case study
+      - heading "Digitalising Western Power Distribution’s vegetation management" [level=2]
+      - paragraph: United Kingdom
+    - link "Fugro Amphibious Buggy (FAB) 01.jpg Case study First, fully amphibious solution de-risks site characterisation schedules Malé, Maldives":
+      - /url: /expertise/case-studies/first-fully-amphibious-solution-de-risks-site-characterisation-schedules
+      - img "Fugro Amphibious Buggy (FAB) 01.jpg"
+      - paragraph: Case study
+      - heading "First, fully amphibious solution de-risks site characterisation schedules" [level=2]
+      - paragraph: Malé, Maldives
+    - img "Fugro employee learning how to pilot a remote USV 22.jpg"
+    - paragraph: Come work with us
+    - heading "Help create a positive impact on a global scale" [level=2]
+    - link "Read more":
+      - /url: /careers
+      - text: Read more
+      - img
+  - contentinfo:
+    - img
+    - list:
+      - listitem:
+        - link "Industries":
+          - /url: /industries
+      - listitem:
+        - link "Expertise":
+          - /url: /expertise
+      - listitem:
+        - link "Careers":
+          - /url: /careers
+      - listitem:
+        - link "Investors":
+          - /url: /investors
+      - listitem:
+        - link "News":
+          - /url: /news
+      - listitem:
+        - link "About us":
+          - /url: /about-us
+    - paragraph: Subscribe to news alerts
+    - link "Sign up now":
+      - /url: /news/subscribe-for-news-alerts
+      - text: Sign up now
+      - img
+    - list:
+      - listitem:
+        - paragraph: Social media
+      - listitem:
+        - link "LinkedIn":
+          - /url: https://www.linkedin.com/company/fugro
+      - listitem:
+        - link "Facebook":
+          - /url: https://www.facebook.com/fugro
+      - listitem:
+        - link "X (Twitter)":
+          - /url: https://twitter.com/fugro
+      - listitem:
+        - link "Instagram":
+          - /url: https://www.instagram.com/fugro
+    - list:
+      - listitem:
+        - paragraph: Contact
+      - listitem:
+        - link "General contact":
+          - /url: /contact
+      - listitem:
+        - link "Our locations":
+          - /url: /contact/locations
+      - listitem:
+        - link "Talent Community":
+          - /url: https://flows.beamery.eu/fugro/Join-the-Fugro-Talent-Community
+      - listitem:
+        - link "Speak Up":
+          - /url: /contact/speak-up
+    - link "Cookies":
+      - /url: /cookie-policy
+    - link "Privacy statement":
+      - /url: /privacy-notice
+    - link "Disclaimer":
+      - /url: /disclaimer
+    - link "General purchase terms and conditions":
+      - /url: /fugro-general-purchase-terms-and-conditions
+    - text: © 2026 Fugro. All rights reserved
+  - alert
+  - dialog "Cookie consent dialog":
+    - text: This website uses cookies This website uses cookies in order to offer you the most relevant information. Please accept cookies for the most optimal performance. By using our website you consent to all cookies in accordance with our
+    - link "Cookie policy, opens a new window":
+      - /url: /cookie-policy
+      - text: Cookie policy
+    - button "Accept all"
+    - button "Decline all"
+    - button "Cookie Settings"

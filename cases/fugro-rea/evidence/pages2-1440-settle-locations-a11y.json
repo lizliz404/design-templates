@@ -1,0 +1,498 @@
+- document:
+  - banner:
+    - link "Home":
+      - /url: /en
+      - img
+    - list:
+      - listitem:
+        - link "Industries":
+          - /url: /industries
+      - listitem:
+        - link "Expertise":
+          - /url: /expertise
+      - listitem:
+        - link "Careers":
+          - /url: /careers
+      - listitem:
+        - link "Investors":
+          - /url: /investors
+      - listitem:
+        - link "News":
+          - /url: /news
+      - listitem:
+        - link "About us":
+          - /url: /about-us
+    - button "Search":
+      - img
+    - link "Profile":
+      - /url: /portals
+      - img
+    - link "Get in touch":
+      - /url: /contact
+  - link "Contact":
+    - /url: /contact
+    - text: Contact
+    - img
+  - link "Locations":
+    - /url: /contact/locations
+  - main:
+    - heading "Our locations" [level=1]
+    - paragraph: We work in all corners of the world. Find a Fugro location near you.
+    - list:
+      - listitem:
+        - paragraph: Jump to
+      - listitem:
+        - button "Americas"
+      - listitem:
+        - button "Asia Pacific"
+      - listitem:
+        - button "Europe and Africa"
+      - listitem:
+        - button "Middle East and India"
+    - list:
+      - button "Map view"
+    - heading "Americas" [level=2]
+    - link "Brazil From offshore energy exploration to subsea infrastructure modelling, contact Fugro's experts in Brazil to see how we can support your project. See details":
+      - /url: /contact/locations/brazil
+      - heading "Brazil" [level=2]
+      - paragraph: From offshore energy exploration to subsea infrastructure modelling, contact Fugro's experts in Brazil to see how we can support your project.
+      - button "See details":
+        - img
+        - text: See details
+    - link "Canada From renewable energy to land surveying, Fugro Canada are on hand to support your next project with a range of consultancy services. Contact us today. See details":
+      - /url: /contact/locations/canada
+      - heading "Canada" [level=2]
+      - paragraph: From renewable energy to land surveying, Fugro Canada are on hand to support your next project with a range of consultancy services. Contact us today.
+      - button "See details":
+        - img
+        - text: See details
+    - link "Chile A range of geotechnical services, designed to mitigate project risk with actionable insight from Geo-data. Contact Fugro Chile today. See details":
+      - /url: /contact/locations/chile
+      - heading "Chile" [level=2]
+      - paragraph: A range of geotechnical services, designed to mitigate project risk with actionable insight from Geo-data. Contact Fugro Chile today.
+      - button "See details":
+        - img
+        - text: See details
+    - link "Colombia Fugro Colombia support climate resilience, seep studies and nature restoration across the Americas. Find your local expert and get advice on your project. See details":
+      - /url: /contact/locations/colombia
+      - heading "Colombia" [level=2]
+      - paragraph: Fugro Colombia support climate resilience, seep studies and nature restoration across the Americas. Find your local expert and get advice on your project.
+      - button "See details":
+        - img
+        - text: See details
+    - link "Curaçao Contact Fugro Curacao for valuable Geo-data that translates into actionable insights. Our consultancy mitigates project risk, saving money in the long run. See details":
+      - /url: /contact/locations/curacao
+      - heading "Curaçao" [level=2]
+      - paragraph: Contact Fugro Curacao for valuable Geo-data that translates into actionable insights. Our consultancy mitigates project risk, saving money in the long run.
+      - button "See details":
+        - img
+        - text: See details
+    - link "Guyana Our range of Geo-services support your project by collecting valuable Geo-data. Our experts turn this data into insights. Contact Fugro Guyana. See details":
+      - /url: /contact/locations/guyana
+      - heading "Guyana" [level=2]
+      - paragraph: Our range of Geo-services support your project by collecting valuable Geo-data. Our experts turn this data into insights. Contact Fugro Guyana.
+      - button "See details":
+        - img
+        - text: See details
+    - link "Mexico Fugro Mexico supports energy, infrastructure and offshore projects with geo-data, surveying, and consulting services across North and Central America. See details":
+      - /url: /contact/locations/mexico
+      - heading "Mexico" [level=2]
+      - paragraph: Fugro Mexico supports energy, infrastructure and offshore projects with geo-data, surveying, and consulting services across North and Central America.
+      - button "See details":
+        - img
+        - text: See details
+    - link "Suriname Fugro Suriname provides specialist geo-data, surveying and consulting services for offshore exploration and infrastructure projects in the Americas. See details":
+      - /url: /contact/locations/suriname
+      - heading "Suriname" [level=2]
+      - paragraph: Fugro Suriname provides specialist geo-data, surveying and consulting services for offshore exploration and infrastructure projects in the Americas.
+      - button "See details":
+        - img
+        - text: See details
+    - link "Trinidad and Tobago Fugro Trinidad & Tobago supports offshore energy and infrastructure projects with surveying, geo-consulting, and engineering insight from start to finish. See details":
+      - /url: /contact/locations/trinidad-and-tobago
+      - heading "Trinidad and Tobago" [level=2]
+      - paragraph: Fugro Trinidad & Tobago supports offshore energy and infrastructure projects with surveying, geo-consulting, and engineering insight from start to finish.
+      - button "See details":
+        - img
+        - text: See details
+    - link "United States With 17 locations across the United States, our experts are ready to support your next geo project. Find and contact your local expert in the USA. See details":
+      - /url: /contact/locations/united-states
+      - heading "United States" [level=2]
+      - paragraph: With 17 locations across the United States, our experts are ready to support your next geo project. Find and contact your local expert in the USA.
+      - button "See details":
+        - img
+        - text: See details
+    - heading "Asia Pacific" [level=2]
+    - link "Australia From offshore wind maintenance to cone penetration tests (CPT), Fugro Australia offer a range of geotechnical services to support risk management. See details":
+      - /url: /contact/locations/australia
+      - heading "Australia" [level=2]
+      - paragraph: From offshore wind maintenance to cone penetration tests (CPT), Fugro Australia offer a range of geotechnical services to support risk management.
+      - button "See details":
+        - img
+        - text: See details
+    - link "Brunei Darussalam Discover a range of geotechnical solutions to mitigate risks in the energy, water and infrastructure industry. Contact Fugro Brunei Darussalam here. See details":
+      - /url: /contact/locations/brunei-darussalam
+      - heading "Brunei Darussalam" [level=2]
+      - paragraph: Discover a range of geotechnical solutions to mitigate risks in the energy, water and infrastructure industry. Contact Fugro Brunei Darussalam here.
+      - button "See details":
+        - img
+        - text: See details
+    - link "China Fugro China offer expert investigation of pipeline routes, as well as many other on and offshore Geo-services. Contact our experts in China today. See details":
+      - /url: /contact/locations/china
+      - heading "China" [level=2]
+      - paragraph: Fugro China offer expert investigation of pipeline routes, as well as many other on and offshore Geo-services. Contact our experts in China today.
+      - button "See details":
+        - img
+        - text: See details
+    - link "Hong Kong Fugro Hong Kong supports organisations across Asia Pacific with expert Geo-consulting services, including site investigation and surveying. Contact Fugro. See details":
+      - /url: /contact/locations/hong-kong
+      - heading "Hong Kong" [level=2]
+      - paragraph: Fugro Hong Kong supports organisations across Asia Pacific with expert Geo-consulting services, including site investigation and surveying. Contact Fugro.
+      - button "See details":
+        - img
+        - text: See details
+    - link "Indonesia Fugro Indonesia expanded our geotechnical testing offering in Jakarta, with a new laboratory with better features for energy and infrastructure sectors. See details":
+      - /url: /contact/locations/indonesia
+      - heading "Indonesia" [level=2]
+      - paragraph: Fugro Indonesia expanded our geotechnical testing offering in Jakarta, with a new laboratory with better features for energy and infrastructure sectors.
+      - button "See details":
+        - img
+        - text: See details
+    - link "Japan Fugro Japan offers geotechnical and marine surveying services across the Asia Pacific, helping energy and infrastructure projects succeed efficiently. See details":
+      - /url: /contact/locations/japan
+      - heading "Japan" [level=2]
+      - paragraph: Fugro Japan offers geotechnical and marine surveying services across the Asia Pacific, helping energy and infrastructure projects succeed efficiently.
+      - button "See details":
+        - img
+        - text: See details
+    - link "Malaysia Fugro Malaysia delivers geo-data, surveying, and consulting services for offshore energy, infrastructure, and construction projects across Asia Pacific. See details":
+      - /url: /contact/locations/malaysia
+      - heading "Malaysia" [level=2]
+      - paragraph: Fugro Malaysia delivers geo-data, surveying, and consulting services for offshore energy, infrastructure, and construction projects across Asia Pacific.
+      - button "See details":
+        - img
+        - text: See details
+    - link "New Zealand Fugro New Zealand supports offshore energy, land, and marine projects with tailored geo-surveys and consulting for safer, more efficient results. See details":
+      - /url: /contact/locations/new-zealand
+      - heading "New Zealand" [level=2]
+      - paragraph: Fugro New Zealand supports offshore energy, land, and marine projects with tailored geo-surveys and consulting for safer, more efficient results.
+      - button "See details":
+        - img
+        - text: See details
+    - link "Philippines Fugro Philippines supports offshore energy and infrastructure projects with geo-consulting and surveying, turning data into actionable insight. See details":
+      - /url: /contact/locations/philippines
+      - heading "Philippines" [level=2]
+      - paragraph: Fugro Philippines supports offshore energy and infrastructure projects with geo-consulting and surveying, turning data into actionable insight.
+      - button "See details":
+        - img
+        - text: See details
+    - link "Singapore Fugro Singapore delivers cutting-edge geo-data, surveying and consulting solutions to advance offshore energy, infrastructure & urban resilience projects. See details":
+      - /url: /contact/locations/singapore
+      - heading "Singapore" [level=2]
+      - paragraph: Fugro Singapore delivers cutting-edge geo-data, surveying and consulting solutions to advance offshore energy, infrastructure & urban resilience projects.
+      - button "See details":
+        - img
+        - text: See details
+    - link "South Korea Fugro South Korea provides geo-data, marine surveying and consulting services to support offshore wind, infrastructure and blue-economy projects. See details":
+      - /url: /contact/locations/south-korea
+      - heading "South Korea" [level=2]
+      - paragraph: Fugro South Korea provides geo-data, marine surveying and consulting services to support offshore wind, infrastructure and blue-economy projects.
+      - button "See details":
+        - img
+        - text: See details
+    - link "Taiwan Fugro Taiwan delivers cutting-edge geo-data, marine surveying and consulting services to support offshore wind, infrastructure and energy projects. See details":
+      - /url: /contact/locations/taiwan
+      - heading "Taiwan" [level=2]
+      - paragraph: Fugro Taiwan delivers cutting-edge geo-data, marine surveying and consulting services to support offshore wind, infrastructure and energy projects.
+      - button "See details":
+        - img
+        - text: See details
+    - link "Thailand Fugro Thailand delivers geotechnical and surveying expertise to plan and execute offshore energy, infrastructure, and construction projects safely. See details":
+      - /url: /contact/locations/thailand
+      - heading "Thailand" [level=2]
+      - paragraph: Fugro Thailand delivers geotechnical and surveying expertise to plan and execute offshore energy, infrastructure, and construction projects safely.
+      - button "See details":
+        - img
+        - text: See details
+    - link "Vietnam Fugro Vietnam offers expert geophysical, geotechnical and metocean survey services to support offshore wind, energy and infrastructure projects. See details":
+      - /url: /contact/locations/vietnam
+      - heading "Vietnam" [level=2]
+      - paragraph: Fugro Vietnam offers expert geophysical, geotechnical and metocean survey services to support offshore wind, energy and infrastructure projects.
+      - button "See details":
+        - img
+        - text: See details
+    - heading "Europe and Africa" [level=2]
+    - link "Albania With several locations around Europe and Africa, Fugro are on hand to support geotechnical engineering projects on and offshore. Contact Fugro Albania. See details":
+      - /url: /contact/locations/albania
+      - heading "Albania" [level=2]
+      - paragraph: With several locations around Europe and Africa, Fugro are on hand to support geotechnical engineering projects on and offshore. Contact Fugro Albania.
+      - button "See details":
+        - img
+        - text: See details
+    - link "Angola Fugro Angola support the southwestern coast of Africa with a range of Geo-consulting services, both on and offshore. Contact the Angola team today. See details":
+      - /url: /contact/locations/angola
+      - heading "Angola" [level=2]
+      - paragraph: Fugro Angola support the southwestern coast of Africa with a range of Geo-consulting services, both on and offshore. Contact the Angola team today.
+      - button "See details":
+        - img
+        - text: See details
+    - link "Austria Fugro Austria is located in the heart of Europe, supporting projects across infrastructure and renewable energy to reduce risk and achieve deadlines. See details":
+      - /url: /contact/locations/austria
+      - heading "Austria" [level=2]
+      - paragraph: Fugro Austria is located in the heart of Europe, supporting projects across infrastructure and renewable energy to reduce risk and achieve deadlines.
+      - button "See details":
+        - img
+        - text: See details
+    - link "Belgium Serving Europe and Africa, contact Fugro Belgium for Geo-consulting services that reduce risk and improve efficiency. We turn data into valuable insights. See details":
+      - /url: /contact/locations/belgium
+      - heading "Belgium" [level=2]
+      - paragraph: Serving Europe and Africa, contact Fugro Belgium for Geo-consulting services that reduce risk and improve efficiency. We turn data into valuable insights.
+      - button "See details":
+        - img
+        - text: See details
+    - link "Congo Working with companies like Total E&P, Fugro Congo conduct remote survey operations to support offshore infrastructure and renewable energy development. See details":
+      - /url: /contact/locations/congo
+      - heading "Congo" [level=2]
+      - paragraph: Working with companies like Total E&P, Fugro Congo conduct remote survey operations to support offshore infrastructure and renewable energy development.
+      - button "See details":
+        - img
+        - text: See details
+    - link "France Fugro France serves Europe and Africa, offering advance Geo-solutions that turn data into actionable insights - mitigating project risk. Get in touch here. See details":
+      - /url: /contact/locations/france
+      - heading "France" [level=2]
+      - paragraph: Fugro France serves Europe and Africa, offering advance Geo-solutions that turn data into actionable insights - mitigating project risk. Get in touch here.
+      - button "See details":
+        - img
+        - text: See details
+    - link "Germany Fugro Germany support offshore wind development and maintenance, site investigation and several Geo-consulting services. Contact your local experts today. See details":
+      - /url: /contact/locations/germany
+      - heading "Germany" [level=2]
+      - paragraph: Fugro Germany support offshore wind development and maintenance, site investigation and several Geo-consulting services. Contact your local experts today.
+      - button "See details":
+        - img
+        - text: See details
+    - link "Hungary Contact Fugro Hungary for expert foundation design consultancy. Our Budapest HQ supports civil engineers with site investigation and loadtesting. See details":
+      - /url: /contact/locations/hungary
+      - heading "Hungary" [level=2]
+      - paragraph: Contact Fugro Hungary for expert foundation design consultancy. Our Budapest HQ supports civil engineers with site investigation and loadtesting.
+      - button "See details":
+        - img
+        - text: See details
+    - link "Ireland Fugro Ireland play a major role in offshore renewable energy development, with marine surveying to support the climate action plan. Contact our experts. See details":
+      - /url: /contact/locations/ireland
+      - heading "Ireland" [level=2]
+      - paragraph: Fugro Ireland play a major role in offshore renewable energy development, with marine surveying to support the climate action plan. Contact our experts.
+      - button "See details":
+        - img
+        - text: See details
+    - link "Italy Fugro Italy provides expert geo-consulting and marine survey services supporting energy, infrastructure and environmental projects across the region. See details":
+      - /url: /contact/locations/italy
+      - heading "Italy" [level=2]
+      - paragraph: Fugro Italy provides expert geo-consulting and marine survey services supporting energy, infrastructure and environmental projects across the region.
+      - button "See details":
+        - img
+        - text: See details
+    - link "Lithuania Fugro Lithuania supports onshore and offshore projects with geo-data, surveying and consulting services across Europe. Contact your local experts today. See details":
+      - /url: /contact/locations/lithuania
+      - heading "Lithuania" [level=2]
+      - paragraph: Fugro Lithuania supports onshore and offshore projects with geo-data, surveying and consulting services across Europe. Contact your local experts today.
+      - button "See details":
+        - img
+        - text: See details
+    - link "Mauritius Fugro Mauritius delivers geo-consulting and survey services to support energy, infrastructure, and offshore projects across Africa and the Indian Ocean. See details":
+      - /url: /contact/locations/mauritius
+      - heading "Mauritius" [level=2]
+      - paragraph: Fugro Mauritius delivers geo-consulting and survey services to support energy, infrastructure, and offshore projects across Africa and the Indian Ocean.
+      - button "See details":
+        - img
+        - text: See details
+    - link "Mozambique Fugro Mozambique provides geotechnical engineering and survey services to help energy, mining, and infrastructure projects succeed across Africa & beyond. See details":
+      - /url: /contact/locations/mozambique
+      - heading "Mozambique" [level=2]
+      - paragraph: Fugro Mozambique provides geotechnical engineering and survey services to help energy, mining, and infrastructure projects succeed across Africa & beyond.
+      - button "See details":
+        - img
+        - text: See details
+    - link "The Netherlands With our Netherlands base, Fugro offer a range of Geo-consulting services across Europe and Africa. Contact your local experts. Supercharge your project. See details":
+      - /url: /contact/locations/netherlands
+      - heading "The Netherlands" [level=2]
+      - paragraph: With our Netherlands base, Fugro offer a range of Geo-consulting services across Europe and Africa. Contact your local experts. Supercharge your project.
+      - button "See details":
+        - img
+        - text: See details
+    - link "Norway Fugro Norway offers geotechnical and offshore survey services, supporting wind, marine, and infrastructure projects with actionable geo-data insights. See details":
+      - /url: /contact/locations/norway
+      - heading "Norway" [level=2]
+      - paragraph: Fugro Norway offers geotechnical and offshore survey services, supporting wind, marine, and infrastructure projects with actionable geo-data insights.
+      - button "See details":
+        - img
+        - text: See details
+    - link "South Africa Fugro South Africa offers offshore and onshore geo-surveying and consulting services to support energy, infrastructure and mining projects across Africa. See details":
+      - /url: /contact/locations/south-africa
+      - heading "South Africa" [level=2]
+      - paragraph: Fugro South Africa offers offshore and onshore geo-surveying and consulting services to support energy, infrastructure and mining projects across Africa.
+      - button "See details":
+        - img
+        - text: See details
+    - link "Spain Fugro Spain offers comprehensive geo-data, marine surveying and consulting services to support offshore wind, infrastructure and energy projects in Europe. See details":
+      - /url: /contact/locations/spain
+      - heading "Spain" [level=2]
+      - paragraph: Fugro Spain offers comprehensive geo-data, marine surveying and consulting services to support offshore wind, infrastructure and energy projects in Europe.
+      - button "See details":
+        - img
+        - text: See details
+    - link "Turkey Fugro Turkey provides geo-surveying, geotechnical, and marine services to support energy and infrastructure projects safely from planning to delivery. See details":
+      - /url: /contact/locations/turkey
+      - heading "Turkey" [level=2]
+      - paragraph: Fugro Turkey provides geo-surveying, geotechnical, and marine services to support energy and infrastructure projects safely from planning to delivery.
+      - button "See details":
+        - img
+        - text: See details
+    - link "United Kingdom Contact Fugro UK to see how data collection, testing and consultancy services for geotechnical engineering and structural monitoring can support you. See details":
+      - /url: /contact/locations/united-kingdom
+      - heading "United Kingdom" [level=2]
+      - paragraph: Contact Fugro UK to see how data collection, testing and consultancy services for geotechnical engineering and structural monitoring can support you.
+      - button "See details":
+        - img
+        - text: See details
+    - heading "Middle East and India" [level=2]
+    - link "Azerbaijan Contact Fugro Azerbaijan to discuss your structural monitoring or geophysical engineering project. We turn data into actionable insights for your team. See details":
+      - /url: /contact/locations/azerbaijan
+      - heading "Azerbaijan" [level=2]
+      - paragraph: Contact Fugro Azerbaijan to discuss your structural monitoring or geophysical engineering project. We turn data into actionable insights for your team.
+      - button "See details":
+        - img
+        - text: See details
+    - link "Bangladesh Get in touch with Fugro Bangladesh to discuss your upcoming geophysical engineering project. We support with the planning, design and operational stages. See details":
+      - /url: /contact/locations/bangladesh
+      - heading "Bangladesh" [level=2]
+      - paragraph: Get in touch with Fugro Bangladesh to discuss your upcoming geophysical engineering project. We support with the planning, design and operational stages.
+      - button "See details":
+        - img
+        - text: See details
+    - link "Egypt Offering world-leading Geo-solutions to support your geotechnical engineering challenges. Contact Fugro Egypt and find your local expert. See details":
+      - /url: /contact/locations/egypt
+      - heading "Egypt" [level=2]
+      - paragraph: Offering world-leading Geo-solutions to support your geotechnical engineering challenges. Contact Fugro Egypt and find your local expert.
+      - button "See details":
+        - img
+        - text: See details
+    - link "India Specialising in a range of advanced geotechnical services and technologies, contact Fugro India to reduce risks and achieve goals on your next project. See details":
+      - /url: /contact/locations/india
+      - heading "India" [level=2]
+      - paragraph: Specialising in a range of advanced geotechnical services and technologies, contact Fugro India to reduce risks and achieve goals on your next project.
+      - button "See details":
+        - img
+        - text: See details
+    - link "Pakistan Fugro Pakistan delivers geo‑consulting, surveying, and geo‑data services supporting energy, infrastructure, and offshore projects from start to finish. See details":
+      - /url: /contact/locations/pakistan
+      - heading "Pakistan" [level=2]
+      - paragraph: Fugro Pakistan delivers geo‑consulting, surveying, and geo‑data services supporting energy, infrastructure, and offshore projects from start to finish.
+      - button "See details":
+        - img
+        - text: See details
+    - link "Qatar Fugro Qatar provides geo-data, surveying, and consulting to support offshore energy and infrastructure projects while reducing risk & improving efficiency. See details":
+      - /url: /contact/locations/qatar
+      - heading "Qatar" [level=2]
+      - paragraph: Fugro Qatar provides geo-data, surveying, and consulting to support offshore energy and infrastructure projects while reducing risk & improving efficiency.
+      - button "See details":
+        - img
+        - text: See details
+    - link "Saudi Arabia Fugro Saudi Arabia delivers specialized geo-survey and consulting solutions to optimize offshore energy, infrastructure, and industrial projects safely. See details":
+      - /url: /contact/locations/saudi-arabia
+      - heading "Saudi Arabia" [level=2]
+      - paragraph: Fugro Saudi Arabia delivers specialized geo-survey and consulting solutions to optimize offshore energy, infrastructure, and industrial projects safely.
+      - button "See details":
+        - img
+        - text: See details
+    - link "United Arab Emirates Fugro UAE delivers integrated geo‑data, surveying and consulting services for offshore energy, infrastructure and industrial projects in the Gulf region. See details":
+      - /url: /contact/locations/united-arab-emirates
+      - heading "United Arab Emirates" [level=2]
+      - paragraph: Fugro UAE delivers integrated geo‑data, surveying and consulting services for offshore energy, infrastructure and industrial projects in the Gulf region.
+      - button "See details":
+        - img
+        - text: See details
+    - img "Fugro employee learning how to pilot a remote USV 22.jpg"
+    - paragraph: Come work with us
+    - heading "Help create a positive impact on a global scale" [level=2]
+    - link "Read more":
+      - /url: /careers
+      - text: Read more
+      - img
+  - contentinfo:
+    - img
+    - list:
+      - listitem:
+        - link "Industries":
+          - /url: /industries
+      - listitem:
+        - link "Expertise":
+          - /url: /expertise
+      - listitem:
+        - link "Careers":
+          - /url: /careers
+      - listitem:
+        - link "Investors":
+          - /url: /investors
+      - listitem:
+        - link "News":
+          - /url: /news
+      - listitem:
+        - link "About us":
+          - /url: /about-us
+    - paragraph: Subscribe to news alerts
+    - link "Sign up now":
+      - /url: /news/subscribe-for-news-alerts
+      - text: Sign up now
+      - img
+    - list:
+      - listitem:
+        - paragraph: Social media
+      - listitem:
+        - link "LinkedIn":
+          - /url: https://www.linkedin.com/company/fugro
+      - listitem:
+        - link "Facebook":
+          - /url: https://www.facebook.com/fugro
+      - listitem:
+        - link "X (Twitter)":
+          - /url: https://twitter.com/fugro
+      - listitem:
+        - link "Instagram":
+          - /url: https://www.instagram.com/fugro
+    - list:
+      - listitem:
+        - paragraph: Contact
+      - listitem:
+        - link "General contact":
+          - /url: /contact
+      - listitem:
+        - link "Our locations":
+          - /url: /contact/locations
+      - listitem:
+        - link "Talent Community":
+          - /url: https://flows.beamery.eu/fugro/Join-the-Fugro-Talent-Community
+      - listitem:
+        - link "Speak Up":
+          - /url: /contact/speak-up
+    - link "Cookies":
+      - /url: /cookie-policy
+    - link "Privacy statement":
+      - /url: /privacy-notice
+    - link "Disclaimer":
+      - /url: /disclaimer
+    - link "General purchase terms and conditions":
+      - /url: /fugro-general-purchase-terms-and-conditions
+    - text: © 2026 Fugro. All rights reserved Also of interest
+    - list:
+      - listitem:
+        - link "Supporting the energy transition for a safe...":
+          - /url: https://www.fugro.com/industries/energy
+      - listitem:
+        - link "We transform Geo-data into actionable insights":
+          - /url: https://www.fugro.com/expertise
+      - listitem:
+        - link "Purpose":
+          - /url: https://www.fugro.com/about-us/our-purpose
+  - alert
+  - dialog "Cookie consent button": Cookie settings

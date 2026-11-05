@@ -1,0 +1,114 @@
+{
+  "browser": {
+    "mode": "launch",
+    "executable_path": "/home/liz/.cache/ms-playwright/chromium-1248/chrome-linux64/chrome",
+    "headless": true
+  },
+  "environment": {
+    "viewport": {
+      "width": 390,
+      "height": 844,
+      "device_scale_factor": 2
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "color_scheme": "light",
+    "reduced_motion": "no-preference",
+    "service_workers": "block"
+  },
+  "start_url": {
+    "url": "https://www.fugro.com/"
+  },
+  "actions": [
+    {
+      "step_id": "settle-home",
+      "action": "wait_for_timeout",
+      "duration_ms": 6000
+    },
+    {
+      "step_id": "decline-cookies",
+      "action": "click",
+      "locator": {
+        "kind": "role",
+        "role": "button",
+        "name": "Decline all"
+      },
+      "timeout_ms": 8000
+    },
+    {
+      "step_id": "cookies-gone",
+      "action": "wait_for_timeout",
+      "duration_ms": 1200
+    },
+    {
+      "step_id": "open-menu",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "button[title='Menu']"
+      },
+      "timeout_ms": 10000
+    },
+    {
+      "step_id": "menu-open",
+      "action": "wait_for_timeout",
+      "duration_ms": 1500
+    },
+    {
+      "step_id": "close-menu",
+      "action": "press",
+      "locator": {
+        "kind": "css",
+        "selector": "body"
+      },
+      "key": "Escape",
+      "timeout_ms": 5000
+    },
+    {
+      "step_id": "goto-energy",
+      "action": "goto",
+      "destination": {
+        "url": "https://www.fugro.com/industries/energy"
+      },
+      "wait_until": "domcontentloaded",
+      "timeout_ms": 30000
+    },
+    {
+      "step_id": "settle-energy",
+      "action": "wait_for_timeout",
+      "duration_ms": 3500
+    },
+    {
+      "step_id": "goto-contact",
+      "action": "goto",
+      "destination": {
+        "url": "https://www.fugro.com/contact"
+      },
+      "wait_until": "domcontentloaded",
+      "timeout_ms": 30000
+    },
+    {
+      "step_id": "settle-contact",
+      "action": "wait_for_timeout",
+      "duration_ms": 3500
+    }
+  ],
+  "capture": {
+    "after_each_step": [
+      "url",
+      "dom",
+      "screenshot"
+    ],
+    "at_end": [
+      "url"
+    ],
+    "events": [
+      "page-errors"
+    ],
+    "network": {
+      "request_body": false,
+      "response_body": false,
+      "header_values": false
+    }
+  }
+}

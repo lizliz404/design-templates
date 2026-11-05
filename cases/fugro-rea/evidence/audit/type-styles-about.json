@@ -1,0 +1,110 @@
+{
+ "BODY_02_REGULAR_PARAGRAPH": {
+  "fontFamily": "__aktivGrotesk_92419b",
+  "fontSize": "18px",
+  "fontWeight": "400",
+  "lineHeight": "28.8px",
+  "letterSpacing": "0%",
+  "textTransform": "none",
+  "samples": 7
+ },
+ "BODY_01_REGULAR": {
+  "fontFamily": "__aktivGrotesk_92419b",
+  "fontSize": "18px",
+  "fontWeight": "400",
+  "lineHeight": "28.8px",
+  "letterSpacing": "0%",
+  "textTransform": "none",
+  "samples": 9
+ },
+ "BODY_03_BOLD": {
+  "fontFamily": "__aktivGrotesk_92419b",
+  "fontSize": "16px",
+  "fontWeight": "500",
+  "lineHeight": "25.6px",
+  "letterSpacing": "0%",
+  "textTransform": "none",
+  "samples": 3
+ },
+ "HEADING_01": {
+  "fontFamily": "__review_39e939",
+  "fontSize": "30px",
+  "fontWeight": "400",
+  "lineHeight": "36px",
+  "letterSpacing": "-1%",
+  "textTransform": "none",
+  "samples": 4
+ },
+ "BODY_04_BOLD": {
+  "fontFamily": "__aktivGrotesk_92419b",
+  "fontSize": "14px",
+  "fontWeight": "500",
+  "lineHeight": "22.4px",
+  "letterSpacing": "0%",
+  "textTransform": "none",
+  "samples": 3
+ },
+ "HEADING_08": {
+  "fontFamily": "__aktivGrotesk_92419b",
+  "fontSize": "21px",
+  "fontWeight": "500",
+  "lineHeight": "28.35px",
+  "letterSpacing": "-1%",
+  "textTransform": "none",
+  "samples": 10
+ },
+ "HEADING_05": {
+  "fontFamily": "__review_39e939",
+  "fontSize": "28px",
+  "fontWeight": "400",
+  "lineHeight": "33.6px",
+  "letterSpacing": "-1%",
+  "textTransform": "none",
+  "samples": 1
+ },
+ "HEADING_04": {
+  "fontFamily": "__review_39e939",
+  "fontSize": "30px",
+  "fontWeight": "400",
+  "lineHeight": "36px",
+  "letterSpacing": "-1%",
+  "textTransform": "none",
+  "samples": 3
+ },
+ "HEADING_03": {
+  "fontFamily": "__review_39e939",
+  "fontSize": "28px",
+  "fontWeight": "400",
+  "lineHeight": "33.6px",
+  "letterSpacing": "-1%",
+  "textTransform": "none",
+  "samples": 4
+ },
+ "HEADING_07": {
+  "fontFamily": "__aktivGrotesk_92419b",
+  "fontSize": "24px",
+  "fontWeight": "500",
+  "lineHeight": "32.4px",
+  "letterSpacing": "-2%",
+  "textTransform": "none",
+  "samples": 1
+ },
+ "BODY_02_REGULAR": {
+  "fontFamily": "__aktivGrotesk_92419b",
+  "fontSize": "18px",
+  "fontWeight": "400",
+  "lineHeight": "25.2px",
+  "letterSpacing": "0%",
+  "textTransform": "none",
+  "samples": 4
+ },
+ "BODY_01_BOLD": {
+  "fontFamily": "__aktivGrotesk_92419b",
+  "fontSize": "18px",
+  "fontWeight": "500",
+  "lineHeight": "28.8px",
+  "letterSpacing": "0%",
+  "textTransform": "none",
+  "samples": 1
+ }
+}

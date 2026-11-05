@@ -1,0 +1,153 @@
+- document:
+  - banner:
+    - link "Home":
+      - /url: /en
+      - img
+    - list:
+      - listitem:
+        - link "Industries":
+          - /url: /industries
+      - listitem:
+        - link "Expertise":
+          - /url: /expertise
+      - listitem:
+        - link "Careers":
+          - /url: /careers
+      - listitem:
+        - link "Investors":
+          - /url: /investors
+      - listitem:
+        - link "News":
+          - /url: /news
+      - listitem:
+        - link "About us":
+          - /url: /about-us
+    - button "Search":
+      - img
+    - link "Profile":
+      - /url: /portals
+      - img
+    - link "Get in touch":
+      - /url: /contact
+  - link "News":
+    - /url: /news
+    - text: News
+    - img
+  - link "Press releases":
+    - /url: /news/press-releases
+    - text: Press releases
+    - img
+  - link "Fugro awarded major australian marine asset integrity contract":
+    - /url: /news/press-releases/2026/fugro-awarded-major-australian-marine-asset-integrity-contract
+  - main:
+    - heading "Fugro awarded major Australian marine asset integrity contract" [level=1]
+    - paragraph: Published
+    - paragraph: 23 September 2026 14:30 AM CET
+    - paragraph: Location
+    - paragraph: Perth, Australia
+    - paragraph: Fugro has secured a marine asset integrity contract with a client in Australia, strengthening its position as a trusted partner for subsea inspection, intervention and maintenance services in the offshore energy industry.
+    - paragraph: Fugro will replace critical subsea infrastructure to support the long-term reliability and performance of our client’s offshore assets. In addition to the replacement works, Fugro will provide subsea survey and inspection services using remote operations capabilities. The project brings together Fugro's integrated capabilities, combining engineering expertise, project management and offshore execution to deliver safe and efficient outcomes for our client.
+    - paragraph:
+      - text: Offshore operations will be executed from Fugro's multipurpose support vessel
+      - emphasis: Fugro Etive
+      - text: ", with project management, engineering and operational support services being delivered from Fugro’s regional operations teams."
+    - paragraph: The contract follows an initial phase of engineering and planning activities with detailed engineering to commence in the coming weeks. Offshore operations are expected to commence towards the end of 2027.
+    - paragraph:
+      - text: "Barry Walsh, Regional Business Line Director, Marine Asset Integrity:"
+      - emphasis: “This award reflects the strength of our relationship with the client and our proven ability to safely deliver complex marine asset integrity projects in Australian waters.”
+    - paragraph: PDF
+    - paragraph: Fugro awarded major Australian marine asset integrity contract - Press Release
+    - link "Download":
+      - /url: https://fugro.canto.global/direct/document/n3gspiu4j10b91uslh09epl81l/2hOKQib-nm_M2KkJGFRHpMZZwO0/original?content-type=application%2Fpdf&name=Fugro+awarded+major+Australian+marine+asset+integrity+contract+-+Press+Release.pdf
+      - img
+    - link "Subscribe to our new alerts":
+      - /url: /news/subscribe-for-news-alerts
+    - heading "Contact us" [level=2]
+    - heading "For more information Investor and media enquiries" [level=2]
+    - img "catrien-van-buttingha-wichers-square.jpg"
+    - paragraph: Catrien van Buttingha Wichers
+    - paragraph: Director Investor Relations
+    - button "Contact Catrien van Buttingha Wichers":
+      - text: Contact Catrien van Buttingha Wichers
+      - img
+    - img "serge-van-de-ven-square-2.jpg"
+    - paragraph: Serge van de Ven
+    - paragraph: Director Brand & Communications
+    - button "Contact Serge van de Ven":
+      - text: Contact Serge van de Ven
+      - img
+    - img "Sea Auk working on WaveWalker 06.jpg"
+    - paragraph: Our mission
+    - heading "Creating a safe and liveable world" [level=2]
+    - paragraph: Tackling tomorrow’s problems
+    - link "Find out more":
+      - /url: /about-us/our-purpose
+      - text: Find out more
+      - img
+  - contentinfo:
+    - img
+    - list:
+      - listitem:
+        - link "Industries":
+          - /url: /industries
+      - listitem:
+        - link "Expertise":
+          - /url: /expertise
+      - listitem:
+        - link "Careers":
+          - /url: /careers
+      - listitem:
+        - link "Investors":
+          - /url: /investors
+      - listitem:
+        - link "News":
+          - /url: /news
+      - listitem:
+        - link "About us":
+          - /url: /about-us
+    - paragraph: Subscribe to news alerts
+    - link "Sign up now":
+      - /url: /news/subscribe-for-news-alerts
+      - text: Sign up now
+      - img
+    - list:
+      - listitem:
+        - paragraph: Social media
+      - listitem:
+        - link "LinkedIn":
+          - /url: https://www.linkedin.com/company/fugro
+      - listitem:
+        - link "Facebook":
+          - /url: https://www.facebook.com/fugro
+      - listitem:
+        - link "X (Twitter)":
+          - /url: https://twitter.com/fugro
+      - listitem:
+        - link "Instagram":
+          - /url: https://www.instagram.com/fugro
+    - list:
+      - listitem:
+        - paragraph: Contact
+      - listitem:
+        - link "General contact":
+          - /url: /contact
+      - listitem:
+        - link "Our locations":
+          - /url: /contact/locations
+      - listitem:
+        - link "Talent Community":
+          - /url: https://flows.beamery.eu/fugro/Join-the-Fugro-Talent-Community
+      - listitem:
+        - link "Speak Up":
+          - /url: /contact/speak-up
+    - link "Cookies":
+      - /url: /cookie-policy
+    - link "Privacy statement":
+      - /url: /privacy-notice
+    - link "Disclaimer":
+      - /url: /disclaimer
+    - link "General purchase terms and conditions":
+      - /url: /fugro-general-purchase-terms-and-conditions
+    - text: © 2026 Fugro. All rights reserved
+  - alert
+  - dialog "Cookie consent button": Cookie settings

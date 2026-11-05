@@ -1,0 +1,114 @@
+[
+ {
+  "step_id": "scenario_start",
+  "url": {
+   "url": "https://www.fugro.com/",
+   "origin": "https://www.fugro.com",
+   "query_parameter_names": [],
+   "redacted": false
+  },
+  "screenshot": "scenario_start.png",
+  "dom": "scenario_start-dom.html",
+  "accessibility": "scenario_start-a11y.json",
+  "history": "not_requested",
+  "storage": "not_requested"
+ },
+ {
+  "step_id": "settle-home",
+  "url": {
+   "url": "https://www.fugro.com/",
+   "origin": "https://www.fugro.com",
+   "query_parameter_names": [],
+   "redacted": false
+  },
+  "screenshot": "settle-home.png",
+  "dom": "settle-home-dom.html",
+  "accessibility": "settle-home-a11y.json",
+  "history": "not_requested",
+  "storage": "not_requested"
+ },
+ {
+  "step_id": "goto-industries",
+  "url": {
+   "url": "https://www.fugro.com/industries",
+   "origin": "https://www.fugro.com",
+   "query_parameter_names": [],
+   "redacted": false
+  },
+  "screenshot": "goto-industries.png",
+  "dom": "goto-industries-dom.html",
+  "accessibility": "goto-industries-a11y.json",
+  "history": "not_requested",
+  "storage": "not_requested"
+ },
+ {
+  "step_id": "settle-industries",
+  "url": {
+   "url": "https://www.fugro.com/industries",
+   "origin": "https://www.fugro.com",
+   "query_parameter_names": [],
+   "redacted": false
+  },
+  "screenshot": "settle-industries.png",
+  "dom": "settle-industries-dom.html",
+  "accessibility": "settle-industries-a11y.json",
+  "history": "not_requested",
+  "storage": "not_requested"
+ },
+ {
+  "step_id": "goto-careers",
+  "url": {
+   "url": "https://www.fugro.com/careers",
+   "origin": "https://www.fugro.com",
+   "query_parameter_names": [],
+   "redacted": false
+  },
+  "screenshot": "goto-careers.png",
+  "dom": "goto-careers-dom.html",
+  "accessibility": "goto-careers-a11y.json",
+  "history": "not_requested",
+  "storage": "not_requested"
+ },
+ {
+  "step_id": "settle-careers",
+  "url": {
+   "url": "https://www.fugro.com/careers",
+   "origin": "https://www.fugro.com",
+   "query_parameter_names": [],
+   "redacted": false
+  },
+  "screenshot": "settle-careers.png",
+  "dom": "settle-careers-dom.html",
+  "accessibility": "settle-careers-a11y.json",
+  "history": "not_requested",
+  "storage": "not_requested"
+ },
+ {
+  "step_id": "goto-contact",
+  "url": {
+   "url": "https://www.fugro.com/contact",
+   "origin": "https://www.fugro.com",
+   "query_parameter_names": [],
+   "redacted": false
+  },
+  "screenshot": "goto-contact.png",
+  "dom": "goto-contact-dom.html",
+  "accessibility": "goto-contact-a11y.json",
+  "history": "not_requested",
+  "storage": "not_requested"
+ },
+ {
+  "step_id": "settle-contact",
+  "url": {
+   "url": "https://www.fugro.com/contact",
+   "origin": "https://www.fugro.com",
+   "query_parameter_names": [],
+   "redacted": false
+  },
+  "screenshot": "settle-contact.png",
+  "dom": "settle-contact-dom.html",
+  "accessibility": "settle-contact-a11y.json",
+  "history": "settle-contact-history.json",
+  "storage": "not_requested"
+ }
+]

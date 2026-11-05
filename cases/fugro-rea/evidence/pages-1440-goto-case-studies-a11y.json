@@ -1,0 +1,134 @@
+- document:
+  - banner:
+    - link "Home":
+      - /url: /en
+      - img
+    - list:
+      - listitem:
+        - link "Industries":
+          - /url: /industries
+      - listitem:
+        - link "Expertise":
+          - /url: /expertise
+      - listitem:
+        - link "Careers":
+          - /url: /careers
+      - listitem:
+        - link "Investors":
+          - /url: /investors
+      - listitem:
+        - link "News":
+          - /url: /news
+      - listitem:
+        - link "About us":
+          - /url: /about-us
+    - button "Search":
+      - img
+    - link "Profile":
+      - /url: /portals
+      - img
+    - link "Get in touch":
+      - /url: /contact
+  - link "Expertise":
+    - /url: /expertise
+    - text: Expertise
+    - img
+  - link "Case studies":
+    - /url: /expertise/case-studies
+  - main:
+    - paragraph: See details of our work
+    - heading "Case studies" [level=1]
+    - paragraph: Filter by
+    - paragraph: All industries
+    - img
+    - paragraph: All regions
+    - img
+    - paragraph: All areas of expertise
+    - img
+    - separator
+    - heading "Highlighted" [level=2]
+    - link "Lift boat on Mississippi River 02.jpg Infrastructure Geotechnical Investigation for US-51 Ohio River Bridge How Fugro applied offshore-grade positioning and sampling technology to deliver 100% validated foundation data for Kentucky's US-51 Ohio River bridge replacement. 10 Jun 2026":
+      - /url: /expertise/case-studies/transforming-a-high-risk-river-crossing-into-design-certainty
+      - img "Lift boat on Mississippi River 02.jpg"
+      - paragraph: Infrastructure
+      - heading "Geotechnical Investigation for US-51 Ohio River Bridge" [level=2]
+      - paragraph: How Fugro applied offshore-grade positioning and sampling technology to deliver 100% validated foundation data for Kentucky's US-51 Ohio River bridge replacement.
+      - paragraph: 10 Jun 2026
+      - button "Read more":
+        - img
+    - heading "All case studies" [level=2]
+    - img "Engineer onboard Fugro Galaxy 02.jpg"
+    - paragraph
+    - heading "Come join us" [level=2]
+    - paragraph: Exciting challenges. Unforgettable experiences. Innovative projects. Collaborative teams. Work that helps create a safer, more sustainable, and liveable world. These are a few of the things you’ll find at Fugro. Will you join our global team?
+    - link "Careers at Fugro":
+      - /url: /careers/jobs
+      - text: Careers at Fugro
+      - img
+  - contentinfo:
+    - img
+    - list:
+      - listitem:
+        - link "Industries":
+          - /url: /industries
+      - listitem:
+        - link "Expertise":
+          - /url: /expertise
+      - listitem:
+        - link "Careers":
+          - /url: /careers
+      - listitem:
+        - link "Investors":
+          - /url: /investors
+      - listitem:
+        - link "News":
+          - /url: /news
+      - listitem:
+        - link "About us":
+          - /url: /about-us
+    - paragraph: Subscribe to news alerts
+    - link "Sign up now":
+      - /url: /news/subscribe-for-news-alerts
+      - text: Sign up now
+      - img
+    - list:
+      - listitem:
+        - paragraph: Social media
+      - listitem:
+        - link "LinkedIn":
+          - /url: https://www.linkedin.com/company/fugro
+      - listitem:
+        - link "Facebook":
+          - /url: https://www.facebook.com/fugro
+      - listitem:
+        - link "X (Twitter)":
+          - /url: https://twitter.com/fugro
+      - listitem:
+        - link "Instagram":
+          - /url: https://www.instagram.com/fugro
+    - list:
+      - listitem:
+        - paragraph: Contact
+      - listitem:
+        - link "General contact":
+          - /url: /contact
+      - listitem:
+        - link "Our locations":
+          - /url: /contact/locations
+      - listitem:
+        - link "Talent Community":
+          - /url: https://flows.beamery.eu/fugro/Join-the-Fugro-Talent-Community
+      - listitem:
+        - link "Speak Up":
+          - /url: /contact/speak-up
+    - link "Cookies":
+      - /url: /cookie-policy
+    - link "Privacy statement":
+      - /url: /privacy-notice
+    - link "Disclaimer":
+      - /url: /disclaimer
+    - link "General purchase terms and conditions":
+      - /url: /fugro-general-purchase-terms-and-conditions
+    - text: © 2026 Fugro. All rights reserved
+  - alert
+  - dialog "Cookie consent button": Cookie settings

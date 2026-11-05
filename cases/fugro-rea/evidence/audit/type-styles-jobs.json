@@ -1,0 +1,74 @@
+{
+ "BODY_01_REGULAR": {
+  "fontFamily": "__aktivGrotesk_92419b",
+  "fontSize": "18px",
+  "fontWeight": "400",
+  "lineHeight": "28.8px",
+  "letterSpacing": "0%",
+  "textTransform": "none",
+  "samples": 1
+ },
+ "BODY_03_REGULAR": {
+  "fontFamily": "__aktivGrotesk_92419b",
+  "fontSize": "16px",
+  "fontWeight": "400",
+  "lineHeight": "22.4px",
+  "letterSpacing": "0%",
+  "textTransform": "none",
+  "samples": 9
+ },
+ "BODY_03_BOLD": {
+  "fontFamily": "__aktivGrotesk_92419b",
+  "fontSize": "16px",
+  "fontWeight": "500",
+  "lineHeight": "25.6px",
+  "letterSpacing": "0%",
+  "textTransform": "none",
+  "samples": 3
+ },
+ "HEADING_09": {
+  "fontFamily": "__aktivGrotesk_92419b",
+  "fontSize": "21px",
+  "fontWeight": "400",
+  "lineHeight": "28.35px",
+  "letterSpacing": "-1%",
+  "textTransform": "none",
+  "samples": 21
+ },
+ "BODY_04_BOLD": {
+  "fontFamily": "__aktivGrotesk_92419b",
+  "fontSize": "14px",
+  "fontWeight": "500",
+  "lineHeight": "22.4px",
+  "letterSpacing": "0%",
+  "textTransform": "none",
+  "samples": 20
+ },
+ "BODY_04_REGULAR": {
+  "fontFamily": "__aktivGrotesk_92419b",
+  "fontSize": "14px",
+  "fontWeight": "400",
+  "lineHeight": "19.6px",
+  "letterSpacing": "0%",
+  "textTransform": "none",
+  "samples": 20
+ },
+ "HEADING_02": {
+  "fontFamily": "__review_39e939",
+  "fontSize": "28px",
+  "fontWeight": "400",
+  "lineHeight": "33.6px",
+  "letterSpacing": "-1%",
+  "textTransform": "none",
+  "samples": 2
+ },
+ "BODY_01_BOLD": {
+  "fontFamily": "__aktivGrotesk_92419b",
+  "fontSize": "18px",
+  "fontWeight": "500",
+  "lineHeight": "28.8px",
+  "letterSpacing": "0%",
+  "textTransform": "none",
+  "samples": 1
+ }
+}

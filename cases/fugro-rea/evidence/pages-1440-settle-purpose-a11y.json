@@ -1,0 +1,145 @@
+- document:
+  - banner:
+    - link "Home":
+      - /url: /en
+      - img
+    - list:
+      - listitem:
+        - link "Industries":
+          - /url: /industries
+      - listitem:
+        - link "Expertise":
+          - /url: /expertise
+      - listitem:
+        - link "Careers":
+          - /url: /careers
+      - listitem:
+        - link "Investors":
+          - /url: /investors
+      - listitem:
+        - link "News":
+          - /url: /news
+      - listitem:
+        - link "About us":
+          - /url: /about-us
+    - button "Search":
+      - img
+    - link "Profile":
+      - /url: /portals
+      - img
+    - link "Get in touch":
+      - /url: /contact
+  - link "About us":
+    - /url: /about-us
+    - text: About us
+    - img
+  - link "Our purpose":
+    - /url: /about-us/our-purpose
+  - main:
+    - heading "Purpose" [level=1]
+    - paragraph: On a mission to create a safe and liveable world
+    - img "Sea Auk working on WaveWalker 06.jpg"
+    - paragraph: At Fugro, we always keep the bigger picture in mind. We don’t just help you realise and operate your projects safely and efficiently, but sustainably too. Because the world is changing faster than ever before. And we have an important role to play in making sure it’s safe and liveable.
+    - heading "Tackling tomorrow’s problems" [level=2]
+    - paragraph: The global population is growing and cities are expanding. This will lead to a higher demand for not just energy, water, and food, but also minerals, metals, buildings, industrial facilities and infrastructure. Then there’s climate change. With devastating effects like rising sea levels, extreme weather, and drought, it’s the issue of our lives.
+    - paragraph: Yes, we must tackle these problems today. By transitioning to low carbon energy generation, for example. And by transforming the energy mix, our infrastructure and built environments.
+    - heading "Joint effort" [level=2]
+    - paragraph: To create a safe and liveable world, we need to work closely with our partners. That’s why we want to help you achieve net-zero carbon emissions, develop sustainable infrastructure, and strengthen your climate resilience.
+    - paragraph: "Examples of how we can support your sustainability efforts:"
+    - list:
+      - listitem:
+        - paragraph: mapping the seabed for offshore wind farms
+      - listitem:
+        - paragraph: using uncrewed vehicles in operations to cut emissions
+      - listitem:
+        - paragraph: partnering with local communities on coastal protection
+    - paragraph:
+      - text: Curious about our sustainability efforts? You can find them on our
+      - link "sustainability page":
+        - /url: /about-us/sustainability
+      - text: .
+    - img "Hoogwatergeul Wanssum (3 nov 2020).jpg"
+    - paragraph
+    - heading "Our commitment to sustainability" [level=2]
+    - paragraph: For Fugro, sustainable business means that we continuously rethink what we do and how we do it
+    - link "Learn more":
+      - /url: /about-us/sustainability
+      - text: Learn more
+      - img
+  - contentinfo:
+    - img
+    - list:
+      - listitem:
+        - link "Industries":
+          - /url: /industries
+      - listitem:
+        - link "Expertise":
+          - /url: /expertise
+      - listitem:
+        - link "Careers":
+          - /url: /careers
+      - listitem:
+        - link "Investors":
+          - /url: /investors
+      - listitem:
+        - link "News":
+          - /url: /news
+      - listitem:
+        - link "About us":
+          - /url: /about-us
+    - paragraph: Subscribe to news alerts
+    - link "Sign up now":
+      - /url: /news/subscribe-for-news-alerts
+      - text: Sign up now
+      - img
+    - list:
+      - listitem:
+        - paragraph: Social media
+      - listitem:
+        - link "LinkedIn":
+          - /url: https://www.linkedin.com/company/fugro
+      - listitem:
+        - link "Facebook":
+          - /url: https://www.facebook.com/fugro
+      - listitem:
+        - link "X (Twitter)":
+          - /url: https://twitter.com/fugro
+      - listitem:
+        - link "Instagram":
+          - /url: https://www.instagram.com/fugro
+    - list:
+      - listitem:
+        - paragraph: Contact
+      - listitem:
+        - link "General contact":
+          - /url: /contact
+      - listitem:
+        - link "Our locations":
+          - /url: /contact/locations
+      - listitem:
+        - link "Talent Community":
+          - /url: https://flows.beamery.eu/fugro/Join-the-Fugro-Talent-Community
+      - listitem:
+        - link "Speak Up":
+          - /url: /contact/speak-up
+    - link "Cookies":
+      - /url: /cookie-policy
+    - link "Privacy statement":
+      - /url: /privacy-notice
+    - link "Disclaimer":
+      - /url: /disclaimer
+    - link "General purchase terms and conditions":
+      - /url: /fugro-general-purchase-terms-and-conditions
+    - text: © 2026 Fugro. All rights reserved Also of interest
+    - list:
+      - listitem:
+        - link "New framework approach to geo-risk management":
+          - /url: https://www.fugro.com/news/long-reads/2021/new-framework-approach-geo-risk-management-fugro-longread
+      - listitem:
+        - link "Supporting the energy transition for a safe...":
+          - /url: https://www.fugro.com/industries/energy
+      - listitem:
+        - link "Strategic Geo-Data for Critical Minerals Mining":
+          - /url: https://www.fugro.com/industries/infrastructure/critical-minerals
+  - alert
+  - dialog "Cookie consent button": Cookie settings

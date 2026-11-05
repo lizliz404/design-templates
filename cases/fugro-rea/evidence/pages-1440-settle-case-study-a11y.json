@@ -1,0 +1,238 @@
+- document:
+  - banner:
+    - link "Home":
+      - /url: /en
+      - img
+    - list:
+      - listitem:
+        - link "Industries":
+          - /url: /industries
+      - listitem:
+        - link "Expertise":
+          - /url: /expertise
+      - listitem:
+        - link "Careers":
+          - /url: /careers
+      - listitem:
+        - link "Investors":
+          - /url: /investors
+      - listitem:
+        - link "News":
+          - /url: /news
+      - listitem:
+        - link "About us":
+          - /url: /about-us
+    - button "Search":
+      - img
+    - link "Profile":
+      - /url: /portals
+      - img
+    - link "Get in touch":
+      - /url: /contact
+  - link "Expertise":
+    - /url: /expertise
+    - text: Expertise
+    - img
+  - link "Case studies":
+    - /url: /expertise/case-studies
+    - text: Case studies
+    - img
+  - link "Transforming a high risk river crossing into design certainty":
+    - /url: /expertise/case-studies/transforming-a-high-risk-river-crossing-into-design-certainty
+  - main:
+    - paragraph: Case study
+    - heading "Transforming a high-risk river crossing into design certainty:" [level=1]
+    - paragraph: Redefining inland geotechnical investigation for Kentucky’s new US-51 Ohio River Bridge
+    - paragraph: Ohio River between Wickliffe, Kentucky, and Cairo, Illinois
+    - img "Lift boat on Mississippi River 02.jpg"
+    - paragraph: Client
+    - paragraph: Kentucky Transportation Cabinet (KYTC) via Terracon
+    - paragraph: Project duration
+    - paragraph: April - September 2024
+    - paragraph: Fugro delivered a comprehensive and design‑ready geotechnical investigation to support KYTC’s planned replacement of the aging US‑51 Ohio River Bridge. By demonstrating innovation, flexibility, and relentless attention to operational efficiency, Fugro overcame complex geological, operational, and logistical constraints that limited data quality on previous investigations. The outcome was a high‑confidence subsurface dataset without rework, delays, or disruption to river operations, resulting in a confident foundation design for this critical infrastructure.
+    - paragraph: Planning, feasibility, conceptual design
+    - paragraph: Design
+    - paragraph: Construction
+    - paragraph: Operations and maintenance
+    - paragraph: Decommissioning
+    - paragraph: Show full process
+    - heading "Challenge" [level=2]
+    - paragraph: The existing US‑51 bridge linking Wickliffe, Kentucky, and Cairo, Illinois, is nearing the end of its service life. Narrow lanes, the absence of shoulders, and constrained geometry present ongoing safety and reliability concerns for commuters and regional freight traffic. Replacing the bridge required a modern, resilient structure, but first demanded precise, defensible geotechnical data to support deep foundation design in one of the Ohio River’s most demanding environments.
+    - heading "Complex geology and seismic risk" [level=3]
+    - paragraph: The bridge lies within the New Madrid Seismic Zone, significantly elevating foundation performance requirements. KYTC scoped specialised sampling, with borings extending 300–400 ft below the riverbed, the first time KYTC had specified these depths below sea level on a bridge project. Investing in deeper borings and specialised testing ensures structural integrity and long-term performance of this critical infrastructure under seismic loading, minimising costly design changes and unwelcome surprises during installation. Earlier preliminary onshore investigations by Terracon revealed highly variable sands and complex stratigraphy, including challenging clay units, making consistent sampling difficult and increasing the risk of unreliable design inputs. The presence of Porter’s Creek Clay was an important factor. This is a challenging clay unit for geotechnical sampling (difficult sample recovery) and for infrastructure development (significant heave and settlement), especially consequential to bridges and deep foundations.
+    - heading "Environmental, navigational, and access constraints" [level=3]
+    - paragraph: "Subsurface complexity was compounded by external conditions beyond anyone’s control:"
+    - paragraph:
+      - strong: Environmental
+      - text: ": Tropical storms, strong and variable currents, fluctuating water levels, floating debris, and seabed obstructions (including wire, driftwood, tires and a shipwreck) required rigorous planning and mitigation to maintain safety and schedule."
+    - paragraph:
+      - strong: Logistical and navigational
+      - text: ": The area of investigation is immediately downstream of a USACE lock and dam system. Heavy commercial traffic, controlled vessel movements, and complex hydraulic forces, particularly during high‑flow conditions, constrained access and increased operational risk."
+    - heading "Procurement challenge" [level=3]
+    - paragraph: Securing a stable overwater drilling platform proved to be a critical barrier. Earlier (2023) attempts by Terracon to source a jack‑up or self‑elevating platform involved excessive mobilisation costs, impractical modifications, or unacceptable risk. Floating barges were considered but rejected due to the potential for sample disturbance and substandard data quality. Any further delay or data deemed unsuitable for design threatened the bridge schedule, funding, and overall project viability.
+    - paragraph: It was at this point that Fugro was re-engaged in 2024 to deliver a practical, high‑quality solution within budget using a jack-up barge.
+    - img "Lift boat on Mississippi 3.jpg"
+    - paragraph
+    - heading "Solution" [level=2]
+    - paragraph: Fugro’s involvement began during planning and feasibility, with a detailed review of legacy geotechnical and geophysical data and participation in a HAZID workshop. This early engagement allowed Fugro to fully understand known risks and develop a tailored data‑collection strategy. The implementation phase encompassed overwater field operations and secure sample handling to support foundation design.
+    - heading "Innovative platform deployment" [level=3]
+    - paragraph: Fugro mobilised the Donald Olsen, a self‑elevating lift boat that provided a stable, elevated work platform independent of river currents. This marked the first use of a lift‑boat platform for geotechnical investigation at the Mississippi–Ohio River confluence. Unlike floating barges, the lift boat eliminated sample disturbance and CPT performance issues caused by vessel motion, delivering consistent, high‑quality results in a highly dynamic river environment.
+    - paragraph: Mobilising the lift boat hundreds of miles upriver from Houma, Louisiana, to Cairo, Illinois required close coordination with tug operators, the US Coast Guard, and river authorities, demonstrating Fugro’s ability to adapt offshore‑grade assets to an inland setting. Successful mobilisation alone reinforced client confidence before the first borehole was drilled.
+    - heading "Conflict avoidance and stakeholder coordination" [level=3]
+    - paragraph: Located at the convergence of two major rivers and downstream of a dam, the project area is one of the busiest navigation zones on the Ohio River. Fugro implemented proactive stakeholder engagement, including early coordination, operational simulations, and real‑time communication with river authorities. The result was zero vessel traffic incidents and no disruption to commercial navigation, a benchmark of operational excellence recognised by KYTC.
+    - heading "Offshore technology applied inland" [level=3]
+    - paragraph: Fugro deployed its (Office Assisted Remote Services) OARS® positioning system, delivering sub‑decimeter accuracy for borehole and CPT locations, providing offshore‑grade precision previously unseen by KYTC on river projects. This eliminated uncertainty in aligning subsurface data with bridge foundation layouts and reduced the risk of successive design adjustments.
+    - paragraph: To identify riverbed obstructions and inform field operators prior to vessel jacking down, sonar scan data were transmitted to Fugro’s Remote Operations Centre (ROC). This clearance process minimised the risk of delays associated with vessel repositioning and reduced potential damage to equipment. An equally important benefit of remote operations was the reduction of onboard field crew requirements, thereby lowering personnel exposure and enhancing overall operational safety.
+    - paragraph: To address challenging sands, difficult clay units, and complex stratigraphy, Fugro utilised Geobor‑S triple‑tube sampling, significantly improving sample recovery where conventional methods had failed. Secure daily transfer and controlled storage protocols preserved sample integrity through laboratory testing, closing the loop between field execution, lab testing and design use.
+    - heading "Adaptive execution in demanding conditions" [level=3]
+    - paragraph: Drawing on extensive experience in high‑flow rivers and complex coastal settings, Fugro demonstrated adaptability throughout execution. In coordination with KYTC and the consultant, sampling methods and drilling fluid mixes were adjusted to improve recovery and efficiency while maintaining data quality.
+    - heading "“Overall, it was a joy to work with Fugro on this project. I enjoyed working with Bob, Simon, Stephen, and Liv (who I worked with early on during the proposal phase of the project). A lot of experience and knowledge base there and I learned a lot. Their knowledge and skill set are phenomenal.”" [level=2]
+    - paragraph: Ken Zur
+    - paragraph: Terracon Project Manager
+    - img "Lift boat on Mississippi 4.jpg"
+    - paragraph
+    - heading "Outcome" [level=2]
+    - paragraph: "Fugro completed a safe investigation without impact to co‑users of the navigation, delivering:"
+    - list:
+      - listitem:
+        - paragraph: 18 borings (16 base +2 offsets), totalling 4,800 ft
+      - listitem:
+        - paragraph: 9 SCPTs, totalling 640 ft,
+      - listitem:
+        - paragraph: Suspension logging in 5 boreholes to 400 ft below the riverbed
+    - paragraph: Unlike the earlier campaign, no resampling or repeat work was required. All data was accepted by Terracon as design‑ready, enabling the engineering team to proceed with confidence.
+    - paragraph: By reducing subsurface uncertainty, Fugro effectively managed ground risk, avoided costly design revisions, preserved project‑phase budgets, and protected the overall delivery schedule. This investigation directly enabled progress toward safe, reliable bridge design, with subsequent benefits to commuters, regional commerce, and enhanced infrastructure resilience.
+    - paragraph: This project demonstrates how innovative deployment of offshore technologies, combined with disciplined planning and stakeholder coordination, can deliver superior geotechnical outcomes in challenging inland environments. Fugro transformed a high‑risk river crossing into design certainty, setting a new standard for geotechnical investigation on complex inland infrastructure projects.
+    - paragraph
+    - heading "“…Fugro team went above and beyond to complete the work on time and successfully. Multiple meetings with project team virtual and onsite to discuss challenges, round-the-clock work schedule, marine management, transport, and outfitting…”" [level=2]
+    - paragraph: Erik Scott
+    - paragraph: KYTC Project Manager, TEBM, Geotechnical Support & Review Branch
+    - heading "Key Metrics" [level=2]
+    - text: "0"
+    - paragraph: Borings
+    - text: "0"
+    - paragraph: SCPTs
+    - text: 0 %
+    - paragraph: Data validation
+    - img "Fugro 2 jack-up barge in Hong Kong.jpg"
+    - paragraph: Our expertise
+    - heading "Infrastructure" [level=2]
+    - paragraph: Whether supporting the construction or maintenance of your structure, we can provide insights to derisk major pieces of infrastructure at every stage of its life cycle.
+    - link "Read more about our work suppporting and developing major infrastructure projects":
+      - /url: /industries/infrastructure
+      - text: Read more about our work suppporting and developing major infrastructure projects
+      - img
+  - contentinfo:
+    - img
+    - list:
+      - listitem:
+        - link "Industries":
+          - /url: /industries
+      - listitem:
+        - link "Expertise":
+          - /url: /expertise
+      - listitem:
+        - link "Careers":
+          - /url: /careers
+      - listitem:
+        - link "Investors":
+          - /url: /investors
+      - listitem:
+        - link "News":
+          - /url: /news
+      - listitem:
+        - link "About us":
+          - /url: /about-us
+    - paragraph: Subscribe to news alerts
+    - link "Sign up now":
+      - /url: /news/subscribe-for-news-alerts
+      - text: Sign up now
+      - img
+    - list:
+      - listitem:
+        - paragraph: Social media
+      - listitem:
+        - link "LinkedIn":
+          - /url: https://www.linkedin.com/company/fugro
+      - listitem:
+        - link "Facebook":
+          - /url: https://www.facebook.com/fugro
+      - listitem:
+        - link "X (Twitter)":
+          - /url: https://twitter.com/fugro
+      - listitem:
+        - link "Instagram":
+          - /url: https://www.instagram.com/fugro
+    - list:
+      - listitem:
+        - paragraph: Contact
+      - listitem:
+        - link "General contact":
+          - /url: /contact
+      - listitem:
+        - link "Our locations":
+          - /url: /contact/locations
+      - listitem:
+        - link "Talent Community":
+          - /url: https://flows.beamery.eu/fugro/Join-the-Fugro-Talent-Community
+      - listitem:
+        - link "Speak Up":
+          - /url: /contact/speak-up
+    - link "Cookies":
+      - /url: /cookie-policy
+    - link "Privacy statement":
+      - /url: /privacy-notice
+    - link "Disclaimer":
+      - /url: /disclaimer
+    - link "General purchase terms and conditions":
+      - /url: /fugro-general-purchase-terms-and-conditions
+    - text: © 2026 Fugro. All rights reserved Also of interest
+    - list:
+      - listitem:
+        - link "Fugro supports US 51 bridge redesign with...":
+          - /url: https://www.fugro.com/news/business-news/2024/fugro-supports-us-51-bridge-redesign-with-nearshore-geotechnical-expertise
+      - listitem:
+        - link "Streamlining Dutch dike reinforcement:...":
+          - /url: https://www.fugro.com/expertise/case-studies/streamlining-dutch-dike-reinforcement-sustainable-scope-optimisation
+      - listitem:
+        - link "Fugro maps Texas river basins to improve flood...":
+          - /url: https://www.fugro.com/news/business-news/2026/fugro-maps-texas-river-basins-to-improve-flood-resilience
+  - alert
+  - heading [level=2]
+  - heading "Expertise applied in this project" [level=2]
+  - heading "01" [level=2]
+  - heading "Planning, feasibility, conceptual design" [level=2]
+  - paragraph: Not in this project
+  - button "Show more":
+    - img
+  - heading "02" [level=2]
+  - heading "Design" [level=2]
+  - paragraph: 1 area of expertise
+  - button "Show less":
+    - img
+  - link "Remotely positioning a CPT crawler 38.jpg Expertise Geotechnical ground investigations":
+    - /url: /expertise/geotechnical-ground-investigations
+    - img "Remotely positioning a CPT crawler 38.jpg"
+    - paragraph: Expertise
+    - heading "Geotechnical ground investigations" [level=2]
+    - paragraph
+  - button "Previous" [disabled]:
+    - img
+  - button "Next":
+    - img
+  - heading "03" [level=2]
+  - heading "Construction" [level=2]
+  - paragraph: Not in this project
+  - button "Show more":
+    - img
+  - heading "04" [level=2]
+  - heading "Operations and maintenance" [level=2]
+  - paragraph: Not in this project
+  - button "Show more":
+    - img
+  - heading "05" [level=2]
+  - heading "Decommissioning" [level=2]
+  - paragraph: Not in this project
+  - button "Show more":
+    - img
+  - dialog "Cookie consent button": Cookie settings

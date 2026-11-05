@@ -1,0 +1,310 @@
+[
+ {
+  "step_id": "scenario_start",
+  "url": {
+   "url": "https://www.fugro.com/",
+   "origin": "https://www.fugro.com",
+   "query_parameter_names": [],
+   "redacted": false
+  },
+  "screenshot": "scenario_start.png",
+  "dom": "scenario_start-dom.html",
+  "accessibility": "scenario_start-a11y.json",
+  "history": "not_requested",
+  "storage": "not_requested"
+ },
+ {
+  "step_id": "settle-home",
+  "url": {
+   "url": "https://www.fugro.com/",
+   "origin": "https://www.fugro.com",
+   "query_parameter_names": [],
+   "redacted": false
+  },
+  "screenshot": "settle-home.png",
+  "dom": "settle-home-dom.html",
+  "accessibility": "settle-home-a11y.json",
+  "history": "not_requested",
+  "storage": "not_requested"
+ },
+ {
+  "step_id": "goto-industries",
+  "url": {
+   "url": "https://www.fugro.com/industries",
+   "origin": "https://www.fugro.com",
+   "query_parameter_names": [],
+   "redacted": false
+  },
+  "screenshot": "goto-industries.png",
+  "dom": "goto-industries-dom.html",
+  "accessibility": "goto-industries-a11y.json",
+  "history": "not_requested",
+  "storage": "not_requested"
+ },
+ {
+  "step_id": "settle-industries",
+  "url": {
+   "url": "https://www.fugro.com/industries",
+   "origin": "https://www.fugro.com",
+   "query_parameter_names": [],
+   "redacted": false
+  },
+  "screenshot": "settle-industries.png",
+  "dom": "settle-industries-dom.html",
+  "accessibility": "settle-industries-a11y.json",
+  "history": "not_requested",
+  "storage": "not_requested"
+ },
+ {
+  "step_id": "goto-energy",
+  "url": {
+   "url": "https://www.fugro.com/industries/energy",
+   "origin": "https://www.fugro.com",
+   "query_parameter_names": [],
+   "redacted": false
+  },
+  "screenshot": "goto-energy.png",
+  "dom": "goto-energy-dom.html",
+  "accessibility": "goto-energy-a11y.json",
+  "history": "not_requested",
+  "storage": "not_requested"
+ },
+ {
+  "step_id": "settle-energy",
+  "url": {
+   "url": "https://www.fugro.com/industries/energy",
+   "origin": "https://www.fugro.com",
+   "query_parameter_names": [],
+   "redacted": false
+  },
+  "screenshot": "settle-energy.png",
+  "dom": "settle-energy-dom.html",
+  "accessibility": "settle-energy-a11y.json",
+  "history": "not_requested",
+  "storage": "not_requested"
+ },
+ {
+  "step_id": "goto-expertise",
+  "url": {
+   "url": "https://www.fugro.com/expertise",
+   "origin": "https://www.fugro.com",
+   "query_parameter_names": [],
+   "redacted": false
+  },
+  "screenshot": "goto-expertise.png",
+  "dom": "goto-expertise-dom.html",
+  "accessibility": "goto-expertise-a11y.json",
+  "history": "not_requested",
+  "storage": "not_requested"
+ },
+ {
+  "step_id": "settle-expertise",
+  "url": {
+   "url": "https://www.fugro.com/expertise",
+   "origin": "https://www.fugro.com",
+   "query_parameter_names": [],
+   "redacted": false
+  },
+  "screenshot": "settle-expertise.png",
+  "dom": "settle-expertise-dom.html",
+  "accessibility": "settle-expertise-a11y.json",
+  "history": "not_requested",
+  "storage": "not_requested"
+ },
+ {
+  "step_id": "goto-news",
+  "url": {
+   "url": "https://www.fugro.com/news",
+   "origin": "https://www.fugro.com",
+   "query_parameter_names": [],
+   "redacted": false
+  },
+  "screenshot": "goto-news.png",
+  "dom": "goto-news-dom.html",
+  "accessibility": "goto-news-a11y.json",
+  "history": "not_requested",
+  "storage": "not_requested"
+ },
+ {
+  "step_id": "settle-news",
+  "url": {
+   "url": "https://www.fugro.com/news",
+   "origin": "https://www.fugro.com",
+   "query_parameter_names": [],
+   "redacted": false
+  },
+  "screenshot": "settle-news.png",
+  "dom": "settle-news-dom.html",
+  "accessibility": "settle-news-a11y.json",
+  "history": "not_requested",
+  "storage": "not_requested"
+ },
+ {
+  "step_id": "goto-about",
+  "url": {
+   "url": "https://www.fugro.com/about-us",
+   "origin": "https://www.fugro.com",
+   "query_parameter_names": [],
+   "redacted": false
+  },
+  "screenshot": "goto-about.png",
+  "dom": "goto-about-dom.html",
+  "accessibility": "goto-about-a11y.json",
+  "history": "not_requested",
+  "storage": "not_requested"
+ },
+ {
+  "step_id": "settle-about",
+  "url": {
+   "url": "https://www.fugro.com/about-us",
+   "origin": "https://www.fugro.com",
+   "query_parameter_names": [],
+   "redacted": false
+  },
+  "screenshot": "settle-about.png",
+  "dom": "settle-about-dom.html",
+  "accessibility": "settle-about-a11y.json",
+  "history": "not_requested",
+  "storage": "not_requested"
+ },
+ {
+  "step_id": "goto-careers",
+  "url": {
+   "url": "https://www.fugro.com/careers",
+   "origin": "https://www.fugro.com",
+   "query_parameter_names": [],
+   "redacted": false
+  },
+  "screenshot": "goto-careers.png",
+  "dom": "goto-careers-dom.html",
+  "accessibility": "goto-careers-a11y.json",
+  "history": "not_requested",
+  "storage": "not_requested"
+ },
+ {
+  "step_id": "settle-careers",
+  "url": {
+   "url": "https://www.fugro.com/careers",
+   "origin": "https://www.fugro.com",
+   "query_parameter_names": [],
+   "redacted": false
+  },
+  "screenshot": "settle-careers.png",
+  "dom": "settle-careers-dom.html",
+  "accessibility": "settle-careers-a11y.json",
+  "history": "not_requested",
+  "storage": "not_requested"
+ },
+ {
+  "step_id": "goto-jobs",
+  "url": {
+   "url": "https://www.fugro.com/careers/jobs",
+   "origin": "https://www.fugro.com",
+   "query_parameter_names": [],
+   "redacted": false
+  },
+  "screenshot": "goto-jobs.png",
+  "dom": "goto-jobs-dom.html",
+  "accessibility": "goto-jobs-a11y.json",
+  "history": "not_requested",
+  "storage": "not_requested"
+ },
+ {
+  "step_id": "settle-jobs",
+  "url": {
+   "url": "https://www.fugro.com/careers/jobs",
+   "origin": "https://www.fugro.com",
+   "query_parameter_names": [],
+   "redacted": false
+  },
+  "screenshot": "settle-jobs.png",
+  "dom": "settle-jobs-dom.html",
+  "accessibility": "settle-jobs-a11y.json",
+  "history": "not_requested",
+  "storage": "not_requested"
+ },
+ {
+  "step_id": "goto-contact",
+  "url": {
+   "url": "https://www.fugro.com/contact",
+   "origin": "https://www.fugro.com",
+   "query_parameter_names": [],
+   "redacted": false
+  },
+  "screenshot": "goto-contact.png",
+  "dom": "goto-contact-dom.html",
+  "accessibility": "goto-contact-a11y.json",
+  "history": "not_requested",
+  "storage": "not_requested"
+ },
+ {
+  "step_id": "settle-contact",
+  "url": {
+   "url": "https://www.fugro.com/contact",
+   "origin": "https://www.fugro.com",
+   "query_parameter_names": [],
+   "redacted": false
+  },
+  "screenshot": "settle-contact.png",
+  "dom": "settle-contact-dom.html",
+  "accessibility": "settle-contact-a11y.json",
+  "history": "not_requested",
+  "storage": "not_requested"
+ },
+ {
+  "step_id": "goto-investors",
+  "url": {
+   "url": "https://www.fugro.com/investors",
+   "origin": "https://www.fugro.com",
+   "query_parameter_names": [],
+   "redacted": false
+  },
+  "screenshot": "goto-investors.png",
+  "dom": "goto-investors-dom.html",
+  "accessibility": "goto-investors-a11y.json",
+  "history": "not_requested",
+  "storage": "not_requested"
+ },
+ {
+  "step_id": "settle-investors",
+  "url": {
+   "url": "https://www.fugro.com/investors",
+   "origin": "https://www.fugro.com",
+   "query_parameter_names": [],
+   "redacted": false
+  },
+  "screenshot": "settle-investors.png",
+  "dom": "settle-investors-dom.html",
+  "accessibility": "settle-investors-a11y.json",
+  "history": "not_requested",
+  "storage": "not_requested"
+ },
+ {
+  "step_id": "goto-search",
+  "url": {
+   "url": "https://www.fugro.com/search",
+   "origin": "https://www.fugro.com",
+   "query_parameter_names": [],
+   "redacted": false
+  },
+  "screenshot": "goto-search.png",
+  "dom": "goto-search-dom.html",
+  "accessibility": "goto-search-a11y.json",
+  "history": "not_requested",
+  "storage": "not_requested"
+ },
+ {
+  "step_id": "settle-search",
+  "url": {
+   "url": "https://www.fugro.com/search",
+   "origin": "https://www.fugro.com",
+   "query_parameter_names": [],
+   "redacted": false
+  },
+  "screenshot": "settle-search.png",
+  "dom": "settle-search-dom.html",
+  "accessibility": "settle-search-a11y.json",
+  "history": "settle-search-history.json",
+  "storage": "not_requested"
+ }
+]

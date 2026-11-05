@@ -1,0 +1,11 @@
+== app.js
+      1 animate(
+      1 framerAppearId
+      2 initial=
+      2 motionContainerHidden
+      2 motionContainerVisible
+      4 shouldReduceMotion
+      2 useAnimation
+      6 whileHover
+      5 whileInView
+== chunk-545-46e5a3b856a2ff90.js

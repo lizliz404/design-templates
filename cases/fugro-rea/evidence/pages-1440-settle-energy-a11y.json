@@ -1,0 +1,248 @@
+- document:
+  - banner:
+    - link "Home":
+      - /url: /en
+      - img
+    - list:
+      - listitem:
+        - link "Industries":
+          - /url: /industries
+      - listitem:
+        - link "Expertise":
+          - /url: /expertise
+      - listitem:
+        - link "Careers":
+          - /url: /careers
+      - listitem:
+        - link "Investors":
+          - /url: /investors
+      - listitem:
+        - link "News":
+          - /url: /news
+      - listitem:
+        - link "About us":
+          - /url: /about-us
+    - button "Search":
+      - img
+    - link "Profile":
+      - /url: /portals
+      - img
+    - link "Get in touch":
+      - /url: /contact
+  - link "Industries":
+    - /url: /industries
+    - text: Industries
+    - img
+  - link "Energy":
+    - /url: /industries/energy
+  - main:
+    - paragraph: Energy
+    - heading "Supporting the energy transition for a safe and sustainable world" [level=1]
+    - img "shutterstock_2064279029.jpg"
+    - list:
+      - listitem:
+        - paragraph: Jump to
+      - listitem:
+        - button "Our view"
+      - listitem:
+        - button "Case studies"
+      - listitem:
+        - button "News and Long reads"
+      - listitem:
+        - button "Technical papers"
+      - listitem:
+        - button "Sub industries"
+    - list:
+      - button "Contact"
+    - heading "Our view on energy" [level=2]
+    - paragraph: The demand for renewable energy is increasing. Then there’s the onset of electrification and improvements in energy storage. All key drivers of the energy transition, which aims to reduce energy-related greenhouse gas emissions through decarbonisation. At Fugro, we support energy projects through every stage of the value chain. We help improve the efficiency of energy generation and minimise the impact on our environment. So everyone can access energy to power their homes and businesses.
+    - img "Remmelt de Jong.jpg"
+    - paragraph: Remmelt de Jong
+    - paragraph: Industry lead - Energy
+    - link "Seacalf MkV DeepDrive on back deck of vessel 01.jpg Site characterisation for Revolution Wind, Ørsted and Eversource See case study":
+      - /url: /expertise/case-studies/site-characterisation-revolution-wind-fugro
+      - img "Seacalf MkV DeepDrive on back deck of vessel 01.jpg"
+      - heading "Site characterisation for Revolution Wind, Ørsted and Eversource" [level=2]
+      - button "Read more":
+        - img
+      - paragraph: See case study
+    - heading "More case studies on energy" [level=2]
+    - link "All case studies":
+      - /url: /expertise/case-studies
+      - text: All case studies
+      - img
+    - link "DBXE0-UVoAAzaxy.jpg Case study Hebron Topside Mating, tow to field and final field positioning Offshore Newfoundland, Canada":
+      - /url: /expertise/case-studies/hebron-topside-mating-tow-field-final-field-positioning-fugro
+      - img "DBXE0-UVoAAzaxy.jpg"
+      - paragraph: Case study
+      - heading "Hebron Topside Mating, tow to field and final field positioning" [level=2]
+      - paragraph: Offshore Newfoundland, Canada
+    - link "Employee in advanced geotechnical laboratory 24.jpg Case study Geotechnical investigation enables optimised offshore wind farm foundation design at Le Tréport Le Tréport, France":
+      - /url: /expertise/case-studies/geotechnical-investigation-offshore-wind-farm-foundation-design-le-treport-fugro
+      - img "Employee in advanced geotechnical laboratory 24.jpg"
+      - paragraph: Case study
+      - heading "Geotechnical investigation enables optimised offshore wind farm foundation design at Le Tréport" [level=2]
+      - paragraph: Le Tréport, France
+    - link "Seacalf MkV DeepDrive on back deck of vessel 01.jpg Case study Site characterisation for Revolution Wind, Ørsted and Eversource Rhode Island, USA":
+      - /url: /expertise/case-studies/site-characterisation-revolution-wind-fugro
+      - img "Seacalf MkV DeepDrive on back deck of vessel 01.jpg"
+      - paragraph: Case study
+      - heading "Site characterisation for Revolution Wind, Ørsted and Eversource" [level=2]
+      - paragraph: Rhode Island, USA
+    - link "mf05547.jpg Case study Africa’s largest subsea oil and gas network relies on Fugro’s deepwater precision Block 32, offshore Angola":
+      - /url: /expertise/case-studies/africas-largest-subsea-oil-and-gas-network-fugro-deepwater-precision
+      - img "mf05547.jpg"
+      - paragraph: Case study
+      - heading "Africa’s largest subsea oil and gas network relies on Fugro’s deepwater precision" [level=2]
+      - paragraph: Block 32, offshore Angola
+    - link "shutterstock_1952137951.jpg Case study The world’s largest offshore wind farm Outer Thames Estuary, UK":
+      - /url: /expertise/case-studies/development-worlds-largest-offshore-wind-farm-fugro
+      - img "shutterstock_1952137951.jpg"
+      - paragraph: Case study
+      - heading "The world’s largest offshore wind farm" [level=2]
+      - paragraph: Outer Thames Estuary, UK
+    - link "Offshore wind farm repair and maintenance work 10.jpg Case study Clever thinking, innovative maintenance solutions Offshore Arklow, Irish Sea":
+      - /url: /expertise/case-studies/clever-thinking-innovative-maintenance-solutions-fugro
+      - img "Offshore wind farm repair and maintenance work 10.jpg"
+      - paragraph: Case study
+      - heading "Clever thinking, innovative maintenance solutions" [level=2]
+      - paragraph: Offshore Arklow, Irish Sea
+    - img "owf-turbine-close-up.jpg"
+    - paragraph: Long read
+    - heading "Fugro's Analysis - Offshore Wind O&M Market & Future Prospects" [level=2]
+    - paragraph: We help clients predict their energy output at a certain moment in time and advise whether it’s more cost-effective for the turbines to be on or off.
+    - paragraph: Business news
+    - heading "Fugro’s geo-data supports development of UK’s first flexible power station with carbon capture technology" [level=2]
+    - paragraph: When complete, Keadby 3 could become the UK’s first flexible power station equipped with carbon capture technology. Every year, it could capture up to 1.5 million tonnes of carbon.
+    - paragraph: Podcast
+    - heading "Net zero vessels – Progress on future fuels" [level=2]
+    - paragraph: "In this episode: with vessel redesign and operational changes on the horizon, a green industry may not be too far in the future."
+    - paragraph: Long read
+    - heading "Accelerating the development of subsea remote and autonomous solutions with the National Robotarium" [level=2]
+    - paragraph: Our partnership with the National Robotarium allows us to leverage our combined technical expertise, extensive network, project funding and large-scale, cutting-edge facilities to help accelerate the development of ground-breaking autonomous underwater solutions that deliver added value to our clients.
+    - paragraph: Fugro World article
+    - heading "Technology’s role in the future energy mix" [level=2]
+    - paragraph: Globally, there’s an ever-increasing level of understanding and awareness amongst wider society, that a sustainable future and a diverse energy mix are intrinsically linked. When it comes to the process of energy production, the focus cannot solely be on how to do more but on how to do better. This means ensuring that actions in the short term do not adversely affect the long-term health of the planet.
+    - link "Read more":
+      - /url: /news/long-reads/2023/offshore-wind-operations-maintenance-market-fugro-longread
+      - text: Read more
+      - img
+    - paragraph: 1 / 5
+    - button "Previous" [disabled]:
+      - img
+    - button "Next":
+      - img
+    - heading "Technical papers" [level=2]
+    - link "All technical papers":
+      - /url: /expertise/technical-papers
+      - text: All technical papers
+      - img
+    - heading "Sub industries" [level=2]
+    - link "iStock-1218789610.jpg Energy Renewable energy":
+      - /url: /industries/energy/renewable-energy
+      - img "iStock-1218789610.jpg"
+      - paragraph: Energy
+      - heading "Renewable energy" [level=2]
+    - link "AdobeStock_409034349.jpeg Energy Oil and natural gas":
+      - /url: /industries/energy/oil-and-natural-gas
+      - img "AdobeStock_409034349.jpeg"
+      - paragraph: Energy
+      - heading "Oil and natural gas" [level=2]
+    - link "Platform in North Sea in the mist.jpg Energy Carbon capture, utilisation and storage":
+      - /url: /industries/energy/carbon-capture-utilisation-and-storage
+      - img "Platform in North Sea in the mist.jpg"
+      - paragraph: Energy
+      - heading "Carbon capture, utilisation and storage" [level=2]
+    - heading "Contact us" [level=2]
+    - heading "Get in touch for Energy services" [level=2]
+    - img "Remmelt de Jong.jpg"
+    - paragraph: Remmelt de Jong
+    - paragraph: Industry lead - Energy
+    - button "Contact Remmelt de Jong":
+      - text: Contact Remmelt de Jong
+      - img
+    - img "FACES OF FUGRO.00_00_50_22.Still030.jpg"
+    - paragraph: Careers
+    - heading "Come join us" [level=2]
+    - paragraph: Exciting challenges. Unforgettable experiences. Work that matters. These are a few of the things you’ll find at Fugro. Will you join our global team?
+    - link "Careers at Fugro":
+      - /url: /careers/jobs
+      - text: Careers at Fugro
+      - img
+  - contentinfo:
+    - img
+    - list:
+      - listitem:
+        - link "Industries":
+          - /url: /industries
+      - listitem:
+        - link "Expertise":
+          - /url: /expertise
+      - listitem:
+        - link "Careers":
+          - /url: /careers
+      - listitem:
+        - link "Investors":
+          - /url: /investors
+      - listitem:
+        - link "News":
+          - /url: /news
+      - listitem:
+        - link "About us":
+          - /url: /about-us
+    - paragraph: Subscribe to news alerts
+    - link "Sign up now":
+      - /url: /news/subscribe-for-news-alerts
+      - text: Sign up now
+      - img
+    - list:
+      - listitem:
+        - paragraph: Social media
+      - listitem:
+        - link "LinkedIn":
+          - /url: https://www.linkedin.com/company/fugro
+      - listitem:
+        - link "Facebook":
+          - /url: https://www.facebook.com/fugro
+      - listitem:
+        - link "X (Twitter)":
+          - /url: https://twitter.com/fugro
+      - listitem:
+        - link "Instagram":
+          - /url: https://www.instagram.com/fugro
+    - list:
+      - listitem:
+        - paragraph: Contact
+      - listitem:
+        - link "General contact":
+          - /url: /contact
+      - listitem:
+        - link "Our locations":
+          - /url: /contact/locations
+      - listitem:
+        - link "Talent Community":
+          - /url: https://flows.beamery.eu/fugro/Join-the-Fugro-Talent-Community
+      - listitem:
+        - link "Speak Up":
+          - /url: /contact/speak-up
+    - link "Cookies":
+      - /url: /cookie-policy
+    - link "Privacy statement":
+      - /url: /privacy-notice
+    - link "Disclaimer":
+      - /url: /disclaimer
+    - link "General purchase terms and conditions":
+      - /url: /fugro-general-purchase-terms-and-conditions
+    - text: © 2026 Fugro. All rights reserved Also of interest
+    - list:
+      - listitem:
+        - link "Sustainable Future with Clean Energy":
+          - /url: https://www.fugro.com/industries/energy/renewable-energy
+      - listitem:
+        - link "Navigating the Energy Transition":
+          - /url: https://www.fugro.com/news/podcasts/energy-transition-no-miracles-needed
+      - listitem:
+        - 'link "From vision to reality: India’s Remote..."':
+          - /url: https://www.fugro.com/news/long-reads/2023/from-vision-to-reality-india-s-remote-operations-centre
+  - alert
+  - dialog "Cookie consent button": Cookie settings

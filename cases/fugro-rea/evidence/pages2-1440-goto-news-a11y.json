@@ -1,0 +1,320 @@
+- document:
+  - banner:
+    - link "Home":
+      - /url: /en
+      - img
+    - list:
+      - listitem:
+        - link "Industries":
+          - /url: /industries
+      - listitem:
+        - link "Expertise":
+          - /url: /expertise
+      - listitem:
+        - link "Careers":
+          - /url: /careers
+      - listitem:
+        - link "Investors":
+          - /url: /investors
+      - listitem:
+        - link "News":
+          - /url: /news
+      - listitem:
+        - link "About us":
+          - /url: /about-us
+    - button "Search":
+      - img
+    - link "Profile":
+      - /url: /portals
+      - img
+    - link "Get in touch":
+      - /url: /contact
+  - main:
+    - heading "Latest news and articles" [level=1]
+    - img "3D laser scanning metro line Amsterdam.jpg"
+    - list:
+      - listitem:
+        - paragraph: Jump to
+      - listitem:
+        - button "Highlights"
+      - listitem:
+        - button "Latest developments"
+      - listitem:
+        - button "Press releases"
+      - listitem:
+        - button "Podcasts"
+      - listitem:
+        - button "Long reads"
+      - listitem:
+        - button "Published articles"
+    - list:
+      - button "Contact"
+    - heading "Highlights" [level=2]
+    - link "Press release Fugro awarded four multi-year contracts by Petrobras Petrobras has announced tender results awarding Fugro four significant multi-year contracts for the inspection and monitoring of critical subsea infrastructure in Brazil. 27 Jun 2025":
+      - /url: /news/press-releases/2025/fugro-awarded-four-multi-year-contracts-by-petrobras
+      - paragraph: Press release
+      - heading "Fugro awarded four multi-year contracts by Petrobras" [level=2]
+      - paragraph: Petrobras has announced tender results awarding Fugro four significant multi-year contracts for the inspection and monitoring of critical subsea infrastructure in Brazil.
+      - paragraph: 27 Jun 2025
+      - button "Read more":
+        - img
+    - link "Business news Fugro completes surveys for Italy’s Rimini offshore wind farm development Fugro has completed geophysical and archaeological surveys for Energia Wind 2020 to support the development of the Rimini offshore wind farm. As one of Italy’s first fixed-bottom offshore wind initiatives, the 330 MW project represents a major step forward in the country’s energy transition. Fugro’s Geo-data will be key to selecting optimal cable routes and informing engineering designs for the wind farm’s infrastructure, helping reduce project risks and enabling safe, efficient, and environmentally responsible development. 20 Nov 2025":
+      - /url: /news/business-news/2025/fugro-completes-surveys-for-italy-s-rimini-offshore-wind-farm-development
+      - paragraph: Business news
+      - heading "Fugro completes surveys for Italy’s Rimini offshore wind farm development" [level=2]
+      - paragraph: Fugro has completed geophysical and archaeological surveys for Energia Wind 2020 to support the development of the Rimini offshore wind farm. As one of Italy’s first fixed-bottom offshore wind initiatives, the 330 MW project represents a major step forward in the country’s energy transition. Fugro’s Geo-data will be key to selecting optimal cable routes and informing engineering designs for the wind farm’s infrastructure, helping reduce project risks and enabling safe, efficient, and environmentally responsible development.
+      - paragraph: 20 Nov 2025
+      - button "Read more":
+        - img
+    - link "Electric Deep Drive® onsite in Netherlands.jpg Podcast Diving deep into electric machinery Discover how Fugro is advancing the electrification of construction equipment to combat climate change. From pioneering electric cone penetration testing 60 years ago to unveiling a new battery-powered machine that probes deeper than ever before. 04 Aug 2025":
+      - /url: /news/podcasts/2025/diving-deep-into-electric-machinery
+      - img "Electric Deep Drive® onsite in Netherlands.jpg"
+      - paragraph: Podcast
+      - heading "Diving deep into electric machinery" [level=2]
+      - paragraph: Discover how Fugro is advancing the electrification of construction equipment to combat climate change. From pioneering electric cone penetration testing 60 years ago to unveiling a new battery-powered machine that probes deeper than ever before.
+      - paragraph: 04 Aug 2025
+      - button "Read more":
+        - img
+    - 'link "Long read From dusk till dawn: The role of nocturnal low level jets in weather forecasting Nocturnal low level jets (NLLJs) can significantly affect local weather conditions in many parts of the world, posing risks to the safety and efficiency of client operations. That’s why accurately predicting these strong, low-altitude winds is integral to our weather forecasting remit. 16 May 2025"':
+      - /url: /news/long-reads/2025/from-dusk-till-dawn-the-role-of-nocturnal-low-level-jets-in-weather-forecasting
+      - paragraph: Long read
+      - 'heading "From dusk till dawn: The role of nocturnal low level jets in weather forecasting" [level=2]'
+      - paragraph: Nocturnal low level jets (NLLJs) can significantly affect local weather conditions in many parts of the world, posing risks to the safety and efficiency of client operations. That’s why accurately predicting these strong, low-altitude winds is integral to our weather forecasting remit.
+      - paragraph: 16 May 2025
+      - button "Read more":
+        - img
+    - paragraph: Business news
+    - heading "Latest developments" [level=2]
+    - link "All business news":
+      - /url: /news/business-news
+      - text: All business news
+      - img
+    - link "Offshore wind farm, North Sea 03.jpg Business news Cadeler selects Fugro for post-installation seabed surveys at East Anglia TWO 04 Nov 2026":
+      - /url: /news/business-news/2026/cadeler-selects-fugro-for-post-installation-seabed-surveys-at-east-anglia-two
+      - img "Offshore wind farm, North Sea 03.jpg"
+      - paragraph: Business news
+      - heading "Cadeler selects Fugro for post-installation seabed surveys at East Anglia TWO" [level=2]
+      - paragraph: 04 Nov 2026
+    - link "2026-10-29_01-20-32_RoamesWorld-Screenshot_1920x911.PNG Business news Fugro provides rapid support to Florida authorities to help prioritise recovery following Hurricane Isaias 02 Nov 2026":
+      - /url: /news/business-news/2026/fugro-provides-rapid-support-to-florida-authorities-to-help-prioritise-recovery-following-hurricane-isaias
+      - img "2026-10-29_01-20-32_RoamesWorld-Screenshot_1920x911.PNG"
+      - paragraph: Business news
+      - heading "Fugro provides rapid support to Florida authorities to help prioritise recovery following Hurricane Isaias" [level=2]
+      - paragraph: 02 Nov 2026
+    - link "Deploying geophysical equipment from back deck of vessel.jpg Business news Fugro to clear the way for 50Hertz’s LanWin3 and LanWin6 offshore grid connections 27 Oct 2026":
+      - /url: /news/business-news/2026/fugro-to-clear-the-way-for-50hertz-s-lanwin3-and-lanwin6-offshore-grid-connections
+      - img "Deploying geophysical equipment from back deck of vessel.jpg"
+      - paragraph: Business news
+      - heading "Fugro to clear the way for 50Hertz’s LanWin3 and LanWin6 offshore grid connections" [level=2]
+      - paragraph: 27 Oct 2026
+    - link "RAMMS data showing bathymetry data overlain on imagery.jpg Business news NOAA selects Fugro to provide critical Geo-data supporting maritime safety and economic resilience along Florida's Atlantic coast 20 Oct 2026":
+      - /url: /news/business-news/2026/noaa-selects-fugro-to-provide-critical-geo-data-supporting-maritime-safety-and-economic-resilience-along-florida-s-atlantic-coast
+      - img "RAMMS data showing bathymetry data overlain on imagery.jpg"
+      - paragraph: Business news
+      - heading "NOAA selects Fugro to provide critical Geo-data supporting maritime safety and economic resilience along Florida's Atlantic coast" [level=2]
+      - paragraph: 20 Oct 2026
+    - heading "Press releases" [level=2]
+    - link "All press releases":
+      - /url: /news/press-releases
+      - text: All press releases
+      - img
+    - link "Press release Trading update Q3 2026 Revenue resilient, margin impacted by ongoing market challenges 30 Oct 2026":
+      - /url: /news/press-releases/2026/q3-2026-trading-update
+      - paragraph: Press release
+      - heading "Trading update Q3 2026" [level=2]
+      - paragraph: Revenue resilient, margin impacted by ongoing market challenges
+      - paragraph: 30 Oct 2026
+      - button "Read more":
+        - img
+    - link "Press release Emiel Jongerius appointed as Fugro’s CFO at EGM At today's extraordinary general meeting, Emiel Jongerius was appointed as a member of the Board of Management and Chief Financial Officer of Fugro N.V. as per 16 November 2026. 28 Oct 2026":
+      - /url: /news/press-releases/2026/emiel-jongerius-appointed-as-fugro-cfo-at-egm
+      - paragraph: Press release
+      - heading "Emiel Jongerius appointed as Fugro’s CFO at EGM" [level=2]
+      - paragraph: At today's extraordinary general meeting, Emiel Jongerius was appointed as a member of the Board of Management and Chief Financial Officer of Fugro N.V. as per 16 November 2026.
+      - paragraph: 28 Oct 2026
+      - button "Read more":
+        - img
+    - link "Press release Fugro secures long-term funding with new facility from the European Investment Bank and two-year extension of existing senior debt facilities Fugro has entered into a EUR 150 million unsecured financing facility with the European Investment Bank (EIB) to support the ongoing development and deployment of its uncrewed surface vessel (USV) technology. The facility will support the phased expansion of Fugro's remote operations capabilities, allowing the company to progress its transformation programme, while maintaining a disciplined approach to capital allocation. 14 Oct 2026":
+      - /url: /news/press-releases/2026/fugro-secures-long-term-funding-with-new-facility-from-the-european-investment-bank-and-two-year-extension-of-existing-senior-debt-facilities
+      - paragraph: Press release
+      - heading "Fugro secures long-term funding with new facility from the European Investment Bank and two-year extension of existing senior debt facilities" [level=2]
+      - paragraph: Fugro has entered into a EUR 150 million unsecured financing facility with the European Investment Bank (EIB) to support the ongoing development and deployment of its uncrewed surface vessel (USV) technology. The facility will support the phased expansion of Fugro's remote operations capabilities, allowing the company to progress its transformation programme, while maintaining a disciplined approach to capital allocation.
+      - paragraph: 14 Oct 2026
+      - button "Read more":
+        - img
+    - link "Press release Fugro awarded major Australian marine asset integrity contract Fugro has secured a marine asset integrity contract with a client in Australia, strengthening its position as a trusted partner for subsea inspection, intervention and maintenance services in the offshore energy industry. 23 Sep 2026":
+      - /url: /news/press-releases/2026/fugro-awarded-major-australian-marine-asset-integrity-contract
+      - paragraph: Press release
+      - heading "Fugro awarded major Australian marine asset integrity contract" [level=2]
+      - paragraph: Fugro has secured a marine asset integrity contract with a client in Australia, strengthening its position as a trusted partner for subsea inspection, intervention and maintenance services in the offshore energy industry.
+      - paragraph: 23 Sep 2026
+      - button "Read more":
+        - img
+    - heading "Podcasts" [level=2]
+    - link "All podcasts":
+      - /url: /news/podcasts
+      - text: All podcasts
+      - img
+    - link "Aran 250 Germany-2.jpg Podcast German offshore wind and the mudflats of the Wadden Sea 13 Oct 2026":
+      - /url: /news/podcasts/2025/german-offshore-wind-and-the-mudflats-of-the-wadden-sea
+      - img "Aran 250 Germany-2.jpg"
+      - paragraph: Podcast
+      - heading "German offshore wind and the mudflats of the Wadden Sea" [level=2]
+      - paragraph: 13 Oct 2026
+    - 'link "Mine with open shell and TNT in the background.JPG Podcast The forgotten arsenal of the ocean: Clearing dumped munitions 07 Jul 2026"':
+      - /url: /news/podcasts/2025/the-forgotten-arsenal-of-the-ocean-clearing-dumped-munitions
+      - img "Mine with open shell and TNT in the background.JPG"
+      - paragraph: Podcast
+      - 'heading "The forgotten arsenal of the ocean: Clearing dumped munitions" [level=2]'
+      - paragraph: 07 Jul 2026
+    - link "Blue Prism - Animated Image [cropped].png Podcast Uncrewed vessels and unprecedented data 30 Mar 2026":
+      - /url: /news/podcasts/2025/uncrewed-vessels-and-unprecedented-data
+      - img "Blue Prism - Animated Image [cropped].png"
+      - paragraph: Podcast
+      - heading "Uncrewed vessels and unprecedented data" [level=2]
+      - paragraph: 30 Mar 2026
+    - link "OceanImageBank_AlexMustard_02.jpg Podcast The real value of nature 09 Dec 2025":
+      - /url: /news/podcasts/2025/the-real-value-of-nature
+      - img "OceanImageBank_AlexMustard_02.jpg"
+      - paragraph: Podcast
+      - heading "The real value of nature" [level=2]
+      - paragraph: 09 Dec 2025
+    - heading "Long reads" [level=2]
+    - link "All long reads":
+      - /url: /news/long-reads
+      - text: All long reads
+      - img
+    - link "Fugro Venturer survey vessel.jpg Long read Hydrographic Surveys vs. Bathymetric Surveys 30 Oct 2026":
+      - /url: /news/long-reads/2026/hydrographic-surveys-vs-bathymetric-surveys-whats-the-difference
+      - img "Fugro Venturer survey vessel.jpg"
+      - paragraph: Long read
+      - heading "Hydrographic Surveys vs. Bathymetric Surveys" [level=2]
+      - paragraph: 30 Oct 2026
+    - 'link "jamaica-island-ocean.png Long read Mapping Jamaica''s EEZ: governance before technology 24 Sep 2026"':
+      - /url: /news/long-reads/2026/a-fi-wi-wata-why-mapping-jamaica-s-ocean-space-is-a-national-imperative
+      - img "jamaica-island-ocean.png"
+      - paragraph: Long read
+      - 'heading "Mapping Jamaica''s EEZ: governance before technology" [level=2]'
+      - paragraph: 24 Sep 2026
+    - heading "Published articles" [level=2]
+    - link "All published articles":
+      - /url: /news/published-articles
+      - text: All published articles
+      - img
+    - paragraph: 02 Jul 2026
+    - paragraph: PDF
+    - paragraph: Geo-data helping reduce risk at offshore cable landfalls (Offshore Magazine - July 2026)
+    - link "Download":
+      - /url: https://fugro.canto.global/direct/document/5fbudnmnvh39n67si715kij702/nnOc6GXHM4en_-nHIMrLas1ikH0/original?content-type=application%2Fpdf&name=Offshore+Magazine+coverage+02.07.pdf
+      - img
+    - paragraph: 09 Jun 2026
+    - paragraph: PDF
+    - paragraph: Maximizing offshore wind lifespan with operations and maintenance (Hydro International - June 2026)
+    - link "Download":
+      - /url: https://fugro.canto.global/direct/document/rp7c21qou91lrer041masrgs3u/rlzN50EoWsClwjBZ7V5kMfaU_HI/original?content-type=application%2Fpdf&name=Maximizing+offshore+wind+lifespan+with+operations+and+maintenance.pdf
+      - img
+    - paragraph: 09 Jun 2026
+    - paragraph: PDF
+    - paragraph: From specialized science to strategic global force (Hydro International - June 2026)
+    - link "Download":
+      - /url: https://fugro.canto.global/direct/document/h9ausogf3l0rte9pmk93kapi16/SlY2zoiiv_hDoVNKSaewqjyZHc8/original?content-type=application%2Fpdf&name=From+specialized+science+to+strategic+global+force+-+Hydro+International+-+June+2026.pdf
+      - img
+    - paragraph: 15 May 2026
+    - paragraph: Link
+    - paragraph: How better ground intelligence can help U.S. mining lead in the age of AI (North American Mining - May 2026)
+    - link "Read more":
+      - /url: https://northamericanmining.com/index.php/2026/05/15/ground-effects-in-critical-minerals
+      - img
+    - heading "Contact us" [level=2]
+    - heading "Get in touch for media enquiries" [level=2]
+    - img "serge-van-de-ven-square-2.jpg"
+    - paragraph: Serge van de Ven
+    - paragraph: Director Brand & Communications
+    - button "Contact Serge van de Ven":
+      - text: Contact Serge van de Ven
+      - img
+    - img "MEN03693.jpg"
+    - paragraph
+    - heading "What we do at Fugro" [level=2]
+    - paragraph: The more you know, the smaller the risk
+    - link "Read more":
+      - /url: /about-us/what-we-do
+      - text: Read more
+      - img
+  - contentinfo:
+    - img
+    - list:
+      - listitem:
+        - link "Industries":
+          - /url: /industries
+      - listitem:
+        - link "Expertise":
+          - /url: /expertise
+      - listitem:
+        - link "Careers":
+          - /url: /careers
+      - listitem:
+        - link "Investors":
+          - /url: /investors
+      - listitem:
+        - link "News":
+          - /url: /news
+      - listitem:
+        - link "About us":
+          - /url: /about-us
+    - paragraph: Subscribe to news alerts
+    - link "Sign up now":
+      - /url: /news/subscribe-for-news-alerts
+      - text: Sign up now
+      - img
+    - list:
+      - listitem:
+        - paragraph: Social media
+      - listitem:
+        - link "LinkedIn":
+          - /url: https://www.linkedin.com/company/fugro
+      - listitem:
+        - link "Facebook":
+          - /url: https://www.facebook.com/fugro
+      - listitem:
+        - link "X (Twitter)":
+          - /url: https://twitter.com/fugro
+      - listitem:
+        - link "Instagram":
+          - /url: https://www.instagram.com/fugro
+    - list:
+      - listitem:
+        - paragraph: Contact
+      - listitem:
+        - link "General contact":
+          - /url: /contact
+      - listitem:
+        - link "Our locations":
+          - /url: /contact/locations
+      - listitem:
+        - link "Talent Community":
+          - /url: https://flows.beamery.eu/fugro/Join-the-Fugro-Talent-Community
+      - listitem:
+        - link "Speak Up":
+          - /url: /contact/speak-up
+    - link "Cookies":
+      - /url: /cookie-policy
+    - link "Privacy statement":
+      - /url: /privacy-notice
+    - link "Disclaimer":
+      - /url: /disclaimer
+    - link "General purchase terms and conditions":
+      - /url: /fugro-general-purchase-terms-and-conditions
+    - text: © 2026 Fugro. All rights reserved Also of interest
+    - list:
+      - listitem:
+        - link "Fugro announces timetable for converting...":
+          - /url: https://www.fugro.com/news/press-releases/2021/fugro-announces-timetable-for-converting-certificates-into-ordinary-shares
+      - listitem:
+        - link "Press releases":
+          - /url: https://www.fugro.com/news/press-releases
+      - listitem:
+        - link "Business news":
+          - /url: https://www.fugro.com/news/business-news/page/2
+  - alert
+  - dialog "Cookie consent button": Cookie settings

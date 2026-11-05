@@ -1,0 +1,16 @@
+import { readFileSync, writeFileSync } from 'node:fs';
+const ws = new WebSocket(process.argv[2]);
+let id = 0; const pending = new Map();
+const send = (m,params={}) => new Promise((res,rej)=>{const i=++id;pending.set(i,{res,rej});ws.send(JSON.stringify({id:i,method:m,params}))});
+ws.onmessage = ev => { const msg=JSON.parse(ev.data); if(msg.id&&pending.has(msg.id)){const{res,rej}=pending.get(msg.id);pending.delete(msg.id);msg.error?rej(new Error(JSON.stringify(msg.error))):res(msg.result);} };
+await new Promise(r=>ws.onopen=r);
+await send('Runtime.enable');
+await send('Emulation.setDeviceMetricsOverride',{width:390,height:844,deviceScaleFactor:2,mobile:true});
+await send('Page.enable');
+await send('Page.navigate',{url:'https://www.fugro.com/'});
+await new Promise(r=>setTimeout(r,6000));
+const expr = readFileSync('menu-probe.expr.js','utf8');
+const res = await send('Runtime.evaluate',{expression:expr,returnByValue:true,awaitPromise:true});
+writeFileSync('menu-probe-mobile.json',JSON.stringify(res.result.value,null,1));
+console.log(JSON.stringify(res.result.value).slice(0,3000));
+ws.close();process.exit(0);

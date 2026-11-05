@@ -1,0 +1,285 @@
+- document:
+  - banner:
+    - link "Home":
+      - /url: /en
+      - img
+    - list:
+      - listitem:
+        - link "Industries":
+          - /url: /industries
+      - listitem:
+        - link "Expertise":
+          - /url: /expertise
+      - listitem:
+        - link "Careers":
+          - /url: /careers
+      - listitem:
+        - link "Investors":
+          - /url: /investors
+      - listitem:
+        - link "News":
+          - /url: /news
+      - listitem:
+        - link "About us":
+          - /url: /about-us
+    - button "Search":
+      - img
+    - link "Profile":
+      - /url: /portals
+      - img
+    - link "Get in touch":
+      - /url: /contact
+  - main:
+    - paragraph: Investor relations
+    - heading "Investing in a safe and liveable world" [level=1]
+    - img "Remote Operations Centre (ROC) Aberdeen 35.jpg"
+    - list:
+      - listitem:
+        - paragraph: Jump to
+      - listitem:
+        - button "Highlights"
+      - listitem:
+        - button "Results & publications"
+      - listitem:
+        - button "Factsheet & presentation"
+      - listitem:
+        - button "ESG"
+      - listitem:
+        - button "Calendar"
+      - listitem:
+        - button "Press releases"
+      - listitem:
+        - button "Contact"
+    - heading "Overview" [level=2]
+    - paragraph: Our investor relations efforts are aimed at providing timely, complete and consistent information to enable you to develop a clear understanding of our strategy, activities, historical performance and outlook for the future.
+    - link "Read more":
+      - /url: /investors/reasons-to-invest
+      - text: Read more
+      - img
+    - heading "Highlights" [level=2]
+    - link "Publication Q3 2026 trading update Fugro hosted a webcast on 30 October 2026 to present its Q3 2026 trading update. Read more":
+      - /url: /investors/results-and-publications/publication-Q3-trading-update-2026
+      - heading "Publication Q3 2026 trading update" [level=2]
+      - paragraph: Fugro hosted a webcast on 30 October 2026 to present its Q3 2026 trading update.
+      - paragraph: Read more
+      - button "Read more":
+        - img
+    - link "Key investment highlights Investing in Fugro is investing in the world's leading Geo-data specialist. Together with our clients across the globe, we serve clients in the energy, infrastructure and water industries. Fugro is listed on Euronext Amsterdam. Read more":
+      - /url: /investors/reasons-to-invest
+      - heading "Key investment highlights" [level=2]
+      - paragraph: Investing in Fugro is investing in the world's leading Geo-data specialist. Together with our clients across the globe, we serve clients in the energy, infrastructure and water industries. Fugro is listed on Euronext Amsterdam.
+      - paragraph: Read more
+      - button "Read more":
+        - img
+    - link "Shares 8.57 EUR 0.29 (3.51%) 17:35 UTC■04 Nov 2026":
+      - /url: /investors/shares
+      - paragraph: Shares
+      - text: 8.57 EUR
+      - img
+      - text: 0.29 (3.51%) 17:35 UTC■04 Nov 2026
+      - button "Read more":
+        - img
+    - link "FOG side scan sonar.jpeg Annual report For Fugro, 2025 proved to be a challenging year. Rapidly changing energy markets – especially the headwinds facing offshore wind projects in several countries – resulted in a marked slowdown in early‑stage site characterisation work. Read more":
+      - /url: /investors/results-and-publications/annual-reports
+      - img "FOG side scan sonar.jpeg"
+      - heading "Annual report" [level=2]
+      - paragraph: For Fugro, 2025 proved to be a challenging year. Rapidly changing energy markets – especially the headwinds facing offshore wind projects in several countries – resulted in a marked slowdown in early‑stage site characterisation work.
+      - paragraph: Read more
+      - button "Read more":
+        - img
+    - heading "Results and publications" [level=2]
+    - link "All publications":
+      - /url: /investors/results-and-publications/publications-centre
+      - text: All publications
+      - img
+    - paragraph: 30 Oct 2026
+    - paragraph: PDF
+    - paragraph: Q3 2026 trading update - Press release
+    - link "Download":
+      - /url: https://fugro.canto.global/direct/document/5v5v0h6vvh22v4enip7333es3k/g9hK0Mb6d243SI66nwI-SfO9F0Y/original?content-type=application%2Fpdf&name=Fugro+Q3+2026+trading+update+-+Press+release.pdf
+      - img
+    - paragraph: 30 Oct 2026
+    - paragraph: PDF
+    - paragraph: Q3 2026 trading update - Analyst presentation
+    - link "Download":
+      - /url: https://fugro.canto.global/direct/document/evr5aajq7922faj569iv67245p/Q3iWw5ime39SExg4j71JzzjHzYE/original?content-type=application%2Fpdf&name=Fugro+Q3+2026+analyst+slides.pdf
+      - img
+    - paragraph: 30 Oct 2026
+    - paragraph: Link
+    - paragraph: Q3 results 2026 - Webcast analyst presentation 30 October 2026
+    - link "Read more":
+      - /url: https://fugroinvestors.engagestream.euronext.com/q3-2026/register
+      - img
+    - link "Fugro investor slide pack May 2026.jpg PDF General investor presentation":
+      - /url: https://fugro.canto.global/direct/document/v8ro0hq4u11n7e1leotjk5eq5l/1gRMgaTrQre6MhHCBXNg59p6uBE/original?content-type=application%2Fpdf&name=General+investor+presentation.pdf
+      - img "Fugro investor slide pack May 2026.jpg"
+      - paragraph: PDF
+      - heading "General investor presentation" [level=2]
+      - paragraph
+      - paragraph
+      - button "Download":
+        - img
+    - link "STRUCTURAL INVESTIGATION-ST.jpg PDF Quarterly financials Fugro's financial results per quarter from Q1 2018 - Q3 2026":
+      - /url: https://fugro.canto.global/direct/document/61h642e8hl2g10q013qei7qv0o/KNTKxAfk5T0-5TqPMQtjh3C9l6w/original?content-type=application%2Fvnd.openxmlformats-officedocument.spreadsheetml.sheet&name=Fugro+Financial+results+per+quarter+as+of+Q1+2018+-+Q3+2026.xlsx
+      - img "STRUCTURAL INVESTIGATION-ST.jpg"
+      - paragraph: PDF
+      - heading "Quarterly financials" [level=2]
+      - paragraph: Fugro's financial results per quarter from Q1 2018 - Q3 2026
+      - paragraph
+      - button "Download":
+        - img
+    - img "AdobeStock_318165271.jpeg"
+    - paragraph: ESG
+    - heading "Sustainability" [level=2]
+    - paragraph: Our ambition is to support the energy transition, sustainable infrastructure and climate change adaptation.
+    - paragraph: ESG
+    - heading "Governance" [level=2]
+    - paragraph: Apart from driving positive impact through the solutions that we offer, we are a responsible company, managing our impact on the world in which we operate.
+    - link "Read more":
+      - /url: /about-us/sustainability
+      - text: Read more
+      - img
+    - paragraph: 1 / 2
+    - button "Previous" [disabled]:
+      - img
+    - button "Next":
+      - img
+    - heading "Financial events" [level=2]
+    - link "All events":
+      - /url: /investors/results-and-publications/financial-calendar
+      - text: All events
+      - img
+    - heading "04" [level=2]
+    - paragraph: Mar 2027
+    - heading "Full-year results 2026" [level=2]
+    - text: 7:00 AM CET
+    - heading "Press releases" [level=2]
+    - link "All press releases":
+      - /url: /news/press-releases
+      - text: All press releases
+      - img
+    - link "Press release Trading update Q3 2026 Revenue resilient, margin impacted by ongoing market challenges 30 Oct 2026":
+      - /url: /news/press-releases/2026/q3-2026-trading-update
+      - paragraph: Press release
+      - heading "Trading update Q3 2026" [level=2]
+      - paragraph: Revenue resilient, margin impacted by ongoing market challenges
+      - paragraph: 30 Oct 2026
+      - button "Read more":
+        - img
+    - link "Press release Emiel Jongerius appointed as Fugro’s CFO at EGM At today's extraordinary general meeting, Emiel Jongerius was appointed as a member of the Board of Management and Chief Financial Officer of Fugro N.V. as per 16 November 2026. 28 Oct 2026":
+      - /url: /news/press-releases/2026/emiel-jongerius-appointed-as-fugro-cfo-at-egm
+      - paragraph: Press release
+      - heading "Emiel Jongerius appointed as Fugro’s CFO at EGM" [level=2]
+      - paragraph: At today's extraordinary general meeting, Emiel Jongerius was appointed as a member of the Board of Management and Chief Financial Officer of Fugro N.V. as per 16 November 2026.
+      - paragraph: 28 Oct 2026
+      - button "Read more":
+        - img
+    - link "Press release Fugro secures long-term funding with new facility from the European Investment Bank and two-year extension of existing senior debt facilities Fugro has entered into a EUR 150 million unsecured financing facility with the European Investment Bank (EIB) to support the ongoing development and deployment of its uncrewed surface vessel (USV) technology. The facility will support the phased expansion of Fugro's remote operations capabilities, allowing the company to progress its transformation programme, while maintaining a disciplined approach to capital allocation. 14 Oct 2026":
+      - /url: /news/press-releases/2026/fugro-secures-long-term-funding-with-new-facility-from-the-european-investment-bank-and-two-year-extension-of-existing-senior-debt-facilities
+      - paragraph: Press release
+      - heading "Fugro secures long-term funding with new facility from the European Investment Bank and two-year extension of existing senior debt facilities" [level=2]
+      - paragraph: Fugro has entered into a EUR 150 million unsecured financing facility with the European Investment Bank (EIB) to support the ongoing development and deployment of its uncrewed surface vessel (USV) technology. The facility will support the phased expansion of Fugro's remote operations capabilities, allowing the company to progress its transformation programme, while maintaining a disciplined approach to capital allocation.
+      - paragraph: 14 Oct 2026
+      - button "Read more":
+        - img
+    - link "Press release Fugro awarded major Australian marine asset integrity contract Fugro has secured a marine asset integrity contract with a client in Australia, strengthening its position as a trusted partner for subsea inspection, intervention and maintenance services in the offshore energy industry. 23 Sep 2026":
+      - /url: /news/press-releases/2026/fugro-awarded-major-australian-marine-asset-integrity-contract
+      - paragraph: Press release
+      - heading "Fugro awarded major Australian marine asset integrity contract" [level=2]
+      - paragraph: Fugro has secured a marine asset integrity contract with a client in Australia, strengthening its position as a trusted partner for subsea inspection, intervention and maintenance services in the offshore energy industry.
+      - paragraph: 23 Sep 2026
+      - button "Read more":
+        - img
+    - heading "Contact us" [level=2]
+    - heading "Get in touch Investor relations" [level=2]
+    - img "catrien-van-buttingha-wichers-square.jpg"
+    - paragraph: Catrien van Buttingha Wichers
+    - paragraph: Director Investor Relations
+    - button "Contact Catrien van Buttingha Wichers":
+      - text: Contact Catrien van Buttingha Wichers
+      - img
+    - img "NOOTDORP_0620.jpg"
+    - paragraph
+    - heading "Share performance" [level=2]
+    - paragraph: See our share price graph or use our historic calculator
+    - link "Find out more":
+      - /url: /investors/shares/share-performance
+      - text: Find out more
+      - img
+  - contentinfo:
+    - img
+    - list:
+      - listitem:
+        - link "Industries":
+          - /url: /industries
+      - listitem:
+        - link "Expertise":
+          - /url: /expertise
+      - listitem:
+        - link "Careers":
+          - /url: /careers
+      - listitem:
+        - link "Investors":
+          - /url: /investors
+      - listitem:
+        - link "News":
+          - /url: /news
+      - listitem:
+        - link "About us":
+          - /url: /about-us
+    - paragraph: Subscribe to news alerts
+    - link "Sign up now":
+      - /url: /news/subscribe-for-news-alerts
+      - text: Sign up now
+      - img
+    - list:
+      - listitem:
+        - paragraph: Social media
+      - listitem:
+        - link "LinkedIn":
+          - /url: https://www.linkedin.com/company/fugro
+      - listitem:
+        - link "Facebook":
+          - /url: https://www.facebook.com/fugro
+      - listitem:
+        - link "X (Twitter)":
+          - /url: https://twitter.com/fugro
+      - listitem:
+        - link "Instagram":
+          - /url: https://www.instagram.com/fugro
+    - list:
+      - listitem:
+        - paragraph: Contact
+      - listitem:
+        - link "General contact":
+          - /url: /contact
+      - listitem:
+        - link "Our locations":
+          - /url: /contact/locations
+      - listitem:
+        - link "Talent Community":
+          - /url: https://flows.beamery.eu/fugro/Join-the-Fugro-Talent-Community
+      - listitem:
+        - link "Speak Up":
+          - /url: /contact/speak-up
+    - link "Cookies":
+      - /url: /cookie-policy
+    - link "Privacy statement":
+      - /url: /privacy-notice
+    - link "Disclaimer":
+      - /url: /disclaimer
+    - link "General purchase terms and conditions":
+      - /url: /fugro-general-purchase-terms-and-conditions
+    - text: © 2026 Fugro. All rights reserved Also of interest
+    - list:
+      - listitem:
+        - link "Annual report":
+          - /url: https://www.fugro.com/investors/results-and-publications/annual-reports
+      - listitem:
+        - link "Results and publications":
+          - /url: https://www.fugro.com/investors/results-and-publications
+      - listitem:
+        - link "Publications centre":
+          - /url: https://www.fugro.com/investors/results-and-publications/publications-centre
+  - alert
+  - dialog "Cookie consent button": Cookie settings

@@ -1,0 +1,402 @@
+{
+  "capture_path": "/home/liz/dev/repos/design-templates/cases/fugro-rea/evidence/page-inspect-home.json",
+  "capture_sha256": "b59af50e6dbce6b244997c0d6de401b1f6e85c33c8e99bdb41167799d79fbf3d",
+  "capture_kind": "page-inspection",
+  "source_evidence_id": "ev_dfc12d9c5460b6c411d29cdac81ceeb13755f88442d6a7d0e39c9142d550a073",
+  "capture_completeness": {
+    "status": "policy_filtered",
+    "conditions": [
+      "attach_limited",
+      "policy_filtered"
+    ],
+    "policy_filtered_sections": [
+      "accessibility",
+      "console_events",
+      "console_text",
+      "json_body_shapes",
+      "metadata",
+      "resources",
+      "scripts",
+      "storage_keys",
+      "websocket_shapes"
+    ],
+    "attach_limited_sections": [
+      "console_events",
+      "metadata",
+      "network_requests",
+      "websocket_connections",
+      "websocket_frames",
+      "workers"
+    ],
+    "truncated_sections": [],
+    "unavailable_sections": [],
+    "excluded": [
+      {
+        "section": "accessibility",
+        "reason": "not_approved",
+        "count": 580
+      },
+      {
+        "section": "console_events",
+        "reason": "disallowed_origin",
+        "count": 1
+      },
+      {
+        "section": "console_text",
+        "reason": "not_approved",
+        "count": null
+      },
+      {
+        "section": "json_body_shapes",
+        "reason": "not_approved",
+        "count": null
+      },
+      {
+        "section": "metadata",
+        "reason": "disallowed_origin",
+        "count": 23
+      },
+      {
+        "section": "resources",
+        "reason": "disallowed_origin",
+        "count": 8
+      },
+      {
+        "section": "scripts",
+        "reason": "disallowed_origin",
+        "count": 4
+      },
+      {
+        "section": "scripts",
+        "reason": "unattributed_origin",
+        "count": 10
+      },
+      {
+        "section": "storage_keys",
+        "reason": "not_approved",
+        "count": null
+      },
+      {
+        "section": "websocket_shapes",
+        "reason": "not_approved",
+        "count": null
+      }
+    ],
+    "dropped_events": {
+      "scripts": 0,
+      "network_requests": 0,
+      "console_events": 0,
+      "websocket_connections": 0,
+      "websocket_frames": 0,
+      "webmcp_tools": 0,
+      "timeline_events": 0,
+      "total": 0
+    }
+  },
+  "output_directory": "/home/liz/dev/repos/design-templates/cases/fugro-rea/scripts/home",
+  "analysis_input": {
+    "input_path": "/home/liz/dev/repos/design-templates/cases/fugro-rea/scripts/home/files",
+    "format": "directory"
+  },
+  "scripts": [
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_0a8b30ab229aed42ac3ed2cdf5bd9ae8fc2d743d3bc13a626b29c5c13bc6b12a",
+        "frame_id": "CB212D86A63772B28D576B71365E98FA",
+        "is_module": false,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.fugro.com/_next/static/chunks/pages/%5B%5B...slug%5D%5D-76554e780d7a31d3.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "isolated/source-1-aed7d1477cac208d8b052473c600c67f923a54adfe65e312eee3801b33d01126.js",
+        "layout": "isolated",
+        "layout_reason": "URL path is not an ordinary portable JavaScript module path.",
+        "sha256": "092e08c7fc84280ee6bd8b0abfd4dec5d0866f1d21b93a3c621afb8469315cd8",
+        "bytes": 4845,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_2edfc2270a540076e156d8bf367943fa2d294452ae6867a110c13dc913c3b099",
+        "frame_id": "CB212D86A63772B28D576B71365E98FA",
+        "is_module": false,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.fugro.com/_next/static/chunks/framework-e952fed463eb8e34.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/8c4726ef7b254b620384389a81d4bba0ca598e73b5be73cbeeb63d3bd7b1b858/_next/static/chunks/framework-e952fed463eb8e34.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "d93db332ed552c328115b285b537b3ee93af329b2ba980d9796733b33f837a48",
+        "bytes": 140000,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_365f7ac8cc9a0de6c97de5347f0300f7347edab6b544d7e3e9c1587ca1f3c532",
+        "frame_id": "CB212D86A63772B28D576B71365E98FA",
+        "is_module": false,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.fugro.com/_next/static/02MW7n8UD0vTRine92LZG/_ssgManifest.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/8c4726ef7b254b620384389a81d4bba0ca598e73b5be73cbeeb63d3bd7b1b858/_next/static/02MW7n8UD0vTRine92LZG/_ssgManifest.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "40e003c5a1b0f412cdcaa2f3c14e0036d1884933f87440baf974fb2e642a6877",
+        "bytes": 190,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_3a013e268218208cc037c2b4ef7c33422191c097e0ca55e8098250fbfeb247e1",
+        "frame_id": "CB212D86A63772B28D576B71365E98FA",
+        "is_module": false,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.fugro.com/",
+      "content": {
+        "state": "exported",
+        "relative_path": "isolated/source-4-39e33c3379998a272fb40141cd4e1e7c320e6e16aceb5ad15cb89e13f437588b.js",
+        "layout": "isolated",
+        "layout_reason": "URL path is not an ordinary portable JavaScript module path.",
+        "sha256": "6ada60191f650b417724238388f11dbc697308e4f44c9872c49598155d3946f2",
+        "bytes": 4296,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_3b784bf3548c498dcb120bf5190f8cd8460789889fe4592bfb0a2105fbb82fc4",
+        "frame_id": "CB212D86A63772B28D576B71365E98FA",
+        "is_module": false,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.fugro.com/_next/static/02MW7n8UD0vTRine92LZG/_buildManifest.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/8c4726ef7b254b620384389a81d4bba0ca598e73b5be73cbeeb63d3bd7b1b858/_next/static/02MW7n8UD0vTRine92LZG/_buildManifest.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "83a4b1cca1d9c50253a10b53c30825d9010f52c7eb73c8a9f479bd1f32dc8824",
+        "bytes": 1381,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_6066f949815eb3fe4079531dd687f951b8c7f94d0379657d76a68a2083abc568",
+        "frame_id": "CB212D86A63772B28D576B71365E98FA",
+        "is_module": false,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.fugro.com/",
+      "content": {
+        "state": "exported",
+        "relative_path": "isolated/source-6-2d3221d719d4d87755be089e4afa5efdd5b13db22a358c980c5c059c6067d244.js",
+        "layout": "isolated",
+        "layout_reason": "URL path is not an ordinary portable JavaScript module path.",
+        "sha256": "dad1f2ebd0af57fedc719179f55129145b9de08d16b945625775b0fe68e2bef7",
+        "bytes": 53,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_63e14df181492519454cc72674196c5e4416d33987adf63d979cdc703abcaaf7",
+        "frame_id": "CB212D86A63772B28D576B71365E98FA",
+        "is_module": false,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.fugro.com/_vercel/speed-insights/script.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/8c4726ef7b254b620384389a81d4bba0ca598e73b5be73cbeeb63d3bd7b1b858/_vercel/speed-insights/script.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "c703720710415599d2f0b3f31fbfda63e34d6d19e730bada78b9b92197564f5b",
+        "bytes": 12567,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_68c0755d54bd6af74334159fbcfae54499100af37de9c5fdc970b00e5dc8860d",
+        "frame_id": "CB212D86A63772B28D576B71365E98FA",
+        "is_module": false,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.fugro.com/",
+      "content": {
+        "state": "exported",
+        "relative_path": "isolated/source-8-4073166a64092f8cfc31ba085189b740d7847888b7fad3138bef7af000622cc9.js",
+        "layout": "isolated",
+        "layout_reason": "URL path is not an ordinary portable JavaScript module path.",
+        "sha256": "30128b3a9954f56c9fd2b214adda34c2a466eac407c332d4c3c9929181b97154",
+        "bytes": 786,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_7707d6f7a50208a06eeba6bb3a5d7e443a79625cd78bb58d5f880926036cdcd3",
+        "frame_id": "CB212D86A63772B28D576B71365E98FA",
+        "is_module": false,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.fugro.com/",
+      "content": {
+        "state": "exported",
+        "relative_path": "isolated/source-9-8e6e5c7bf284328585e47fb91b84e81d9e1b9658405218624a60372b40c4ad59.js",
+        "layout": "isolated",
+        "layout_reason": "URL path is not an ordinary portable JavaScript module path.",
+        "sha256": "0b2045a3b9430cb6255e65cc6a6e1691be955ec8ce2c19a1b417f27d1f2fec21",
+        "bytes": 429,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_8d7290af747097e746da7f0319091179e9efacb95acb7bfd71d984aacd772321",
+        "frame_id": "CB212D86A63772B28D576B71365E98FA",
+        "is_module": false,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.fugro.com/_next/static/chunks/pages/_app-fd48029dcca4e59b.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/8c4726ef7b254b620384389a81d4bba0ca598e73b5be73cbeeb63d3bd7b1b858/_next/static/chunks/pages/_app-fd48029dcca4e59b.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "44b7c71cc0d8b32531d3d79daddab058dd479ad56a3f0a9221848047dd969d12",
+        "bytes": 1316404,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_97ffa08684076b5278a0199cb991ddaf7b4ed5445a9a1490587b84bde08c665b",
+        "frame_id": "CB212D86A63772B28D576B71365E98FA",
+        "is_module": false,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.fugro.com/_next/static/chunks/545-46e5a3b856a2ff90.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/8c4726ef7b254b620384389a81d4bba0ca598e73b5be73cbeeb63d3bd7b1b858/_next/static/chunks/545-46e5a3b856a2ff90.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "c36cdd985dbdae995069dc3a4db653e02983aeb3d3fa53ef1865a99d6d04b18d",
+        "bytes": 38467,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_9a5edddcde35cfa3a2d8e6e21fca16b127531a268f611470ef01928a9b701506",
+        "frame_id": "CB212D86A63772B28D576B71365E98FA",
+        "is_module": false,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.fugro.com/_next/static/chunks/main-16c1b5100192d3b1.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/8c4726ef7b254b620384389a81d4bba0ca598e73b5be73cbeeb63d3bd7b1b858/_next/static/chunks/main-16c1b5100192d3b1.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "83706bada22be05dea0573a7b3adfe238fca06003d196d97472165b230a793d3",
+        "bytes": 119775,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    },
+    {
+      "source": {
+        "kind": "page-script",
+        "script_key": "scr_a4fc032645a1cf89e987a63d7ef5f083c0fc6e80e4390db8489f0b04511c2b27",
+        "frame_id": "CB212D86A63772B28D576B71365E98FA",
+        "is_module": false,
+        "language": "JavaScript",
+        "source_map_url": null
+      },
+      "url": "https://www.fugro.com/_next/static/chunks/webpack-0734ef5e7abad2e7.js",
+      "content": {
+        "state": "exported",
+        "relative_path": "origins/8c4726ef7b254b620384389a81d4bba0ca598e73b5be73cbeeb63d3bd7b1b858/_next/static/chunks/webpack-0734ef5e7abad2e7.js",
+        "layout": "url-path",
+        "layout_reason": null,
+        "sha256": "37adafafbd30abe98e76ba97dc75923dc81704bddb42fddc225342c08b5e1b40",
+        "bytes": 5697,
+        "media_type": "text/javascript",
+        "redacted": null,
+        "representation": "debugger-source-utf8"
+      }
+    }
+  ],
+  "limitations": [
+    "Observation starts when REA attaches; prior network and console activity is unavailable.",
+    "Worker targets are a final inventory snapshot, not worker-session observation. Their attached flag describes any debugging client; this page-session collector does not observe worker network, console, or script events, and short-lived workers may be absent from the snapshot.",
+    "Raw network headers, bodies, cookies, storage values, console objects, and WebSocket payloads are never retained; explicitly requested primitive console text is retained verbatim, while payload captures retain value-free shapes.",
+    "Source maps are reported only as declarative URLs and are not fetched.",
+    "URL-less scripts and console events without an allowed source URL are excluded because their origin cannot be proven.",
+    "CDP discovery omitted the target attachment state; attached is reported as unknown.",
+    "Only script bytes retained in this capture are exported. Sources are not refetched or executed, and a response or Debugger source does not prove execution.",
+    "Ordinary unambiguous URL paths preserve relative module layouts by origin, including case-distinct spellings. Query variants, exact path collisions, file/directory prefixes, inline sources, and unrepresentable paths are isolated. A case-distinct pair is isolated only when the destination filesystem cannot store both spellings; the record names that pair. Browser module relationships of isolated paths remain unknown.",
+    "Local JavaScript analysis does not implement browser import maps, root-relative URL resolution, remote URL loading, or browser runtime behavior. It may strip import queries and fragments; isolated variants are not canonical targets.",
+    "Source-map declarations are retained as metadata. No source maps or missing dependencies are fetched or reconstructed.",
+    "Scenario response bytes preserve the output of Playwright's Response.body() API; any source-body provenance caveat from the capture is retained in this manifest. Debugger sources are the exposed text encoded as UTF-8. Redacted bytes are exported exactly as retained, and may no longer parse as JavaScript."
+  ]
+}

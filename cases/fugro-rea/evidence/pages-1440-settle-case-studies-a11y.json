@@ -1,0 +1,217 @@
+- document:
+  - banner:
+    - link "Home":
+      - /url: /en
+      - img
+    - list:
+      - listitem:
+        - link "Industries":
+          - /url: /industries
+      - listitem:
+        - link "Expertise":
+          - /url: /expertise
+      - listitem:
+        - link "Careers":
+          - /url: /careers
+      - listitem:
+        - link "Investors":
+          - /url: /investors
+      - listitem:
+        - link "News":
+          - /url: /news
+      - listitem:
+        - link "About us":
+          - /url: /about-us
+    - button "Search":
+      - img
+    - link "Profile":
+      - /url: /portals
+      - img
+    - link "Get in touch":
+      - /url: /contact
+  - link "Expertise":
+    - /url: /expertise
+    - text: Expertise
+    - img
+  - link "Case studies":
+    - /url: /expertise/case-studies
+  - main:
+    - paragraph: See details of our work
+    - heading "Case studies" [level=1]
+    - paragraph: Filter by
+    - paragraph: All industries
+    - img
+    - paragraph: All regions
+    - img
+    - paragraph: All areas of expertise
+    - img
+    - separator
+    - heading "Highlighted" [level=2]
+    - link "Lift boat on Mississippi River 02.jpg Infrastructure Geotechnical Investigation for US-51 Ohio River Bridge How Fugro applied offshore-grade positioning and sampling technology to deliver 100% validated foundation data for Kentucky's US-51 Ohio River bridge replacement. 10 Jun 2026":
+      - /url: /expertise/case-studies/transforming-a-high-risk-river-crossing-into-design-certainty
+      - img "Lift boat on Mississippi River 02.jpg"
+      - paragraph: Infrastructure
+      - heading "Geotechnical Investigation for US-51 Ohio River Bridge" [level=2]
+      - paragraph: How Fugro applied offshore-grade positioning and sampling technology to deliver 100% validated foundation data for Kentucky's US-51 Ohio River bridge replacement.
+      - paragraph: 10 Jun 2026
+      - button "Read more":
+        - img
+    - heading "All case studies" [level=2]
+    - link "Danube Loadtest 5.jpg Infrastructure Fugro Loadtest® foundation testing in Danube River 28 Oct 2026":
+      - /url: /expertise/case-studies/foundation-load-testing-for-a-landmark-bridge-crossing-the-river-danube
+      - img "Danube Loadtest 5.jpg"
+      - paragraph: Infrastructure
+      - heading "Fugro Loadtest® foundation testing in Danube River" [level=2]
+      - paragraph: 28 Oct 2026
+    - link "Aran250_Suffolk UK_Sizewell (1).jpg Energy Long term partnership to build Sizewell's nuclear future 16 Jul 2026":
+      - /url: /expertise/case-studies/long-term-partnership-to-build-sizewell-s-nuclear-future
+      - img "Aran250_Suffolk UK_Sizewell (1).jpg"
+      - paragraph: Energy
+      - heading "Long term partnership to build Sizewell's nuclear future" [level=2]
+      - paragraph: 16 Jul 2026
+    - link "CPT truck_XRF-CPT-Cone_Requinoa, Chile.jpg Infrastructure Seeing Inside a Tailings Dam | GroundIQ® 3D Risk Assessment 09 Jun 2026":
+      - /url: /expertise/case-studies/seeing-inside-a-tailings-dam-how-groundiq-helped-rule-out-hidden-structural-risks
+      - img "CPT truck_XRF-CPT-Cone_Requinoa, Chile.jpg"
+      - paragraph: Infrastructure
+      - heading "Seeing Inside a Tailings Dam | GroundIQ® 3D Risk Assessment" [level=2]
+      - paragraph: 09 Jun 2026
+    - link "Topographic survey & underground inspection 01.jpg Energy Subsurface investigation for oil & gas expansion in Iraq | Fugro case study Iraq":
+      - /url: /expertise/case-studies/bringing-subsurface-clarity-to-totalenergies-expansion-project
+      - img "Topographic survey & underground inspection 01.jpg"
+      - paragraph: Energy
+      - heading "Subsurface investigation for oil & gas expansion in Iraq | Fugro case study" [level=2]
+      - paragraph: Iraq
+    - link "Fugro Vaquita in Brazil 02.jpg Fugro | Remote Subsea Inspections for Petrobras, Brazil 22 May 2026":
+      - /url: /expertise/case-studies/remote-subsea-inspections-eliminate-personnel-risk-for-brazil-s-largest-oil-producer
+      - img "Fugro Vaquita in Brazil 02.jpg"
+      - heading "Fugro | Remote Subsea Inspections for Petrobras, Brazil" [level=2]
+      - paragraph: 22 May 2026
+    - link "Testing ANT nodes in Dubai 03.jpg Hydrogen Plant Ground Risk Assessment | GroundIQ® Case Study 21 May 2026":
+      - /url: /expertise/case-studies/revealing-ground-risk-for-a-hydrogen-plant-how-groundiq-delivered-clearer-subsurface-insight
+      - img "Testing ANT nodes in Dubai 03.jpg"
+      - heading "Hydrogen Plant Ground Risk Assessment | GroundIQ® Case Study" [level=2]
+      - paragraph: 21 May 2026
+    - link "Egypt case study Cairo stock image.png Infrastructure Precision underground water mapping for Cairo developments | Fugro Egypt, Cairo":
+      - /url: /expertise/case-studies/groundiq-delivers-high-resolution-underground-water-mapping-in-challenging-urban-setting
+      - img "Egypt case study Cairo stock image.png"
+      - paragraph: Infrastructure
+      - heading "Precision underground water mapping for Cairo developments | Fugro" [level=2]
+      - paragraph: Egypt, Cairo
+    - 'link "Field crew holding ANT sensor.jpg Infrastructure GroundIQ® in action: Ruling out hidden ground risks for a hyperscale data centre 09 Apr 2026"':
+      - /url: /expertise/case-studies/groundiq-in-action-ruling-out-hidden-ground-risks-for-a-hyperscale-data-centre
+      - img "Field crew holding ANT sensor.jpg"
+      - paragraph: Infrastructure
+      - 'heading "GroundIQ® in action: Ruling out hidden ground risks for a hyperscale data centre" [level=2]'
+      - paragraph: 09 Apr 2026
+    - link "Excalibur_Dunkerque (4).JPG Energy Gathering precision data in coastal geology using a multiple-method approach 24 Mar 2026":
+      - /url: /expertise/case-studies/gathering-precision-data-in-coastal-geology-using-a-multiple-method-approach
+      - img "Excalibur_Dunkerque (4).JPG"
+      - paragraph: Energy
+      - heading "Gathering precision data in coastal geology using a multiple-method approach" [level=2]
+      - paragraph: 24 Mar 2026
+    - navigation:
+      - list:
+        - listitem:
+          - button "Previous" [disabled]:
+            - img
+        - listitem:
+          - button "1"
+        - listitem:
+          - link "2":
+            - /url: /expertise/case-studies/page/2
+        - listitem:
+          - link "3":
+            - /url: /expertise/case-studies/page/3
+        - listitem
+        - listitem:
+          - link "13":
+            - /url: /expertise/case-studies/page/13
+        - listitem:
+          - link "Next":
+            - /url: /expertise/case-studies/page/2
+            - img
+    - img "Engineer onboard Fugro Galaxy 02.jpg"
+    - paragraph
+    - heading "Come join us" [level=2]
+    - paragraph: Exciting challenges. Unforgettable experiences. Innovative projects. Collaborative teams. Work that helps create a safer, more sustainable, and liveable world. These are a few of the things you’ll find at Fugro. Will you join our global team?
+    - link "Careers at Fugro":
+      - /url: /careers/jobs
+      - text: Careers at Fugro
+      - img
+  - contentinfo:
+    - img
+    - list:
+      - listitem:
+        - link "Industries":
+          - /url: /industries
+      - listitem:
+        - link "Expertise":
+          - /url: /expertise
+      - listitem:
+        - link "Careers":
+          - /url: /careers
+      - listitem:
+        - link "Investors":
+          - /url: /investors
+      - listitem:
+        - link "News":
+          - /url: /news
+      - listitem:
+        - link "About us":
+          - /url: /about-us
+    - paragraph: Subscribe to news alerts
+    - link "Sign up now":
+      - /url: /news/subscribe-for-news-alerts
+      - text: Sign up now
+      - img
+    - list:
+      - listitem:
+        - paragraph: Social media
+      - listitem:
+        - link "LinkedIn":
+          - /url: https://www.linkedin.com/company/fugro
+      - listitem:
+        - link "Facebook":
+          - /url: https://www.facebook.com/fugro
+      - listitem:
+        - link "X (Twitter)":
+          - /url: https://twitter.com/fugro
+      - listitem:
+        - link "Instagram":
+          - /url: https://www.instagram.com/fugro
+    - list:
+      - listitem:
+        - paragraph: Contact
+      - listitem:
+        - link "General contact":
+          - /url: /contact
+      - listitem:
+        - link "Our locations":
+          - /url: /contact/locations
+      - listitem:
+        - link "Talent Community":
+          - /url: https://flows.beamery.eu/fugro/Join-the-Fugro-Talent-Community
+      - listitem:
+        - link "Speak Up":
+          - /url: /contact/speak-up
+    - link "Cookies":
+      - /url: /cookie-policy
+    - link "Privacy statement":
+      - /url: /privacy-notice
+    - link "Disclaimer":
+      - /url: /disclaimer
+    - link "General purchase terms and conditions":
+      - /url: /fugro-general-purchase-terms-and-conditions
+    - text: © 2026 Fugro. All rights reserved Also of interest
+    - list:
+      - listitem:
+        - link "Articles on Geotechnical and Surveying Expertise":
+          - /url: https://www.fugro.com/news/published-articles
+      - listitem:
+        - link "Lidar applications in the modern world":
+          - /url: https://www.fugro.com/news/long-reads/2025/lidar-applications-in-the-modern-world-fugro-longread
+      - listitem:
+        - link "Published articles":
+          - /url: https://www.fugro.com/news/published-articles/page/1
+  - alert
+  - dialog "Cookie consent button": Cookie settings

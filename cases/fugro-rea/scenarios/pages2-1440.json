@@ -1,0 +1,136 @@
+{
+  "browser": {
+    "mode": "launch",
+    "executable_path": "/home/liz/.cache/ms-playwright/chromium-1248/chrome-linux64/chrome",
+    "headless": true
+  },
+  "environment": {
+    "viewport": {
+      "width": 1440,
+      "height": 900,
+      "device_scale_factor": 1
+    },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "color_scheme": "light",
+    "reduced_motion": "no-preference",
+    "service_workers": "block"
+  },
+  "start_url": {
+    "url": "https://www.fugro.com/careers"
+  },
+  "actions": [
+    {
+      "step_id": "settle-careers",
+      "action": "wait_for_timeout",
+      "duration_ms": 4000
+    },
+    {
+      "step_id": "decline-cookies",
+      "action": "click",
+      "locator": {
+        "kind": "role",
+        "role": "button",
+        "name": "Decline all"
+      },
+      "timeout_ms": 8000
+    },
+    {
+      "step_id": "cookies-gone",
+      "action": "wait_for_timeout",
+      "duration_ms": 1200
+    },
+    {
+      "step_id": "goto-contact",
+      "action": "goto",
+      "destination": {
+        "url": "https://www.fugro.com/contact"
+      },
+      "wait_until": "load",
+      "timeout_ms": 30000
+    },
+    {
+      "step_id": "settle-contact",
+      "action": "wait_for_timeout",
+      "duration_ms": 4000
+    },
+    {
+      "step_id": "goto-locations",
+      "action": "goto",
+      "destination": {
+        "url": "https://www.fugro.com/contact/locations"
+      },
+      "wait_until": "load",
+      "timeout_ms": 30000
+    },
+    {
+      "step_id": "settle-locations",
+      "action": "wait_for_timeout",
+      "duration_ms": 5000
+    },
+    {
+      "step_id": "goto-investors",
+      "action": "goto",
+      "destination": {
+        "url": "https://www.fugro.com/investors"
+      },
+      "wait_until": "load",
+      "timeout_ms": 30000
+    },
+    {
+      "step_id": "settle-investors",
+      "action": "wait_for_timeout",
+      "duration_ms": 4000
+    },
+    {
+      "step_id": "goto-news",
+      "action": "goto",
+      "destination": {
+        "url": "https://www.fugro.com/news"
+      },
+      "wait_until": "load",
+      "timeout_ms": 30000
+    },
+    {
+      "step_id": "settle-news",
+      "action": "wait_for_timeout",
+      "duration_ms": 4000
+    },
+    {
+      "step_id": "goto-press",
+      "action": "goto",
+      "destination": {
+        "url": "https://www.fugro.com/news/press-releases/2026/fugro-awarded-major-australian-marine-asset-integrity-contract"
+      },
+      "wait_until": "load",
+      "timeout_ms": 30000
+    },
+    {
+      "step_id": "settle-press",
+      "action": "wait_for_timeout",
+      "duration_ms": 4000
+    }
+  ],
+  "capture": {
+    "after_each_step": [
+      "url",
+      "dom",
+      "accessibility",
+      "screenshot"
+    ],
+    "at_end": [
+      "url",
+      "history"
+    ],
+    "events": [
+      "console",
+      "page-errors",
+      "network"
+    ],
+    "network": {
+      "request_body": false,
+      "response_body": false,
+      "header_values": false
+    }
+  }
+}

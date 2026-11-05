@@ -1,0 +1,154 @@
+- document:
+  - banner:
+    - link "Home":
+      - /url: /en
+      - img
+    - list:
+      - listitem:
+        - link "Industries":
+          - /url: /industries
+      - listitem:
+        - link "Expertise":
+          - /url: /expertise
+      - listitem:
+        - link "Careers":
+          - /url: /careers
+      - listitem:
+        - link "Investors":
+          - /url: /investors
+      - listitem:
+        - link "News":
+          - /url: /news
+      - listitem:
+        - link "About us":
+          - /url: /about-us
+    - button "Search":
+      - img
+    - link "Profile":
+      - /url: /portals
+      - img
+    - link "Get in touch":
+      - /url: /contact
+  - main:
+    - heading "Contact us" [level=1]
+    - heading "Contact" [level=2]
+    - paragraph: Do you have a question about our company or services? We're here to help! To get in touch with us, please explore the options below. You can find contact information for our offices around the world on our locations page.
+    - link "See our locations":
+      - /url: /contact/locations
+      - text: See our locations
+      - img
+    - heading [level=2]
+    - paragraph: Fugro support projects across infrastructure, energy, water and climate, reducing risk with actionable Geo-data insights at every stage of the project life cycle. If you’re seeking to connect with our experts for more information about our projects and services visit our expertise page.
+    - link "Discover our expertise":
+      - /url: /expertise
+      - text: Discover our expertise
+      - img
+    - heading "Commercial enquiries" [level=2]
+    - heading [level=2]
+    - img "Leonard Sands no bg.png"
+    - paragraph: Leonard Sands
+    - paragraph: Industry lead - Infrastructure
+    - button "Contact Leonard Sands":
+      - text: Contact Leonard Sands
+      - img
+    - img "Remmelt de Jong.jpg"
+    - paragraph: Remmelt de Jong
+    - paragraph: Industry lead - Energy
+    - button "Contact Remmelt de Jong":
+      - text: Contact Remmelt de Jong
+      - img
+    - img "Robert Hoddenbach image.jpg"
+    - paragraph: Robert Hoddenbach
+    - paragraph: Industry Lead - Water
+    - button "Contact Robert Hoddenbach":
+      - text: Contact Robert Hoddenbach
+      - img
+    - heading "Media and investor relations" [level=2]
+    - heading [level=2]
+    - img "serge-van-de-ven-square-2.jpg"
+    - paragraph: Serge van de Ven
+    - paragraph: Director Brand & Communications
+    - button "Contact Serge van de Ven":
+      - text: Contact Serge van de Ven
+      - img
+    - img "catrien-van-buttingha-wichers-square.jpg"
+    - paragraph: Catrien van Buttingha Wichers
+    - paragraph: Director Investor Relations
+    - button "Contact Catrien van Buttingha Wichers":
+      - text: Contact Catrien van Buttingha Wichers
+      - img
+    - img "MEN03693.jpg"
+    - paragraph
+    - heading "What we do at Fugro" [level=2]
+    - paragraph: The more you know, the smaller the risk. Discover how Fugro are creating a safe and liveable work with advanced technologies and expert capabilities. Take a look at our areas of expertise to see how we can support your project throughout its life cycle.
+    - link "Read more":
+      - /url: /about-us/what-we-do
+      - text: Read more
+      - img
+  - contentinfo:
+    - img
+    - list:
+      - listitem:
+        - link "Industries":
+          - /url: /industries
+      - listitem:
+        - link "Expertise":
+          - /url: /expertise
+      - listitem:
+        - link "Careers":
+          - /url: /careers
+      - listitem:
+        - link "Investors":
+          - /url: /investors
+      - listitem:
+        - link "News":
+          - /url: /news
+      - listitem:
+        - link "About us":
+          - /url: /about-us
+    - paragraph: Subscribe to news alerts
+    - link "Sign up now":
+      - /url: /news/subscribe-for-news-alerts
+      - text: Sign up now
+      - img
+    - list:
+      - listitem:
+        - paragraph: Social media
+      - listitem:
+        - link "LinkedIn":
+          - /url: https://www.linkedin.com/company/fugro
+      - listitem:
+        - link "Facebook":
+          - /url: https://www.facebook.com/fugro
+      - listitem:
+        - link "X (Twitter)":
+          - /url: https://twitter.com/fugro
+      - listitem:
+        - link "Instagram":
+          - /url: https://www.instagram.com/fugro
+    - list:
+      - listitem:
+        - paragraph: Contact
+      - listitem:
+        - link "General contact":
+          - /url: /contact
+      - listitem:
+        - link "Our locations":
+          - /url: /contact/locations
+      - listitem:
+        - link "Talent Community":
+          - /url: https://flows.beamery.eu/fugro/Join-the-Fugro-Talent-Community
+      - listitem:
+        - link "Speak Up":
+          - /url: /contact/speak-up
+    - link "Cookies":
+      - /url: /cookie-policy
+    - link "Privacy statement":
+      - /url: /privacy-notice
+    - link "Disclaimer":
+      - /url: /disclaimer
+    - link "General purchase terms and conditions":
+      - /url: /fugro-general-purchase-terms-and-conditions
+    - text: © 2026 Fugro. All rights reserved
+  - alert
+  - dialog "Cookie consent button": Cookie settings

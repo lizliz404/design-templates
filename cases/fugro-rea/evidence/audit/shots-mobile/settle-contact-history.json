@@ -1,0 +1,20 @@
+{
+ "length": 5,
+ "current_url": {
+  "url": "https://www.fugro.com/contact",
+  "origin": "https://www.fugro.com",
+  "query_parameter_names": [],
+  "redacted": false
+ },
+ "navigation_entries": [
+  {
+   "type": "navigate",
+   "name": {
+    "url": "https://www.fugro.com/contact",
+    "origin": "https://www.fugro.com",
+    "query_parameter_names": [],
+    "redacted": false
+   }
+  }
+ ]
+}

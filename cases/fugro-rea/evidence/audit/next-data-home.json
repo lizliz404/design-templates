@@ -1,0 +1,4802 @@
+{
+ "props": {
+  "pageProps": {
+   "breadcrumbs": [],
+   "dynamicFooter": true,
+   "layout": {
+    "alert": null,
+    "footer": {
+     "footNoteLinks": {
+      "items": [
+       {
+        "label": "Cookies",
+        "link": {
+         "href": "cookie-policy"
+        }
+       },
+       {
+        "label": "Privacy statement",
+        "link": {
+         "href": "privacy-notice"
+        }
+       },
+       {
+        "label": "Disclaimer",
+        "link": {
+         "href": "disclaimer"
+        }
+       },
+       {
+        "label": "General purchase terms and conditions",
+        "link": {
+         "href": "fugro-general-purchase-terms-and-conditions"
+        }
+       }
+      ]
+     },
+     "newsletter": {
+      "link": {
+       "href": "news/subscribe-for-news-alerts"
+      },
+      "linkLabel": "Sign up now",
+      "title": "Subscribe to news alerts"
+     },
+     "primaryList": {
+      "items": [
+       {
+        "label": "Industries",
+        "link": {
+         "href": "industries"
+        }
+       },
+       {
+        "label": "Expertise",
+        "link": {
+         "href": "expertise"
+        }
+       },
+       {
+        "label": "Careers",
+        "link": {
+         "href": "careers"
+        }
+       },
+       {
+        "label": "Investors",
+        "link": {
+         "href": "investors"
+        }
+       },
+       {
+        "label": "News",
+        "link": {
+         "href": "news"
+        }
+       },
+       {
+        "label": "About us",
+        "link": {
+         "href": "about-us"
+        }
+       }
+      ]
+     },
+     "secondaryLists": [
+      {
+       "items": [
+        {
+         "label": "LinkedIn",
+         "link": {
+          "href": "https://www.linkedin.com/company/fugro"
+         }
+        },
+        {
+         "label": "Facebook",
+         "link": {
+          "href": "https://www.facebook.com/fugro"
+         }
+        },
+        {
+         "label": "X (Twitter)",
+         "link": {
+          "href": "https://twitter.com/fugro"
+         }
+        },
+        {
+         "label": "Instagram",
+         "link": {
+          "href": "https://www.instagram.com/fugro"
+         }
+        }
+       ],
+       "title": "Social media"
+      },
+      {
+       "items": [
+        {
+         "label": "General contact",
+         "link": {
+          "href": "contact"
+         }
+        },
+        {
+         "label": "Our locations",
+         "link": {
+          "href": "contact/locations"
+         }
+        },
+        {
+         "label": "Talent Community",
+         "link": {
+          "href": "https://flows.beamery.eu/fugro/Join-the-Fugro-Talent-Community"
+         }
+        },
+        {
+         "label": "Speak Up",
+         "link": {
+          "href": "contact/speak-up"
+         }
+        }
+       ],
+       "title": "Contact "
+      }
+     ]
+    },
+    "navigation": {
+     "accountLink": {
+      "href": "portals"
+     },
+     "ctaLink": {
+      "href": "contact"
+     },
+     "navItems": [
+      {
+       "link": {
+        "href": "industries"
+       },
+       "secondaryItems": [
+        {
+         "label": "Energy",
+         "link": {
+          "href": "industries/energy"
+         },
+         "tertiaryItems": [
+          {
+           "label": "Renewable energy",
+           "link": {
+            "href": "industries/energy/renewable-energy"
+           }
+          },
+          {
+           "label": "Oil and natural gas",
+           "link": {
+            "href": "industries/energy/oil-and-natural-gas"
+           }
+          },
+          {
+           "label": "Carbon capture, utilisation and storage",
+           "link": {
+            "href": "industries/energy/carbon-capture-utilisation-and-storage"
+           }
+          }
+         ]
+        },
+        {
+         "label": "Water",
+         "link": {
+          "href": "industries/water"
+         },
+         "tertiaryItems": [
+          {
+           "label": "Climate",
+           "link": {
+            "href": "industries/water/climate"
+           }
+          },
+          {
+           "label": "Nature",
+           "link": {
+            "href": "industries/water/nature"
+           }
+          }
+         ]
+        },
+        {
+         "label": "Infrastructure",
+         "link": {
+          "href": "industries/infrastructure"
+         },
+         "tertiaryItems": [
+          {
+           "label": "Nearshore site investigation",
+           "link": {
+            "href": "industries/infrastructure/nearshore-site-investigation"
+           }
+          },
+          {
+           "label": "Critical minerals",
+           "link": {
+            "href": "industries/infrastructure/critical-minerals"
+           }
+          }
+         ]
+        }
+       ],
+       "card": {
+        "link": {
+         "href": "industries/water",
+         "label": "Geo-data-driven solutions for climate adaptation and nature conservation"
+        },
+        "metaImage": {
+         "alt": "Seawatch Buoy in Norway 01.JPG",
+         "src": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_k3attvdpj977pe62plpp9skg3p/-FJPG",
+         "preview": "https://fugro.canto.global/direct/image/k3attvdpj977pe62plpp9skg3p/DuzNnwqu9x8ZSJraUuYZCvmf7eA/m800/800"
+        },
+        "metaTag": "Water",
+        "metaTitle": "Geo-data-driven solutions for climate adaptation and nature conservation"
+       },
+       "description": "See the industries we work in",
+       "label": "Industries",
+       "overviewLinkLabel": "Industries overview"
+      },
+      {
+       "link": {
+        "href": "expertise"
+       },
+       "secondaryItems": [
+        {
+         "label": "Case studies",
+         "link": {
+          "href": "expertise/case-studies"
+         },
+         "tertiaryItems": []
+        },
+        {
+         "label": "Technical papers",
+         "link": {
+          "href": "expertise/technical-papers"
+         },
+         "tertiaryItems": []
+        }
+       ],
+       "card": {
+        "link": {
+         "href": "expertise",
+         "label": "Our expertise"
+        },
+        "metaImage": {
+         "alt": "Employee Pointing at Screen Back View_Remote Rig Positioning_1.tif",
+         "src": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_rtrp6t0hc97ilfmvdhs02k3v1h/-FJPG",
+         "preview": "https://fugro.canto.global/direct/image/rtrp6t0hc97ilfmvdhs02k3v1h/uvEsWMdAogoorcxMhFvcer7bkvI/m640/800"
+        },
+        "metaTag": "Overview",
+        "metaTitle": "Our expertise"
+       },
+       "description": "Explore our areas of expertise",
+       "label": "Expertise",
+       "overviewLinkLabel": "Expertise overview"
+      },
+      {
+       "link": {
+        "href": "careers"
+       },
+       "secondaryItems": [
+        {
+         "label": "Search jobs",
+         "link": {
+          "href": "careers/jobs"
+         },
+         "tertiaryItems": []
+        },
+        {
+         "label": "Employee stories",
+         "link": {
+          "href": "careers/stories"
+         },
+         "tertiaryItems": []
+        },
+        {
+         "label": "Highlighted countries",
+         "link": {
+          "href": "careers/countries"
+         },
+         "tertiaryItems": [
+          {
+           "label": "United Kingdom",
+           "link": {
+            "href": "careers/countries/united-kingdom"
+           }
+          },
+          {
+           "label": "Netherlands",
+           "link": {
+            "href": "careers/countries/netherlands"
+           }
+          },
+          {
+           "label": "United States",
+           "link": {
+            "href": "careers/countries/united-states"
+           }
+          },
+          {
+           "label": "Hong Kong",
+           "link": {
+            "href": "careers/countries/hong-kong"
+           }
+          }
+         ]
+        },
+        {
+         "label": "Working at Fugro",
+         "link": {
+          "href": "careers/working-at-fugro"
+         },
+         "tertiaryItems": [
+          {
+           "label": "Learning & development",
+           "link": {
+            "href": "careers/working-at-fugro/learning-development"
+           }
+          },
+          {
+           "label": "Fugro Academy",
+           "link": {
+            "href": "careers/working-at-fugro/fugro-academy"
+           }
+          },
+          {
+           "label": "U.Gro programme",
+           "link": {
+            "href": "careers/working-at-fugro/u-gro"
+           }
+          },
+          {
+           "label": "International Leadership Track",
+           "link": {
+            "href": "careers/working-at-fugro/international-leadership-track"
+           }
+          },
+          {
+           "label": "Diversity, equity & inclusion",
+           "link": {
+            "href": "careers/working-at-fugro/diversity-equity-and-inclusion"
+           }
+          }
+         ]
+        },
+        {
+         "label": "Career events calendar",
+         "link": {
+          "href": "careers/events"
+         },
+         "tertiaryItems": []
+        }
+       ],
+       "card": {
+        "link": {
+         "href": "careers/stories",
+         "label": "Our employees, their stories"
+        },
+        "metaImage": {
+         "alt": "Fugro UK Helen.00_05_56_10.Still003.jpg",
+         "src": "https://fugro.canto.global/direct/image/tf8gvp6bkp26tehgr8d4vqiq1k/RT7KYTRjPOW3NIaYNsH2H2dfcls/original?content-type=image%2Fjpeg&name=Fugro+UK+Helen.00_05_56_10.Still003.jpg",
+         "preview": "https://fugro.canto.global/direct/image/tf8gvp6bkp26tehgr8d4vqiq1k/7G66qDGVfagD4AUrmsKryfQu8ew/m800/800",
+         "info": {
+          "height": 2160,
+          "width": 3840,
+          "isMdcImage": false
+         }
+        },
+        "metaTag": "Careers",
+        "metaTitle": "Our employees, their stories"
+       },
+       "description": "Help us create a safe and liveable world",
+       "label": "Careers",
+       "overviewLinkLabel": "Careers overview"
+      },
+      {
+       "link": {
+        "href": "investors"
+       },
+       "secondaryItems": [
+        {
+         "label": "Key investment highlights",
+         "link": {
+          "href": "investors/reasons-to-invest"
+         },
+         "tertiaryItems": []
+        },
+        {
+         "label": "Shares",
+         "link": {
+          "href": "investors/shares"
+         },
+         "tertiaryItems": [
+          {
+           "label": "Share capital",
+           "link": {
+            "href": "investors/shares/share-capital"
+           }
+          },
+          {
+           "label": "Share performance",
+           "link": {
+            "href": "investors/shares/share-performance"
+           }
+          },
+          {
+           "label": "Shareholders",
+           "link": {
+            "href": "investors/shares/shareholders"
+           }
+          },
+          {
+           "label": "Analyst coverage",
+           "link": {
+            "href": "investors/shares/analyst-coverage"
+           }
+          },
+          {
+           "label": "Policy on bilateral contacts",
+           "link": {
+            "href": "investors/shares/policy-on-bilateral-contacts"
+           }
+          },
+          {
+           "label": "Dividend policy",
+           "link": {
+            "href": "investors/shares/dividend-policy"
+           }
+          },
+          {
+           "label": "Share buyback",
+           "link": {
+            "href": "investors/shares/share-buyback"
+           }
+          }
+         ]
+        },
+        {
+         "label": "Shareholder meetings",
+         "link": {
+          "href": "about-us/governance/shareholder-meetings"
+         },
+         "tertiaryItems": []
+        },
+        {
+         "label": "Debt information",
+         "link": {
+          "href": "investors/debt-information"
+         },
+         "tertiaryItems": []
+        },
+        {
+         "label": "Outlook",
+         "link": {
+          "href": "investors/outlook"
+         },
+         "tertiaryItems": [
+          {
+           "label": "Mid-term targets 2027",
+           "link": {
+            "href": "investors/outlook/mid-term-targets-2027"
+           }
+          }
+         ]
+        },
+        {
+         "label": "Results and publications",
+         "link": {
+          "href": "investors/results-and-publications"
+         },
+         "tertiaryItems": [
+          {
+           "label": "Publications centre",
+           "link": {
+            "href": "investors/results-and-publications/publications-centre"
+           }
+          },
+          {
+           "label": "Press releases",
+           "link": {
+            "href": "news/press-releases"
+           }
+          },
+          {
+           "label": "Key financials",
+           "link": {
+            "href": "investors/key-financials"
+           }
+          },
+          {
+           "label": "Financial calendar",
+           "link": {
+            "href": "investors/results-and-publications/financial-calendar"
+           }
+          },
+          {
+           "label": "Annual report",
+           "link": {
+            "href": "investors/results-and-publications/annual-reports"
+           }
+          },
+          {
+           "label": "Subscribe for alerts",
+           "link": {
+            "href": "news/subscribe-for-news-alerts"
+           }
+          }
+         ]
+        }
+       ],
+       "card": {
+        "link": {
+         "href": "investors",
+         "label": "Investing in a safe and liveable world"
+        },
+        "metaImage": {
+         "alt": "Remote Operations Centre (ROC) Aberdeen 35.jpg",
+         "src": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_50i4dct5k95bnffvik9sbrdo48/-FJPG",
+         "preview": "https://fugro.canto.global/direct/image/50i4dct5k95bnffvik9sbrdo48/HMWu5GAxWxWenq80THzjYeWGdNM/m800/800"
+        },
+        "metaTag": "Investors",
+        "metaTitle": "Investing in a safe and liveable world"
+       },
+       "label": "Investors",
+       "overviewLinkLabel": "Investors overview"
+      },
+      {
+       "link": {
+        "href": "news"
+       },
+       "secondaryItems": [
+        {
+         "label": "Business news",
+         "link": {
+          "href": "news/business-news"
+         },
+         "tertiaryItems": []
+        },
+        {
+         "label": "Press releases",
+         "link": {
+          "href": "news/press-releases"
+         },
+         "tertiaryItems": []
+        },
+        {
+         "label": "Long reads",
+         "link": {
+          "href": "news/long-reads"
+         },
+         "tertiaryItems": []
+        },
+        {
+         "label": "Podcasts",
+         "link": {
+          "href": "news/podcasts"
+         },
+         "tertiaryItems": []
+        }
+       ],
+       "card": {
+        "link": {
+         "href": "news",
+         "label": "Latest news"
+        },
+        "metaImage": {
+         "alt": "3D laser scanning metro line Amsterdam.jpg",
+         "src": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_6p8dovjujp5p1340fc80cemf28/-FJPG",
+         "preview": "https://fugro.canto.global/direct/image/6p8dovjujp5p1340fc80cemf28/Ig_JVO6IPvKmjOv5JqpZLM9ABvw/m800/800"
+        },
+        "metaTag": "News overview",
+        "metaTitle": "Latest news"
+       },
+       "description": "The latest news and developments",
+       "label": "News",
+       "overviewLinkLabel": "News overview"
+      },
+      {
+       "link": {
+        "href": "about-us"
+       },
+       "secondaryItems": [
+        {
+         "label": "Purpose",
+         "link": {
+          "href": "about-us/our-purpose"
+         },
+         "tertiaryItems": []
+        },
+        {
+         "label": "Strategy",
+         "link": {
+          "href": "about-us/strategy"
+         },
+         "tertiaryItems": []
+        },
+        {
+         "label": "Our values",
+         "link": {
+          "href": "about-us/our-values"
+         },
+         "tertiaryItems": []
+        },
+        {
+         "label": "Governance",
+         "link": {
+          "href": "about-us/governance"
+         },
+         "tertiaryItems": [
+          {
+           "label": "Leadership",
+           "link": {
+            "href": "about-us/governance/leadership"
+           }
+          },
+          {
+           "label": "Code of Conduct",
+           "link": {
+            "href": "about-us/governance/code-of-conduct"
+           }
+          },
+          {
+           "label": "Codes and regulations",
+           "link": {
+            "href": "about-us/governance/codes-and-regulations"
+           }
+          },
+          {
+           "label": "Shareholder meetings",
+           "link": {
+            "href": "about-us/governance/shareholder-meetings"
+           }
+          },
+          {
+           "label": "Remuneration",
+           "link": {
+            "href": "about-us/governance/remuneration"
+           }
+          },
+          {
+           "label": "Taxation",
+           "link": {
+            "href": "about-us/governance/taxation"
+           }
+          }
+         ]
+        },
+        {
+         "label": "Sustainability",
+         "link": {
+          "href": "about-us/sustainability"
+         },
+         "tertiaryItems": [
+          {
+           "label": "Reducing our environmental impact",
+           "link": {
+            "href": "about-us/sustainability/reducing-our-environmental-impact"
+           }
+          },
+          {
+           "label": "Accelerating our positive impact",
+           "link": {
+            "href": "about-us/sustainability/accelerating-our-positive-impact"
+           }
+          },
+          {
+           "label": "Empowering people & society",
+           "link": {
+            "href": "about-us/sustainability/empowering-people-and-society"
+           }
+          },
+          {
+           "label": "All reporting",
+           "link": {
+            "href": "about-us/sustainability/all-reporting"
+           }
+          }
+         ]
+        },
+        {
+         "label": "Health and safety",
+         "link": {
+          "href": "about-us/health-safety-security-and-environment"
+         },
+         "tertiaryItems": [
+          {
+           "label": "HSSE management system",
+           "link": {
+            "href": "about-us/health-safety-security-and-environment/fugro-hsse-management-system"
+           }
+          },
+          {
+           "label": "Performance assessment and monitoring",
+           "link": {
+            "href": "about-us/health-safety-security-and-environment/performance-assessment-and-monitoring"
+           }
+          },
+          {
+           "label": "Leadership and management commitment",
+           "link": {
+            "href": "about-us/health-safety-security-and-environment/leadership-and-management-commitment"
+           }
+          },
+          {
+           "label": "HSSE training and competence",
+           "link": {
+            "href": "about-us/health-safety-security-and-environment/hsse-training-and-competence"
+           }
+          },
+          {
+           "label": "HSSE initiatives and programmes",
+           "link": {
+            "href": "about-us/health-safety-security-and-environment/hsse-initiatives-and-programmes"
+           }
+          }
+         ]
+        },
+        {
+         "label": "Our locations",
+         "link": {
+          "href": "contact/locations"
+         },
+         "tertiaryItems": []
+        }
+       ],
+       "card": {
+        "link": {
+         "href": "about-us",
+         "label": "Leading geo-data specialist"
+        },
+        "metaImage": {
+         "alt": "Coire Glas GI 05.png",
+         "src": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_uv2r135qc17519uulpdc2snh09/-FJPG",
+         "preview": "https://fugro.canto.global/direct/image/uv2r135qc17519uulpdc2snh09/aRN9go_OB0qUKfKD53UwDKFeL-o/m800/800",
+         "info": {
+          "height": 1153,
+          "width": 2050,
+          "isMdcImage": true
+         }
+        },
+        "metaTag": "About us",
+        "metaTitle": "Leading geo-data specialist"
+       },
+       "description": "Information about the Fugro organisation",
+       "label": "About us",
+       "overviewLinkLabel": "About us"
+      }
+     ]
+    },
+    "defaultShareImageSrc": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_rl286ml7vp443dmmpvnhfk1v4s/-FJPG"
+   },
+   "preview": false,
+   "slug": "/",
+   "currentPage": 0,
+   "story": {
+    "name": "Home",
+    "created_at": "2023-05-05T08:03:35.962Z",
+    "published_at": "2026-10-28T09:02:50.641Z",
+    "updated_at": "2026-10-28T09:02:50.660Z",
+    "id": 302661491,
+    "uuid": "2a1d0e6c-4fdc-4b76-aa27-cb972da064c9",
+    "content": {
+     "_uid": "dd240846-e88d-4774-9256-094b86c31dcb",
+     "body": [
+      {
+       "_uid": "f0711cf0-6d82-4ea9-8276-6b86366153b7",
+       "label": "What we do",
+       "component": "anchorBarBookmark"
+      },
+      {
+       "_uid": "4be9a70e-24f7-4f8b-ae97-8155204b8f16",
+       "title": "What we do",
+       "ctaHref": {
+        "id": "9ad82315-a6d3-4944-8272-f01926582a52",
+        "url": "",
+        "linktype": "story",
+        "fieldtype": "multilink",
+        "cached_url": "content/about-us/",
+        "story": {
+         "name": "About us",
+         "created_at": "2023-05-03T11:13:10.693Z",
+         "published_at": "2026-09-18T10:19:15.196Z",
+         "updated_at": "2026-09-18T10:19:15.215Z",
+         "id": 301378362,
+         "uuid": "9ad82315-a6d3-4944-8272-f01926582a52",
+         "content": {
+          "_uid": "207fa856-a6ab-4f58-8e65-9db7f94b8099",
+          "hero": [
+           {
+            "_uid": "384b0a30-f3ad-4b9a-9845-af447b75787c",
+            "image": {
+             "_uid": "7534247b-73b1-4e3c-b81d-5fbf1d965a20",
+             "asset": {
+              "id": "uv2r135qc17519uulpdc2snh09",
+              "alt": "Content from the Coire Glas hydro pumped storage scheme in Scotland, UK as part of a Ground Investigation project for LSC.",
+              "url": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_uv2r135qc17519uulpdc2snh09/-FJPG",
+              "info": {
+               "width": 2050,
+               "height": 1153,
+               "isMdcImage": true
+              },
+              "name": "Coire Glas GI 05.png",
+              "type": "image/jpeg",
+              "scheme": "image",
+              "filename": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_uv2r135qc17519uulpdc2snh09/-FJPG",
+              "metaData": {
+               "tag": [
+                "Fraste",
+                "Fraste Multidrill XL",
+                "GI",
+                "LSC",
+                "Renewables",
+                "Scotland",
+                "coire glas",
+                "drilling",
+                "energy storage",
+                "geophysics",
+                "geotechnical drilling",
+                "ground investigation",
+                "hero23",
+                "hydro",
+                "hydro pumped storage",
+                "multidrill",
+                "photography-day"
+               ],
+               "ogUrl": "https://fugro.canto.global/direct/image/uv2r135qc17519uulpdc2snh09/CCy6Wm06S-OFEt8urby7DvbAMag/original?content-type=image%2Fjpeg&name=Coire+Glas+GI+05.png",
+               "ogSize": 5057654,
+               "region": [
+                "Europe and Africa"
+               ],
+               "ogWidth": 4000,
+               "industry": [
+                "Energy - Renewable energy"
+               ],
+               "ogHeight": 2250,
+               "assetType": [
+                "Image - photograph"
+               ],
+               "smartTags": [
+                "Helmet",
+                "Nature",
+                "Outdoors",
+                "Person",
+                "Scenery"
+               ],
+               "businessLine": [
+                "Land Site Characterisation (LSC)"
+               ],
+               "assetAudience": [
+                "L1 - External marketing"
+               ],
+               "imageryPeopleLocation": [
+                "Onsite",
+                "People"
+               ]
+              },
+              "previewUrl": "https://fugro.canto.global/direct/image/uv2r135qc17519uulpdc2snh09/aRN9go_OB0qUKfKD53UwDKFeL-o/m800/800",
+              "description": "Content from the Coire Glas hydro pumped storage scheme in Scotland, UK as part of a Ground Investigation project for LSC."
+             },
+             "plugin": "image-selector"
+            },
+            "label": "About us",
+            "theme": "commerceSecondary",
+            "title": "The world's leading Geo-data specialist",
+            "video": {
+             "_uid": "a8c3c771-370e-4a69-b0c0-9e417cf13f31",
+             "asset": {
+              "id": "891452463",
+              "alt": "We use the power of Geo-data to unlock the secrets of Earth . From surface to subsurface, from natural to built environment. Together with our partners and clients, we\u2019re solving tomorrow\u2019s problems today.",
+              "url": "https://player.vimeo.com/external/891452463.m3u8?s=d13a30edd00fb8cdff919fbd1f0e459426a38862&oauth2_token_id=1697800225",
+              "name": "We are Fugro - 37.64MB - 2m 6s  ",
+              "scheme": "video",
+              "filename": "https://player.vimeo.com/external/891452463.m3u8?s=d13a30edd00fb8cdff919fbd1f0e459426a38862&oauth2_token_id=1697800225",
+              "rendition": "adaptive",
+              "previewUrl": "https://i.vimeocdn.com/video/1764131280-bac1c185ef2c49f301445a48ae82976d8e0ee1f10b6ef8dc0953ee43f732d9fb-d",
+              "description": "We use the power of Geo-data to unlock the secrets of Earth . From surface to subsurface, from natural to built environment. Together with our partners and clients, we\u2019re solving tomorrow\u2019s problems today.",
+              "releaseTime": "2023-12-05T13:42:31+00:00"
+             },
+             "plugin": "image-selector"
+            },
+            "component": "heroWithVideo",
+            "buttonText": "Watch our story (2 minutes)",
+            "fullHeight": false,
+            "description": "We use the power of Geo-data to unlock the secrets of Earth",
+            "hasMarginBottom": false
+           }
+          ],
+          "theme": "commerce",
+          "metaTag": "About us",
+          "seoData": {
+           "_uid": "632a2371-b2c8-4915-98fa-bdb5503916c6",
+           "title": "About Fugro: Geo-data Expertise for a Changing World",
+           "plugin": "seo_metatags",
+           "og_image": "",
+           "og_title": "",
+           "description": "Fugro brings together Geo-data, technology and specialist expertise to provide trusted insights for safer, more resilient and sustainable outcomes.",
+           "twitter_image": "",
+           "twitter_title": "",
+           "og_description": "",
+           "twitter_description": ""
+          },
+          "component": "overviewPage",
+          "crossLink": [
+           {
+            "_uid": "0ce6bff6-1af5-4882-b5a9-e9484ff58694",
+            "image": {
+             "_uid": "b13f7b48-de8d-4ca6-97af-042ef2bfd6ad",
+             "asset": {
+              "id": "nhca65e50l4bdbqbaqn0itgr18",
+              "alt": "Project 'Faces of Fugro', for recruitment purposes.\nIf you wish to use any of these hero photo's, please contact:\nRobert Spence - r.spence@fugro.com\nor Lisette Blankestijn - l.blankestijn@fugro.com",
+              "url": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_nhca65e50l4bdbqbaqn0itgr18/-FJPG",
+              "info": {
+               "dpi": 1,
+               "size": 1556373,
+               "width": 3840,
+               "height": 2160,
+               "isMdcImage": true
+              },
+              "name": "FACES OF FUGRO.00_01_04_11.Still006.jpg",
+              "type": "image/jpeg",
+              "scheme": "image",
+              "filename": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_nhca65e50l4bdbqbaqn0itgr18/-FJPG",
+              "metaData": {
+               "tag": [
+                "Faces of Fugro",
+                "branding",
+                "employer branding",
+                "hero",
+                "recruitment"
+               ],
+               "region": [
+                "Global"
+               ],
+               "industry": [
+                "Infrastructure - Nearshore and urban development",
+                "Energy - Renewable energy",
+                "Energy - Oil & natural gas"
+               ],
+               "assetType": [
+                "Video - raw"
+               ],
+               "smartTags": [
+                "Clothing",
+                "Hardhat",
+                "Helmet",
+                "Person",
+                "Worker"
+               ],
+               "businessLine": [
+                "Unspecified"
+               ],
+               "assetAudience": [
+                "L1 - External recruitment",
+                "L3 - Internal communication"
+               ],
+               "imageryPeopleLocation": [
+                "Office",
+                "Offshore",
+                "Onsite",
+                "People",
+                "Laboratory",
+                "No people"
+               ]
+              },
+              "previewUrl": "https://fugro.canto.global/direct/image/nhca65e50l4bdbqbaqn0itgr18/Pxq1iR94J3uC1GA6BGBI6-rngXw/m800/800",
+              "description": "Project 'Faces of Fugro', for recruitment purposes.\nIf you wish to use any of these hero photo's, please contact:\nRobert Spence - r.spence@fugro.com\nor Lisette Blankestijn - l.blankestijn@fugro.com"
+             },
+             "plugin": "image-selector"
+            },
+            "intro": "Careers",
+            "links": [
+             {
+              "_uid": "096753ea-6caf-44ea-8cd0-f643427ca526",
+              "href": {
+               "id": "6fd434e8-4358-47d0-9a98-2113d920b4dc",
+               "url": "",
+               "linktype": "story",
+               "fieldtype": "multilink",
+               "cached_url": "content/careers/jobs"
+              },
+              "label": "View vacancies",
+              "component": "link"
+             }
+            ],
+            "theme": "commerceSecondary",
+            "title": "Come join us",
+            "variant": "FOOTER_MAIN",
+            "subtitle": "",
+            "component": "crossLinkFooter",
+            "isReversed": false,
+            "description": "Exciting challenges. Unforgettable experiences. Work that matters. These are a few of the things you\u2019ll find at Fugro. Will you join our global team?"
+           }
+          ],
+          "metaImage": {
+           "_uid": "55ecedb8-4cbe-4ba0-82ff-cf618e36c237",
+           "asset": {
+            "id": "uv2r135qc17519uulpdc2snh09",
+            "alt": "Content from the Coire Glas hydro pumped storage scheme in Scotland, UK as part of a Ground Investigation project for LSC.",
+            "url": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_uv2r135qc17519uulpdc2snh09/-FJPG",
+            "info": {
+             "width": 2050,
+             "height": 1153,
+             "isMdcImage": true
+            },
+            "name": "Coire Glas GI 05.png",
+            "type": "image/jpeg",
+            "scheme": "image",
+            "filename": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_uv2r135qc17519uulpdc2snh09/-FJPG",
+            "metaData": {
+             "tag": [
+              "Fraste",
+              "Fraste Multidrill XL",
+              "GI",
+              "LSC",
+              "Renewables",
+              "Scotland",
+              "coire glas",
+              "drilling",
+              "energy storage",
+              "geophysics",
+              "geotechnical drilling",
+              "ground investigation",
+              "hero23",
+              "hydro",
+              "hydro pumped storage",
+              "multidrill",
+              "photography-day"
+             ],
+             "ogUrl": "https://fugro.canto.global/direct/image/uv2r135qc17519uulpdc2snh09/CCy6Wm06S-OFEt8urby7DvbAMag/original?content-type=image%2Fjpeg&name=Coire+Glas+GI+05.png",
+             "ogSize": 5057654,
+             "region": [
+              "Europe and Africa"
+             ],
+             "ogWidth": 4000,
+             "industry": [
+              "Energy - Renewable energy"
+             ],
+             "ogHeight": 2250,
+             "assetType": [
+              "Image - photograph"
+             ],
+             "smartTags": [
+              "Helmet",
+              "Nature",
+              "Outdoors",
+              "Person",
+              "Scenery"
+             ],
+             "businessLine": [
+              "Land Site Characterisation (LSC)"
+             ],
+             "assetAudience": [
+              "L1 - External marketing"
+             ],
+             "imageryPeopleLocation": [
+              "Onsite",
+              "People"
+             ]
+            },
+            "previewUrl": "https://fugro.canto.global/direct/image/uv2r135qc17519uulpdc2snh09/aRN9go_OB0qUKfKD53UwDKFeL-o/m800/800",
+            "description": "Content from the Coire Glas hydro pumped storage scheme in Scotland, UK as part of a Ground Investigation project for LSC."
+           },
+           "plugin": "image-selector"
+          },
+          "metaTitle": "Leading geo-data specialist",
+          "NL_version": "Published",
+          "metaDescription": ""
+         },
+         "slug": "about-us",
+         "full_slug": "content/about-us/",
+         "sort_by_date": null,
+         "position": -580,
+         "tag_list": [
+          "NL content",
+          "NL Page"
+         ],
+         "is_startpage": true,
+         "parent_id": 283476792,
+         "meta_data": null,
+         "group_id": "1cf193b8-aee4-4b6c-bf57-544fe46c36e5",
+         "first_published_at": "2023-05-03T11:19:28.219Z",
+         "release_id": null,
+         "lang": "default",
+         "path": null,
+         "alternates": [],
+         "default_full_slug": "content/about-us/",
+         "translated_slugs": [
+          {
+           "path": "content/about-us/",
+           "name": null,
+           "lang": "de",
+           "published": false
+          },
+          {
+           "path": "content/over-ons/",
+           "name": "",
+           "lang": "nl",
+           "published": true
+          }
+         ],
+         "_stopResolving": true
+        }
+       },
+       "profile": "",
+       "ctaLabel": "Read more",
+       "component": "intro",
+       "metaTitle": "",
+       "description": "Whatever you\u2019re planning, building, or maintaining, we believe understanding the earth is key. At Fugro, we unlock its secrets in the form of Geo-data, which we apply to develop safer, more sustainable, and more efficient operations. It\u2019s how we help create a safe and liveable world \u2013 together. "
+      },
+      {
+       "_uid": "678bb53e-8d03-413f-bd98-5340588eae9d",
+       "label": "Our industries",
+       "component": "anchorBarBookmark"
+      },
+      {
+       "_uid": "7f34f7cd-4549-4a0f-adef-4898a99689dc",
+       "items": [
+        {
+         "_uid": "cda352c1-565c-490a-8323-badb4890dc98",
+         "image": {
+          "_uid": "fb92d248-2c1f-4bf4-993c-da1ba75b5104",
+          "asset": {
+           "id": "deqp4o8ngh5f77ujh3jeae7q0q",
+           "alt": "Stock image for industries",
+           "url": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_deqp4o8ngh5f77ujh3jeae7q0q/-FJPG",
+           "info": {
+            "width": 2050,
+            "height": 1367,
+            "isMdcImage": true
+           },
+           "name": "shutterstock_2064279029-2.jpg",
+           "type": "image/jpeg",
+           "scheme": "image",
+           "filename": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_deqp4o8ngh5f77ujh3jeae7q0q/-FJPG",
+           "metaData": {
+            "tag": [
+             "website-industries"
+            ],
+            "ogUrl": "https://fugro.canto.global/direct/image/deqp4o8ngh5f77ujh3jeae7q0q/Z85Vm8NmMmOWEn20mWGqk5-f7kA/original?content-type=image%2Fjpeg&name=shutterstock_2064279029-2.jpg",
+            "ogSize": 961443,
+            "region": [
+             "Global"
+            ],
+            "ogWidth": 3375,
+            "industry": [
+             "Energy - Renewable energy",
+             "Energy - Oil & natural gas"
+            ],
+            "ogHeight": 2250,
+            "assetType": [
+             "Image - photograph"
+            ],
+            "copyright": "Copyright (c) 2021 fokke baarssen/Shutterstock.  No use without permission.",
+            "smartTags": [
+             "Engine",
+             "Machine",
+             "Motor",
+             "Nature",
+             "Outdoors"
+            ],
+            "businessLine": [
+             "Unspecified"
+            ],
+            "assetAudience": [
+             "L1 - External marketing"
+            ],
+            "imageryPeopleLocation": [
+             "Onsite",
+             "No people"
+            ]
+           },
+           "previewUrl": "https://fugro.canto.global/direct/image/deqp4o8ngh5f77ujh3jeae7q0q/UhVVff7CD-nBN5B5MocB0BIajqc/m800/800",
+           "description": "Stock image for industries"
+          },
+          "plugin": "image-selector"
+         },
+         "content": [
+          {
+           "tag": "Energy",
+           "_uid": "830e7c90-3cba-4c1a-946f-d970bc19026b",
+           "small": false,
+           "title": "Supporting the energy transition",
+           "ctaHref": {
+            "id": "617bfde4-1434-48ab-a4cf-afb6dc83d64d",
+            "url": "",
+            "linktype": "story",
+            "fieldtype": "multilink",
+            "cached_url": "content/industries/energy/",
+            "story": {
+             "name": "Energy",
+             "created_at": "2023-05-07T10:20:02.092Z",
+             "published_at": "2025-12-19T15:52:35.673Z",
+             "updated_at": "2025-12-19T15:52:35.689Z",
+             "id": 303655321,
+             "uuid": "617bfde4-1434-48ab-a4cf-afb6dc83d64d",
+             "content": {
+              "_uid": "5dce13fb-a8f3-4f39-853b-fdd3b50e76b9",
+              "hero": [
+               {
+                "_uid": "da18e3ad-1628-4607-b570-f0e02f0c187c",
+                "type": "DEFAULT",
+                "image": {
+                 "_uid": "e97f24de-b803-499c-a3f8-3c85b26593ff",
+                 "asset": {
+                  "id": "deqp4o8ngh5f77ujh3jeae7q0q",
+                  "alt": "Stock image for industries",
+                  "url": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_deqp4o8ngh5f77ujh3jeae7q0q/-FJPG",
+                  "info": {
+                   "dpi": 300,
+                   "size": 5882934,
+                   "width": 4000,
+                   "height": 2250,
+                   "isMdcImage": true
+                  },
+                  "name": "shutterstock_2064279029.jpg",
+                  "type": "image/jpeg",
+                  "scheme": "image",
+                  "filename": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_deqp4o8ngh5f77ujh3jeae7q0q/-FJPG",
+                  "metaData": {
+                   "tag": [
+                    "website-industries"
+                   ],
+                   "region": [
+                    "Global"
+                   ],
+                   "industry": [
+                    "Energy - Renewable energy",
+                    "Energy - Oil & natural gas"
+                   ],
+                   "assetType": [
+                    "Image - photograph"
+                   ],
+                   "copyright": "Copyright (c) 2021 fokke baarssen/Shutterstock.  No use without permission.",
+                   "smartTags": [
+                    "Engine",
+                    "Machine",
+                    "Motor",
+                    "Nature",
+                    "Outdoors"
+                   ],
+                   "businessLine": [
+                    "Unspecified"
+                   ],
+                   "assetAudience": [
+                    "L1 - External marketing"
+                   ],
+                   "imageryPeopleLocation": [
+                    "Onsite",
+                    "No people"
+                   ]
+                  },
+                  "previewUrl": "https://fugro.canto.global/direct/image/deqp4o8ngh5f77ujh3jeae7q0q/UhVVff7CD-nBN5B5MocB0BIajqc/m800/800",
+                  "description": "Stock image for industries"
+                 },
+                 "plugin": "image-selector"
+                },
+                "theme": "commerceSecondary",
+                "title": "Supporting the energy transition for a safe and sustainable world",
+                "video": "",
+                "pageName": "Energy",
+                "component": "heroDefault",
+                "fullHeight": false,
+                "description": "",
+                "hasMarginBottom": false
+               }
+              ],
+              "theme": "",
+              "metaTag": "Energy",
+              "seoData": {
+               "_uid": "05bc4e16-ab5a-4b55-b7ca-8507c8a6ecf2",
+               "title": "Supporting the energy transition for safer, sustainable world",
+               "plugin": "seo_metatags",
+               "og_image": "",
+               "og_title": "",
+               "description": "We help drive the energy transmission, supporting energy projects every step of the way. For a safer, more sustainable world.",
+               "twitter_image": "",
+               "twitter_title": "",
+               "og_description": "",
+               "twitter_description": ""
+              },
+              "component": "industry",
+              "crossLink": [
+               {
+                "_uid": "212d0c50-5758-4a07-96f7-93f509910a15",
+                "image": {
+                 "_uid": "b13f7b48-de8d-4ca6-97af-042ef2bfd6ad",
+                 "asset": {
+                  "id": "dpdcr03fnt2bl4nvaiq0ui4p3n",
+                  "alt": "Project 'Faces of Fugro', for recruitment purposes.\nIf you wish to use any of these hero photo's, please contact:\nRobert Spence - r.spence@fugro.com\nor Lisette Blankestijn - l.blankestijn@fugro.com",
+                  "url": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_dpdcr03fnt2bl4nvaiq0ui4p3n/-FJPG",
+                  "info": {
+                   "dpi": 1,
+                   "size": 1563240,
+                   "width": 3840,
+                   "height": 2160,
+                   "isMdcImage": true
+                  },
+                  "name": "FACES OF FUGRO.00_00_50_22.Still030.jpg",
+                  "type": "image/jpeg",
+                  "scheme": "image",
+                  "filename": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_dpdcr03fnt2bl4nvaiq0ui4p3n/-FJPG",
+                  "metaData": {
+                   "tag": [
+                    "Faces of Fugro",
+                    "branding",
+                    "employer branding",
+                    "hero",
+                    "recruitment"
+                   ],
+                   "region": [
+                    "Global"
+                   ],
+                   "industry": [
+                    "Infrastructure - Nearshore and urban development",
+                    "Energy - Renewable energy",
+                    "Energy - Oil & natural gas"
+                   ],
+                   "assetType": [
+                    "Video - raw"
+                   ],
+                   "smartTags": [
+                    "Clothing",
+                    "Hardhat",
+                    "Helmet",
+                    "Person",
+                    "Worker"
+                   ],
+                   "businessLine": [
+                    "Unspecified"
+                   ],
+                   "assetAudience": [
+                    "L1 - External recruitment",
+                    "L3 - Internal communication"
+                   ],
+                   "imageryPeopleLocation": [
+                    "Office",
+                    "Offshore",
+                    "Onsite",
+                    "People",
+                    "Laboratory",
+                    "No people"
+                   ]
+                  },
+                  "previewUrl": "https://fugro.canto.global/direct/image/dpdcr03fnt2bl4nvaiq0ui4p3n/NQmFN0mY4lMRcCYvpPB_NTveZ1M/m800/800",
+                  "description": "Project 'Faces of Fugro', for recruitment purposes.\nIf you wish to use any of these hero photo's, please contact:\nRobert Spence - r.spence@fugro.com\nor Lisette Blankestijn - l.blankestijn@fugro.com"
+                 },
+                 "plugin": "image-selector"
+                },
+                "intro": "Careers",
+                "links": [
+                 {
+                  "_uid": "a25f2c93-0af7-4449-af06-413732021411",
+                  "href": {
+                   "id": "6fd434e8-4358-47d0-9a98-2113d920b4dc",
+                   "url": "",
+                   "linktype": "story",
+                   "fieldtype": "multilink",
+                   "cached_url": "content/careers/jobs"
+                  },
+                  "label": "Careers at Fugro",
+                  "component": "link"
+                 }
+                ],
+                "theme": "commerceSecondary",
+                "title": "Come join us",
+                "variant": "FOOTER_MAIN",
+                "subtitle": "",
+                "component": "crossLinkFooter",
+                "isReversed": false,
+                "description": "Exciting challenges. Unforgettable experiences. Work that matters. These are a few of the things you\u2019ll find at Fugro. Will you join our global team?"
+               }
+              ],
+              "metaImage": {
+               "_uid": "e732ed2d-7a97-4541-af34-ce26910b237c",
+               "asset": {
+                "id": "deqp4o8ngh5f77ujh3jeae7q0q",
+                "alt": "Stock image for industries",
+                "url": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_deqp4o8ngh5f77ujh3jeae7q0q/-FJPG",
+                "info": {
+                 "dpi": 300,
+                 "size": 5882934,
+                 "width": 4000,
+                 "height": 2250,
+                 "isMdcImage": true
+                },
+                "name": "shutterstock_2064279029.jpg",
+                "type": "image/jpeg",
+                "scheme": "image",
+                "filename": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_deqp4o8ngh5f77ujh3jeae7q0q/-FJPG",
+                "metaData": {
+                 "tag": [
+                  "website-industries"
+                 ],
+                 "region": [
+                  "Global"
+                 ],
+                 "industry": [
+                  "Energy - Renewable energy",
+                  "Energy - Oil & natural gas"
+                 ],
+                 "assetType": [
+                  "Image - photograph"
+                 ],
+                 "copyright": "Copyright (c) 2021 fokke baarssen/Shutterstock.  No use without permission.",
+                 "smartTags": [
+                  "Engine",
+                  "Machine",
+                  "Motor",
+                  "Nature",
+                  "Outdoors"
+                 ],
+                 "businessLine": [
+                  "Unspecified"
+                 ],
+                 "assetAudience": [
+                  "L1 - External marketing"
+                 ],
+                 "imageryPeopleLocation": [
+                  "Onsite",
+                  "No people"
+                 ]
+                },
+                "previewUrl": "https://fugro.canto.global/direct/image/deqp4o8ngh5f77ujh3jeae7q0q/UhVVff7CD-nBN5B5MocB0BIajqc/m800/800",
+                "description": "Stock image for industries"
+               },
+               "plugin": "image-selector"
+              },
+              "metaTitle": "Supporting the energy transition for safer, sustainable world",
+              "NL_version": "[\"None\"]",
+              "metaLocation": "",
+              "metaDescription": "We support energy projects through every stage of the value chain. We help improve the efficiency of energy generation and minimise the impact on our environment. ",
+              "metaCategoryRegion": [],
+              "metaCategoryIndustry": [
+               "Energy"
+              ],
+              "metaCategoryExpertise": [],
+              "metaCategoryTechnology": [],
+              "metaCategorySubIndustry": [],
+              "metaCategoryLifeCycleStage": []
+             },
+             "slug": "energy",
+             "full_slug": "content/industries/energy/",
+             "sort_by_date": null,
+             "position": -90,
+             "tag_list": [],
+             "is_startpage": true,
+             "parent_id": 303655320,
+             "meta_data": null,
+             "group_id": "9a6371ce-6885-4f87-96a0-4a6336289057",
+             "first_published_at": "2023-05-07T10:36:22.916Z",
+             "release_id": null,
+             "lang": "default",
+             "path": null,
+             "alternates": [],
+             "default_full_slug": "content/industries/energy/",
+             "translated_slugs": [
+              {
+               "path": "content/industries/energy/",
+               "name": null,
+               "lang": "de",
+               "published": false
+              },
+              {
+               "path": "content/markten/energie/",
+               "name": "",
+               "lang": "nl",
+               "published": true
+              }
+             ],
+             "_stopResolving": true
+            }
+           },
+           "ctaLabel": "",
+           "footnote": "We help improve the efficiency of energy generation and minimise the impact on our environment. ",
+           "component": "textCard"
+          }
+         ],
+         "component": "imageReelCarouselItem"
+        },
+        {
+         "_uid": "ac3838ce-5191-45c0-a5bf-e5c8fd53a701",
+         "image": {
+          "_uid": "c80e0cfc-4d02-4237-8f1c-c4da6f168b18",
+          "asset": {
+           "id": "k3attvdpj977pe62plpp9skg3p",
+           "alt": "SWLB Operations Titran\nFugro, Seawatch Wind Lidar Buoy, Offshore Wind\nSeawatch Buoy waiting to be deployed",
+           "url": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_k3attvdpj977pe62plpp9skg3p/-FJPG",
+           "info": {
+            "width": 2050,
+            "height": 1367,
+            "isMdcImage": true
+           },
+           "name": "Seawatch Buoy in Norway 01.JPG",
+           "type": "image/jpeg",
+           "scheme": "image",
+           "filename": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_k3attvdpj977pe62plpp9skg3p/-FJPG",
+           "metaData": {
+            "tag": [
+             "Fugro",
+             "LiDAR buoy",
+             "Norway",
+             "SEAWATCH\u00ae",
+             "Seawatch Wind Lidar Buoy",
+             "offshore wind farm (OWF)",
+             "website-industries",
+             "wind lidar buoy"
+            ],
+            "ogUrl": "https://fugro.canto.global/direct/image/k3attvdpj977pe62plpp9skg3p/RYZoNJwvKp_AygoGZeB5VkIoPdE/original?content-type=image%2Fjpeg&name=Seawatch+Buoy+in+Norway+01.JPG",
+            "ogSize": 7048150,
+            "region": [
+             "Europe and Africa"
+            ],
+            "ogWidth": 5472,
+            "industry": [
+             "Energy - Renewable energy"
+            ],
+            "ogHeight": 3648,
+            "assetType": [
+             "Image - photograph"
+            ],
+            "copyright": "\u00a9 2022 Fugro | Photographer Elm Media",
+            "smartTags": [
+             "Land",
+             "Nature",
+             "Outdoors",
+             "Promontory",
+             "Water"
+            ],
+            "businessLine": [
+             "Marine Site Characterisation (MSC)"
+            ],
+            "assetAudience": [
+             "L1 - External marketing"
+            ],
+            "imageryPeopleLocation": [
+             "Offshore",
+             "No people"
+            ]
+           },
+           "previewUrl": "https://fugro.canto.global/direct/image/k3attvdpj977pe62plpp9skg3p/DuzNnwqu9x8ZSJraUuYZCvmf7eA/m800/800",
+           "description": "SWLB Operations Titran\nFugro, Seawatch Wind Lidar Buoy, Offshore Wind\nSeawatch Buoy waiting to be deployed"
+          },
+          "plugin": "image-selector"
+         },
+         "content": [
+          {
+           "tag": "Water",
+           "_uid": "187bef50-20ea-48af-8507-8a559c2c3b28",
+           "small": false,
+           "title": "Protecting our oceans",
+           "ctaHref": {
+            "id": "9772e38e-cdb8-4473-a4be-5f54f0b43cbb",
+            "url": "",
+            "linktype": "story",
+            "fieldtype": "multilink",
+            "cached_url": "content/industries/water/",
+            "story": {
+             "name": "Water",
+             "created_at": "2023-05-04T06:58:31.665Z",
+             "published_at": "2025-04-25T09:29:27.004Z",
+             "updated_at": "2025-09-12T08:56:08.980Z",
+             "id": 301965576,
+             "uuid": "9772e38e-cdb8-4473-a4be-5f54f0b43cbb",
+             "content": {
+              "_uid": "0db16089-b437-4b25-adc4-b6c7b4947fcc",
+              "hero": [
+               {
+                "_uid": "f99ab148-6e01-4e5f-9754-0d579d25ac7d",
+                "type": "DEFAULT",
+                "image": {
+                 "_uid": "3ec2c9fb-5743-4dd0-8bec-24c1af58383b",
+                 "asset": {
+                  "id": "5e59em7ve92n9cimndnqf8pj1q",
+                  "alt": "Podcast images for Fugro.com",
+                  "url": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_5e59em7ve92n9cimndnqf8pj1q/-FJPG",
+                  "info": {
+                   "width": 2050,
+                   "height": 1025,
+                   "isMdcImage": true
+                  },
+                  "name": "EM - coral cure.jpg",
+                  "type": "image/jpeg",
+                  "scheme": "image",
+                  "filename": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_5e59em7ve92n9cimndnqf8pj1q/-FJPG",
+                  "metaData": {
+                   "tag": [
+                    "fugro.com",
+                    "website-podcast",
+                    "website-podcast-2022"
+                   ],
+                   "ogUrl": "https://fugro.canto.global/direct/image/5e59em7ve92n9cimndnqf8pj1q/QlI0iZwIcG8UZwT9iGIomK75moU/original?content-type=image%2Fjpeg&name=EM+-+coral+cure.jpg",
+                   "ogSize": 4072379,
+                   "region": [
+                    "Global"
+                   ],
+                   "ogWidth": 10346,
+                   "industry": [
+                    "Unspecified"
+                   ],
+                   "ogHeight": 5173,
+                   "assetType": [
+                    "Photograph - Fugro owned"
+                   ],
+                   "smartTags": [
+                    "Nature",
+                    "Ocean Floor",
+                    "Outdoors",
+                    "Underwater",
+                    "Water"
+                   ],
+                   "businessLine": [
+                    "Unspecified"
+                   ],
+                   "assetAudience": [
+                    "L1 - External marketing"
+                   ],
+                   "imageryPeopleLocation": [
+                    "NA"
+                   ]
+                  },
+                  "previewUrl": "https://fugro.canto.global/direct/image/5e59em7ve92n9cimndnqf8pj1q/bbAWWPtd511DDOIYETtyFITehCc/m800/800",
+                  "description": "Podcast images for Fugro.com"
+                 },
+                 "plugin": "image-selector"
+                },
+                "theme": "commerceSecondary",
+                "title": "Geo-data-driven solutions for climate adaptation and nature conservation",
+                "video": "",
+                "pageName": "Water",
+                "component": "heroDefault",
+                "logoImage": {
+                 "_uid": "3849db5e-8fa5-4664-b490-b6b14fbb17d7",
+                 "asset": null,
+                 "plugin": "image-selector"
+                },
+                "fullHeight": false,
+                "description": "",
+                "hasMarginBottom": false
+               }
+              ],
+              "theme": "commerce",
+              "metaTag": "Water",
+              "seoData": {
+               "_uid": "de45f01d-a9f8-485f-bbec-e88e09a87962",
+               "title": "Protecting our oceans and their surrounding environments",
+               "plugin": "seo_metatags",
+               "og_image": "",
+               "og_title": "",
+               "description": "Climate change threatens our oceans and coastlines. We work together with you to reduce risks, build strong coastal environments, and protect our oceans. ",
+               "twitter_image": "",
+               "twitter_title": "",
+               "og_description": "",
+               "twitter_description": ""
+              },
+              "component": "industry",
+              "crossLink": [
+               {
+                "_uid": "b7a916c9-02ed-4d28-b949-cb2b5c396f2c",
+                "image": {
+                 "_uid": "e94fcde2-adf0-49e7-a16c-4b0b975fbfdf",
+                 "asset": {
+                  "id": "bj862hv4vh2ol5g65se9kef03u",
+                  "alt": "The Fugro Blue Shadow is our next generation uncrewed surface vessel (USV) designed to increase data acquisition efficiency, reduce HSSE exposure and accelerate project schedules, providing the optimal and safest hydrographic solution.",
+                  "url": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_bj862hv4vh2ol5g65se9kef03u/-FJPG",
+                  "info": {
+                   "width": 2050,
+                   "height": 1367,
+                   "isMdcImage": true
+                  },
+                  "name": "Blue Shadow USV hydrographic survey vessel.jpg",
+                  "type": "image/jpeg",
+                  "scheme": "image",
+                  "filename": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_bj862hv4vh2ol5g65se9kef03u/-FJPG",
+                  "metaData": {
+                   "tag": [
+                    "Blue Shadow\u00ae",
+                    "Boat",
+                    "Fugro-World",
+                    "Photograph - Fugro owned",
+                    "Public",
+                    "Transportation",
+                    "USV (uncrewed surface vehicle)",
+                    "Vehicle",
+                    "Vessel",
+                    "Watercraft",
+                    "geophysical surveys",
+                    "hydrographic survey",
+                    "hydrography",
+                    "remote operations",
+                    "uncrewed",
+                    "vessel hero",
+                    "website-fugroworld",
+                    "website-fugroworld-2020",
+                    "website-fugroworld-2021",
+                    "website-hydrographic"
+                   ],
+                   "ogUrl": "https://fugro.canto.global/direct/image/bj862hv4vh2ol5g65se9kef03u/WZf0DSlmaaXDbuc6i13mOM-BgUE/original?content-type=image%2Fjpeg&name=Blue+Shadow+USV+hydrographic+survey+vessel.jpg",
+                   "ogSize": 11310709,
+                   "region": [
+                    "Global"
+                   ],
+                   "ogWidth": 5492,
+                   "industry": [
+                    "Unspecified"
+                   ],
+                   "ogHeight": 3663,
+                   "assetType": [
+                    "Image - photograph"
+                   ],
+                   "smartTags": [
+                    "Boat",
+                    "Vehicle",
+                    "Watercraft",
+                    "Yacht"
+                   ],
+                   "businessLine": [
+                    "Unspecified"
+                   ],
+                   "assetAudience": [
+                    "L1 - External marketing"
+                   ],
+                   "imageryPeopleLocation": [
+                    "Offshore",
+                    "No people"
+                   ]
+                  },
+                  "previewUrl": "https://fugro.canto.global/direct/image/bj862hv4vh2ol5g65se9kef03u/R5vRtiiewh222LFmVYtjlSUH9Lg/m800/800",
+                  "description": "The Fugro Blue Shadow is our next generation uncrewed surface vessel (USV) designed to increase data acquisition efficiency, reduce HSSE exposure and accelerate project schedules, providing the optimal and safest hydrographic solution."
+                 },
+                 "plugin": "image-selector"
+                },
+                "intro": "Hydrography",
+                "links": [
+                 {
+                  "_uid": "9ae41950-2c17-4210-bcb3-091d5e482366",
+                  "href": {
+                   "id": "907a2d7b-e639-47d0-9078-c7b17b072c6c",
+                   "url": "",
+                   "linktype": "story",
+                   "fieldtype": "multilink",
+                   "cached_url": "content/expertise/hydrographic-surveys"
+                  },
+                  "label": "Our Hydrographic expertise",
+                  "component": "link"
+                 }
+                ],
+                "theme": "commerceSecondary",
+                "title": "Discover the power of hydrography in safeguarding our planet",
+                "variant": "FOOTER_MAIN",
+                "subtitle": "",
+                "component": "crossLinkFooter",
+                "isReversed": false,
+                "description": "Our hydrographic expertise are key to the success of climate and nature projects. With detailed hydrographic data, we enhance the understanding and management of marine ecosystems, supporting biodiversity, natural habitat preservation, and climate impact mitigation. Additionally, our services ensure safer and more efficient operations for marine and coastal projects, fostering sustainable development and minimising environmental impacts."
+               }
+              ],
+              "metaImage": {
+               "_uid": "39ca978c-ed00-464e-93fd-a17befe57ccd",
+               "asset": {
+                "id": "k3attvdpj977pe62plpp9skg3p",
+                "alt": "SWLB Operations Titran\nFugro, Seawatch Wind Lidar Buoy, Offshore Wind\nSeawatch Buoy waiting to be deployed",
+                "url": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_k3attvdpj977pe62plpp9skg3p/-FJPG",
+                "name": "Seawatch Buoy in Norway 01.JPG",
+                "type": "image/jpeg",
+                "scheme": "image",
+                "filename": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_k3attvdpj977pe62plpp9skg3p/-FJPG",
+                "previewUrl": "https://fugro.canto.global/direct/image/k3attvdpj977pe62plpp9skg3p/DuzNnwqu9x8ZSJraUuYZCvmf7eA/m800/800",
+                "description": "SWLB Operations Titran\nFugro, Seawatch Wind Lidar Buoy, Offshore Wind\nSeawatch Buoy waiting to be deployed"
+               },
+               "plugin": "image-selector"
+              },
+              "metaTitle": "Geo-data-driven solutions for climate adaptation and nature conservation",
+              "metaLocation": "",
+              "metaDescription": "Climate change threatens our oceans and coastlines. We work together with you to reduce risks, build strong coastal environments, and protect our oceans. ",
+              "metaCategoryRegion": [
+               "Global"
+              ],
+              "metaCategoryIndustry": [
+               "Water"
+              ],
+              "metaCategoryExpertise": [],
+              "metaCategoryTechnology": [],
+              "metaCategorySubIndustry": [],
+              "metaCategoryLifeCycleStage": []
+             },
+             "slug": "water",
+             "full_slug": "content/industries/water/",
+             "sort_by_date": null,
+             "position": -60,
+             "tag_list": [],
+             "is_startpage": true,
+             "parent_id": 303649846,
+             "meta_data": null,
+             "group_id": "e47bc9d2-5323-4d3e-b00d-c768f383d30b",
+             "first_published_at": "2023-05-04T07:45:09.015Z",
+             "release_id": null,
+             "lang": "default",
+             "path": null,
+             "alternates": [],
+             "default_full_slug": "content/industries/water/",
+             "translated_slugs": [
+              {
+               "path": "content/industries/water/",
+               "name": null,
+               "lang": "de",
+               "published": false
+              },
+              {
+               "path": "content/markten/water/",
+               "name": null,
+               "lang": "nl",
+               "published": true
+              }
+             ],
+             "_stopResolving": true
+            }
+           },
+           "ctaLabel": "",
+           "footnote": "We're dedicated to understanding our oceans and their surrounding coastal environments",
+           "component": "textCard"
+          }
+         ],
+         "component": "imageReelCarouselItem"
+        },
+        {
+         "_uid": "ef27b8f5-5d4a-411a-85c0-ebbf3597f885",
+         "image": {
+          "_uid": "d0cc095d-eaae-4dc4-94d8-653c87b2827b",
+          "asset": {
+           "id": "kg3ebg14q93tpdn4e7i90lik1j",
+           "alt": "Stock images for Fugro.com",
+           "url": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_kg3ebg14q93tpdn4e7i90lik1j/-FJPG",
+           "info": {
+            "width": 2050,
+            "height": 1367,
+            "isMdcImage": true
+           },
+           "name": "AdobeStock_92939777.jpeg",
+           "type": "image/jpeg",
+           "scheme": "image",
+           "filename": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_kg3ebg14q93tpdn4e7i90lik1j/-FJPG",
+           "metaData": {
+            "tag": [
+             "stock image",
+             "website-industries"
+            ],
+            "ogUrl": "https://fugro.canto.global/direct/image/kg3ebg14q93tpdn4e7i90lik1j/zcxlWaKcHx_RjXmPgcY35In-Yc0/original?content-type=image%2Fjpeg&name=AdobeStock_92939777.jpeg",
+            "ogSize": 5660404,
+            "region": [
+             "Global"
+            ],
+            "ogWidth": 4800,
+            "industry": [
+             "Unspecified"
+            ],
+            "ogHeight": 3200,
+            "assetType": [
+             "Image - photograph"
+            ],
+            "smartTags": [
+             "Architecture",
+             "City",
+             "Construction",
+             "Construction Crane",
+             "Urban"
+            ],
+            "businessLine": [
+             "Unspecified"
+            ],
+            "assetAudience": [
+             "L1 - External marketing"
+            ],
+            "imageryPeopleLocation": [
+             "NA"
+            ]
+           },
+           "previewUrl": "https://fugro.canto.global/direct/image/kg3ebg14q93tpdn4e7i90lik1j/GJ8hOlTEsbYE29nuhcn66NwN3qk/m800/800",
+           "description": "Stock images for Fugro.com"
+          },
+          "plugin": "image-selector"
+         },
+         "content": [
+          {
+           "tag": "Infrastructure",
+           "_uid": "e328474a-758c-4f36-b803-c45a5a09943c",
+           "small": false,
+           "title": "Nearshore and urban development",
+           "ctaHref": {
+            "id": "9da8d8a5-a5c9-4142-b3e8-01a2a260b134",
+            "url": "",
+            "linktype": "story",
+            "fieldtype": "multilink",
+            "cached_url": "content/industries/infrastructure/",
+            "story": {
+             "name": "Infrastructure ",
+             "created_at": "2023-05-07T11:51:07.920Z",
+             "published_at": "2026-02-25T11:40:07.051Z",
+             "updated_at": "2026-02-25T11:40:07.079Z",
+             "id": 303655948,
+             "uuid": "9da8d8a5-a5c9-4142-b3e8-01a2a260b134",
+             "content": {
+              "_uid": "7674d6c6-8e8b-4112-b9e8-79824a8408e6",
+              "hero": [
+               {
+                "_uid": "99bb96c5-cddc-4562-85e0-562315eb54f5",
+                "type": "DEFAULT",
+                "image": {
+                 "_uid": "9663dfe5-1ce0-463b-99e1-5238be55fc62",
+                 "asset": {
+                  "id": "kg3ebg14q93tpdn4e7i90lik1j",
+                  "alt": "Stock images for Fugro.com",
+                  "url": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_kg3ebg14q93tpdn4e7i90lik1j/-FJPG",
+                  "info": {
+                   "dpi": 300,
+                   "size": 5660404,
+                   "width": 4800,
+                   "height": 3200,
+                   "isMdcImage": true
+                  },
+                  "name": "AdobeStock_92939777.jpeg",
+                  "type": "image/jpeg",
+                  "scheme": "image",
+                  "filename": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_kg3ebg14q93tpdn4e7i90lik1j/-FJPG",
+                  "metaData": {
+                   "tag": [
+                    "stock image",
+                    "website-industries"
+                   ],
+                   "region": [
+                    "Global"
+                   ],
+                   "industry": [
+                    "Unspecified"
+                   ],
+                   "assetType": [
+                    "Image - photograph"
+                   ],
+                   "smartTags": [
+                    "Architecture",
+                    "City",
+                    "Construction",
+                    "Construction Crane",
+                    "Urban"
+                   ],
+                   "businessLine": [
+                    "Unspecified"
+                   ],
+                   "assetAudience": [
+                    "L1 - External marketing"
+                   ],
+                   "imageryPeopleLocation": [
+                    "NA"
+                   ]
+                  },
+                  "previewUrl": "https://fugro.canto.global/direct/image/kg3ebg14q93tpdn4e7i90lik1j/GJ8hOlTEsbYE29nuhcn66NwN3qk/m800/800",
+                  "description": "Stock images for Fugro.com"
+                 },
+                 "plugin": "image-selector"
+                },
+                "theme": "commerceSecondary",
+                "title": "Sustainable infrastructure solutions: building resilient, green infrastructure for sustainable development",
+                "video": {
+                 "_uid": "d53a2bc4-2f92-42a2-a743-46d0917cc3e5",
+                 "asset": null,
+                 "plugin": "image-selector"
+                },
+                "pageName": "Sustainable nfrastructure ",
+                "component": "heroDefault",
+                "logoImage": {
+                 "_uid": "33e1e318-15e9-4f20-a8d2-c149dad7da98",
+                 "asset": null,
+                 "plugin": "image-selector"
+                },
+                "fullHeight": false,
+                "description": "",
+                "hasMarginBottom": false
+               }
+              ],
+              "theme": "",
+              "metaTag": "",
+              "seoData": {
+               "_uid": "50887b6b-a46d-4aad-bdfa-9a0227f816cb",
+               "title": "Infrastructure - Building Resilient, Sustainable Solutions",
+               "plugin": "seo_metatags",
+               "og_image": "",
+               "og_title": "",
+               "description": "Infrastructure: crucial to economic growth and growing urban populations. We help develop sustainable and resilient infrastructures that will last a lifetime. ",
+               "twitter_image": "",
+               "twitter_title": "",
+               "og_description": "",
+               "twitter_description": ""
+              },
+              "component": "industry",
+              "crossLink": [
+               {
+                "_uid": "64e9083c-9e49-4c0c-ba79-08d0c1c702c7",
+                "image": {
+                 "_uid": "6269d660-6109-444c-8f4e-d29b2bfac169",
+                 "asset": {
+                  "id": "upomnk6hi15kl987k4i96p095r",
+                  "alt": "Moerdijk",
+                  "url": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_upomnk6hi15kl987k4i96p095r/-FJPG",
+                  "info": {
+                   "width": 1920,
+                   "height": 1080,
+                   "isMdcImage": true
+                  },
+                  "name": "Moerdijk Still5_1.10.1.jpg",
+                  "type": "image/jpeg",
+                  "scheme": "image",
+                  "filename": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_upomnk6hi15kl987k4i96p095r/-FJPG",
+                  "metaData": {
+                   "tag": [
+                    "Untagged"
+                   ],
+                   "ogUrl": "https://fugro.canto.global/direct/image/upomnk6hi15kl987k4i96p095r/_Li4CcMb1Q4VnSEl9tuhsMSv52I/original?content-type=image%2Fjpeg&name=Moerdijk+Still5_1.10.1.jpg",
+                   "ogSize": 1443013,
+                   "ogWidth": 1920,
+                   "ogHeight": 1080,
+                   "smartTags": [
+                    "Freeway",
+                    "Overpass",
+                    "Road",
+                    "Water",
+                    "Waterfront"
+                   ],
+                   "assetAudience": [
+                    "L1 - External marketing"
+                   ]
+                  },
+                  "previewUrl": "https://fugro.canto.global/direct/image/upomnk6hi15kl987k4i96p095r/WQoWde-6iiHzNK5SCDkSlenFFDI/m3000/800",
+                  "description": "Moerdijk"
+                 },
+                 "plugin": "image-selector"
+                },
+                "intro": "Careers",
+                "links": [
+                 {
+                  "_uid": "55a269dc-7a4d-42d5-abfb-6c6e88d4a7fe",
+                  "href": {
+                   "id": "5b8c8fca-e5bf-4eeb-b43c-dbb8e7874435",
+                   "url": "",
+                   "linktype": "story",
+                   "fieldtype": "multilink",
+                   "cached_url": "content/careers/"
+                  },
+                  "label": "Careers at Fugro",
+                  "component": "link"
+                 }
+                ],
+                "theme": "commerceSecondary",
+                "title": "Come join us",
+                "variant": "FOOTER_MAIN",
+                "subtitle": "",
+                "component": "crossLinkFooter",
+                "isReversed": false,
+                "description": "Exciting challenges. Unforgettable experiences. Work that helps create a more safe and liveable world. These are a few of the things you\u2019ll find at Fugro. Will you join our global team?"
+               }
+              ],
+              "metaImage": {
+               "_uid": "60032f4a-2fa2-4d60-8f7d-0e10e66f8078",
+               "asset": {
+                "id": "kg3ebg14q93tpdn4e7i90lik1j",
+                "alt": "Stock images for Fugro.com",
+                "url": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_kg3ebg14q93tpdn4e7i90lik1j/-FJPG",
+                "info": {
+                 "dpi": 300,
+                 "size": 5660404,
+                 "width": 4800,
+                 "height": 3200,
+                 "isMdcImage": true
+                },
+                "name": "AdobeStock_92939777.jpeg",
+                "type": "image/jpeg",
+                "scheme": "image",
+                "filename": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_kg3ebg14q93tpdn4e7i90lik1j/-FJPG",
+                "metaData": {
+                 "tag": [
+                  "stock image",
+                  "website-industries"
+                 ],
+                 "region": [
+                  "Global"
+                 ],
+                 "industry": [
+                  "Unspecified"
+                 ],
+                 "assetType": [
+                  "Image - photograph"
+                 ],
+                 "smartTags": [
+                  "Architecture",
+                  "City",
+                  "Construction",
+                  "Construction Crane",
+                  "Urban"
+                 ],
+                 "businessLine": [
+                  "Unspecified"
+                 ],
+                 "assetAudience": [
+                  "L1 - External marketing"
+                 ],
+                 "imageryPeopleLocation": [
+                  "NA"
+                 ]
+                },
+                "previewUrl": "https://fugro.canto.global/direct/image/kg3ebg14q93tpdn4e7i90lik1j/GJ8hOlTEsbYE29nuhcn66NwN3qk/m800/800",
+                "description": "Stock images for Fugro.com"
+               },
+               "plugin": "image-selector"
+              },
+              "metaTitle": "Infrastructure",
+              "NL_version": "Published",
+              "metaLocation": "",
+              "metaDescription": "Infrastructure: crucial to economic growth and growing urban populations. We help develop sustainable and resilient infrastructures that will last a lifetime. ",
+              "metaCategoryRegion": [],
+              "metaCategoryIndustry": [
+               "Infrastructure"
+              ],
+              "metaCategoryExpertise": [],
+              "metaCategoryTechnology": [],
+              "metaCategorySubIndustry": [],
+              "metaCategoryLifeCycleStage": []
+             },
+             "slug": "infrastructure",
+             "full_slug": "content/industries/infrastructure/",
+             "sort_by_date": null,
+             "position": -10,
+             "tag_list": [],
+             "is_startpage": true,
+             "parent_id": 303655725,
+             "meta_data": null,
+             "group_id": "634c0fdd-7a1f-490c-8e8a-4027b8faab6a",
+             "first_published_at": "2023-05-07T12:35:19.569Z",
+             "release_id": null,
+             "lang": "default",
+             "path": null,
+             "alternates": [],
+             "default_full_slug": "content/industries/infrastructure/",
+             "translated_slugs": [
+              {
+               "path": "content/industries/infrastructure/",
+               "name": null,
+               "lang": "de",
+               "published": false
+              },
+              {
+               "path": "content/markten/infrastructuur/",
+               "name": null,
+               "lang": "nl",
+               "published": true
+              }
+             ],
+             "_stopResolving": true
+            }
+           },
+           "ctaLabel": "",
+           "footnote": "A tailored approach to sustainable infrastructure projects",
+           "component": "textCard"
+          }
+         ],
+         "component": "imageReelCarouselItem"
+        }
+       ],
+       "title": "Our industries",
+       "component": "imageReelCarousel"
+      },
+      {
+       "_uid": "69727f5d-13bb-4a94-964b-f82f644ed682",
+       "label": "Case studies",
+       "profile": "",
+       "component": "anchorBarBookmark"
+      },
+      {
+       "_uid": "6db97378-bf97-4974-a69d-fb15cacaa198",
+       "type": "DEFAULT",
+       "items": [
+        {
+         "name": "Transforming a high-risk river crossing into design certainty",
+         "created_at": "2026-06-08T13:25:53.479Z",
+         "published_at": "2026-10-12T13:20:08.321Z",
+         "updated_at": "2026-10-12T13:20:08.415Z",
+         "id": 185284827089951,
+         "uuid": "2d2ef0a7-c79a-4656-a57a-5d70c9b6d52f",
+         "content": {
+          "component": "caseStudy",
+          "_uid": "75123a5f-86fe-4ee8-8ec9-51f0caf1401d",
+          "metaTitle": "Geotechnical Investigation for US-51 Ohio River Bridge",
+          "metaTag": "Case study",
+          "metaImage": {
+           "_uid": "f5984b2e-0b72-4f7f-8153-87cd5d9bf98a",
+           "asset": {
+            "id": "8to2i8on656u9bucki9n6qi85a",
+            "alt": "Lift boat mobilised for work on the US 51 Cairo Bridge project",
+            "url": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_8to2i8on656u9bucki9n6qi85a/-FJPG",
+            "info": {
+             "width": 2050,
+             "height": 1537,
+             "isMdcImage": true
+            },
+            "name": "Lift boat on Mississippi River 02.jpg",
+            "type": "image/jpeg",
+            "scheme": "image",
+            "filename": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_8to2i8on656u9bucki9n6qi85a/-FJPG",
+            "metaData": {
+             "tag": [
+              "lift barge"
+             ],
+             "ogUrl": "https://fugro.canto.global/direct/image/8to2i8on656u9bucki9n6qi85a/_ydgbKdGmx2V5c0jhCNQGR7KQ0A/original?content-type=image%2Fjpeg&name=Lift+boat+on+Mississippi+River+02.jpg",
+             "ogSize": 3365451,
+             "region": [
+              "Americas"
+             ],
+             "ogWidth": 4000,
+             "industry": [
+              "Infrastructure - Nearshore and urban development"
+             ],
+             "ogHeight": 3000,
+             "assetType": [
+              "Photograph - Fugro owned"
+             ],
+             "smartTags": [
+              "Barge",
+              "Boat",
+              "Transportation",
+              "Vehicle",
+              "Watercraft"
+             ],
+             "businessLine": [
+              "Marine Site Characterisation (MSC)",
+              "Land Site Characterisation (LSC)"
+             ],
+             "assetAudience": [
+              "L1 - External marketing"
+             ],
+             "imageryPeopleLocation": [
+              "Offshore",
+              "No people"
+             ]
+            },
+            "previewUrl": "https://fugro.canto.global/direct/image/8to2i8on656u9bucki9n6qi85a/WMhXqOdsHCgJRNUw2qibnkxS0h4/m800/800",
+            "description": "Lift boat mobilised for work on the US 51 Cairo Bridge project"
+           },
+           "plugin": "image-selector"
+          },
+          "metaLocation": "",
+          "metaCategoryIndustry": [
+           "Infrastructure"
+          ],
+          "publicationDate": "2026-06-10 00:00"
+         },
+         "slug": "transforming-a-high-risk-river-crossing-into-design-certainty",
+         "full_slug": "content/expertise/case-studies/transforming-a-high-risk-river-crossing-into-design-certainty",
+         "sort_by_date": null,
+         "position": -390,
+         "tag_list": [],
+         "is_startpage": false,
+         "parent_id": 291443666,
+         "meta_data": null,
+         "group_id": "f214e9b9-5e3d-47f9-8e6b-21f3a452b60a",
+         "first_published_at": "2026-06-10T15:04:06.486Z",
+         "release_id": null,
+         "lang": "default",
+         "path": null,
+         "alternates": [],
+         "default_full_slug": "content/expertise/case-studies/transforming-a-high-risk-river-crossing-into-design-certainty",
+         "translated_slugs": [
+          {
+           "path": "content/expertise/case-studies/transforming-a-high-risk-river-crossing-into-design-certainty",
+           "name": null,
+           "lang": "de",
+           "published": false
+          },
+          {
+           "path": "content/expertise/casestudies/transforming-a-high-risk-river-crossing-into-design-certainty",
+           "name": null,
+           "lang": "nl",
+           "published": false
+          }
+         ],
+         "_stopResolving": true
+        },
+        {
+         "name": "Seeing inside a tailings dam: How GroundIQ helped rule out hidden structural risks",
+         "created_at": "2026-03-26T18:00:08.206Z",
+         "published_at": "2026-06-10T09:49:57.816Z",
+         "updated_at": "2026-06-10T09:49:57.839Z",
+         "id": 159164040049647,
+         "uuid": "dc0517cc-2ba3-418c-8948-d2219536ffa6",
+         "content": {
+          "component": "caseStudy",
+          "_uid": "b328fa36-f064-4352-94e4-32fcfb69acf9",
+          "metaTitle": "Seeing Inside a Tailings Dam | GroundIQ\u00ae 3D Risk Assessment",
+          "metaTag": "Case study",
+          "metaImage": {
+           "_uid": "02791742-a547-451e-a47c-6a2c51b049e9",
+           "asset": {
+            "id": "71tilg30u97cd0jhpa3l54pk6t",
+            "alt": "XRF CPT at CODELCO Tec copper tailings, August 2017, Requinoa, Chile.",
+            "url": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_71tilg30u97cd0jhpa3l54pk6t/-FJPG",
+            "info": {
+             "width": 2050,
+             "height": 1367,
+             "isMdcImage": true
+            },
+            "name": "CPT truck_XRF-CPT-Cone_Requinoa, Chile.jpg",
+            "type": "image/jpeg",
+            "scheme": "image",
+            "filename": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_71tilg30u97cd0jhpa3l54pk6t/-FJPG",
+            "metaData": {
+             "tag": [
+              "CPT (cone penetration testing)",
+              "geotechnical",
+              "ground investigation",
+              "mineral",
+              "mining",
+              "truck",
+              "vehicle",
+              "waste"
+             ],
+             "ogUrl": "https://fugro.canto.global/direct/image/71tilg30u97cd0jhpa3l54pk6t/gy86A2E5jVpN53-tUyMncnBNYzA/original?content-type=image%2Fjpeg&name=CPT+truck_XRF-CPT-Cone_Requinoa%2C+Chile.jpg",
+             "ogSize": 57685678,
+             "region": [
+              "Americas"
+             ],
+             "keyword": [
+              "Photograph - Fugro owned"
+             ],
+             "ogWidth": 32000,
+             "industry": [
+              "Infrastructure - Nearshore and urban development",
+              "Energy - Renewable energy",
+              "Energy - Oil & natural gas"
+             ],
+             "ogHeight": 21333,
+             "assetType": [
+              "Video - edited"
+             ],
+             "copyright": "\u00a9 2022 Fugro | Photographer Elm Media",
+             "smartTags": [
+              "Nature",
+              "Outdoors",
+              "Person",
+              "Plateau",
+              "Scenery"
+             ],
+             "businessLine": [
+              "Land Site Characterisation (LSC)"
+             ],
+             "assetAudience": [
+              "L1 - External marketing"
+             ],
+             "imageryPeopleLocation": [
+              "Onsite",
+              "No people"
+             ]
+            },
+            "previewUrl": "https://fugro.canto.global/direct/image/71tilg30u97cd0jhpa3l54pk6t/uV0msy-tGi1KwlhIf5LcT5_juEM/m800/800",
+            "description": "XRF CPT at CODELCO Tec copper tailings, August 2017, Requinoa, Chile."
+           },
+           "plugin": "image-selector"
+          },
+          "metaLocation": "",
+          "metaCategoryIndustry": [
+           "Infrastructure"
+          ],
+          "publicationDate": "2026-06-09 00:00"
+         },
+         "slug": "seeing-inside-a-tailings-dam-how-groundiq-helped-rule-out-hidden-structural-risks",
+         "full_slug": "content/expertise/case-studies/seeing-inside-a-tailings-dam-how-groundiq-helped-rule-out-hidden-structural-risks",
+         "sort_by_date": null,
+         "position": -340,
+         "tag_list": [],
+         "is_startpage": false,
+         "parent_id": 291443666,
+         "meta_data": null,
+         "group_id": "dee5b254-748a-4aad-afb6-d7eb34243d27",
+         "first_published_at": "2026-06-09T11:59:41.537Z",
+         "release_id": null,
+         "lang": "default",
+         "path": null,
+         "alternates": [],
+         "default_full_slug": "content/expertise/case-studies/seeing-inside-a-tailings-dam-how-groundiq-helped-rule-out-hidden-structural-risks",
+         "translated_slugs": [
+          {
+           "path": "content/expertise/case-studies/seeing-inside-a-tailings-dam-how-groundiq-helped-rule-out-hidden-structural-risks",
+           "name": null,
+           "lang": "de",
+           "published": false
+          },
+          {
+           "path": "content/expertise/casestudies/seeing-inside-a-tailings-dam-how-groundiq-helped-rule-out-hidden-structural-risks",
+           "name": null,
+           "lang": "nl",
+           "published": false
+          }
+         ],
+         "_stopResolving": true
+        },
+        {
+         "name": "Remote subsea inspections eliminate personnel risk for Brazil's largest oil producer",
+         "created_at": "2026-05-14T13:51:51.307Z",
+         "published_at": "2026-06-10T15:14:05.137Z",
+         "updated_at": "2026-06-10T15:14:05.154Z",
+         "id": 176443847948981,
+         "uuid": "811f0e57-1952-4c87-84c8-830d78c774fd",
+         "content": {
+          "component": "caseStudy",
+          "_uid": "4b93f8e8-d69a-4ae8-8d5c-0b2d2341db48",
+          "metaTitle": "Fugro | Remote Subsea Inspections for Petrobras, Brazil",
+          "metaTag": "Case study",
+          "metaImage": {
+           "_uid": "bd0483ab-ae73-44f6-921d-24d8d8691110",
+           "asset": {
+            "id": "c6bchdupj57954ga97a1mb986g",
+            "alt": "Testing ahead of contract for Petrobras.",
+            "url": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_c6bchdupj57954ga97a1mb986g/-FJPG",
+            "info": {
+             "width": 2050,
+             "height": 1153,
+             "isMdcImage": true
+            },
+            "name": "Fugro Vaquita in Brazil 02.jpg",
+            "type": "image/jpeg",
+            "scheme": "image",
+            "filename": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_c6bchdupj57954ga97a1mb986g/-FJPG",
+            "metaData": {
+             "tag": [
+              "Blue Essence\u00ae",
+              "Brazil",
+              "Fugro Vaquita",
+              "marine",
+              "remote inspection",
+              "remote operations"
+             ],
+             "ogUrl": "https://fugro.canto.global/direct/image/c6bchdupj57954ga97a1mb986g/O-cwS9RPWFMRQkgBfpuh3U4UR_8/original?content-type=image%2Fjpeg&name=Fugro+Vaquita+in+Brazil+02.jpg",
+             "ogSize": 20957475,
+             "region": [
+              "Americas"
+             ],
+             "ogWidth": 8014,
+             "industry": [
+              "Energy - Renewable energy",
+              "Energy - Oil & natural gas"
+             ],
+             "ogHeight": 4508,
+             "assetType": [
+              "Image - photograph"
+             ],
+             "smartTags": [
+              "Boat",
+              "Land",
+              "Vehicle",
+              "Watercraft",
+              "Yacht"
+             ],
+             "businessLine": [
+              "Marine Asset Integrity (MAI)"
+             ],
+             "assetAudience": [
+              "L1 - External marketing"
+             ],
+             "imageryPeopleLocation": [
+              "Offshore",
+              "No people"
+             ]
+            },
+            "previewUrl": "https://fugro.canto.global/direct/image/c6bchdupj57954ga97a1mb986g/ZqTt4QtsVOkEH-zpfa2aX6AfwUc/m3000/800",
+            "description": "Testing ahead of contract for Petrobras."
+           },
+           "plugin": "image-selector"
+          },
+          "metaLocation": "",
+          "metaCategoryIndustry": [],
+          "publicationDate": "2026-05-22 00:00"
+         },
+         "slug": "remote-subsea-inspections-eliminate-personnel-risk-for-brazil-s-largest-oil-producer",
+         "full_slug": "content/expertise/case-studies/remote-subsea-inspections-eliminate-personnel-risk-for-brazil-s-largest-oil-producer",
+         "sort_by_date": null,
+         "position": -380,
+         "tag_list": [],
+         "is_startpage": false,
+         "parent_id": 291443666,
+         "meta_data": null,
+         "group_id": "3773beaf-2f14-4e0f-bf2f-823e31d7c5ca",
+         "first_published_at": "2026-05-22T13:39:02.785Z",
+         "release_id": null,
+         "lang": "default",
+         "path": null,
+         "alternates": [],
+         "default_full_slug": "content/expertise/case-studies/remote-subsea-inspections-eliminate-personnel-risk-for-brazil-s-largest-oil-producer",
+         "translated_slugs": [
+          {
+           "path": "content/expertise/case-studies/remote-subsea-inspections-eliminate-personnel-risk-for-brazil-s-largest-oil-producer",
+           "name": null,
+           "lang": "de",
+           "published": false
+          },
+          {
+           "path": "content/expertise/casestudies/remote-subsea-inspections-eliminate-personnel-risk-for-brazil-s-largest-oil-producer",
+           "name": null,
+           "lang": "nl",
+           "published": false
+          }
+         ],
+         "_stopResolving": true
+        }
+       ],
+       "title": "Examples of our expertise",
+       "ctaHref": {
+        "id": "1251aeae-4b42-4aa4-a069-b5a2cf7b64f2",
+        "url": "",
+        "linktype": "story",
+        "fieldtype": "multilink",
+        "cached_url": "content/expertise/case-studies/",
+        "story": {
+         "name": "Case study overview",
+         "created_at": "2023-04-26T06:55:44.956Z",
+         "published_at": "2026-10-30T09:59:37.123Z",
+         "updated_at": "2026-10-30T09:59:37.136Z",
+         "id": 297901405,
+         "uuid": "1251aeae-4b42-4aa4-a069-b5a2cf7b64f2",
+         "content": {
+          "_uid": "df1a56fc-740e-4f47-99f1-cdf80e1256f2",
+          "hero": [
+           {
+            "_uid": "1c73dc4f-04b9-49d4-8acb-1acf103dd6de",
+            "image": "",
+            "label": "See details of our work",
+            "theme": "commerce",
+            "title": "Case studies",
+            "component": "heroTitle",
+            "logoImage": {
+             "_uid": "20d2ee3e-6570-44e7-84ce-2c9e296c005c",
+             "asset": null,
+             "plugin": "image-selector"
+            },
+            "description": ""
+           }
+          ],
+          "type": "caseStudy",
+          "theme": "commerce",
+          "filters": [
+           "ec412ea8-a7da-4f03-992d-282c1e3c5945",
+           "d18b1aea-4bab-410e-ac53-311d9f13c188",
+           "32343bd4-696e-4adb-9a53-74c402e21836"
+          ],
+          "seoData": {
+           "_uid": "4fb2dd3b-282a-46e8-b11b-fe1f41e0e4a4",
+           "title": "Case studies",
+           "plugin": "seo_metatags",
+           "og_image": "",
+           "og_title": "",
+           "description": "Discover Fugro's expertise and explore a collection of compelling case studies showcasing their innovative solutions and successful projects across various industries.",
+           "twitter_image": "",
+           "twitter_title": "",
+           "og_description": "",
+           "twitter_description": ""
+          },
+          "component": "articleOverview",
+          "crossLink": [
+           {
+            "_uid": "ed3ffa32-8376-4ebc-8ff5-17b68e6049a8",
+            "image": {
+             "_uid": "02d8f601-7a6b-438e-aba1-5fcda69d95b0",
+             "asset": {
+              "id": "kthfq7ontp7gj47r1dit1feg43",
+              "alt": "Engineer onboard Fugro Galaxy",
+              "url": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_kthfq7ontp7gj47r1dit1feg43/-FJPG",
+              "name": "Engineer onboard Fugro Galaxy 02.jpg",
+              "type": "image/jpeg",
+              "scheme": "image",
+              "filename": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_kthfq7ontp7gj47r1dit1feg43/-FJPG",
+              "previewUrl": "https://fugro.canto.global/direct/image/kthfq7ontp7gj47r1dit1feg43/DmDVmnvr6EpKBhgfr9zUSB0csBc/m800/800",
+              "description": "Engineer onboard Fugro Galaxy"
+             },
+             "plugin": "image-selector"
+            },
+            "intro": "",
+            "links": [
+             {
+              "_uid": "3804fdca-5e7d-404c-9f2c-3a354183171e",
+              "href": {
+               "id": "6fd434e8-4358-47d0-9a98-2113d920b4dc",
+               "url": "",
+               "linktype": "story",
+               "fieldtype": "multilink",
+               "cached_url": "content/careers/jobs"
+              },
+              "label": "Careers at Fugro",
+              "component": "link"
+             }
+            ],
+            "theme": "commerceSecondary",
+            "title": "Come join us",
+            "variant": "FOOTER_MAIN",
+            "subtitle": "",
+            "component": "crossLinkFooter",
+            "isReversed": false,
+            "description": "Exciting challenges. Unforgettable experiences. Innovative projects. Collaborative teams. Work that helps create a safer, more sustainable, and liveable world. These are a few of the things you\u2019ll find at Fugro. Will you join our global team?"
+           }
+          ],
+          "NL_version": "[\"None\"]",
+          "articlesLabel": "All case studies",
+          "highlightedStory": "2d2ef0a7-c79a-4656-a57a-5d70c9b6d52f",
+          "highlightedStoryLabel": "Highlighted"
+         },
+         "slug": "case-studies",
+         "full_slug": "content/expertise/case-studies/",
+         "sort_by_date": null,
+         "position": 70,
+         "tag_list": [
+          "NL content",
+          "NL Page"
+         ],
+         "is_startpage": true,
+         "parent_id": 291443666,
+         "meta_data": null,
+         "group_id": "c6138b7c-ad5e-4937-9630-e41f0c78a13f",
+         "first_published_at": "2023-04-26T07:19:20.321Z",
+         "release_id": null,
+         "lang": "default",
+         "path": null,
+         "alternates": [],
+         "default_full_slug": "content/expertise/case-studies/",
+         "translated_slugs": [
+          {
+           "path": "content/expertise/case-studies/",
+           "name": null,
+           "lang": "de",
+           "published": false
+          },
+          {
+           "path": "content/expertise/casestudies/",
+           "name": null,
+           "lang": "nl",
+           "published": true
+          }
+         ],
+         "_stopResolving": true
+        }
+       },
+       "ctaLabel": "All case studies",
+       "component": "featuredCardGrid"
+      },
+      {
+       "_uid": "3f0b772a-44ba-4b73-93d0-be66f30a7bf8",
+       "label": "Organisation",
+       "component": "anchorBarBookmark"
+      },
+      {
+       "_uid": "4c8c72ba-da1a-4f3b-8d84-305d937a4281",
+       "items": [
+        {
+         "_uid": "fafbf05b-1f86-4ede-91d0-1df67f74e5ed",
+         "story": {
+          "name": "Our purpose",
+          "created_at": "2023-03-29T06:50:47.558Z",
+          "published_at": "2026-04-13T08:58:44.436Z",
+          "updated_at": "2026-04-13T08:58:44.451Z",
+          "id": 283476831,
+          "uuid": "c746ff1b-3755-44be-acbf-77ed237b45fc",
+          "content": {
+           "component": "hrContent",
+           "_uid": "7697bc0a-b99c-46ab-95e8-4874c50c2160",
+           "metaTitle": "Creating a Safe and Liveable World",
+           "metaTag": "",
+           "metaDescription": "The work we do everyday, from infrastructure development consulting services to marine assessments, is accelerating our positive impact across the globe. Find out more about how we support renewable energy, ocean health & biodiversity and coastal resilience projects.",
+           "metaImage": {
+            "_uid": "234c9317-ebce-4c6f-a806-7e1b1d887cf5",
+            "asset": {
+             "id": "tlmv7jf21l5s1aaboqspf8c72u",
+             "alt": "Sea Auk activities on the WaveWalker1 working on windfarm Hollandse Kust Noord",
+             "url": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_tlmv7jf21l5s1aaboqspf8c72u/-FJPG",
+             "info": {
+              "width": 2050,
+              "height": 1537,
+              "isMdcImage": true
+             },
+             "name": "Sea Auk working on WaveWalker 06.jpg",
+             "type": "image/jpeg",
+             "scheme": "image",
+             "filename": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_tlmv7jf21l5s1aaboqspf8c72u/-FJPG",
+             "metaData": {
+              "tag": [
+               "Sea Auk\u00ae",
+               "UXO removal",
+               "UXO risk mitigation",
+               "Wavewalker",
+               "\\#guidelines",
+               "jack-up barge",
+               "website-about"
+              ],
+              "ogUrl": "https://fugro.canto.global/direct/image/tlmv7jf21l5s1aaboqspf8c72u/Itbkdopkt2NypigtvhKvs9Fnv0o/original?content-type=image%2Fjpeg&name=Sea+Auk+working+on+WaveWalker+06.jpg",
+              "ogSize": 15289411,
+              "region": [
+               "Europe and Africa"
+              ],
+              "ogWidth": 5240,
+              "industry": [
+               "Energy - Renewable energy"
+              ],
+              "ogHeight": 3928,
+              "assetType": [
+               "Image - photograph"
+              ],
+              "copyright": "\u00a9 Fugro 2022 | Photographer Gijs Lokker",
+              "smartTags": [
+               "Horizon",
+               "Nature",
+               "Outdoors",
+               "Scenery",
+               "Sky"
+              ],
+              "businessLine": [
+               "Marine Site Characterisation (MSC)"
+              ],
+              "assetAudience": [
+               "L1 - External marketing"
+              ],
+              "peopleWithinImage": "--",
+              "imageryPeopleLocation": [
+               "Offshore",
+               "No people"
+              ]
+             },
+             "previewUrl": "https://fugro.canto.global/direct/image/tlmv7jf21l5s1aaboqspf8c72u/gtmrqTDWXy41WclQpQtDA9ZwCUc/m800/800",
+             "description": "Sea Auk activities on the WaveWalker1 working on windfarm Hollandse Kust Noord"
+            },
+            "plugin": "image-selector"
+           },
+           "metaLocation": ""
+          },
+          "slug": "our-purpose",
+          "full_slug": "content/about-us/our-purpose",
+          "sort_by_date": null,
+          "position": 0,
+          "tag_list": [],
+          "is_startpage": false,
+          "parent_id": 283476792,
+          "meta_data": null,
+          "group_id": "0814c35f-29f5-424e-a861-4c7b5580f0cd",
+          "first_published_at": "2023-03-29T06:53:14.419Z",
+          "release_id": null,
+          "lang": "default",
+          "path": null,
+          "alternates": [],
+          "default_full_slug": "content/about-us/our-purpose",
+          "translated_slugs": [
+           {
+            "path": "content/about-us/our-purpose",
+            "name": null,
+            "lang": "de",
+            "published": false
+           },
+           {
+            "path": "content/over-ons/ons-doel",
+            "name": null,
+            "lang": "nl",
+            "published": true
+           }
+          ],
+          "_stopResolving": true
+         },
+         "theme": "commerce",
+         "component": "masonryContentItem",
+         "showImage": true,
+         "imageAlign": "right"
+        },
+        {
+         "_uid": "5d962e5e-03c1-48c2-bfaf-cc73432319cd",
+         "story": {
+          "name": "Leadership",
+          "created_at": "2023-05-06T09:44:05.755Z",
+          "published_at": "2026-10-01T12:03:05.934Z",
+          "updated_at": "2026-10-01T12:03:05.947Z",
+          "id": 303634222,
+          "uuid": "ad39b2d5-663d-438a-b612-3daeb1f402b8",
+          "content": {
+           "component": "landingPage",
+           "_uid": "9df71a78-2cda-4923-8e38-0e67e6397428",
+           "metaTitle": "Leadership",
+           "metaTag": "",
+           "metaDescription": "Get to know the leadership team at Fugro.",
+           "metaImage": {
+            "_uid": "0457af56-1d63-44b1-8672-45d2efd2fa4f",
+            "asset": {
+             "id": "kk5hp3q01l7ol02r3oksp86f4g",
+             "url": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_kk5hp3q01l7ol02r3oksp86f4g/-FJPG",
+             "info": {
+              "width": 1920,
+              "height": 1145,
+              "isMdcImage": true
+             },
+             "name": "RSP_6197.jpg",
+             "type": "image/jpeg",
+             "scheme": "image",
+             "filename": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_kk5hp3q01l7ol02r3oksp86f4g/-FJPG",
+             "metaData": {
+              "tag": [
+               "Untagged"
+              ],
+              "ogUrl": "https://fugro.canto.global/direct/image/kk5hp3q01l7ol02r3oksp86f4g/Uj34LUIL47efv_NZbuJblZsIjo0/original?content-type=image%2Fjpeg&name=RSP_6197.jpg",
+              "ogSize": 139615,
+              "ogWidth": 1920,
+              "ogHeight": 1145,
+              "assetType": [
+               "Image - photograph"
+              ],
+              "smartTags": [
+               "Adult",
+               "Male",
+               "Man",
+               "People",
+               "Person"
+              ]
+             },
+             "previewUrl": "https://fugro.canto.global/direct/image/kk5hp3q01l7ol02r3oksp86f4g/WhoZGoy4SyMep38WO7KIEE4uQ_g/m800/800"
+            },
+            "plugin": "image-selector"
+           }
+          },
+          "slug": "leadership",
+          "full_slug": "content/about-us/governance/leadership",
+          "sort_by_date": null,
+          "position": -10,
+          "tag_list": [
+           "NonTranslatable"
+          ],
+          "is_startpage": false,
+          "parent_id": 302432188,
+          "meta_data": null,
+          "group_id": "210bc932-3459-428a-b184-a0770e053688",
+          "first_published_at": "2023-05-06T09:46:08.278Z",
+          "release_id": null,
+          "lang": "default",
+          "path": null,
+          "alternates": [],
+          "default_full_slug": "content/about-us/governance/leadership",
+          "translated_slugs": [
+           {
+            "path": "content/about-us/governance/leadership",
+            "name": null,
+            "lang": "de",
+            "published": false
+           },
+           {
+            "path": "content/over-ons/governance/leadership",
+            "name": null,
+            "lang": "nl",
+            "published": false
+           }
+          ],
+          "_stopResolving": true
+         },
+         "theme": "",
+         "component": "masonryContentItem",
+         "showImage": false,
+         "imageAlign": ""
+        },
+        {
+         "_uid": "1355cacf-0da1-4d15-8075-b05027d75e40",
+         "label": "Current share price",
+         "ctaHref": {
+          "id": "c453a2f2-90b5-4104-8eec-41c065513f3f",
+          "url": "",
+          "linktype": "story",
+          "fieldtype": "multilink",
+          "cached_url": "content/investors/shares/share-performance",
+          "story": {
+           "name": "Share performance",
+           "created_at": "2023-05-06T11:19:31.587Z",
+           "published_at": "2026-10-27T10:08:25.954Z",
+           "updated_at": "2026-10-27T10:08:25.967Z",
+           "id": 303639049,
+           "uuid": "c453a2f2-90b5-4104-8eec-41c065513f3f",
+           "content": {
+            "Date": "",
+            "_uid": "4246b558-8ad7-41d5-99a8-412a7d93b457",
+            "hero": [
+             {
+              "_uid": "87b80444-a8ec-4dff-b6dc-fc9fb72befe6",
+              "image": {
+               "_uid": "890923ab-6d39-4377-aaba-8e37ec1a8f64",
+               "asset": {
+                "id": "tgren74h694lj89j1lqqbdo75u",
+                "alt": "Nootdorp office and workshop\nPhotographer: Paul Barendregt \nContact Fugro: Linda van Laar\nDate: 13 February 2020",
+                "url": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_tgren74h694lj89j1lqqbdo75u/-FJPG",
+                "info": {
+                 "width": 2050,
+                 "height": 1367,
+                 "isMdcImage": true
+                },
+                "name": "NOOTDORP_0279.jpg",
+                "type": "image/jpeg",
+                "scheme": "image",
+                "filename": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_tgren74h694lj89j1lqqbdo75u/-FJPG",
+                "metaData": {
+                 "tag": [
+                  "Nootdorp",
+                  "The Netherlands",
+                  "office",
+                  "photocopyright",
+                  "workshop"
+                 ],
+                 "ogUrl": "https://fugro.canto.global/direct/image/tgren74h694lj89j1lqqbdo75u/fztIdt_V3VQ2sCkVA7wUltsMzmw/original?content-type=image%2Fjpeg&name=NOOTDORP_0279.jpg",
+                 "ogSize": 31106849,
+                 "region": [
+                  "Europe and Africa"
+                 ],
+                 "keyword": [
+                  "Photograph - Fugro owned"
+                 ],
+                 "ogWidth": 8256,
+                 "industry": [
+                  "Nautical"
+                 ],
+                 "ogHeight": 5504,
+                 "assetType": [
+                  "Photograph - Fugro owned"
+                 ],
+                 "copyright": "\u00a9 Fugro 2020 | Photographer Paul Barendregt",
+                 "smartTags": [
+                  "Adult",
+                  "Helmet",
+                  "Male",
+                  "Person",
+                  "Worker"
+                 ],
+                 "businessLine": [
+                  "Marine Site Characterisation (MSC)",
+                  "Marine Asset Integrity (MAI)"
+                 ],
+                 "assetAudience": [
+                  "L1 - External marketing",
+                  "L1 - External recruitment"
+                 ],
+                 "imageryPeopleLocation": [
+                  "People",
+                  "Workshop"
+                 ]
+                },
+                "previewUrl": "https://fugro.canto.global/direct/image/tgren74h694lj89j1lqqbdo75u/9xghsTnWXF6Ps9SvUfamNfxciGg/m800/800",
+                "description": "Nootdorp office and workshop\nPhotographer: Paul Barendregt \nContact Fugro: Linda van Laar\nDate: 13 February 2020"
+               },
+               "plugin": "image-selector"
+              },
+              "label": "",
+              "theme": "investors",
+              "title": "Share performance",
+              "component": "heroTitle",
+              "description": ""
+             }
+            ],
+            "theme": "",
+            "metaTag": "",
+            "noIndex": false,
+            "seoData": {
+             "_uid": "6ff87ab2-9aac-4783-8ffd-790ab77aaec2",
+             "title": "Share Performance",
+             "plugin": "seo_metatags",
+             "og_image": "",
+             "og_title": "",
+             "description": "See our share price performance at Fugro.",
+             "twitter_image": "",
+             "twitter_title": "",
+             "og_description": "",
+             "twitter_description": ""
+            },
+            "metaType": "",
+            "component": "hrContent",
+            "crossLink": [
+             {
+              "_uid": "09087e74-1310-4831-bdaa-72b75eb828e7",
+              "image": {
+               "_uid": "c760bc99-25d4-4dea-8923-033e686ea97b",
+               "asset": {
+                "id": "6vmr40k6ul13batf12n1c8h24d",
+                "alt": "The naming ceremony for the Fugro Quest",
+                "url": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_6vmr40k6ul13batf12n1c8h24d/-FJPG",
+                "info": {
+                 "width": 2050,
+                 "height": 1367,
+                 "isMdcImage": true
+                },
+                "name": "Fugro Quest - Rotterdam 22.jpg",
+                "type": "image/jpeg",
+                "scheme": "image",
+                "filename": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_6vmr40k6ul13batf12n1c8h24d/-FJPG",
+                "metaData": {
+                 "tag": [
+                  "Fugro Quest",
+                  "Netherlands",
+                  "geotechnical vessel",
+                  "naming ceremony"
+                 ],
+                 "ogUrl": "https://fugro.canto.global/direct/image/6vmr40k6ul13batf12n1c8h24d/QOMXHr9Ump7iibV5-Xqn2rcO3lY/original?content-type=image%2Fjpeg&name=Fugro+Quest+-+Rotterdam+22.jpg",
+                 "ogSize": 22622327,
+                 "region": [
+                  "Global"
+                 ],
+                 "ogWidth": 5760,
+                 "industry": [
+                  "Energy - Renewable energy",
+                  "Energy - Oil & natural gas"
+                 ],
+                 "ogHeight": 3840,
+                 "assetType": [
+                  "Image - photograph"
+                 ],
+                 "copyright": "\u00a9 Fugro 2022 | Photographer Lee Crane",
+                 "smartTags": [
+                  "Port",
+                  "Vehicle",
+                  "Water",
+                  "Watercraft",
+                  "Waterfront"
+                 ],
+                 "businessLine": [
+                  "Marine Site Characterisation (MSC)"
+                 ],
+                 "assetAudience": [
+                  "L1 - External marketing"
+                 ],
+                 "imageryPeopleLocation": [
+                  "Offshore",
+                  "No people"
+                 ]
+                },
+                "previewUrl": "https://fugro.canto.global/direct/image/6vmr40k6ul13batf12n1c8h24d/z092z4eArpC7H04ENC_eKzLSjvY/m800/800",
+                "description": "The naming ceremony for the Fugro Quest"
+               },
+               "plugin": "image-selector"
+              },
+              "intro": "",
+              "links": [
+               {
+                "_uid": "efe69929-8bcd-44ce-9a97-ff904421cb92",
+                "href": {
+                 "id": "b751feea-91ab-47f8-9e72-589f90aae630",
+                 "url": "",
+                 "linktype": "story",
+                 "fieldtype": "multilink",
+                 "cached_url": "content/investors/reasons-to-invest"
+                },
+                "label": "Why invest with Fugro",
+                "component": "link"
+               }
+              ],
+              "theme": "investorsSecondary",
+              "title": "Reasons to invest with Fugro",
+              "variant": "FOOTER_MAIN",
+              "subtitle": "",
+              "component": "crossLinkFooter",
+              "isReversed": false,
+              "description": "Fugro positions itself as a global leader in Geo-data, offering critical insights that support energy, infrastructure and water projects worldwide. The company has transformed into a more resilient, diversified business with improved financial performance and a strong foundation for future growth. It is well placed to benefit from major global trends, including the energy transition, large-scale infrastructure investment and climate adaptation needs. Its value proposition centres on delivering integrated map, model and monitor solutions, using advanced technology and digital tools to improve safety, efficiency and environmental understanding. A highly skilled workforce and flexible, market-agnostic assets strengthen its competitive position. Fugro also emphasises innovation, disciplined capital allocation and a diversified client base, supporting long-term value creation, sustainable growth and consistently delivering reliable operational excellence and attractive shareholder returns for its stakeholders."
+             }
+            ],
+            "metaImage": {
+             "_uid": "c116e448-de6e-4537-b6dc-24eb28263909",
+             "asset": null,
+             "plugin": "image-selector"
+            },
+            "metaTitle": "Share performance",
+            "NL_version": "[\"None\"] ",
+            "metaLocation": "",
+            "metaDescription": "See our share price performance",
+            "metaOrganizations": [],
+            "metaCategoryRegion": [],
+            "metaCategoryIndustry": [],
+            "metaCategoryExpertise": [],
+            "metaCategoryTechnology": [],
+            "metaCategorySubindustry": [],
+            "metaCategoryLifecyclestage": []
+           },
+           "slug": "share-performance",
+           "full_slug": "content/investors/shares/share-performance",
+           "sort_by_date": null,
+           "position": -160,
+           "tag_list": [
+            "NonTranslatable"
+           ],
+           "is_startpage": false,
+           "parent_id": 299856166,
+           "meta_data": null,
+           "group_id": "d9309d9d-d1e1-4ec0-bced-5cc69925500b",
+           "first_published_at": "2023-05-06T11:19:54.552Z",
+           "release_id": null,
+           "lang": "default",
+           "path": null,
+           "alternates": [],
+           "default_full_slug": "content/investors/shares/share-performance",
+           "translated_slugs": [
+            {
+             "path": "content/investors/shares/share-performance",
+             "name": null,
+             "lang": "de",
+             "published": false
+            },
+            {
+             "path": "content/investors/shares/share-performance",
+             "name": null,
+             "lang": "nl",
+             "published": false
+            }
+           ],
+           "_stopResolving": true
+          }
+         },
+         "q4Config": {
+          "name": "Q4 configuration",
+          "created_at": "2023-04-28T12:25:32.348Z",
+          "published_at": "2024-07-23T10:33:18.292Z",
+          "updated_at": "2024-07-23T10:33:18.315Z",
+          "id": 299708236,
+          "uuid": "1d7bf92a-6882-4d8c-bd3b-5c2d72cb03ee",
+          "content": {
+           "component": "q4Config",
+           "_uid": "261a08ea-e33b-4903-853c-8691c400fb9b",
+           "sourceUrl": "https://fugro2024eutfm.q4web.com"
+          },
+          "slug": "q4-configuration",
+          "full_slug": "integrations/investor-charts/q4-configuration",
+          "sort_by_date": null,
+          "position": 0,
+          "tag_list": [],
+          "is_startpage": false,
+          "parent_id": 297777603,
+          "meta_data": null,
+          "group_id": "24da27dc-f336-4460-aad3-34412adc27a8",
+          "first_published_at": "2023-04-28T12:25:35.445Z",
+          "release_id": null,
+          "lang": "default",
+          "path": null,
+          "alternates": [],
+          "default_full_slug": "integrations/investor-charts/q4-configuration",
+          "translated_slugs": [
+           {
+            "path": "integrations/investor-charts/q4-configuration",
+            "name": null,
+            "lang": "de",
+            "published": false
+           },
+           {
+            "path": "integrations/investor-charts/q4-configuration",
+            "name": null,
+            "lang": "nl",
+            "published": false
+           }
+          ],
+          "_stopResolving": true
+         },
+         "component": "sharePriceCard"
+        },
+        {
+         "_uid": "1db55e06-a6d2-4c5d-b05b-3687e87d54fc",
+         "story": {
+          "name": "Annual reports",
+          "created_at": "2023-05-10T07:59:54.542Z",
+          "published_at": "2026-04-30T10:36:30.454Z",
+          "updated_at": "2026-04-30T10:36:30.470Z",
+          "id": 305377159,
+          "uuid": "aa3856dc-6b60-467c-a668-90d9f0e29f60",
+          "content": {
+           "component": "hrContent",
+           "_uid": "d3d224be-bae1-46f1-a261-4799c51af0f4",
+           "metaTitle": "Annual report",
+           "metaTag": "",
+           "metaDescription": "For Fugro, 2025 proved to be a challenging year. Rapidly changing energy markets \u2013 especially the \nheadwinds facing offshore wind projects in several countries \u2013 resulted in a marked slowdown in early\u2011stage site characterisation work.",
+           "metaImage": {
+            "_uid": "62ccbac7-7452-4704-b411-46f75bcde3d7",
+            "asset": {
+             "id": "sql7v671vd3u32co8bgkintr39",
+             "alt": "Deploying Fiber Optic Gyro Side Scan Sonar from the Fugro Brasilis.",
+             "url": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_sql7v671vd3u32co8bgkintr39/-FJPG",
+             "info": {
+              "width": 2050,
+              "height": 1538,
+              "isMdcImage": true
+             },
+             "name": "FOG side scan sonar.jpeg",
+             "type": "image/jpeg",
+             "scheme": "image",
+             "filename": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_sql7v671vd3u32co8bgkintr39/-FJPG",
+             "metaData": {
+              "tag": [
+               "Brazil",
+               "fibre-optic monitoring",
+               "officeimagery",
+               "offshore",
+               "sonar"
+              ],
+              "ogUrl": "https://fugro.canto.global/direct/image/sql7v671vd3u32co8bgkintr39/pfh-877T8aX30WWGzRIDhb4mx9s/original?content-type=image%2Fjpeg&name=FOG+side+scan+sonar.jpeg",
+              "ogSize": 3766083,
+              "region": [
+               "Americas"
+              ],
+              "ogWidth": 4032,
+              "industry": [
+               "Water - Ocean science and coastal resilience"
+              ],
+              "ogHeight": 3024,
+              "smartTags": [
+               "Clothing",
+               "Footwear",
+               "Helmet",
+               "Person",
+               "Worker"
+              ],
+              "businessLine": [
+               "Marine Site Characterisation (MSC)",
+               "Marine Asset Integrity (MAI)"
+              ],
+              "assetAudience": [
+               "L1 - External marketing"
+              ],
+              "peopleWithinImage": "Shane Ewald",
+              "imageryPeopleLocation": [
+               "Offshore",
+               "People"
+              ]
+             },
+             "previewUrl": "https://fugro.canto.global/direct/image/sql7v671vd3u32co8bgkintr39/BJP2qEdLn_Hme3ZZjx0sAYOiHec/m800/800",
+             "description": "Deploying Fiber Optic Gyro Side Scan Sonar from the Fugro Brasilis."
+            },
+            "plugin": "image-selector"
+           },
+           "metaLocation": ""
+          },
+          "slug": "annual-reports",
+          "full_slug": "content/investors/results-and-publications/annual-reports",
+          "sort_by_date": null,
+          "position": -90,
+          "tag_list": [
+           "NonTranslatable"
+          ],
+          "is_startpage": false,
+          "parent_id": 300898540,
+          "meta_data": null,
+          "group_id": "9bb7fb34-a138-475d-a85d-1426e8864f40",
+          "first_published_at": "2023-05-10T08:01:32.133Z",
+          "release_id": null,
+          "lang": "default",
+          "path": null,
+          "alternates": [],
+          "default_full_slug": "content/investors/results-and-publications/annual-reports",
+          "translated_slugs": [
+           {
+            "path": "content/investors/results-and-publications/annual-reports",
+            "name": null,
+            "lang": "de",
+            "published": false
+           },
+           {
+            "path": "content/investors/results-and-publications/annual-reports",
+            "name": null,
+            "lang": "nl",
+            "published": false
+           }
+          ],
+          "_stopResolving": true
+         },
+         "theme": "neutral",
+         "component": "masonryContentItem",
+         "showImage": false,
+         "imageAlign": "left"
+        }
+       ],
+       "label": "",
+       "title": "Our organisation",
+       "ctaHref": {
+        "id": "",
+        "url": "",
+        "linktype": "story",
+        "fieldtype": "multilink",
+        "cached_url": ""
+       },
+       "ctaLabel": "",
+       "component": "masonryContentGrid",
+       "headerType": "alternative"
+      },
+      {
+       "_uid": "c75e7ed4-b1d1-479f-ae30-d4d6a2e753a9",
+       "label": "Careers",
+       "component": "anchorBarBookmark"
+      },
+      {
+       "_uid": "9cd3f84a-0d41-4f0d-9255-0c89e6972039",
+       "image": {
+        "_uid": "32242cb4-1a3d-4572-b2f0-de6670177c17",
+        "asset": {
+         "id": "7d3sr4g45d0e90c0mum06peh15",
+         "alt": "Project 'Faces of Fugro', for recruitment purposes.\nIf you wish to use any of these hero photo's, please contact:\nRobert Spence - r.spence@fugro.com\nor Lisette Blankestijn - l.blankestijn@fugro.com",
+         "url": "https://fugro.canto.global/direct/image/7d3sr4g45d0e90c0mum06peh15/drHUcu_GYk93t9jlsaYrXCS8cow/original?content-type=image%2Fjpeg&name=FACES+OF+FUGRO.00_02_51_24.Still014.jpg",
+         "info": {
+          "width": 3840,
+          "height": 2160,
+          "isMdcImage": false
+         },
+         "name": "FACES OF FUGRO.00_02_51_24.Still014.jpg",
+         "type": "image/jpeg",
+         "scheme": "image",
+         "filename": "https://fugro.canto.global/direct/image/7d3sr4g45d0e90c0mum06peh15/drHUcu_GYk93t9jlsaYrXCS8cow/original?content-type=image%2Fjpeg&name=FACES+OF+FUGRO.00_02_51_24.Still014.jpg",
+         "metaData": {
+          "tag": [
+           "Faces of Fugro",
+           "branding",
+           "employer branding",
+           "hero",
+           "recruitment"
+          ],
+          "ogUrl": "https://fugro.canto.global/direct/image/7d3sr4g45d0e90c0mum06peh15/drHUcu_GYk93t9jlsaYrXCS8cow/original?content-type=image%2Fjpeg&name=FACES+OF+FUGRO.00_02_51_24.Still014.jpg",
+          "ogSize": 1661600,
+          "region": [
+           "Global"
+          ],
+          "ogWidth": 3840,
+          "industry": [
+           "Infrastructure - Nearshore and urban development",
+           "Energy - Renewable energy",
+           "Energy - Oil & natural gas"
+          ],
+          "ogHeight": 2160,
+          "assetType": [
+           "Video - raw"
+          ],
+          "smartTags": [
+           "Face",
+           "Happy",
+           "Head",
+           "Person",
+           "Smile"
+          ],
+          "businessLine": [
+           "Unspecified"
+          ],
+          "assetAudience": [
+           "L1 - External marketing",
+           "L1 - External recruitment",
+           "L3 - Internal communication"
+          ],
+          "imageryPeopleLocation": [
+           "Office",
+           "Offshore",
+           "Onsite",
+           "People",
+           "Laboratory",
+           "No people"
+          ]
+         },
+         "previewUrl": "https://fugro.canto.global/direct/image/7d3sr4g45d0e90c0mum06peh15/pXLA3ZP728UPGHANmNWTuaTS9hs/m800/800",
+         "description": "Project 'Faces of Fugro', for recruitment purposes.\nIf you wish to use any of these hero photo's, please contact:\nRobert Spence - r.spence@fugro.com\nor Lisette Blankestijn - l.blankestijn@fugro.com"
+        },
+        "plugin": "image-selector"
+       },
+       "intro": "Come work with us",
+       "links": [
+        {
+         "_uid": "33a4cc93-9b70-46bc-aac7-f08655f4e34e",
+         "href": {
+          "id": "5b8c8fca-e5bf-4eeb-b43c-dbb8e7874435",
+          "url": "",
+          "linktype": "story",
+          "fieldtype": "multilink",
+          "cached_url": "content/careers/",
+          "story": {
+           "name": "Careers overview",
+           "created_at": "2023-02-06T14:56:46.803Z",
+           "published_at": "2025-09-26T12:46:49.864Z",
+           "updated_at": "2025-09-26T12:46:49.898Z",
+           "id": 258059509,
+           "uuid": "5b8c8fca-e5bf-4eeb-b43c-dbb8e7874435",
+           "content": {
+            "_uid": "038a8fff-3986-4413-90b6-1fec37c5eacc",
+            "image": {
+             "_uid": "f07bdf2e-c7db-4c84-96f7-8a033399f4f4",
+             "asset": {
+              "id": "fd44d6ija55o724m90cmdiob3d",
+              "alt": "Employees working on drilling operation for Lung Cheug Road, Hong Kong",
+              "url": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_fd44d6ija55o724m90cmdiob3d/-FJPG",
+              "info": {
+               "width": 2050,
+               "height": 1367,
+               "isMdcImage": true
+              },
+              "name": "Geotechnical drilling in Hong Kong 04.jpg",
+              "type": "image/jpeg",
+              "scheme": "image",
+              "filename": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_fd44d6ija55o724m90cmdiob3d/-FJPG",
+              "metaData": {
+               "tag": [
+                "Hong Kong",
+                "drilling",
+                "employees",
+                "geotechnical drilling",
+                "geotechnical ground investigation",
+                "officeimagery"
+               ],
+               "ogUrl": "https://fugro.canto.global/direct/image/fd44d6ija55o724m90cmdiob3d/tVUVMChjvOY7GIPD1wBHr_K-CSE/original?content-type=image%2Fjpeg&name=Geotechnical+drilling+in+Hong+Kong+04.jpg",
+               "ogSize": 26681939,
+               "region": [
+                "Asia Pacific",
+                "Global"
+               ],
+               "ogWidth": 7785,
+               "industry": [
+                "Infrastructure - Nearshore and urban development"
+               ],
+               "ogHeight": 5190,
+               "assetType": [
+                "Image - photograph"
+               ],
+               "copyright": "\u00a9 Fugro 2021 | Photographer Edward Wan",
+               "smartTags": [
+                "Clothing",
+                "Glove",
+                "Helmet",
+                "Person",
+                "Worker"
+               ],
+               "businessLine": [
+                "Land Site Characterisation (LSC)"
+               ],
+               "assetAudience": [
+                "L1 - External marketing",
+                "L1 - External recruitment"
+               ],
+               "peopleWithinImage": "Liu Man Fung, Lam Fu Yeung,",
+               "imageryPeopleLocation": [
+                "Onsite",
+                "People"
+               ]
+              },
+              "previewUrl": "https://fugro.canto.global/direct/image/fd44d6ija55o724m90cmdiob3d/7rlUJgleA3i2NfNjDQrDXKdEzsY/m800/800",
+              "description": "Employees working on drilling operation for Lung Cheug Road, Hong Kong"
+             },
+             "plugin": "image-selector"
+            },
+            "label": "Careers",
+            "theme": "",
+            "title": "Create positive impact on a global scale",
+            "filters": [
+             "f4b38560-659a-4e6c-8237-ae8356d7e5d5",
+             "f96672b0-6a17-4fe3-b249-ae58a8897d67"
+            ],
+            "seoData": {
+             "_uid": "84775736-71ef-4ae4-828d-dd60ff49e0e5",
+             "title": "Careers at Fugro",
+             "plugin": "seo_metatags",
+             "og_image": "",
+             "og_title": "",
+             "description": "Create a positive impact on a global scale, come work at Fugro",
+             "twitter_image": "",
+             "twitter_title": "",
+             "og_description": "",
+             "twitter_description": ""
+            },
+            "jobsLink": {
+             "id": "6fd434e8-4358-47d0-9a98-2113d920b4dc",
+             "url": "",
+             "linktype": "story",
+             "fieldtype": "multilink",
+             "cached_url": "content/careers/jobs"
+            },
+            "subtitle": "Ready for the next step in your career?",
+            "component": "careerOverview",
+            "crossLink": [
+             {
+              "_uid": "6bf56a12-d295-498d-9cca-14212b02ca4a",
+              "image": {
+               "_uid": "113c4ef5-79ec-411a-b08c-4de4729a360b",
+               "asset": {
+                "id": "p9q5bjd0vt0oh4mlqun3lqkh1n",
+                "alt": "Engineer onboard Fugro Galaxy",
+                "url": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_p9q5bjd0vt0oh4mlqun3lqkh1n/-FJPG",
+                "name": "Engineer onboard Fugro Galaxy 05.jpg",
+                "scheme": "image",
+                "filename": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_p9q5bjd0vt0oh4mlqun3lqkh1n/-FJPG",
+                "previewUrl": "https://fugro.canto.global/direct/image/p9q5bjd0vt0oh4mlqun3lqkh1n/VAO5Jq1lhQlS5MYgg-69NHNeaLw/m800/800",
+                "description": "Engineer onboard Fugro Galaxy"
+               },
+               "plugin": "image-selector"
+              },
+              "links": [
+               {
+                "_uid": "eb719d2c-6956-41e6-bdd7-deb03b693ab4",
+                "href": {
+                 "id": "",
+                 "url": "https://flows.beamery.eu/fugro/Join-the-Fugro-Talent-Community",
+                 "target": "_blank",
+                 "linktype": "url",
+                 "fieldtype": "multilink",
+                 "cached_url": "https://flows.beamery.eu/fugro/Join-the-Fugro-Talent-Community"
+                },
+                "label": "Join our Talent Community",
+                "component": "link"
+               },
+               {
+                "_uid": "16baf9ac-cc9c-45e1-9f97-ec3b2c881a74",
+                "href": {
+                 "id": "",
+                 "url": "https://fugro.wd3.myworkdayjobs.com/en-US/Careers/login?redirect=%2Fen-US%2FCareers%2FjobAlerts",
+                 "target": "_blank",
+                 "linktype": "url",
+                 "fieldtype": "multilink",
+                 "cached_url": "https://fugro.wd3.myworkdayjobs.com/en-US/Careers/login?redirect=%2Fen-US%2FCareers%2FjobAlerts"
+                },
+                "label": "Create an account",
+                "component": "link"
+               }
+              ],
+              "theme": "careersSecondary",
+              "title": "Would you like to stay up to date with relevant Fugro news and job opportunities?",
+              "subTitle": "Would you like to receive relevant Job Alerts?",
+              "component": "crossLinkAlt",
+              "textColor": "",
+              "isReversed": true,
+              "backgroundColor": ""
+             }
+            ],
+            "metaImage": "",
+            "metaTitle": "Werken bij Fugro",
+            "textColor": "#ffffff",
+            "NL_version": [
+             "None"
+            ],
+            "backgroundColor": "#011e41"
+           },
+           "slug": "careers",
+           "full_slug": "content/careers/",
+           "sort_by_date": null,
+           "position": -210,
+           "tag_list": [],
+           "is_startpage": true,
+           "parent_id": 251064982,
+           "meta_data": null,
+           "group_id": "1a4983ed-0609-4603-b401-ef79df368296",
+           "first_published_at": "2023-02-06T14:58:58.065Z",
+           "release_id": null,
+           "lang": "default",
+           "path": null,
+           "alternates": [],
+           "default_full_slug": "content/careers/",
+           "translated_slugs": [
+            {
+             "path": "content/careers/",
+             "name": null,
+             "lang": "de",
+             "published": false
+            },
+            {
+             "path": "content/werken-bij/",
+             "name": null,
+             "lang": "nl",
+             "published": true
+            }
+           ],
+           "_stopResolving": true
+          }
+         },
+         "label": "Careers at Fugro",
+         "component": "link"
+        }
+       ],
+       "small": false,
+       "theme": "commerce",
+       "title": "Help create an impact on a global scale",
+       "variant": "IN_PAGE",
+       "component": "crossLink",
+       "metaTitle": "",
+       "isReversed": false,
+       "description": "",
+       "styleVariant": ""
+      },
+      {
+       "_uid": "bf2f6f69-41bc-4d37-8564-a370daebc280",
+       "label": "News highlights",
+       "component": "anchorBarBookmark"
+      },
+      {
+       "_uid": "a1f4020d-8767-482e-8b8b-ad1620c8febc",
+       "items": [
+        {
+         "name": "Fugro secures additional survey contracts for Greater Sunrise TLNG and Bayu Undan Pipeline Highway projects in Timor-Leste",
+         "created_at": "2026-09-23T12:55:10.935Z",
+         "published_at": "2026-09-28T13:45:48.437Z",
+         "updated_at": "2026-09-28T13:45:48.450Z",
+         "id": 223143980815333,
+         "uuid": "ef309f7c-5a29-4919-a4ce-fb57e7a9f9e3",
+         "content": {
+          "component": "newsArticle",
+          "_uid": "f8c4f333-f40e-4f52-987a-2c30a2c52ccd",
+          "metaTitle": "Fugro secures additional survey contracts for Greater Sunrise TLNG and Bayu Undan Pipeline Highway projects in Timor-Leste",
+          "metaTag": "Business news",
+          "metaDescription": "In addition to the geophysical survey contract announced on 17 July 2026, Fugro has secured two further awards from Timor-Leste\u2019s Ministry of Petroleum and Mineral Resources (MPRM) in support of the Greater Sunrise TLNG development and Bayu-Undan Pipeline Highway projects. The awards comprise a major heavy geotechnical survey and a metocean survey as part of the wider survey campaign for the proposed pipeline routes.",
+          "metaImage": {
+           "_uid": "d299fb6b-6917-4c8e-8e7f-997d3b5bb78b",
+           "asset": {
+            "id": "kdmk4j933d35jfj9jb9i89gg58",
+            "alt": "Timor Leste part 2",
+            "url": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_kdmk4j933d35jfj9jb9i89gg58/-FJPG",
+            "info": {
+             "width": 1816,
+             "height": 1427,
+             "isMdcImage": true
+            },
+            "name": "Timor Leste part 2.jpg",
+            "type": "image/jpeg",
+            "scheme": "image",
+            "filename": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_kdmk4j933d35jfj9jb9i89gg58/-FJPG",
+            "metaData": {
+             "tag": [
+              "Untagged"
+             ],
+             "ogUrl": "https://fugro.canto.global/direct/image/kdmk4j933d35jfj9jb9i89gg58/ydPgfa9SfXVd548onHtSImbc5KI/original?content-type=image%2Fjpeg&name=Timor+Leste+part+2.jpg",
+             "ogSize": 748841,
+             "ogWidth": 1816,
+             "ogHeight": 1427,
+             "smartTags": [
+              "Boat",
+              "Person",
+              "Transportation",
+              "Vehicle",
+              "Worker"
+             ],
+             "assetAudience": [
+              "L1 - External marketing"
+             ]
+            },
+            "previewUrl": "https://fugro.canto.global/direct/image/kdmk4j933d35jfj9jb9i89gg58/B62G6y8yJuI6mF1dwKK6UaiCT9M/m800/800",
+            "description": "Timor Leste part 2"
+           },
+           "plugin": "image-selector"
+          },
+          "publicationDate": "2026-09-24 00:00"
+         },
+         "slug": "fugro-secures-additional-survey-contracts-for-greater-sunrise-tlng-and-bayu-undan-pipeline-highway-projects-in-timor-leste",
+         "full_slug": "content/news/business-news/2026/fugro-secures-additional-survey-contracts-for-greater-sunrise-tlng-and-bayu-undan-pipeline-highway-projects-in-timor-leste",
+         "sort_by_date": null,
+         "position": -280,
+         "tag_list": [],
+         "is_startpage": false,
+         "parent_id": 166120851802492,
+         "meta_data": null,
+         "group_id": "72075a1c-02fe-4089-bf8d-3c08b4d0f5e3",
+         "first_published_at": "2026-09-24T02:30:00.533Z",
+         "release_id": null,
+         "lang": "default",
+         "path": null,
+         "alternates": [],
+         "default_full_slug": "content/news/business-news/2026/fugro-secures-additional-survey-contracts-for-greater-sunrise-tlng-and-bayu-undan-pipeline-highway-projects-in-timor-leste",
+         "translated_slugs": [
+          {
+           "path": "content/news/business-news/2026/fugro-secures-additional-survey-contracts-for-greater-sunrise-tlng-and-bayu-undan-pipeline-highway-projects-in-timor-leste",
+           "name": null,
+           "lang": "de",
+           "published": false
+          },
+          {
+           "path": "content/nieuws/nieuws/2026/fugro-secures-additional-survey-contracts-for-greater-sunrise-tlng-and-bayu-undan-pipeline-highway-projects-in-timor-leste",
+           "name": null,
+           "lang": "nl",
+           "published": false
+          }
+         ],
+         "_stopResolving": true
+        },
+        {
+         "name": "A fi wi wata: Why mapping Jamaica\u2019s ocean space is a national imperative",
+         "created_at": "2026-09-23T19:27:50.149Z",
+         "published_at": "2026-09-24T14:39:04.337Z",
+         "updated_at": "2026-09-24T14:39:04.362Z",
+         "id": 223240479376559,
+         "uuid": "d9a20a8e-c119-4798-935c-f2dd02a95357",
+         "content": {
+          "component": "fugroworldArticle",
+          "_uid": "2cdfc240-509f-4c90-8640-a911a4430326",
+          "metaTitle": "Mapping Jamaica's EEZ: governance before technology ",
+          "metaTag": "Long read",
+          "metaDescription": "Jamaica's ocean space is more than 20 times its land area. Valrie Grant explains why a national EEZ mapping programme starts with governance, not technology.",
+          "metaImage": {
+           "_uid": "6498319d-3a24-4862-b8e5-31db27337f7e",
+           "asset": {
+            "id": "vcudlom2b5583cdlakclh8da0i",
+            "alt": "Jamaica Island with Ocean",
+            "url": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_vcudlom2b5583cdlakclh8da0i/-FJPG",
+            "info": {
+             "width": 2050,
+             "height": 1046,
+             "isMdcImage": true
+            },
+            "name": "jamaica-island-ocean.png",
+            "type": "image/png",
+            "scheme": "image",
+            "filename": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_vcudlom2b5583cdlakclh8da0i/-FJPG",
+            "metaData": {
+             "tag": [
+              "Untagged"
+             ],
+             "ogUrl": "https://fugro.canto.global/direct/image/vcudlom2b5583cdlakclh8da0i/KHY1oy-_GkC-9tVIAwd3aYY3VjU/original?content-type=image%2Fpng&name=jamaica-island-ocean.png",
+             "ogSize": 2877163,
+             "region": [
+              "Americas"
+             ],
+             "ogWidth": 2400,
+             "industry": [
+              "Water - Ocean science and coastal resilience"
+             ],
+             "ogHeight": 1225,
+             "assetType": [
+              "Image - photograph"
+             ],
+             "smartTags": [
+              "Land",
+              "Nature",
+              "Outdoors",
+              "Sea",
+              "Water"
+             ],
+             "assetAudience": [
+              "L1 - External marketing"
+             ]
+            },
+            "previewUrl": "https://fugro.canto.global/direct/image/vcudlom2b5583cdlakclh8da0i/-B-Bga6_0m6zHAoh2PZ-DRQI7B0/m800/800",
+            "description": "Jamaica Island with Ocean"
+           },
+           "plugin": "image-selector"
+          },
+          "publicationDate": "2026-09-24 00:00"
+         },
+         "slug": "a-fi-wi-wata-why-mapping-jamaica-s-ocean-space-is-a-national-imperative",
+         "full_slug": "content/news/long-reads/2026/a-fi-wi-wata-why-mapping-jamaica-s-ocean-space-is-a-national-imperative",
+         "sort_by_date": null,
+         "position": -60,
+         "tag_list": [],
+         "is_startpage": false,
+         "parent_id": 133302969864517,
+         "meta_data": null,
+         "group_id": "1abf0ca9-1c22-4c24-ab65-5a77ca26b8f2",
+         "first_published_at": "2026-09-24T14:39:04.337Z",
+         "release_id": null,
+         "lang": "default",
+         "path": null,
+         "alternates": [],
+         "default_full_slug": "content/news/long-reads/2026/a-fi-wi-wata-why-mapping-jamaica-s-ocean-space-is-a-national-imperative",
+         "translated_slugs": [
+          {
+           "path": "content/news/long-reads/2026/a-fi-wi-wata-why-mapping-jamaica-s-ocean-space-is-a-national-imperative",
+           "name": null,
+           "lang": "de",
+           "published": false
+          },
+          {
+           "path": "content/nieuws/longreads/2026/a-fi-wi-wata-why-mapping-jamaica-s-ocean-space-is-a-national-imperative",
+           "name": null,
+           "lang": "nl",
+           "published": false
+          }
+         ],
+         "_stopResolving": true
+        },
+        {
+         "name": "Fugro awarded major Australian marine asset integrity contract ",
+         "created_at": "2026-09-23T11:55:56.265Z",
+         "published_at": "2026-10-16T08:39:59.274Z",
+         "updated_at": "2026-10-16T08:39:59.291Z",
+         "id": 223129420888995,
+         "uuid": "4b8bb5ce-0c7c-45ad-a128-73500a917188",
+         "content": {
+          "component": "pressRelease",
+          "_uid": "fd096215-68d9-4fd2-9dc1-8accf55d2eee",
+          "metaTitle": "Fugro awarded major Australian marine asset integrity contract ",
+          "metaTag": "Press release",
+          "metaDescription": "Fugro has secured a marine asset integrity contract with a client in Australia, strengthening its position as a trusted partner for subsea inspection, intervention and maintenance services in the offshore energy industry. ",
+          "metaImage": {
+           "_uid": "dbc55b5c-1013-414a-830c-8bc99d069627",
+           "asset": {
+            "id": "n3bb75d6v5183cvfres2f65b6k",
+            "url": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_n3bb75d6v5183cvfres2f65b6k/-FJPG",
+            "info": {
+             "width": 2050,
+             "height": 1537,
+             "isMdcImage": true
+            },
+            "name": "Fugro Etive 10.jpg",
+            "type": "image/jpeg",
+            "scheme": "image",
+            "filename": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_n3bb75d6v5183cvfres2f65b6k/-FJPG",
+            "metaData": {
+             "tag": [
+              "Fugro Etive",
+              "hero23",
+              "subsea vessel",
+              "vessel"
+             ],
+             "ogUrl": "https://fugro.canto.global/direct/image/n3bb75d6v5183cvfres2f65b6k/Lftr3ElQAV9d48pmUXG4TO7DR1c/original?content-type=image%2Fjpeg&name=Fugro+Etive+10.jpg",
+             "ogSize": 4772860,
+             "region": [
+              "Global"
+             ],
+             "ogWidth": 4597,
+             "industry": [
+              "Energy - Renewable energy",
+              "Water - Ocean science and coastal resilience",
+              "Energy - Oil & natural gas"
+             ],
+             "ogHeight": 3446,
+             "assetType": [
+              "Image - photograph"
+             ],
+             "copyright": "Chris Parker",
+             "smartTags": [
+              "Barge",
+              "Boat",
+              "Vehicle",
+              "Watercraft"
+             ],
+             "businessLine": [
+              "Marine Asset Integrity (MAI)"
+             ]
+            },
+            "previewUrl": "https://fugro.canto.global/direct/image/n3bb75d6v5183cvfres2f65b6k/NG8c30W2qF9u6atp9kDIElD3fEE/m800/800"
+           },
+           "plugin": "image-selector"
+          },
+          "publicationDate": "2026-09-23 14:30"
+         },
+         "slug": "fugro-awarded-major-australian-marine-asset-integrity-contract",
+         "full_slug": "content/news/press-releases/2026/fugro-awarded-major-australian-marine-asset-integrity-contract",
+         "sort_by_date": null,
+         "position": -120,
+         "tag_list": [],
+         "is_startpage": false,
+         "parent_id": 135742028216489,
+         "meta_data": null,
+         "group_id": "7b6c5706-63d5-4aa0-b64f-40086ed9d334",
+         "first_published_at": "2026-09-23T12:30:23.246Z",
+         "release_id": null,
+         "lang": "default",
+         "path": null,
+         "alternates": [],
+         "default_full_slug": "content/news/press-releases/2026/fugro-awarded-major-australian-marine-asset-integrity-contract",
+         "translated_slugs": [
+          {
+           "path": "content/news/press-releases/2026/fugro-awarded-major-australian-marine-asset-integrity-contract",
+           "name": null,
+           "lang": "de",
+           "published": false
+          },
+          {
+           "path": "content/nieuws/press-releases/2026/fugro-awarded-major-australian-marine-asset-integrity-contract",
+           "name": null,
+           "lang": "nl",
+           "published": false
+          }
+         ],
+         "_stopResolving": true
+        }
+       ],
+       "title": "News highlights",
+       "ctaHref": {
+        "id": "790188f6-e7dc-4a30-b9f7-bf42f8701c2b",
+        "url": "",
+        "linktype": "story",
+        "fieldtype": "multilink",
+        "cached_url": "content/news/",
+        "story": {
+         "name": "News overview",
+         "created_at": "2023-05-05T09:05:43.797Z",
+         "published_at": "2026-09-28T08:15:41.750Z",
+         "updated_at": "2026-09-28T08:15:41.765Z",
+         "id": 302757130,
+         "uuid": "790188f6-e7dc-4a30-b9f7-bf42f8701c2b",
+         "content": {
+          "_uid": "9cc7f85b-aea7-427f-ad90-e4b6d2cce041",
+          "hero": [
+           {
+            "_uid": "cf91ea78-6b21-4f39-a87a-6abaccb0ed54",
+            "type": "DEFAULT",
+            "image": {
+             "_uid": "04027db0-888a-459e-98b5-9817320b360a",
+             "asset": {
+              "id": "6p8dovjujp5p1340fc80cemf28",
+              "alt": "03a_laserscanning_-_Noord-Zuidlijn01\n3D Laser scanning the new North/South metro line in Amsterdam, The Netherlands.",
+              "url": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_6p8dovjujp5p1340fc80cemf28/-FJPG",
+              "name": "3D laser scanning metro line Amsterdam.jpg",
+              "type": "image/jpeg",
+              "scheme": "image",
+              "filename": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_6p8dovjujp5p1340fc80cemf28/-FJPG",
+              "previewUrl": "https://fugro.canto.global/direct/image/6p8dovjujp5p1340fc80cemf28/Ig_JVO6IPvKmjOv5JqpZLM9ABvw/m800/800",
+              "description": "03a_laserscanning_-_Noord-Zuidlijn01\n3D Laser scanning the new North/South metro line in Amsterdam, The Netherlands."
+             },
+             "plugin": "image-selector"
+            },
+            "theme": "mediaSecondary",
+            "title": "Latest news and articles",
+            "video": "",
+            "pageName": "",
+            "component": "heroDefault",
+            "logoImage": "",
+            "textColor": "",
+            "fullHeight": false,
+            "description": "Latest news and articles, press releases, latest developments, long reads and more. ",
+            "disableParallax": false,
+            "hasMarginBottom": false
+           }
+          ],
+          "theme": "media",
+          "metaTag": "News overview",
+          "seoData": {
+           "_uid": "0bd2816b-5afb-44a6-9524-c15f3db223bc",
+           "title": "News",
+           "plugin": "seo_metatags",
+           "og_image": "",
+           "og_title": "",
+           "description": "Stay updated with Fugro's latest news. Explore press releases, articles, and podcasts.",
+           "twitter_image": "",
+           "twitter_title": "",
+           "og_description": "",
+           "twitter_description": ""
+          },
+          "component": "mediaOverview",
+          "crossLink": [
+           {
+            "_uid": "b8f3c897-35f1-402d-8dc3-32a6f805fc35",
+            "image": {
+             "_uid": "8d68c477-e98e-4415-ac1a-bf15e37f13bf",
+             "asset": {
+              "id": "hdhtcuiud15850t32c9c4dq06r",
+              "alt": "Site investigation (CPT and drilling) and monitoring\nPerforming CPT, drilling and monitoring of the Grimburgwal canal in Amsterdam",
+              "url": "https://fugro.canto.global/direct/image/hdhtcuiud15850t32c9c4dq06r/hifwiWvDgXicEau0Ik-N6a8N7V4/original?content-type=image%2Fjpeg&name=MEN03693.jpg",
+              "name": "MEN03693.jpg",
+              "scheme": "image",
+              "filename": "https://fugro.canto.global/direct/image/hdhtcuiud15850t32c9c4dq06r/hifwiWvDgXicEau0Ik-N6a8N7V4/original?content-type=image%2Fjpeg&name=MEN03693.jpg",
+              "previewUrl": "https://fugro.canto.global/direct/image/hdhtcuiud15850t32c9c4dq06r/WnJXHfTCjB4EF2p16O9qav6RSNM/m800/800",
+              "description": "Site investigation (CPT and drilling) and monitoring\nPerforming CPT, drilling and monitoring of the Grimburgwal canal in Amsterdam"
+             },
+             "plugin": "image-selector"
+            },
+            "intro": "",
+            "links": [
+             {
+              "_uid": "a5b2c0fd-c6b8-49c1-be6a-e3821fd6d5a6",
+              "href": {
+               "id": "af11ed99-2c65-4601-829f-1c190b03d926",
+               "url": "",
+               "linktype": "story",
+               "fieldtype": "multilink",
+               "cached_url": "content/about-us/what-we-do-at-fugro"
+              },
+              "label": "Read more",
+              "component": "link"
+             }
+            ],
+            "theme": "commerceSecondary",
+            "title": "What we do at Fugro",
+            "variant": "FOOTER_MAIN",
+            "subtitle": "",
+            "component": "crossLinkFooter",
+            "isReversed": false,
+            "description": "The more you know, the smaller the risk"
+           }
+          ],
+          "metaImage": {
+           "_uid": "d6b6a55a-6258-4f7e-a8a5-ac95dd01a0ff",
+           "asset": {
+            "id": "6p8dovjujp5p1340fc80cemf28",
+            "alt": "03a_laserscanning_-_Noord-Zuidlijn01\n3D Laser scanning the new North/South metro line in Amsterdam, The Netherlands.",
+            "url": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_6p8dovjujp5p1340fc80cemf28/-FJPG",
+            "name": "3D laser scanning metro line Amsterdam.jpg",
+            "type": "image/jpeg",
+            "scheme": "image",
+            "filename": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_6p8dovjujp5p1340fc80cemf28/-FJPG",
+            "previewUrl": "https://fugro.canto.global/direct/image/6p8dovjujp5p1340fc80cemf28/Ig_JVO6IPvKmjOv5JqpZLM9ABvw/m800/800",
+            "description": "03a_laserscanning_-_Noord-Zuidlijn01\n3D Laser scanning the new North/South metro line in Amsterdam, The Netherlands."
+           },
+           "plugin": "image-selector"
+          },
+          "metaTitle": "Latest news",
+          "NL_version": "[\"None\"]",
+          "metaDescription": "Stay updated with Fugro's latest news. Explore press releases, articles, and podcasts.",
+          "metaCategoryRegion": [],
+          "metaCategoryIndustry": [],
+          "metaCategoryExpertise": [],
+          "metaCategorySubIndustry": [],
+          "metaCategoryLifeCycleStage": []
+         },
+         "slug": "news",
+         "full_slug": "content/news/",
+         "sort_by_date": null,
+         "position": -50,
+         "tag_list": [],
+         "is_startpage": true,
+         "parent_id": 281108125,
+         "meta_data": null,
+         "group_id": "fde55072-6c9b-41cc-b4ce-b269e06cd970",
+         "first_published_at": "2023-05-10T18:14:52.409Z",
+         "release_id": null,
+         "lang": "default",
+         "path": null,
+         "alternates": [],
+         "default_full_slug": "content/news/",
+         "translated_slugs": [
+          {
+           "path": "content/news/",
+           "name": null,
+           "lang": "de",
+           "published": false
+          },
+          {
+           "path": "content/nieuws/",
+           "name": null,
+           "lang": "nl",
+           "published": true
+          }
+         ],
+         "_stopResolving": true
+        }
+       },
+       "ctaLabel": "All news",
+       "component": "imageContentCarouselStatic"
+      }
+     ],
+     "hero": [
+      {
+       "_uid": "9c798612-32b2-458f-a79a-606332997c19",
+       "image": {
+        "_uid": "7534247b-73b1-4e3c-b81d-5fbf1d965a20",
+        "asset": {
+         "id": "u04uvql7vl2cj3pnvnpedg1u2m",
+         "url": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_u04uvql7vl2cj3pnvnpedg1u2m/-FJPG",
+         "info": {
+          "width": 2050,
+          "height": 1170,
+          "isMdcImage": true
+         },
+         "name": "CPT beach survey 20.jpg",
+         "type": "image/jpeg",
+         "scheme": "image",
+         "filename": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_u04uvql7vl2cj3pnvnpedg1u2m/-FJPG",
+         "metaData": {
+          "tag": [
+           "Untagged"
+          ],
+          "ogUrl": "https://fugro.canto.global/direct/image/u04uvql7vl2cj3pnvnpedg1u2m/H_LB3TXdNNdVVrfgennO_OQ8Wvw/original?content-type=image%2Fjpeg&name=CPT+beach+survey+20.jpg",
+          "ogSize": 1701104,
+          "ogWidth": 4072,
+          "ogHeight": 2325,
+          "assetType": [
+           "Image - photograph"
+          ],
+          "smartTags": [
+           "Helmet",
+           "Person",
+           "Port",
+           "Water",
+           "Waterfront"
+          ]
+         },
+         "previewUrl": "https://fugro.canto.global/direct/image/u04uvql7vl2cj3pnvnpedg1u2m/p46C30gOalVFHVsZ4l8TlXZi3cI/m800/800"
+        },
+        "plugin": "image-selector"
+       },
+       "label": "",
+       "theme": "commerceSecondary",
+       "title": "Creating a safe and liveable world",
+       "video": {
+        "_uid": "a8c3c771-370e-4a69-b0c0-9e417cf13f31",
+        "asset": {
+         "id": "891452463",
+         "alt": "We use the power of Geo-data to unlock the secrets of Earth . From surface to subsurface, from natural to built environment. Together with our partners and clients, we\u2019re solving tomorrow\u2019s problems today.",
+         "url": "https://player.vimeo.com/external/891452463.m3u8?s=d13a30edd00fb8cdff919fbd1f0e459426a38862&oauth2_token_id=1697800225",
+         "name": "We are Fugro - 37.64MB - 2m 6s  ",
+         "scheme": "video",
+         "filename": "https://player.vimeo.com/external/891452463.m3u8?s=d13a30edd00fb8cdff919fbd1f0e459426a38862&oauth2_token_id=1697800225",
+         "rendition": "adaptive",
+         "previewUrl": "https://i.vimeocdn.com/video/1764131280-bac1c185ef2c49f301445a48ae82976d8e0ee1f10b6ef8dc0953ee43f732d9fb-d",
+         "description": "We use the power of Geo-data to unlock the secrets of Earth . From surface to subsurface, from natural to built environment. Together with our partners and clients, we\u2019re solving tomorrow\u2019s problems today.",
+         "releaseTime": "2023-12-05T13:42:31+00:00"
+        },
+        "plugin": "image-selector"
+       },
+       "component": "heroWithVideo",
+       "logoImage": {
+        "_uid": "59c85438-a025-4959-a445-e5294398c7ff",
+        "asset": null,
+        "plugin": "image-selector"
+       },
+       "buttonText": "Watch our story (2 minutes)",
+       "fullHeight": false,
+       "imageBelow": {
+        "_uid": "f8e8af1e-6bde-445e-a329-5b1bcbf16f5e",
+        "asset": null,
+        "plugin": "image-selector"
+       },
+       "description": "We use the power of Geo-data to unlock the secrets of Earth ",
+       "hasMarginBottom": false
+      }
+     ],
+     "theme": "",
+     "metaTag": "",
+     "seoData": {
+      "_uid": "e202260d-80c3-4212-b24b-589976eafe83",
+      "title": "Creating a Safe and Liveable World ",
+      "plugin": "seo_metatags",
+      "og_image": "",
+      "og_title": "",
+      "description": "Discover Fugro, world leader in Geo-data solutions, empowering sustainable development and safety. Explore how our expertise supports a more liveable world.",
+      "twitter_image": "",
+      "twitter_title": "",
+      "og_description": "",
+      "twitter_description": ""
+     },
+     "component": "commerceHomePage",
+     "crossLink": [
+      {
+       "_uid": "72a40f0c-0a9c-47dd-a2c1-d495be9aae8f",
+       "image": {
+        "_uid": "95fdbb51-c359-4b42-ad41-d224345dcf8a",
+        "asset": {
+         "id": "ehibrn0ohl617eu5rjlv7lc404",
+         "alt": "The German REO 26, early eighties\nImages from Fugro 40 year anniversary book page 157",
+         "url": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_ehibrn0ohl617eu5rjlv7lc404/-FJPG",
+         "info": {
+          "width": 2050,
+          "height": 1386,
+          "isMdcImage": true
+         },
+         "name": "German REO 26, early eighties.jpg",
+         "type": "image/jpeg",
+         "scheme": "image",
+         "filename": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_ehibrn0ohl617eu5rjlv7lc404/-FJPG",
+         "metaData": {
+          "tag": [
+           "40 year anniversary",
+           "archivepage"
+          ],
+          "ogUrl": "https://fugro.canto.global/direct/image/ehibrn0ohl617eu5rjlv7lc404/Euq3Gk6VQ-WySU2fSFbgN8svzY0/original?content-type=image%2Fjpeg&name=German+REO+26%2C+early+eighties.jpg",
+          "ogSize": 6132968,
+          "ogWidth": 2720,
+          "ogHeight": 1839,
+          "smartTags": [
+           "Coat",
+           "Machine",
+           "Person",
+           "Truck",
+           "Vehicle"
+          ],
+          "assetAudience": [
+           "L4 - Historic (archive)"
+          ]
+         },
+         "previewUrl": "https://fugro.canto.global/direct/image/ehibrn0ohl617eu5rjlv7lc404/Qbd6dEImjJgKDOtdS-4BjKArX6I/m800/800",
+         "description": "The German REO 26, early eighties\nImages from Fugro 40 year anniversary book page 157"
+        },
+        "plugin": "image-selector"
+       },
+       "intro": "Founded in 1962",
+       "links": [
+        {
+         "_uid": "cade8bc6-66c2-459f-a371-41ddb1f97555",
+         "href": {
+          "id": "156dba44-7d3f-4887-9bdb-b0b792768510",
+          "url": "",
+          "linktype": "story",
+          "fieldtype": "multilink",
+          "cached_url": "content/about-us/history/",
+          "story": {
+           "name": "History",
+           "created_at": "2023-05-04T15:12:09.091Z",
+           "published_at": "2026-04-13T08:49:20.441Z",
+           "updated_at": "2026-04-13T08:49:20.459Z",
+           "id": 302427073,
+           "uuid": "156dba44-7d3f-4887-9bdb-b0b792768510",
+           "content": {
+            "_uid": "ea79f5d6-4805-4586-abfc-29555595ca5c",
+            "hero": [
+             {
+              "_uid": "500a8788-e89f-4995-81c7-d7f6778f5481",
+              "image": {
+               "_uid": "0b97fbd3-154b-4915-92d9-12d363129780",
+               "asset": {
+                "id": "rfcjtv1rk17dj3b7j6ur3o4u6m",
+                "alt": "Astrid Mohr, Jeanette Visser and Herman Zuidberg in the new laboratory in the back garden of the Voorburgseweg. \nImages from Fugro 40 year anniversary book page 29",
+                "url": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_rfcjtv1rk17dj3b7j6ur3o4u6m/-FJPG",
+                "info": {
+                 "width": 2050,
+                 "height": 1557,
+                 "isMdcImage": true
+                },
+                "name": "Fugro 40 year 029.jpg",
+                "type": "image/jpeg",
+                "scheme": "image",
+                "filename": "https://d3rwfsce0vn25a.cloudfront.net/image/665520746864/image_rfcjtv1rk17dj3b7j6ur3o4u6m/-FJPG",
+                "metaData": {
+                 "tag": [
+                  "40 year anniversary",
+                  "50 years anniversary book",
+                  "Archive",
+                  "Elm",
+                  "History",
+                  "photo archive",
+                  "photoarchive"
+                 ],
+                 "ogUrl": "https://fugro.canto.global/direct/image/rfcjtv1rk17dj3b7j6ur3o4u6m/jShM2DoGpo9_53vlwqdSfaFVXyk/original?content-type=image%2Fjpeg&name=Fugro+40+year+029.jpg",
+                 "ogSize": 3780401,
+                 "ogWidth": 2718,
+                 "ogHeight": 2065,
+                 "smartTags": [
+                  "Untagged"
+                 ]
+                },
+                "previewUrl": "https://fugro.canto.global/direct/image/rfcjtv1rk17dj3b7j6ur3o4u6m/c9M0rXfMcYT-gBHj98asC9bO1fo/m800/800",
+                "description": "Astrid Mohr, Jeanette Visser and Herman Zuidberg in the new laboratory in the back garden of the Voorburgseweg. \nImages from Fugro 40 year anniversary book page 29"
+               },
+               "plugin": "image-selector"
+              },
+              "label": "",
+              "theme": "",
+              "title": "Our history and timeline",
+              "component": "heroTitle",
+              "description": ""
+             }
+            ],
+            "theme": "commerce",
+            "metaTag": "",
+            "seoData": {
+             "_uid": "96240402-fe9b-4cf5-a40a-c17da738132c",
+             "title": "Our History and Timeline",
+             "plugin": "seo_metatags",
+             "og_image": "",
+             "og_title": "",
+             "description": "Explore the evolution of Fugro since its founding in 1962 as an engineering company. Discover our journey, milestones, and growth through the years. Learn about Fugro's history and how we've transformed over time.",
+             "twitter_image": "",
+             "twitter_title": "",
+             "og_description": "",
+             "twitter_description": ""
+            },
+            "metaType": "",
+            "component": "landingPage",
+            "crossLink": [
+             {
+              "_uid": "d3e0d96a-92f7-4971-8a35-edf1766f3723",
+              "image": {
+               "_uid": "8d68c477-e98e-4415-ac1a-bf15e37f13bf",
+               "asset": {
+                "id": "hdhtcuiud15850t32c9c4dq06r",
+                "alt": "Site investigation (CPT and drilling) and monitoring\nPerforming CPT, drilling and monitoring of the Grimburgwal canal in Amsterdam",
+                "url": "https://fugro.canto.global/direct/image/hdhtcuiud15850t32c9c4dq06r/hifwiWvDgXicEau0Ik-N6a8N7V4/original?content-type=image%2Fjpeg&name=MEN03693.jpg",
+                "name": "MEN03693.jpg",
+                "scheme": "image",
+                "filename": "https://fugro.canto.global/direct/image/hdhtcuiud15850t32c9c4dq06r/hifwiWvDgXicEau0Ik-N6a8N7V4/original?content-type=image%2Fjpeg&name=MEN03693.jpg",
+                "previewUrl": "https://fugro.canto.global/direct/image/hdhtcuiud15850t32c9c4dq06r/WnJXHfTCjB4EF2p16O9qav6RSNM/m800/800",
+                "description": "Site investigation (CPT and drilling) and monitoring\nPerforming CPT, drilling and monitoring of the Grimburgwal canal in Amsterdam"
+               },
+               "plugin": "image-selector"
+              },
+              "intro": "",
+              "links": [
+               {
+                "_uid": "8613c62e-a436-4d57-934f-0aa955d722e2",
+                "href": {
+                 "id": "af11ed99-2c65-4601-829f-1c190b03d926",
+                 "url": "",
+                 "linktype": "story",
+                 "fieldtype": "multilink",
+                 "cached_url": "content/about-us/what-we-do-at-fugro"
+                },
+                "label": "Read more",
+                "component": "link"
+               }
+              ],
+              "theme": "commerceSecondary",
+              "title": "What we do at Fugro",
+              "variant": "FOOTER_MAIN",
+              "subtitle": "",
+              "component": "crossLinkFooter",
+              "isReversed": false,
+              "description": "The more you know, the smaller the risk. Founded as an engineering company in the 60s, Fugro have led the way in creating a safe and liveable world with advanced Geo-data, actionable insights and expert consultancy. Today, we stand proud with over 11,000 experts working across 52 countries. Find out more about how Fugro\u2019s expertise can support your project across its life cycle. "
+             }
+            ],
+            "metaImage": {
+             "_uid": "892b7221-784c-4b5b-9be4-dfe0608a1ceb",
+             "asset": null,
+             "plugin": "image-selector"
+            },
+            "metaTitle": "History",
+            "NL_version": "[\"None\"]",
+            "metaDescription": "It all started in 1962. See how we got to where we are today.",
+            "metaOrganizations": []
+           },
+           "slug": "history",
+           "full_slug": "content/about-us/history/",
+           "sort_by_date": null,
+           "position": -10,
+           "tag_list": [
+            "NL content",
+            "NL Page"
+           ],
+           "is_startpage": true,
+           "parent_id": 302419269,
+           "meta_data": null,
+           "group_id": "ee2d33c7-5cd9-4bc5-94e5-9eb5d95de5ed",
+           "first_published_at": "2023-05-04T15:15:38.986Z",
+           "release_id": null,
+           "lang": "default",
+           "path": null,
+           "alternates": [],
+           "default_full_slug": "content/about-us/history/",
+           "translated_slugs": [
+            {
+             "path": "content/about-us/history/",
+             "name": null,
+             "lang": "de",
+             "published": false
+            },
+            {
+             "path": "content/over-ons/geschiedenis/",
+             "name": null,
+             "lang": "nl",
+             "published": true
+            }
+           ],
+           "_stopResolving": true
+          }
+         },
+         "label": "Read more",
+         "component": "link"
+        }
+       ],
+       "theme": "commerceSecondary",
+       "title": "Our history",
+       "variant": "FOOTER_MAIN",
+       "subtitle": "",
+       "component": "crossLinkFooter",
+       "isReversed": false,
+       "description": "Take a look how Fugro evolved over the years."
+      }
+     ],
+     "metaImage": {
+      "_uid": "b8576d29-f3f6-45d9-bf60-34e898cf2fbb",
+      "asset": null,
+      "plugin": "image-selector"
+     },
+     "metaTitle": "Fugro | Creating a safe and liveable world  ",
+     "NL_version": "[\"None\"]",
+     "metaDescription": "Discover Fugro, world leader in Geo-data solutions, empowering sustainable development and safety. Explore how our expertise supports a more liveable world.",
+     "metaCategoryRegion": [],
+     "metaCategoryIndustry": [],
+     "metaCategoryExpertise": [],
+     "metaCategorySubIndustry": [],
+     "metaCategoryLifeCycleStage": []
+    },
+    "slug": "content",
+    "full_slug": "content/",
+    "sort_by_date": null,
+    "position": -160,
+    "tag_list": [],
+    "is_startpage": true,
+    "parent_id": 251064979,
+    "meta_data": null,
+    "group_id": "d835fcf0-c6ea-463c-9af8-9d58d8901fa5",
+    "first_published_at": "2023-05-07T12:24:04.198Z",
+    "release_id": null,
+    "lang": "default",
+    "path": null,
+    "alternates": [],
+    "default_full_slug": "content/",
+    "translated_slugs": [
+     {
+      "path": "content/",
+      "name": null,
+      "lang": "de",
+      "published": false
+     },
+     {
+      "path": "content/",
+      "name": null,
+      "lang": "nl",
+      "published": true
+     }
+    ]
+   },
+   "_nextI18Next": {
+    "initialI18nStore": {
+     "en": {
+      "common": {
+       "404.intro.title": "Sorry, coordinates not found...",
+       "500.intro.title": "Sorry, something went wrong...",
+       "alert.status.active": "Active alert",
+       "article.overview.no-results.text": "Try a different filter value",
+       "article.overview.no-results.title": "Sorry, no articles were found with this filter",
+       "article.overview.other-publications": "Other publications",
+       "careers.contact.form.submit": "Send message",
+       "careers.contact.recruiter.cta.label": "Contact {{ name }}",
+       "careers.contact.recruiter.department.label": "Recruiter",
+       "careers.contact.recruiter.drawer.title": "Get in touch with",
+       "careers.contact.success-message": "We will get back to you as soon as possible.",
+       "careers.contact.success-title": "Your question has been sent successfully",
+       "careers.detail.apply": "Apply now",
+       "careers.detail.meta.level": "Stage",
+       "careers.detail.meta.location": "Location",
+       "careers.detail.meta.type": "Time",
+       "careers.detail.meta.workPlace": "Place",
+       "careers.detail.meta.workType": "Type",
+       "careers.easy-apply.error-message": "Your application could not be submitted. Please try again later or contact us directly for assistance.",
+       "careers.easy-apply.form.application.title": "Your resume",
+       "careers.easy-apply.form.bothOption.label": "Both",
+       "careers.easy-apply.form.resumeOption.label": "Resume",
+       "careers.easy-apply.form.socialProfile.title": "Social profile",
+       "careers.easy-apply.form.socialProfileOption.label": "Social profile",
+       "careers.easy-apply.form.submit": "Send application",
+       "careers.easy-apply.form.terms": "I agree to the <link1>Applicant Privacy Notice</link1>",
+       "careers.easy-apply.form.validation.countryCodeRequired": "Please select your country code",
+       "careers.easy-apply.form.validation.emailRequired": "Please enter your email address",
+       "careers.easy-apply.form.validation.emailValid": "Please enter a valid email address",
+       "careers.easy-apply.form.validation.emailWarning": "Are you sure this is a valid email address?",
+       "careers.easy-apply.form.validation.firstNameRequired": "Please enter your first name",
+       "careers.easy-apply.form.validation.lastNameRequired": "Please enter your last name",
+       "careers.easy-apply.form.validation.phoneNumberLengthBetween": "Please enter between {{min}} and {{max}} digits",
+       "careers.easy-apply.form.validation.phoneNumberLengthExact": "Please enter exactly {{max}} digits",
+       "careers.easy-apply.form.validation.phoneNumberRequired": "Please enter your phone number",
+       "careers.easy-apply.form.validation.profileRequired": "social profile is required",
+       "careers.easy-apply.form.validation.questionRequired": "Please enter your question",
+       "careers.easy-apply.form.validation.resumeRequired": "Resume is required",
+       "careers.easy-apply.form.validation.termsConditionsRequired": "Please accept the terms and conditions",
+       "careers.easy-apply.form.validation.validCharacters": "Please only use valid characters",
+       "careers.easy-apply.header.subtitle": "Innovation manager Satellite Positioning",
+       "careers.easy-apply.header.title": "Apply for",
+       "careers.easy-apply.recaptcha.policy": "This site is protected by reCAPTCHA and the Google <link1>Privacy Policy</link1> and <link2>Terms of Service</link2> apply.",
+       "careers.easy-apply.section.application.subtitle": "How would you like to apply?",
+       "careers.easy-apply.section.application.title": "Application method",
+       "careers.easy-apply.section.personal.subtitle": "Tell me something about you",
+       "careers.easy-apply.section.personal.title": "Personal details",
+       "careers.easy-apply.success-message": "You will receive a confirmation email shortly",
+       "careers.easy-apply.success-title": "Thanks for your interest in Fugro!",
+       "careers.events.noEvents": "No upcoming events scheduled",
+       "careers.form.fileUpload.error.fileTooLarge": "File is too large, max size is {{ allowedFileSize }}",
+       "careers.form.fileUpload.error.invalidType": "Please select a file with one of the following file extensions: {{ allowedExtensions }}",
+       "careers.form.general-error": "Please make sure all fields are filled in correctly",
+       "careers.form.input.label.company": "Company",
+       "careers.form.input.label.email": "E-mail Address",
+       "careers.form.input.label.firstName": "First name",
+       "careers.form.input.label.lastName": "Last name",
+       "careers.form.input.label.phoneNumber": "Phone number",
+       "careers.form.input.label.question": "What\u2019s your question?",
+       "careers.form.input.upload.motivation.title": "Motivation Letter",
+       "careers.hero.results.title": "We found {{ count }} jobs for you",
+       "careers.job-listing.schema.employer": "Fugro is the world\u2019s leading Geo-data specialist, collecting and analysing comprehensive information about the Earth and the structures built upon it. Adopting an integrated approach that incorporates acquisition and analysis of Geo-data and related advice, Fugro provides solutions. With expertise in site characterisation and asset integrity, clients are supported in the safe, sustainable and efficient design, construction and operation of their assets throughout the full life cycle. Employing approximately 9000 talented people in 61 countries, Fugro serves clients around the globe, predominantly in the energy and infrastructure industries, both offshore and onshore.",
+       "careers.overview.form.input.keyword": "Search by keyword",
+       "careers.overview.form.submit": "Search",
+       "careers.overview.no-results.text": "Try a different search term, expertise or country",
+       "careers.overview.no-results.title": "Sorry, no jobs with this filter or search term",
+       "careers.overview.results.clear-filters": "Clear filters",
+       "careers.overview.results.load-more": "Load more",
+       "careers.overview.results.title": "Showing {{ count }} of {{ total }} search results",
+       "careers.search.form.input.keyword": "Search by keyword",
+       "careers.search.form.title": "Ready for the next step in your career?",
+       "careers.vacancies.allCountries": "All countries",
+       "careers.vacancies.listing.location.description": "You can indicate your preferred working location in your motivation letter or in the next stage of the recruitment process.",
+       "careers.vacancies.locations.collapse": "- Collapse locations",
+       "careers.vacancies.locations.show-more": "+ {{ amount }} more",
+       "careers.vacancies.openJobs": "open jobs",
+       "common.error": "Something went wrong.",
+       "common.lang.selector": "Language selection",
+       "common.loading": "loading...",
+       "common.no-data": "No data found",
+       "common.page": "Page",
+       "contact.cta.label": "Contact {{ name }}",
+       "contact.drawer.title": "Get in touch with",
+       "contact.form.error-message": "Your question could not be submitted. Please try again later.",
+       "contact.form.general-error": "Please make sure all fields are filled in correctly",
+       "contact.form.input.label.company": "Company",
+       "contact.form.input.label.email": "E-mail Address",
+       "contact.form.input.label.firstName": "First name",
+       "contact.form.input.label.lastName": "Last name",
+       "contact.form.input.label.phoneNumber": "Phone number",
+       "contact.form.input.label.question": "What\u2019s your question?",
+       "contact.form.submit": "Send message",
+       "contact.fugro.inCountry": "Contact Fugro in {{country}}",
+       "contact.header.subtitle": "Subject name",
+       "contact.header.title": "Get in touch about",
+       "contact.section.contactUs": "Contact us",
+       "contact.section.getInTouch": "Get in touch for",
+       "contact.success-message": "We will get back to you as soon as possible.",
+       "contact.success-title": "Your question has been sent successfully",
+       "content.relatedJobs.ctaLabel": "More jobs",
+       "content.relatedJobs.title": "Related jobs",
+       "cta.back": "Back",
+       "cta.delete": "Delete",
+       "cta.download": "Download",
+       "cta.next": "Next",
+       "cta.prev": "Previous",
+       "cta.read-more": "Read more",
+       "cta.reset-filters": "Reset filters",
+       "error-page.title": "Error: {{code}}",
+       "errorPage.fallback.about.body": "Learn more about our company and our mission to help create a safe and liveable world.",
+       "errorPage.fallback.about.title": "About Fugro",
+       "errorPage.fallback.careers.body": "Explore opportunities to create positive impact on a global scale.",
+       "errorPage.fallback.careers.title": "Careers",
+       "errorPage.fallback.expertise.body": "Discover our areas of expertise in renewable energy , infrastructure and water.",
+       "errorPage.fallback.expertise.title": "Our Expertise",
+       "errorPage.fallback.investors.body": "Stay up-to-date with Fugro's financial and shareholder information.",
+       "errorPage.fallback.investors.title": "Investor Relations Information",
+       "errorPage.fallback.news.body": "Stay informed with Fugro's latest news and industry updates.",
+       "errorPage.fallback.news.title": "News",
+       "errorPage.fallback.press-releases.body": "Access our official press releases on company news and updates.",
+       "errorPage.fallback.press-releases.title": "Press Releases",
+       "errorPage.fallback.title": "We cannot find the page you wanted to visit. Please check one of the following sections to find the information you need:",
+       "filters.label": "Filter by",
+       "footer.allRightsReserved": "All rights reserved",
+       "form.label.optional": "(optional)",
+       "form.phoneNumber.placeholder": "-- Select --",
+       "form.validation.countryCodeRequired": "Please select your country code",
+       "form.validation.emailRequired": "Please enter your email address",
+       "form.validation.emailValid": "Please enter a valid email address",
+       "form.validation.firstNameRequired": "Please enter your first name",
+       "form.validation.lastNameRequired": "Please enter your last name",
+       "form.validation.phoneNumberLengthBetween": "Please enter between {{min}} and {{max}} digits",
+       "form.validation.phoneNumberLengthExact": "Please enter exactly {{max}} digits",
+       "form.validation.phoneNumberRequired": "Please enter your phone number",
+       "form.validation.profileRequired": "social profile is required",
+       "form.validation.questionRequired": "Please enter your question",
+       "form.validation.resumeRequired": "Resume is required",
+       "form.validation.validCharacters": "Please only use valid characters",
+       "header.navigation.about.label": "About",
+       "header.navigation.button.menu": "Menu",
+       "header.navigation.button.notifications": "Notifications",
+       "header.navigation.button.profile": "Profile",
+       "header.navigation.button.search": "Search",
+       "header.navigation.careers.label": "Careers",
+       "header.navigation.cta": "Get in touch",
+       "header.navigation.home.label": "Home",
+       "header.navigation.industries.label": "Industries",
+       "header.navigation.investors.label": "Investors",
+       "header.navigation.language.select": "Select language",
+       "header.navigation.news.label": "News",
+       "header.navigation.overview.label": "Overview",
+       "header.navigation.solutions.label": "Solutions",
+       "image.alt.default": "Infographic",
+       "life.cycle.expertise": "Expertise applied in this project",
+       "life.cycle.expertiseTag_one": "{{count}} area of expertise",
+       "life.cycle.expertiseTag_other": "{{count}} areas of expertise",
+       "life.cycle.inactivePhase": "Not in this project",
+       "life.cycle.showprocess": "Show full process",
+       "mailchimp.button.subscribe": "Subscribe",
+       "mailchimp.fields.company": "Company",
+       "mailchimp.fields.email-address": "Email address",
+       "mailchimp.fields.email-notifications": "Email notifications",
+       "mailchimp.fields.first-name": "First Name",
+       "mailchimp.fields.fugro-digest": "Fugro digest - Case studies, stories, interviews, podcasts and videos from Fugro",
+       "mailchimp.fields.gdpr": "Please check the box to agree to receive notifications from Fugro.com",
+       "mailchimp.fields.job-title": "Job title",
+       "mailchimp.fields.last-name": "Last Name",
+       "mailchimp.fields.news": "News \u2013 including project awards, project completions and innovations",
+       "mailchimp.fields.press-releases": "Press releases \u2013 key news, including updates on Fugro\u2019s strategy, results and major project awards",
+       "mailchimp.fields.privacy": "You can unsubscribe at any time by clicking the link in the footer of our emails. For information about our privacy practices, please visit the <a href=\"https://www.fugro.com/privacy-notice\">Fugro Privacy Notice</a>.",
+       "mailchimp.general.indicates-required": "indicates required",
+       "map.popup.cta.label": "View all locations",
+       "marketo.form.submit.error": "Submission failed, please try again later.",
+       "recaptcha.legal-info": "This site is protected by reCAPTCHA and the Google <a href=\"https://policies.google.com/privacy\">Privacy Policy</a> and <a href=\"https://policies.google.com/terms\">Terms of Service</a> apply.",
+       "search-box.placeholder": "Search by keyword",
+       "search-results.all": "Results",
+       "search-results.empty-state": "Start typing to search our site.",
+       "search-results.error": "Something went wrong while searching. Please try again.",
+       "search-results.filters.all": "All",
+       "search-results.load-more": "Load more",
+       "search-results.title.default": "Search",
+       "search-results.title.primary.plural": "{{ count }} results for '{{ searchQuery }}'",
+       "search-results.title.primary.singular": "{{ count }} result for '{{ searchQuery }}'",
+       "section.navigation.label.jump-to": "Jump to",
+       "show.less": "Show less",
+       "show.more": "Show more",
+       "video.button.close": "Close video",
+       "video.button.play": "Play video"
+      },
+      "datasources": {
+       "country-list": {
+        "Albania": "Albania",
+        "Angolia": "Angolia",
+        "Australia": "Australia",
+        "Austria": "Austria",
+        "Azerbaijan": "Azerbaijan",
+        "Bangladesh": "Bangladesh",
+        "Belgium": "Belgium",
+        "Brazil": "Brazil",
+        "Brunei Darussalam": "Brunei Darussalam",
+        "Cameroon": "Cameroon",
+        "Canada": "Canada",
+        "Chile": "Chile",
+        "China": "China",
+        "Colombia": "Colombia",
+        "Congo": "Congo",
+        "Cura\u00e7ao": "Cura\u00e7ao",
+        "Egypt": "Egypt",
+        "France": "France",
+        "Gabon": "Gabon",
+        "Germany": "Germany",
+        "Ghana": "Ghana",
+        "Guyana": "Guyana",
+        "Hong Kong": "Hong Kong",
+        "Hungary": "Hungary",
+        "India": "India",
+        "Indonesia": "Indonesia",
+        "Ireland": "Ireland",
+        "Italy": "Italy",
+        "Japan": "Japan",
+        "Kazakhstan": "Kazakhstan",
+        "Lithuania": "Lithuania",
+        "Luxembourg": "Luxembourg",
+        "Macau": "Macau",
+        "Malaysia": "Malaysia",
+        "Malta": "Malta",
+        "Mauritius": "Mauritius",
+        "Mexico": "Mexico",
+        "Mozambique": "Mozambique",
+        "New Zealand": "New Zealand",
+        "Nigeria": "Nigeria",
+        "Norway": "Norway",
+        "Pakistan": "Pakistan",
+        "Peru": "Peru",
+        "Philippines": "Philippines",
+        "Qatar": "Qatar",
+        "Sao Tome and Principe": "Sao Tome and Principe",
+        "Saudi Arabia": "Saudi Arabia",
+        "Sierra Leone": "Sierra Leone",
+        "Singapore": "Singapore",
+        "South Africa": "South Africa",
+        "South Korea": "South Korea",
+        "Spain": "Spain",
+        "Suriname": "Suriname",
+        "Switzerland": "Switzerland",
+        "Taiwan": "Taiwan",
+        "Thailand": "Thailand",
+        "Trinidad and Tobago": "Trinidad and Tobago",
+        "Turkey": "Turkey",
+        "United Arab Emirates": "United Arab Emirates",
+        "United Kingdom": "United Kingdom",
+        "United States": "United States",
+        "Vietnam": "Vietnam",
+        "the Netherlands": "the Netherlands"
+       },
+       "filters": {
+        "metaCategoryExpertise": {
+         "Environmental site assessments and remediation": "Environmental site assessments and remediation",
+         "Fibre optic cable route surveys": "Fibre optic cable route surveys",
+         "Flood risk mapping and flood defence": "Flood risk mapping and flood defence",
+         "Foundation design and testing": "Foundation design and testing",
+         "Foundations and geotechnical services": "Foundations and geotechnical services",
+         "Geo-consulting": "Geo-consulting",
+         "Geo-monitoring": "Geo-monitoring",
+         "Geological and geophysical surveys": "Geological and geophysical surveys",
+         "Geophysical and site appraisal": "Geophysical and site appraisal",
+         "Geotechnical ground investigations": "Geotechnical ground investigations",
+         "Geotechnical ground investigations and UXO": "Geotechnical ground investigations",
+         "GroundIQ\u00ae": "GroundIQ\u00ae",
+         "Groundwater": "Groundwater",
+         "Hydrographic surveys": "Hydrographic surveys",
+         "Hydrology": "Hydrology",
+         "Laboratory testing and data delivery": "Laboratory testing and data delivery",
+         "Law of the Sea": "Law of the Sea",
+         "Levee design": "Levee design",
+         "Metocean": "Metocean",
+         "Offshore wind operations and maintenance": "Offshore wind operations and maintenance",
+         "Positioning and construction support": "Positioning and construction support",
+         "Power": "Power",
+         "Power cable routing and design": "Power cable routing and design",
+         "Rail": "Rail",
+         "Remote and autonomous solutions": "Remote and autonomous solutions",
+         "Road condition surveys": "Road condition surveys",
+         "Satellite positioning": "Satellite positioning",
+         "Seismic acquisition and imaging services": "Seismic acquisition and imaging services",
+         "Structural health monitoring": "Structural health monitoring",
+         "Subsea inspection, repair and maintenance": "Subsea inspection, repair and maintenance",
+         "Subsea pipeline consultancy and design": "Subsea pipeline consultancy and design",
+         "Survey and dimensional control": "Survey and dimensional control",
+         "Surveying and mapping": "Surveying and mapping",
+         "UXO risk mitigation": "UXO risk mitigation",
+         "Verification of design and calibration": "Verification of design and calibration",
+         "VirGeo\u00ae: Transform Geo-data into informed decisions": "VirGeo\u00ae: Transform Geo-data into informed decisions",
+         "Weather forecasting": "Weather forecasting"
+        },
+        "metaCategoryIndustry": {
+         "Energy": "Energy",
+         "Infrastructure": "Infrastructure",
+         "Water": "Water"
+        },
+        "metaCategoryRegion": {
+         "AME": "Americas",
+         "APAC": "Asia Pacific",
+         "EUAF": "Europe and Africa",
+         "Global": "Global",
+         "MEI": "Middle East and India"
+        }
+       },
+       "lifecycle-stages": {
+        "phase-1": "Planning, feasibility, conceptual design",
+        "phase-2": "Design",
+        "phase-3": "Construction",
+        "phase-4": "Operations and maintenance",
+        "phase-5": "Decommissioning"
+       },
+       "pageTypes": {
+        "Business news": "Business news",
+        "Case study": "Case study",
+        "Employee story": "Employee story",
+        "Expertise": "Expertise",
+        "Long read": "Long read",
+        "Page": "Page",
+        "Podcast": "Podcast",
+        "Press release": "Press release"
+       }
+      },
+      "global": {
+       "global.popup.button-cancel": "Go back",
+       "global.popup.button-ok": "View the page in English",
+       "global.popup.message": "Would you like to view the page in English or go back to the previous page?",
+       "global.popup.title": "Page only available in English",
+       "unlocalised.popup.button-cancel": "Go back",
+       "unlocalised.popup.button-ok": "Continue in English",
+       "unlocalised.popup.message": "Would you like to continue in English or go back?",
+       "unlocalised.popup.title": "This page is not available in Dutch"
+      }
+     }
+    },
+    "initialLocale": "en",
+    "ns": [
+     "common",
+     "datasources",
+     "global"
+    ],
+    "userConfig": {
+     "i18n": {
+      "locales": [
+       "en"
+      ],
+      "defaultLocale": "en",
+      "localeDetection": false
+     },
+     "ns": [
+      "common",
+      "datasources",
+      "global"
+     ],
+     "reloadOnPrerender": false,
+     "localePath": "/var/task/public/locales",
+     "default": {
+      "i18n": {
+       "locales": [
+        "en"
+       ],
+       "defaultLocale": "en",
+       "localeDetection": false
+      },
+      "ns": [
+       "common",
+       "datasources",
+       "global"
+      ],
+      "reloadOnPrerender": false,
+      "localePath": "/var/task/public/locales"
+     }
+    }
+   }
+  },
+  "__N_SSG": true
+ },
+ "page": "/[[...slug]]",
+ "query": {},
+ "buildId": "02MW7n8UD0vTRine92LZG",
+ "isFallback": false,
+ "isExperimentalCompile": false,
+ "gsp": true,
+ "locale": "en",
+ "locales": [
+  "en"
+ ],
+ "defaultLocale": "en",
+ "scriptLoader": []
+}

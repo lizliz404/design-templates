@@ -1,0 +1,320 @@
+- document:
+  - banner:
+    - link "Home":
+      - /url: /en
+      - img
+    - list:
+      - listitem:
+        - link "Industries":
+          - /url: /industries
+      - listitem:
+        - link "Expertise":
+          - /url: /expertise
+      - listitem:
+        - link "Careers":
+          - /url: /careers
+      - listitem:
+        - link "Investors":
+          - /url: /investors
+      - listitem:
+        - link "News":
+          - /url: /news
+      - listitem:
+        - link "About us":
+          - /url: /about-us
+    - button "Search":
+      - img
+    - link "Profile":
+      - /url: /portals
+      - img
+  - main:
+    - heading "Create positive impact on a global scale" [level=1]
+    - paragraph: Ready for the next step in your career?
+    - textbox "Search by keyword"
+    - paragraph: All expertise
+    - img
+    - paragraph: Location
+    - img
+    - button "Search"
+    - img "Geotechnical drilling in Hong Kong 04.jpg"
+    - list:
+      - listitem:
+        - paragraph: Jump to
+      - listitem:
+        - button "Why join us"
+      - listitem:
+        - button "Employee stories"
+      - listitem:
+        - button "Fugro in numbers"
+      - listitem:
+        - button "Learning and development"
+      - listitem:
+        - button "Diversity"
+      - listitem:
+        - button "Featured countries"
+      - listitem:
+        - button "Jobs"
+    - heading "Welcome to Fugro!" [level=2]
+    - paragraph: "\"We are committed to providing a healthy, safe and secure workplace for all our people. At Fugro, Safety is more than just a requirement for us; it's a fundamental part of how we operate. And thanks to our safety standards, our teams are protected at sea, on land, and at all our facilities.\""
+    - img "Erwin Hoogeveen - Dec 2024.jpg"
+    - paragraph: Erwin Hoogeveen
+    - paragraph: Group Director Human Resources
+    - paragraph: We're always looking for bright minds who enjoy meaningful work and want to push our pioneering spirit further.
+    - heading "What makes us Fugro" [level=2]
+    - link "Why join us":
+      - /url: /careers/working-at-fugro
+      - text: Why join us
+      - img
+    - img "FACES OF FUGRO.00_00_50_22.Still030.jpg"
+    - paragraph: "01"
+    - heading "Freedom to grow faster" [level=2]
+    - paragraph: In our business, you sometimes need to grab bulls by their horns. If you’re open to taking the initiative, big opportunities await you at Fugro. And while we believe that you’re responsible for your own career, we’ll actively support you to further develop yourself.
+    - paragraph: "02"
+    - heading "Focused on teamwork" [level=2]
+    - paragraph: Individuals can achieve good things, but it’s true that there’s strength in numbers. In our experience, working together makes us stronger and better placed to find the best solutions for our clients. So you can expect to work in great teams with capable, open-minded people like yourself.
+    - paragraph: "03"
+    - heading "International Geo-data environment" [level=2]
+    - paragraph: "We work around the world, which means you can too. But wherever your role with us takes you, our inclusive culture remains the same. That goes for our curiosity too: we may know the earth well now, but our people are always keen to learn more."
+    - paragraph: "04"
+    - heading "Reliable employer" [level=2]
+    - paragraph: Fugro is a people business built on trust. We’re committed to being an employer you can depend on, just as we need to be able to rely on you. So honesty and responsibility are important, especially when it comes to the vital goal of a safe working environment (for minds and bodies alike).
+    - paragraph: "05"
+    - heading "Challenging projects, exciting opportunities" [level=2]
+    - paragraph: We always find ourselves ahead of the curve. It’s why we can offer the best projects to test yourself on. To stay out in front we continually adapt and enhance the way we work, from everyday processes to breakthrough operations. Which keeps the stimulating assignments coming.
+    - paragraph: "06"
+    - heading "Be whoever you want to be" [level=2]
+    - paragraph: Actors need not apply, because you can be yourself here. We encourage our people to bring their enthusiasm and a bit of their own personality to dealings with colleagues and clients. We also know that diversity gives us strength in depth, including the different perspectives that help us to excel together.
+    - img "lane4.jpg"
+    - paragraph: Employee story
+    - heading "Lane, Geophysical Operator" [level=2]
+    - paragraph: "\"I largely view it the same as my touring days. You don't have the crowd, the adulation and the band. But on our view, when we pull on the location and deploy the gear, that's the show! We load in, we do the show, we load out and move on to another site.\""
+    - paragraph: Employee story
+    - heading "Melanie, Senior Geotechnical Engineer" [level=2]
+    - paragraph: “Treating the land respectfully means not leaving any lasting damage, not affecting the environment and the wildlife negatively. We investigate how to build safe and efficient, ensuring not only effectiveness but also longevity throughout the lifespan of the built structure.”
+    - paragraph: Employee story
+    - heading "Ben, Site Manager - Fugro Orca" [level=2]
+    - paragraph: “For me it's the fact that we can control an ROV remotely, while it is connected to a vessel with no one on board. Everything is controlled remotely. That's new tech, new equipment. It’s exciting!”
+    - paragraph: Employee story
+    - heading "Paige, Remote Operations Surveyor" [level=2]
+    - paragraph: "“We are very diverse in the jobs that we do: From land to offshore, to being in the air! This gives you opportunity to grow as well.\""
+    - link "Read more":
+      - /url: /careers/stories/lane-geophysical-operator
+      - text: Read more
+      - img
+    - paragraph: 1 / 4
+    - button "Previous" [disabled]:
+      - img
+    - button "Next":
+      - img
+    - paragraph: Numbers
+    - heading "Fugro in numbers" [level=2]
+    - text: "117"
+    - paragraph: Nationalities
+    - heading "We’re a diverse collective" [level=2]
+    - paragraph: Having a variety of views and know-how also helps to sustain our culture, values and reputation.
+    - text: "1962"
+    - paragraph: Operating since
+    - heading "We have been around for a while" [level=2]
+    - paragraph: With our eyes on the future, we welcome change as a catalyst for innovation and more sustainable solutions.
+    - text: "52"
+    - paragraph: Countries
+    - heading "We are the world's leading Geo-data specialist" [level=2]
+    - paragraph: Fugro’s global reach and unique know-how will put the world at your fingertips.
+    - paragraph: Learning and development
+    - heading "Development opportunities at every career stage" [level=2]
+    - link "Read more":
+      - /url: /careers/working-at-fugro/learning-development
+      - text: Read more
+      - img
+    - link "FACES OF FUGRO.00_03_31_11.Still017.jpg U.Gro Programme Prepare for take-off Early careers":
+      - /url: /careers/working-at-fugro/u-gro
+      - img "FACES OF FUGRO.00_03_31_11.Still017.jpg"
+      - paragraph: U.Gro Programme
+      - heading "Prepare for take-off" [level=2]
+      - paragraph: Early careers
+    - link "FACES OF FUGRO.00_00_14_20.Still011.jpg Fugro Academy Steer your career Mid-Career":
+      - /url: /careers/working-at-fugro/fugro-academy
+      - img "FACES OF FUGRO.00_00_14_20.Still011.jpg"
+      - paragraph: Fugro Academy
+      - heading "Steer your career" [level=2]
+      - paragraph: Mid-Career
+    - link "FACES OF FUGRO.00_05_10_13.Still022.jpg International Leadership Track Management Traineeship For ambitious graduates":
+      - /url: /careers/working-at-fugro/international-leadership-track
+      - img "FACES OF FUGRO.00_05_10_13.Still022.jpg"
+      - paragraph: International Leadership Track
+      - heading "Management Traineeship" [level=2]
+      - paragraph: For ambitious graduates
+    - button "Previous" [disabled]:
+      - img
+    - button "Next":
+      - img
+    - img "Remotely positioning a CPT crawler 26.jpg"
+    - paragraph: Diversity, equity and inclusion
+    - heading "How we enable a truly diverse workforce" [level=2]
+    - paragraph: Our approach to diversity, equity and inclusion is simple. We want to encourage a culture of belonging, in which everyone can bring their best selves to work with confidence.
+    - link "Read more":
+      - /url: /careers/working-at-fugro/diversity-equity-and-inclusion
+      - text: Read more
+      - img
+    - paragraph: Countries
+    - heading "Featured countries" [level=2]
+    - link "All countries":
+      - /url: https://www.fugro.com/careers/countries#all-countries
+      - text: All countries
+      - img
+    - link "Geotechnical drilling in Hong Kong 05.jpg Join Fugro Careers in the Hong Kong 22°21'51.6064\"N, 114°7'56.7493\"E":
+      - /url: /careers/countries/hong-kong
+      - img "Geotechnical drilling in Hong Kong 05.jpg"
+      - heading "Join Fugro Careers in the Hong Kong" [level=2]
+      - paragraph: 22°21'51.6064"N, 114°7'56.7493"E
+    - link "Skate 2 jack-up barge_ Thames Tideway Tunnel_Tideway_Tower Bridge, London, United Kingdom.JPG Join Fugro Careers in the United Kingdom 51°35'55.7172\"N, 1°8'25.5002\"W":
+      - /url: /careers/countries/united-kingdom
+      - img "Skate 2 jack-up barge_ Thames Tideway Tunnel_Tideway_Tower Bridge, London, United Kingdom.JPG"
+      - heading "Join Fugro Careers in the United Kingdom" [level=2]
+      - paragraph: 51°35'55.7172"N, 1°8'25.5002"W
+    - link "Fugro Explorer in New York 07.jpg Fugro Careers in the United States 29°42'51.49996\"N, 95°29'51.57097\"W":
+      - /url: /careers/countries/united-states
+      - img "Fugro Explorer in New York 07.jpg"
+      - heading "Fugro Careers in the United States" [level=2]
+      - paragraph: 29°42'51.49996"N, 95°29'51.57097"W
+    - link "Deformation survey in Rotterdam 05.jpg Join Fugro Careers in the Netherlands 52°5'48.2807\"N, 4°24'17.4615\"E":
+      - /url: /careers/countries/netherlands
+      - img "Deformation survey in Rotterdam 05.jpg"
+      - heading "Join Fugro Careers in the Netherlands" [level=2]
+      - paragraph: 52°5'48.2807"N, 4°24'17.4615"E
+    - paragraph: Featured Jobs
+    - heading "Jobs" [level=2]
+    - link "View all jobs":
+      - /url: /careers/jobs
+      - text: View all jobs
+      - img
+    - link "Technical and Operations Survey Engineer Suriname":
+      - /url: /careers/jobs/R0032410-survey-engineer
+      - paragraph: Technical and Operations
+      - heading "Survey Engineer" [level=2]
+      - paragraph: Suriname
+      - button "Read more":
+        - img
+    - link "Projects Project Manager United Kingdom":
+      - /url: /careers/jobs/R0032271-project-manager
+      - paragraph: Projects
+      - heading "Project Manager" [level=2]
+      - paragraph: United Kingdom
+      - button "Read more":
+        - img
+    - link "Geo-data Junior Consultant Hydrogeologie und Wasserwirtschaft (m/w/d) Germany":
+      - /url: /careers/jobs/R0032499-junior-consultant-hydrogeologie-und-wasserwirtschaft-m-w-d
+      - paragraph: Geo-data
+      - heading "Junior Consultant Hydrogeologie und Wasserwirtschaft (m/w/d)" [level=2]
+      - paragraph: Germany
+      - button "Read more":
+        - img
+    - link "Geo-data Junior Consultant Geologe / Geowissenschaftler (m/w/d) Germany":
+      - /url: /careers/jobs/R0032498-junior-consultant-geologe-geowissenschaftler-m-w-d
+      - paragraph: Geo-data
+      - heading "Junior Consultant Geologe / Geowissenschaftler (m/w/d)" [level=2]
+      - paragraph: Germany
+      - button "Read more":
+        - img
+    - link "Technical and Operations Graduate Engineer- UAE National United Arab Emirates":
+      - /url: /careers/jobs/R0032443-graduate-engineer-uae-national
+      - paragraph: Technical and Operations
+      - heading "Graduate Engineer- UAE National" [level=2]
+      - paragraph: United Arab Emirates
+      - button "Read more":
+        - img
+    - link "IT Senior IT Support Administrator United States":
+      - /url: /careers/jobs/R0032089-senior-it-support-administrator
+      - paragraph: IT
+      - heading "Senior IT Support Administrator" [level=2]
+      - paragraph: United States
+      - button "Read more":
+        - img
+    - img "Engineer onboard Fugro Galaxy 05.jpg"
+    - heading "Would you like to stay up to date with relevant Fugro news and job opportunities?" [level=2]
+    - link "Join our Talent Community":
+      - /url: https://flows.beamery.eu/fugro/Join-the-Fugro-Talent-Community
+      - text: Join our Talent Community
+      - img
+    - heading "Would you like to receive relevant Job Alerts?" [level=2]
+    - link "Create an account":
+      - /url: https://fugro.wd3.myworkdayjobs.com/en-US/Careers/login?redirect=%2Fen-US%2FCareers%2FjobAlerts
+      - text: Create an account
+      - img
+  - contentinfo:
+    - img
+    - list:
+      - listitem:
+        - link "Industries":
+          - /url: /industries
+      - listitem:
+        - link "Expertise":
+          - /url: /expertise
+      - listitem:
+        - link "Careers":
+          - /url: /careers
+      - listitem:
+        - link "Investors":
+          - /url: /investors
+      - listitem:
+        - link "News":
+          - /url: /news
+      - listitem:
+        - link "About us":
+          - /url: /about-us
+    - paragraph: Subscribe to news alerts
+    - link "Sign up now":
+      - /url: /news/subscribe-for-news-alerts
+      - text: Sign up now
+      - img
+    - list:
+      - listitem:
+        - paragraph: Social media
+      - listitem:
+        - link "LinkedIn":
+          - /url: https://www.linkedin.com/company/fugro
+      - listitem:
+        - link "Facebook":
+          - /url: https://www.facebook.com/fugro
+      - listitem:
+        - link "X (Twitter)":
+          - /url: https://twitter.com/fugro
+      - listitem:
+        - link "Instagram":
+          - /url: https://www.instagram.com/fugro
+    - list:
+      - listitem:
+        - paragraph: Contact
+      - listitem:
+        - link "General contact":
+          - /url: /contact
+      - listitem:
+        - link "Our locations":
+          - /url: /contact/locations
+      - listitem:
+        - link "Talent Community":
+          - /url: https://flows.beamery.eu/fugro/Join-the-Fugro-Talent-Community
+      - listitem:
+        - link "Speak Up":
+          - /url: /contact/speak-up
+    - link "Cookies":
+      - /url: /cookie-policy
+    - link "Privacy statement":
+      - /url: /privacy-notice
+    - link "Disclaimer":
+      - /url: /disclaimer
+    - link "General purchase terms and conditions":
+      - /url: /fugro-general-purchase-terms-and-conditions
+    - text: © 2026 Fugro. All rights reserved Also of interest
+    - list:
+      - listitem:
+        - link "Creating a safe and liveable world":
+          - /url: https://www.fugro.com/
+      - listitem:
+        - link "We found 137 jobs for you":
+          - /url: https://www.fugro.com/careers/jobs
+      - listitem:
+        - link "Fugro Academy Training Centre":
+          - /url: https://www.fugro.com/expertise/other-expertise/fugro-academy-training-centre
+  - alert
+  - dialog "Cookie consent button": Cookie settings

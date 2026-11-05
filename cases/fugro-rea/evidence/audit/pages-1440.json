@@ -1,0 +1,49 @@
+{
+  "browser": {
+    "mode": "launch",
+    "executable_path": "/home/liz/.cache/ms-playwright/chromium-1248/chrome-linux64/chrome",
+    "headless": true
+  },
+  "environment": {
+    "viewport": { "width": 1440, "height": 900, "device_scale_factor": 1 },
+    "locale": "en-US",
+    "timezone": "UTC",
+    "color_scheme": "light",
+    "reduced_motion": "no-preference",
+    "service_workers": "block"
+  },
+  "start_url": { "url": "https://www.fugro.com/" },
+  "actions": [
+    { "step_id": "settle-home", "action": "wait_for_timeout", "duration_ms": 5000 },
+    { "step_id": "goto-industries", "action": "goto", "destination": { "url": "https://www.fugro.com/industries" }, "wait_until": "load", "timeout_ms": 30000 },
+    { "step_id": "settle-industries", "action": "wait_for_timeout", "duration_ms": 4000 },
+    { "step_id": "goto-energy", "action": "goto", "destination": { "url": "https://www.fugro.com/industries/energy" }, "wait_until": "load", "timeout_ms": 30000 },
+    { "step_id": "settle-energy", "action": "wait_for_timeout", "duration_ms": 4000 },
+    { "step_id": "goto-expertise", "action": "goto", "destination": { "url": "https://www.fugro.com/expertise" }, "wait_until": "load", "timeout_ms": 30000 },
+    { "step_id": "settle-expertise", "action": "wait_for_timeout", "duration_ms": 4000 },
+    { "step_id": "goto-news", "action": "goto", "destination": { "url": "https://www.fugro.com/news" }, "wait_until": "load", "timeout_ms": 30000 },
+    { "step_id": "settle-news", "action": "wait_for_timeout", "duration_ms": 4000 },
+    { "step_id": "goto-about", "action": "goto", "destination": { "url": "https://www.fugro.com/about-us" }, "wait_until": "load", "timeout_ms": 30000 },
+    { "step_id": "settle-about", "action": "wait_for_timeout", "duration_ms": 4000 },
+    { "step_id": "goto-careers", "action": "goto", "destination": { "url": "https://www.fugro.com/careers" }, "wait_until": "load", "timeout_ms": 30000 },
+    { "step_id": "settle-careers", "action": "wait_for_timeout", "duration_ms": 4000 },
+    { "step_id": "goto-jobs", "action": "goto", "destination": { "url": "https://www.fugro.com/careers/jobs" }, "wait_until": "load", "timeout_ms": 30000 },
+    { "step_id": "settle-jobs", "action": "wait_for_timeout", "duration_ms": 5000 },
+    { "step_id": "goto-contact", "action": "goto", "destination": { "url": "https://www.fugro.com/contact" }, "wait_until": "load", "timeout_ms": 30000 },
+    { "step_id": "settle-contact", "action": "wait_for_timeout", "duration_ms": 4000 },
+    { "step_id": "goto-investors", "action": "goto", "destination": { "url": "https://www.fugro.com/investors" }, "wait_until": "load", "timeout_ms": 30000 },
+    { "step_id": "settle-investors", "action": "wait_for_timeout", "duration_ms": 4000 },
+    { "step_id": "goto-search", "action": "goto", "destination": { "url": "https://www.fugro.com/search" }, "wait_until": "load", "timeout_ms": 30000 },
+    { "step_id": "settle-search", "action": "wait_for_timeout", "duration_ms": 4000 }
+  ],
+  "capture": {
+    "after_each_step": ["url", "dom", "accessibility", "screenshot"],
+    "at_end": ["url", "history"],
+    "events": ["console", "page-errors", "network"],
+    "network": {
+      "request_body": false,
+      "response_body": false,
+      "header_values": false
+    }
+  }
+}

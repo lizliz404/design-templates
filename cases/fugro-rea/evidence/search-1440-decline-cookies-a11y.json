@@ -1,0 +1,257 @@
+- document:
+  - banner:
+    - link "Home":
+      - /url: /en
+      - img
+    - list:
+      - listitem:
+        - link "Industries":
+          - /url: /industries
+      - listitem:
+        - link "Expertise":
+          - /url: /expertise
+      - listitem:
+        - link "Careers":
+          - /url: /careers
+      - listitem:
+        - link "Investors":
+          - /url: /investors
+      - listitem:
+        - link "News":
+          - /url: /news
+      - listitem:
+        - link "About us":
+          - /url: /about-us
+    - button "Search":
+      - img
+    - link "Profile":
+      - /url: /portals
+      - img
+    - link "Get in touch":
+      - /url: /contact
+  - main:
+    - heading "Creating a safe and liveable world" [level=1]
+    - paragraph: We use the power of Geo-data to unlock the secrets of Earth
+    - button "Play video":
+      - img
+    - text: Watch our story (2 minutes)
+    - img "CPT beach survey 20.jpg"
+    - list:
+      - listitem:
+        - paragraph: Jump to
+      - listitem:
+        - button "What we do"
+      - listitem:
+        - button "Our industries"
+      - listitem:
+        - button "Case studies"
+      - listitem:
+        - button "Organisation"
+      - listitem:
+        - button "Careers"
+      - listitem:
+        - button "News highlights"
+    - heading "What we do" [level=2]
+    - paragraph: Whatever you’re planning, building, or maintaining, we believe understanding the earth is key. At Fugro, we unlock its secrets in the form of Geo-data, which we apply to develop safer, more sustainable, and more efficient operations. It’s how we help create a safe and liveable world – together.
+    - link "Read more":
+      - /url: /about-us
+      - text: Read more
+      - img
+    - img "shutterstock_2064279029-2.jpg"
+    - paragraph: Our industries
+    - link "Supporting the energy transition We help improve the efficiency of energy generation and minimise the impact on our environment.":
+      - /url: /industries/energy
+      - paragraph: Supporting the energy transition
+      - paragraph: We help improve the efficiency of energy generation and minimise the impact on our environment.
+      - img
+    - link "Protecting our oceans We're dedicated to understanding our oceans and their surrounding coastal environments":
+      - /url: /industries/water
+      - paragraph: Protecting our oceans
+      - paragraph: We're dedicated to understanding our oceans and their surrounding coastal environments
+      - img
+    - link "Nearshore and urban development A tailored approach to sustainable infrastructure projects":
+      - /url: /industries/infrastructure
+      - paragraph: Nearshore and urban development
+      - paragraph: A tailored approach to sustainable infrastructure projects
+      - img
+    - heading "Examples of our expertise" [level=2]
+    - link "All case studies":
+      - /url: /expertise/case-studies
+      - text: All case studies
+      - img
+    - link "Lift boat on Mississippi River 02.jpg Case study Geotechnical Investigation for US-51 Ohio River Bridge 10 Jun 2026":
+      - /url: /expertise/case-studies/transforming-a-high-risk-river-crossing-into-design-certainty
+      - img "Lift boat on Mississippi River 02.jpg"
+      - paragraph: Case study
+      - heading "Geotechnical Investigation for US-51 Ohio River Bridge" [level=2]
+      - paragraph: 10 Jun 2026
+    - link "CPT truck_XRF-CPT-Cone_Requinoa, Chile.jpg Case study Seeing Inside a Tailings Dam | GroundIQ® 3D Risk Assessment 09 Jun 2026":
+      - /url: /expertise/case-studies/seeing-inside-a-tailings-dam-how-groundiq-helped-rule-out-hidden-structural-risks
+      - img "CPT truck_XRF-CPT-Cone_Requinoa, Chile.jpg"
+      - paragraph: Case study
+      - heading "Seeing Inside a Tailings Dam | GroundIQ® 3D Risk Assessment" [level=2]
+      - paragraph: 09 Jun 2026
+    - link "Fugro Vaquita in Brazil 02.jpg Case study Fugro | Remote Subsea Inspections for Petrobras, Brazil 22 May 2026":
+      - /url: /expertise/case-studies/remote-subsea-inspections-eliminate-personnel-risk-for-brazil-s-largest-oil-producer
+      - img "Fugro Vaquita in Brazil 02.jpg"
+      - paragraph: Case study
+      - heading "Fugro | Remote Subsea Inspections for Petrobras, Brazil" [level=2]
+      - paragraph: 22 May 2026
+    - heading "Our organisation" [level=2]
+    - link "Sea Auk working on WaveWalker 06.jpg Creating a Safe and Liveable World The work we do everyday, from infrastructure development consulting services to marine assessments, is accelerating our positive impact across the globe. Find out more about how we support renewable energy, ocean health & biodiversity and coastal resilience projects. Read more":
+      - /url: /about-us/our-purpose
+      - img "Sea Auk working on WaveWalker 06.jpg"
+      - heading "Creating a Safe and Liveable World" [level=2]
+      - paragraph: The work we do everyday, from infrastructure development consulting services to marine assessments, is accelerating our positive impact across the globe. Find out more about how we support renewable energy, ocean health & biodiversity and coastal resilience projects.
+      - paragraph: Read more
+      - button "Read more":
+        - img
+    - link "Leadership Get to know the leadership team at Fugro. Read more":
+      - /url: /about-us/governance/leadership
+      - heading "Leadership" [level=2]
+      - paragraph: Get to know the leadership team at Fugro.
+      - paragraph: Read more
+      - button "Read more":
+        - img
+    - link "Current share price 8.57 EUR 0.29 (3.51%) 17:35 UTC■04 Nov 2026":
+      - /url: /investors/shares/share-performance
+      - paragraph: Current share price
+      - text: 8.57 EUR
+      - img
+      - text: 0.29 (3.51%) 17:35 UTC■04 Nov 2026
+      - button "Read more":
+        - img
+    - link "Annual report For Fugro, 2025 proved to be a challenging year. Rapidly changing energy markets – especially the headwinds facing offshore wind projects in several countries – resulted in a marked slowdown in early‑stage site characterisation work. Read more":
+      - /url: /investors/results-and-publications/annual-reports
+      - heading "Annual report" [level=2]
+      - paragraph: For Fugro, 2025 proved to be a challenging year. Rapidly changing energy markets – especially the headwinds facing offshore wind projects in several countries – resulted in a marked slowdown in early‑stage site characterisation work.
+      - paragraph: Read more
+      - button "Read more":
+        - img
+    - img "FACES OF FUGRO.00_02_51_24.Still014.jpg"
+    - paragraph: Come work with us
+    - heading "Help create an impact on a global scale" [level=2]
+    - link "Careers at Fugro":
+      - /url: /careers
+      - text: Careers at Fugro
+      - img
+    - heading "News highlights" [level=2]
+    - link "All news":
+      - /url: /news
+      - text: All news
+      - img
+    - link "Timor Leste part 2.jpg Business news Fugro secures additional survey contracts for Greater Sunrise TLNG and Bayu Undan Pipeline Highway projects in Timor-Leste 24 Sep 2026":
+      - /url: /news/business-news/2026/fugro-secures-additional-survey-contracts-for-greater-sunrise-tlng-and-bayu-undan-pipeline-highway-projects-in-timor-leste
+      - img "Timor Leste part 2.jpg"
+      - paragraph: Business news
+      - heading "Fugro secures additional survey contracts for Greater Sunrise TLNG and Bayu Undan Pipeline Highway projects in Timor-Leste" [level=2]
+      - paragraph: 24 Sep 2026
+    - 'link "jamaica-island-ocean.png Long read Mapping Jamaica''s EEZ: governance before technology 24 Sep 2026"':
+      - /url: /news/long-reads/2026/a-fi-wi-wata-why-mapping-jamaica-s-ocean-space-is-a-national-imperative
+      - img "jamaica-island-ocean.png"
+      - paragraph: Long read
+      - 'heading "Mapping Jamaica''s EEZ: governance before technology" [level=2]'
+      - paragraph: 24 Sep 2026
+    - link "Fugro Etive 10.jpg Press release Fugro awarded major Australian marine asset integrity contract 23 Sep 2026":
+      - /url: /news/press-releases/2026/fugro-awarded-major-australian-marine-asset-integrity-contract
+      - img "Fugro Etive 10.jpg"
+      - paragraph: Press release
+      - heading "Fugro awarded major Australian marine asset integrity contract" [level=2]
+      - paragraph: 23 Sep 2026
+    - button "Previous" [disabled]:
+      - img
+    - button "Next":
+      - img
+    - img "German REO 26, early eighties.jpg"
+    - paragraph: Founded in 1962
+    - heading "Our history" [level=2]
+    - paragraph: Take a look how Fugro evolved over the years.
+    - link "Read more":
+      - /url: /about-us/history
+      - text: Read more
+      - img
+  - contentinfo:
+    - img
+    - list:
+      - listitem:
+        - link "Industries":
+          - /url: /industries
+      - listitem:
+        - link "Expertise":
+          - /url: /expertise
+      - listitem:
+        - link "Careers":
+          - /url: /careers
+      - listitem:
+        - link "Investors":
+          - /url: /investors
+      - listitem:
+        - link "News":
+          - /url: /news
+      - listitem:
+        - link "About us":
+          - /url: /about-us
+    - paragraph: Subscribe to news alerts
+    - link "Sign up now":
+      - /url: /news/subscribe-for-news-alerts
+      - text: Sign up now
+      - img
+    - list:
+      - listitem:
+        - paragraph: Social media
+      - listitem:
+        - link "LinkedIn":
+          - /url: https://www.linkedin.com/company/fugro
+      - listitem:
+        - link "Facebook":
+          - /url: https://www.facebook.com/fugro
+      - listitem:
+        - link "X (Twitter)":
+          - /url: https://twitter.com/fugro
+      - listitem:
+        - link "Instagram":
+          - /url: https://www.instagram.com/fugro
+    - list:
+      - listitem:
+        - paragraph: Contact
+      - listitem:
+        - link "General contact":
+          - /url: /contact
+      - listitem:
+        - link "Our locations":
+          - /url: /contact/locations
+      - listitem:
+        - link "Talent Community":
+          - /url: https://flows.beamery.eu/fugro/Join-the-Fugro-Talent-Community
+      - listitem:
+        - link "Speak Up":
+          - /url: /contact/speak-up
+    - link "Cookies":
+      - /url: /cookie-policy
+    - link "Privacy statement":
+      - /url: /privacy-notice
+    - link "Disclaimer":
+      - /url: /disclaimer
+    - link "General purchase terms and conditions":
+      - /url: /fugro-general-purchase-terms-and-conditions
+    - text: © 2026 Fugro. All rights reserved Also of interest
+    - list:
+      - listitem:
+        - link "Weather forecasting":
+          - /url: https://www.fugro.com/expertise/weather-forecasting
+      - listitem:
+        - link "Turning Emissions Into Low-Carbon Solutions":
+          - /url: https://www.fugro.com/industries/energy/carbon-capture-utilisation-and-storage
+      - listitem:
+        - link "Marine environmental services":
+          - /url: https://www.fugro.com/expertise/environmental-site-assessments/marine-characterisation-and-monitoring
+  - alert
+  - dialog "Cookie consent dialog":
+    - text: This website uses cookies This website uses cookies in order to offer you the most relevant information. Please accept cookies for the most optimal performance. By using our website you consent to all cookies in accordance with our
+    - link "Cookie policy, opens a new window":
+      - /url: /cookie-policy
+      - text: Cookie policy
+    - button "Accept all"
+    - button "Decline all"
+    - button "Cookie Settings"
+  - dialog "Cookie consent button": Cookie settings

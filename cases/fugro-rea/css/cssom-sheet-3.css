@@ -1,0 +1,375 @@
+#cookiescript_injected { background-color: rgb(255, 255, 255); z-index: 999997; opacity: 1; font-size: 14px; font-weight: normal; font-family: "Open Sans", Arial, "Trebuchet MS", "Segoe UI", Helvetica, sans-serif; box-shadow: rgba(0, 0, 0, 0.35) 1px 2px 8px 0px; color: rgb(1, 30, 65); box-sizing: border-box; }
+.cookiescript_overlay { overflow: hidden; height: 100vh; }
+.cookiescript_checkbox_label { cursor: pointer; display: flex; align-items: center; padding: 0px 4px; line-height: 1.5; margin: 0px; text-align: left; }
+.cookiescript_pre_header { display: flex; justify-content: flex-end; align-items: flex-start; position: absolute; top: 15px; right: 15px; }
+#cookiescript_close { font-size: 29px; line-height: 13px; cursor: pointer; color: rgb(1, 30, 65); height: 15px; width: 15px; margin: 0px 0px 0px 10px; padding: 0px; overflow: hidden; letter-spacing: 0px; font-family: "Trebuchet MS", Arial, sans-serif; font-weight: 100; opacity: 0.85; z-index: 999999; position: relative; top: -1px; }
+#cookiescript_buttons { display: flex; flex-direction: row; font-weight: 700; }
+#cookiescript_manage_wrap { text-transform: uppercase; text-align: center; font-size: 12px; letter-spacing: 0.4px; font-weight: 700; padding-top: 2px; padding-bottom: 2px; }
+#cookiescript_manage { display: inline; cursor: pointer; color: rgb(1, 30, 65); opacity: 0.85; margin-left: -15px; }
+#cookiescript_manage #cookiescript_manageicon .cookiescript_gear { fill: rgb(1, 30, 65); }
+#cookiescript_manage:hover #cookiescript_manageicon .cookiescript_gear { fill: rgb(255, 51, 0); }
+svg#cookiescript_manageicon { width: 15px; height: 15px; display: inline; margin: 0px 5px 0px 0px; padding: 0px; position: relative; top: 3px; vertical-align: baseline; }
+.cookiescript-extra-links { margin-bottom: 10px; padding-top: 5px; }
+#cookiescript_injected.hascookiereport .cookiescript-extra-links { display: none; }
+.cookiescript-extra-links a { color: rgb(244, 67, 54); border: 0px; padding: 0px; cursor: pointer; margin: 0px 15px; transition: 100ms; background-color: transparent; font-size: 13px; text-decoration: none; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: inline-block; }
+.cookiescript-extra-links a:hover { color: rgb(255, 68, 21); text-decoration: underline; }
+#cookiescript_header { background-color: transparent; z-index: 999998; color: rgb(1, 30, 65); font-size: 18px; line-height: 1.3; font-weight: 600; letter-spacing: 0.4px; opacity: 1; }
+.cookiescript_checkbox { display: flex; flex-direction: row; }
+input.cookiescript_checkbox_input { }
+span.cookiescript_checkbox_text { display: inline-block; font-size: 12px; margin: 0px; text-transform: uppercase; font-weight: 600; color: rgb(1, 30, 65); letter-spacing: 1px; }
+#cookiescript_save { border: 0px; transition: 0.25s; background-color: rgb(255, 51, 0); color: rgb(255, 255, 255); text-transform: uppercase; font-size: 12px; text-align: center; line-height: 3.2; letter-spacing: 0.4px; }
+@media screen and (min-width:0\0) and (min-resolution: 0.001dpcm) {
+  .cookiescript_checkbox_label { position: relative; top: -10px; }
+  #cookiescript_accept, #cookiescript_reject, #cookiescript_save { display: inline-block; }
+  #cookiescript_buttons { text-align: center; }
+}
+#cookiescript_save { display: none; }
+#cookiescript_reject { border: 1px solid rgb(1, 30, 65); text-align: center; line-height: 3; font-size: 12px; text-transform: uppercase; letter-spacing: 0.4px; color: rgb(1, 30, 65); background: rgb(255, 255, 255); }
+#cookiescript_accept { transition: 0.25s; text-transform: uppercase; font-size: 12px; text-align: center; letter-spacing: 0.4px; border: 0px; background-color: rgb(255, 51, 0); color: rgb(255, 255, 255); line-height: 3.2; }
+#cookiescript_accept, #cookiescript_reject, #cookiescript_save { font-weight: 700; cursor: pointer; white-space: nowrap; transition-duration: 100ms; transition-timing-function: ease-in-out; min-width: 103px; }
+.cookiescript_bigger { transform: scale(1.1); }
+#cookiescript_link { text-decoration: none; color: rgb(1, 30, 65); font-size: 11px; text-align: center; font-weight: 400; text-transform: uppercase; opacity: 0.8; padding: 2px; display: inline !important; }
+#cookiescript_readmore, #cookiescript_reportlink, #cookiescript_cookiescriptlink { border: 0px; padding: 0px; cursor: pointer; margin: 0px; transition: 100ms; background-color: transparent; display: inline; font-size: 12px; text-decoration: none; }
+#cookiescript_readmore, #cookiescript_description a { color: rgb(244, 67, 54); cursor: pointer; }
+#cookiescript_reportlink, #cookiescript_cookiescriptlink { color: rgb(1, 30, 65); }
+#cookiescript_readmore:hover, #cookiescript_reportlink:hover, #cookiescript_cookiescriptlink:hover, #cookiescript_description a:hover { text-decoration: underline; color: rgb(244, 67, 54); }
+#cookiescript_description { color: rgb(1, 30, 65); font-size: 12px; letter-spacing: 0.3px; line-height: 1.65; font-weight: 400; }
+#cookiescript_checkboxs { }
+#cookiescript_close:hover, #cookiescript_manage:hover, #cookiescript_link:hover { opacity: 1; }
+#cookiescript_reject:hover { background-color: rgb(235, 235, 235); }
+#cookiescript_accept:hover { background-color: rgb(255, 68, 21); }
+#cookiescript_save:hover { background-color: rgb(255, 68, 21); }
+#cookiescript_readmore:hover, #cookiescript_reportlink:hover, #cookiescript_cookiescriptlink:hover { color: rgb(255, 68, 21); }
+.cookiescript_globe { fill: rgb(28, 28, 28); }
+.cookiescript_header_actions { display: flex; align-items: center; }
+.cookiescriptlogo { fill: rgb(1, 30, 65); }
+#cookiescript_badge { position: fixed; line-height: 0; cursor: pointer; z-index: 99999; font-size: 0px; color: rgb(153, 153, 153); right: 10px; display: flex; flex-direction: row; opacity: 1; }
+#cookiescript_badgetext { text-transform: uppercase; font-weight: 600; font-family: "Open Sans", Arial, "Trebuchet MS", "Segoe UI", Helvetica, sans-serif; overflow: hidden; transition-duration: 500ms; white-space: nowrap; padding-right: 0px; color: rgb(1, 30, 65); }
+#cookiescript_badgesvg { width: 40px; height: 40px; }
+#cookiescript_badge { bottom: 0px; border-top-left-radius: 15px; border-top-right-radius: 15px; padding: 10px 12px 8px; transition-duration: 200ms; box-shadow: rgba(0, 0, 0, 0.2) 1px 2px 8px 0px; background: rgb(255, 255, 255); }
+#cookiescript_badgetext { font-size: 11px; line-height: 1; }
+#cookiescript_badge:hover { padding-bottom: 13px; }
+@media only screen and (max-width: 440px) {
+  #cookiescript_badge { border-top-left-radius: 10px; border-top-right-radius: 10px; }
+}
+@media print {
+  #cookiescript_injected { display: none; }
+}
+#cookiescript_injected_fsd { position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 999996; overflow-y: auto; background-color: rgba(17, 17, 17, 0.5) !important; }
+#cookiescript_fsd_wrapper { max-width: 950px; width: 95%; margin: 0px auto 3%; top: 5%; line-height: 18px; letter-spacing: normal; position: relative; display: flex; flex-direction: column; background-color: rgb(243, 243, 243); z-index: 999997; opacity: 1; font-size: 14px; font-weight: normal; font-family: "Open Sans", Arial, "Trebuchet MS", "Segoe UI", Helvetica, sans-serif; box-shadow: rgba(0, 0, 0, 0.35) 1px 2px 8px 0px; color: rgb(28, 28, 28); align-items: center; overflow: visible; outline: none; max-height: 90%; box-sizing: border-box; cursor: default; min-height: 500px; }
+@keyframes expandBox { 
+  0% { width: 10%; margin-left: 0px; overflow: hidden; top: 90%; height: 5%; }
+  100% { width: 95%; margin-left: auto; overflow: hidden; top: 5%; height: 90%; }
+}
+.cookiescript_fsd_header { min-height: 57px; border-bottom: 1px solid rgb(204, 204, 204); width: 100%; display: flex; flex-direction: row; align-items: center; background-color: rgb(255, 255, 255); }
+.cookiescript_fsd_logo_a { margin-left: 23px; text-decoration: none; }
+.cookiescript_fsd_logo { height: 27px; width: auto; display: block; max-width: 100%; }
+.cookiescript_fsd_powered { color: rgb(102, 102, 102); font-size: 11px; position: relative; left: 31px; top: 0px; line-height: 1; text-decoration: none; display: block; height: 8px; }
+.cookiescript_fsd_language_drop_down { position: absolute; right: 67px; top: 19px; }
+.cookiescript_fsd_main { width: 100%; background-color: rgb(255, 255, 255); }
+.cookiescript_fsd_main_info { padding: 20px 53px 30px; }
+.cookiescript_fsd_title { background-color: transparent; z-index: 999998; color: rgb(28, 28, 28); font-size: 24px; line-height: 1.3; font-weight: 700; opacity: 1; }
+.cookiescript_fsd_description { color: rgb(28, 28, 28); font-size: 14px; line-height: 1.6; font-weight: 400; margin-top: 9px; }
+.cookiescript_fsd_description > span { opacity: 0.85; }
+#cookiescript_fsd_wrapper .cookiescript-extra-links { margin-top: 10px; padding-top: 0px; display: flex; flex-direction: row; }
+#cookiescript_fsd_wrapper .cookiescript-extra-links a { color: rgb(63, 182, 238); font-size: 14px; display: block; margin: 0px 20px 0px 0px; }
+#cookiescript_fsd_wrapper #cookiescript_readmore { font-size: 14px; color: rgb(63, 182, 238); text-decoration: none; }
+#cookiescript_fsd_wrapper .cookiescript_fsd_description a { color: rgb(63, 182, 238); cursor: pointer; }
+#cookiescript_fsd_wrapper .cookiescript_fsd_description a:hover { text-decoration: underline; }
+#cookiescript_fsd_wrapper #cookiescript_readmore:hover { text-decoration: underline; }
+.cookiescript_fsd_tabs { display: flex; justify-content: space-around; align-items: stretch; flex-direction: row; width: 100%; }
+.cookiescript_fsd_tabs > div { cursor: pointer; width: 50%; text-transform: uppercase; font-size: 16px; text-align: center; line-height: 1.6; font-weight: bold; border-top: 2px solid transparent; transition: 300ms; padding: 10px 20px; display: flex; justify-content: center; align-items: center; background-color: rgb(255, 255, 255); }
+.cookiescript_fsd_tabs > .cookiescript_active { border-top: 2px solid rgb(63, 182, 238); background-color: rgb(243, 243, 243); color: rgb(63, 182, 238); }
+.cookiescript_fsd_tabs_content { background-color: rgb(243, 243, 243); padding: 5px 50px 10px; width: 100%; overflow-y: auto; box-sizing: border-box; flex-grow: 1; --scrollbar-width: 8px; --mask-height: 35px; --mask-image-content: linear-gradient( to bottom, transparent, black var(--mask-height), black calc(100% - var(--mask-height)), transparent ); --mask-size-content: calc(100% - var(--scrollbar-width)) 100%; --mask-image-scrollbar: linear-gradient(black, black); --mask-size-scrollbar: var(--scrollbar-width) 100%; mask-image: var(--mask-image-content), var(--mask-image-scrollbar); mask-size: var(--mask-size-content), var(--mask-size-scrollbar); mask-position: 0px 0px, 100% 0px; mask-repeat: no-repeat, no-repeat; }
+.cookiescript_fsd_tabs_content .cookiescript_hidden { opacity: 0; overflow: hidden; height: 0px !important; padding: 0px !important; min-height: 0px !important; }
+.cookiescript_fsd_category { border-bottom: 1px solid rgb(226, 226, 226); padding-top: 23px; padding-bottom: 17px; display: flex; flex-direction: column; }
+.cookiescript_fsd_category:last-child { border-bottom: 0px; }
+.cookiescript_fsd_category .cookiescript_hidden { opacity: 0; overflow: hidden auto; max-height: 0px; margin: 0px; transition: max-height 300ms 200ms, opacity 200ms, margin-top 100ms 100ms; padding: 0px !important; height: auto !important; }
+.cookiescript_fsd_category_main { align-items: center; display: flex; justify-content: space-between; order: 1; }
+.cookiescript_fsd_category_info { flex: 9 1 0%; padding-right: 10px; }
+.cookiescript_fsd_category_control { flex: 1 1 0%; display: flex; justify-content: center; }
+.cookiescript_fsd__category_name { font-size: 16px; font-weight: 700; margin-bottom: 6px; }
+.cookiescript_category_description { font-size: 13px; padding-bottom: 5px; line-height: 1.6; }
+.cookiescript_fsd_cookies { border: 1px solid rgb(226, 226, 226); border-radius: 10px; overflow-y: auto; margin-top: 15px; max-height: 222px; order: 2; transition: max-height 300ms, opacity 200ms 300ms, margin-top 100ms 100ms; }
+.cookiescript_fsd_cookies caption { font-weight: 600; padding: 10px; text-align: left; color: rgb(28, 28, 28); caption-side: top; }
+.cookiescript_fsd_cookies_control { color: rgb(63, 182, 238); text-transform: uppercase; font-size: 14px; font-weight: 700; position: relative; display: flex; align-items: center; margin-right: auto; margin-top: 10px; cursor: pointer; order: 3; }
+.cookiescript_fsd_cookies_control .cookiescript_hidden { display: none; }
+.cookiescript_fsd_cookies_control span { margin-right: 7px; }
+.cookiescript_fsd_cookies_control svg { width: 10px; height: 10px; font-size: 10px; }
+.cookiescript_fsd_cookies_control.active svg { width: 10px; height: 10px; font-size: 10px; transform: rotate(180deg); }
+.cookiescript_fsd_cookies_table { width: 100%; }
+.cookiescript_fsd_cookies_table, .cookiescript_fsd_cookies_table tbody, .cookiescript_fsd_cookies_table thead, .cookiescript_fsd_cookies_table tr, .cookiescript_fsd_cookies_table th, .cookiescript_fsd_cookies_table td { margin: 0px; padding: 0px; font: inherit; vertical-align: baseline; background-color: rgb(255, 255, 255); border-spacing: 0px; border-collapse: collapse; }
+.cookiescript_fsd_cookies_table tr:last-child td { border-bottom: 0px; }
+.cookiescript_fsd_cookies_table td, .cookiescript_fsd_cookies_table th { white-space: normal; font-size: 13px; text-align: left; margin: 0px; }
+.cookiescript_fsd_cookies_table th { font-weight: 600; padding: 8px; line-height: 1.4; word-break: keep-all; vertical-align: middle; }
+.cookiescript_fsd_cookies_table td { padding: 7px 8px; line-height: 1.6; vertical-align: top; font-weight: 400; border-width: 1px 0px 0px; border-style: solid none none; border-color: rgb(226, 226, 226) currentcolor currentcolor; border-image: none; color: rgb(28, 28, 28); }
+.cookiescript_fsd_cookies_table th:last-child { padding-right: 10px; }
+.cookiescript_fsd_cookies_table td:nth-child(1), .cookiescript_fsd_cookies_table th:nth-child(1) { padding-left: 15px; word-break: normal; }
+.cookiescript_fsd_cookies_table td:nth-child(2) { color: rgb(63, 182, 238); }
+.cookiescript_fsd_cookies_table td:nth-child(3), .cookiescript_fsd_cookies_table th:nth-child(3) { text-align: center; }
+.cookiescript_fsd_cookies_table.cookiescript_fsd_storage_table td:nth-child(2) { color: rgb(28, 28, 28); }
+.cookiescript_vendor_name a { text-decoration: underline; font-weight: bold; color: rgb(63, 182, 238); line-height: normal; border: 0px; padding: 0px; margin: 0px; background: transparent; font-size: 13px; }
+.cookiescript_vendor_name a:hover { text-decoration: underline; color: rgb(63, 182, 238); }
+.cookiescript_vendor_address { margin-top: 10px; font-style: italic; }
+.cookiescript_vendor_address > span { font-weight: 600; font-style: normal; }
+.cookiescript_fsd_footer { border-top: 1px solid rgb(226, 226, 226); width: 100%; background-color: rgb(255, 255, 255); position: relative; }
+#cookiescript_fsd_wrapper #cookiescript_declarationwrap { transition: opacity 200ms, height 200ms; }
+#cookiescript_fsd_wrapper #cookiescript_aboutwrap { font-size: 13px; padding: 23px 0px; line-height: 1.6; text-align: left; font-weight: normal; box-sizing: border-box; transition: opacity 200ms; overflow: auto; min-height: 181px; }
+#cookiescript_fsd_wrapper #cookiescript_aboutwrap a, #cookiescript_fsd_wrapper #cookiescript_aboutwrap a:hover { color: rgb(63, 182, 238); text-decoration: underline; }
+#cookiescript_setting_advertising_wrap { font-size: 12px; }
+.cookiescript_cross_domain { margin-top: 10px; }
+#cookiescript_iab_type { display: flex; justify-content: center; padding: 20px 0px; border-bottom: 1px solid rgb(226, 226, 226); flex-wrap: wrap; }
+#cookiescript_iab_type > div { cursor: pointer; padding: 0px 9px; font-size: 11px; font-weight: 600; background: rgb(245, 245, 245); color: rgb(28, 28, 28); line-height: 2; margin: 3px 5px; white-space: nowrap; }
+#cookiescript_iab_type .cookiescript_active { background: rgb(63, 182, 238); color: rgb(254, 254, 254); }
+.cookiescript_fsd_cookies::-webkit-scrollbar-track, .cookiescript_fsd_tabs_content::-webkit-scrollbar-track { background-color: rgb(218, 218, 218); }
+.cookiescript_fsd_cookies::-webkit-scrollbar, .cookiescript_fsd_tabs_content::-webkit-scrollbar { width: 8px; height: 8px; }
+.cookiescript_fsd_cookies::-webkit-scrollbar-thumb, .cookiescript_fsd_tabs_content::-webkit-scrollbar-thumb { background-color: rgb(107, 190, 107); }
+@media screen and (min-width:0\0) and (min-resolution: 0.001dpcm) {
+  #cookiescript_iab_type > div { display: inline-block; }
+}
+#cookiescript_injected_fsd #cookiescript_close { top: 20px; right: 20px; font-size: 37px; color: rgb(28, 28, 28); height: 18px; width: 18px; position: absolute; margin: 0px; }
+#cookiescript_injected_fsd #cookiescript_show_all_partners_button { color: rgb(63, 182, 238); margin-bottom: 0px; margin-top: 12px; display: inline-block; }
+#cookiescript_injected_fsd #cookiescript_buttons { justify-content: flex-start; padding: 5px 15px; margin: 0px; box-sizing: border-box; }
+#cookiescript_injected_fsd #cookiescript_accept, #cookiescript_injected_fsd #cookiescript_save, #cookiescript_injected_fsd #cookiescript_reject { flex-grow: unset; padding: 0px 25px; margin: 10px 5px; font-size: 13px; line-height: 3; }
+#cookiescript_injected_fsd #cookiescript_buttons { flex-direction: row; }
+#cookiescript_injected_fsd #cookiescript_buttons #cookiescript_reject { margin-right: auto; }
+#cookiescript_injected_fsd .cookiescript-iab-itemContainer { border: 1px solid rgb(226, 226, 226); background-color: rgb(255, 255, 255); padding: 10px; }
+#cookiescript_injected_fsd .cookiescript-iab-header, #cookiescript_injected_fsd .cookiescript-iab-itemHeader, #cookiescript_injected_fsd .cookiescript-iab-itemHeaderAction { color: rgb(28, 28, 28); }
+#cookiescript_injected_fsd .cookiescript-iab-itemHeaderAction { border-color: rgb(28, 28, 28); }
+#cookiescript_injected_fsd #cookiescript_accept { background-color: rgb(255, 255, 255); color: rgb(77, 77, 77); border: 1px solid rgb(77, 77, 77); order: 3; }
+#cookiescript_injected_fsd #cookiescript_accept:hover { background-color: rgb(235, 235, 235); }
+#cookiescript_injected_fsd #cookiescript_reject { background-color: rgb(255, 255, 255); color: rgb(77, 77, 77); border: 1px solid rgb(77, 77, 77); order: 2; }
+#cookiescript_injected_fsd #cookiescript_reject:hover { background-color: rgb(235, 235, 235); }
+#cookiescript_injected_fsd #cookiescript_save { display: inline-block; background-color: rgb(107, 190, 107); color: rgb(255, 255, 255); border: 1px solid rgb(107, 190, 107); order: 1; }
+#cookiescript_injected_fsd #cookiescript_save:hover { background-color: rgb(99, 175, 99); }
+.cookiescript_fsd_reportby { position: absolute; bottom: -20px; right: 20px; color: rgb(255, 255, 255); display: inline; font-size: 13px; }
+#cookiescript_fsd_reportlink, #cookiescript_fsd_cookiescriptlink { border: 0px; padding: 0px; cursor: pointer; margin: 0px; transition: 100ms; background-color: transparent; color: rgb(255, 255, 255); display: inline; font-size: 13px; text-decoration: underline; }
+#cookiescript_injected_fsd .mdc-switch.mdc-switch--selected:enabled .mdc-switch__handle::after { background: rgb(107, 190, 107); }
+#cookiescript_injected_fsd .mdc-switch.mdc-switch--selected:enabled:hover:not(:focus):not(:active) .mdc-switch__handle::after { background: rgb(104, 185, 104); }
+#cookiescript_injected_fsd .mdc-switch.mdc-switch--selected:enabled:focus:not(:active) .mdc-switch__handle::after { background: rgb(104, 185, 104); }
+#cookiescript_injected_fsd .mdc-switch.mdc-switch--selected:enabled:active .mdc-switch__handle::after { background: rgb(104, 185, 104); }
+#cookiescript_injected_fsd .mdc-switch.mdc-switch--selected:enabled:hover:not(:focus) .mdc-switch__ripple::before, #cookiescript_injected_fsd .mdc-switch.mdc-switch--selected:enabled:hover:not(:focus) .mdc-switch__ripple::after { background: rgb(107, 190, 107); }
+#cookiescript_injected_fsd .mdc-switch.mdc-switch--selected:enabled:focus .mdc-switch__ripple::before, #cookiescript_injected_fsd .mdc-switch.mdc-switch--selected:enabled:focus .mdc-switch__ripple::after { background: rgb(107, 190, 107); }
+#cookiescript_injected_fsd .mdc-switch.mdc-switch--selected:enabled:active .mdc-switch__ripple::before, #cookiescript_injected_fsd .mdc-switch.mdc-switch--selected:enabled:active .mdc-switch__ripple::after { background: rgb(107, 190, 107); }
+#cookiescript_injected_fsd .mdc-switch:enabled .mdc-switch__track::after { background: rgb(107, 190, 107); opacity: 0.3; }
+#cookiescript_injected_fsd .mdc-switch:enabled:hover:not(:focus):not(:active) .mdc-switch__track::after { background: rgb(107, 190, 107); opacity: 0.3; }
+#cookiescript_injected_fsd .mdc-switch:enabled:focus:not(:active) .mdc-switch__track::after { background: rgb(107, 190, 107); opacity: 0.3; }
+#cookiescript_injected_fsd .mdc-switch:enabled:active .mdc-switch__track::after { background: rgb(107, 190, 107); opacity: 0.3; }
+@media only screen and (max-width: 440px) {
+  #cookiescript_fsd_wrapper { width: 100%; height: 100%; max-height: 100%; top: 0px; border-radius: 0px; margin: 0px; }
+  .cookiescript_fsd_main_info { padding: 13px 20px; overflow-y: auto; max-height: 140px; }
+  .cookiescript_fsd_description { margin-top: 8px; }
+  .cookiescript_fsd_tabs > div { padding: 6px; font-size: 12px; }
+  .cookiescript_fsd_tabs_content { padding: 5px 20px 10px; }
+  .cookiescript_fsd_cookies_table thead { display: none; }
+  .cookiescript_fsd_cookies_table td { display: flex; border-bottom: 0px; }
+  .cookiescript_fsd_cookies_table tr td:last-child { border-bottom: 0px; }
+  .cookiescript_fsd_cookies_table td { border-top: 0px; }
+  .cookiescript_fsd_cookies_table td::before { content: attr(label); font-weight: bold; width: 120px; min-width: 120px; text-align: left; }
+  .cookiescript_fsd_cookies_table td:nth-child(2)::before { color: rgb(28, 28, 28); }
+  .cookiescript_category_description { text-align: left; }
+  .cookiescript_fsd_cookies_table td:nth-child(1), .cookiescript_fsd_cookies_table th:nth-child(1) { padding-left: 7px; font-weight: bold; border-top: 1px solid rgb(226, 226, 226); }
+  .cookiescript_fsd_cookies_table tr:nth-child(1) td:nth-child(1), .cookiescript_fsd_cookies_table tr:nth-child(1) th:nth-child(1) { border-top: 0px; }
+  .cookiescript_fsd_cookies_table td:last-child { border-bottom-width: medium; border-bottom-style: none; border-bottom-color: currentcolor; }
+  .cookiescript_fsd_cookies_table tr:nth-child(2n) { background: rgb(245, 245, 245); }
+  .cookiescript_fsd_cookies_table tr:nth-child(2n) td { border-bottom: 0px solid rgb(255, 255, 255); }
+  #cookiescript_injected_fsd #cookiescript_buttons { margin-bottom: 0px; }
+  #cookiescript_injected_fsd #cookiescript_buttons #cookiescript_accept, #cookiescript_injected_fsd #cookiescript_buttons #cookiescript_save, #cookiescript_injected_fsd #cookiescript_buttons #cookiescript_reject { flex-grow: 1; margin: 5px 10px; padding: 0px 15px; }
+  .cookiescript_fsd_language_drop_down { right: 40px; }
+  #cookiescript_injected_fsd #cookiescript_close { right: 14px; }
+  .cookiescript_fsd_reportby { position: relative; bottom: 0px; right: auto; color: rgb(28, 28, 28); font-size: 12px; padding: 0px 20px 10px 21px; max-width: 100%; opacity: 0.8; display: none; }
+  #cookiescript_fsd_reportlink, #cookiescript_fsd_cookiescriptlink { color: rgb(28, 28, 28); font-size: 12px; }
+  #cookiescript_fsd_wrapper .cookiescript-extra-links { flex-direction: column; }
+}
+.cookiescript_rtl { direction: rtl; }
+#cookiescript_injected_fsd .mdc-checkbox, #cookiescript_injected .mdc-checkbox { box-sizing: content-box !important; }
+#cookiescript_injected_fsd .mdc-checkbox__native-control, #cookiescript_injected .mdc-checkbox__native-control { display: block; z-index: 1; }
+#cookiescript_injected_fsd .mdc-checkbox .mdc-checkbox__native-control:focus ~ .mdc-checkbox__background::before, #cookiescript_injected .mdc-checkbox .mdc-checkbox__native-control:focus ~ .mdc-checkbox__background::before, #cookiescript_injected_fsd .mdc-checkbox .mdc-checkbox__native-control:indeterminate ~ .mdc-checkbox__background::before, #cookiescript_injected .mdc-checkbox .mdc-checkbox__native-control:indeterminate ~ .mdc-checkbox__background::before { background-color: rgb(255, 255, 255); }
+#cookiescript_injected .mdc-checkbox, #cookiescript_injected_fsd .mdc-checkbox { display: inline-block; position: relative; flex: 0 0 18px; box-sizing: content-box; width: 18px; height: 18px; line-height: 0; white-space: nowrap; cursor: pointer; vertical-align: bottom; padding: 11px; }
+#cookiescript_injected .mdc-checkbox .mdc-checkbox__native-control:checked ~ .mdc-checkbox__background::before, #cookiescript_injected .mdc-checkbox .mdc-checkbox__native-control:indeterminate ~ .mdc-checkbox__background::before, #cookiescript_injected_fsd .mdc-checkbox .mdc-checkbox__native-control:checked ~ .mdc-checkbox__background::before, #cookiescript_injected_fsd .mdc-checkbox .mdc-checkbox__native-control:indeterminate ~ .mdc-checkbox__background::before { background-color: rgb(1, 30, 65); }
+@supports not (-ms-ime-align:auto) {
+  #cookiescript_injected .mdc-checkbox .mdc-checkbox__native-control:checked ~ .mdc-checkbox__background::before, #cookiescript_injected .mdc-checkbox .mdc-checkbox__native-control:indeterminate ~ .mdc-checkbox__background::before, #cookiescript_injected_fsd .mdc-checkbox .mdc-checkbox__native-control:checked ~ .mdc-checkbox__background::before, #cookiescript_injected_fsd .mdc-checkbox .mdc-checkbox__native-control:indeterminate ~ .mdc-checkbox__background::before { background-color: var(--mdc-theme-secondary, #011e41); }
+}
+#cookiescript_injected .mdc-checkbox .mdc-checkbox__background, #cookiescript_injected_fsd .mdc-checkbox .mdc-checkbox__background { top: 11px; left: 11px; }
+#cookiescript_injected .mdc-checkbox .mdc-checkbox__background::before, #cookiescript_injected_fsd .mdc-checkbox .mdc-checkbox__background::before { top: -13px; left: -13px; width: 40px; height: 40px; }
+#cookiescript_injected .mdc-checkbox .mdc-checkbox__native-control, #cookiescript_injected_fsd .mdc-checkbox .mdc-checkbox__native-control { top: 0px; right: 0px; left: 0px; width: 40px; height: 40px; }
+#cookiescript_injected .mdc-checkbox__native-control:enabled:not(:checked):not(:indeterminate) ~ .mdc-checkbox__background, #cookiescript_injected_fsd .mdc-checkbox__native-control:enabled:not(:checked):not(:indeterminate) ~ .mdc-checkbox__background { border-color: rgb(1, 30, 65); background-color: transparent; }
+#cookiescript_injected .mdc-checkbox__native-control:enabled:checked ~ .mdc-checkbox__background, #cookiescript_injected .mdc-checkbox__native-control:enabled:indeterminate ~ .mdc-checkbox__background, #cookiescript_injected_fsd .mdc-checkbox__native-control:enabled:checked ~ .mdc-checkbox__background, #cookiescript_injected_fsd .mdc-checkbox__native-control:enabled:indeterminate ~ .mdc-checkbox__background { border-color: rgb(1, 30, 65); background-color: rgb(1, 30, 65); }
+#cookiescript_injected .mdc-checkbox__native-control[disabled]:not(:checked):not(:indeterminate) ~ .mdc-checkbox__background, #cookiescript_injected_fsd .mdc-checkbox__native-control[disabled]:not(:checked):not(:indeterminate) ~ .mdc-checkbox__background { border-color: rgba(1, 30, 65, 0.26); background-color: transparent; }
+#cookiescript_injected .mdc-checkbox__native-control[disabled]:checked ~ .mdc-checkbox__background, #cookiescript_injected .mdc-checkbox__native-control[disabled]:indeterminate ~ .mdc-checkbox__background, #cookiescript_injected_fsd .mdc-checkbox__native-control[disabled]:checked ~ .mdc-checkbox__background, #cookiescript_injected_fsd .mdc-checkbox__native-control[disabled]:indeterminate ~ .mdc-checkbox__background { border-color: transparent; background-color: rgba(1, 30, 65, 0.26); }
+#cookiescript_injected .mdc-checkbox__native-control:enabled ~ .mdc-checkbox__background .mdc-checkbox__checkmark, #cookiescript_injected_fsd .mdc-checkbox__native-control:enabled ~ .mdc-checkbox__background .mdc-checkbox__checkmark { color: rgb(255, 255, 255); }
+#cookiescript_injected .mdc-checkbox__native-control:disabled ~ .mdc-checkbox__background .mdc-checkbox__checkmark, #cookiescript_injected_fsd .mdc-checkbox__native-control:disabled ~ .mdc-checkbox__background .mdc-checkbox__checkmark { color: rgb(255, 255, 255); }
+#cookiescript_injected .mdc-checkbox__background, #cookiescript_injected_fsd .mdc-checkbox__background { display: inline-flex; position: absolute; align-items: center; justify-content: center; box-sizing: border-box; width: 18px; height: 18px; border: 2px solid rgb(1, 30, 65); border-radius: 2px; background-color: transparent; pointer-events: none; will-change: background-color, border-color; transition: background-color 90ms cubic-bezier(0.4, 0, 0.6, 1), border-color 90ms cubic-bezier(0.4, 0, 0.6, 1); }
+#cookiescript_injected .mdc-checkbox__background .mdc-checkbox__background::before, #cookiescript_injected_fsd .mdc-checkbox__background .mdc-checkbox__background::before { background-color: rgb(0, 0, 0); }
+@supports not (-ms-ime-align:auto) {
+  #cookiescript_injected .mdc-checkbox__checkmark, #cookiescript_injected_fsd .mdc-checkbox__checkmark { position: absolute; inset: 0px; width: 100%; opacity: 0; transition: opacity 180ms cubic-bezier(0.4, 0, 0.6, 1); }
+  #cookiescript_injected .mdc-checkbox__checkmark-path, #cookiescript_injected_fsd .mdc-checkbox__checkmark-path { transition: stroke-dashoffset 180ms cubic-bezier(0.4, 0, 0.6, 1); stroke: currentcolor; stroke-width: 5px; stroke-dashoffset: 29.7833; stroke-dasharray: 29.7833; }
+  #cookiescript_injected .mdc-checkbox__native-control:checked ~ .mdc-checkbox__background, #cookiescript_injected .mdc-checkbox__native-control:indeterminate ~ .mdc-checkbox__background, #cookiescript_injected_fsd .mdc-checkbox__native-control:checked ~ .mdc-checkbox__background, #cookiescript_injected_fsd .mdc-checkbox__native-control:indeterminate ~ .mdc-checkbox__background { transition: border-color 90ms cubic-bezier(0, 0, 0.2, 1), background-color 90ms cubic-bezier(0, 0, 0.2, 1); }
+  #cookiescript_injected .mdc-checkbox__native-control:checked ~ .mdc-checkbox__background .mdc-checkbox__checkmark-path, #cookiescript_injected .mdc-checkbox__native-control:indeterminate ~ .mdc-checkbox__background .mdc-checkbox__checkmark-path, #cookiescript_injected_fsd .mdc-checkbox__native-control:checked ~ .mdc-checkbox__background .mdc-checkbox__checkmark-path, #cookiescript_injected_fsd .mdc-checkbox__native-control:indeterminate ~ .mdc-checkbox__background .mdc-checkbox__checkmark-path { stroke-dashoffset: 0; }
+  #cookiescript_injected .mdc-checkbox__background::before, #cookiescript_injected_fsd .mdc-checkbox__background::before { position: absolute; transform: scale(0, 0); border-radius: 50%; opacity: 0; pointer-events: none; content: ""; will-change: opacity, transform; transition: opacity 90ms cubic-bezier(0.4, 0, 0.6, 1), transform 90ms cubic-bezier(0.4, 0, 0.6, 1), -webkit-transform 90ms cubic-bezier(0.4, 0, 0.6, 1); }
+  #cookiescript_injected .mdc-checkbox__native-control:focus ~ .mdc-checkbox__background::before, #cookiescript_injected_fsd .mdc-checkbox__native-control:focus ~ .mdc-checkbox__background::before { transform: scale(1); opacity: 0.12; transition: opacity 80ms cubic-bezier(0, 0, 0.2, 1), transform 80ms cubic-bezier(0, 0, 0.2, 1), -webkit-transform 80ms cubic-bezier(0, 0, 0.2, 1); }
+  #cookiescript_injected .mdc-checkbox__native-control, #cookiescript_injected_fsd .mdc-checkbox__native-control { position: absolute; margin: 0px; padding: 0px; opacity: 0; cursor: inherit; }
+  #cookiescript_injected .mdc-checkbox__native-control:disabled, #cookiescript_injected_fsd .mdc-checkbox__native-control:disabled { cursor: default; pointer-events: none; }
+  #cookiescript_injected .mdc-checkbox__native-control:checked ~ .mdc-checkbox__background .mdc-checkbox__checkmark, #cookiescript_injected_fsd .mdc-checkbox__native-control:checked ~ .mdc-checkbox__background .mdc-checkbox__checkmark { transition: opacity 180ms cubic-bezier(0, 0, 0.2, 1), transform 180ms cubic-bezier(0, 0, 0.2, 1), -webkit-transform 180ms cubic-bezier(0, 0, 0.2, 1); opacity: 1; }
+  #cookiescript_injected .mdc-checkbox__native-control:indeterminate ~ .mdc-checkbox__background .mdc-checkbox__checkmark, #cookiescript_injected_fsd .mdc-checkbox__native-control:indeterminate ~ .mdc-checkbox__background .mdc-checkbox__checkmark { transform: rotate(45deg); opacity: 0; transition: opacity 90ms cubic-bezier(0.4, 0, 0.6, 1), transform 90ms cubic-bezier(0.4, 0, 0.6, 1), -webkit-transform 90ms cubic-bezier(0.4, 0, 0.6, 1); }
+  #cookiescript_injected .mdc-checkbox, #cookiescript_injected_fsd .mdc-checkbox { -webkit-tap-highlight-color: transparent; }
+}
+#cookiescript_injected .mdc-checkbox .mdc-checkbox__native-control, #cookiescript_injected_fsd .mdc-checkbox .mdc-checkbox__native-control { width: 47px; height: 47px; }
+#cookiescript_injected .mdc-checkbox, #cookiescript_injected_fsd .mdc-checkbox { flex: 0 0 25px; width: 25px; height: 25px; }
+#cookiescript_injected .mdc-checkbox .mdc-checkbox__background::before, #cookiescript_injected_fsd .mdc-checkbox .mdc-checkbox__background::before { width: 0px; height: 0px; }
+#cookiescript_injected_fsd .mdc-checkbox .mdc-checkbox__native-control:focus ~ .mdc-checkbox__background, #cookiescript_injected .mdc-checkbox .mdc-checkbox__native-control:focus ~ .mdc-checkbox__background { outline: highlight auto 1px; }
+#cookiescript_injected .mdc-checkbox__background { width: 25px; height: 25px; border-radius: 8px; }
+#cookiescript_injected .mdc-elevation-overlay, #cookiescript_injected_fsd .mdc-elevation-overlay { position: absolute; border-radius: inherit; pointer-events: none; opacity: 0; transition: opacity 280ms cubic-bezier(0.4, 0, 0.2, 1); background-color: rgb(255, 255, 255); }
+#cookiescript_injected .mdc-switch, #cookiescript_injected_fsd .mdc-switch { align-items: center; background: 0px 0px; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; cursor: pointer; display: inline-flex; flex-shrink: 0; margin: 0px; outline: 0px; overflow: visible; padding: 0px; position: relative; }
+#cookiescript_injected .mdc-switch:disabled, #cookiescript_injected_fsd .mdc-switch:disabled { cursor: default; pointer-events: none; }
+#cookiescript_injected .mdc-switch input[type="checkbox"], #cookiescript_injected_fsd .mdc-switch input[type="checkbox"] { display: none; visibility: hidden; }
+#cookiescript_injected .mdc-switch__track, #cookiescript_injected_fsd .mdc-switch__track { overflow: hidden; position: relative; width: 100%; }
+#cookiescript_injected .mdc-switch__track::after, #cookiescript_injected .mdc-switch__track::before, #cookiescript_injected_fsd .mdc-switch__track::after, #cookiescript_injected_fsd .mdc-switch__track::before { border: 1px solid transparent; border-radius: inherit; box-sizing: border-box; content: ""; height: 100%; left: 0px; position: absolute; width: 100%; }
+#cookiescript_injected .mdc-switch__track::before, #cookiescript_injected_fsd .mdc-switch__track::before { transition: transform 75ms cubic-bezier(0, 0, 0.2, 1); transform: translateX(0px); }
+#cookiescript_injected .mdc-switch__track::after, #cookiescript_injected_fsd .mdc-switch__track::after { transition: transform 75ms cubic-bezier(0.4, 0, 0.6, 1); transform: translateX(-100%); }
+#cookiescript_injected .mdc-switch__track[dir="rtl"]::after, #cookiescript_injected [dir="rtl"] .mdc-switch__track::after, #cookiescript_injected_fsd .mdc-switch__track[dir="rtl"]::after, #cookiescript_injected_fsd [dir="rtl"] .mdc-switch__track::after { transform: translateX(100%); }
+#cookiescript_injected .mdc-switch--selected .mdc-switch__track::before, #cookiescript_injected_fsd .mdc-switch--selected .mdc-switch__track::before { transition: transform 75ms cubic-bezier(0.4, 0, 0.6, 1); transform: translateX(100%); }
+#cookiescript_injected .mdc-switch--selected .mdc-switch__track[dir="rtl"]::before, #cookiescript_injected [dir="rtl"] .mdc-switch--selected .mdc-switch__track::before, #cookiescript_injected_fsd .mdc-switch--selected .mdc-switch__track[dir="rtl"]::before, #cookiescript_injected_fsd [dir="rtl"] .mdc-switch--selected .mdc-switch__track::before { transform: translateX(-100%); }
+#cookiescript_injected .mdc-switch--selected .mdc-switch__track::after, #cookiescript_injected_fsd .mdc-switch--selected .mdc-switch__track::after { transition: transform 75ms cubic-bezier(0, 0, 0.2, 1); transform: translateX(0px); }
+#cookiescript_injected .mdc-switch__handle-track, #cookiescript_injected_fsd .mdc-switch__handle-track { height: 100%; pointer-events: none; position: absolute; top: 0px; transition: transform 75ms cubic-bezier(0.4, 0, 0.2, 1); left: 0px; right: auto; transform: translateX(0px); }
+#cookiescript_injected .mdc-switch__handle-track[dir="rtl"], #cookiescript_injected [dir="rtl"] .mdc-switch__handle-track, #cookiescript_injected_fsd .mdc-switch__handle-track[dir="rtl"], #cookiescript_injected_fsd [dir="rtl"] .mdc-switch__handle-track { left: auto; right: 0px; }
+#cookiescript_injected .mdc-switch--selected .mdc-switch__handle-track, #cookiescript_injected_fsd .mdc-switch--selected .mdc-switch__handle-track { transform: translateX(100%); }
+#cookiescript_injected .mdc-switch--selected .mdc-switch__handle-track[dir="rtl"], #cookiescript_injected [dir="rtl"] .mdc-switch--selected .mdc-switch__handle-track, #cookiescript_injected_fsd .mdc-switch--selected .mdc-switch__handle-track[dir="rtl"], #cookiescript_injected_fsd [dir="rtl"] .mdc-switch--selected .mdc-switch__handle-track { transform: translateX(-100%); }
+#cookiescript_injected .mdc-switch__handle, #cookiescript_injected_fsd .mdc-switch__handle { display: flex; pointer-events: auto; position: absolute; top: 50%; transform: translateY(-50%); left: 0px; right: auto; }
+#cookiescript_injected .mdc-switch__handle[dir="rtl"], #cookiescript_injected [dir="rtl"] .mdc-switch__handle, #cookiescript_injected_fsd .mdc-switch__handle[dir="rtl"], #cookiescript_injected_fsd [dir="rtl"] .mdc-switch__handle { left: auto; right: 0px; }
+#cookiescript_injected .mdc-switch__handle::after, #cookiescript_injected .mdc-switch__handle::before, #cookiescript_injected_fsd .mdc-switch__handle::after, #cookiescript_injected_fsd .mdc-switch__handle::before { border: 1px solid transparent; border-radius: inherit; box-sizing: border-box; content: ""; width: 100%; height: 100%; left: 0px; position: absolute; top: 0px; transition: background-color 75ms cubic-bezier(0.4, 0, 0.2, 1), border-color 75ms cubic-bezier(0.4, 0, 0.2, 1); z-index: -1; }
+#cookiescript_injected .mdc-switch__shadow, #cookiescript_injected_fsd .mdc-switch__shadow { border-radius: inherit; inset: 0px; position: absolute; }
+#cookiescript_injected .mdc-elevation-overlay, #cookiescript_injected_fsd .mdc-elevation-overlay { inset: 0px; }
+#cookiescript_injected .mdc-switch__ripple, #cookiescript_injected_fsd .mdc-switch__ripple { left: 50%; position: absolute; top: 50%; transform: translate(-50%, -50%); z-index: -1; }
+#cookiescript_injected .mdc-switch:disabled .mdc-switch__ripple, #cookiescript_injected_fsd .mdc-switch:disabled .mdc-switch__ripple { display: none; }
+#cookiescript_injected .mdc-switch__icons, #cookiescript_injected_fsd .mdc-switch__icons { height: 100%; position: relative; width: 100%; z-index: 1; }
+#cookiescript_injected .mdc-switch__icon, #cookiescript_injected_fsd .mdc-switch__icon { inset: 0px; margin: auto; position: absolute; opacity: 0; transition: opacity 30ms cubic-bezier(0.4, 0, 1, 1); }
+#cookiescript_injected .mdc-switch--selected .mdc-switch__icon--on, #cookiescript_injected .mdc-switch--unselected .mdc-switch__icon--off, #cookiescript_injected_fsd .mdc-switch--selected .mdc-switch__icon--on, #cookiescript_injected_fsd .mdc-switch--unselected .mdc-switch__icon--off { opacity: 1; transition: opacity 45ms cubic-bezier(0, 0, 0.2, 1) 30ms; }
+#cookiescript_injected .mdc-switch, #cookiescript_injected_fsd .mdc-switch { will-change: transform, opacity; }
+@-webkit-keyframes mdc-ripple-fg-radius-in { 
+  0% { animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transform: translate(0px) scale(1); }
+  100% { transform: translate(0px) scale(1); }
+}
+@keyframes mdc-ripple-fg-radius-in { 
+  0% { animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transform: translate(0px) scale(1); }
+  100% { transform: translate(0px) scale(1); }
+}
+@-webkit-keyframes mdc-ripple-fg-opacity-in { 
+  0% { animation-timing-function: linear; opacity: 0; }
+  100% { opacity: 0.1; }
+}
+@keyframes mdc-ripple-fg-opacity-in { 
+  0% { animation-timing-function: linear; opacity: 0; }
+  100% { opacity: 0.1; }
+}
+@-webkit-keyframes mdc-ripple-fg-opacity-out { 
+  0% { animation-timing-function: linear; opacity: 0.1; }
+  100% { opacity: 0; }
+}
+@keyframes mdc-ripple-fg-opacity-out { 
+  0% { animation-timing-function: linear; opacity: 0.1; }
+  100% { opacity: 0; }
+}
+#cookiescript_injected .mdc-switch .mdc-switch__ripple::after, #cookiescript_injected .mdc-switch .mdc-switch__ripple::before, #cookiescript_injected_fsd .mdc-switch .mdc-switch__ripple::after, #cookiescript_injected_fsd .mdc-switch .mdc-switch__ripple::before { position: absolute; border-radius: 50%; opacity: 0; pointer-events: none; content: ""; }
+#cookiescript_injected .mdc-switch .mdc-switch__ripple::before, #cookiescript_injected_fsd .mdc-switch .mdc-switch__ripple::before { transition: opacity 15ms linear, background-color 15ms linear; z-index: 1; }
+#cookiescript_injected .mdc-switch .mdc-switch__ripple::after, #cookiescript_injected_fsd .mdc-switch .mdc-switch__ripple::after { z-index: 0; }
+#cookiescript_injected .mdc-switch.mdc-ripple-upgraded .mdc-switch__ripple::before, #cookiescript_injected_fsd .mdc-switch.mdc-ripple-upgraded .mdc-switch__ripple::before { transform: scale(1); }
+#cookiescript_injected .mdc-switch.mdc-ripple-upgraded .mdc-switch__ripple::after, #cookiescript_injected_fsd .mdc-switch.mdc-ripple-upgraded .mdc-switch__ripple::after { top: 0px; left: 0px; transform: scale(0); transform-origin: center center; }
+#cookiescript_injected .mdc-switch.mdc-ripple-upgraded--unbounded .mdc-switch__ripple::after, #cookiescript_injected_fsd .mdc-switch.mdc-ripple-upgraded--unbounded .mdc-switch__ripple::after { top: 0px; left: 0px; }
+#cookiescript_injected .mdc-switch.mdc-ripple-upgraded--foreground-activation .mdc-switch__ripple::after, #cookiescript_injected_fsd .mdc-switch.mdc-ripple-upgraded--foreground-activation .mdc-switch__ripple::after { animation: 225ms ease 0s 1 normal forwards running mdc-ripple-fg-radius-in, 75ms ease 0s 1 normal forwards running mdc-ripple-fg-opacity-in; }
+#cookiescript_injected .mdc-switch.mdc-ripple-upgraded--foreground-deactivation .mdc-switch__ripple::after, #cookiescript_injected_fsd .mdc-switch.mdc-ripple-upgraded--foreground-deactivation .mdc-switch__ripple::after { animation: 150ms ease 0s 1 normal none running mdc-ripple-fg-opacity-out; transform: translate(0px) scale(1); }
+#cookiescript_injected .mdc-switch .mdc-switch__ripple::after, #cookiescript_injected .mdc-switch .mdc-switch__ripple::before, #cookiescript_injected_fsd .mdc-switch .mdc-switch__ripple::after, #cookiescript_injected_fsd .mdc-switch .mdc-switch__ripple::before { top: calc(0%); left: calc(0%); width: 100%; height: 100%; }
+#cookiescript_injected .mdc-switch.mdc-ripple-upgraded .mdc-switch__ripple::after, #cookiescript_injected .mdc-switch.mdc-ripple-upgraded .mdc-switch__ripple::before, #cookiescript_injected_fsd .mdc-switch.mdc-ripple-upgraded .mdc-switch__ripple::after, #cookiescript_injected_fsd .mdc-switch.mdc-ripple-upgraded .mdc-switch__ripple::before { top: 0px; left: 0px; width: 0px; height: 0px; }
+#cookiescript_injected .mdc-switch.mdc-ripple-upgraded .mdc-switch__ripple::after, #cookiescript_injected_fsd .mdc-switch.mdc-ripple-upgraded .mdc-switch__ripple::after { width: 0px; height: 0px; }
+#cookiescript_injected .mdc-switch, #cookiescript_injected_fsd .mdc-switch { width: 36px; }
+#cookiescript_injected .mdc-switch.mdc-switch--selected:enabled .mdc-switch__handle::after { }
+#cookiescript_injected .mdc-switch.mdc-switch--selected:enabled:hover:not(:focus):not(:active) .mdc-switch__handle::after { }
+#cookiescript_injected .mdc-switch.mdc-switch--selected:enabled:focus:not(:active) .mdc-switch__handle::after { }
+#cookiescript_injected .mdc-switch.mdc-switch--selected:enabled:active .mdc-switch__handle::after { }
+#cookiescript_injected .mdc-switch.mdc-switch--selected:disabled .mdc-switch__handle::after, #cookiescript_injected_fsd .mdc-switch.mdc-switch--selected:disabled .mdc-switch__handle::after { background: rgb(66, 66, 66); }
+#cookiescript_injected .mdc-switch.mdc-switch--unselected:enabled .mdc-switch__handle::after, #cookiescript_injected_fsd .mdc-switch.mdc-switch--unselected:enabled .mdc-switch__handle::after { background: rgb(97, 97, 97); }
+#cookiescript_injected .mdc-switch.mdc-switch--unselected:enabled:hover:not(:focus):not(:active) .mdc-switch__handle::after, #cookiescript_injected_fsd .mdc-switch.mdc-switch--unselected:enabled:hover:not(:focus):not(:active) .mdc-switch__handle::after { background: rgb(33, 33, 33); }
+#cookiescript_injected .mdc-switch.mdc-switch--unselected:enabled:focus:not(:active) .mdc-switch__handle::after, #cookiescript_injected_fsd .mdc-switch.mdc-switch--unselected:enabled:focus:not(:active) .mdc-switch__handle::after { background: rgb(33, 33, 33); }
+#cookiescript_injected .mdc-switch.mdc-switch--unselected:enabled:active .mdc-switch__handle::after, #cookiescript_injected_fsd .mdc-switch.mdc-switch--unselected:enabled:active .mdc-switch__handle::after { background: rgb(33, 33, 33); }
+#cookiescript_injected .mdc-switch.mdc-switch--unselected:disabled .mdc-switch__handle::after, #cookiescript_injected_fsd .mdc-switch.mdc-switch--unselected:disabled .mdc-switch__handle::after { background: rgb(66, 66, 66); }
+#cookiescript_injected .mdc-switch .mdc-switch__handle::before, #cookiescript_injected_fsd .mdc-switch .mdc-switch__handle::before { background: rgb(255, 255, 255); }
+#cookiescript_injected .mdc-switch:enabled .mdc-switch__shadow, #cookiescript_injected_fsd .mdc-switch:enabled .mdc-switch__shadow { box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px, rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px; --mdc-elevation-box-shadow-for-gss: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),0px 1px 1px 0px rgba(0, 0, 0, 0.14),0px 1px 3px 0px rgba(0, 0, 0, 0.12); }
+#cookiescript_injected .mdc-switch:disabled .mdc-switch__shadow, #cookiescript_injected_fsd .mdc-switch:disabled .mdc-switch__shadow { box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 0px 0px, rgba(0, 0, 0, 0.14) 0px 0px 0px 0px, rgba(0, 0, 0, 0.12) 0px 0px 0px 0px; --mdc-elevation-box-shadow-for-gss: 0px 0px 0px 0px rgba(0, 0, 0, 0.2),0px 0px 0px 0px rgba(0, 0, 0, 0.14),0px 0px 0px 0px rgba(0, 0, 0, 0.12); }
+#cookiescript_injected .mdc-switch .mdc-switch__handle, #cookiescript_injected_fsd .mdc-switch .mdc-switch__handle { height: 20px; }
+#cookiescript_injected .mdc-switch:disabled .mdc-switch__handle::after, #cookiescript_injected_fsd .mdc-switch:disabled .mdc-switch__handle::after { opacity: 0.38; }
+#cookiescript_injected .mdc-switch .mdc-switch__handle, #cookiescript_injected_fsd .mdc-switch .mdc-switch__handle { border-radius: 10px; }
+#cookiescript_injected .mdc-switch .mdc-switch__handle, #cookiescript_injected_fsd .mdc-switch .mdc-switch__handle { width: 20px; }
+#cookiescript_injected .mdc-switch .mdc-switch__handle-track, #cookiescript_injected_fsd .mdc-switch .mdc-switch__handle-track { width: calc(100% - 20px); }
+#cookiescript_injected .mdc-switch.mdc-switch--selected:enabled .mdc-switch__icon, #cookiescript_injected_fsd .mdc-switch.mdc-switch--selected:enabled .mdc-switch__icon { fill: rgb(255, 255, 255); }
+#cookiescript_injected .mdc-switch.mdc-switch--selected:disabled .mdc-switch__icon, #cookiescript_injected_fsd .mdc-switch.mdc-switch--selected:disabled .mdc-switch__icon { fill: rgb(255, 255, 255); }
+#cookiescript_injected .mdc-switch.mdc-switch--unselected:enabled .mdc-switch__icon, #cookiescript_injected_fsd .mdc-switch.mdc-switch--unselected:enabled .mdc-switch__icon { fill: rgb(255, 255, 255); }
+#cookiescript_injected .mdc-switch.mdc-switch--unselected:disabled .mdc-switch__icon, #cookiescript_injected_fsd .mdc-switch.mdc-switch--unselected:disabled .mdc-switch__icon { fill: rgb(255, 255, 255); }
+#cookiescript_injected .mdc-switch.mdc-switch--selected:disabled .mdc-switch__icons, #cookiescript_injected_fsd .mdc-switch.mdc-switch--selected:disabled .mdc-switch__icons { opacity: 0.38; }
+#cookiescript_injected .mdc-switch.mdc-switch--unselected:disabled .mdc-switch__icons, #cookiescript_injected_fsd .mdc-switch.mdc-switch--unselected:disabled .mdc-switch__icons { opacity: 0.38; }
+#cookiescript_injected .mdc-switch.mdc-switch--selected .mdc-switch__icon, #cookiescript_injected_fsd .mdc-switch.mdc-switch--selected .mdc-switch__icon { width: 18px; height: 18px; }
+#cookiescript_injected .mdc-switch.mdc-switch--unselected .mdc-switch__icon, #cookiescript_injected_fsd .mdc-switch.mdc-switch--unselected .mdc-switch__icon { width: 18px; height: 18px; }
+#cookiescript_injected .mdc-switch.mdc-switch--selected:enabled:hover:not(:focus) .mdc-switch__ripple::after, #cookiescript_injected .mdc-switch.mdc-switch--selected:enabled:hover:not(:focus) .mdc-switch__ripple::before { }
+#cookiescript_injected .mdc-switch.mdc-switch--selected:enabled:focus .mdc-switch__ripple::after, #cookiescript_injected .mdc-switch.mdc-switch--selected:enabled:focus .mdc-switch__ripple::before { }
+#cookiescript_injected .mdc-switch.mdc-switch--selected:enabled:active .mdc-switch__ripple::after, #cookiescript_injected .mdc-switch.mdc-switch--selected:enabled:active .mdc-switch__ripple::before { }
+#cookiescript_injected .mdc-switch.mdc-switch--unselected:enabled:hover:not(:focus) .mdc-switch__ripple::after, #cookiescript_injected .mdc-switch.mdc-switch--unselected:enabled:hover:not(:focus) .mdc-switch__ripple::before, #cookiescript_injected_fsd .mdc-switch.mdc-switch--unselected:enabled:hover:not(:focus) .mdc-switch__ripple::after, #cookiescript_injected_fsd .mdc-switch.mdc-switch--unselected:enabled:hover:not(:focus) .mdc-switch__ripple::before { background-color: rgb(66, 66, 66); }
+#cookiescript_injected .mdc-switch.mdc-switch--unselected:enabled:focus .mdc-switch__ripple::after, #cookiescript_injected .mdc-switch.mdc-switch--unselected:enabled:focus .mdc-switch__ripple::before, #cookiescript_injected_fsd .mdc-switch.mdc-switch--unselected:enabled:focus .mdc-switch__ripple::after, #cookiescript_injected_fsd .mdc-switch.mdc-switch--unselected:enabled:focus .mdc-switch__ripple::before { background-color: rgb(66, 66, 66); }
+#cookiescript_injected .mdc-switch.mdc-switch--unselected:enabled:active .mdc-switch__ripple::after, #cookiescript_injected .mdc-switch.mdc-switch--unselected:enabled:active .mdc-switch__ripple::before, #cookiescript_injected_fsd .mdc-switch.mdc-switch--unselected:enabled:active .mdc-switch__ripple::after, #cookiescript_injected_fsd .mdc-switch.mdc-switch--unselected:enabled:active .mdc-switch__ripple::before { background-color: rgb(66, 66, 66); }
+#cookiescript_injected .mdc-switch.mdc-switch--selected:enabled:hover:not(:focus).mdc-ripple-surface--hover .mdc-switch__ripple::before, #cookiescript_injected .mdc-switch.mdc-switch--selected:enabled:hover:not(:focus):hover .mdc-switch__ripple::before, #cookiescript_injected_fsd .mdc-switch.mdc-switch--selected:enabled:hover:not(:focus).mdc-ripple-surface--hover .mdc-switch__ripple::before, #cookiescript_injected_fsd .mdc-switch.mdc-switch--selected:enabled:hover:not(:focus):hover .mdc-switch__ripple::before { opacity: 0.04; }
+#cookiescript_injected .mdc-switch.mdc-switch--selected:enabled:focus.mdc-ripple-upgraded--background-focused .mdc-switch__ripple::before, #cookiescript_injected .mdc-switch.mdc-switch--selected:enabled:focus:not(.mdc-ripple-upgraded):focus .mdc-switch__ripple::before, #cookiescript_injected_fsd .mdc-switch.mdc-switch--selected:enabled:focus.mdc-ripple-upgraded--background-focused .mdc-switch__ripple::before, #cookiescript_injected_fsd .mdc-switch.mdc-switch--selected:enabled:focus:not(.mdc-ripple-upgraded):focus .mdc-switch__ripple::before { transition-duration: 75ms; opacity: 0.12; }
+#cookiescript_injected .mdc-switch.mdc-switch--selected:enabled:active:not(.mdc-ripple-upgraded) .mdc-switch__ripple::after, #cookiescript_injected_fsd .mdc-switch.mdc-switch--selected:enabled:active:not(.mdc-ripple-upgraded) .mdc-switch__ripple::after { transition: opacity 150ms linear; }
+#cookiescript_injected .mdc-switch.mdc-switch--selected:enabled:active:not(.mdc-ripple-upgraded):active .mdc-switch__ripple::after, #cookiescript_injected_fsd .mdc-switch.mdc-switch--selected:enabled:active:not(.mdc-ripple-upgraded):active .mdc-switch__ripple::after { transition-duration: 75ms; opacity: 0.1; }
+#cookiescript_injected .mdc-switch.mdc-switch--unselected:enabled:hover:not(:focus).mdc-ripple-surface--hover .mdc-switch__ripple::before, #cookiescript_injected .mdc-switch.mdc-switch--unselected:enabled:hover:not(:focus):hover .mdc-switch__ripple::before, #cookiescript_injected_fsd .mdc-switch.mdc-switch--unselected:enabled:hover:not(:focus).mdc-ripple-surface--hover .mdc-switch__ripple::before, #cookiescript_injected_fsd .mdc-switch.mdc-switch--unselected:enabled:hover:not(:focus):hover .mdc-switch__ripple::before { opacity: 0.04; }
+#cookiescript_injected .mdc-switch.mdc-switch--unselected:enabled:focus.mdc-ripple-upgraded--background-focused .mdc-switch__ripple::before, #cookiescript_injected .mdc-switch.mdc-switch--unselected:enabled:focus:not(.mdc-ripple-upgraded):focus .mdc-switch__ripple::before, #cookiescript_injected_fsd .mdc-switch.mdc-switch--unselected:enabled:focus.mdc-ripple-upgraded--background-focused .mdc-switch__ripple::before, #cookiescript_injected_fsd .mdc-switch.mdc-switch--unselected:enabled:focus:not(.mdc-ripple-upgraded):focus .mdc-switch__ripple::before { transition-duration: 75ms; opacity: 0.12; }
+#cookiescript_injected .mdc-switch.mdc-switch--unselected:enabled:active:not(.mdc-ripple-upgraded) .mdc-switch__ripple::after, #cookiescript_injected_fsd .mdc-switch.mdc-switch--unselected:enabled:active:not(.mdc-ripple-upgraded) .mdc-switch__ripple::after { transition: opacity 150ms linear; }
+#cookiescript_injected .mdc-switch.mdc-switch--unselected:enabled:active:not(.mdc-ripple-upgraded):active .mdc-switch__ripple::after, #cookiescript_injected_fsd .mdc-switch.mdc-switch--unselected:enabled:active:not(.mdc-ripple-upgraded):active .mdc-switch__ripple::after { transition-duration: 75ms; opacity: 0.1; }
+#cookiescript_injected .mdc-switch .mdc-switch__ripple, #cookiescript_injected_fsd .mdc-switch .mdc-switch__ripple { height: 48px; width: 48px; }
+#cookiescript_injected .mdc-switch .mdc-switch__track, #cookiescript_injected_fsd .mdc-switch .mdc-switch__track { height: 14px; }
+#cookiescript_injected .mdc-switch:disabled .mdc-switch__track, #cookiescript_injected_fsd .mdc-switch:disabled .mdc-switch__track { opacity: 0.12; }
+#cookiescript_injected .mdc-switch:enabled .mdc-switch__track::after { opacity: 0.3; }
+#cookiescript_injected .mdc-switch:enabled:hover:not(:focus):not(:active) .mdc-switch__track::after { opacity: 0.3; }
+#cookiescript_injected .mdc-switch:enabled:focus:not(:active) .mdc-switch__track::after { opacity: 0.3; }
+#cookiescript_injected .mdc-switch:enabled:active .mdc-switch__track::after { opacity: 0.3; }
+#cookiescript_injected .mdc-switch:disabled .mdc-switch__track::after, #cookiescript_injected_fsd .mdc-switch:disabled .mdc-switch__track::after { background: rgb(66, 66, 66); }
+#cookiescript_injected .mdc-switch:enabled .mdc-switch__track::before, #cookiescript_injected_fsd .mdc-switch:enabled .mdc-switch__track::before { background: rgb(224, 224, 224); }
+#cookiescript_injected .mdc-switch:enabled:hover:not(:focus):not(:active) .mdc-switch__track::before, #cookiescript_injected_fsd .mdc-switch:enabled:hover:not(:focus):not(:active) .mdc-switch__track::before { background: rgb(224, 224, 224); }
+#cookiescript_injected .mdc-switch:enabled:focus:not(:active) .mdc-switch__track::before, #cookiescript_injected_fsd .mdc-switch:enabled:focus:not(:active) .mdc-switch__track::before { background: rgb(224, 224, 224); }
+#cookiescript_injected .mdc-switch:enabled:active .mdc-switch__track::before, #cookiescript_injected_fsd .mdc-switch:enabled:active .mdc-switch__track::before { background: rgb(224, 224, 224); }
+#cookiescript_injected .mdc-switch:disabled .mdc-switch__track::before, #cookiescript_injected_fsd .mdc-switch:disabled .mdc-switch__track::before { background: rgb(66, 66, 66); }
+#cookiescript_injected .mdc-switch .mdc-switch__track, #cookiescript_injected_fsd .mdc-switch .mdc-switch__track { border-radius: 7px; }
+@media screen and (forced-colors: active), (-ms-high-contrast:active) {
+  #cookiescript_injected .mdc-switch:disabled .mdc-switch__handle::after, #cookiescript_injected_fsd .mdc-switch:disabled .mdc-switch__handle::after { opacity: 1; }
+  #cookiescript_injected .mdc-switch.mdc-switch--selected:disabled .mdc-switch__icons, #cookiescript_injected_fsd .mdc-switch.mdc-switch--selected:disabled .mdc-switch__icons { opacity: 1; }
+  #cookiescript_injected .mdc-switch.mdc-switch--unselected:disabled .mdc-switch__icons, #cookiescript_injected_fsd .mdc-switch.mdc-switch--unselected:disabled .mdc-switch__icons { opacity: 1; }
+  #cookiescript_injected .mdc-switch:disabled .mdc-switch__track, #cookiescript_injected_fsd .mdc-switch:disabled .mdc-switch__track { opacity: 1; }
+}
+#cookiescript_injected_wrapper { position: fixed; padding: 0px; width: 100%; inset: 0px; z-index: 999996; background-color: rgba(17, 17, 17, 0.5) !important; }
+#cookiescript_injected { bottom: 0px; left: 0px; right: 0px; position: fixed; padding: 15px 20px 10px; width: 100%; display: flex; flex-direction: column; text-align: center; margin: 0px; align-items: center; max-height: 85%; overflow-y: auto; }
+.cookiescript-extra-links { padding-top: 0px; }
+.cookiescript-extra-links a { margin-left: 0px; margin-right: 25px; }
+#cookiescript_copyright { line-height: 1; text-align: center; }
+#cookiescript_buttons { justify-content: center; flex-wrap: wrap; margin: 0px 0px 10px; }
+#cookiescript_manage_wrap { margin: 0px 0px 14px; }
+#cookiescript_header { padding: 3px 0px 8px; margin: 0px 60px; text-align: center; }
+#cookiescript_checkboxs { margin: -5px auto 8px; display: flex; flex-wrap: wrap; }
+.cookiescript_checkbox { margin: 0px; }
+#cookiescript_accept, #cookiescript_reject, #cookiescript_save { margin: 5px 7px; flex-shrink: 1; padding: 0px 23px; white-space: normal; }
+#cookiescript_description { margin: 0px auto 8px; text-align: center; max-width: 600px; }
+.cookiescript_checkbox_label { padding: 0px; margin: 0px 10px 0px -2px; }
+#cookiescript_cookietablewrap { transition: height 300ms, min-height 300ms, max-height 300ms, opacity 200ms 300ms; }
+#cookiescript_cookietablewrap.cookiescript_hidden { transition: height 300ms, min-height 300ms, max-height 300ms, opacity 200ms; }
+@media only screen and (max-width: 440px) {
+  #cookiescript_injected { bottom: 0px; left: 0px; width: 100%; padding: 15px; text-align: left; align-items: center; }
+  #cookiescript_description { text-align: left; }
+  #cookiescript_description, #cookiescript_buttons, #cookiescript_manage_wrap, #cookiescript_checkboxs { margin-bottom: 8px; }
+  #cookiescript_header { padding-top: 5px; margin-left: 0px; text-align: left; align-self: baseline; }
+  #cookiescript_show_all_partners_button { width: 100%; }
+  #cookiescript_buttons { flex-wrap: wrap; width: 100%; }
+  #cookiescript_accept, #cookiescript_reject, #cookiescript_save { width: 100%; }
+  #cookiescript_injected { max-height: 100%; }
+}
+@media screen and (min-width:0\0) and (min-resolution: 0.001dpcm) {
+  .cookiescript_checkbox { display: inline-block; }
+}
+@media screen and (min-width:0\0) and (min-resolution: 0.001dpcm) and (min-width: 1140px) {
+  #cookiescript_cookietablewrap { left: calc(50% - 570px); }
+}

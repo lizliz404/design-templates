@@ -1,0 +1,521 @@
+{
+ "aktiv": {
+  "tables": [
+   "GlyphOrder",
+   "head",
+   "hhea",
+   "maxp",
+   "OS/2",
+   "hmtx",
+   "cmap",
+   "fpgm",
+   "prep",
+   "cvt ",
+   "loca",
+   "glyf",
+   "name",
+   "post",
+   "gasp",
+   "GDEF",
+   "GPOS",
+   "GSUB"
+  ],
+  "names": [
+   [
+    0,
+    "Copyright 2019-2020 Dalton Maag Ltd. Modification of this file requires prior written permission from Dalton Maag Ltd."
+   ],
+   [
+    1,
+    "."
+   ],
+   [
+    2,
+    ""
+   ],
+   [
+    3,
+    "FontForge 2.0 : . : 29-4-2024"
+   ],
+   [
+    4,
+    "."
+   ],
+   [
+    5,
+    "Version 3.021"
+   ],
+   [
+    6,
+    "."
+   ],
+   [
+    7,
+    "Aktiv Grotesk, Dalton Maag, and DaMa are registered trademarks of Dalton Maag Ltd."
+   ],
+   [
+    8,
+    "Dalton Maag Ltd"
+   ],
+   [
+    0,
+    "Copyright 2019-2020 Dalton Maag Ltd. Modification of this file requires prior written permission from Dalton Maag Ltd."
+   ],
+   [
+    1,
+    "."
+   ],
+   [
+    2,
+    ""
+   ],
+   [
+    3,
+    "FontForge 2.0 : . : 29-4-2024"
+   ],
+   [
+    4,
+    "."
+   ],
+   [
+    5,
+    "Version 3.021"
+   ],
+   [
+    6,
+    "."
+   ],
+   [
+    7,
+    "Aktiv Grotesk, Dalton Maag, and DaMa are registered trademarks of Dalton Maag Ltd."
+   ],
+   [
+    8,
+    "Dalton Maag Ltd"
+   ]
+  ]
+ },
+ "aktiv500": {
+  "tables": [
+   "GlyphOrder",
+   "head",
+   "hhea",
+   "maxp",
+   "OS/2",
+   "hmtx",
+   "cmap",
+   "fpgm",
+   "prep",
+   "cvt ",
+   "loca",
+   "glyf",
+   "name",
+   "post",
+   "gasp",
+   "GDEF",
+   "GPOS",
+   "GSUB"
+  ],
+  "names": [
+   [
+    0,
+    "Copyright 2019-2020 Dalton Maag Ltd. Modification of this file requires prior written permission from Dalton Maag Ltd."
+   ],
+   [
+    1,
+    "."
+   ],
+   [
+    2,
+    ""
+   ],
+   [
+    3,
+    "FontForge 2.0 : . : 29-4-2024"
+   ],
+   [
+    4,
+    "."
+   ],
+   [
+    5,
+    "Version 3.021"
+   ],
+   [
+    6,
+    "."
+   ],
+   [
+    7,
+    "Aktiv Grotesk, Dalton Maag, and DaMa are registered trademarks of Dalton Maag Ltd."
+   ],
+   [
+    8,
+    "Dalton Maag Ltd"
+   ],
+   [
+    0,
+    "Copyright 2019-2020 Dalton Maag Ltd. Modification of this file requires prior written permission from Dalton Maag Ltd."
+   ],
+   [
+    1,
+    "."
+   ],
+   [
+    2,
+    ""
+   ],
+   [
+    3,
+    "FontForge 2.0 : . : 29-4-2024"
+   ],
+   [
+    4,
+    "."
+   ],
+   [
+    5,
+    "Version 3.021"
+   ],
+   [
+    6,
+    "."
+   ],
+   [
+    7,
+    "Aktiv Grotesk, Dalton Maag, and DaMa are registered trademarks of Dalton Maag Ltd."
+   ],
+   [
+    8,
+    "Dalton Maag Ltd"
+   ]
+  ]
+ },
+ "review": {
+  "tables": [
+   "GlyphOrder",
+   "head",
+   "hhea",
+   "maxp",
+   "OS/2",
+   "hmtx",
+   "cmap",
+   "loca",
+   "glyf",
+   "name",
+   "post",
+   "gasp",
+   "GDEF",
+   "GPOS",
+   "GSUB"
+  ],
+  "names": [
+   [
+    0,
+    "Copyright (c) 2020 Commercial Type, Inc.. All rights reserved."
+   ],
+   [
+    1,
+    "Review"
+   ],
+   [
+    2,
+    "Regular"
+   ],
+   [
+    3,
+    "COMM: Review Regular: 2020"
+   ],
+   [
+    4,
+    "Review-Regular"
+   ],
+   [
+    5,
+    "Version 1.001 2020 | wf-rip DC20201005"
+   ],
+   [
+    6,
+    "Review-Regular"
+   ],
+   [
+    7,
+    "Review is a registered trademark of Commercial Type, Inc."
+   ],
+   [
+    8,
+    "Commercial Type, Inc."
+   ],
+   [
+    16,
+    "Review"
+   ],
+   [
+    17,
+    "Regular"
+   ],
+   [
+    0,
+    "Copyright (c) 2020 Commercial Type, Inc.. All rights reserved."
+   ],
+   [
+    1,
+    "Review"
+   ],
+   [
+    2,
+    "Regular"
+   ],
+   [
+    3,
+    "COMM: Review Regular: 2020"
+   ],
+   [
+    4,
+    "Review-Regular"
+   ],
+   [
+    5,
+    "Version 1.001 2020 | wf-rip DC20201005"
+   ],
+   [
+    6,
+    "Review-Regular"
+   ],
+   [
+    7,
+    "Review is a registered trademark of Commercial Type, Inc."
+   ],
+   [
+    8,
+    "Commercial Type, Inc."
+   ],
+   [
+    16,
+    "Review"
+   ],
+   [
+    17,
+    "Regular"
+   ]
+  ]
+ },
+ "review500": {
+  "tables": [
+   "GlyphOrder",
+   "head",
+   "hhea",
+   "maxp",
+   "OS/2",
+   "hmtx",
+   "cmap",
+   "loca",
+   "glyf",
+   "name",
+   "post",
+   "gasp",
+   "GDEF",
+   "GPOS",
+   "GSUB"
+  ],
+  "names": [
+   [
+    0,
+    "Copyright (c) 2020 Commercial Type, Inc.. All rights reserved."
+   ],
+   [
+    1,
+    "Review Medium"
+   ],
+   [
+    2,
+    "Regular"
+   ],
+   [
+    3,
+    "COMM: Review Medium: 2020"
+   ],
+   [
+    4,
+    "Review-Medium"
+   ],
+   [
+    5,
+    "Version 1.001 2020 | wf-rip DC20201005"
+   ],
+   [
+    6,
+    "Review-Medium"
+   ],
+   [
+    7,
+    "Review is a registered trademark of Commercial Type, Inc."
+   ],
+   [
+    8,
+    "Commercial Type, Inc."
+   ],
+   [
+    16,
+    "Review"
+   ],
+   [
+    17,
+    "Medium"
+   ],
+   [
+    0,
+    "Copyright (c) 2020 Commercial Type, Inc.. All rights reserved."
+   ],
+   [
+    1,
+    "Review Medium"
+   ],
+   [
+    2,
+    "Regular"
+   ],
+   [
+    3,
+    "COMM: Review Medium: 2020"
+   ],
+   [
+    4,
+    "Review-Medium"
+   ],
+   [
+    5,
+    "Version 1.001 2020 | wf-rip DC20201005"
+   ],
+   [
+    6,
+    "Review-Medium"
+   ],
+   [
+    7,
+    "Review is a registered trademark of Commercial Type, Inc."
+   ],
+   [
+    8,
+    "Commercial Type, Inc."
+   ],
+   [
+    16,
+    "Review"
+   ],
+   [
+    17,
+    "Medium"
+   ]
+  ]
+ },
+ "review700": {
+  "tables": [
+   "GlyphOrder",
+   "head",
+   "hhea",
+   "maxp",
+   "OS/2",
+   "hmtx",
+   "cmap",
+   "loca",
+   "glyf",
+   "name",
+   "post",
+   "gasp",
+   "GDEF",
+   "GPOS",
+   "GSUB"
+  ],
+  "names": [
+   [
+    0,
+    "Copyright (c) 2020 Commercial Type, Inc.. All rights reserved."
+   ],
+   [
+    1,
+    "Review"
+   ],
+   [
+    2,
+    "Bold"
+   ],
+   [
+    3,
+    "COMM: Review Bold: 2020"
+   ],
+   [
+    4,
+    "Review-Bold"
+   ],
+   [
+    5,
+    "Version 1.001 2020 | wf-rip DC20201005"
+   ],
+   [
+    6,
+    "Review-Bold"
+   ],
+   [
+    7,
+    "Review is a registered trademark of Commercial Type, Inc."
+   ],
+   [
+    8,
+    "Commercial Type, Inc."
+   ],
+   [
+    16,
+    "Review"
+   ],
+   [
+    17,
+    "Bold"
+   ],
+   [
+    0,
+    "Copyright (c) 2020 Commercial Type, Inc.. All rights reserved."
+   ],
+   [
+    1,
+    "Review"
+   ],
+   [
+    2,
+    "Bold"
+   ],
+   [
+    3,
+    "COMM: Review Bold: 2020"
+   ],
+   [
+    4,
+    "Review-Bold"
+   ],
+   [
+    5,
+    "Version 1.001 2020 | wf-rip DC20201005"
+   ],
+   [
+    6,
+    "Review-Bold"
+   ],
+   [
+    7,
+    "Review is a registered trademark of Commercial Type, Inc."
+   ],
+   [
+    8,
+    "Commercial Type, Inc."
+   ],
+   [
+    16,
+    "Review"
+   ],
+   [
+    17,
+    "Bold"
+   ]
+  ]
+ }
+}

@@ -1,0 +1,366 @@
+- document:
+  - banner:
+    - link "Home":
+      - /url: /en
+      - img
+    - list:
+      - listitem:
+        - link "Industries":
+          - /url: /industries
+      - listitem:
+        - link "Expertise":
+          - /url: /expertise
+      - listitem:
+        - link "Careers":
+          - /url: /careers
+      - listitem:
+        - link "Investors":
+          - /url: /investors
+      - listitem:
+        - link "News":
+          - /url: /news
+      - listitem:
+        - link "About us":
+          - /url: /about-us
+    - button "Search":
+      - img
+    - link "Profile":
+      - /url: /portals
+      - img
+    - link "Get in touch":
+      - /url: /contact
+  - main:
+    - paragraph: Our expertise
+    - heading "We transform Geo-data into actionable insights" [level=1]
+    - img "Remote Operations Centre (ROC) Aberdeen 35.jpg"
+    - heading "Our areas of expertise" [level=2]
+    - link "Environmental site assessments, characterisation and remediation We offer expert advice for your environmental site assessment, characterisation and remediation. Whether your project is offshore or on land, we support it throughout the different phases of its life cycle. Read more":
+      - /url: /expertise/environmental-site-assessments
+      - heading "Environmental site assessments, characterisation and remediation" [level=2]
+      - paragraph: We offer expert advice for your environmental site assessment, characterisation and remediation. Whether your project is offshore or on land, we support it throughout the different phases of its life cycle.
+      - button "Read more":
+        - img
+        - text: Read more
+    - link "Fibre optic cable route surveys No fibre optic cables, no data communication. We collect the information you need to choose the right cable routes and installation methods. Read more":
+      - /url: /expertise/fibre-optic-cable-route-surveys
+      - heading "Fibre optic cable route surveys" [level=2]
+      - paragraph: No fibre optic cables, no data communication. We collect the information you need to choose the right cable routes and installation methods.
+      - button "Read more":
+        - img
+        - text: Read more
+    - link "Flood risk mapping and flood defence Climate change is causing extreme weather conditions. That means being able to manage - and predict - the risk of flooding is key. We’re happy to help. Read more":
+      - /url: /expertise/flood-risk-mapping-and-flood-defence
+      - heading "Flood risk mapping and flood defence" [level=2]
+      - paragraph: Climate change is causing extreme weather conditions. That means being able to manage - and predict - the risk of flooding is key. We’re happy to help.
+      - button "Read more":
+        - img
+        - text: Read more
+    - link "Foundation design and testing Designing a foundation? Then it's important to consider the ground below, the surrounding environment, and potential risks. At Fugro, we’re happy to help. Read more":
+      - /url: /expertise/foundation-design
+      - heading "Foundation design and testing" [level=2]
+      - paragraph: Designing a foundation? Then it's important to consider the ground below, the surrounding environment, and potential risks. At Fugro, we’re happy to help.
+      - button "Read more":
+        - img
+        - text: Read more
+    - link "Foundations and geotechnical services Get crucial information about the conditions and hazards at your site. With our foundations and geotechnical services, you'll build foundations that last. Read more":
+      - /url: /expertise/foundations-and-geotechnical-surveys
+      - heading "Foundations and geotechnical services" [level=2]
+      - paragraph: Get crucial information about the conditions and hazards at your site. With our foundations and geotechnical services, you'll build foundations that last.
+      - button "Read more":
+        - img
+        - text: Read more
+    - link "Geo-consulting Sail through project challenges with our consultancy services. From strategy to execution, we've got you covered. Let us maximise your project's potential. Read more":
+      - /url: /expertise/geo-consulting
+      - heading "Geo-consulting" [level=2]
+      - paragraph: Sail through project challenges with our consultancy services. From strategy to execution, we've got you covered. Let us maximise your project's potential.
+      - button "Read more":
+        - img
+        - text: Read more
+    - link "Geological and geophysical surveys With our geophysical and geological surveys, you’ll gain a deeper understanding of your project site. So you can make informed decisions, no matter your sector. Read more":
+      - /url: /expertise/geological-and-geophysical-surveys
+      - heading "Geological and geophysical surveys" [level=2]
+      - paragraph: With our geophysical and geological surveys, you’ll gain a deeper understanding of your project site. So you can make informed decisions, no matter your sector.
+      - button "Read more":
+        - img
+        - text: Read more
+    - link "Geo-monitoring We specialise in the design and installation of complex and remotely-controlled structural, geotechnical, environmental and hydrological monitoring systems Read more":
+      - /url: /expertise/geo-monitoring
+      - heading "Geo-monitoring" [level=2]
+      - paragraph: We specialise in the design and installation of complex and remotely-controlled structural, geotechnical, environmental and hydrological monitoring systems
+      - button "Read more":
+        - img
+        - text: Read more
+    - link "Geophysical and site appraisal With better insights, you’ll better understand the conditions at your project site, no matter the sector. Our geophysical and site appraisal services help you make informed decisions. Read more":
+      - /url: /expertise/geophysical-and-site-appraisal
+      - heading "Geophysical and site appraisal" [level=2]
+      - paragraph: With better insights, you’ll better understand the conditions at your project site, no matter the sector. Our geophysical and site appraisal services help you make informed decisions.
+      - button "Read more":
+        - img
+        - text: Read more
+    - link "Geotechnical ground investigations Get all the information you need about the condition and hazards at your project site with our geotechnical ground investigation services. Read more":
+      - /url: /expertise/geotechnical-ground-investigations
+      - heading "Geotechnical ground investigations" [level=2]
+      - paragraph: Get all the information you need about the condition and hazards at your project site with our geotechnical ground investigation services.
+      - button "Read more":
+        - img
+        - text: Read more
+    - 'link "GroundIQ®: Reducing ground risk through smarter subsurface investigations Discover GroundIQ® by Fugro—the earlier, faster, better way to manage ground risk, cut costs and accelerate major infrastructure projects. Read more"':
+      - /url: /expertise/groundiq
+      - 'heading "GroundIQ®: Reducing ground risk through smarter subsurface investigations" [level=2]'
+      - paragraph: Discover GroundIQ® by Fugro—the earlier, faster, better way to manage ground risk, cut costs and accelerate major infrastructure projects.
+      - button "Read more":
+        - img
+        - text: Read more
+    - link "Groundwater At Fugro, we design groundwater monitoring plans for urban areas and provide you with expert advice on flood mitigation, drainage, and infiltration systems. Read more":
+      - /url: /expertise/groundwater
+      - heading "Groundwater" [level=2]
+      - paragraph: At Fugro, we design groundwater monitoring plans for urban areas and provide you with expert advice on flood mitigation, drainage, and infiltration systems.
+      - button "Read more":
+        - img
+        - text: Read more
+    - 'link "Hydrographic surveys: precision mapping for safer marine operations We provide hydrographic data tailored to your project – from coastal environments to deep ocean depths. Together, we protect and maintain our blue economy. Read more"':
+      - /url: /expertise/hydrographic-surveys
+      - 'heading "Hydrographic surveys: precision mapping for safer marine operations" [level=2]'
+      - paragraph: We provide hydrographic data tailored to your project – from coastal environments to deep ocean depths. Together, we protect and maintain our blue economy.
+      - button "Read more":
+        - img
+        - text: Read more
+    - 'link "Hydrology: Water defence and flood control The demand on our water systems is increasing. We’re happy to help with water resource management, flood defence control, and urban water infrastructure. Read more"':
+      - /url: /expertise/hydrology
+      - 'heading "Hydrology: Water defence and flood control" [level=2]'
+      - paragraph: The demand on our water systems is increasing. We’re happy to help with water resource management, flood defence control, and urban water infrastructure.
+      - button "Read more":
+        - img
+        - text: Read more
+    - link "Laboratory testing and data delivery Having the right data and advice at the right time can make or break your project. With Fugro laboratory testing and data delivery services, you’ll get exactly what you need. When you need it. Read more":
+      - /url: /expertise/laboratory-testing-and-data-delivery
+      - heading "Laboratory testing and data delivery" [level=2]
+      - paragraph: Having the right data and advice at the right time can make or break your project. With Fugro laboratory testing and data delivery services, you’ll get exactly what you need. When you need it.
+      - button "Read more":
+        - img
+        - text: Read more
+    - link "Law of the Sea and maritime boundaries Need help regarding maritime boundaries and ocean governance? Fugro’s Law of the Sea experts work with you to develop clear, practical solutions—protecting the rights of coastal states as well as ocean users, unlocking ocean resources, and supporting climate resilience for offshore areas. Read more":
+      - /url: /expertise/law-of-the-sea-and-maritime-boundaries
+      - heading "Law of the Sea and maritime boundaries" [level=2]
+      - paragraph: Need help regarding maritime boundaries and ocean governance? Fugro’s Law of the Sea experts work with you to develop clear, practical solutions—protecting the rights of coastal states as well as ocean users, unlocking ocean resources, and supporting climate resilience for offshore areas.
+      - button "Read more":
+        - img
+        - text: Read more
+    - link "Levee design At Fugro, we provide the data and insights you need to build strong levees and dikes. As they protect us from flooding, safe and sustainable design is crucial. Read more":
+      - /url: /expertise/levee-design
+      - heading "Levee design" [level=2]
+      - paragraph: At Fugro, we provide the data and insights you need to build strong levees and dikes. As they protect us from flooding, safe and sustainable design is crucial.
+      - button "Read more":
+        - img
+        - text: Read more
+    - link "Metocean We help you understand the metocean conditions at your project site. In offshore and coastal environments. To keep your project on track. Read more":
+      - /url: /expertise/metocean
+      - heading "Metocean" [level=2]
+      - paragraph: We help you understand the metocean conditions at your project site. In offshore and coastal environments. To keep your project on track.
+      - button "Read more":
+        - img
+        - text: Read more
+    - link "Offshore Wind Operations and Maintenance Structures fatigue with age, so monitoring their conditions and finding vulnerabilities is key. With our insights, they'll keep working safely and efficiently. Read more":
+      - /url: /expertise/offshore-wind-operations-and-maintenance
+      - heading "Offshore Wind Operations and Maintenance" [level=2]
+      - paragraph: Structures fatigue with age, so monitoring their conditions and finding vulnerabilities is key. With our insights, they'll keep working safely and efficiently.
+      - button "Read more":
+        - img
+        - text: Read more
+    - link "Positioning and construction support For offshore assets, construction is crucial to ensure they operate efficiently throughout their lifetime. We help you position and construct your assets. Read more":
+      - /url: /expertise/positioning-and-construction-support
+      - heading "Positioning and construction support" [level=2]
+      - paragraph: For offshore assets, construction is crucial to ensure they operate efficiently throughout their lifetime. We help you position and construct your assets.
+      - button "Read more":
+        - img
+        - text: Read more
+    - link "Power Save money and reduce project risk by using Fugro ROAMES® to assess, monitor, and maintain your powerline network. Read more":
+      - /url: /expertise/power
+      - heading "Power" [level=2]
+      - paragraph: Save money and reduce project risk by using Fugro ROAMES® to assess, monitor, and maintain your powerline network.
+      - button "Read more":
+        - img
+        - text: Read more
+    - link "Power cable routing and design Find the right routes and design for your subsea power cables with our expert advice and insights. So offshore wind farms can power homes and businesses. Read more":
+      - /url: /expertise/power-cable-routing-and-design
+      - heading "Power cable routing and design" [level=2]
+      - paragraph: Find the right routes and design for your subsea power cables with our expert advice and insights. So offshore wind farms can power homes and businesses.
+      - button "Read more":
+        - img
+        - text: Read more
+    - link "Remote and autonomous solutions We are leading the development and deployment of remote and autonomous solutions with our global network of remote operations centres and autonomous vehicles that support the maritime industry for a safe, sustainable and liveable world. Read more":
+      - /url: /expertise/remote-and-autonomous-solutions
+      - heading "Remote and autonomous solutions" [level=2]
+      - paragraph: We are leading the development and deployment of remote and autonomous solutions with our global network of remote operations centres and autonomous vehicles that support the maritime industry for a safe, sustainable and liveable world.
+      - button "Read more":
+        - img
+        - text: Read more
+    - link "Road condition surveys We help build and maintain safe roads through surveys, testing, data analysis, design, modelling, maintenance programming, and engineering advice. Read more":
+      - /url: /expertise/roads
+      - heading "Road condition surveys" [level=2]
+      - paragraph: We help build and maintain safe roads through surveys, testing, data analysis, design, modelling, maintenance programming, and engineering advice.
+      - button "Read more":
+        - img
+        - text: Read more
+    - link "Satellite positioning Tap into Fugro’s secure satellites around the world for all your precise location, positioning and navigation needs. Read more":
+      - /url: /expertise/satellite-positioning
+      - heading "Satellite positioning" [level=2]
+      - paragraph: Tap into Fugro’s secure satellites around the world for all your precise location, positioning and navigation needs.
+      - button "Read more":
+        - img
+        - text: Read more
+    - link "Seismic acquisition and imaging services Tailored seismic solutions for offshore wind, CCUS and oil and gas. Reduce risk and gain clarity with Fugro’s global expertise. Read more":
+      - /url: /expertise/seismic-acquisition-and-imaging
+      - heading "Seismic acquisition and imaging services" [level=2]
+      - paragraph: Tailored seismic solutions for offshore wind, CCUS and oil and gas. Reduce risk and gain clarity with Fugro’s global expertise.
+      - button "Read more":
+        - img
+        - text: Read more
+    - link "Structural health monitoring Discover anomalies before they become a problem with our structural health monitoring services for onshore and offshore environments. Our continuous insights help you understand your assets better. Read more":
+      - /url: /expertise/structural-health-monitoring
+      - heading "Structural health monitoring" [level=2]
+      - paragraph: Discover anomalies before they become a problem with our structural health monitoring services for onshore and offshore environments. Our continuous insights help you understand your assets better.
+      - button "Read more":
+        - img
+        - text: Read more
+    - link "Subsea inspection, repair and maintenance Keep your offshore assets working smoothly with regular inspection, repair, and maintenance. We pin-point flaws and issues, helping you fix any problems. Read more":
+      - /url: /expertise/subsea-inspection-repair-and-maintenance
+      - heading "Subsea inspection, repair and maintenance" [level=2]
+      - paragraph: Keep your offshore assets working smoothly with regular inspection, repair, and maintenance. We pin-point flaws and issues, helping you fix any problems.
+      - button "Read more":
+        - img
+        - text: Read more
+    - link "Subsea pipeline consultancy and design The conditions at your site greatly impact the design of subsea pipelines. We help you understand your site and offer advice on the best subsea pipeline design. Read more":
+      - /url: /expertise/subsea-pipeline-consultancy-and-design
+      - heading "Subsea pipeline consultancy and design" [level=2]
+      - paragraph: The conditions at your site greatly impact the design of subsea pipelines. We help you understand your site and offer advice on the best subsea pipeline design.
+      - button "Read more":
+        - img
+        - text: Read more
+    - link "Survey and dimensional control Our survey tech and equipment gives you all the information on the natural and built environment. So you can reduce risk, plus save time and money. Read more":
+      - /url: /expertise/survey-and-dimensional-control
+      - heading "Survey and dimensional control" [level=2]
+      - paragraph: Our survey tech and equipment gives you all the information on the natural and built environment. So you can reduce risk, plus save time and money.
+      - button "Read more":
+        - img
+        - text: Read more
+    - link "Surveying and mapping Want to really make informed decisions? We map and survey our built and natural environment, delivering accurate data and insights that let you to do just that. Read more":
+      - /url: /expertise/surveying-and-mapping
+      - heading "Surveying and mapping" [level=2]
+      - paragraph: Want to really make informed decisions? We map and survey our built and natural environment, delivering accurate data and insights that let you to do just that.
+      - button "Read more":
+        - img
+        - text: Read more
+    - link "UXO risk mitigation Onshore project? Working at sea? We unlock the secrets of the ocean and land environments. Providing you with a complete understanding of unexploded ordnance threats at your site. Read more":
+      - /url: /expertise/uxo-risk-mitigation
+      - heading "UXO risk mitigation" [level=2]
+      - paragraph: Onshore project? Working at sea? We unlock the secrets of the ocean and land environments. Providing you with a complete understanding of unexploded ordnance threats at your site.
+      - button "Read more":
+        - img
+        - text: Read more
+    - link "Verification of design and calibration Want to make sure your asset is built safely and sustainably? And with minimal downtime and failures? That’s where Fugro’s verification of design comes in. Read more":
+      - /url: /expertise/verification-of-design
+      - heading "Verification of design and calibration" [level=2]
+      - paragraph: Want to make sure your asset is built safely and sustainably? And with minimal downtime and failures? That’s where Fugro’s verification of design comes in.
+      - button "Read more":
+        - img
+        - text: Read more
+    - 'link "VirGeo®: Transform Geo-data into informed decisions Ready to transform the way you access and interact with Geo-data insights? Introducing VirGeo®, our innovative cloud-hosted platform. Read more"':
+      - /url: /expertise/virgeo-transform-geo-data-into-informed-decisions
+      - 'heading "VirGeo®: Transform Geo-data into informed decisions" [level=2]'
+      - paragraph: Ready to transform the way you access and interact with Geo-data insights? Introducing VirGeo®, our innovative cloud-hosted platform.
+      - button "Read more":
+        - img
+        - text: Read more
+    - link "Weather forecasting Accurate, reliable onshore and offshore weather forecast services. That’s what Fugro offers. 24 hours a day, 365 days a year. Around the world. Read more":
+      - /url: /expertise/weather-forecasting
+      - heading "Weather forecasting" [level=2]
+      - paragraph: Accurate, reliable onshore and offshore weather forecast services. That’s what Fugro offers. 24 hours a day, 365 days a year. Around the world.
+      - button "Read more":
+        - img
+        - text: Read more
+    - img "MEN03693.jpg"
+    - paragraph
+    - heading "What we do at Fugro" [level=2]
+    - paragraph: The more you know, the smaller the risk
+    - link "Read more":
+      - /url: /about-us/what-we-do
+      - text: Read more
+      - img
+  - contentinfo:
+    - img
+    - list:
+      - listitem:
+        - link "Industries":
+          - /url: /industries
+      - listitem:
+        - link "Expertise":
+          - /url: /expertise
+      - listitem:
+        - link "Careers":
+          - /url: /careers
+      - listitem:
+        - link "Investors":
+          - /url: /investors
+      - listitem:
+        - link "News":
+          - /url: /news
+      - listitem:
+        - link "About us":
+          - /url: /about-us
+    - paragraph: Subscribe to news alerts
+    - link "Sign up now":
+      - /url: /news/subscribe-for-news-alerts
+      - text: Sign up now
+      - img
+    - list:
+      - listitem:
+        - paragraph: Social media
+      - listitem:
+        - link "LinkedIn":
+          - /url: https://www.linkedin.com/company/fugro
+      - listitem:
+        - link "Facebook":
+          - /url: https://www.facebook.com/fugro
+      - listitem:
+        - link "X (Twitter)":
+          - /url: https://twitter.com/fugro
+      - listitem:
+        - link "Instagram":
+          - /url: https://www.instagram.com/fugro
+    - list:
+      - listitem:
+        - paragraph: Contact
+      - listitem:
+        - link "General contact":
+          - /url: /contact
+      - listitem:
+        - link "Our locations":
+          - /url: /contact/locations
+      - listitem:
+        - link "Talent Community":
+          - /url: https://flows.beamery.eu/fugro/Join-the-Fugro-Talent-Community
+      - listitem:
+        - link "Speak Up":
+          - /url: /contact/speak-up
+    - link "Cookies":
+      - /url: /cookie-policy
+    - link "Privacy statement":
+      - /url: /privacy-notice
+    - link "Disclaimer":
+      - /url: /disclaimer
+    - link "General purchase terms and conditions":
+      - /url: /fugro-general-purchase-terms-and-conditions
+    - text: © 2026 Fugro. All rights reserved Also of interest
+    - list:
+      - listitem:
+        - link "Foundations and geotechnical services":
+          - /url: https://www.fugro.com/expertise/foundations-and-geotechnical-surveys
+      - listitem:
+        - link "Laboratory testing and data delivery":
+          - /url: https://www.fugro.com/expertise/laboratory-testing-and-data-delivery
+      - listitem:
+        - link "Fugro | We transform Geo-data into actionable insights":
+          - /url: https://www.fugro.com/expertise/expertise-a
+  - alert
+  - dialog "Cookie consent button": Cookie settings

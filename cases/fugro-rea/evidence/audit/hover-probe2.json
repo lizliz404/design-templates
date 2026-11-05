@@ -1,0 +1,36 @@
+{
+ "linkHref": "/industries",
+ "sec": [
+  "/industries/energy",
+  "/industries/water",
+  "/industries/infrastructure",
+  "/expertise/case-studies",
+  "/expertise/case-studies/transforming-a-high-risk-river-crossing-into-design-certainty",
+  "/expertise/case-studies/seeing-inside-a-tailings-dam-how-groundiq-helped-rule-out-hidden-structural-risks",
+  "/expertise/case-studies/remote-subsea-inspections-eliminate-personnel-risk-for-brazil-s-largest-oil-producer",
+  "/about-us/our-purpose",
+  "/about-us/governance/leadership",
+  "/investors/shares/share-performance",
+  "/investors/results-and-publications/annual-reports",
+  "/news/business-news/2026/fugro-secures-additional-survey-contracts-for-greater-sunrise-tlng-and-bayu-undan-pipeline-highway-projects-in-timor-leste",
+  "/news/long-reads/2026/a-fi-wi-wata-why-mapping-jamaica-s-ocean-space-is-a-national-imperative",
+  "/news/press-releases/2026/fugro-awarded-major-australian-marine-asset-integrity-contract",
+  "/about-us/history",
+  "/news/subscribe-for-news-alerts",
+  "https://www.fugro.com/expertise/weather-forecasting",
+  "https://www.fugro.com/industries/energy/carbon-capture-utilisation-and-storage",
+  "https://www.fugro.com/expertise/environmental-site-assessments/marine-characterisation-and-monitoring"
+ ],
+ "fixed": [
+  {
+   "cls": "sc-fe809fc3-0 iNbSLS",
+   "n": 7,
+   "text": "Industries\nExpertise\nCareers\nInvestors\nNews\nAbout us\nGet in touch"
+  },
+  {
+   "cls": "sc-5c6c46aa-1 jELeTK",
+   "n": 7,
+   "text": "Industries\nExpertise\nCareers\nInvestors\nNews\nAbout us\nGet in touch"
+  }
+ ]
+}
