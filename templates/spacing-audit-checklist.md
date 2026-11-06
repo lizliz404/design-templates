@@ -49,6 +49,13 @@ description: >-
 - 不引入刻度外的魔法数字；确需例外时写进 token 并注明原因。
 - 与 [`ui-patterns/data-dense-app-craft.md`](./ui-patterns/data-dense-app-craft.md) 一起用时，以本清单定节奏、以它定表格与筛选语法。
 
+## 页框尺（page-frame ruler）：已试并撤回（Liz 2026-11-06 终审）
+
+曾试验：官网 chrome（header/nav/footer/浮动丸）四角用一把对称内收尺（`--frame-inset ≈ 16vw`），四角全部收进 inset 框内，只管 chrome 不管正文。**终审撤回**：Liz 实测后令 header/footer 颜色布局整体回滚到远端 push 版（"越改越丑"），只保留归组类文字改动。教训：
+
+- 对存量站，chrome 几何（带宽、内收、四角落点）属于高辨识度的骨架特征——改动前先问"她要的到底是文字位置还是版式"，别把归组类反馈扩成全局尺规重构。
+- 该尺规本身无技术问题，可作**新站从零起步**时的候选手法；对已在远端获得认可的存量 chrome，默认不动。
+
 ## 复制给 Agent 的间距审计 prompt
 
 ```text
