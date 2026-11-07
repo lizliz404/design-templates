@@ -1,7 +1,7 @@
 ---
 name: spacing-audit-checklist
 description: >-
-  “大概率是间距问题”：用灰块审一遍布局，按 外层 > 区块 > 卡片 > 元素 的顺序排间距，大多数留白放大、紧密相关的成对元素反而收紧，并用 4/8 token 与 comfortable/compact 密度模式落地。Use when 页面“说不上哪里不对”但字体颜色都没问题; 审 dashboard / 后台 / landing 的布局节奏; 需要给 agent 一个可复制的间距审计 prompt。
+  “大概率是间距问题”：用灰块审一遍布局，按 外层 > 区块 > 卡片 > 元素 的顺序排间距，大多数留白放大、紧密相关的成对元素反而收紧，并用 4/8 token 与 comfortable/compact 密度模式落地；另含"一把尺"检查——全站文字共用同一条左右内容边，组件私设页边距即违规。Use when 页面“说不上哪里不对”但字体颜色都没问题; 审 dashboard / 后台 / landing 的布局节奏; 页面各区块左右边缘参差不齐对不齐; 需要给 agent 一个可复制的间距审计 prompt。
 ---
 
 # 大概率是间距问题（Spacing audit）
@@ -49,12 +49,27 @@ description: >-
 - 不引入刻度外的魔法数字；确需例外时写进 token 并注明原因。
 - 与 [`ui-patterns/data-dense-app-craft.md`](./ui-patterns/data-dense-app-craft.md) 一起用时，以本清单定节奏、以它定表格与筛选语法。
 
-## 页框尺（page-frame ruler）：已试并撤回（Liz 2026-11-06 终审）
+## 页框尺与"一把尺"（page frame / single text edge）
 
-曾试验：官网 chrome（header/nav/footer/浮动丸）四角用一把对称内收尺（`--frame-inset ≈ 16vw`），四角全部收进 inset 框内，只管 chrome 不管正文。**终审撤回**：Liz 实测后令 header/footer 颜色布局整体回滚到远端 push 版（"越改越丑"），只保留归组类文字改动。教训：
+### 已试并撤回：四角 chrome 内收尺（Liz 2026-11-06 终审）
+
+曾试验：官网 chrome（header/nav/footer/浮动丸）四角用一把对称内收尺（`--frame-inset ≈ 16vw`），四角全部收进 inset 框内，只管 chrome 不管正文。**终审撤回**：Liz 实测后令 header/footer 颜色布局整体回滚到远端版（"越改越丑"），只保留归组类文字改动。教训：
 
 - 对存量站，chrome 几何（带宽、内收、四角落点）属于高辨识度的骨架特征——改动前先问"她要的到底是文字位置还是版式"，别把归组类反馈扩成全局尺规重构。
-- 该尺规本身无技术问题，可作**新站从零起步**时的候选手法；对已在远端获得认可的存量 chrome，默认不动。
+- 事后复盘（11-07）：失败的真正原因**不是"立了尺"，而是立了第二把尺**——`16vw` 与正文轨（maxw 容器 + gutter）是两个不同的边缘值，双尺比无尺更乱；外加顺手改了颜色/带宽，属范围蔓延。不是"尺规不能动"，是"不许出现与全站轨不同的局部边距值"。
+
+### 定稿规则：一把尺（Liz 2026-11-07，对标实测定案）
+
+好站"规整、被尺子量过"的感觉，来源不是百分比外边距，而是**全站文字性内容共用同一条左右内容边**：
+
+- **数值形态 = max-width 容器 + 最小 gutter，不是 vw 百分比**。证据：Fugro 实测内容宽 1344px（1440 容器 − 2×48 gutter）；1920 屏边距 288px≈15%、2504 超宽屏 580px——边距随视口增大而增大，内容宽恒定。vw 边距在超宽屏会等比放大内容区、拉长行宽，且永远和容器边对不齐。**不要用 `vw` 当页边距值。**
+- **规则四条**：
+  1. 一切文字性内容（header / 各 section 正文 / footer / legal 行 / 摄影面 scrim 上的字 / 弹层内文字）左右缘不得越过这条线；
+  2. 轨内允许更深的缩进（label rail、栅格列、为浮动件预留的 `max()` 兜底），**禁止出现与轨不同的第二套页边距**——任何组件私设 `vw` 或字面值 inset 即违规；
+  3. 摄影面 / 色带 / 1px hairline / 背景可 bleed 至视口边，但**其上文字仍守轨**；
+  4. 贴视口边的浮动 UI chrome（聊天丸、cookie consent、抽屉 dock）是登记的**唯一例外**——它是控件不是正文，但应写进合同而不是悄悄豁免。
+- **落地形态**：一个 token（如 `--frame-pad: max(gutter, (100vw − maxw)/2 + gutter)`）被 header / wrap / footer / scrim 字全部消费；新增组件只消费该 token，不新造边距值。
+- **审计步（新增）**：数尺子。在 1280 / 1440 / 1920（有超宽条件再加 2560）逐条量 header、各 section、footer、legal 行的左右文字边缘——每侧必须解析为**同一个值**（轨内缩进合法，多套外边距非法）。最常见的病灶就是"某个组件带了自己的 inset"，典型如 footer 单独 `16vw`、legal 行单独 `9vw`。
 
 ## 复制给 Agent 的间距审计 prompt
 
@@ -65,6 +80,10 @@ Audit the spacing of <page/URL/screenshot>. Do not change fonts, colors or copy.
    elements (e.g. chart and its list, label and input), card inner padding, gaps between cards.
 3. Check the hierarchy: page padding >= section gap > card padding > related-pair gap > inline gap.
    Flag every tie or inversion.
+3b. Count the rulers: measure the left and right text edges of the header, every section, the footer
+   and the legal bar at 1280 / 1440 / 1920. Each side must resolve to ONE value — deeper inner
+   indents (label rails, grid columns) are legal, a second page-margin is not. Flag any component
+   carrying its own inset (a footer-only vw padding is the classic offender).
 4. Propose new values on a 4/8 scale (4, 8, 12, 16, 24, 32, 40, 48, 64): enlarge most whitespace,
    TIGHTEN gaps between closely related pairs. Check sidebar/content proportion at 1280, 1440 and 1920.
 5. Map values to semantic tokens (space-page, space-section, space-card, space-related, space-inline)
@@ -76,6 +95,7 @@ Audit the spacing of <page/URL/screenshot>. Do not change fonts, colors or copy.
 ## 验收
 
 - before/after 表与 token diff 齐全；没有刻度外的值。
+- 全页文字左右缘各自只解析为一个值（轨内缩进除外）；无任何组件私设 vw/字面页边距。
 - 层级顺序成立，至少一处“相关对”被收紧。
 - comfortable / compact 两套都截图，compact 下一屏能放下关键信息。
 - 1280 / 1440 / 1920 与 390px 宽度都检查过侧栏比例与溢出。
