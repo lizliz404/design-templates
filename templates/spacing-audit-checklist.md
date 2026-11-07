@@ -99,3 +99,24 @@ Audit the spacing of <page/URL/screenshot>. Do not change fonts, colors or copy.
 - 层级顺序成立，至少一处“相关对”被收紧。
 - comfortable / compact 两套都截图，compact 下一屏能放下关键信息。
 - 1280 / 1440 / 1920 与 390px 宽度都检查过侧栏比例与溢出。
+
+## 实测案例：Vercel（2026-11-07，证据 `cases/vercel-rea/`）
+
+playwright + getComputedStyle 实测 `vercel.com` / /pricing /docs × 1280/1440/1920/2560，对三条规则的对照如下。
+
+**确认了什么**
+
+- **一把尺 = maxw+gutter，且由单一容器类实现**。机制实锤：`--ds-page-width: 1400px`、`--geist-page-margin: 24px`，合成 `max-w: calc(1400px + 2×24px)`（1448px 触发点），header / 全部 section / footer / legal 行全部消费同一容器类。左缘实测 `max(24, (vw−1400)/2)`：1280→24、1440→24、1920→260、2560→580。与 Fugro（1344+48）同构，进一步坐实"不要用 vw 当页边距值"。
+- **层级顺序在断点以上严格成立**（1920 marketing）：外层有效缘 260 ≥ 区块间距 208（`mt-52`）> 卡片 padding 32 > 相关对 8（H3→P）。相关对收紧实锤：标题↔正文固定 8px。
+- **刻度系**：Geist token `--geist-space-Nx = N×4px`（8/16/32/64/96/128/192/256），间距普查主值 2/4/6/8/10/12/16/24，宏观值全在 4/8 刻度；组件用 Tailwind 任意值直接消费 CSS 变量（`px-(--geist-page-margin)`），不造字面边距——"tokens, not opinions"的完整落地形态。
+- **密度同一刻度系**：docs 比 marketing 明显更紧（内容 pad 24/64、卡 24 vs 卡 32、区块 96–208），但所有值仍在同一 4px 基刻度上——密度差靠换档不靠换刻度。
+
+**补充了什么**
+
+- **容器断点以下，外层 gutter 会触底**。视口 <1448 时外层塌缩为 24px，与卡片 padding（24–32）持平甚至倒挂；`外层≥区块>卡片` 的层级只在容器生效区严格成立。审计时对"外层"应取 `max(gutter, auto-margin)` 的感知值，而非 padding 字面值。
+- **宏观刻度下存在 1–2px 微层**：负 margin（-1/-60/-64）做 hairline 对齐、2px 图标补偿。审计放行：刻度纪律管正空间，hairline 补偿不计入刻度违规。
+
+**反例 / 边界（待 Liz 裁决）**
+
+- **"一把尺"实测是 per-surface 而非全站唯一**。docs 面 header 无 maxw、main 为 `grid-cols-[300px]` 全宽 fluid（文字 20px 贴视口），footer 仍挂 marketing 1400 轨——**同一 docs 页三条文字边并存**（header 24..满宽 / main 20..fluid / footer 居中 1400 轨）。可以理解为 app 型 surface 有第二把尺的正当性，但 footer 跨 surface 复用 marketing 轨造成页内双轨，属于 Vercel 自己也没收干净的例子。审计启示：先划分 surface（marketing / app / docs），尺按 surface 计；同一页内仍应收敛为一条。
+- **探针陷阱**：DOM 含 `visibility:hidden` 的 nav 副本（有布局矩形，会把左缘拉到视口边）和 `.sr-only` 文本（把右缘拉出轨外）。数尺子前必须剔除 `visibility:hidden` / `sr-only` / `display:none` 节点，否则量到隐藏副本。审计 prompt 3b 执行时建议先过滤可见性再取 min/max。

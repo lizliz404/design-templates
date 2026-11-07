@@ -1,0 +1,285 @@
+{
+  "url": "https://vercel.com/",
+  "viewport": {
+    "w": 1440,
+    "h": 900
+  },
+  "docWidth": 1440,
+  "docHeight": 5333,
+  "ruler": [
+    {
+      "zone": "header",
+      "sel": "header#marketing-header.peer.sticky.top-0",
+      "rect": {
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "top": 0,
+        "height": 64
+      },
+      "text": {
+        "left": 24,
+        "right": 1404,
+        "textNodes": 98
+      },
+      "paddingLeft": "0px",
+      "paddingRight": "0px",
+      "marginLeft": "0px",
+      "marginRight": "0px",
+      "maxWidth": "none",
+      "width": "1440px"
+    },
+    {
+      "zone": "header>",
+      "sel": "div.mx-auto.flex.h-full",
+      "rect": {
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "top": 0,
+        "height": 64
+      },
+      "text": {
+        "left": 24,
+        "right": 1404,
+        "textNodes": 98
+      },
+      "paddingLeft": "24px",
+      "paddingRight": "24px",
+      "marginLeft": "0px",
+      "marginRight": "0px",
+      "maxWidth": "1448px",
+      "width": "1440px"
+    },
+    {
+      "zone": "main[4]",
+      "sel": "div.max-w-(--ds-page-width-with-margin).px-(--geist-page-margin).mx-auto",
+      "rect": {
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "top": 64,
+        "height": 64
+      },
+      "text": {
+        "left": null,
+        "right": null,
+        "textNodes": 0
+      },
+      "paddingLeft": "24px",
+      "paddingRight": "24px",
+      "marginLeft": "0px",
+      "marginRight": "0px",
+      "maxWidth": "1448px",
+      "width": "1440px"
+    },
+    {
+      "zone": "main[5]",
+      "sel": "div.max-w-(--ds-page-width-with-margin).px-(--geist-page-margin).mx-auto",
+      "rect": {
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "top": 64,
+        "height": 4659.33
+      },
+      "text": {
+        "left": 24,
+        "right": 1403.5,
+        "textNodes": 53
+      },
+      "paddingLeft": "24px",
+      "paddingRight": "24px",
+      "marginLeft": "0px",
+      "marginRight": "0px",
+      "maxWidth": "1448px",
+      "width": "1440px"
+    },
+    {
+      "zone": "footer",
+      "sel": "footer.max-w-[var(--ds-page-width-with-margin)].mx-auto.px-[var(--geist-page-margin)]",
+      "rect": {
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "top": 4723.33,
+        "height": 846
+      },
+      "text": {
+        "left": 24,
+        "right": 1460.67,
+        "textNodes": 101
+      },
+      "paddingLeft": "24px",
+      "paddingRight": "24px",
+      "marginLeft": "0px",
+      "marginRight": "0px",
+      "maxWidth": "1448px",
+      "width": "1440px"
+    },
+    {
+      "zone": "footer>",
+      "sel": "nav",
+      "rect": {
+        "left": 24,
+        "right": 1416,
+        "width": 1392,
+        "top": 4763.33,
+        "height": 700
+      },
+      "text": {
+        "left": 24,
+        "right": 1296.08,
+        "textNodes": 96
+      },
+      "paddingLeft": "0px",
+      "paddingRight": "0px",
+      "marginLeft": "0px",
+      "marginRight": "0px",
+      "maxWidth": "none",
+      "width": "1392px"
+    },
+    {
+      "zone": "footer>",
+      "sel": "div.flex.items-center.justify-between",
+      "rect": {
+        "left": 24,
+        "right": 1416,
+        "width": 1392,
+        "top": 5495.33,
+        "height": 34
+      },
+      "text": {
+        "left": 40,
+        "right": 1460.67,
+        "textNodes": 5
+      },
+      "paddingLeft": "0px",
+      "paddingRight": "0px",
+      "marginLeft": "0px",
+      "marginRight": "0px",
+      "maxWidth": "none",
+      "width": "1392px"
+    }
+  ],
+  "sections": [
+    {
+      "idx": 4,
+      "sel": "div.max-w-(--ds-page-width-with-margin).px-(--geist-page-margin).mx-auto",
+      "top": 64,
+      "height": 64,
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "marginTop": "0px",
+      "marginBottom": "-64px"
+    },
+    {
+      "idx": 5,
+      "sel": "div.max-w-(--ds-page-width-with-margin).px-(--geist-page-margin).mx-auto",
+      "top": 64,
+      "height": 4659.33,
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "marginTop": "0px",
+      "marginBottom": "0px",
+      "gapAbove": -64
+    }
+  ],
+  "cards": [
+    {
+      "sel": "div.size-full.rounded-t-[calc(var(--radius-md)+1px)].rounded-bl-[calc(var(--radius-md)+1px)]",
+      "rect": {
+        "left": 25,
+        "top": 3816.33,
+        "width": 685,
+        "height": 580
+      },
+      "paddingTop": "0px",
+      "paddingRight": "0px",
+      "paddingBottom": "0px",
+      "paddingLeft": "0px",
+      "borderRadius": "7px 7px 0px",
+      "gap": "normal"
+    },
+    {
+      "sel": "span.relative.shrink-0.rounded-[20px]",
+      "rect": {
+        "left": 1175.55,
+        "top": 3840.33,
+        "width": 215.45,
+        "height": 68
+      },
+      "paddingTop": "16px",
+      "paddingRight": "16px",
+      "paddingBottom": "16px",
+      "paddingLeft": "16px",
+      "borderRadius": "20px",
+      "gap": "normal"
+    },
+    {
+      "sel": "span.relative.shrink-0.rounded-[20px]",
+      "rect": {
+        "left": 1095,
+        "top": 3920.33,
+        "width": 265.17,
+        "height": 68
+      },
+      "paddingTop": "16px",
+      "paddingRight": "16px",
+      "paddingBottom": "16px",
+      "paddingLeft": "16px",
+      "borderRadius": "20px",
+      "gap": "normal"
+    },
+    {
+      "sel": "span.relative.shrink-0.rounded-[20px]",
+      "rect": {
+        "left": 1095,
+        "top": 3994.33,
+        "width": 265.17,
+        "height": 68
+      },
+      "paddingTop": "16px",
+      "paddingRight": "16px",
+      "paddingBottom": "16px",
+      "paddingLeft": "16px",
+      "borderRadius": "20px",
+      "gap": "normal"
+    }
+  ],
+  "relatedPairs": [
+    {
+      "heading": "H1",
+      "text": "Agentic Infrastructure",
+      "marginBottom": "0px",
+      "paddingBottom": "0px",
+      "gapToNext": -456,
+      "nextTag": "p"
+    }
+  ],
+  "spacingCensus": {
+    "1": 6,
+    "2": 488,
+    "3": 6,
+    "4": 251,
+    "5": 6,
+    "6": 376,
+    "8": 49,
+    "10": 9,
+    "12": 148,
+    "14": 6,
+    "16": 35,
+    "20": 23,
+    "24": 28,
+    "32": 8,
+    "40": 13,
+    "44": 9,
+    "48": 9,
+    "80": 1,
+    "208": 2,
+    "256": 3,
+    "276": 2,
+    "-1": 14,
+    "-64": 1
+  }
+}

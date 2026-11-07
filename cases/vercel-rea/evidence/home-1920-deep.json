@@ -1,0 +1,239 @@
+{
+  "url": "https://vercel.com/",
+  "viewport": {
+    "w": 1920
+  },
+  "vars": {
+    "--ds-page-width": "1400px",
+    "--ds-page-width-with-margin": "calc(1400px + calc(2 * 24px))",
+    "--geist-page-margin": "24px",
+    "--geist-gap": "24px",
+    "--geist-space-1x": null,
+    "--geist-space-2x": "8px",
+    "--geist-space-4x": "16px",
+    "--geist-space-8x": "32px",
+    "--geist-space-16x": "64px",
+    "--geist-space-24x": "96px",
+    "--geist-space-32x": "128px",
+    "--geist-space-40x": null,
+    "--geist-space-48x": "192px",
+    "--geist-space-64x": "256px"
+  },
+  "header": {
+    "leftmost": [
+      {
+        "text": "Products",
+        "left": 24,
+        "right": 114.08,
+        "owner": "summary.flex.min-h-11.cursor-pointer.list-none",
+        "pos": "static",
+        "vis": "hidden",
+        "display": "flex",
+        "opacity": "1"
+      },
+      {
+        "text": "Agent Stack",
+        "left": 24,
+        "right": 105.05,
+        "owner": "div.mb-2.text-label-14.font-medium.text-gray-900",
+        "pos": "static",
+        "vis": "hidden",
+        "display": "block",
+        "opacity": "1"
+      },
+      {
+        "text": "AI SDK",
+        "left": 24,
+        "right": 83.77,
+        "owner": "a.cursor-pointer.focus-visible:outline-2.outline-[var(--ds-focus-color)].outline-o",
+        "pos": "static",
+        "vis": "hidden",
+        "display": "flex",
+        "opacity": "1"
+      },
+      {
+        "text": "AI Gateway",
+        "left": 24,
+        "right": 119.95,
+        "owner": "a.cursor-pointer.focus-visible:outline-2.outline-[var(--ds-focus-color)].outline-o",
+        "pos": "static",
+        "vis": "hidden",
+        "display": "flex",
+        "opacity": "1"
+      }
+    ],
+    "rightmost": [
+      {
+        "text": "Log In",
+        "left": 937.17,
+        "right": 982.81,
+        "owner": "span.truncate.inline-block.px-1.5",
+        "pos": "static",
+        "vis": "hidden",
+        "display": "block",
+        "opacity": "1"
+      },
+      {
+        "text": "Get a Demo",
+        "left": 1408.31,
+        "right": 1484.91,
+        "owner": "span.truncate.inline-block.px-1.5",
+        "pos": "static",
+        "vis": "visible",
+        "display": "block",
+        "opacity": "1"
+      },
+      {
+        "text": "Log In",
+        "left": 1520.91,
+        "right": 1560.84,
+        "owner": "span.truncate.inline-block.px-1.5",
+        "pos": "static",
+        "vis": "visible",
+        "display": "block",
+        "opacity": "1"
+      },
+      {
+        "text": "Sign Up",
+        "left": 1596.84,
+        "right": 1648,
+        "owner": "span.truncate.inline-block.px-1.5",
+        "pos": "static",
+        "vis": "visible",
+        "display": "block",
+        "opacity": "1"
+      }
+    ]
+  },
+  "footer": {
+    "leftmost": [
+      {
+        "text": "Agent Stack",
+        "left": 260,
+        "right": 341.05,
+        "owner": "h2.text-gray-1000.text-label-14.font-medium.my-[var(--geist-gap-half)]",
+        "pos": "static",
+        "vis": "visible",
+        "display": "block",
+        "opacity": "1"
+      },
+      {
+        "text": "AI SDK",
+        "left": 260,
+        "right": 306.48,
+        "owner": "a.cursor-pointer.focus-visible:outline-2.outline-[var(--ds-focus-color)].outline-o",
+        "pos": "static",
+        "vis": "visible",
+        "display": "flex",
+        "opacity": "1"
+      },
+      {
+        "text": "AI Gateway",
+        "left": 260,
+        "right": 334.63,
+        "owner": "a.cursor-pointer.focus-visible:outline-2.outline-[var(--ds-focus-color)].outline-o",
+        "pos": "static",
+        "vis": "visible",
+        "display": "flex",
+        "opacity": "1"
+      },
+      {
+        "text": "Sandbox",
+        "left": 260,
+        "right": 316.48,
+        "owner": "a.cursor-pointer.focus-visible:outline-2.outline-[var(--ds-focus-color)].outline-o",
+        "pos": "static",
+        "vis": "visible",
+        "display": "flex",
+        "opacity": "1"
+      }
+    ],
+    "rightmost": [
+      {
+        "text": "Select a display theme:",
+        "left": 1555,
+        "right": 1704.67,
+        "owner": "legend.sr-only",
+        "pos": "absolute",
+        "vis": "visible",
+        "display": "block",
+        "opacity": "1"
+      },
+      {
+        "text": "system",
+        "left": 1567.5,
+        "right": 1613.7,
+        "owner": "span.sr-only",
+        "pos": "absolute",
+        "vis": "visible",
+        "display": "block",
+        "opacity": "1"
+      },
+      {
+        "text": "light",
+        "left": 1591.5,
+        "right": 1619.58,
+        "owner": "span.sr-only",
+        "pos": "absolute",
+        "vis": "visible",
+        "display": "block",
+        "opacity": "1"
+      },
+      {
+        "text": "dark",
+        "left": 1615.5,
+        "right": 1644.5,
+        "owner": "span.sr-only",
+        "pos": "absolute",
+        "vis": "visible",
+        "display": "block",
+        "opacity": "1"
+      }
+    ]
+  },
+  "inner": [
+    {
+      "idx": 0,
+      "sel": "section.relative.flex.min-h-[min(calc(100svh-var(--header-height)),1100px)].flex-col",
+      "top": 64,
+      "h": 836,
+      "padT": "0px",
+      "padB": "0px",
+      "mT": "0px",
+      "mB": "0px"
+    },
+    {
+      "idx": 2,
+      "sel": "section.mt-40.@md:mt-52",
+      "top": 1108,
+      "h": 2368.66,
+      "padT": "0px",
+      "padB": "0px",
+      "mT": "208px",
+      "mB": "0px",
+      "gapAbove": 208
+    },
+    {
+      "idx": 3,
+      "sel": "div",
+      "top": 3476.66,
+      "h": 772,
+      "padT": "0px",
+      "padB": "0px",
+      "mT": "0px",
+      "mB": "0px",
+      "gapAbove": 0
+    },
+    {
+      "idx": 4,
+      "sel": "div.px-px.-mx-px",
+      "top": 4248.66,
+      "h": 480,
+      "padT": "0px",
+      "padB": "0px",
+      "mT": "0px",
+      "mB": "0px",
+      "gapAbove": 0
+    }
+  ]
+}

@@ -1,0 +1,246 @@
+{
+  "url": "https://vercel.com/pricing",
+  "viewport": {
+    "w": 1280,
+    "h": 900
+  },
+  "docWidth": 1280,
+  "docHeight": 15693,
+  "ruler": [
+    {
+      "zone": "header",
+      "sel": "header#marketing-header.peer.sticky.top-0",
+      "rect": {
+        "left": 0,
+        "right": 1280,
+        "width": 1280,
+        "top": 0,
+        "height": 64
+      },
+      "text": {
+        "left": 24,
+        "right": 1244,
+        "textNodes": 98
+      },
+      "paddingLeft": "0px",
+      "paddingRight": "0px",
+      "marginLeft": "0px",
+      "marginRight": "0px",
+      "maxWidth": "none",
+      "width": "1280px"
+    },
+    {
+      "zone": "header>",
+      "sel": "div.mx-auto.flex.h-full",
+      "rect": {
+        "left": 0,
+        "right": 1280,
+        "width": 1280,
+        "top": 0,
+        "height": 64
+      },
+      "text": {
+        "left": 24,
+        "right": 1244,
+        "textNodes": 98
+      },
+      "paddingLeft": "24px",
+      "paddingRight": "24px",
+      "marginLeft": "0px",
+      "marginRight": "0px",
+      "maxWidth": "1448px",
+      "width": "1280px"
+    },
+    {
+      "zone": "main[0]",
+      "sel": "div.max-w-(--ds-page-width-with-margin).px-(--geist-page-margin).mx-auto",
+      "rect": {
+        "left": 0,
+        "right": 1280,
+        "width": 1280,
+        "top": 64,
+        "height": 15019
+      },
+      "text": {
+        "left": 24,
+        "right": 1242.41,
+        "textNodes": 627
+      },
+      "paddingLeft": "24px",
+      "paddingRight": "24px",
+      "marginLeft": "0px",
+      "marginRight": "0px",
+      "maxWidth": "1448px",
+      "width": "1280px"
+    },
+    {
+      "zone": "footer",
+      "sel": "footer.max-w-[var(--ds-page-width-with-margin)].mx-auto.px-[var(--geist-page-margin)]",
+      "rect": {
+        "left": 0,
+        "right": 1280,
+        "width": 1280,
+        "top": 15083,
+        "height": 846
+      },
+      "text": {
+        "left": 24,
+        "right": 1300.67,
+        "textNodes": 101
+      },
+      "paddingLeft": "24px",
+      "paddingRight": "24px",
+      "marginLeft": "0px",
+      "marginRight": "0px",
+      "maxWidth": "1448px",
+      "width": "1280px"
+    },
+    {
+      "zone": "footer>",
+      "sel": "nav",
+      "rect": {
+        "left": 24,
+        "right": 1256,
+        "width": 1232,
+        "top": 15123,
+        "height": 700
+      },
+      "text": {
+        "left": 24,
+        "right": 1162.73,
+        "textNodes": 96
+      },
+      "paddingLeft": "0px",
+      "paddingRight": "0px",
+      "marginLeft": "0px",
+      "marginRight": "0px",
+      "maxWidth": "none",
+      "width": "1232px"
+    },
+    {
+      "zone": "footer>",
+      "sel": "div.flex.items-center.justify-between",
+      "rect": {
+        "left": 24,
+        "right": 1256,
+        "width": 1232,
+        "top": 15855,
+        "height": 34
+      },
+      "text": {
+        "left": 40,
+        "right": 1300.67,
+        "textNodes": 5
+      },
+      "paddingLeft": "0px",
+      "paddingRight": "0px",
+      "marginLeft": "0px",
+      "marginRight": "0px",
+      "maxWidth": "none",
+      "width": "1232px"
+    }
+  ],
+  "sections": [
+    {
+      "idx": 0,
+      "sel": "div.max-w-(--ds-page-width-with-margin).px-(--geist-page-margin).mx-auto",
+      "top": 64,
+      "height": 15019,
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "marginTop": "0px",
+      "marginBottom": "0px"
+    }
+  ],
+  "cards": [
+    {
+      "sel": "a.cursor-pointer.focus-visible:outline-2.outline-[var(--ds-focus-color)]",
+      "rect": {
+        "left": 24,
+        "top": 1091,
+        "width": 606,
+        "height": 340
+      },
+      "paddingTop": "32px",
+      "paddingRight": "32px",
+      "paddingBottom": "32px",
+      "paddingLeft": "32px",
+      "borderRadius": "2px",
+      "gap": "32px"
+    },
+    {
+      "sel": "a.cursor-pointer.focus-visible:outline-2.outline-[var(--ds-focus-color)]",
+      "rect": {
+        "left": 650,
+        "top": 1091,
+        "width": 606,
+        "height": 340
+      },
+      "paddingTop": "32px",
+      "paddingRight": "32px",
+      "paddingBottom": "32px",
+      "paddingLeft": "32px",
+      "borderRadius": "2px",
+      "gap": "32px"
+    }
+  ],
+  "relatedPairs": [
+    {
+      "heading": "H3",
+      "text": "No idle, no waste",
+      "marginBottom": "0px",
+      "paddingBottom": "0px",
+      "gapToNext": 8,
+      "nextTag": "p"
+    },
+    {
+      "heading": "H3",
+      "text": "Control your spending",
+      "marginBottom": "0px",
+      "paddingBottom": "0px",
+      "gapToNext": 8,
+      "nextTag": "p"
+    },
+    {
+      "heading": "H2",
+      "text": "Frequently asked questions",
+      "marginBottom": "0px",
+      "paddingBottom": "0px",
+      "gapToNext": -132,
+      "nextTag": "div"
+    },
+    {
+      "heading": "H2",
+      "text": "Can’t decide?",
+      "marginBottom": "0px",
+      "paddingBottom": "0px",
+      "gapToNext": -46,
+      "nextTag": "div"
+    }
+  ],
+  "spacingCensus": {
+    "1": 511,
+    "2": 1002,
+    "3": 6,
+    "4": 996,
+    "5": 6,
+    "6": 110,
+    "7": 9,
+    "8": 209,
+    "10": 80,
+    "12": 237,
+    "14": 6,
+    "16": 998,
+    "20": 4,
+    "24": 48,
+    "32": 30,
+    "36": 1,
+    "48": 9,
+    "72": 4,
+    "90": 5,
+    "96": 3,
+    "144": 1,
+    "-1": 45,
+    "-24": 1
+  }
+}

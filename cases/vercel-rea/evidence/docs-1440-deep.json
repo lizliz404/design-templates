@@ -1,0 +1,217 @@
+{
+  "url": "https://vercel.com/docs",
+  "viewport": {
+    "w": 1440
+  },
+  "vars": {
+    "--ds-page-width": "1400px",
+    "--ds-page-width-with-margin": "calc(1400px + calc(2 * 24px))",
+    "--geist-page-margin": "24px",
+    "--geist-gap": "24px",
+    "--geist-space-1x": null,
+    "--geist-space-2x": "8px",
+    "--geist-space-4x": "16px",
+    "--geist-space-8x": "32px",
+    "--geist-space-16x": "64px",
+    "--geist-space-24x": "96px",
+    "--geist-space-32x": "128px",
+    "--geist-space-40x": null,
+    "--geist-space-48x": "192px",
+    "--geist-space-64x": "256px"
+  },
+  "header": {
+    "leftmost": [
+      {
+        "text": "Build with AI",
+        "left": 24,
+        "right": 106.36,
+        "owner": "div.text-label-14.text-gray-900",
+        "pos": "static",
+        "vis": "hidden",
+        "display": "block",
+        "opacity": "1"
+      },
+      {
+        "text": "AI Gateway",
+        "left": 24,
+        "right": 130.61,
+        "owner": "span.decoration-1.underline-offset-[5px].group-hover:underline.group-hover:decoration",
+        "pos": "static",
+        "vis": "hidden",
+        "display": "block",
+        "opacity": "1"
+      },
+      {
+        "text": "AI SDK",
+        "left": 24,
+        "right": 90.41,
+        "owner": "span.decoration-1.underline-offset-[5px].group-hover:underline.group-hover:decoration",
+        "pos": "static",
+        "vis": "hidden",
+        "display": "block",
+        "opacity": "1"
+      },
+      {
+        "text": "Sandbox",
+        "left": 24,
+        "right": 104.69,
+        "owner": "span.decoration-1.underline-offset-[5px].group-hover:underline.group-hover:decoration",
+        "pos": "static",
+        "vis": "hidden",
+        "display": "block",
+        "opacity": "1"
+      }
+    ],
+    "rightmost": [
+      {
+        "text": "Log In",
+        "left": 692.53,
+        "right": 732.47,
+        "owner": "span.truncate.inline-block.px-1.5",
+        "pos": "static",
+        "vis": "hidden",
+        "display": "block",
+        "opacity": "1"
+      },
+      {
+        "text": "Ask AI",
+        "left": 1181.41,
+        "right": 1225.91,
+        "owner": "span.truncate.inline-block.px-1.5",
+        "pos": "static",
+        "vis": "visible",
+        "display": "block",
+        "opacity": "1"
+      },
+      {
+        "text": "Log In",
+        "left": 1261.91,
+        "right": 1301.84,
+        "owner": "span.truncate.inline-block.px-1.5",
+        "pos": "static",
+        "vis": "visible",
+        "display": "block",
+        "opacity": "1"
+      },
+      {
+        "text": "Sign Up",
+        "left": 1337.84,
+        "right": 1389,
+        "owner": "span.truncate.inline-block.px-1.5",
+        "pos": "static",
+        "vis": "visible",
+        "display": "block",
+        "opacity": "1"
+      }
+    ]
+  },
+  "footer": {
+    "leftmost": [
+      {
+        "text": "Agent Stack",
+        "left": 24,
+        "right": 105.05,
+        "owner": "h2.text-gray-1000.text-label-14.font-medium.my-[var(--geist-gap-half)]",
+        "pos": "static",
+        "vis": "visible",
+        "display": "block",
+        "opacity": "1"
+      },
+      {
+        "text": "AI SDK",
+        "left": 24,
+        "right": 70.48,
+        "owner": "a.cursor-pointer.focus-visible:outline-2.outline-[var(--ds-focus-color)].outline-o",
+        "pos": "static",
+        "vis": "visible",
+        "display": "flex",
+        "opacity": "1"
+      },
+      {
+        "text": "AI Gateway",
+        "left": 24,
+        "right": 98.63,
+        "owner": "a.cursor-pointer.focus-visible:outline-2.outline-[var(--ds-focus-color)].outline-o",
+        "pos": "static",
+        "vis": "visible",
+        "display": "flex",
+        "opacity": "1"
+      },
+      {
+        "text": "Sandbox",
+        "left": 24,
+        "right": 80.48,
+        "owner": "a.cursor-pointer.focus-visible:outline-2.outline-[var(--ds-focus-color)].outline-o",
+        "pos": "static",
+        "vis": "visible",
+        "display": "flex",
+        "opacity": "1"
+      }
+    ],
+    "rightmost": [
+      {
+        "text": "Select a display theme:",
+        "left": 1296,
+        "right": 1445.67,
+        "owner": "legend.sr-only",
+        "pos": "absolute",
+        "vis": "visible",
+        "display": "block",
+        "opacity": "1"
+      },
+      {
+        "text": "system",
+        "left": 1308.5,
+        "right": 1354.7,
+        "owner": "span.sr-only",
+        "pos": "absolute",
+        "vis": "visible",
+        "display": "block",
+        "opacity": "1"
+      },
+      {
+        "text": "light",
+        "left": 1332.5,
+        "right": 1360.58,
+        "owner": "span.sr-only",
+        "pos": "absolute",
+        "vis": "visible",
+        "display": "block",
+        "opacity": "1"
+      },
+      {
+        "text": "dark",
+        "left": 1356.5,
+        "right": 1385.5,
+        "owner": "span.sr-only",
+        "pos": "absolute",
+        "vis": "visible",
+        "display": "block",
+        "opacity": "1"
+      }
+    ]
+  },
+  "inner": [
+    {
+      "idx": 0,
+      "sel": "div.lg:grid-cols-[300px].relative.md:grid.lg:sticky",
+      "top": 64,
+      "h": 836,
+      "padT": "0px",
+      "padB": "0px",
+      "mT": "0px",
+      "mB": "0px"
+    },
+    {
+      "idx": 1,
+      "sel": "div._6uRq_q_content",
+      "top": 64,
+      "h": 4246.55,
+      "padT": "24px",
+      "padB": "64px",
+      "mT": "0px",
+      "mB": "0px",
+      "gapAbove": -836
+    }
+  ]
+}

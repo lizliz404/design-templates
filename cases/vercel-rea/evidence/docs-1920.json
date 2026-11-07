@@ -1,0 +1,602 @@
+{
+  "url": "https://vercel.com/docs",
+  "viewport": {
+    "w": 1920,
+    "h": 900
+  },
+  "docWidth": 1905,
+  "docHeight": 5012,
+  "ruler": [
+    {
+      "zone": "header",
+      "sel": "header#marketing-header.peer.sticky.top-0",
+      "rect": {
+        "left": 0,
+        "right": 1905,
+        "width": 1905,
+        "top": 0,
+        "height": 64
+      },
+      "text": {
+        "left": 24,
+        "right": 1869,
+        "textNodes": 91
+      },
+      "paddingLeft": "0px",
+      "paddingRight": "0px",
+      "marginLeft": "0px",
+      "marginRight": "0px",
+      "maxWidth": "none",
+      "width": "1905px"
+    },
+    {
+      "zone": "header>",
+      "sel": "div.mx-auto.flex.h-full",
+      "rect": {
+        "left": 0,
+        "right": 1905,
+        "width": 1905,
+        "top": 0,
+        "height": 64
+      },
+      "text": {
+        "left": 24,
+        "right": 1869,
+        "textNodes": 91
+      },
+      "paddingLeft": "24px",
+      "paddingRight": "24px",
+      "marginLeft": "0px",
+      "marginRight": "0px",
+      "maxWidth": "none",
+      "width": "1905px"
+    },
+    {
+      "zone": "main[0]",
+      "sel": "div.FPY_ma_wrapper",
+      "rect": {
+        "left": 0,
+        "right": 1905,
+        "width": 1905,
+        "top": 64,
+        "height": 4246.55
+      },
+      "text": {
+        "left": 20,
+        "right": 1582.56,
+        "textNodes": 206
+      },
+      "paddingLeft": "0px",
+      "paddingRight": "0px",
+      "marginLeft": "0px",
+      "marginRight": "0px",
+      "maxWidth": "none",
+      "width": "1905px"
+    },
+    {
+      "zone": "footer",
+      "sel": "footer.max-w-[var(--ds-page-width-with-margin)].mx-auto.px-[var(--geist-page-margin)]",
+      "rect": {
+        "left": 228.5,
+        "right": 1676.5,
+        "width": 1448,
+        "top": 4401.55,
+        "height": 846
+      },
+      "text": {
+        "left": 252.5,
+        "right": 1697.17,
+        "textNodes": 101
+      },
+      "paddingLeft": "24px",
+      "paddingRight": "24px",
+      "marginLeft": "228.5px",
+      "marginRight": "228.5px",
+      "maxWidth": "1448px",
+      "width": "1448px"
+    },
+    {
+      "zone": "footer>",
+      "sel": "nav",
+      "rect": {
+        "left": 252.5,
+        "right": 1652.5,
+        "width": 1400,
+        "top": 4441.55,
+        "height": 700
+      },
+      "text": {
+        "left": 252.5,
+        "right": 1531.23,
+        "textNodes": 96
+      },
+      "paddingLeft": "0px",
+      "paddingRight": "0px",
+      "marginLeft": "0px",
+      "marginRight": "0px",
+      "maxWidth": "none",
+      "width": "1400px"
+    },
+    {
+      "zone": "footer>",
+      "sel": "div.flex.items-center.justify-between",
+      "rect": {
+        "left": 252.5,
+        "right": 1652.5,
+        "width": 1400,
+        "top": 5173.55,
+        "height": 34
+      },
+      "text": {
+        "left": 268.5,
+        "right": 1697.17,
+        "textNodes": 5
+      },
+      "paddingLeft": "0px",
+      "paddingRight": "0px",
+      "marginLeft": "0px",
+      "marginRight": "0px",
+      "maxWidth": "none",
+      "width": "1400px"
+    }
+  ],
+  "sections": [
+    {
+      "idx": 0,
+      "sel": "div.FPY_ma_wrapper",
+      "top": 64,
+      "height": 4246.55,
+      "paddingTop": "0px",
+      "paddingBottom": "0px",
+      "marginTop": "0px",
+      "marginBottom": "0px"
+    }
+  ],
+  "cards": [
+    {
+      "sel": "div.my-4.rounded-lg.group/copy",
+      "rect": {
+        "left": 1108.5,
+        "top": 227,
+        "width": 488,
+        "height": 133
+      },
+      "paddingTop": "0px",
+      "paddingRight": "0px",
+      "paddingBottom": "0px",
+      "paddingLeft": "0px",
+      "borderRadius": "8px",
+      "gap": "normal"
+    },
+    {
+      "sel": "a.cursor-pointer.focus-visible:outline-2.outline-[var(--ds-focus-color)]",
+      "rect": {
+        "left": 572.5,
+        "top": 709.17,
+        "width": 330.66,
+        "height": 224
+      },
+      "paddingTop": "24px",
+      "paddingRight": "24px",
+      "paddingBottom": "24px",
+      "paddingLeft": "24px",
+      "borderRadius": "12px",
+      "gap": "normal"
+    },
+    {
+      "sel": "a.cursor-pointer.focus-visible:outline-2.outline-[var(--ds-focus-color)]",
+      "rect": {
+        "left": 919.16,
+        "top": 709.17,
+        "width": 330.67,
+        "height": 224
+      },
+      "paddingTop": "24px",
+      "paddingRight": "24px",
+      "paddingBottom": "24px",
+      "paddingLeft": "24px",
+      "borderRadius": "12px",
+      "gap": "normal"
+    },
+    {
+      "sel": "a.cursor-pointer.focus-visible:outline-2.outline-[var(--ds-focus-color)]",
+      "rect": {
+        "left": 1265.83,
+        "top": 709.17,
+        "width": 330.66,
+        "height": 224
+      },
+      "paddingTop": "24px",
+      "paddingRight": "24px",
+      "paddingBottom": "24px",
+      "paddingLeft": "24px",
+      "borderRadius": "12px",
+      "gap": "normal"
+    },
+    {
+      "sel": "a.cursor-pointer.focus-visible:outline-2.outline-[var(--ds-focus-color)]",
+      "rect": {
+        "left": 572.5,
+        "top": 949.17,
+        "width": 330.66,
+        "height": 204
+      },
+      "paddingTop": "24px",
+      "paddingRight": "24px",
+      "paddingBottom": "24px",
+      "paddingLeft": "24px",
+      "borderRadius": "12px",
+      "gap": "normal"
+    },
+    {
+      "sel": "a.cursor-pointer.focus-visible:outline-2.outline-[var(--ds-focus-color)]",
+      "rect": {
+        "left": 919.16,
+        "top": 949.17,
+        "width": 330.67,
+        "height": 204
+      },
+      "paddingTop": "24px",
+      "paddingRight": "24px",
+      "paddingBottom": "24px",
+      "paddingLeft": "24px",
+      "borderRadius": "12px",
+      "gap": "normal"
+    },
+    {
+      "sel": "a.cursor-pointer.focus-visible:outline-2.outline-[var(--ds-focus-color)]",
+      "rect": {
+        "left": 1265.83,
+        "top": 949.17,
+        "width": 330.66,
+        "height": 204
+      },
+      "paddingTop": "24px",
+      "paddingRight": "24px",
+      "paddingBottom": "24px",
+      "paddingLeft": "24px",
+      "borderRadius": "12px",
+      "gap": "normal"
+    },
+    {
+      "sel": "a.cursor-pointer.focus-visible:outline-2.outline-[var(--ds-focus-color)]",
+      "rect": {
+        "left": 572.5,
+        "top": 1717.36,
+        "width": 330.66,
+        "height": 204
+      },
+      "paddingTop": "24px",
+      "paddingRight": "24px",
+      "paddingBottom": "24px",
+      "paddingLeft": "24px",
+      "borderRadius": "12px",
+      "gap": "normal"
+    },
+    {
+      "sel": "a.cursor-pointer.focus-visible:outline-2.outline-[var(--ds-focus-color)]",
+      "rect": {
+        "left": 919.16,
+        "top": 1717.36,
+        "width": 330.67,
+        "height": 204
+      },
+      "paddingTop": "24px",
+      "paddingRight": "24px",
+      "paddingBottom": "24px",
+      "paddingLeft": "24px",
+      "borderRadius": "12px",
+      "gap": "normal"
+    },
+    {
+      "sel": "a.cursor-pointer.focus-visible:outline-2.outline-[var(--ds-focus-color)]",
+      "rect": {
+        "left": 1265.83,
+        "top": 1717.36,
+        "width": 330.66,
+        "height": 204
+      },
+      "paddingTop": "24px",
+      "paddingRight": "24px",
+      "paddingBottom": "24px",
+      "paddingLeft": "24px",
+      "borderRadius": "12px",
+      "gap": "normal"
+    },
+    {
+      "sel": "a.cursor-pointer.focus-visible:outline-2.outline-[var(--ds-focus-color)]",
+      "rect": {
+        "left": 572.5,
+        "top": 1937.36,
+        "width": 330.66,
+        "height": 184
+      },
+      "paddingTop": "24px",
+      "paddingRight": "24px",
+      "paddingBottom": "24px",
+      "paddingLeft": "24px",
+      "borderRadius": "12px",
+      "gap": "normal"
+    },
+    {
+      "sel": "a.cursor-pointer.focus-visible:outline-2.outline-[var(--ds-focus-color)]",
+      "rect": {
+        "left": 919.16,
+        "top": 1937.36,
+        "width": 330.67,
+        "height": 184
+      },
+      "paddingTop": "24px",
+      "paddingRight": "24px",
+      "paddingBottom": "24px",
+      "paddingLeft": "24px",
+      "borderRadius": "12px",
+      "gap": "normal"
+    },
+    {
+      "sel": "a.cursor-pointer.focus-visible:outline-2.outline-[var(--ds-focus-color)]",
+      "rect": {
+        "left": 1265.83,
+        "top": 1937.36,
+        "width": 330.66,
+        "height": 184
+      },
+      "paddingTop": "24px",
+      "paddingRight": "24px",
+      "paddingBottom": "24px",
+      "paddingLeft": "24px",
+      "borderRadius": "12px",
+      "gap": "normal"
+    },
+    {
+      "sel": "a.cursor-pointer.focus-visible:outline-2.outline-[var(--ds-focus-color)]",
+      "rect": {
+        "left": 572.5,
+        "top": 2213.36,
+        "width": 330.66,
+        "height": 184
+      },
+      "paddingTop": "24px",
+      "paddingRight": "24px",
+      "paddingBottom": "24px",
+      "paddingLeft": "24px",
+      "borderRadius": "12px",
+      "gap": "normal"
+    },
+    {
+      "sel": "a.cursor-pointer.focus-visible:outline-2.outline-[var(--ds-focus-color)]",
+      "rect": {
+        "left": 919.16,
+        "top": 2213.36,
+        "width": 330.67,
+        "height": 184
+      },
+      "paddingTop": "24px",
+      "paddingRight": "24px",
+      "paddingBottom": "24px",
+      "paddingLeft": "24px",
+      "borderRadius": "12px",
+      "gap": "normal"
+    },
+    {
+      "sel": "a.cursor-pointer.focus-visible:outline-2.outline-[var(--ds-focus-color)]",
+      "rect": {
+        "left": 1265.83,
+        "top": 2213.36,
+        "width": 330.66,
+        "height": 184
+      },
+      "paddingTop": "24px",
+      "paddingRight": "24px",
+      "paddingBottom": "24px",
+      "paddingLeft": "24px",
+      "borderRadius": "12px",
+      "gap": "normal"
+    },
+    {
+      "sel": "a.cursor-pointer.focus-visible:outline-2.outline-[var(--ds-focus-color)]",
+      "rect": {
+        "left": 572.5,
+        "top": 2413.36,
+        "width": 330.66,
+        "height": 164
+      },
+      "paddingTop": "24px",
+      "paddingRight": "24px",
+      "paddingBottom": "24px",
+      "paddingLeft": "24px",
+      "borderRadius": "12px",
+      "gap": "normal"
+    },
+    {
+      "sel": "a.cursor-pointer.focus-visible:outline-2.outline-[var(--ds-focus-color)]",
+      "rect": {
+        "left": 919.16,
+        "top": 2413.36,
+        "width": 330.67,
+        "height": 164
+      },
+      "paddingTop": "24px",
+      "paddingRight": "24px",
+      "paddingBottom": "24px",
+      "paddingLeft": "24px",
+      "borderRadius": "12px",
+      "gap": "normal"
+    },
+    {
+      "sel": "a.cursor-pointer.focus-visible:outline-2.outline-[var(--ds-focus-color)]",
+      "rect": {
+        "left": 1265.83,
+        "top": 2413.36,
+        "width": 330.66,
+        "height": 164
+      },
+      "paddingTop": "24px",
+      "paddingRight": "24px",
+      "paddingBottom": "24px",
+      "paddingLeft": "24px",
+      "borderRadius": "12px",
+      "gap": "normal"
+    },
+    {
+      "sel": "a.cursor-pointer.focus-visible:outline-2.outline-[var(--ds-focus-color)]",
+      "rect": {
+        "left": 572.5,
+        "top": 2669.36,
+        "width": 330.66,
+        "height": 184
+      },
+      "paddingTop": "24px",
+      "paddingRight": "24px",
+      "paddingBottom": "24px",
+      "paddingLeft": "24px",
+      "borderRadius": "12px",
+      "gap": "normal"
+    }
+  ],
+  "relatedPairs": [
+    {
+      "heading": "H1",
+      "text": "Ship anything with Vercel",
+      "marginBottom": "0px",
+      "paddingBottom": "0px",
+      "gapToNext": 24,
+      "nextTag": "div"
+    },
+    {
+      "heading": "H3",
+      "text": "Vercel Plugin",
+      "marginBottom": "0px",
+      "paddingBottom": "0px",
+      "gapToNext": 8,
+      "nextTag": "p"
+    },
+    {
+      "heading": "H3",
+      "text": "Agent Skills",
+      "marginBottom": "0px",
+      "paddingBottom": "0px",
+      "gapToNext": 40,
+      "nextTag": "p"
+    },
+    {
+      "heading": "H3",
+      "text": "Vercel MCP",
+      "marginBottom": "0px",
+      "paddingBottom": "0px",
+      "gapToNext": 40,
+      "nextTag": "p"
+    },
+    {
+      "heading": "H3",
+      "text": "Vercel Connect",
+      "marginBottom": "0px",
+      "paddingBottom": "0px",
+      "gapToNext": 8,
+      "nextTag": "p"
+    },
+    {
+      "heading": "H3",
+      "text": "Claim Deployments",
+      "marginBottom": "0px",
+      "paddingBottom": "0px",
+      "gapToNext": 8,
+      "nextTag": "p"
+    },
+    {
+      "heading": "H3",
+      "text": "Containers",
+      "marginBottom": "0px",
+      "paddingBottom": "0px",
+      "gapToNext": 8,
+      "nextTag": "p"
+    },
+    {
+      "heading": "H3",
+      "text": "AI Gateway",
+      "marginBottom": "0px",
+      "paddingBottom": "0px",
+      "gapToNext": 8,
+      "nextTag": "p"
+    },
+    {
+      "heading": "H3",
+      "text": "AI SDK",
+      "marginBottom": "0px",
+      "paddingBottom": "0px",
+      "gapToNext": 20,
+      "nextTag": "p"
+    },
+    {
+      "heading": "H3",
+      "text": "eve",
+      "marginBottom": "0px",
+      "paddingBottom": "0px",
+      "gapToNext": 20,
+      "nextTag": "p"
+    },
+    {
+      "heading": "H3",
+      "text": "Sandbox",
+      "marginBottom": "0px",
+      "paddingBottom": "0px",
+      "gapToNext": 20,
+      "nextTag": "p"
+    },
+    {
+      "heading": "H3",
+      "text": "Workflows",
+      "marginBottom": "0px",
+      "paddingBottom": "0px",
+      "gapToNext": 8,
+      "nextTag": "p"
+    },
+    {
+      "heading": "H3",
+      "text": "MCP Servers",
+      "marginBottom": "0px",
+      "paddingBottom": "0px",
+      "gapToNext": 8,
+      "nextTag": "p"
+    },
+    {
+      "heading": "H3",
+      "text": "Next.js",
+      "marginBottom": "0px",
+      "paddingBottom": "0px",
+      "gapToNext": 20,
+      "nextTag": "p"
+    },
+    {
+      "heading": "H3",
+      "text": "Functions",
+      "marginBottom": "0px",
+      "paddingBottom": "0px",
+      "gapToNext": 8,
+      "nextTag": "p"
+    }
+  ],
+  "spacingCensus": {
+    "1": 28,
+    "2": 503,
+    "3": 6,
+    "4": 264,
+    "5": 7,
+    "6": 365,
+    "8": 489,
+    "10": 78,
+    "12": 177,
+    "14": 6,
+    "16": 180,
+    "20": 2,
+    "24": 184,
+    "32": 2,
+    "36": 9,
+    "40": 1,
+    "48": 7,
+    "60": 7,
+    "64": 1,
+    "-1": 13,
+    "-60": 7
+  }
+}
