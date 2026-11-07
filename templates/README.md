@@ -54,6 +54,7 @@ description: >-
 
 - **网页视频播放器 / 原生控件 / 审片 UI / HLS 与 DASH 选型** → [`web-video-player-due-diligence.md`](./web-video-player-due-diligence.md)；控件、状态、引擎与交付分层，维护状态和第一方尽调；不因皮肤需求默认改造媒体后端。
 - **Landing 首屏氛围 / 静图 WebP 是否够 / hero 背景视频 / 海报优先 / 4 秒体感** → [`landing-hero-background-video.md`](./landing-hero-background-video.md)；先第一性原理选型（静图默认，视频/Lottie/shader 条件启用）；上视频时体积 + 海报 LCP + CDN 优先于播放器；带控件 / HLS / 审片仍走上一行。
+- **Landing 图文共舞 / 画廊感滚动阻尼 / sticky rail + 流式列 / 差速漂移 / 动量回摆参数选型** → [`image-text-gallery-dance.md`](./image-text-gallery-dance.md)；四骨架解剖 + 拖尾/沉降/回摆三档互斥阻尼语义与实测值域，React spring 与 vanilla rAF 双配方；scroll-coupled 值在禁 scroll-jacking 项目须先登记豁免，只调阻尼参数不动结构走本文 §值域表。
 - **B2B 数据密集后台 / CRM / 管理台** → [`ui-patterns/data-dense-app-craft.md`](./ui-patterns/data-dense-app-craft.md) + [`ui-patterns/data-dense-b2b-app.md`](./ui-patterns/data-dense-b2b-app.md)。需要 records / diff / filter 表格语法时，再组合下一节的 Beautiful UI。
 - **Telegram Web A/K 借鉴 / Chat-first 工作区 / 未发送草稿 / 阅读位置 / 附件异步所有权** → [`telegram-web-chat/README.md`](./telegram-web-chat/README.md)；固定版本研究、离线原型及出海云实施/失败到通过的执行对账，不搬 IM 服务层，不把历史候选当成当前缺口。
 - **Chatbot / AI Agent 界面** → [Agent / motion chrome](#agent--motion-chrome) 的 **Beautiful UI primitives**；它覆盖 thinking、streaming、approval、tool chips、composer 和 dense tables。
@@ -69,6 +70,7 @@ description: >-
 - **落地页按钮太多 / 页面「乱」「累」/ 首屏文案过密 / 清理 AI 自我防御式免责文案** → [`ui-patterns/landing-cta-economy.md`](./ui-patterns/landing-cta-economy.md)；按「竞争的下一步」而不是按钮实例数做预算：1 主动作 + 1 辅助、权重递减的重复、首屏/段落字数上限、hedge 三类与五问判据；定价页/受监管品类另有边界。
 - **顶部导航滚动收缩 / 玻璃胶囊导航 / Liquid Glass 仿制 / 毛玻璃上文字可读性** → [`ui-patterns/scroll-shrink-glass-capsule-nav.md`](./ui-patterns/scroll-shrink-glass-capsule-nav.md)；整条透明导航 → 居中玻璃胶囊的三档实现（CSS blur / SVG 折射 / WebGL）、最坏背景对比度算法、四路降级与 iOS blur 边界；点按展开的岛式 chrome 走 atomic-island-chrome，不做内容层玻璃。
 - **顶部导航下划线手势 / 通栏 dropdown 与页面压暗 / sticky header 高度同步 / 页内跳转条与 scrollspy** → [`ui-patterns/header-nav-and-jump-bar.md`](./ui-patterns/header-nav-and-jump-bar.md) + [`snippets/header-nav-and-jump-bar.html`](./ui-patterns/snippets/header-nav-and-jump-bar.html)；双程下划线 replay（550ms 右收→翻原点→左绘→归位）、chromeless panel + `:has()` 零 markup scrim、`--header-h` 运行时实测、`aria-current="location"` 滚动高亮；含 hover 死带与 band 空态三个实测缺陷及修法，滚动收缩玻璃胶囊走上一行。
+- **nav dropdown 项间切换背景乱动 / 半透明带互叠下陷 / 「hover 一下就消失」够不到子项 / Vercel 式静止表面+方向性文字交换** → [`nav-still-band-dropdown.md`](./nav-still-band-dropdown.md)；单一共享 `.nav-band`（`:has()` 开合、项间构造性零动画）+ 整块文字层 `data-panel-dir` 左右渐隐 + `.is-open` linger 时间走廊，含逐帧像素验收清单与三个实测病历；下划线手势/死带几何仍走上一行。
 - **文本型 Help / 长文档 / PDF 排版（简历 / 一页纸 / 白皮书 / 信函）、商品图文研究报告或纸感 landing** → [`design/kami-document-dna.md`](./design/kami-document-dna.md) + 已装 skill `kami`（`~/.agents/skills/kami`，`pi --skill ~/.agents/skills/kami`）；DNA 只记纸感令牌，Portfolio 双图、Long Doc 密度与写作门走实际 skill；记录实际采用机制，不搬字体。
 - **个人站 / 作品集** → [`design/hanzilla-personal-site/`](./design/hanzilla-personal-site/) 或 [`design/liz-personal-compact/`](./design/liz-personal-compact/)。
 - **内容到服务承接页** → [`design/uhoh-inspired-service-entry/`](./design/uhoh-inspired-service-entry/)；入口屋不是交付工厂。
