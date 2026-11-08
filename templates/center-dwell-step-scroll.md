@@ -15,7 +15,7 @@ description: >-
 | **A：目录 sticky + 内容自然流 + in-view** | 出海云根 Landing 的 PipelineScrolly / StageBlock | 各段长度不一、需要细读标题／场景／说明；内容随文档自然滚过，只有目录停靠。不强求每格居中停驻，不加 snap。 |
 | **B：整个图文 panel 进出 + 中央停驻 + 归位** | 主选：GreenSock 的 **Horizontal sections (simple) with pause**，取单 timeline 的整面板移动与滚动停驻，再用 ScrollTrigger 原生 snap | 少量短图文、需要逐格读完的局部章节；CFE 本次目标。不做 wheel 事件锁，不把全站变翻页器。 |
 
-研究更新：2026-11-08（Asia/Shanghai）。读了真实源码与具体演示源码，**未运行浏览器手感验收**。以下是有第一方依据的成熟机制组合，不宣称全行业只有这一种方案，也不冒称找到无需适配、与 CFE 需求完全一致的成品。
+研究更新：2026-11-08（Asia/Shanghai）。读了真实源码与具体演示源码，并完成有限桌面滚动核对；**未完成多设备手感验收**。以下是有第一方依据的成熟机制组合，不宣称全行业只有这一种方案，也不冒称找到无需适配、与 CFE 需求完全一致的成品。
 
 ## 先拍板：现成可学的东西在哪里
 
@@ -36,17 +36,19 @@ description: >-
 
 ### 一个备选：Terra 的 Pinned Scroll，用来看“慢行程 + 切格归位”的完整说明
 
-**具体教程兼 live demo：** [Terra — Pinned Scroll](https://terra-dev.es/scroll/pinned-scroll/)。看页面的 **Fade**，不是站点目录。教程明确写出：整段 pin、旧 panel 上移淡出、新 panel 下方淡入、停在切换中间时向最近 panel 归位；`speed="slow"` 控制每段所占 scroll distance。Custom 章节展示单 timeline、按 viewport 设置 pin 距离，以及空 tween 保持最终姿态。
+**具体教程兼 live demo：** [Terra — Pinned Scroll](https://terra-dev.es/js/pinned-scroll/#fade)。看页面的 **Fade**，不是站点目录。教程明确写出：整段 pin、旧 panel 上移淡出、新 panel 下方淡入、停在切换中间时向最近 panel 归位；`speed="slow"` 控制每段所占 scroll distance。Custom 章节展示单 timeline、按 viewport 设置 pin 距离，以及空 tween 保持最终姿态。
 
 **为什么只是备选：** 它的 background 可由外层单独 crossfade，Fade 本身以文字示例为主；不能因此说摄影图和文字已共同移动，也未从该说明核出 65–75% 的每格停驻比例。CFE 若借其方案，图片必须进 panel，不能只设外层 `data-background`。教程依赖 Terra/Punky 的 Handler、Manager、生命周期系统，且本次未核其完整源码包与再分发许可：**学机制，不为这一段装整个框架，不直接 vendor 不明许可代码。** 相比之下，主选 GreenSock 小例子的改动更少。
 
 ### 浏览器重点核这两个，不继续堆案例
 
 1. 打开 [WNyJQjN](https://codepen.io/GreenSock/pen/WNyJQjN)，使用 Result 实际滚动：确认整个 panel 的子内容一起横移；到位后继续小幅滚，看 panel 保持但滚动仍前进；反向看是否倒带。确认原例**不会自动吸附**。若内嵌画布吃滚动，单独打开其 Result 后再测，不把编辑器滚动当 demo。
-2. 打开 [Terra Pinned Scroll](https://terra-dev.es/scroll/pinned-scroll/)，到 Fade 段：慢滚至稳定态，继续滚看每段行程；交接一半停手，看归位与能否打断；反向和尾部释放。另看 Slide 段以比较整 panel 推出的观感，但不假设其 snap／停驻实现与 Fade 完全相同。
+2. 打开 [Terra Pinned Scroll](https://terra-dev.es/js/pinned-scroll/#fade)，到 Fade 段：慢滚至稳定态，继续滚看每段行程；交接一半停手，看归位与能否打断；反向和尾部释放。另看 Slide 段以比较整 panel 推出的观感，但不假设其 snap／停驻实现与 Fade 完全相同。
 3. 两者都只作为学习基线。桌面 wheel／细触控板至少各测一次，再测窄屏；只有实际运行后才能填写“手感通过”。若入口被地区／站点风控挡住，记录真实错误，不判成 404，也不把教程可读当运行通过。
 
-读取状态：两个具体页均由 Exa 返回了正文与代码说明；独立直连检查中 CodePen 返回 HTTP 403、Terra TLS 握手超时，不能记为 404，也不能声称本机 live demo 已运行。GSAP 技术答复与 API 文档直连均为 HTTP 200。浏览器仍需核实际 Result。
+浏览器核对（2026-11-08，Asia/Shanghai）：[CodePen 全屏 Result](https://codepen.io/GreenSock/full/WNyJQjN) 已加载。竖向滚动驱动整个 panel 横移，标题与方块共同移动；Section 3 到中央后，小幅继续滚动观察到姿态保持，反向能回前格。未观察到自动 snap；尾部缺少相邻内容，未能确认 pin 释放。它是可学骨架，不是完整 CFE 图文成品。
+
+Terra 旧地址 `/scroll/pinned-scroll/` 实际返回 404，已替换为从首页找到的 [当前 Fade 地址](https://terra-dev.es/js/pinned-scroll/#fade)。实测交接中停手后呈现下一段稳定文案和背景色；反向可回前段，也可前后离开 Fade。只验证了文字与整段背景变化，未验证配对图片共同移动，也未验证新输入打断归位。两例均未覆盖真实触控板、窄屏和完整输入矩阵；不判手感验收通过。
 
 ## A：把出海云方案本身收纳为可复用模式
 
@@ -120,7 +122,7 @@ description: >-
 | 尺寸与恢复 | 长段不丢 active，导航不遮标题 | resize／横竖屏／字体图片加载后 refresh，无重复 spacer；锚点／后退恢复不被拉回 |
 | 共用降级 | 全文自然流、键盘可读、可用目录 | 同左，另撤叠层与 pin；隐藏 panel 不留焦点陷阱 |
 
-桌面和窄屏记录关键状态截图／录屏、实测设备与失败项。**本次仅完成资料与源码研究，矩阵未实测，不判通过。** 不构建应用、不改 CFE 代码、不部署；由后续任务实施并回填真实结果。
+桌面和窄屏记录关键状态截图／录屏、实测设备与失败项。**本次完成资料、源码与有限桌面演示核对，完整验收矩阵未完成，不判通过。** 不构建应用、不改 CFE 代码、不部署；由后续任务实施并回填真实结果。
 
 ## 两站固定源码证据（按需核查）
 
