@@ -9,7 +9,8 @@ description: >-
   channel/generative peers: json-render/chat, Chat SDK, OpenUI, Channels SDK,
   A2UI), an agent interaction-state inventory with required semantics and
   common failures, and the copy-pattern vs registry vs framework selection
-  ladder. Use when picking or auditing wheels for an agent chat surface
+  ladder, plus a 2026-11-08 streaming-chrome addendum (streamdown /
+  remend / use-stick-to-bottom). Use when picking or auditing wheels for an agent chat surface
   (e.g. orgbrain /chat), verifying a new vendor name before it enters the
   candidate pool, or deciding between self-built state cards, registry
   installs, chat frameworks, and native-channel generative cards.
@@ -61,7 +62,7 @@ description: >-
 | 状态 | 必须表达 | 常见烂做法 | 取用 |
 |---|---|---|---|
 | **thinking / reasoning trace** | 默认折叠一行（`Thought for Ns`）+ 可展开步骤列表；每步有粒度（搜索/编码/推理分型）与时长；进行中与已完成可区分 | 只放 spinner 不给 trace；展开后无时长无步骤；把 raw JSON 糊给用户；trace 撑开把正文推得乱跳 | 本地 `thinking-state.html`；装件：AI Elements `reasoning`、assistant-ui `reasoning`、LocalMode `agent-step-timeline`（带 finish-reason 徽章，最全） |
-| **streaming text + sources** | 部分填充 + 光标（accent 块，非下划线）；inline sources 可折叠；live edge 自动跟随，读者上滚即释放控制权（stick-to-bottom 语义） | 整块替换闪烁；无 follow（读者上滚被拽回底部）；来源堆成裸链接列表无折叠 | 本地 `streaming-text.html`；装件：AI Elements `response` + `sources` / `inline-citation`（conversation 自带 use-stick-to-bottom） |
+| **streaming text + sources** | 部分填充 + 光标（accent 块，非下划线）；inline sources 可折叠；live edge 自动跟随，读者上滚即释放控制权（stick-to-bottom 语义） | 整块替换闪烁；无 follow（读者上滚被拽回底部）；来源堆成裸链接列表无折叠 | 本地 `streaming-text.html`（演示态 blur+caret，**不是**残缺 Markdown 修复）；装件：AI Elements `response`/`sources`；**真流式正文优先 §8 `streamdown` + `use-stick-to-bottom`** |
 | **tool call chips** | 紧凑 chip + 状态机（入参流式 → 出参可用 / 出错）+ 计数汇总；失败态一等公民 | 每个 tool call 一张全宽卡轰炸时间线；无失败态；完成后 chip 消失不可追溯 | 本地 `tool-chips.html`；装件：AI Elements `tool`（直接绑 AI SDK `ToolUIPart` state 机）、LocalMode `tool` |
 | **approval / HITL 卡** | 框式提问 + 选项 pills + 自定义回答入口 + 多步分页；批准后结果可追溯（留在时间线里，非一次性弹窗） | 用 `confirm()` 弹窗；approve 后查无对证；拒绝/修改路径缺失 | 本地 `approval-card.html`；参考语法：LocalMode `tool-approval`（allow once / remember / deny）、CopilotKit HITL |
 | **task rows** | 行级 running / failed / completed 实时态；终态留存可查；失败行可展开原因 | 任务与正文混排无分隔；无终态（永远"进行中"的僵尸行） | 本地 `task-rows.html`；装件：AI Elements `task` + `queue`（排队项）、LocalMode `task` |
@@ -141,3 +142,50 @@ description: >-
 2026-09-06，orgbrain /chat 重设计触发（同批产出：[`chrome-controls-placement.md`](./chrome-controls-placement.md)）。二手调研报了六个名字并裁定 v0 出界、怀疑 BoardUI 与 LocalMode UI 为幻觉；经 Exa + GitHub API 逐个实证：四家确认（Beautiful UI / Vercel AI Elements / assistant-ui / CopilotKit），两家"疑似幻觉"实为真实新品。验真证据沉淀于 §2，决策承接 ui-stack-decision §3 A 行。
 
 2026-11-08 增补：Liz 指定种子帖 `@json-render/chat`；经 Exa + GitHub/npm 实核后写入 §2 五行（json-render/chat、Chat SDK、OpenUI、Channels SDK、A2UI）与 §6 精华/糟粕。未改 Beautiful UI 上游 TSX dump。
+
+2026-11-08 再增：Liz 要求加强站内 Streaming；经 Exa + GitHub/npm 实核后写入 **§8**（streamdown / remend / use-stick-to-bottom 等）。未改 Beautiful UI 上游 TSX dump。
+
+
+## 8 · 2026-11-08 增补：站内 streaming chrome 轮子
+
+触发：Liz 认定「当前 Streaming 不够」，要找开源轮子加强站内 Agent chat（Radar / 出海云 / CFE）——token 流、stick-to-bottom、caret、reasoning 折叠、渐进结构化 UI。**范围仍是第一方 Web**；Slack/Teams Chat SDK 整支继续出界（§6）。
+
+### 主要矛盾
+
+Beautiful UI 的 `StreamingText` / `streaming-text.html` 是**演示态**（按词 blur + 细竖线 caret + 源 chip），不是生产态「半截 Markdown 仍好看 + 读到一半不被拽回底」。AI Elements 内部已经用了 `streamdown` 和 `use-stick-to-bottom`，但本 pack 此前只点了 Elements 整组，**没把这两颗独立 L1 轮子写进验真表**——不装 Elements / 不绑 AI SDK message parts 时等于没货。
+
+### 验真短名单（按装机优先级）
+
+| 排名 | 名字 | repo / npm | license · 星 · 近推 | 解决的 streaming 问题 | 相对 Beautiful UI / AI Elements | 建议 |
+|---|---|---|---|---|---|---|
+| 1 | **streamdown** | [vercel/streamdown](https://github.com/vercel/streamdown) · npm `streamdown@2.7.1` · [streamdown.ai](https://streamdown.ai/) | **Apache-2.0**（LICENSE + npm 实核；GitHub API 报 NOASSERTION，同 Elements 先例）· ~5.7k★ · pushed 2026-11-05 | 残缺 Markdown 治愈（`remend`）、块级 memo、caret（`block`/`circle`）、stagger 动画、GFM/code/math/mermaid；可选 `@streamdown/cjk` | Elements `response` 的底层；Beautiful UI 演示件**不**含 incomplete-MD 修复 | **L1 装**。站内助手正文默认替换 `react-markdown`。Tailwind 4 要 `@source` 扫 `streamdown/dist`。中文产品加 `@streamdown/cjk` |
+| 2 | **remend** | 同 monorepo · npm `remend@1.4.0` | Apache-2.0 · 周下载千万级（npm） | 只做字符串级 incomplete-MD 闭合（bold/code/link/math…），零依赖 | streamdown 的预处理层；可单独喂自有 renderer | 已装 streamdown 则不必另装；自研 MD 管线时 **L1 单装 remend** |
+| 3 | **use-stick-to-bottom** | [stackblitz-labs/use-stick-to-bottom](https://github.com/stackblitz-labs/use-stick-to-bottom) · npm `use-stick-to-bottom@1.1.6` | MIT · ~784★ · ~6.6M 周下载 · pushed 2026-06-04 | AI 流式变高时弹簧追底；上滚释放；`isAtBottom` / `scrollToBottom` Promise；不依赖 Safari 不支持的 `overflow-anchor` | Elements `conversation` 已内嵌；Beautiful UI 未带会话级 scroll 宿主 | **L1 装**（零依赖 hook）。别为了 scroll 去上 assistant-ui |
+| 4 | **htmlstream**（StreamHtml） | [Alphanimble/htmlstream](https://github.com/Alphanimble/htmlstream) | MIT · ~116★ · pushed 2026-05-29 | 流式 **HTML**（残缺标签修复 + DOMPurify + caret + reasoning 面板） | MD 主路径用 streamdown；仅当模型被约束吐 HTML 卡片时 | **观察池**。安全面比 MD 大，默认不进 Radar |
+| 5 | **Proper UI · AI elements** | [properui/properui](https://github.com/properui/properui) · [properui.dev/components/ai-elements](https://properui.dev/components/ai-elements) | MIT · **1★** · pushed 2026-10-16 | SDK-无关的 streaming message / reasoning 自动开合 / stick conversation + `aria-busy` | 与 Beautiful UI / Elements **同层竞品**；星龄短 | **观察池**。要点可抄：`aria-live`+streaming 时 `aria-busy`；不满格不装 |
+| 6 | **streamfield** | [midimurphdesigns/streamfield](https://github.com/midimurphdesigns/streamfield) · npm `streamfield@0.2.1` | MIT · **0★** | `streamObject` 字段级 pending/streaming/complete + paced list + typewriter caret | 渐进结构化 UI；不替代正文 MD | **抄 pattern，不装**（星龄零）。货盘/报价卡字段闪烁时自写等价 diff |
+| 7 | **chat-scroll** | [flintc/chat-scroll](https://github.com/flintc/chat-scroll) | MIT · **0★** · 建于 2026-06 | `pin-to-top`（ChatGPT 式钉住用户气泡）vs stick-to-bottom | use-stick-to-bottom 只做后者 | **观察池**。产品若要「发送后用户消息钉顶」，先抄策略再评估装 |
+
+### 显式丢掉
+
+| 弃什么 | 为什么 |
+|---|---|
+| `@json-render/chat` / Chat SDK / Channels | Liz 已裁定：站内不走办公 IM 原生卡 |
+| Wingo UI `useStickToBottom` Pro | 预览免费、源码 Pro——违反硬闸 |
+| vibe 复刻 / 近 0★ 叉（`probably-not/stick-to-bottom`、`react-bottom-lock`、Clarity 大礼包、arc-lo/ui、velora-ai） | 无生产证据；「330 组件」叙事过重且星近 0 |
+| mugen 虚拟列表全家桶 | 5★；流式虚拟化只有真会长历史才需要 |
+| 为 streaming 上 assistant-ui / CopilotKit | L0/L1 能解决的不上 L2（§4） |
+
+### 不装库也能偷的 5 个 UX（优先落地）
+
+1. **残缺 Markdown 先治愈再渲**——半截 `**` / 未闭合 fence / 半截链接不得漏原始符号或空白闪一下。
+2. **块级 memo**——已完成段落冻结，只重绘末块；长回复不该越流越卡。
+3. **stick-to-bottom + 上滚释放 +「↓ 最新」**——跟随时追，读历史时绝不拽回；发送再 `scrollToBottom`。
+4. **caret 只在 live edge**——accent 块光标（Beautiful UI 细竖线或 streamdown `block`），`prefers-reduced-motion` 关掉；结束后消失。
+5. **reasoning：流式展开 → 结束后折成 `Thought for Ns`**——与 §3 thinking 行同构；工具 chip 失败态一等公民。
+
+### 对本栈的即时结论
+
+1. **下一步装机顺序**：`streamdown`（+ 中文则 `@streamdown/cjk`）→ `use-stick-to-bottom` → 需要时再单装 `remend`。
+2. **不动主路径分层**：仍 §4 L0 Beautiful UI 状态卡 + 本条 L1 streaming 专用件；不因「流得好看」换聊天框架。
+3. **Beautiful UI `StreamingText` 定位**：视觉参考（blur / 源 chip / follow-ups），生产正文走 streamdown。
