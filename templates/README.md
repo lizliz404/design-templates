@@ -104,6 +104,7 @@ description: >-
 - **等距 SVG 物体 / 指针交互线稿 / Hairline empty state / 轻量 hero** → [`isometric-figures/SKILL.md`](./isometric-figures/SKILL.md)；固定版本 hairline-create 完整引擎、构建与检查脚本已收录，单物体单动作；邻近 isometric-objects 原帖暂存同入口，未取得源码、不冒名替代。
 - **饼干 icon / 浮钮 / cookie 视觉层 / 叠在 consent 上的皮肤** → [`cookie-visual-layer-wheels.md`](./cookie-visual-layer-wheels.md)；不是 CMP；仓鼠整卡仍走 hamster；法律闸门走 consent-gate。
 - **Playful Cookie 同意 / 同意即投喂** → [`ui-patterns/hamster-cookie-consent.md`](./ui-patterns/hamster-cookie-consent.md)；开关喂仓鼠鼓腮，Accept all 高对比、Reject all 弱化（Ramin Nasibov）；美、值得学，to-B / 受监管场景不要上。
+- **Playful 等距空状态 / 物体入场回弹 / 角色微交互家族** → [`ui-patterns/playful-isometric-empty-states.md`](./ui-patterns/playful-isometric-empty-states.md)；Divan Raj 四段视频拆层与复刻建议，串联密码腊肠狗、投喂仓鼠和 Hairline；装饰时序不冒充输入或进度反馈。
 - **Playful 密码强度 / 指标即身体** → [`ui-patterns/stretchy-dog-password-meter.md`](./ui-patterns/stretchy-dog-password-meter.md)；输入框变宽、腊肠狗等宽拉伸、表情与毒舌文案分档（Ramin Nasibov 原作）；鼓励长度不拦人，严肃产品换普通强度提示。
 - **Hand-drawn controls** → [`ui-patterns/hand-drawn-controls.md`](./ui-patterns/hand-drawn-controls.md)；手绘 boiling 控件（drawably 蒸馏，MIT）：seeded SVG 叠在真控件下，a11y 来自真控件；playful / landing 表面专用，dense B2B admin 换资产。
 
