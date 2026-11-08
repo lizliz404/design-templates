@@ -7,3 +7,4 @@
 - [`rauno-field-notes.md`](./rauno-field-notes.md)：Rauno field notes #3–#5，海报探索 / ghost input 表单 / 卡片堆叠导航
 - [`invisible-design-engineering.md`](./invisible-design-engineering.md)：Jakub《The invisible side of design engineering》
 - [`ricouii-free-commercial-fonts-2026-11.md`](./ricouii-free-commercial-fonts-2026-11.md)：@ricouii 免费商用英文字体短名单（无衬线 8 + 衬线 5）；书签，非已批准字栈
+- [`design-resource-triage-2026-11-09.md`](./design-resource-triage-2026-11-09.md)：三帖 24 个目的地核验，2 新来源 + 3 已有增强，其余逐项取舍。

@@ -133,13 +133,13 @@ description: >-
 
 **灵感 / 案例库**
 
-- [styles.refero.design](https://styles.refero.design)（真实网站风格库，附 AI 可读的 DESIGN.md：截图、色彩、字体、间距）
+- [styles.refero.design](https://styles.refero.design)（已有来源，2026-11-09 核过公开详情；解释/归一化的 DESIGN.md 不是原站权威 token，使用边界见 [`inspiration-sources.md`](./inspiration-sources.md)）
 - [kage.design](https://kage.design)（真实产品界面库，可把设计转成给 Claude Code / Codex / Cursor 的 prompt）
 - [saaslandingpage.com](https://saaslandingpage.com)（SaaS 落地页截图库）
 - [landing.love](https://landing.love)（动效网站整页录屏灵感）
 - [component.gallery](https://component.gallery)（各大设计系统的组件实例对照参考）
-- [navbar.gallery](https://navbar.gallery)（导航栏设计灵感）
-- [cta.gallery](https://cta.gallery)（CTA 设计灵感）
+- [navbar.gallery](https://navbar.gallery)（已有来源；2026-11-09 补 mega-menu 实例和实现边界，见 [`inspiration-sources.md`](./inspiration-sources.md)）
+- [cta.gallery](https://cta.gallery)（已有来源；2026-11-09 补桌面/移动实例，不等于转化证据，见 [`inspiration-sources.md`](./inspiration-sources.md)）
 - [pricingpages.design](https://pricingpages.design)（定价页设计画廊）
 - [supahero.io](https://supahero.io)（Hero 区设计库）
 - [bentogrids.com](https://bentogrids.com)（Bento 网格设计合集）

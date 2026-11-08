@@ -135,6 +135,7 @@ description: >-
 ## 灵感书签
 
 - **X 上设计 / UI / UX / PM 高收藏帖与链接表（2026-08..10）** → [`x-design-reading-list-2026-10.md`](./x-design-reading-list-2026-10.md)：Top 10 + 主题分组 + ≥5k star 的 repo 与带内容注释的站点（代码组件库单列）；短文 / 清单要点转述在 [`reading-notes/`](./reading-notes/README.md)；pack 已有的只留指针。
+- **社媒设计资源长清单去重 / 免费与源码宣传核验** → [`reading-notes/design-resource-triage-2026-11-09.md`](./reading-notes/design-resource-triage-2026-11-09.md)；24 个目的地只新增 60fps / beUI，3 个已有入口增强；逐项记录不收的理由，不另造推荐目录。
 
 [`inspiration-sources.md`](./inspiration-sources.md) 按同一任务族群整理外部站点。一次只开 1–2 个站，记下可复用机制和明确不抄的部分，然后回到本路由选择资产；禁止整站 mirror gallery。
 

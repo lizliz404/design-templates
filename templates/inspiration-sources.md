@@ -14,6 +14,8 @@ description: >-
 | 我在做… | 先开这些 | 再回 pack |
 |---|---|---|
 | **AI / agent 界面** | [beautifului.dev](https://www.beautifului.dev/) · Vercel AI Elements（实现向） | `design/beautiful-ui-ai-interfaces/` |
+| **真实产品微交互：按手势 / 状态 / 元件找先例** | [60fps](https://60fps.design/) · [Runmo 距离轮实例](https://60fps.design/shots/runmo-drag-to-adjust-distance-wheel-interaction) | `ui-patterns/playful-isometric-empty-states.md`；公开详情提供交互描述，完整筛选 / storyboards / snippets 属 PRO；录屏不是源码授权 |
+| **React 动效 Tabs 实现参考（不是换栈理由）** | [beUI Tabs 源码页](https://beui.dev/components/motion/tabs) · [MIT LICENSE](https://github.com/starc007/ui-components/blob/main/LICENSE) | `ui-stack-decision.md`；已读公开实现，依赖 React / motion/react / Lucide 与本地 utils/ease；免费 repo 与 Pro 分开，复制保留许可，键盘 / reduced-motion 仍需项目自验 |
 | **单文件 React 动效元件** | [Rare UI](https://www.rareui.com/) | `ui-patterns/ai-thinking-orb/`；2026-08 无 repo LICENSE，勿 mirror；参考拷贝已按 PROVENANCE 收进 pack（`upstream/rare-ui-fluid-orb/`），保留署名、勿转售 |
 | **3D product hero（交互表面）** | [ThreeUI Community](https://threeui.com/) | `ui-patterns/threeui-hero-adapter.md`；只抄一个免费 MIT hero；禁止当说明图 |
 | **ASCII / dither 运动节奏** | [ASCII motion cards](https://design-on-x.com/praveenisomer/status/2066483905394618552/) · [Figma Dither Shader file](https://www.figma.com/community/file/1673462506064907726/dither-shader)（CC BY 4.0；Figma 原生 Shader+Motion，editor 内拖参校准节奏） | `paper-shaders/`（已含 Dithering：7 shapes × 4 Bayer types）；重做机制，勿截帧或复制皮肤 |
@@ -31,6 +33,7 @@ description: >-
 | **B2B 后台真屏** | [saasui.design](https://www.saasui.design/) · [mobbin.com](https://mobbin.com/) | `ui-patterns/data-dense-*.md` |
 | **图标系统纪律（Track A chrome）** | [Cursor icons making-of](https://www.minoradventures.co/blog/the-making-of-cursors-icons) · [Radix Icons](https://www.radix-ui.com/icons) · [Phosphor](https://phosphoricons.com/) | `ui-patterns/icon-system-craft.md`（非 favicon；Logo/OG 走下一节） |
 | **激活 / onboarding 机制** | [Chatbase onboarding note](https://x.com/yasser_elsaid_/status/2088279151383830570) | `ui-patterns/saas-onboarding-two-phase.md` |
+| **导航结构对照：mega menu / sidebar / dropdown** | [Navbar Gallery](https://navbar.gallery/) · [Cloudflare mega menu 条目](https://navbar.gallery/navbar/cloudflare) | `nav-still-band-dropdown.md`；截图分类与原站出口，不是可复制菜单源码；键盘与 hover 可达性回原站实测 |
 | **页脚收口** | [footer.design](https://footer.design/) | `ui-patterns/footer-craft.md` |
 
 ## Marketing / personal
@@ -39,6 +42,7 @@ description: >-
 |---|---|---|
 | **创意技术个人站 / 立场先行叙事** | [surya.website](https://surya.website/) | `design/hanzilla-personal-site/` + `liz-personal-compact/`；借「立场 → 三分法 → 近作 → 联系」，不复制页面 |
 | **SaaS 营销整站** | [saaspo.com](https://saaspo.com/) · [saasframe.io](https://saasframe.io/) · [landing.gallery](https://www.landing.gallery/) | `design/lead-radar` · `premium-one-pager` |
+| **CTA 形式 / 上下文对照（不是转化率排行）** | [CTA Gallery](https://cta.gallery/) · [Tines 桌面/移动条目](https://cta.gallery/cta/tines) | `ui-patterns/landing-cta-economy.md`；按任务与模式检索，营销模板另售；图片不能证明转化提升或无障碍合格 |
 | **Landing 分段（hero/pricing/…）** | [land-book.com](https://land-book.com/) sections · [lapa.ninja](https://www.lapa.ninja/) | 组合 landing 模板 + craft checklist |
 | **极简 / 编辑向站** | [minimal.gallery](https://minimal.gallery/) · [a1.gallery](https://www.a1.gallery/) | `hanzilla` · `liz-personal-compact` |
 | **高完成度 / 实验向** | [godly.website](https://godly.website/) | 慎用于 B2B 工具面；可偷 motion 纪律 |
@@ -54,6 +58,7 @@ description: >-
 | 我在做… | 先开这些 | 再回 pack |
 |---|---|---|
 | **Deck / 品牌指南 PDF 风** | [deck.gallery](https://deck.gallery/) · upstream [beautiful-html-templates](https://github.com/zarazhangrui/beautiful-html-templates) / [frontend-slides](https://github.com/zarazhangrui/frontend-slides) | `decks/` + `paper-shaders`；先 `visual-economy` |
+| **给 agent 提取候选样式合同 / DESIGN.md** | [Refero Styles](https://styles.refero.design/) · [公开 style 详情](https://styles.refero.design/style/a73148b9-449b-42cd-9f38-86ef694f500e) | `on-brand-ai-generation-craft.md`；详情有色彩、字体、spacing 与 Markdown，但官方注明 normalized / interpreted，HTML 是重建非原组件；回原站核验，不作权威 token 或字体授权 |
 | **Agent 用截图检索（实验）** | [assetgallery.co](https://assetgallery.co/) | 先验体量；输出仍要进项目 evidence |
 
 品牌观察流（非 gallery）：[@avstorm](https://x.com/avstorm)（logo/系统批评）、产品设计 TL 账号按需。
@@ -85,3 +90,7 @@ description: >-
 ## 与 pack 反哺
 
 发现的是可复用机制，不是单页皮肤：视觉系统 / 整页进入 `templates/design/<slug>/`，微交互进入 `templates/ui-patterns/`，激活或 IA 进入对应 craft 文，并只在 [`README.md`](./README.md) 增加一条主路由。只有书签级来源才更新本文；不新增第二索引文件。
+
+## 清单核验回执
+
+2026-11-09（Asia/Shanghai）核过三帖的 24 个唯一目的地：仅新增 60fps / beUI 两个来源，Navbar / CTA / Refero 从已有书签提升为带任务与边界的路由；其余保留、暂缓或排除。[逐项回执与证据](./reading-notes/design-resource-triage-2026-11-09.md)。不是“24 个都值得用”，未安装、购买、登录或导入任何库。

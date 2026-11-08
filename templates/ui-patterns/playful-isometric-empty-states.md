@@ -55,6 +55,7 @@ description: >-
 ### 手头工具怎么用
 
 - [Hairline / hairline-create](../isometric-figures/SKILL.md)：已收完整引擎，适合原创等距 SVG 物体和轻量空状态；其默认方向是单物体、指针响应、稳定命中与共享时钟。可借造型、遮挡、静止可辨等规则，不把当前四段时间序列硬说成 Hairline 原生示例；需要调整的触发合同要另验。**不是 screenshot tracer、工程图片解析器或自动拆层工具。**
+- **Teardown 名称纠正（2026-11-09，Asia/Shanghai）：** 仓库确实有 [`cases/anduril-rea/TEARDOWN.md`](../../cases/anduril-rea/TEARDOWN.md)、[`saronic-rea/TEARDOWN.md`](../../cases/saronic-rea/TEARDOWN.md)、[`fugro-rea/TEARDOWN.md`](../../cases/fugro-rea/TEARDOWN.md)、[`vercel-rea/TEARDOWN.md`](../../cases/vercel-rea/TEARDOWN.md)。前三类是网站工程拆解报告（Anduril 明写 REA 6.8.0 / rea-agents，CDP 检查、场景捕获、JS/CSS 分析），Vercel 是 computed-style 间距实测；不是一个已定位的名叫 teardown 的工程插图解析 skill。上一轮只说“工具未识别”漏交代了这些现有报告。可借其证据优先的拆解方法；没有运行站点/源码时，四段 MP4 仍不能推出原作栈。当前树（含 hidden/untracked）、可见本地历史和 agent-context 引用未找到独立同名工具，不等于证明用户记忆错误或别处不存在。
 - [diagram-design 等工具对照](../decks/diagram-skills.md)：可以画组件分层、时间线等辅助说明图，不是这些微交互的必需 runtime；也未确认就是用户记忆中的“工程细节图拆解工具”。没有找到确切名字就保留待核，不冒名替代。
 - 普通二维 SVG 足够表达的版本优先手工拆层；精确 logo 或品牌资产需要可信源，不靠生成模型猜。当前只收研究笔记，不附未经视觉验收的成品 demo。
 
