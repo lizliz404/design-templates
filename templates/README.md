@@ -52,6 +52,7 @@ description: >-
 
 ## 产品任务
 
+- **长行程分格滚动 / 图文共轨居中停驻 / 滚动进度稀释 / 停手咔哒归位** → [`center-dwell-step-scroll.md`](./center-dwell-step-scroll.md)；CFE 与出海云固定源码对照，原生滚动 + ScrollTrigger 单时间轴；不是目录 sticky / 装饰回摆，不默认叠 Lenis。
 - **网页视频播放器 / 原生控件 / 审片 UI / HLS 与 DASH 选型** → [`web-video-player-due-diligence.md`](./web-video-player-due-diligence.md)；控件、状态、引擎与交付分层，维护状态和第一方尽调；不因皮肤需求默认改造媒体后端。
 - **Landing 首屏氛围 / 静图 WebP 是否够 / hero 背景视频 / 海报优先 / 4 秒体感** → [`landing-hero-background-video.md`](./landing-hero-background-video.md)；先第一性原理选型（静图默认，视频/Lottie/shader 条件启用）；上视频时体积 + 海报 LCP + CDN 优先于播放器；带控件 / HLS / 审片仍走上一行。
 - **Landing 图文共舞 / 画廊感滚动阻尼 / sticky rail + 流式列 / 差速漂移 / 动量回摆参数选型** → [`image-text-gallery-dance.md`](./image-text-gallery-dance.md)；四骨架解剖 + 拖尾/沉降/回摆三档互斥阻尼语义与实测值域，React spring 与 vanilla rAF 双配方；scroll-coupled 值在禁 scroll-jacking 项目须先登记豁免，只调阻尼参数不动结构走本文 §值域表。
