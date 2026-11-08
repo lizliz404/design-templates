@@ -3,14 +3,16 @@ name: agentic-ui-primitives
 description: >-
   Verified landscape of open-source agentic UI component wheels: the
   four-layer coordinate (state primitives vs chat frameworks vs
-  protocols/runtimes vs generative UI), a per-vendor verification table
-  (Beautiful UI, Vercel AI Elements, assistant-ui, CopilotKit, BoardUI,
-  LocalMode UI — repo, license, stack, primitives, agent channel), an agent
-  interaction-state inventory with required semantics and common failures, and
-  the copy-pattern vs registry vs framework selection ladder. Use when picking
-  or auditing wheels for an agent chat surface (e.g. orgbrain /chat), verifying
-  a new vendor name before it enters the candidate pool, or deciding between
-  self-built state cards, registry installs, and chat frameworks.
+  protocols/runtimes vs generative UI catalogs/renderers — Agent products
+  still out of scope), a per-vendor verification table (Beautiful UI, Vercel
+  AI Elements, assistant-ui, CopilotKit, BoardUI, LocalMode UI, plus 2026-11
+  channel/generative peers: json-render/chat, Chat SDK, OpenUI, Channels SDK,
+  A2UI), an agent interaction-state inventory with required semantics and
+  common failures, and the copy-pattern vs registry vs framework selection
+  ladder. Use when picking or auditing wheels for an agent chat surface
+  (e.g. orgbrain /chat), verifying a new vendor name before it enters the
+  candidate pool, or deciding between self-built state cards, registry
+  installs, chat frameworks, and native-channel generative cards.
 ---
 
 # Agentic UI primitives · agent 交互状态原语赛道
@@ -26,11 +28,12 @@ description: >-
 | **状态原语**（本资产主对象） | 单个 agent 交互状态的 DOM 形态：thinking、streaming、tool chip、approval… | Beautiful UI · Vercel AI Elements · BoardUI · LocalMode UI | 抄 pattern，或 registry 单件装 |
 | **聊天框架** | Thread / Message / Composer 编排 + runtime 契约 | assistant-ui | 仅当会话编排成为产品主轴 |
 | **协议 / 运行时** | agent ↔ UI 的线协议与跨端通道 | AG-UI · A2UI · MCP Apps（CopilotKit 系） | 线协议选型，不是组件素材 |
-| **生成式 UI（出界）** | agent 生成整个界面 | v0 等 Agent 产品 | Liz 裁定出界：只比开源组件轮子，不比 Agent 产品 |
+| **生成式 UI · 目录/渲染** | 模型按受控 catalog 吐 JSON/DSL，客户端渲染；含聊天平台原生卡 | json-render · OpenUI · A2UI · `@json-render/chat` | OSS catalog/renderer 可进池（§2 2026-11 增补）；**不是**状态原语，也不替代 Beautiful UI |
+| **生成式 UI · Agent 产品（出界）** | 整站/整页由 Agent 产品生成 | v0 等 | Liz 裁定出界：只比开源组件/协议轮子，不比闭源 Agent 产品 |
 
 过门（承接 §3 A 行审计裁定）：评估任何新名字前先回答**「它是不是又一个聊天框」**——聊天框只是状态原语的一种宿主；一个只会把 Thread 渲染出来的轮子不进状态原语比较。
 
-## 2 · 验真结论表（2026-09-06 初查；Beautiful UI 条目于 2026-09-07 官网源码与官方仓库复核）
+## 2 · 验真结论表（2026-09-06 初查；Beautiful UI 2026-09-07 复核；2026-11-08 增补频道/生成式 UI 同行）
 
 新名字进池前必须先过这张表；同名再查不必重搜。栈列以 orgbrain（React 19 + Tailwind 4 + Astryx，非 Next.js）为基准。
 
@@ -43,7 +46,13 @@ description: >-
 | **BoardUI** | ✅ 真（**非幻觉**，但很新） | [github.com/BoardUI/boardui](https://github.com/BoardUI/boardui)（2026-09-01 建，150★）+ [boardui.com](https://www.boardui.com/) | free 层 MIT；Pro 付费 license | React + Tailwind，Figma 设计，400+ tokens | 64 个 free 组件 + Pro agent 组（Agent Thinking、Composer Loader、GlassComposer、Composer）+ agent blocks + AI chat 模板 | `npx boardui add` CLI + MCP | 单人新项目、低星龄短；Pro 组件无源码——观察池，不急装 |
 | **LocalMode UI** | ✅ 真（**非幻觉**） | [github.com/LocalMode-AI/LocalMode](https://github.com/LocalMode-AI/LocalMode)（33★）· registry `@localmode` → `localmode.ai/r/{name}.json` | MIT | shadcn registry；Tailwind 4 CSS variables；组件纯 presentational（零 `@localmode/*` 运行时依赖） | 107 primitives / 10 families + 37 blocks：Conversation 24（agent-step-timeline（ReAct，含 finish-reason 徽章 max_steps/timeout/loop_detected/error）、tool、tool-approval、branch、citation…）、Local-First 25（model downloader、capability gate）、Results 12、Artifacts 4、DevTools 4 | shadcn CLI + 把 shadcn MCP server 指向 registry | 六家里栈适配最好的 registry：Tailwind 4 + props 驱动，随便接后端；Local-First 家族对 orgbrain 无用，Conversation 家族可单件取 |
 
-验真备注：二手调研怀疑 BoardUI 与 LocalMode UI 是编造——**错了，但错得有信息量**：两家都是 2026 年的新小项目（BoardUI repo 建于本文写作前 5 天），新到不像真货，而非假货。教训：低星龄短 ≠ 幻觉，验真只认 repo / registry 实证。另：vercel/ai-elements 的 GitHub API license 字段报 NOASSERTION，LICENSE 文件实为 Apache-2.0——API 误报先例，装前核文件。
+| **json-render**（含 `@json-render/chat`） | ✅ 真；**层=生成式 UI · 目录/渲染**，不是状态原语 | [vercel-labs/json-render](https://github.com/vercel-labs/json-render)（Apache-2.0，~19k★）· npm `@json-render/core` / `@json-render/chat@0.22.0` · [json-render.dev](https://json-render.dev/) · chat API：[docs/api/chat](https://json-render.dev/docs/api/chat) · 宣布帖：[ctatedev 2026-11-06](https://x.com/ctatedev/status/2118853661040295997) · changelog：[vercel.com/changelog/json-render-and-chat-sdk-agents](https://vercel.com/changelog/json-render-and-chat-sdk-agents) | Apache-2.0（repo LICENSE + npm 实核） | catalog + SpecStream；`@json-render/chat` 依赖 Chat SDK（`chat`）+ Zod；示例绑 AI SDK `streamText` | **卖的是受控 catalog → 原生聊天卡**：`Card`/`Section`/`Text`/`Fields`/`Table`/`Chart`/`Actions`… → Slack Block Kit / Teams Adaptive Cards 等；`streamCard` 边写边 edit（默认 500ms）；`toCard` schema 校验 + `limits`；**不卖** thinking/tool-chip 等状态原语 | Chat SDK 适配器通道；与 AI Elements **同源生态不同层**（Elements=Web 状态件，chat=频道卡渲染） | **仅当产品要往 Slack/Teams 等发原生结构化卡时**才装 `@json-render/chat`。Web `/chat` 状态卡继续 Beautiful UI / LocalMode。整包 json-render（Next/Remotion/R3F…）对 orgbrain 过重——弃糟粕 |
+| **Chat SDK**（`chat` / vercel/chat） | ✅ 真；**层=协议/运行时 · 多平台 bot 宿主** | [vercel/chat](https://github.com/vercel/chat)（MIT，~2.5k★）· npm `chat@4.x` · [chat-sdk.dev](https://chat-sdk.dev/) | MIT | TypeScript；平台 adapters（Slack/Teams/GChat/Discord/Telegram/…） | 事件路由、JSX cards、流式 post+edit、actions/modals/slash——**不是** UI 组件素材库 | 各平台 adapter | `@json-render/chat` 的宿主。自己做多频道 bot 时先认它；不进状态原语比较 |
+| **OpenUI**（Thesys） | ✅ 真；**层=生成式 UI · 目录/渲染** | [thesysdev/openui](https://github.com/thesysdev/openui)（MIT，~15k★）· npm `@openuidev/lang-core` 等 · [openui.com](https://www.openui.com/) | MIT（OSS）；另有 OpenUI Cloud 托管（观察，不进默认路径） | OpenUI Lang（行式 DSL，非 JSON）+ React/Vue/Svelte/Angular runtime；有 `@openuidev/assistant-ui` 桥 | 受控 component library → prompt → 流式 DSL → Renderer；自带 chat UI / 图表表单等 | AG-UI / A2UI 桥可选；assistant-ui 集成包 | **Web 端 generative panel** 的观察池对标（比 json-render 更偏「标准+Lang」叙事）。官网页上的延迟对比数字当营销看，不抄进决策。Cloud/C1 托管出界本 pack |
+| **Channels SDK** | ✅ 真；**层=协议/运行时**（CopilotKit 系频道落地） | [CopilotKit/channels-sdk](https://github.com/CopilotKit/channels-sdk)（MIT，~950★）· [介绍文](https://www.copilotkit.ai/blog/channels-sdk) | MIT（SDK）；**频道托管走 CopilotKit Intelligence key**（自托管或托管） | AG-UI agent → Slack Block Kit / Teams Adaptive Cards；HITL、slash、文件 | 「一份交互，各频道原生 UI」+ 审批按钮进对话 | AG-UI + Intelligence | 与 `@json-render/chat` **同场景不同栈**：Channels=AG-UI 全家桶+托管连接；json-render/chat=catalog 渲染挂 Chat SDK。已定 AG-UI/CopilotKit 才看它；Intelligence 密钥是隐性成本——弃「免费开源即可上生产」的糟粕 |
+| **A2UI** | ✅ 真；**层=协议**（补全原「AG-UI · A2UI」一行） | [a2ui-project/a2ui](https://github.com/a2ui-project/a2ui)（Apache-2.0，~17k★）· [a2ui.org](https://a2ui.org/) | Apache-2.0 | 声明式 JSON surface 协议；客户端用自有可信组件目录渲染（React/Lit/Angular/Flutter/…） | `createSurface` / `updateComponents` / `updateDataModel` 流式消息；catalog 安全模型（数据非可执行代码） | 可挂 A2A / AG-UI / MCP / WS | **跨信任边界** agent→你的 App 出 UI 时的线协议选项。不是组件轮子；选定前先回答是否真有远程第三方 agent 要在你表面画卡 |
+
+验真备注：二手调研怀疑 BoardUI 与 LocalMode UI 是编造——**错了，但错得有信息量**：两家都是 2026 年的新小项目（BoardUI repo 建于本文写作前 5 天），新到不像真货，而非假货。教训：低星龄短 ≠ 幻觉，验真只认 repo / registry 实证。另：vercel/ai-elements 的 GitHub API license 字段报 NOASSERTION，LICENSE 文件实为 Apache-2.0——API 误报先例，装前核文件。2026-11-08 增补：`@json-render/chat` 出自同一 monorepo 的 v0.22.0（2026-11-04），与 Beautiful UI / AI Elements **不可横向比状态卡**——它解决的是「一份 catalog → 各 Chat SDK 平台原生卡」，属于生成式 UI 渲染层。
 
 ## 3 · agent 交互状态清单（本资产核心）
 
@@ -90,12 +99,45 @@ description: >-
 
 反模式：
 
-- 拿「agent UI 库」一个词同时指框架、协议、原语，然后在错误的层做比较。
+- 拿「agent UI 库」一个词同时指框架、协议、原语、频道生成式卡，然后在错误的层做比较（典型事故：用 json-render 去替代 Beautiful UI thinking 卡）。
 - 二手调研的名字直接入池：先验真（§2 有 NOASSERTION 误报与"新到像假货"两个先例）。
 - 为一个 thinking 状态引入整个 chat 框架——L0 能解决的上了 L2。
 - 状态卡只做 happy path：streaming 无 stop、approval 无事后追溯、tool chip 无失败态。
 - composer 的 Enter 不做 `isComposing` 检查，中文输入法选词回车直接发包。
 
-## 6 · 产地
+## 6 · 2026-11-08 增补：频道生成式卡 · 精华 / 糟粕
+
+触发：Liz 转发 [Chris Tate / `@json-render/chat`](https://x.com/ctatedev/status/2118853661040295997)（2026-11-06），要求把同类好东西塞进本 pack——**取其精华，弃其糟粕**。本轮只扩「原生频道卡 / 流式结构化 UI / 跨平台 chat catalog / 开放 generative UI 协议」邻域；不收 vibe 设计站、不收闭源-only Pro。
+
+### 精华（决策有用、可核实）
+
+| 取什么 | 为什么有用 | 落点 |
+|---|---|---|
+| `@json-render/chat` 的 **catalog → `streamCard` / `toCard`** | 一份组件目录，模型吐 JSON，边写边发原生 Slack/Teams 卡；schema 校验 + `limits` 拒平台降级 | 真要做内部 Slack/Teams agent 时装；与 AI SDK `streamText` 示例路径短 |
+| **Chat SDK** 作为多平台 bot 宿主 | `@json-render/chat` 的真实依赖面；事件/卡片/流式合同清晰（MIT） | 频道 bot 基础设施选型时认主 |
+| **OpenUI Lang「行式可增量解析」** 思路 | JSON 半截不合法；行式 DSL 更贴流式——设计自有 generative 格式时可借鉴，不必整包接入 | 观察池；自研 wire format 时抄原则不抄品牌 |
+| **A2UI「UI 是数据、catalog 是信任边界」** | 远程 agent 不能在你 App 里跑任意代码；只请求预批组件 | 跨信任边界场景的协议坐标 |
+| **Channels SDK 的 HITL-in-channel** | 审批按钮直接进 Slack/Teams 对话，和本 pack §3 approval 语义同构 | 已选 CopilotKit/AG-UI 时的频道落地参考 |
+
+### 糟粕（显式丢掉）
+
+| 弃什么 | 为什么弃 |
+|---|---|
+| 把 json-render / OpenUI 当成 Beautiful UI **状态原语**替代品 | 它们不提供 thinking / tool-chip / stick-to-bottom composer；混层比较会选错轮子 |
+| 为 Web `/chat` 引入整包 `@json-render/*`（Next / Remotion / R3F / email…） | orgbrain 主路径仍是 L0 抄 Beautiful UI + 偶发 L1 registry；跨介质渲染器与当前产品无关 |
+| OpenUI 官网 vs json-render/A2UI 的 **延迟/token 排行榜**当事实 | 单方 benchmark，未独立复现——只记「存在行式 DSL 派 vs JSON 派」 |
+| Channels / OpenUI **Cloud 托管**当默认 | 本 pack 只验 OSS 轮子；托管密钥与计费另案 |
+| 平台 adapter **静默降级**（如 Slack 第二张表变代码块）当可接受默认 | 生产路径必须显式传 `limits` 或等价拒绝，不能靠降级假装成功 |
+| 继续扩张 BoardUI Pro / 闭源 Agent 产品入池 | 硬闸不变：无 LICENSE 文件可核的源码不进默认路径 |
+
+### 对本栈的即时结论
+
+1. **不动主路径**：orgbrain `/chat` 仍 §4 L0（Beautiful UI 原件）+ 按需 L1（LocalMode / AI Elements）。
+2. **新槽位**：若产品路线出现「同一 agent 要进 Slack/Teams」，优先评估 **Chat SDK + `@json-render/chat`**；若已绑定 AG-UI，再比 Channels SDK（接受 Intelligence）。
+3. **不改四层坐标**：只把原「生成式 UI（出界）」拆成「OSS 目录/渲染（可进池）」与「Agent 产品（仍出界）」，避免再把 catalog 渲染器和 v0 混谈。
+
+## 7 · 产地
 
 2026-09-06，orgbrain /chat 重设计触发（同批产出：[`chrome-controls-placement.md`](./chrome-controls-placement.md)）。二手调研报了六个名字并裁定 v0 出界、怀疑 BoardUI 与 LocalMode UI 为幻觉；经 Exa + GitHub API 逐个实证：四家确认（Beautiful UI / Vercel AI Elements / assistant-ui / CopilotKit），两家"疑似幻觉"实为真实新品。验真证据沉淀于 §2，决策承接 ui-stack-decision §3 A 行。
+
+2026-11-08 增补：Liz 指定种子帖 `@json-render/chat`；经 Exa + GitHub/npm 实核后写入 §2 五行（json-render/chat、Chat SDK、OpenUI、Channels SDK、A2UI）与 §6 精华/糟粕。未改 Beautiful UI 上游 TSX dump。
