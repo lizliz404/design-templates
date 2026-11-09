@@ -101,4 +101,4 @@ description: >-
 4. 底条法律 + ©。  
 5. 390 宽截一屏验收。  
 
-对参浏览： [footer.design](https://footer.design/) 只看栏数与密度；落地页模板可挂在 `design/lead-radar` / `premium-one-pager` 长页末。
+对参浏览： [footer.design](https://footer.design/) 只看栏数与密度；要**好看的插画/风景样本**另开 [`../visual-footer-gallery/INDEX.md`](../visual-footer-gallery/INDEX.md)（含 Corniche 种子与 contact sheet），不在本文做视觉策展。落地页模板可挂在 `design/lead-radar` / `premium-one-pager` 长页末。

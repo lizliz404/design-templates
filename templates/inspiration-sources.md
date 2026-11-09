@@ -35,6 +35,7 @@ description: >-
 | **激活 / onboarding 机制** | [Chatbase onboarding note](https://x.com/yasser_elsaid_/status/2088279151383830570) | `ui-patterns/saas-onboarding-two-phase.md` |
 | **导航结构对照：mega menu / sidebar / dropdown** | [Navbar Gallery](https://navbar.gallery/) · [Cloudflare mega menu 条目](https://navbar.gallery/navbar/cloudflare) | `nav-still-band-dropdown.md`；截图分类与原站出口，不是可复制菜单源码；键盘与 hover 可达性回原站实测 |
 | **页脚收口** | [footer.design](https://footer.design/) | `ui-patterns/footer-craft.md` |
+| **好看的插画/风景 footer 样本（非结构手册）** | 本仓 [`visual-footer-gallery`](./visual-footer-gallery/INDEX.md) · seed [Corniche / Yasir](https://x.com/yasirahmadnoori/status/2119480416877084817) | 只看味道；结构仍回 footer-craft；授权自核 |
 
 ## Marketing / personal
 
