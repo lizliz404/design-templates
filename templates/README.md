@@ -52,10 +52,10 @@ description: >-
 
 ## 产品任务
 
-- **分步图文叙事 / 出海云 sticky 目录自然流 / CFE 共轨长行程居中停驻与归位** → [`center-dwell-step-scroll.md`](./center-dwell-step-scroll.md)；同项收纳 A/B 两模式，GreenSock 可学演示与最小适配；不把目录 sticky 当成图文共轨，不默认叠平滑引擎。
+- **分步图文叙事 / 业务页原生自然流默认 / 出海云 sticky 目录 / 可选局部停驻** → [`center-dwell-step-scroll.md`](./center-dwell-step-scroll.md)；自然流优先，A/B与旧CFE长停驻历史分开；含11-09两站真实参数对比、轻量修复、官方证据与输入验收，不默认叠平滑引擎。
 - **网页视频播放器 / 原生控件 / 审片 UI / HLS 与 DASH 选型** → [`web-video-player-due-diligence.md`](./web-video-player-due-diligence.md)；控件、状态、引擎与交付分层，维护状态和第一方尽调；不因皮肤需求默认改造媒体后端。
 - **Landing 首屏氛围 / 静图 WebP 是否够 / hero 背景视频 / 海报优先 / 4 秒体感** → [`landing-hero-background-video.md`](./landing-hero-background-video.md)；先第一性原理选型（静图默认，视频/Lottie/shader 条件启用）；上视频时体积 + 海报 LCP + CDN 优先于播放器；带控件 / HLS / 审片仍走上一行。
-- **Landing 图文共舞 / 画廊感滚动阻尼 / sticky rail + 流式列 / 差速漂移 / 动量回摆参数选型** → [`image-text-gallery-dance.md`](./image-text-gallery-dance.md)；四骨架解剖 + 拖尾/沉降/回摆三档互斥阻尼语义与实测值域，React spring 与 vanilla rAF 双配方；scroll-coupled 值在禁 scroll-jacking 项目须先登记豁免，只调阻尼参数不动结构走本文 §值域表。
+- **Landing 图文共舞 / 画廊感滚动阻尼 / sticky rail + 流式列 / 差速漂移 / 动量回摆参数选型** → [`image-text-gallery-dance.md`](./image-text-gallery-dance.md)；静态配对/自然流优先，动效可选；历史参数观察与当前建议分级，先修空间再谈物理；无统一阻尼下限，不为“丝滑”复制spring或装轮子。
 - **B2B 数据密集后台 / CRM / 管理台** → [`ui-patterns/data-dense-app-craft.md`](./ui-patterns/data-dense-app-craft.md) + [`ui-patterns/data-dense-b2b-app.md`](./ui-patterns/data-dense-b2b-app.md)。需要 records / diff / filter 表格语法时，再组合下一节的 Beautiful UI。
 - **Telegram Web A/K 借鉴 / Chat-first 工作区 / 未发送草稿 / 阅读位置 / 附件异步所有权** → [`telegram-web-chat/README.md`](./telegram-web-chat/README.md)；固定版本研究、离线原型及出海云实施/失败到通过的执行对账，不搬 IM 服务层，不把历史候选当成当前缺口。
 - **Chatbot / AI Agent 界面** → [Agent / motion chrome](#agent--motion-chrome) 的 **Beautiful UI primitives**；它覆盖 thinking、streaming、approval、tool chips、composer 和 dense tables。

@@ -2,30 +2,68 @@
 name: center-dwell-step-scroll
 description: >-
   分步图文叙事的两种可复用方案：目录 sticky + 自然流分段（出海云），或
-  图文共轨 + 长行程中央停驻 + 停手归位（CFE 目标）。Use when 需要选分段
+  图文共轨 + 有边界的中央停驻（需内容价值证明；CFE 旧方向已退役）。Use when 需要选分段
   Landing 的滚动骨架，或每格推进太快、图文不同步；仅装饰漂移另走 gallery-dance。
 ---
 
 # 分步图文滚动：自然流目录与共轨停驻
 
-**先选模式，不先选特效。** 出海云的长解释内容用 A；CFE 本次明确要“图和文一起到中央、耗一段滚动距离、再咔哒切下一格”，用 B。两者同属本项，但不能把 A 说成已实现 B。
+**默认先自然流，不先选特效。** 普通业务 Landing 用静态图文配对，必要时加目录 sticky 与一次轻入场（A）；只有动画能解释静态排版难以解释的信息，且经过真实输入验收，才考虑局部 B。齿轮感不是目标，读懂并继续浏览才是。
+
+**2026-11-09（上海时间）决策覆盖：** Liz 明确否定 CFE 过重的停驻/阻尼，要求低成本、低负担并收紧图文与段落间距。11-08 的“每格长行程＋停手归位”确曾获选；它和本模板的建议共同影响了实现，不能事后只归咎实施者。下文 B 与旧源码账本保留为历史及可选机制，**不再是当前 CFE 交付合同**。当前修复见下节。
 
 | 模式 | 现成骨架 | 适用／边界 |
 |---|---|---|
 | **A：目录 sticky + 内容自然流 + in-view** | 出海云根 Landing 的 PipelineScrolly / StageBlock | 各段长度不一、需要细读标题／场景／说明；内容随文档自然滚过，只有目录停靠。不强求每格居中停驻，不加 snap。 |
-| **B：整个图文 panel 进出 + 中央停驻 + 归位** | 主选：GreenSock 的 **Horizontal sections (simple) with pause**，取单 timeline 的整面板移动与滚动停驻，再用 ScrollTrigger 原生 snap | 少量短图文、需要逐格读完的局部章节；CFE 本次目标。不做 wheel 事件锁，不把全站变翻页器。 |
+| **B：整个图文 panel 进出 + 中央停驻 + 归位** | 主选：GreenSock 的 **Horizontal sections (simple) with pause**，取单 timeline 的整面板移动与滚动停驻，再用 ScrollTrigger 原生 snap | 只适用于能证明逐步揭示信息价值的短局部章节；不是当前 CFE 默认。不做 wheel 事件锁，不把全站变翻页器。 |
 
-研究更新：2026-11-08（Asia/Shanghai）。读了真实源码与具体演示源码，并完成有限桌面滚动核对；**未完成多设备手感验收**。以下是有第一方依据的成熟机制组合，不宣称全行业只有这一种方案，也不冒称找到无需适配、与 CFE 需求完全一致的成品。
+原演示研究：2026-11-08（上海时间）；结论/源码/官方资料收束更新：2026-11-09（上海时间）。旧研究读了真实源码与具体演示源码，并完成有限桌面滚动核对；**未完成多设备手感验收**。以下是有第一方依据的成熟机制组合，不宣称全行业只有这一种方案，也不冒称找到无需适配、与 CFE 需求完全一致的成品。
 
-## 先拍板：现成可学的东西在哪里
 
-### 主选 B：GreenSock 的整面板移动 + 停驻时间轴
+## 11-09 收束：为什么出海云轻、CFE 重；这次怎么减
+
+**证据等级：** 下表“旧值”来自固定提交源码；“现修”来自 [CFE `9218763`](https://github.com/lizliz404/cfe-app/commit/921876334e30894d2b3042937bfd2cc7a633d6d7)；都是实现事实，不是视觉/手感验收结论。研究时已打开官方资料，不等于实测运行。
+
+| 层 | 旧 CFE `3575062` / 出海云 `4c4e87e` | CFE 本次修复 |
+|---|---|---|
+| 滚动所有权 | CFE W=1.1H、T=.45H、E=.3H、X=.6H，四格总 `6.65H`，约80%行程位姿静止；scrub=.3s，snap停手.15s后归位.22s；自定义回调仍按方向选边界，`directional:false`不覆盖该函数逻辑 | 删除局部 pin/scrub/snap、初始化与专用脚本；现有自然流成为默认，不造 wheel 控制器；GSAP 无其他源码消费者，连依赖一起撤 |
+| 出海云的同类段 | 根 `/` 的 PipelineScrolly：正文自然流，目录 sticky=112px、锚点偏移96px；in-view=.45，场景一次入场22px/.45s、阈值.15、ease(.25,1,.5,1) | 学“少一层机制”，不是照抄目录或加库；380/26、480/34是局部浮卡/列表 spring，**不是页面滚动参数** |
+| 空间配对 | CFE DOM先copy再media，只指定列2/1、未指定行；默认稀疏grid可能把后来图片放到下一行 | 桌面每个独立panel内，copy/media明确`grid-row:1`；不把四段放进同一网格行；手机照片在前，文字与静态readout跟随 |
+| 装饰叠层 | CFE章节图额外K100/D5回摆（首页小图gain≈.133、上限±4px），另有600ms过冲settle和hover；旧文档也曾鼓励保留 | 章节照片退出回摆；撤额外图内沉降/hover位移与场景循环；成对版面只留一次9px/350ms的现有ease-out入场，PRM仍不安装。内页有用的动效不动 |
+| 间距是另一层 | 普通图文横48/纵32，strengths横32；文字gap12再叠desc4、scene16；section桌面110/手机64 | 横24、普通手机纵16；桌面copy gap8、额外margin归零；section桌面48/手机32（flush仍为0上边距）；vision块gap24+分隔padding24，二者合计48，不冒称总距只有24 |
+| 行高与段距 | 正文1.65、lead1.5；p默认margin与flow间距可叠加 | 首页正文1.5、lead1.4；flow段落先清margin，再p+p=12px；标题/字号/内容保持。只在首页局部覆盖，不缩全站token |
+
+**历史定位：** [d11f6ca](https://github.com/lizliz404/cfe-app/commit/d11f6ca1b3561225250ea68f08a4f8c093c9acb5)于11-08 21:36、[165f7a5](https://github.com/lizliz404/cfe-app/commit/165f7a55c9e2c07777783196eb8cb8a19ed32d46)于11-09 01:14（均上海时间）先后加入棘轮/共轨停驻。旧参数证据是[专用脚本](https://github.com/lizliz404/cfe-app/blob/35750624e441ed47c0ffb7e9eea7fa8e2d08ffb9/src/scripts/index-steps.ts#L35-L152)及[桌面布局](https://github.com/lizliz404/cfe-app/blob/35750624e441ed47c0ffb7e9eea7fa8e2d08ffb9/src/pages/index.astro#L1356-L1417)，不是由最新通知邮件commit标题猜出来。
+
+**不是双平滑故障：** 旧 CFE 没有全局 Lenis；`html { scroll-behavior:smooth }`只影响锚点/CSSOM程序滚动，不改变用户wheel手势。重来自局部长停驻、追赶、归位及独立装饰；空间错位也不是改一个lerp能治。
+
+### 面对下一个同类需求的无脑默认（工程判断，不冒称行业统一参数）
+
+1. 先把全文、图与说明配成自然流；排版正确，wheel/touch/键盘原生。若移除动画信息不损失，就停在这里。
+2. 导航确有帮助才加CSS sticky目录；想轻一点，最多给整组一次transform/opacity入场。不要为“丝滑”引入控制器、惯性、目录、计时器或新依赖。
+3. 确有逐步揭示的信息价值才进B；限定局部、写出总滚动距离和每次输入的反馈，先无scrub/snap，再逐项证明必要。不是库普遍有罪，也不是GSAP/Lenis普遍必需。
+4. 同一属性一个运动所有者；别让全局平滑＋局部scrub＋停手snap＋图内spring各管一遍。预算同时包括用户手势、渲染、代码和维护。
+5. 验收真实桌面wheel/触控板、手机touch、方向键/Space/PageDown、回滚/快滚/锚点、窄屏与放大文字、PRM/无JS。要求没有“滚了没新信息”、强迫额外手势、图文分家或裁正文。构建/静态测试不是手感通过。
+
+### 本次核验的研究，支持到哪里为止
+
+- [GSAP ScrollTrigger](https://gsap.com/docs/v3/Plugins/ScrollTrigger/)：解释pin、scrub追赶秒数、snap/打断及滚动距离；证明能力，不证明B适合业务页，也不给统一最佳阻尼。
+- [NN/g Scrolljacking 101](https://www.nngroup.com/articles/scrolljacking-101/)：实测长停驻、低反馈、读文字时改变滚速会损害效率；短且有解释价值的例子也可能有效。不是“所有库/pin一律禁用”。
+- [W3C Animation from Interactions](https://www.w3.org/WAI/WCAG22/Understanding/animation-from-interactions.html)：避免不必要运动、可关闭非必要交互动画（该准则为AAA）；不要求安装框架，也不等于仅一个PRM开关就完成全部无障碍。
+- [MDN scroll-behavior](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/scroll-behavior) / [scroll-snap-type](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/scroll-snap-type)：前者不影响用户wheel，后者具体吸附物理由浏览器决定；没有跨设备通用“齿轮数字”。[Grid自动放置](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Grid_layout/Auto-placement)解释稀疏放置不自动回填，空间配对应显式定位。
+- [Lenis README](https://github.com/darkroomengineering/lenis)：当前默认lerp=.1、duration=1.2（定义lerp时duration无效）、respectReducedMotion=true；这是库配置事实，非安装理由或行业审美标准。
+
+**文档自审结论：** 资料并非不足；A、原生优先和单所有者早已存在，但B的旧CFE目标与gallery-dance的“阻尼必需”措辞把选择推重，不能只责怪实施者。本次统一轻默认，保留旧研究但明确历史/可选/待测，不再另造一份大框架。
+
+## 旧研究保留：需要 B 时可学的东西在哪里
+
+### B 的学习骨架（非默认选型）：GreenSock 的整面板移动 + 停驻时间轴
 
 **准确入口（含 HTML / CSS / JS 与 Result）：** [Horizontal sections (simple) with pause — WNyJQjN](https://codepen.io/GreenSock/pen/WNyJQjN)。[GSAP 技术答复](https://gsap.com/community/forums/topic/44744-how-to-snap-scroll-animation-inside-pinned-horizontal-section-using-gsap-timeline-not-scrolltrigger/) 直接把它作为“在横向 timeline 中留暂停段”的学习例子；不是凭标题猜效果。
 
 已读 JS 的关键事实：一个 timeline 配 `pin:true, scrub:0.5, end:"+=4000"`；各 `.panel` 一起 tween 到目标 `xPercent`，随后对**同一 xPercent 再 tween 一段 duration**，所以滚动继续消耗、整个面板的位置不变。标题、正文和 box 都是 panel 子项，随 panel 一起搬运。这就是本 niche 最值得直接学的骨架：**移动 → 保持 → 再移动**，不需要新造滚动引擎。
 
-| 需求 | 原例已有 | CFE 只需做的适配 |
+| 需求 | 原例已有 | 当时CFE/B的适配思路（非当前待办） |
 |---|---|---|
 | 图文同组进出 | 标题／正文／box 在同一个 panel 内，移动的是整个 panel 集合 | box 换为真实图片，图与文都放 panel 内；去掉内部 box 旋转／弹跳／缩放，不另起文字滚轮。 |
 | 到中央停驻 | 面板移动到位后，有相同 xPercent 的保持区间 | panel 内部整体在扣除 header 的可用视口居中；需要上下进出时改组位移轴，而不是换引擎。 |
@@ -70,9 +108,9 @@ Terra 旧地址 `/scroll/pinned-scroll/` 实际返回 404，已替换为从首�
 - 两模式都不靠 hover 才读得到下一段；图片预留尺寸，键盘焦点有序。窄屏、放大文字、超长翻译放不下时退自然流，不截正文维持 pin。
 - reduced-motion／JS 失效／引擎未加载时保留全部步骤自然流；B 必须同时撤掉绝对叠层与 pin spacer 的增强样式，不能只关动画留下盖住的文字。
 
-## B：CFE 的最小适配合同
+## B：历史 CFE 适配合同／可选机制参考（11-09 已退出当前实现）
 
-先在局部 01–04 做，不扩大到全站。以下数值是待实测起点，非从 demo 得到的“最佳参数”。
+11-08 曾选择先在局部 01–04 做；11-09 已撤回这个方向。以下仅保留当时的待测起点，不是行业标准，也不再是 CFE 推荐默认值。
 
 ### 距离合同：同样输入，只走更少进度
 
@@ -106,7 +144,7 @@ Terra 旧地址 `/scroll/pinned-scroll/` 实际返回 404，已替换为从首�
 - 输入保留 native scroll，不用全局 preventDefault、wheel delta 累加锁或强制“一次 wheel 一格”；快滚可跨格，不排队播放所有中间动画。
 - React 卸载／路由切换清理 timeline、trigger、监听器；字体图片尺寸稳定后 refresh。transform 祖先可能破坏 fixed pin，先整理容器，不默认 reparent 掩盖结构问题。
 
-## 流程与交付闸门
+## B 的流程与交付闸门（未来真有必要时；不是恢复旧CFE的任务）
 
 1. 记录 Job / Chosen mode & demo / Why / Explicitly skipped / Acceptance checks。A 与 B 的通过条件分开，不因两个都叫 scrollytelling 就混用。
 2. 先审核并更新本项及原索引行到 Design Templates 远端；**之后**才在独立实施任务中反哺 CFE，不边研究边改生产。
@@ -124,7 +162,7 @@ Terra 旧地址 `/scroll/pinned-scroll/` 实际返回 404，已替换为从首�
 
 桌面和窄屏记录关键状态截图／录屏、实测设备与失败项。**本次完成资料、源码与有限桌面演示核对，完整验收矩阵未完成，不判通过。** 不构建应用、不改 CFE 代码、不部署；由后续任务实施并回填真实结果。
 
-## 两站固定源码证据（按需核查）
+## 11-08 历史源码证据（保留出处，不代表当前实现）
 
 ### 两站真实基线：不要把近似观感当同一机制
 
@@ -141,4 +179,4 @@ Terra 旧地址 `/scroll/pinned-scroll/` 实际返回 404，已替换为从首�
 | 出海云从首到尾 | [Landing.tsx L207–225](https://github.com/hanzili/chuhai-cloud/blob/4c4e87ebdcd88640668ae4c254b5a16a91685afa/web/src/landing/Landing.tsx#L207-L225)：Nav → Hero → AgentDemo → PipelineScrolly → NicheExample → Bento → StatsBand → Manifesto → FinalCta → Footer。 | 入口是连续 section 叙事装配，不等于首到尾统一 pin、整屏 snap 或一滚一格。未对所有子组件内部做完整运行时审计。 |
 | 出海云分段机制 | [Landing.tsx L126–204](https://github.com/hanzili/chuhai-cloud/blob/4c4e87ebdcd88640668ae4c254b5a16a91685afa/web/src/landing/Landing.tsx#L126-L204)：左目录 sticky top-28，右列五个 StageBlock 自然滚过；useInView(amount:0.45) 点亮目录／场景，场景 whileInView 一次性 y:22→0、0.45s；标题、场景、SubCells 顺序排列。[layout CSS L22–48](https://github.com/hanzili/chuhai-cloud/blob/4c4e87ebdcd88640668ae4c254b5a16a91685afa/web/src/landing/landing-layout.css#L22-L48) 定响应式目录／内容列。 | 借章节数据、目录锚点与清晰顺序；不照搬分离标题／场景来满足图文共轨停驻。此机制不是长行程 pin/scrub/snap。 |
 
-**取用：** 出海云模式 A 原样成立，按内容长度与导航验收复用；CFE 本次选 B，把其真实素材配对转成共轨 panel。不要继续给旧 scrollspy 叠装饰动画来冒充 B。
+**历史取用结论（11-08，已由 11-09 覆盖）：** 当时选择 B，而出海云 A 同时成立。当前 CFE 改回原生配对自然流；不是继续调旧 scrollspy，也不是给 B 再叠装饰。
