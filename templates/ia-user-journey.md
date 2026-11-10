@@ -2,10 +2,10 @@
 name: ia-user-journey
 description: >-
   Information architecture and user-journey contract for internal tools, B2B
-  consoles, and public sites plus their staff admin. Human- and agent-readable
-  gates: write docs/IA.md first, then project navigation; do not invent a tree
-  or copy another product's menu. Use when defining 信息架构, IA, 用户旅程, default
-  home, nav, wayfinding, labeling, settings scope, or cutting 认知负担.
+  consoles, and public sites plus their staff admin. Write docs/IA.md first,
+  then project navigation; do not invent a tree or copy another product's menu.
+  Use when defining 信息架构, IA, 用户旅程, default home, nav, wayfinding, labeling,
+  settings scope, or cutting 认知负担.
 ---
 
 # IA · 用户旅程（pack 合同）
@@ -16,20 +16,12 @@ description: >-
 |---|---|
 | **What** | 先写可替换的信息架构 1.0（对象 + 关系 + 状态 + 分组 + 命名 + 搜索入口），再投影成角色路径、页面职责、导航、UI。产出是项目里的 `docs/IA.md`，不是侧栏草稿。 |
 | **Why** | 导航是 UI 镀铬，不是骨架（NN/g：IA ≠ navigation）。从「这一页看起来乱」补丁页面，IA 会漂。认知负担来自**同一对象多个门**、**用库表当导航**、**首页塞满数据却不回答决策**，不是来自少几个按钮。 |
-| **Who** | 内部工具 / OA / B2B 控制台；公开营销或企业站，以及同一产品的员工后台。多租户时加租户层级。人和 agent 读同一份、填同一份骨架。 |
+| **Who** | 内部工具 / OA / B2B 控制台；公开营销或企业站，以及同一产品的员工后台。多租户时加租户层级。 |
 | **How to use** | ① 读 §1 顺序和 §2 硬闸 → ② 用 §8 骨架填或改项目里的 `docs/IA.md` → ③ 冻 `docs/prd/vN-YYYY-MM-DD.md` → ④ 非正式 tree test → ⑤ 再改 `nav` / 页面。未写完对象模型和导航投影之前，不要画侧栏或改代码。 |
 | **Not this** | 不是 DESIGN.md；不是空态文案大全；不是「保持简洁」口号；不是把某一产品的菜单抄到别的产品；不是 sitemap 当 PRD。 |
 | **When to open** | 新工具或站点定 IA；公开站和后台要一起想分类；默认首页吵；侧栏像模块清单或每来一种内容就加一条顶级；标签看起来要重新学；想加菜单/Tab；用户问「今天先干什么」；设置页成垃圾场；首登激活和主链对不上。 |
 
 形状可变：有的产品是侧栏主链，有的是顶栏 ≤5；有的流水线是「原料→出片→铺量→收拢」，有的是「填报→缺口→定稿」。**合同是闸和顺序，不是那一组名词。**
-
-人和 agent 用同一份合同，不要各读各的摘要。
-
-- 人：把 §2 硬闸当检查单，用 §8 骨架写出项目里的真源。读得懂、扫得过、填得下，是本文的标准。
-- Agent：先读本文件和项目已有真源，再填或改骨架。缺事实只问最小问题（谁、今天三步、对象链）。未写完对象模型和两棵树之前，禁止画导航或改侧栏。不要用表名填空，不要发明未确认的业务规则，不要把填好的实例写回本 pack。
-- 共同产出：一份可替换的 `docs/IA.md`（当前真源），拍板后再冻一版。填写是项目里的演绎。
-
-执行细节见 §9。
 
 ---
 
@@ -433,7 +425,7 @@ Setup 生产里程碑：
 
 ---
 
-## 9. 人和 Agent 怎么执行
+## 9. 落地顺序
 
 输入：本文件 + 项目已有的 `docs/IA.md` / `docs/PRD.md`（若有）+ 能确认的角色与任务。  
 产出：更新后的 `docs/IA.md`（唯一当前真源），必要时加上 `docs/prd/README.md` 和一版冻稿。导航代码是投影，不是真源。
@@ -444,11 +436,11 @@ Setup 生产里程碑：
 4. 建或更新 `docs/prd/README.md`；首次拍板后冻 `docs/prd/v1-YYYY-MM-DD.md`。  
 5. 导航投影另做，且顺序必须能从主链表一行行对上；设置按 G10 分域；标签按 G14 自检。  
 6. 跑非正式 tree test 口令；记录失败任务。迷路则改树或改名，不要加说明文案硬扛。  
-7. 不在本任务里实现 UI，除非用户明确说进入页面实现。  
+7. 不在本任务里实现 UI，除非已经明确进入页面实现。  
 
 停：骨架填完、G3 三问能审每一片叶子、上线四问自检写过、非正式 tree test 口令已写进文档。  
 
-不要：为「完整」发明未确认的业务规则；把某一产品的菜单抄过来；把填好的实例写回本 pack。
+不要：为「完整」发明未确认的业务规则；把某一产品的菜单抄过来。
 
 ---
 
