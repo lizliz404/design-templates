@@ -1,10 +1,11 @@
 ---
 name: ia-user-journey
 description: >-
-  Information architecture and user-journey contract for internal tools / B2B
-  consoles. Use when defining 信息架构, IA, 用户旅程, default home, nav, wayfinding,
-  settings scope, or cutting 认知负担. Filled examples: qiancheng-yusuan docs/IA.md;
-  chuhai-cloud docs/prd/v3. Not the only shapes.
+  Information architecture and user-journey contract for internal tools, B2B
+  consoles, and public sites plus their staff admin. Use when defining 信息架构, IA,
+  用户旅程, default home, nav, wayfinding, labeling, settings scope, or cutting
+  认知负担. Filled examples: qiancheng-yusuan docs/IA.md; chuhai-cloud docs/prd/v3.
+  Not the only shapes.
 ---
 
 # IA · 用户旅程（pack 合同）
@@ -15,10 +16,10 @@ description: >-
 |---|---|
 | **What** | 先写可替换的信息架构 1.0（对象 + 关系 + 状态 + 分组 + 命名 + 搜索入口），再投影成角色路径、页面职责、导航、UI。产出是项目里的 `docs/IA.md`，不是侧栏草稿。 |
 | **Why** | 导航是 UI 镀铬，不是骨架（NN/g：IA ≠ navigation）。从「这一页看起来乱」补丁页面，IA 会漂。认知负担来自**同一对象多个门**、**用库表当导航**、**首页塞满数据却不回答决策**，不是来自少几个按钮。 |
-| **Who** | 1–4 人内部工具 / OA / B2B 控制台；多租户 SaaS 控制台同样适用（加租户层级）。写给人填，也给 agent 扫。 |
+| **Who** | 内部工具 / OA / B2B 控制台；公开营销或企业站，以及同一产品的员工后台。多租户时加租户层级。写给人填，也给 agent 扫。 |
 | **How to use** | ① 读本文 → ② 按 §8 骨架填 `docs/IA.md` → ③ 冻 `docs/prd/vN-YYYY-MM-DD.md` → ④ 非正式 tree test → ⑤ 再改 `nav` / 页面。 |
 | **Not this** | 不是 DESIGN.md；不是空态文案大全；不是「保持简洁」口号；不是把出海云菜单抄到别的产品；不是 sitemap 当 PRD。 |
-| **When to open** | 新内部工具定 IA；默认首页吵；侧栏像模块清单；想加菜单/Tab；用户问「今天先干什么」；设置页成垃圾场；首登激活和主链对不上。 |
+| **When to open** | 新工具或站点定 IA；公开站和后台要一起想分类；默认首页吵；侧栏像模块清单或每来一种内容就加一条顶级；标签看起来要重新学；想加菜单/Tab；用户问「今天先干什么」；设置页成垃圾场；首登激活和主链对不上。 |
 
 Filled example（填满的一份，不是唯一形状）：
 
@@ -42,7 +43,7 @@ Filled example（填满的一份，不是唯一形状）：
 | **Navigation** | 主链 / 局部 / 工具 / 溢出怎么投影 | §2 G2–G8 · §5–§6 |
 | **Search** | 记不住树时如何定位记录与设置 | §2 G9 · 骨架「搜索」 |
 
-再加三条当代 B2B 共识（与本文硬闸对齐）：
+再加当代共识（与本文硬闸对齐）：
 
 1. **OOUX / 对象优先**：先对象、属性、关系、状态，再画屏（NN/g OOUX）。导航标签应对齐对象与任务，不对齐工程模块。  
 2. **决策环境，不是数据墙**：调度页回答「还好吗 / 下一步干什么」——信号 → 诊断 → 行动；禁止第一屏堆 50+ 数据点（认知负荷）。  
@@ -51,8 +52,12 @@ Filled example（填满的一份，不是唯一形状）：
    - **Discoverability**：新能力能否在正常路径遇见，而不是只在 changelog  
    - **Task completion**：指定目的地能否无回退到达  
    - **Hesitation**：顶层是否停顿/空悬（顶层犹豫会传染全树）
+4. **主动设计，禁止演化成树**：分类和命名要先写成项目里的 `docs/IA.md`，再投影成导航。禁止每做一个功能或每新增一种资料，就在顶级加一条（NN/g：proactively design the IA, don’t let it evolve）。
+5. **公开站与后台是同一套对象的两种投影**：产品、资料、证书、询盘先是对象，再分别映射到访客树和员工树。禁止两边各长一套互不相认的分类。素材在后台按同一父级下的同级子栏平铺，不把每一种文件升成顶级，也不再叠一层（证书不必藏进视觉库再藏进资料库）。
+6. **标签必须单独成立（高信息气味）**：访客或员工只看标签，就要能预判点进去是什么（NN/g information scent）。禁止行话、内部品牌词、空动词（Explore / Learn / Discover）当导航名。短悬停说明或一行补充可以增强气味，尤其是侧栏空间不够时；但不能拿说明文案硬扛一棵会迷路的树——先改名或改组。图标不能单独承担主导航标签（text 或 icon+text）。
+7. **层级宁浅勿深，顶级数量看气味不看吉祥数字**：能作为同一父级下的同级子栏就不要再加深，也不要无故升顶级。扁平更好找，但顶级过宽、分类重叠同样会迷失。公开站通常只需少数能代表范围的顶级；复杂后台取主链 ≤7 + 溢出。不预设「只能有 4 或 5 个」。
 
-主参考（读机制，不整页粘贴）：NN/g IA≠nav · progressive disclosure · tree testing · menu checklist · OOUX；SaaS 对象/租户层级与设置「我 / 团队 / 系统」分域。
+主参考（读机制，不整页粘贴）：NN/g IA≠nav · information scent · flat vs deep · progressive disclosure · tree testing · menu checklist · OOUX；Morville / Rosenfeld 四分法；Donna Spencer：IA 含分组、命名与内容元数据，导航在其后；SaaS 对象/租户层级与设置「我 / 团队 / 系统」分域。X 上近年讨论多是复述这套顺序（先 card sort / 对象，再布局），没有另立一套机制。
 
 ---
 
@@ -164,7 +169,7 @@ Filled example（填满的一份，不是唯一形状）：
 检测方法：拿 G3 三问去审每一片叶子。若答案是「对应一张表 / 一个微服务 / 一个审批状态」，删掉或并进真正的对象门。
 
 **非正式 tree test 口令：**  
-「你是 {角色}，今天要 {任务}。从打开产品开始，点哪里？」作者不许提示。三次里有一次迷路，改树，不要加说明文案硬扛。
+「你是 {角色}，今天要 {任务}。从打开产品开始，点哪里？」作者不许提示。三次里有一次迷路，改树或改名。短悬停说明可以补气味，但不能代替改树。
 
 **上线前导航四问（自检）：**
 
@@ -338,6 +343,8 @@ flowchart LR
 
 搜索 / Cmd+K 覆盖：{记录 · 设置 · 帮助} 中的哪些。
 
+若同时有公开站：另附一棵访客树（顶级代表范围，标签单独成立）。两棵树共用上面的对象模型，禁止各长一套分类。
+
 ## 5. 每页装什么
 
 ### 5.1 一页滚，不要假产品 Tab
@@ -429,7 +436,7 @@ Setup 生产里程碑：
 ## 9. Agent 执行顺序
 
 1. 读本文件，不要直接画导航。  
-2. 若项目已有 `docs/IA.md` / `docs/PRD.md`，先读真源再改；不要平行再写一份。  
+2. 若项目已有 `docs/IA.md` / `docs/PRD.md`，先读真源再改；不要平行再写一份。有公开站又有员工后台时，写在同一份里，先对象模型，再两棵树。  
 3. 用 §8 骨架填或改 `docs/IA.md`。缺角色就问最小问题（谁、今天三步/决策、对象链），不要用表名填空。  
 4. 建或更新 `docs/prd/README.md`；首次拍板后冻 `docs/prd/v1-YYYY-MM-DD.md`。  
 5. 导航投影另做，且顺序必须能从主链表一行行对上；设置按 G10 分域。  
@@ -442,8 +449,9 @@ Setup 生产里程碑：
 
 ## 10. 简短书目（机制来源）
 
-- NN/g: IA vs Navigation；Progressive Disclosure；Tree Testing；Menu-Design Checklist；OOUX；You-Are-Here / Local Navigation  
+- NN/g: IA vs Navigation；Information Scent；Flat vs Deep Hierarchies；Progressive Disclosure；Tree Testing；Menu-Design Checklist；OOUX；You-Are-Here / Local Navigation；Intranet IA methods（主动设计，禁止演化）  
 - Morville & Rosenfeld: organization · labeling · navigation · search  
-- 实践合流：B2B 调度页 decision-first；设置 me/workspace/admin；主链 5–8；导航上线四问  
+- Donna Spencer, *A Practical Guide to Information Architecture*：结构、分组、命名，以及内容元数据；导航是其后的投影  
+- 实践合流：公开站与后台同一对象模型两套投影；B2B 调度页 decision-first；设置 me/workspace/admin；主链 5–8；导航上线四问  
 
 本文件只保留**可执行闸**；细节案例去原出处，勿把外部长文粘进项目 IA。
