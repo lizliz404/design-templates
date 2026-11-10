@@ -1,0 +1,119 @@
+Cookie policy · ReplyArc Product 
+How it works Pricing Company Contact Us Log in See a demo 
+
+Legal 
+Cookie policy 
+Last updated 17 June 2026 
+
+This policy explains what cookies and similar browser storage Wondertabs Pte. Ltd. (UEN 202037320G, Singapore), trading as ReplyArc (“we”, “us”), uses in three places: our marketing website ( replyarc.ai ), our product dashboard ( app.replyarc.ai ), and the ReplyArc chat widget embedded on our customers' websites. “Customer” means a business with a ReplyArc workspace; “End User” means a person using the widget on a Customer's site. Read this with our Privacy Policy . “Cookies and similar storage” includes browser Web Storage (localStorage and sessionStorage); EU and UK rules treat these alike, and so does this policy. 
+1. The short version 
+On our own sites we use third-party analytics and advertising providers. Contentsquare (the experience-analytics vendor that also owns Hotjar) records how our pages are used (including session replay) and sets its own cookies; it runs on our marketing website and the sign-in / sign-up pages but not inside the signed-in dashboard (section 3), and is covered in sections 2, 3 and 5. Google Analytics 4 (Google's website analytics) measures aggregate traffic to our public pages and sets _ga* cookies; it runs on our marketing website and the sign-in / sign-up pages only , deliberately not inside the signed-in dashboard (section 3). We also use the Meta Pixel (Facebook / Instagram advertising) to measure our ad performance: it runs on those same marketing and sign-in pages only (never the signed-in dashboard), sets _fbp / _fbc cookies, and works alongside Meta's Conversions API , through which our servers send Meta a limited set of conversion events (account sign-up and subscription purchase). To match those events to a Meta account we share a hashed email address and IP address with Meta; we never send Meta your chat content or any data from inside the signed-in dashboard. None of these providers run on the chat widget on our Customers' sites (section 4). We also use Sentry for server-side error monitoring of the dashboard; it is listed on our sub-processor page and currently sets no cookies or storage in your browser (section 3). We also use Ahrefs Web Analytics for privacy-friendly, aggregate traffic measurement on our public pages: it is cookieless , sets no cookies or browser storage and collects no personal data, so it is not governed by the cookie banner and loads on the marketing and sign-in pages only, never inside the signed-in dashboard (section 3). 
+The chat widget sets no cookies at all , only localStorage and sessionStorage. 
+We do not sell your personal information. We do share a limited, hashed set of conversion data (account sign-up and subscription purchase) with Meta to measure and improve our advertising, as described above; under some privacy laws this may be treated as "sharing" for advertising, and you can opt out at any time via the cookie banner. We never share your chat content. 
+We show a cookie banner for these analytics providers. Visitors in the EU, EEA, UK and Switzerland are asked to opt in before Contentsquare, Google Analytics or the Meta Pixel load; everywhere else they are on by default and the banner lets you opt out at any time. We honour Global Privacy Control signals, and you can change your choice whenever you like via Cookie preferences in the footer. The banner does not govern strictly-necessary or preference storage, or the chat widget's own measurement (section 4); those are covered separately in section 5. 
+2. Cookies on replyarc.ai (marketing website) 
+Name Type Purpose Duration Category 
+ra_demo_claim Cookie Connects a website demo you started to your new account if you sign up 24 hours Strictly necessary 
+replyarc-currency Cookie Remembers the currency you picked on the pricing page 1 year Functional 
+Cloudflare cookies (e.g. __cf_bm , cf_clearance ) Cookie Bot detection and security, set by Cloudflare where its protection runs on our pages Set and managed by Cloudflare Strictly necessary 
+Contentsquare cookies (e.g. _cs_id , _cs_c , _cs_s ) Cookie Experience analytics and session replay: identifies your browser and groups your activity into a session so Contentsquare can record and play back how our pages are used, on our behalf Set and managed by Contentsquare (the visitor ID _cs_id persists up to ~13 months) Analytics 
+Google Analytics cookies (e.g. _ga , _ga_<id> ) Cookie Google Analytics 4: distinguishes your browser and groups your activity into a session so we can measure aggregate traffic to our public pages (visits, traffic sources, popular content), on our behalf Set and managed by Google (the _ga client id persists up to ~2 years) Analytics 
+Meta Pixel cookies ( _fbp , _fbc ) Cookie Meta Pixel: identifies your browser (and, from an ad click, the click id) so Meta can attribute and improve the performance of our ads; works alongside Meta's Conversions API Set and managed by Meta ( _fbp and _fbc persist up to ~3 months) Advertising 
+Marketing pages also embed our own chat assistant, the same widget our Customers use. Its storage is described in section 4. Because both sites run on one application, a preference cookie listed under one site may also appear on the other if you use that feature there. 
+The Contentsquare tag runs on the marketing site and the sign-in pages but is excluded from the signed-in dashboard (section 3). Google Analytics and the Meta Pixel likewise run across the marketing site and the sign-in pages and are excluded from the signed-in dashboard. These are the third-party analytics and advertising services on our own sites; all load only with consent, which section 5 explains along with how to control them. 
+3. Cookies and storage on app.replyarc.ai (dashboard) 
+Name Type Purpose Duration Category 
+sb-* (Supabase auth) Cookie Keeps you signed in; refreshed while you use the app Session-based, managed by the auth library Strictly necessary 
+ra_locale Cookie Your interface language 1 year Functional 
+ra_dashboard_theme Cookie Your theme choice 1 year Functional 
+ra_surface_mode Cookie Standard vs Canvas layout 1 year Functional 
+ra_*_nonce , ra_zendesk_host Cookie One-time anti-forgery values protecting integration sign-in flows 10 minutes Strictly necessary 
+ra_impersonate Cookie Lets authorised ReplyArc support staff view a workspace read-only during a support case; signed; only ever set in our staff's browsers 30 minutes Strictly necessary 
+Cloudflare Turnstile Cookie Human-verification on signup and password-reset pages Set and managed by Cloudflare Strictly necessary 
+replyarc.inbox-* , ra-canvas* localStorage Panel layouts, saved views, similar UI preferences Until you clear them Functional 
+replyarc.notify-prompted , replyarc.monitor.paused sessionStorage Per-tab UI state Until the tab closes Functional 
+Contentsquare session replay is not loaded in the dashboard. The Contentsquare tag runs only on our marketing site and sign-in pages (sections 1-2); it is excluded from the signed-in app, so your workspace's own data (conversation transcripts and lead contact details) is never captured in a session replay. 
+Google Analytics is not loaded in the dashboard. GA4 runs only on our public marketing pages and the sign-in / sign-up funnel, so the workspace data shown inside the signed-in app (conversation transcripts and lead contact details) is never sent to Google. 
+The dashboard also uses Sentry for error monitoring, but today that runs server-side only : the browser-side Sentry client is not enabled, and no Sentry cookie or browser storage is set. If we ever enable browser-side Sentry (which would capture a session replay when an error occurs), we will add its storage to the table above and update section 1 first. 
+4. The chat widget on our Customers' websites 
+This section is written for you, the visitor chatting with a business through ReplyArc. The widget sets no cookies . It keeps a small amount of data in your own browser so the chat works: 
+Key Type What it does How long Category 
+replyarc.visitor.<id> localStorage A random ID (not your name or email) so the chat recognises your browser across pages and return visits, and the business sees visit statistics tied to that random identifier rather than to your name Until you clear it Functional / analytics 
+replyarc.lastconvo.<id> localStorage Your recent conversation (up to 40 messages) so it survives a reload or return 7 days Strictly necessary once you chat 
+replyarc.sound / textscale / lang / panelsize.<id> localStorage Sound, text-size, language, and window-size preferences Until you clear them Functional 
+replyarc.seen.<id> localStorage Stops the greeting repeating once you have seen it Until you clear it Functional 
+replyarc.session / conversation / lead / csat / open / theme / voicemode.<id> sessionStorage Keeps your current chat session working (which conversation is yours, whether the panel is open, and similar) Until the tab closes Strictly necessary 
+replyarc.proactive.<id> sessionStorage Makes timed greeting messages fire only once Until the tab closes Functional 
+replyarc.journey.landing.<id> sessionStorage The page you arrived on, the referring site, and any campaign tags in the address Until the tab closes Analytics 
+If you verify your identity in the chat, that sign-in token is held in memory only and is never written to disk. 
+What the widget measures. When a page with the widget loads, it starts recording (before you open the chat) the addresses and titles of pages you view on that site, time on page, your browser and device type, screen size, language, timezone, the referring site, and any campaign tags or ad-click IDs in the address. This goes only to ReplyArc's own servers, on behalf of the business whose site you are visiting; it is never sent to advertising networks, and you are not tracked across unrelated websites. We do not store your raw IP address for this: analytics keep only a salted one-way hash. One technical note: the widget loads its font from Google Fonts, so your browser requests a file from Google's servers (Google sees your IP address; no cookie is set by this). 
+Who is responsible. On a Customer's website, the Customer chooses to deploy the widget and is the controller of this data; ReplyArc processes it on the Customer's instructions. The Customer's own privacy and cookie notice should cover the widget; ready-made wording is in section 8. Questions about a specific site go to that business first; you can also contact us (section 10). 
+5. Consent and your choices 
+Under Singapore's PDPA, strictly necessary cookies operate on deemed consent. The preference items above (a language, a theme, a currency, the widget's sound and text-size settings) are set only when you actively choose the setting; choosing it is the consent, and this policy is the required notification. The widget's chat-continuity storage is different: the visitor ID, the session keys, and the flag that stops the greeting repeating are written automatically when the widget loads, because the chat cannot keep working across pages and reloads without them; we treat those as necessary to provide the chat on the page, while the measurement items (the journey snapshot and the page measurement in section 4) belong with the nuance below. Under EU ePrivacy rules and the UK's PECR, strictly necessary storage is exempt from consent. UK law (from February 2026) also exempts first-party statistics and appearance/functionality storage where clear information and a free opt-out are given; this policy provides the information, but the widget does not yet offer a working opt-out from its measurement (clearing browser storage is not one; a new ID is created on your next visit, see section 7), so we do not yet rely on that exemption for the widget's measurement. The two third-party analytics providers below (Contentsquare and Google Analytics) are what our cookie banner governs; the widget items flagged below are a separate matter we are still working on. 
+Contentsquare (session replay) loads only with consent. Session-replay analytics is not strictly necessary, so under Singapore's PDPA it does not run on deemed consent, and under EU and UK ePrivacy rules it needs opt-in consent before its cookies are set. Our cookie banner reflects this: visitors in the EU, EEA, UK and Switzerland must opt in before Contentsquare loads, while elsewhere it is on by default with an opt-out, and a Global Privacy Control signal is honoured as an opt-out everywhere. It is also excluded from the signed-in dashboard (section 3). You can change your choice any time via Cookie preferences in the footer, or use the browser-level controls in section 7 (for example clearing the _cs_* cookies). 
+Google Analytics is governed by the same banner. GA4's _ga* cookies are analytics, not strictly necessary, so under Singapore's PDPA they do not run on deemed consent, and under EU and UK ePrivacy rules they need opt-in consent before they are set. The cookie banner treats GA4 exactly like Contentsquare (opt-in in the EU, EEA, UK and Switzerland; on by default with an opt-out elsewhere; Global Privacy Control honoured) and it is not loaded inside the signed-in dashboard (section 3). You can also limit it with the browser-level controls in section 7, for example clearing the _ga* cookies. 
+The honest nuance: three things the widget does fall into the category where EU rules set an opt-in standard: the pre-chat page measurement described in section 4, the persistent visitor identifier written as soon as the page loads (before you choose to chat, and which also feeds the visit statistics), and the capture of ad-click IDs (gclid, fbclid and similar) from the page address. The widget does not yet have a built-in consent toggle, so today the only controls are browser-level (section 7). This gap is ours as much as our Customers': the same widget runs on every replyarc.ai page, so EU visitors to our own site are currently measured the same way, without a consent prompt. Customers whose advice requires opt-in consent for EU visitors should load the widget through their own consent tool until ReplyArc ships a consent mode; for our own site, we intend to gate the widget's pre-chat measurement, or add a consent control for EU visitors, and will update this section when that ships. 
+Some of the items in this policy are operated by providers outside Singapore: Cloudflare sets its security cookies from its global network, the widget's font request goes to Google, and chat and analytics data is processed by the providers on our sub-processor page . The safeguards covering these overseas transfers are described in section 6 (International transfers) of our Privacy Policy and on the sub-processor page. 
+6. Do Not Track and Global Privacy Control (US visitors) 
+ReplyArc does not sell or share personal information as defined by the CCPA/CPRA, and does not use personal information for cross-context behavioural advertising, so no “Do Not Sell or Share My Personal Information” link is required. Because we do not sell or share data, there is no sale for a Do Not Track or Global Privacy Control signal to opt you out of, and our sites and widget do not respond to those signals for that purpose. We do, however, honour the Global Privacy Control signal as an opt-out from our website analytics cookies (Google Analytics and Contentsquare), as described in section 5. If our practices ever extend to a sale or share, we will honour GPC for that and add the required opt-out link first. 
+7. How to control or clear cookies and storage 
+Cookie preferences for our website analytics (Google Analytics and Contentsquare) are set through our cookie banner, and you can reopen and change your choice any time via the Cookie preferences link in our site footer (see section 5). We also honour the Global Privacy Control signal as an opt-out from those analytics cookies. 
+Browser settings let you block or delete cookies and site data per site or entirely (look for “Cookies and site data” in your browser's privacy settings). 
+Widget storage lives under the website you were visiting; clear that site's data to remove it. Clearing the visitor ID makes the chat treat you as new; clearing mid-conversation may lose your chat history on that device. Note that clearing is deletion, not a lasting opt-out: if you return to a site running the widget, a new random ID is created. 
+Blocking strictly necessary items has consequences: without the auth cookies you cannot stay signed in to the dashboard, and without sessionStorage the widget cannot hold a conversation. 
+For the website analytics tags, the cookie banner and footer Cookie preferences link are the management mechanism; for everything else (strictly-necessary items, preferences, and the chat widget's storage), this policy plus your browser controls are the mechanism. 
+8. For Customers: wording for your own cookie notice 
+You may paste or adapt the following into your site's cookie or privacy notice: 
+This site uses ReplyArc, an AI chat service operated by Wondertabs Pte. Ltd. (Singapore). The chat widget stores a random visitor ID, your chat preferences, and your recent conversation in your browser (localStorage/sessionStorage; no cookies) so the chat works across pages and visits. It also records the pages you view on this site, your device and browser type, language, and timezone, with your IP address kept only as a one-way hash. If you chat, the service also processes and stores, on our behalf, the messages you send and any contact details (such as your name, email address or phone number) you choose to share, so that we can respond and follow up; chat messages are processed by an AI model provider to generate replies. This data is processed on our behalf, is not shared with advertising networks, and is not used to track you across other websites. Details: ReplyArc's Cookie & Tracking Policy at replyarc.ai/legal/cookies. 9. Changes to this policy 
+We will update this page when our cookie or tracking practices change and revise the “Last updated” date. Material changes (for example, adding any analytics provider) will be flagged here before they take effect. 
+10. Contact 
+Questions about this policy: [email protected] (Wondertabs Pte. Ltd., Singapore). End Users should contact the business whose website they used first. It controls the data collected there; we forward misdirected requests where we can identify the Customer. 
+
+Legal 
+Terms of service Privacy policy Data Processing Addendum Sub-processors Cookie policy Acceptable use policy Refund policy Delete your account 
+
+It guides. It sells. It never sleeps. 
+One AI agent for your whole front line. It answers from your own pages, guides visitors to a confident yes on your website, WhatsApp, Messenger and LINE, and hands over to your team the moment a human is needed. 
+Get the app 
+Download on the App Store Get it on Google Play 
+
+[email protected] 
+Product 
+Features 
+Pricing 
+Docs 
+Status 
+Company 
+About 
+Contact 
+Trust 
+Legal 
+Privacy 
+Terms 
+Data processing 
+Refunds 
+Cookies 
+Cookie preferences 
+Sub-processors 
+Acceptable use 
+Account 
+Sign in 
+Start free 
+
+Singapore 
+Wondertabs Pte. Ltd. 
+10 Anson Road #33-03 International Plaza Singapore 079903 +65 6797 8277 
+Australia 
+Wondertabs Pty. Ltd. 
+Suite 108 / Level 1 55 Collins Street Melbourne, VIC 3000 +61 403 993 524 
+Indonesia 
+PT. Wondertabs Studio 
+Nicco Res. Block B3A No.2 2944, Batam Indonesia +62 821 7157 9990 
+Thailand 
+Wondertabs (Thailand) Co., Ltd. 
+Level 11, Mercury Tower 540 Ploenchit Road, Lumpini Pathumwan, Bangkok +66 81 803 6123 
+
+© 2026 ReplyArc, built by Wondertabs Pte. Ltd. 
+
+AI agents can be too much, which is why real humans in 4 countries are still here. 
+

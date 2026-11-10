@@ -1,0 +1,81 @@
+Delete your account · ReplyArc Product 
+How it works Pricing Company Contact Us Log in See a demo 
+
+Legal 
+Delete your account and data 
+Last updated 24 June 2026 
+
+You can delete your ReplyArc account, and the data associated with it, at any time. This page explains how to do it, what is removed, and how long it takes. It covers both the ReplyArc web dashboard at app.replyarc.ai and the ReplyArc mobile app (iOS and Android). ReplyArc is operated by Wondertabs Pte. Ltd. (UEN 202037320G, Singapore). 
+1. How to delete your account 
+In the mobile app 
+Open the ReplyArc app and sign in. 
+Go to Settings . 
+Tap Delete account , then confirm. 
+On the web, or if you cannot sign in 
+Email [email protected] from the address on your account, with the subject “Delete my account”. We will verify that you own the account and complete the deletion for you. 
+2. What gets deleted 
+If you are the sole owner of a workspace , deleting your account removes the entire workspace and everything in it, including: 
+your account and sign-in credentials; 
+your bots, their knowledge base, and settings; 
+conversations, messages, and transcripts; 
+captured leads and visitor records; 
+other team members' access to that workspace; and 
+your billing subscription, which is cancelled immediately. 
+If you are a member of a workspace owned by someone else (or one of several owners), deleting your account removes your personal access and sign-in. Content that belongs to the shared workspace, such as conversations handled by the wider team, stays with the workspace so the business can keep operating. A remaining owner can delete the workspace itself using the same steps. 
+3. Push notifications 
+If you used the mobile app, the device push token tied to your account is removed when you delete your account, and also whenever you sign out. 
+4. Timing and retention 
+Your access ends immediately. 
+Your personal data is removed from our live systems immediately, and from encrypted backups within 30 days . 
+We keep a limited set of records only where the law requires it, for example billing and tax records (invoices) held by our payment processor, Stripe. These are retained for the legally required period and then deleted, and are not used for any other purpose. 
+5. Questions 
+Email [email protected] . For the full detail on how we handle personal data, see our Privacy Policy . 
+
+Legal 
+Terms of service Privacy policy Data Processing Addendum Sub-processors Cookie policy Acceptable use policy Refund policy Delete your account 
+
+It guides. It sells. It never sleeps. 
+One AI agent for your whole front line. It answers from your own pages, guides visitors to a confident yes on your website, WhatsApp, Messenger and LINE, and hands over to your team the moment a human is needed. 
+Get the app 
+Download on the App Store Get it on Google Play 
+
+[email protected] 
+Product 
+Features 
+Pricing 
+Docs 
+Status 
+Company 
+About 
+Contact 
+Trust 
+Legal 
+Privacy 
+Terms 
+Data processing 
+Refunds 
+Cookies 
+Cookie preferences 
+Sub-processors 
+Acceptable use 
+Account 
+Sign in 
+Start free 
+
+Singapore 
+Wondertabs Pte. Ltd. 
+10 Anson Road #33-03 International Plaza Singapore 079903 +65 6797 8277 
+Australia 
+Wondertabs Pty. Ltd. 
+Suite 108 / Level 1 55 Collins Street Melbourne, VIC 3000 +61 403 993 524 
+Indonesia 
+PT. Wondertabs Studio 
+Nicco Res. Block B3A No.2 2944, Batam Indonesia +62 821 7157 9990 
+Thailand 
+Wondertabs (Thailand) Co., Ltd. 
+Level 11, Mercury Tower 540 Ploenchit Road, Lumpini Pathumwan, Bangkok +66 81 803 6123 
+
+© 2026 ReplyArc, built by Wondertabs Pte. Ltd. 
+
+AI agents can be too much, which is why real humans in 4 countries are still here. 
+

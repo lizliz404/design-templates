@@ -1,0 +1,33 @@
+User-Agent: OAI-SearchBot
+User-Agent: ChatGPT-User
+User-Agent: PerplexityBot
+User-Agent: Perplexity-User
+User-Agent: Claude-SearchBot
+User-Agent: Claude-User
+Allow: /
+Disallow: /console/
+Disallow: /app/
+Disallow: /onboarding/
+Disallow: /auth/
+Disallow: /api/
+Disallow: /invite/
+
+User-Agent: GPTBot
+User-Agent: Google-Extended
+User-Agent: CCBot
+User-Agent: ClaudeBot
+User-Agent: Applebot-Extended
+User-Agent: Bytespider
+User-Agent: meta-externalagent
+Disallow: /
+
+User-Agent: *
+Allow: /
+Disallow: /console/
+Disallow: /app/
+Disallow: /onboarding/
+Disallow: /auth/
+Disallow: /api/
+Disallow: /invite/
+
+Sitemap: https://replyarc.ai/sitemap.xml

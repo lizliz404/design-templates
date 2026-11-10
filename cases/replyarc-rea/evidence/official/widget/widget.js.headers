@@ -1,0 +1,21 @@
+HTTP/2 200 
+date: Tue, 10 Nov 2026 07:40:45 GMT
+content-type: application/javascript; charset=UTF-8
+strict-transport-security: max-age=31536000; includeSubDomains
+x-content-type-options: nosniff
+x-frame-options: SAMEORIGIN
+referrer-policy: strict-origin-when-cross-origin
+cache-control: public, max-age=0, must-revalidate
+last-modified: Thu, 05 Nov 2026 13:41:03 GMT
+etag: W/"5d980-1a1abf10998"
+vary: Accept-Encoding
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=Hc3vfBywP90jQvJIkraGkEcVojcXX2IxWPXlcbjteJqJW%2Fqf5OPJ1CnX5cal2UWF%2B9gAUHOAJHbqP%2FsBt7zL8%2FxNtXoQLwV8fujlK286kfreiEeUNuEZNfRubkYqVUL5a1F2eOoRkMwMjpgrPlE%3D"}]}
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+server: cloudflare
+via: 1.1 fly.io, 1.1 fly.io
+fly-request-id: 01M726CZ0Z4FVKD0J6JJZCHZWR-iad
+age: 32
+cf-cache-status: HIT
+cf-ray: a58369333aa7297c-IAD
+alt-svc: h3=":443"; ma=86400
+

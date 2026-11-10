@@ -1,0 +1,74 @@
+Getting started · ReplyArc Product 
+How it works Pricing Company Contact Us Log in See a demo 
+
+Getting started 
+From sign-up to a live, knowledgeable agent on your site in a few steps. 
+All docs 
+
+1. Sign up & onboarding 
+Create an account, then the onboarding wizard walks you through naming your workspace, creating your first agent, and adding initial knowledge. You can revisit any step later from the dashboard. 
+2. Set up your agent 
+Each workspace runs a single AI agent. Onboarding creates it for you; open Agents to manage its name, system prompt (its persona and rules) and model defaults. If your workspace doesn't have an agent yet, you'll find a New agent button there. All knowledge, settings and the embed belong to this one agent. 
+3. Add knowledge 
+On the agent's page you can add knowledge several ways: 
+Files : upload PDF, DOCX, TXT or CSV. 
+Websites : add a URL to crawl, with scheduled re-crawls. 
+Google Sheets (if enabled on your workspace): connect a published sheet that auto-syncs. 
+Articles : author content directly. 
+Knowledge is chunked, embedded and retrieved at answer time, with inline citations. 
+4. Test & tune 
+Use Test chat on the agent page to try it, and run reference Q/A sets under Evals to score accuracy, relevance and hallucination. 
+5. Embed the widget 
+Copy the snippet from your agent's Embed section and paste it before </body> . The widget is a self-contained Shadow-DOM bundle, so it won't clash with your site's styles. Restrict it to your sites under Allowed websites . 
+6. Invite your team & route conversations 
+Team & roles (Settings → Team): invite teammates as members (front-line staff) or admins. 
+Inbox : your team picks up escalated conversations and replies, with canned responses a click away. 
+Notifications : route escalations, SLA breaches and hot-lead alerts to Slack or email. Developer webhooks fire on conversation events (created / escalated / resolved, message created). 
+Workspace administration 
+Workspace-wide preferences (the workspace name, your team, notifications, language and your own profile) live under Settings . 
+
+It guides. It sells. It never sleeps. 
+One AI agent for your whole front line. It answers from your own pages, guides visitors to a confident yes on your website, WhatsApp, Messenger and LINE, and hands over to your team the moment a human is needed. 
+Get the app 
+Download on the App Store Get it on Google Play 
+
+[email protected] 
+Product 
+Features 
+Pricing 
+Docs 
+Status 
+Company 
+About 
+Contact 
+Trust 
+Legal 
+Privacy 
+Terms 
+Data processing 
+Refunds 
+Cookies 
+Cookie preferences 
+Sub-processors 
+Acceptable use 
+Account 
+Sign in 
+Start free 
+
+Singapore 
+Wondertabs Pte. Ltd. 
+10 Anson Road #33-03 International Plaza Singapore 079903 +65 6797 8277 
+Australia 
+Wondertabs Pty. Ltd. 
+Suite 108 / Level 1 55 Collins Street Melbourne, VIC 3000 +61 403 993 524 
+Indonesia 
+PT. Wondertabs Studio 
+Nicco Res. Block B3A No.2 2944, Batam Indonesia +62 821 7157 9990 
+Thailand 
+Wondertabs (Thailand) Co., Ltd. 
+Level 11, Mercury Tower 540 Ploenchit Road, Lumpini Pathumwan, Bangkok +66 81 803 6123 
+
+© 2026 ReplyArc, built by Wondertabs Pte. Ltd. 
+
+AI agents can be too much, which is why real humans in 4 countries are still here. 
+

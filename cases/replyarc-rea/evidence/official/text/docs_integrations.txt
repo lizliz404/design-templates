@@ -1,0 +1,73 @@
+Integration setup · ReplyArc Product 
+How it works Pricing Company Contact Us Log in See a demo 
+
+Integration setup 
+ReplyArc connects to the tools you already use. Most connections are one-click OAuth; tokens are encrypted at rest and never shown again after connecting. 
+All docs 
+
+Messaging channels 
+Settings → Channels . Connect WhatsApp Business and Messenger so your agent answers on those channels. Paste the provider access token and (for WhatsApp) the phone-number id; ReplyArc stores it encrypted and the channel adapters send and receive on your behalf. 
+CRM & commerce 
+Settings → Integrations → CRM & commerce. Click Connect to run OAuth: 
+HubSpot / Salesforce : live. Contacts the agent captures push into your CRM hourly (one-way, contacts with an email address). Sync runs show under Settings → Integrations. 
+Shopify : coming soon. Today, import your catalog as CSV under Catalog and the agent recommends from it in chat. 
+Zendesk : coming soon. Ticket and help-center reads are on the roadmap; ReplyArc's own ticketing is live under Tickets . 
+Automations 
+Zapier , Make and n8n are live: paste your catch-hook / inbound-webhook URL on the Integrations card and every event ReplyArc emits (conversations, messages, tickets, CRM contacts and deals) POSTs there with HMAC-SHA256 signatures and automatic retries, starting with a test payload on connect. For finer control, register per-event endpoints under Settings → Webhooks . Notification routing to Slack / Teams is configured under Settings → Notifications. 
+Calendars & payments 
+Google Calendar / Outlook / Calendly / Cal.com : coming soon. Today, bookings run through the widget's booking shortcut, which sends visitors to your booking page in one tap. 
+PayPal : coming soon. 
+Marketing & analytics 
+Mailchimp : coming soon. 
+Google Analytics (GA4) : coming soon. The widget already reports funnel events to your own GA4 tag today (see Analytics docs). 
+Segment : coming soon. 
+Knowledge sources 
+Knowledge comes from website crawls (with scheduled re-crawls), file uploads ( PDF, DOCX, TXT, CSV ) and articles you author in the dashboard. Importing from Notion, Google Drive, Confluence and OneDrive is on the roadmap and not available yet. 
+Disconnecting 
+Every connection has a Disconnect action that deletes the stored token. To rotate, disconnect and reconnect. 
+
+It guides. It sells. It never sleeps. 
+One AI agent for your whole front line. It answers from your own pages, guides visitors to a confident yes on your website, WhatsApp, Messenger and LINE, and hands over to your team the moment a human is needed. 
+Get the app 
+Download on the App Store Get it on Google Play 
+
+[email protected] 
+Product 
+Features 
+Pricing 
+Docs 
+Status 
+Company 
+About 
+Contact 
+Trust 
+Legal 
+Privacy 
+Terms 
+Data processing 
+Refunds 
+Cookies 
+Cookie preferences 
+Sub-processors 
+Acceptable use 
+Account 
+Sign in 
+Start free 
+
+Singapore 
+Wondertabs Pte. Ltd. 
+10 Anson Road #33-03 International Plaza Singapore 079903 +65 6797 8277 
+Australia 
+Wondertabs Pty. Ltd. 
+Suite 108 / Level 1 55 Collins Street Melbourne, VIC 3000 +61 403 993 524 
+Indonesia 
+PT. Wondertabs Studio 
+Nicco Res. Block B3A No.2 2944, Batam Indonesia +62 821 7157 9990 
+Thailand 
+Wondertabs (Thailand) Co., Ltd. 
+Level 11, Mercury Tower 540 Ploenchit Road, Lumpini Pathumwan, Bangkok +66 81 803 6123 
+
+© 2026 ReplyArc, built by Wondertabs Pte. Ltd. 
+
+AI agents can be too much, which is why real humans in 4 countries are still here. 
+

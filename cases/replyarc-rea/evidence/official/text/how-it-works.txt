@@ -1,0 +1,159 @@
+How it works · ReplyArc Product 
+How it works Pricing Company Contact Us Log in See a demo 
+
+How it works 
+How one agent covers your whole front line 
+It reads your website, answers every visitor from that content, opens the conversation where you allow it, and hands the thread to you when a person is needed. Around ten minutes to set up. 
+Free plan, 50 conversations a month. No credit card. 
+Start free 
+
+index.html 
+<script
+ src="app.replyarc.ai/widget.js"
+ data-bot-id= "rA_91kx" >
+</script> or 1-click: Shopify WordPress Wix 
+
+New assistant 
+Upload documents PDFs, FAQs, price lists & menus 
+Crawl your website Paste a URL, we index every page 
+Start from a template Retail, F&B, clinics & services 
+
+Explore how simple ReplyArc can be 
+Effortless communication designed for clarity, speed, and ease 
+
+Built for however you are set up 
+The same agent in every case. What changes is how much of the conversation you keep. 
+Founders answering it themselves 
+You are the support team, and every unanswered question is a lead going cold. The agent gives the right answer fast so visitors get help that actually helps, and you get revenue instead of chat logs. 
+See the live monitor 
+Small teams sharing an inbox 
+Threads arrive already answered, with a lane for the ones that want a person. Nobody repeats themselves, nobody answers twice, and the conversation stays one conversation when a human steps in. 
+See the inbox 
+Studios and multi site operators 
+A workspace per brand, each with its own knowledge base and its own agent identity. It answers from that brand content only, so it never crowds a visitor with something you did not say. 
+See pricing 
+
+Start free 
+
+Choosing how it runs 
+Run it your way 
+Hands off, and the agent owns the conversation. Hands on, and it covers the hours you cannot. Both are the same agent on the same knowledge. 
+
+Hands off Hands on 
+Let the agent handle the conversation 
+Answers grounded in your own pages, with the source cited 
+A posture per page: guide to a sale, guide to an answer, or stay quiet 
+Opening lines written for the page the visitor is actually on 
+Waits a delay you set, and never interrupts someone mid-read 
+Six languages from one knowledge base 
+Captures the lead, the booking and the contact detail on its own 
+Scores every lead and shows the reasoning behind the score 
+Escalates only on a real dead end, or an unhappy visitor 
+Start free 
+
+app.replyarc.ai/console/aktivreply 
+
+Keep the thread whenever you want it 
+Take over mid-conversation, with no repetition for the visitor 
+A shared inbox with a needs-a-human lane, so nothing is answered twice 
+Internal notes and assignment on any thread 
+Visitor detail on every conversation: country, device, return visits 
+Search across everything that was ever said 
+Canned responses for the replies your team types every week 
+After-hours mode, so it only speaks first when nobody is on shift 
+Unanswered questions collected and ranked, ready to teach back 
+See the inbox 
+
+app.replyarc.ai/console/inbox 
+
+FAQ 
+The questions we get asked most 
+Still unsure? Email [email protected] and a human answers. 
+
+Will it make things up about my business? 
+No. It answers only from what it has read on your website and the documents you gave it, and every reply cites the page it came from. Asked something it has no grounding for, it says so and offers a human rather than guessing at a price or a policy. 
+
+Will it annoy my visitors? 
+Most people do not like AI agents, and that is exactly why this one is built to stay quiet. It only speaks first on the pages you mark, in the posture you choose, after a delay you set, and it holds back from anyone who is mid-read. Everywhere else it waits to be opened. 
+
+Can my team take over a conversation? 
+At any point. Reply as yourself and the agent steps back for that thread, with no repetition for the visitor. Threads that need a person sit in their own lane so they never get lost behind the ones already resolved. 
+
+Do I need my own AI provider account? 
+No. The models, the embeddings and the retrieval infrastructure are all included in your plan. There are no provider keys to manage and no separate model bill. You bring your content, we handle the rest. 
+
+How is a conversation counted? 
+One genuine back and forth between a visitor and your agent. Bots, crawlers, gibberish and your own testing never count, and a page refresh is the same conversation counted once. If junk slips through, mark it as spam from your inbox and it is credited back. 
+
+How long does setup actually take? 
+About ten minutes. Paste your URL and the agent reads your site, spend five minutes checking what it learned, then paste one script tag or install the WordPress plugin. No rebuild, and no developer needed for the standard install. 
+
+How good is it in languages other than English? 
+All six languages read the same knowledge base, so the facts are identical whichever one a visitor uses. English, Chinese, Malay, Tamil, Thai and Indonesian, detected automatically from the visitor. 
+
+The studio behind it 
+Built by Wondertabs ™ 
+Wondertabs has designed and built websites and brands for seven years, on more than twenty years of combined experience reaching back to the dot-com era. ReplyArc was built for the failure we kept observing in that work: visitors leaving because nobody answered. 
+20+ 
+Years combined 
+A team that has watched the web change three times over 
+
+2000s 
+The dot-com era 
+Building when a slow page was the problem 
+
+7 
+As Wondertabs ™ 
+Websites and brands shipped for real work 
+
+Brands Wondertabs works with 
+
+See it answer on your own site 
+Enter your website and the agent indexes it. About ten minutes from a URL to an agent answering live, and the free plan requires no card. 
+Start free See a demo 
+
+It guides. It sells. It never sleeps. 
+One AI agent for your whole front line. It answers from your own pages, guides visitors to a confident yes on your website, WhatsApp, Messenger and LINE, and hands over to your team the moment a human is needed. 
+Get the app 
+Download on the App Store Get it on Google Play 
+
+[email protected] 
+Product 
+Features 
+Pricing 
+Docs 
+Status 
+Company 
+About 
+Contact 
+Trust 
+Legal 
+Privacy 
+Terms 
+Data processing 
+Refunds 
+Cookies 
+Cookie preferences 
+Sub-processors 
+Acceptable use 
+Account 
+Sign in 
+Start free 
+
+Singapore 
+Wondertabs Pte. Ltd. 
+10 Anson Road #33-03 International Plaza Singapore 079903 +65 6797 8277 
+Australia 
+Wondertabs Pty. Ltd. 
+Suite 108 / Level 1 55 Collins Street Melbourne, VIC 3000 +61 403 993 524 
+Indonesia 
+PT. Wondertabs Studio 
+Nicco Res. Block B3A No.2 2944, Batam Indonesia +62 821 7157 9990 
+Thailand 
+Wondertabs (Thailand) Co., Ltd. 
+Level 11, Mercury Tower 540 Ploenchit Road, Lumpini Pathumwan, Bangkok +66 81 803 6123 
+
+© 2026 ReplyArc, built by Wondertabs Pte. Ltd. 
+
+AI agents can be too much, which is why real humans in 4 countries are still here. 
+

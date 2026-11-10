@@ -1,0 +1,183 @@
+Features · ReplyArc Product 
+How it works Pricing Company Contact Us Log in See a demo 
+
+The agent, and how it works 
+Accurate answers, and the lead captured before they leave. 
+Most AI agents answer in circles, and the visitor leaves. ReplyArc is built for the opposite outcome: it answers every visitor from your own content, cites the source, and captures the lead before the visit ends. 
+Start free Free plan, 50 conversations a month. No credit card. 
+
+What ReplyArc does 
+One agent across the whole front desk. Six screens, every one of them running in the product today. Open any of them to see it at full size. 
+
+Inbox 
+Every conversation in one shared thread, with the full transcript and the pages the visitor read. 
+
+AktivReply™ 
+Makes the first move on the pages you mark, and stays quiet everywhere else. 
+
+Analytics 
+Conversations, leads and resolution over time, plus the questions it could not answer. 
+
+Live monitor 
+See who is on the site right now, which page they are on, and jump into any chat. 
+
+Contacts 
+Leads captured mid-chat, scored with the reason they scored, ready for a call back. 
+
+Bookings 
+Turns a research conversation into a slot on your calendar without leaving the chat. 
+
+Setup 
+About ten minutes, using the content you already have. 
+No developer, no agency, no IT ticket. You point ReplyArc at the pages and documents you have now, and it does the reading. 
+
+Minute 0 
+Point it at your business . Paste your website URL. ReplyArc crawls it page by page, and you drag in the PDFs, price lists and FAQs that hold the rest. 
+
+Minute 5 
+It learns how you sell . It indexes every page and document, maps the questions your customers are likely to ask, and picks up the way you talk. 
+
+Minute 10 
+It starts answering . One script tag on your site, and the agent begins answering, capturing leads and taking bookings, including outside your opening hours. 
+
+After that, you can add a page or a document any time something changes. 
+
+Why it exists 
+Most AI agents lose the visitor. They answer in circles, and the visitor leaves more frustrated than they arrived. Three decisions follow from that, and between them they are the whole product. 
+
+It answers from your own content 
+Every reply is grounded in your website, your PDFs and your price lists, and it shows where the answer came from. Visitors can see the source, and so can you. When your content does not cover the question, the agent says so, offers your fallback, and takes the visitor details instead of guessing. 
+Grounded-only mode, on by default 
+A source shown on every reply 
+Your fallback answer when it genuinely does not know 
+
+It does not crowd anyone 
+A proprietary engagement algorithm decides when to speak up, what to suggest, and when to stay quiet. At most one opening per page, per visit. It stays silent while a visitor is typing, and once someone dismisses it, it leaves them alone for the rest of the visit. 
+One opening per page, per visit 
+Only on the pages you mark 
+Dismissed means dismissed for that visit 
+
+What you get on day one. 
+
+6 
+languages, detected message by message 
+
+~10 
+minutes from your URL to a live agent 
+
+24/7 
+answering, including while you sleep 
+
+1 
+script tag, on any site builder 
+
+Everything else it can do. 
+Switched on from one settings screen, in any combination. 
+
+Grounded answers only A source on every reply Six languages Product recommendations Lead capture mid-chat Suggested questions After-hours mode WhatsApp Messenger LINE WeChat Call us button Booking links Up to eight custom channels Human handoff Typing indicators Queue position Satisfaction rating Canned responses UTM and ad-click tracking Knowledge sources Page rules Brand colour matching Home, Help and News tabs One script tag Shadow DOM isolation 
+
+Common questions 
+Questions we get asked. 
+
+How does it avoid making things up? 
+It answers from your own content and nothing else: your website, and the PDFs, price lists and FAQs you give it. Every reply shows where it came from. When your content does not cover the question, it says so, gives your fallback answer, and asks for a way to follow up rather than guessing. 
+
+Will it bother my visitors? 
+It is proactive without being pushy. It opens at most once per page per visit, only on the pages you mark, and it stays quiet while someone is typing. If a visitor dismisses it, it leaves them alone for the rest of the visit. You choose how hard it pushes, from letting them lead to guiding them to the next step. 
+
+What does it learn from? 
+Paste your website URL and it reads your pages one by one. Drag in the PDFs, price lists and FAQs that hold the rest. No formatting, no cleanup: if a document has text in it, the agent can answer from it. You can add a page or a file any time something changes. 
+
+Do I need a developer? 
+No. You paste one script tag into HTML, Shopify, WordPress, Wix, Webflow or React. The widget renders in its own Shadow DOM, so your styles never break it and it never breaks yours. If you have not picked a colour, it samples your page and matches your brand. 
+
+What happens when someone needs a person? 
+Your team takes over from the inbox in one click, and the visitor sees one continuous thread rather than a restart. The agent only offers a human when someone is actually online. When you are away it takes contact details instead of queueing people into silence. 
+
+What happens outside my opening hours? 
+It says so honestly, sets an expectation for when you will reply, keeps answering from your content, and asks for an email so you can follow up. A question at 2am becomes a lead in your inbox instead of a visitor who left. 
+
+Which languages does it speak? 
+Six: English, 中文, Bahasa Melayu, Bahasa Indonesia, Tamil and Thai. It detects the language message by message, so a visitor can switch mid-conversation and the agent follows. 
+
+Does it replace WhatsApp? 
+No, it hands visitors to it. Plenty of customers would rather carry on in the app they already use, so the widget carries one-tap shortcuts to WhatsApp, Messenger, LINE and WeChat, a button that dials your number, and a link to your booking page. Shortcuts appear only for the channels you switch on. 
+
+Do I bring my own AI keys? 
+No. We run the models, so there is nothing to configure and nothing to top up. A proprietary engagement algorithm and our own AI stack decide when to speak up, what to suggest, and when to stay quiet. 
+
+How is it priced? 
+By conversation, not by seat and not by message. The free plan covers 50 conversations a month and needs no card. 
+
+How do I know it is working? 
+Analytics show what the agent handled on its own, what reached a human, and how visitors rated the conversations. The most useful part is the list of questions it could not answer, because that is your next page to write. 
+
+Who is behind it? 
+Wondertabs™, a studio that has built websites and brands for more than seven years, on over twenty years of combined experience reaching back to the dot-com era. ReplyArc is headquartered in Singapore, with the team working from Singapore, Melbourne, Indonesia and Thailand. We understand websites, and we built the agent we always wished those websites had. 
+
+The studio behind it 
+Built by Wondertabs ™ 
+Wondertabs has designed and built websites and brands for seven years, on more than twenty years of combined experience reaching back to the dot-com era. ReplyArc was built for the failure we kept observing in that work: visitors leaving because nobody answered. 
+20+ 
+Years combined 
+A team that has watched the web change three times over 
+
+2000s 
+The dot-com era 
+Building when a slow page was the problem 
+
+7 
+As Wondertabs ™ 
+Websites and brands shipped for real work 
+
+Brands Wondertabs works with 
+
+See it answer on your own site 
+Enter your website and the agent indexes it. About ten minutes from a URL to an agent answering live, and the free plan requires no card. 
+Start free See a demo 
+
+It guides. It sells. It never sleeps. 
+One AI agent for your whole front line. It answers from your own pages, guides visitors to a confident yes on your website, WhatsApp, Messenger and LINE, and hands over to your team the moment a human is needed. 
+Get the app 
+Download on the App Store Get it on Google Play 
+
+[email protected] 
+Product 
+Features 
+Pricing 
+Docs 
+Status 
+Company 
+About 
+Contact 
+Trust 
+Legal 
+Privacy 
+Terms 
+Data processing 
+Refunds 
+Cookies 
+Cookie preferences 
+Sub-processors 
+Acceptable use 
+Account 
+Sign in 
+Start free 
+
+Singapore 
+Wondertabs Pte. Ltd. 
+10 Anson Road #33-03 International Plaza Singapore 079903 +65 6797 8277 
+Australia 
+Wondertabs Pty. Ltd. 
+Suite 108 / Level 1 55 Collins Street Melbourne, VIC 3000 +61 403 993 524 
+Indonesia 
+PT. Wondertabs Studio 
+Nicco Res. Block B3A No.2 2944, Batam Indonesia +62 821 7157 9990 
+Thailand 
+Wondertabs (Thailand) Co., Ltd. 
+Level 11, Mercury Tower 540 Ploenchit Road, Lumpini Pathumwan, Bangkok +66 81 803 6123 
+
+© 2026 ReplyArc, built by Wondertabs Pte. Ltd. 
+
+AI agents can be too much, which is why real humans in 4 countries are still here. 
+

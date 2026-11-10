@@ -1,0 +1,100 @@
+Sub-processors · ReplyArc Product 
+How it works Pricing Company Contact Us Log in See a demo 
+
+Legal 
+Sub-processors 
+Last updated 17 June 2026 
+
+This page lists the third-party providers (“Sub-processors”) that Wondertabs Pte. Ltd. (UEN 202037320G, Singapore) (“ReplyArc”, “we”) engages to process Customer Data in delivering ReplyArc (the “Service”). It forms part of our Data Processing Agreement (the “DPA”) and uses the defined terms of the Agreement. Changes are notified as described in section 7. 
+1. What is a Sub-processor? 
+When your organisation (the “Customer”) uses the Service, we process data on your behalf: chat transcripts, captured leads and visitor analytics generated when people (“End Users”) interact with the AI agent on your website, plus content you upload (together, “Customer Data”). A Sub-processor is a third party we engage to process Customer Data on our behalf. Providers you choose and connect yourself are not our Sub-processors (see section 5). 
+2. How we vet Sub-processors 
+Before engaging a Sub-processor we review its security practices and data-protection terms; put in place a written agreement imposing data-protection obligations materially equivalent to those in our DPA (confidentiality, security, assistance with data-subject requests); and share only the data the provider needs for its function. For providers outside Singapore we rely on legally enforceable obligations giving protection comparable to the Singapore PDPA and, for GDPR/UK GDPR data, the 2021 EU Standard Contractual Clauses and UK Addendum as incorporated in the provider's data-processing terms, except where the table in section 3 states a different basis for a specific, limited transfer. We remain fully responsible to Customers for our Sub-processors' performance. 
+3. Current Sub-processors 
+Name Purpose Personal data processed Location / Region Transfer safeguard 
+Supabase (Supabase, Inc.) Database, authentication, file storage, real-time messaging All Customer Data stored in the Service: account profiles, conversation transcripts, captured leads (name, email, phone, company), visitor analytics (hashed IPs, device data, page views), uploaded documents and files; End User IPs on real-time connections US entity; database region being confirmed; contact [email protected] Vendor DPA (EU SCCs + UK Addendum); PDPA-comparable terms 
+Fly.io (Fly.io, Inc.) Application hosting and TLS for the dashboard, API and background jobs All Service traffic in transit (IP addresses, request content); application logs Singapore (ap-southeast-1); US entity Vendor DPA (EU SCCs + UK Addendum); PDPA-comparable terms 
+Upstash (Upstash, Inc.) In-memory cache: rate limiting, duplicate-request protection, agent presence, usage counters End User IPs inside short-lived rate-limiting keys; chat responses cached up to 24 hours; internal user IDs US entity; region being confirmed; contact [email protected] Vendor DPA (EU SCCs + UK Addendum); PDPA-comparable terms 
+OpenAI (OpenAI, L.L.C.) Text embeddings (and chat-answer inference as a fallback), using platform API keys held by ReplyArc Chat messages and recent conversation history, agent persona and business facts, knowledge-base passages, uploaded document text (for embeddings). Not sent: End User IP addresses, credentials, billing data United States Vendor DPA (EU SCCs + UK Addendum); PDPA-comparable terms; under OpenAI's API terms, content is not used to train its models and is retained only for limited abuse monitoring (currently up to 30 days) 
+OpenRouter (OpenRouter, Inc.), routing to Anthropic (Anthropic PBC) AI inference for chat answers and the per-turn classifier, using platform API keys held by ReplyArc; OpenRouter forwards the request to Anthropic's Claude models Chat messages and recent conversation history, agent persona and business facts, knowledge-base passages. Not sent: End User IP addresses, credentials, billing data; text embeddings are not processed here (they remain with OpenAI) United States (OpenRouter and Anthropic) Vendor DPA (EU SCCs + UK Addendum); PDPA-comparable terms; under OpenRouter's and Anthropic's API terms, content is not used to train their models 
+Resend (Resend, Inc.) Transactional email: sign-in and account emails, team invitations, lead alerts, scheduled reports, notifications; where the Customer enables lead recovery, re-engagement emails sent to the Customer's leads on the Customer's instruction Recipient email addresses, including (for lead-recovery emails) lead names and email addresses; email content, which can include lead contact details and short conversation excerpts; sign-in and invitation links United States (entity); sending region being confirmed; contact [email protected] Vendor DPA (EU SCCs + UK Addendum); PDPA-comparable terms 
+Cloudflare (Cloudflare, Inc.) Content delivery network and network security in front of the Service IP addresses and traffic metadata of requests passing through the edge network Global edge network; US entity Vendor DPA (EU SCCs + UK Addendum); PDPA-comparable terms 
+Sentry (Functional Software, Inc.) Error and performance monitoring of the dashboard application Error reports with technical request context and account identifiers (default PII capture disabled) United States Vendor DPA (EU SCCs + UK Addendum); PDPA-comparable terms 
+Stripe (Stripe, Inc.) Payment processing for paid plans Billing and customer contact details, payment-method metadata, and subscription and charge records. Card numbers are entered into Stripe-hosted fields and are not stored by ReplyArc United States Vendor DPA (EU SCCs + UK Addendum); PDPA-comparable terms 
+Expo (650 Industries, Inc.), via Apple APNs / Google FCM Mobile push notifications to the Customer's agents Device push tokens; notification text, which may include lead names United States; Apple/Google push networks global Vendor DPA (EU SCCs + UK Addendum); PDPA-comparable terms; delivery via Apple and Google under their platform terms 
+Google Fonts (Google LLC) Serves the chat widget's display font at load time The requesting End User's IP address only: no chat, account or page content Global No vendor data-processing terms apply to this transfer; it is limited to the IP address technically required to serve the font file. Self-hosting is under evaluation to remove this transfer 
+4. AI model providers 
+All AI features run on platform-managed AI : ReplyArc holds its own API keys with the model providers named in section 3 (OpenAI for text embeddings, and OpenRouter (routing to Anthropic) for chat answers) and those providers are our Sub-processors on the terms stated there. We do not offer a bring-your-own-key option and never store an AI provider API key belonging to you. 
+The demo assistant on our own marketing site uses the same provider under a separate, cost-isolated platform key; for those chats ReplyArc is the controller. 
+5. Customer-directed services (not Sub-processors) 
+Some data leaves the Service only because you configure it to. These providers act on your documented instructions, under your own terms with them, and are not our Sub-processors: 
+Messaging channels you connect: WhatsApp Business, Facebook Messenger and Instagram (Meta), Telegram, Slack, Microsoft Teams and Discord; message content flows to and from the channel provider once connected. 
+Webhooks and tools you configure: notification webhooks you paste (for example Slack or Teams incoming webhooks) and your own outbound webhook and AI tool endpoints. 
+Telegram owner alerts you enable: lead alert messages are sent only on your instruction, to the Telegram chat you connect; the alert text can include a lead's name and contact line. 
+Link-out buttons in the chat widget (for example WhatsApp, Messenger, LINE, phone or booking links): the End User leaves the widget and deals with that service directly. 
+6. Third-party services on our own websites (not Sub-processors) 
+For transparency, the following operate on replyarc.ai and app.replyarc.ai where ReplyArc is itself the controller, rather than processing Customer Data on your behalf: 
+Cloudflare Turnstile : bot protection on our sign-up and password-reset pages; receives the IP address of the person completing the check. 
+Cloudflare Browser Rendering : takes a screenshot of the public webpage URL entered into our homepage demo. 
+Google sign-in : Google processes account-holder sign-ins with Google under its own terms. 
+Google Analytics 4 (Google LLC): aggregate website analytics on our public marketing and sign-in / sign-up pages only (page paths, device/browser, IP-derived approximate location, the _ga / _ga_<id> cookies). It is not loaded in the signed-in dashboard (app.replyarc.ai /app, /canvas, /sadmin) or the widget, so it never sees dashboard data, chat transcripts or captured-lead contact details. 
+Contentsquare (Content Square SAS): experience analytics and session replay on those same public pages only (pages viewed, mouse/click/scroll events, device and browser data, IP-derived approximate location, and Contentsquare's own cookies). It is no longer loaded in the signed-in dashboard, so it does not capture dashboard Customer Data, conversation transcripts or lead names, emails and phone numbers. 
+Meta Pixel + Conversions API (Meta Platforms Ireland, Ltd.): advertising measurement on our public marketing and sign-in pages only. The browser Pixel sets the _fbp / _fbc cookies; our servers additionally send Meta a limited set of conversion events (account sign-up and subscription purchase) matched with a hashed email address and IP address. It is not loaded in the signed-in dashboard or the widget, and we never send Meta chat transcripts, lead contact details or any dashboard Customer Data. Subject to consent (cookie banner + Global Privacy Control). 
+Google Analytics 4, Contentsquare and the Meta Pixel are own-site analytics and advertising tools on our public pages, where ReplyArc is the controller; all are fully disclosed in our Cookie Policy . 
+7. Changes to this list 
+This page is the authoritative record of our Sub-processors. Consistent with the DPA: 
+We will post any addition or replacement on this page at least 30 days before the new Sub-processor processes Customer Data (except as set out in item 4). This notice period applies to every Customer and runs from the date the change is posted to this page. 
+To also receive change notices by email, subscribe by emailing [email protected] with the subject “Subscribe: sub-processor updates”. Subscribing is a convenience; it does not shorten, condition or start the notice period in item 1. 
+You may object to a new Sub-processor on reasonable data-protection grounds as set out in the DPA; if we cannot offer a reasonable alternative, you may terminate the affected portion of the Service. 
+Where urgent replacement is needed (for example for security reasons), we may replace first; we will update this page promptly and notify Customers without undue delay, and the objection right in item 3 still applies. 
+Questions about this list: [email protected] . 
+Version 1.2 · 17 June 2026 · Wondertabs Pte. Ltd. (UEN 202037320G) 
+
+Legal 
+Terms of service Privacy policy Data Processing Addendum Sub-processors Cookie policy Acceptable use policy Refund policy Delete your account 
+
+It guides. It sells. It never sleeps. 
+One AI agent for your whole front line. It answers from your own pages, guides visitors to a confident yes on your website, WhatsApp, Messenger and LINE, and hands over to your team the moment a human is needed. 
+Get the app 
+Download on the App Store Get it on Google Play 
+
+[email protected] 
+Product 
+Features 
+Pricing 
+Docs 
+Status 
+Company 
+About 
+Contact 
+Trust 
+Legal 
+Privacy 
+Terms 
+Data processing 
+Refunds 
+Cookies 
+Cookie preferences 
+Sub-processors 
+Acceptable use 
+Account 
+Sign in 
+Start free 
+
+Singapore 
+Wondertabs Pte. Ltd. 
+10 Anson Road #33-03 International Plaza Singapore 079903 +65 6797 8277 
+Australia 
+Wondertabs Pty. Ltd. 
+Suite 108 / Level 1 55 Collins Street Melbourne, VIC 3000 +61 403 993 524 
+Indonesia 
+PT. Wondertabs Studio 
+Nicco Res. Block B3A No.2 2944, Batam Indonesia +62 821 7157 9990 
+Thailand 
+Wondertabs (Thailand) Co., Ltd. 
+Level 11, Mercury Tower 540 Ploenchit Road, Lumpini Pathumwan, Bangkok +66 81 803 6123 
+
+© 2026 ReplyArc, built by Wondertabs Pte. Ltd. 
+
+AI agents can be too much, which is why real humans in 4 countries are still here. 
+

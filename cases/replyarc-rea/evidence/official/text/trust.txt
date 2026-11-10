@@ -1,0 +1,97 @@
+Trust Center · ReplyArc Product 
+How it works Pricing Company Contact Us Log in See a demo 
+
+Trust Center 
+Last updated 11 June 2026 
+
+ReplyArc is built for businesses that answer customer questions with AI without handing their data away. This page sets out the commitments we make about how customer data is processed, stored, and protected. ReplyArc is built and operated by Wondertabs Pte. Ltd. (UEN 202037320G), an award-winning creative technology studio that has shipped digital products since 2019, and which is responsible for these commitments. Everything on this page describes controls that are running today, not aspirations. 
+
+No training on customer data 
+We do not train, fine-tune, or build AI models using Customer Data (your documents, your agents' conversations, or anything a visitor types), and we do not sell personal data. Prompts and retrieved context are sent to our model provider (currently OpenAI, under ReplyArc's own platform API keys) solely to generate each response; under the provider's API terms that content is not used to train its models. 
+Separately from answering live questions, we process Customer Data within your own workspace to operate and improve your agent: drafting suggested knowledge-base answers from unanswered questions, running answer-quality checks, and classifying and summarising conversations. All such processing is tenant-scoped, surfaced to you for review, and never used to train any AI model. 
+How AI requests are processed 
+To generate each reply we send our model provider the conversation so far (up to the 20 most recent messages), the agent's configured persona and business facts, and passages retrieved from your knowledge base. Uploaded documents are sent to the provider's embedding API so they can be searched. We do not send visitor IP addresses, account credentials, or billing data to the model provider. 
+We do not operate under a zero-data-retention agreement with the provider. Under the provider's standard API terms, request content is not used to train its models but may be retained for a limited period (currently up to 30 days) for abuse monitoring, then deleted. ReplyArc stores the conversation in your own tenant so your team can read it, never to train a model. Full detail is in section 12 of our Privacy Policy . 
+
+How we protect your data 
+
+In transit 
+TLS for every connection to ReplyArc and onward to providers. 
+
+At rest 
+Encryption at rest on our database and storage provider. Third-party credentials you connect (channel access tokens, integration and connector secrets) are encrypted with AES-256-GCM and decrypted only at the moment of use. ReplyArc REST API keys are never stored: we keep only a SHA-256 hash, and the full key is shown exactly once. We never store an AI provider key belonging to you; platform AI keys are held as deployment secrets. 
+
+Tenant isolation 
+Every tenant-scoped table carries Postgres row-level-security policies keyed on tenant membership, restricting client-facing database paths (including real-time delivery), and our application servers additionally scope every query to your workspace in application code. 
+
+PII detection tooling 
+The dashboard can detect and mask emails and phone numbers when your team reviews transcripts. This is a display-layer tool; it does not alter what is stored or what is sent to the model. 
+
+Credential hygiene 
+We do not write credentials to application logs, and integration error logs pass through automatic secret redaction. 
+
+Data processing 
+Your data is processed by ReplyArc and a short list of sub-processors, including AI inference (OpenAI, United States), email delivery, CDN and security, error monitoring, and mobile push notifications; the full list of what each receives, to whom, and why is in section 6 of our Privacy Policy . ReplyArc never stores card numbers; paid-plan payments are processed by Stripe. 
+Your data is yours 
+You own your Customer Data. You can export conversations and leads at any time using the dashboard's export tools. Customer Data is deleted by default after termination: subject to your export rights, we will delete or irreversibly anonymise Customer Data within 30 days after termination, except records we must retain by law (e.g. Singapore tax records, retained 5 years) and residual copies in encrypted backups, which are removed in the ordinary course of our backup rotation cycle. To close your account, request deletion, or request written confirmation that deletion has been completed, write to [email protected] or [email protected] . Self-serve account deletion is on our roadmap; today, closure and deletion run through these request routes. 
+Sub-processors 
+The authoritative, always-current list of our sub-processors (including each provider's location, the personal data it receives, and how to be notified of changes) is our Sub-processors page . In brief, the Service runs on: Supabase (database, auth, storage), Fly.io (hosting), Upstash (cache and rate limiting), OpenAI (AI inference and embeddings under ReplyArc's platform keys), Resend (email), Cloudflare (CDN and security), Sentry (error monitoring), Expo with the Apple and Google push networks (mobile notifications), and Google Fonts (the chat widget's display font). 
+
+Compliance posture 
+
+PDPA (Singapore) We process personal data in line with the PDPA; we respond to data-subject access, correction, and withdrawal requests within 30 days. 
+GDPR / CCPA We support data-subject and consumer rights (access, deletion, opt-out) for customers subject to these regimes. 
+Certifications We do not currently hold third-party security certifications such as SOC 2 or ISO 27001. The controls described on this page are what run today; we will update this page if our certification posture changes. 
+
+Reporting a vulnerability 
+Email [email protected] to report a security issue. We acknowledge reports within two business days and will keep you updated through remediation. 
+
+See it answer on your own site 
+Paste your website and watch the agent read it. Around ten minutes from your URL to an agent answering live. 
+Start free See a demo 
+
+It guides. It sells. It never sleeps. 
+One AI agent for your whole front line. It answers from your own pages, guides visitors to a confident yes on your website, WhatsApp, Messenger and LINE, and hands over to your team the moment a human is needed. 
+Get the app 
+Download on the App Store Get it on Google Play 
+
+[email protected] 
+Product 
+Features 
+Pricing 
+Docs 
+Status 
+Company 
+About 
+Contact 
+Trust 
+Legal 
+Privacy 
+Terms 
+Data processing 
+Refunds 
+Cookies 
+Cookie preferences 
+Sub-processors 
+Acceptable use 
+Account 
+Sign in 
+Start free 
+
+Singapore 
+Wondertabs Pte. Ltd. 
+10 Anson Road #33-03 International Plaza Singapore 079903 +65 6797 8277 
+Australia 
+Wondertabs Pty. Ltd. 
+Suite 108 / Level 1 55 Collins Street Melbourne, VIC 3000 +61 403 993 524 
+Indonesia 
+PT. Wondertabs Studio 
+Nicco Res. Block B3A No.2 2944, Batam Indonesia +62 821 7157 9990 
+Thailand 
+Wondertabs (Thailand) Co., Ltd. 
+Level 11, Mercury Tower 540 Ploenchit Road, Lumpini Pathumwan, Bangkok +66 81 803 6123 
+
+© 2026 ReplyArc, built by Wondertabs Pte. Ltd. 
+
+AI agents can be too much, which is why real humans in 4 countries are still here. 
+

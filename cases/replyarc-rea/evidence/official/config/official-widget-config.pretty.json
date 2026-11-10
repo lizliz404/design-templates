@@ -1,0 +1,213 @@
+{
+    "botId": "4d75979a-ff97-4ed5-99a7-09055876bb91",
+    "welcomeMessage": "Hi! I'm the ReplyArc assistant. Ask me anything about putting an AI agent on your business website.",
+    "showsAttribution": true,
+    "accentColor": "#df2a2a",
+    "title": "ReplyArc",
+    "avatarUrl": null,
+    "presenceLabel": "Online \u00b7 replies in ~1 min",
+    "position": "bottom-right",
+    "quickActions": [],
+    "suggestedQuestions": [
+        "What is ReplyArc?",
+        "How much does it cost?"
+    ],
+    "booking": null,
+    "channels": {
+        "whatsapp": {
+            "enabled": true,
+            "url": "https://line.me/R/ti/p/@replyarc",
+            "icon": null,
+            "qrImage": null
+        },
+        "messenger": {
+            "enabled": true,
+            "url": "https://line.me/R/ti/p/@replyarc",
+            "icon": null,
+            "qrImage": null
+        },
+        "facebook": {
+            "enabled": false,
+            "url": null,
+            "icon": null,
+            "qrImage": null
+        },
+        "line": {
+            "enabled": true,
+            "url": "https://line.me/R/ti/p/@replyarc",
+            "icon": null,
+            "qrImage": null
+        },
+        "wechat": {
+            "enabled": true,
+            "url": "https://line.me/R/ti/p/@replyarc",
+            "icon": null,
+            "qrImage": null
+        },
+        "instagram": {
+            "enabled": true,
+            "url": "https://line.me/R/ti/p/@replyarc",
+            "icon": null,
+            "qrImage": null
+        },
+        "x": {
+            "enabled": true,
+            "url": "https://line.me/R/ti/p/@replyarc",
+            "icon": null,
+            "qrImage": null
+        },
+        "tiktok": {
+            "enabled": true,
+            "url": "https://line.me/R/ti/p/@replyarc",
+            "icon": null,
+            "qrImage": null
+        },
+        "linkedin": {
+            "enabled": true,
+            "url": "https://line.me/R/ti/p/@replyarc",
+            "icon": null,
+            "qrImage": null
+        },
+        "youtube": {
+            "enabled": false,
+            "url": null,
+            "icon": null,
+            "qrImage": null
+        },
+        "phone": {
+            "enabled": true,
+            "url": "https://line.me/R/ti/p/@replyarc",
+            "icon": null,
+            "qrImage": null
+        },
+        "booking": {
+            "enabled": true,
+            "url": "https://line.me/R/ti/p/@replyarc",
+            "icon": null,
+            "qrImage": null
+        }
+    },
+    "customChannels": [],
+    "channelsShowcase": true,
+    "helpArticles": [],
+    "helpSearch": false,
+    "theme": "light",
+    "tabs": {
+        "home": false,
+        "news": false
+    },
+    "home": {
+        "greeting": "How can we help?",
+        "subgreeting": "Hello there.",
+        "teamAvatars": true,
+        "featured": {
+            "title": "Per-bot themes + appearance studio",
+            "body": "Pick classic, compact, or bento \u2014 and match the widget to your brand in a click.",
+            "eyebrow": "NEW",
+            "tab": "news"
+        }
+    },
+    "news": [
+        {
+            "title": "Per-bot themes + appearance studio",
+            "body": "Classic, compact, or bento \u2014 match the widget to your brand in a click.",
+            "date": "May 28 \u00b7 Product"
+        },
+        {
+            "title": "Try-it-with-your-site demo",
+            "body": "Drop in your URL and chat with a bot trained on your own pages, instantly.",
+            "date": "May 20 \u00b7 Launch"
+        },
+        {
+            "title": "Omnichannel: WhatsApp, Messenger, LINE",
+            "body": "One inbox for every channel your customers already use.",
+            "date": "May 12 \u00b7 Update"
+        }
+    ],
+    "bubbleSize": "small",
+    "greetingBubble": true,
+    "greetingBubbleText": "Hi there! Ask me anything about ReplyArc!",
+    "greetingBubblePlacement": "side",
+    "greetingMessages": [
+        "Hi there! Ask me anything about ReplyArc!",
+        "Curious about pricing, setup, or features?",
+        "This is ReplyArc, live. Try a question."
+    ],
+    "greetingRotate": true,
+    "launcherIcon": "emblem",
+    "launcherStyle": "bar",
+    "maxUploadBytes": 3145728,
+    "socialLogin": [],
+    "preChatCompany": false,
+    "preChatSkipKnown": true,
+    "preChatFields": [],
+    "flow": {
+        "enabled": true,
+        "title": "Try asking",
+        "cards": [
+            {
+                "id": "23316720-57f9-4493-b6a3-6e7d7fa52473",
+                "emoji": "\ud83d\udcac",
+                "title": "What is ReplyArc?",
+                "action": {
+                    "type": "ask",
+                    "prompt": "What is ReplyArc?"
+                }
+            },
+            {
+                "id": "321313a8-4bab-4855-aa02-bd71ad3ff0cd",
+                "emoji": "\ud83d\udcb2",
+                "title": "How much does it cost?",
+                "action": {
+                    "type": "ask",
+                    "prompt": "How much does it cost?"
+                }
+            },
+            {
+                "id": "2433b0d9-c1b1-4ee1-b944-c1eff9d8b3eb",
+                "emoji": "\u2753\ufe0f",
+                "title": "I have a question",
+                "action": {
+                    "type": "form",
+                    "formId": "fec30866-bfe1-4607-825b-9ae09c87fa80"
+                }
+            }
+        ],
+        "steps": [],
+        "forms": [
+            {
+                "id": "fec30866-bfe1-4607-825b-9ae09c87fa80",
+                "name": "Contact Form",
+                "fields": [
+                    {
+                        "id": "7ec6e462-f60c-4c06-889c-b8c4aac9ca4d",
+                        "label": "Name",
+                        "type": "text",
+                        "required": false
+                    },
+                    {
+                        "id": "afed05fa-b385-4b5e-9704-48c33aab9a88",
+                        "label": "Email",
+                        "type": "email",
+                        "required": true
+                    },
+                    {
+                        "id": "4584fc0e-52cf-4d0a-a589-7cce72681e1a",
+                        "label": "Messages",
+                        "type": "textarea",
+                        "required": true
+                    }
+                ],
+                "submitLabel": "Submit",
+                "notifyEmail": true,
+                "whatsappContinue": false
+            }
+        ]
+    },
+    "vitals": true,
+    "tracking": {
+        "depth": true
+    },
+    "awareness": true,
+    "selectionAsk": {}
+}

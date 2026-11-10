@@ -1,0 +1,28 @@
+# ReplyArc
+
+> Turn every website visitor into a paying customer. ReplyArc is an AI support agent that trains on your own website, answers visitors instantly in their language, captures leads, and hands off to a human when it matters.
+
+ReplyArc reads your site and goes live in minutes, with no developer, agency, or IT ticket. It assists your team rather than replacing it, and works for businesses of every size and industry.
+
+## Product
+- [Home](https://replyarc.ai/): What ReplyArc is and who it is for.
+- [Features](https://replyarc.ai/features): How the AI support agent answers, captures leads, and hands off to a human.
+- [How it works](https://replyarc.ai/how-it-works): Point it at your website, it reads your pages, and goes live in minutes. No developer, agency, or IT ticket.
+- [Pricing](https://replyarc.ai/pricing): Conversation-based plans with a 30-day money-back guarantee.
+
+## Documentation
+- [Docs](https://replyarc.ai/docs): Product documentation.
+- [Getting started](https://replyarc.ai/docs/getting-started): Create an agent, add your website, and embed the widget.
+- [Integrations](https://replyarc.ai/docs/integrations): Connecting ReplyArc to your site and tools.
+- [API](https://replyarc.ai/docs/api): The ReplyArc API reference.
+
+## Company
+- [About](https://replyarc.ai/about): The team behind ReplyArc, built by the creative-tech agency Wondertabs™.
+- [Trust](https://replyarc.ai/trust): Security, privacy, and data handling.
+- [Contact](https://replyarc.ai/contact): Get in touch with the ReplyArc team.
+
+## Legal
+- [Privacy Policy](https://replyarc.ai/legal/privacy): How customer and visitor data is handled.
+- [Terms of Service](https://replyarc.ai/legal/terms): The terms governing use of ReplyArc.
+- [Data Processing Addendum](https://replyarc.ai/legal/dpa): DPA and sub-processors for business customers.
+- [Sub-processors](https://replyarc.ai/legal/subprocessors): Third parties that process data on our behalf.

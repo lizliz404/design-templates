@@ -1,0 +1,109 @@
+{
+    "botId": "87bd913b-22bc-42ce-9cf9-ce846e247683",
+    "welcomeMessage": "Hello. How may I assist you?",
+    "showsAttribution": true,
+    "accentColor": null,
+    "title": "ReplyArc",
+    "avatarUrl": null,
+    "presenceLabel": null,
+    "position": "bottom-right",
+    "quickActions": [],
+    "suggestedQuestions": [],
+    "booking": null,
+    "channels": {
+        "whatsapp": {
+            "enabled": true,
+            "url": null,
+            "icon": null
+        },
+        "messenger": {
+            "enabled": true,
+            "url": null,
+            "icon": null
+        },
+        "line": {
+            "enabled": true,
+            "url": null,
+            "icon": null
+        },
+        "wechat": {
+            "enabled": true,
+            "url": null,
+            "icon": null
+        }
+    },
+    "customChannels": [],
+    "channelsShowcase": false,
+    "helpArticles": [
+        {
+            "id": "543bb49e-6b79-46c5-a966-34e9e6816c85",
+            "title": "What is ReplyArc?",
+            "url": "https://replyarc.ai",
+            "description": "The two-minute overview",
+            "category": "Getting started",
+            "body": "ReplyArc is an AI agent for your website that answers visitor questions using your own content, in your brand voice.\nIt captures leads, books appointments, and hands over to a human the moment someone asks.\nYou can try it right here: this chat runs on ReplyArc."
+        },
+        {
+            "id": "54f931c7-f021-4c3d-b846-ed22524e141f",
+            "title": "How do I add the widget to my site?",
+            "description": "One line, no code changes",
+            "category": "Getting started",
+            "body": "Copy the one-line snippet from your dashboard and paste it before the closing body tag on your site. That is it, no rebuild needed.\nThe widget picks up your brand colours automatically, and everything is adjustable in the Widget studio."
+        },
+        {
+            "id": "27f38e40-16bf-4522-a772-fb94ef716bc4",
+            "title": "Which languages does the widget speak?",
+            "category": "Getting started",
+            "body": "The visitor chat ships in English, Chinese, Malay, Tamil and Thai, and follows each visitor\u2019s browser language automatically.\nThe AI itself replies in whatever language the visitor writes in."
+        },
+        {
+            "id": "dd50ef32-8243-4e13-ba79-773346cabc6b",
+            "title": "How does conversation pricing work?",
+            "url": "https://replyarc.ai/pricing",
+            "description": "Only real conversations count",
+            "category": "Pricing & billing",
+            "body": "You pay per genuine conversation: a visitor question your agent actually answers. Casual opens and greetings do not count.\nEvery plan includes a monthly allowance; the pricing page has the current plans."
+        },
+        {
+            "id": "0aede7ec-f2a5-45f0-8561-39425b8cf6d8",
+            "title": "What happens to my visitors\u2019 data?",
+            "url": "https://replyarc.ai/legal/privacy",
+            "category": "Privacy & data",
+            "body": "Conversations are stored so you can read and continue them from your inbox. We strip tracking parameters from page URLs and never sell visitor data.\nThe privacy policy has the full details."
+        },
+        {
+            "id": "401adc19-d93f-4b8e-b417-fb38accfa399",
+            "title": "Privacy policy",
+            "url": "https://replyarc.ai/legal/privacy",
+            "description": "The full legal text",
+            "category": "Privacy & data"
+        }
+    ],
+    "helpSearch": true,
+    "helpContact": true,
+    "theme": "auto",
+    "tabs": {
+        "home": false,
+        "news": true
+    },
+    "news": [],
+    "greetingBubble": true,
+    "greetingBubblePlacement": "above",
+    "launcherIcon": "chat",
+    "maxUploadBytes": 3145728,
+    "socialLogin": [],
+    "preChatCompany": false,
+    "preChatSkipKnown": true,
+    "preChatFields": [],
+    "autopilot": {
+        "delaySeconds": 15,
+        "pages": [],
+        "site": {
+            "intent": "help"
+        }
+    },
+    "vitals": true,
+    "tracking": {
+        "depth": true
+    }
+}

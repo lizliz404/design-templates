@@ -1,0 +1,73 @@
+API reference · ReplyArc Product 
+How it works Pricing Company Contact Us Log in See a demo 
+
+API reference 
+The public, versioned /v1 REST API. The full machine-readable contract is the OpenAPI 3.1 spec; this page is the orientation. 
+All docs 
+
+Base URL & versioning 
+All endpoints live under /v1 on the API host (e.g. https://api.replyarc.ai/v1 ). The version is in the path, so a future /v2 can ship without breaking you. 
+OpenAPI spec: GET /v1/openapi.json (OpenAPI 3.1). 
+Interactive docs: GET /v1/docs (Swagger UI). 
+Authentication 
+Key-authenticated endpoints take a tenant API key as a bearer token in the Authorization header. Create and rotate keys in the dashboard under Settings → API keys . Keys are workspace-scoped; never expose one in client-side code. The widget endpoints below authenticate differently: they are validated against your agent's Allowed websites origin allowlist, not an API key. 
+curl https://api.replyarc.ai/v1/me \
+ -H "Authorization: Bearer $REPLYARC_API_KEY" Endpoints 
+GET /v1/me 
+Returns the authenticated tenant, a quick way to verify a key works. 
+GET /v1/contacts · /v1/tickets · /v1/conversations 
+Read your workspace's CRM contacts, support tickets, and conversations. Each list pages with an opaque cursor parameter ( limit 1 to 100, default 20) and returns { data, next_cursor } ; each resource also has a /:id detail. Ticket details include public replies only, never internal notes; conversation details carry the transcript's roles and text, never retrieval metadata or attachments. Full request and response shapes live in the /v1/openapi.json spec and the Swagger UI at /v1/docs . 
+POST /v1/widget/chat 
+Send a visitor message to an agent and stream the reply as server-sent events. Body includes the bot id, a visitor id, the message history, and an optional conversation id to continue a thread. Origin-allowlisted (see Authentication). 
+POST /v1/widget/escalate 
+Hand a conversation to a human agent (queues it in the inbox + fires notifications). Origin-allowlisted. 
+GET /v1/webhooks/events 
+Lists every webhook event type you can subscribe to, with the delivery envelope, a sample payload per event, and the HMAC-SHA256 signature scheme. Conversations ( conversation.created , conversation.escalated , conversation.resolved , message.created ), CRM ( contact.created , deal.created , deal.stage_changed , deal.won , deal.lost ), ticketing ( ticket.created , ticket.updated , ticket.replied , ticket.sla_breached ) and widget forms ( form.submitted ). Configure delivery endpoints under Settings → Webhooks, or paste a Zapier, Make or n8n webhook URL on the Integrations screen to receive every event there. 
+Errors 
+Errors return a JSON body with an error message and the appropriate HTTP status ( 401 for a missing/invalid key, 400 for a bad request, 429 when rate-limited). Responses include rate-limit headers. 
+
+It guides. It sells. It never sleeps. 
+One AI agent for your whole front line. It answers from your own pages, guides visitors to a confident yes on your website, WhatsApp, Messenger and LINE, and hands over to your team the moment a human is needed. 
+Get the app 
+Download on the App Store Get it on Google Play 
+
+[email protected] 
+Product 
+Features 
+Pricing 
+Docs 
+Status 
+Company 
+About 
+Contact 
+Trust 
+Legal 
+Privacy 
+Terms 
+Data processing 
+Refunds 
+Cookies 
+Cookie preferences 
+Sub-processors 
+Acceptable use 
+Account 
+Sign in 
+Start free 
+
+Singapore 
+Wondertabs Pte. Ltd. 
+10 Anson Road #33-03 International Plaza Singapore 079903 +65 6797 8277 
+Australia 
+Wondertabs Pty. Ltd. 
+Suite 108 / Level 1 55 Collins Street Melbourne, VIC 3000 +61 403 993 524 
+Indonesia 
+PT. Wondertabs Studio 
+Nicco Res. Block B3A No.2 2944, Batam Indonesia +62 821 7157 9990 
+Thailand 
+Wondertabs (Thailand) Co., Ltd. 
+Level 11, Mercury Tower 540 Ploenchit Road, Lumpini Pathumwan, Bangkok +66 81 803 6123 
+
+© 2026 ReplyArc, built by Wondertabs Pte. Ltd. 
+
+AI agents can be too much, which is why real humans in 4 countries are still here. 
+
