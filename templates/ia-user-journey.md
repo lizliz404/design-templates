@@ -4,8 +4,7 @@ description: >-
   Information architecture and user-journey contract for internal tools, B2B
   consoles, and public sites plus their staff admin. Use when defining 信息架构, IA,
   用户旅程, default home, nav, wayfinding, labeling, settings scope, or cutting
-  认知负担. Filled examples: qiancheng-yusuan docs/IA.md; chuhai-cloud docs/prd/v3.
-  Not the only shapes.
+  认知负担.
 ---
 
 # IA · 用户旅程（pack 合同）
@@ -18,15 +17,8 @@ description: >-
 | **Why** | 导航是 UI 镀铬，不是骨架（NN/g：IA ≠ navigation）。从「这一页看起来乱」补丁页面，IA 会漂。认知负担来自**同一对象多个门**、**用库表当导航**、**首页塞满数据却不回答决策**，不是来自少几个按钮。 |
 | **Who** | 内部工具 / OA / B2B 控制台；公开营销或企业站，以及同一产品的员工后台。多租户时加租户层级。写给人填，也给 agent 扫。 |
 | **How to use** | ① 读本文 → ② 按 §8 骨架填 `docs/IA.md` → ③ 冻 `docs/prd/vN-YYYY-MM-DD.md` → ④ 非正式 tree test → ⑤ 再改 `nav` / 页面。 |
-| **Not this** | 不是 DESIGN.md；不是空态文案大全；不是「保持简洁」口号；不是把出海云菜单抄到别的产品；不是 sitemap 当 PRD。 |
+| **Not this** | 不是 DESIGN.md；不是空态文案大全；不是「保持简洁」口号；不是把某一产品的菜单抄到别的产品；不是 sitemap 当 PRD。 |
 | **When to open** | 新工具或站点定 IA；公开站和后台要一起想分类；默认首页吵；侧栏像模块清单或每来一种内容就加一条顶级；标签看起来要重新学；想加菜单/Tab；用户问「今天先干什么」；设置页成垃圾场；首登激活和主链对不上。 |
-
-Filled example（填满的一份，不是唯一形状）：
-
-- `D:\dev\chuhai-cloud\docs\prd\v3-2026-08-13.md`（冻版）
-- `D:\dev\chuhai-cloud\docs\PRD.md`（当时真源）
-- `D:\dev\chuhai-cloud\docs\prd\README.md`（怎么冻 / diff / rollback）
-- 导航投影：`D:\dev\chuhai-cloud\web\src\app\nav.ts`
 
 形状可变：有的产品是侧栏主链，有的是顶栏 ≤5；有的流水线是「原料→出片→铺量→收拢」，有的是「填报→缺口→定稿」。**合同是闸和顺序，不是那一组名词。**
 
