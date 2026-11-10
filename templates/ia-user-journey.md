@@ -244,6 +244,26 @@ git diff -- docs/prd/v2-YYYY-MM-DD.md docs/prd/v3-YYYY-MM-DD.md
 
 ---
 
+<a id="detail-sibling-exit"></a>
+
+### 小 idea：详情页的同级出口（2026-11-10）
+
+**What / When**：读者看完一个产品、服务或作品，仍可能在比较同一范围内的选项。存在真实同级项时，在正文结束、最终 CTA 之前给出「More in …」上下文浏览，不强迫退回目录。
+
+**How**：排除当前项；复用 IA / 内容记录的同级关系、图片和真链接。大图 + 完整、默认可见的名称；标题比至多一句安静描述更大、更深。不重复目录长段落，不把必要信息藏在 hover。已有 Carousel / Embla 就直接组合：SSR 链接、触控、可见的前后按钮、正常 Tab 与方向键、具名 region / slide、适当状态播报、减弱运动；不自动播放、不手写拖拽/滚轮引擎。少量条目可静态并排，只有一项则不用滑动。
+
+**Avoid**：不是每页都放 carousel；同级替代项与配套附件不要混为一组。库解决滑动机械，不会自动决定相关性、顺序、归属或位置。B2B 无价格/评分就不编造。图片须使用许可与归属已确认的现有资产。
+
+**CFE 映射**：A/B 产品详情已有文字型 More in 区块，改为图 + 名称的既有 shadcn/Embla Gallery，仍在最终询价 CTA 前；Services 详情给另外两项真实服务。Category C 是集团五金外链，只显示明确归属的集团网站卡，不捏造 CFE Shanghai 内页。本站 IA 真源仍是 `cfe-shanghai-website/IA.md`，不是模板里的示例目录。
+
+**依据（2026-11-10 在线查阅）**：
+- [Baymard：产品替代项](https://baymard.com/research-articles/product-page-suggestions)：在相近详情间继续查找，而非退回列表。零售研究为场景参考，不是所有 B2B 页都用 carousel 的证据。
+- [Baymard：推荐项信息](https://baymard.com/research-articles/product-page-suggestions-information)：足够大的图片与完整、默认可见名称，包括规格驱动产品；不照搬其零售价格/评分要求。
+- [shadcn Carousel](https://ui.shadcn.com/docs/components/aria/carousel)：Embla、响应式 slide 尺寸、控件、API 与 select 事件；只解决组件机制。
+- [WAI APG Carousel](https://www.w3.org/WAI/ARIA/apg/patterns/carousel/)：具名容器/slide、按钮、键盘与状态；无自动轮播则无需增加播放控制。
+
+---
+
 ## 6. 调度页与披露
 
 工作台 / 默认首页：
