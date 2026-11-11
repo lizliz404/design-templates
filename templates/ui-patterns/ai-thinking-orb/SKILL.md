@@ -9,6 +9,8 @@ description: >-
   design-templates — do not install a second orb kit or re-fetch upstream.
 ---
 
+> **2026-11-11 降格**：本目录不再是独立 skill 文档——thinking orb 选型结论已收进 [`../../agentic-ui-primitives.md` §9](../../agentic-ui-primitives.md)；本目录保留为**资产仓**（`recipes/` 移植 + `upstream/` vendored 源码），摆放硬约束（单视图一颗、aria-hidden、reduced-motion、静态兜底、DPR≤2）继续有效。新任务先读 §9 选型表再来本目录取件。
+
 # AI thinking orb
 
 家在 `templates/ui-patterns/ai-thinking-orb/`。**两套上游源码都已收入本包**，正常情况下不需要联网取货。

@@ -189,3 +189,31 @@ Beautiful UI 的 `StreamingText` / `streaming-text.html` 是**演示态**（按�
 1. **下一步装机顺序**：`streamdown`（+ 中文则 `@streamdown/cjk`）→ `use-stick-to-bottom` → 需要时再单装 `remend`。
 2. **不动主路径分层**：仍 §4 L0 Beautiful UI 状态卡 + 本条 L1 streaming 专用件；不因「流得好看」换聊天框架。
 3. **Beautiful UI `StreamingText` 定位**：视觉参考（blur / 源 chip / follow-ups），生产正文走 streamdown。
+
+## 9 · 2026-11-11 增补：AI thinking orb 归并本档（原独立 ui-patterns/ai-thinking-orb 降格为资产仓）
+
+**裁决（Liz 2026-11-11）**：thinking/status orb 是 agent 状态原语的一种，不配独立文档；原 `ui-patterns/ai-thinking-orb/` 保留为**资产仓**（recipe + vendored upstream），选型结论收本节。
+
+### 性质与硬约束（继承原 SKILL.md，仍生效）
+
+- 每视图最多一颗 live orb；`aria-hidden` + `pointer-events:none`；`prefers-reduced-motion` 冻结；WebGL/Canvas 失败 → 静态 radial 兜底；DPR≤2；不与 Paper live shader/第二 orb/ThreeUI hero 同屏。
+- 用途限定：agent 工作中/身份 affordance（合法）；禁当装饰背景、禁成排摆、禁登录页/密集后台滥用。
+
+### 候选盘点（2026-11-11 实测）
+
+| 候选 | 许可 | 体积 | 形态 | 状态 |
+|---|---|---|---|---|
+| `@yogesharc/thinking-orbs`（thinkingorbs.com） | MIT | 3.8KB gz / 67KB unpacked | Canvas 2D，state+variant+shape/render 组合，React/JS/SwiftUI | npm 0.1.2，2026-10-15 发布 |
+| `thinking-orbs`（libraries.dev，Jakub Antalik + Alexandr Brinza） | MIT | 130KB unpacked | 零依赖 React 18+，9 个手调 state（working/searching/solving/…/breathing/shaping），64px/20px 分档调优 | npm 0.3.2，2026-09-22 |
+| rare-ui FluidOrb → `ai-thinking-orb/recipes/agent-orb-plain-react.tsx` | 上游无 repo LICENSE（参考拷贝保留署名） | 依赖零 | WebGL1 流体 shader 移植，token 取色 | **已在 cfe-app/shelf-radar 落地——Liz 11-11 现场评价"边缘粗糙、像素感、丑"，待 bake-off 复核** |
+| LerSent Liquid Orb（WebGPU） | MIT | shader 已 vendored | 旗舰 hero 级 | 仅 hero 场合，不适合 chat 内小球 |
+
+### 选型原则（Liz 11-11）
+
+成本最低 = 性能最优先；小尺寸（20–24px）下边缘必须圆润——**为小尺寸手调的状态球 > 通用流体 shader**。WebGL 流体在 avatar 尺寸下栅格感明显，不再默认。
+
+### bake-off 结论（2026-11-11，证据 `ui-patterns/ai-thinking-orb/bakeoff-2026-11-11/`）
+
+**胜者 `@yogesharc/thinking-orbs` v0.1.2**（MIT，SVG 粒子点、currentColor 取色、+6.2KB gz）：20px 全 state 连贯实心 disc；runner-up `thinking-orbs`（libraries.dev）64px 更好看但 20px 稀疏有洞且无 idle 态。rare-ui FluidOrb 移植版（`recipes/agent-orb-plain-react.tsx`）**被 Liz 现场否决**——20px 边缘毛糙像素感；降级为 hero/大尺寸场合备选。LerSent Liquid Orb 仍仅旗舰 hero。
+
+**落地参数（Liz 11-11 现场校准）**：尺寸 ~28–32px（20px 太小）；`speed` ≤0.6——"动两下的小玩意"，低注意力成本低侵入；只用默认 variant 的沉静 state（reasoning/working），装饰 variant（gyro/twins/spiral 类）判花里胡哨不用；取色走 `currentColor`/CSS var 绑各产品主色 token（CFE `--marine` #2f5d72、shelf-radar `--accent` #1647e8）。
