@@ -1,0 +1,31 @@
+{
+ "browser": {
+  "mode": "connect",
+  "cdp_endpoint": "http://127.0.0.1:9444",
+  "target_id": "8494FE3F482A96088C8E3F3526F4120C"
+ },
+ "start_url": {
+  "url": "https://grok.com/"
+ },
+ "capture": {
+  "at_end": [
+   "url",
+   "accessibility"
+  ]
+ },
+ "actions": [
+  {
+   "step_id": "settle",
+   "action": "wait_for_timeout",
+   "duration_ms": 1500
+  }
+ ],
+ "environment": {
+  "viewport": {
+   "width": 1440,
+   "height": 913,
+   "device_scale_factor": 1
+  },
+  "service_workers": "allow"
+ }
+}

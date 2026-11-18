@@ -1,0 +1,238 @@
+{
+ "browser": {
+  "mode": "connect",
+  "cdp_endpoint": "http://127.0.0.1:9444",
+  "target_id": "8494FE3F482A96088C8E3F3526F4120C"
+ },
+ "start_url": {
+  "url": "https://grok.com/"
+ },
+ "environment": {
+  "viewport": {
+   "width": 1440,
+   "height": 913,
+   "device_scale_factor": 1
+  },
+  "service_workers": "allow"
+ },
+ "capture": {
+  "after_each_step": [
+   "screenshot",
+   "accessibility",
+   "url"
+  ],
+  "at_end": [
+   "screenshot",
+   "accessibility",
+   "url",
+   "history",
+   "storage"
+  ],
+  "events": [
+   "console",
+   "page-errors",
+   "network",
+   "websockets",
+   "frames",
+   "workers",
+   "popups"
+  ],
+  "network": {
+   "request_body": true,
+   "response_body": true,
+   "header_values": true
+  },
+  "limits": {
+   "max_events": 20000,
+   "max_event_allocation_bytes": 33554432,
+   "max_total_event_allocation_bytes": 134217728,
+   "max_network_transactions": 2048,
+   "max_network_body_bytes": 524288,
+   "max_network_body_allocation_bytes": 33554432,
+   "max_network_header_allocation_bytes": 8388608,
+   "max_network_metadata_allocation_bytes": 8388608
+  }
+ },
+ "actions": [
+  {
+   "step_id": "settle",
+   "action": "wait_for_timeout",
+   "duration_ms": 2200
+  },
+  {
+   "step_id": "connect-apps",
+   "action": "click",
+   "locator": {
+    "kind": "role",
+    "role": "button",
+    "name": "Connect apps"
+   },
+   "timeout_ms": 15000
+  },
+  {
+   "step_id": "modal-open",
+   "action": "wait_for_timeout",
+   "duration_ms": 1500
+  },
+  {
+   "step_id": "nav-account",
+   "action": "click",
+   "locator": {
+    "kind": "role",
+    "role": "button",
+    "name": "Account"
+   },
+   "timeout_ms": 15000
+  },
+  {
+   "step_id": "account-pane",
+   "action": "wait_for_timeout",
+   "duration_ms": 1200
+  },
+  {
+   "step_id": "nav-appearance",
+   "action": "click",
+   "locator": {
+    "kind": "role",
+    "role": "button",
+    "name": "Appearance"
+   },
+   "timeout_ms": 15000
+  },
+  {
+   "step_id": "appearance-pane",
+   "action": "wait_for_timeout",
+   "duration_ms": 1200
+  },
+  {
+   "step_id": "nav-behavior",
+   "action": "click",
+   "locator": {
+    "kind": "role",
+    "role": "button",
+    "name": "Behavior"
+   },
+   "timeout_ms": 15000
+  },
+  {
+   "step_id": "behavior-pane",
+   "action": "wait_for_timeout",
+   "duration_ms": 1200
+  },
+  {
+   "step_id": "nav-customize",
+   "action": "click",
+   "locator": {
+    "kind": "role",
+    "role": "button",
+    "name": "Customize"
+   },
+   "timeout_ms": 15000
+  },
+  {
+   "step_id": "customize-pane",
+   "action": "wait_for_timeout",
+   "duration_ms": 1200
+  },
+  {
+   "step_id": "nav-skills",
+   "action": "click",
+   "locator": {
+    "kind": "role",
+    "role": "button",
+    "name": "Skills"
+   },
+   "timeout_ms": 15000
+  },
+  {
+   "step_id": "skills-pane",
+   "action": "wait_for_timeout",
+   "duration_ms": 1200
+  },
+  {
+   "step_id": "nav-automations",
+   "action": "click",
+   "locator": {
+    "kind": "role",
+    "role": "button",
+    "name": "Automations"
+   },
+   "timeout_ms": 15000
+  },
+  {
+   "step_id": "automations-pane",
+   "action": "wait_for_timeout",
+   "duration_ms": 1200
+  },
+  {
+   "step_id": "nav-bots",
+   "action": "click",
+   "locator": {
+    "kind": "role",
+    "role": "button",
+    "name": "Bots"
+   },
+   "timeout_ms": 15000
+  },
+  {
+   "step_id": "bots-pane",
+   "action": "wait_for_timeout",
+   "duration_ms": 1200
+  },
+  {
+   "step_id": "nav-data",
+   "action": "click",
+   "locator": {
+    "kind": "role",
+    "role": "button",
+    "name": "Data Controls"
+   },
+   "timeout_ms": 15000
+  },
+  {
+   "step_id": "data-pane",
+   "action": "wait_for_timeout",
+   "duration_ms": 1200
+  },
+  {
+   "step_id": "nav-billing",
+   "action": "click",
+   "locator": {
+    "kind": "role",
+    "role": "button",
+    "name": "Billing"
+   },
+   "timeout_ms": 15000
+  },
+  {
+   "step_id": "billing-pane",
+   "action": "wait_for_timeout",
+   "duration_ms": 1200
+  },
+  {
+   "step_id": "nav-usage",
+   "action": "click",
+   "locator": {
+    "kind": "role",
+    "role": "button",
+    "name": "Usage"
+   },
+   "timeout_ms": 15000
+  },
+  {
+   "step_id": "usage-pane",
+   "action": "wait_for_timeout",
+   "duration_ms": 1200
+  },
+  {
+   "step_id": "esc",
+   "action": "press",
+   "locator": {
+    "kind": "css",
+    "selector": "body"
+   },
+   "key": "Escape",
+   "timeout_ms": 10000
+  }
+ ]
+}

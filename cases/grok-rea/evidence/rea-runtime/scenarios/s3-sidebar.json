@@ -1,0 +1,153 @@
+{
+ "browser": {
+  "mode": "connect",
+  "cdp_endpoint": "http://127.0.0.1:9444",
+  "target_id": "8494FE3F482A96088C8E3F3526F4120C"
+ },
+ "start_url": {
+  "url": "https://grok.com/"
+ },
+ "environment": {
+  "viewport": {
+   "width": 1440,
+   "height": 913,
+   "device_scale_factor": 1
+  },
+  "service_workers": "allow"
+ },
+ "capture": {
+  "after_each_step": [
+   "screenshot",
+   "accessibility",
+   "url"
+  ],
+  "at_end": [
+   "screenshot",
+   "accessibility",
+   "url",
+   "history",
+   "storage"
+  ],
+  "events": [
+   "console",
+   "page-errors",
+   "network",
+   "websockets",
+   "frames",
+   "workers",
+   "popups"
+  ],
+  "network": {
+   "request_body": true,
+   "response_body": true,
+   "header_values": true
+  },
+  "limits": {
+   "max_events": 20000,
+   "max_event_allocation_bytes": 33554432,
+   "max_total_event_allocation_bytes": 134217728,
+   "max_network_transactions": 2048,
+   "max_network_body_bytes": 524288,
+   "max_network_body_allocation_bytes": 33554432,
+   "max_network_header_allocation_bytes": 8388608,
+   "max_network_metadata_allocation_bytes": 8388608
+  }
+ },
+ "actions": [
+  {
+   "step_id": "settle",
+   "action": "wait_for_timeout",
+   "duration_ms": 2200
+  },
+  {
+   "step_id": "chats-more",
+   "action": "click",
+   "locator": {
+    "kind": "role",
+    "role": "button",
+    "name": "Show more"
+   },
+   "timeout_ms": 15000
+  },
+  {
+   "step_id": "chats-expanded",
+   "action": "wait_for_timeout",
+   "duration_ms": 1200
+  },
+  {
+   "step_id": "group-by",
+   "action": "click",
+   "locator": {
+    "kind": "role",
+    "role": "button",
+    "name": "Group by section"
+   },
+   "timeout_ms": 15000
+  },
+  {
+   "step_id": "group-menu",
+   "action": "wait_for_timeout",
+   "duration_ms": 800
+  },
+  {
+   "step_id": "esc-g",
+   "action": "press",
+   "locator": {
+    "kind": "css",
+    "selector": "body"
+   },
+   "key": "Escape",
+   "timeout_ms": 10000
+  },
+  {
+   "step_id": "chats-options",
+   "action": "click",
+   "locator": {
+    "kind": "role",
+    "role": "button",
+    "name": "Chats options"
+   },
+   "timeout_ms": 15000
+  },
+  {
+   "step_id": "chats-options-open",
+   "action": "wait_for_timeout",
+   "duration_ms": 900
+  },
+  {
+   "step_id": "esc-c",
+   "action": "press",
+   "locator": {
+    "kind": "css",
+    "selector": "body"
+   },
+   "key": "Escape",
+   "timeout_ms": 10000
+  },
+  {
+   "step_id": "projects-options",
+   "action": "click",
+   "locator": {
+    "kind": "role",
+    "role": "button",
+    "name": "Projects options"
+   },
+   "timeout_ms": 15000
+  },
+  {
+   "step_id": "projects-options-open",
+   "action": "wait_for_timeout",
+   "duration_ms": 900
+  },
+  {
+   "step_id": "esc-p",
+   "action": "press",
+   "locator": {
+    "kind": "css",
+    "selector": "body"
+   },
+   "key": "Escape",
+   "timeout_ms": 10000
+  }
+ ]
+}

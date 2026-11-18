@@ -1,0 +1,118 @@
+{
+ "browser": {
+  "mode": "connect",
+  "cdp_endpoint": "http://127.0.0.1:9444",
+  "target_id": "8494FE3F482A96088C8E3F3526F4120C"
+ },
+ "start_url": {
+  "url": "https://grok.com/"
+ },
+ "environment": {
+  "viewport": {
+   "width": 1440,
+   "height": 913,
+   "device_scale_factor": 1
+  },
+  "service_workers": "allow"
+ },
+ "capture": {
+  "after_each_step": [
+   "screenshot",
+   "accessibility",
+   "url"
+  ],
+  "at_end": [
+   "screenshot",
+   "accessibility",
+   "url",
+   "history",
+   "storage"
+  ],
+  "events": [
+   "console",
+   "page-errors",
+   "network",
+   "websockets",
+   "frames",
+   "workers",
+   "popups"
+  ],
+  "network": {
+   "request_body": true,
+   "response_body": true,
+   "header_values": true
+  },
+  "limits": {
+   "max_events": 20000,
+   "max_event_allocation_bytes": 33554432,
+   "max_total_event_allocation_bytes": 134217728,
+   "max_network_transactions": 2048,
+   "max_network_body_bytes": 524288,
+   "max_network_body_allocation_bytes": 33554432,
+   "max_network_header_allocation_bytes": 8388608,
+   "max_network_metadata_allocation_bytes": 8388608
+  }
+ },
+ "actions": [
+  {
+   "step_id": "settle",
+   "action": "wait_for_timeout",
+   "duration_ms": 2000
+  },
+  {
+   "step_id": "switch-private",
+   "action": "click",
+   "locator": {
+    "kind": "role",
+    "role": "button",
+    "name": "Switch to Private Chat"
+   },
+   "timeout_ms": 15000
+  },
+  {
+   "step_id": "private-open",
+   "action": "wait_for_timeout",
+   "duration_ms": 2500
+  },
+  {
+   "step_id": "type-probe",
+   "action": "fill",
+   "locator": {
+    "kind": "role",
+    "role": "textbox",
+    "name": "Message Grok"
+   },
+   "value": {
+    "source": "literal",
+    "value": "Reply with exactly one short sentence describing what you see in this chat interface."
+   },
+   "timeout_ms": 10000
+  },
+  {
+   "step_id": "send",
+   "action": "press",
+   "locator": {
+    "kind": "role",
+    "role": "textbox",
+    "name": "Message Grok"
+   },
+   "key": "Enter",
+   "timeout_ms": 10000
+  },
+  {
+   "step_id": "streaming-early",
+   "action": "wait_for_timeout",
+   "duration_ms": 4000
+  },
+  {
+   "step_id": "streaming-late",
+   "action": "wait_for_timeout",
+   "duration_ms": 9000
+  },
+  {
+   "step_id": "post-stream",
+   "action": "wait_for_timeout",
+   "duration_ms": 12000
+  }
+ ]
+}

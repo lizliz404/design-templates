@@ -1,0 +1,31 @@
+{
+ "browser": {
+  "mode": "connect",
+  "cdp_endpoint": "http://127.0.0.1:9444",
+  "target_id": "8494FE3F482A96088C8E3F3526F4120C"
+ },
+ "start_url": {"url": "https://grok.com/"},
+ "environment": {
+  "viewport": {"width": 1440, "height": 913, "device_scale_factor": 1},
+  "service_workers": "allow"
+ },
+ "capture": {
+  "after_each_step": ["screenshot", "accessibility", "url"],
+  "at_end": ["screenshot", "accessibility", "url"],
+  "events": ["console", "page-errors", "network", "websockets"],
+  "network": {"request_body": false, "response_body": false, "header_values": true},
+  "limits": {"max_events": 20000, "max_total_event_allocation_bytes": 67108864, "max_network_transactions": 2048}
+ },
+ "actions": [
+  {"step_id": "settle", "action": "wait_for_timeout", "duration_ms": 2000},
+  {"step_id": "open-file", "action": "click", "locator": {"kind": "role", "role": "button", "name": "Open a file…"}, "timeout_ms": 15000},
+  {"step_id": "file-picker", "action": "wait_for_timeout", "duration_ms": 2500},
+  {"step_id": "esc-1", "action": "press", "locator": {"kind": "css", "selector": "body"}, "key": "Escape"},
+  {"step_id": "esc-1b", "action": "press", "locator": {"kind": "css", "selector": "body"}, "key": "Escape"},
+  {"step_id": "open-canvas", "action": "click", "locator": {"kind": "role", "role": "button", "name": "Open Canvas"}, "timeout_ms": 15000},
+  {"step_id": "canvas-open", "action": "wait_for_timeout", "duration_ms": 3000},
+  {"step_id": "search-action", "action": "click", "locator": {"kind": "role", "role": "button", "name": "Search or type an action"}, "timeout_ms": 15000},
+  {"step_id": "palette-open", "action": "wait_for_timeout", "duration_ms": 1500},
+  {"step_id": "esc-2", "action": "press", "locator": {"kind": "css", "selector": "body"}, "key": "Escape"}
+ ]
+}

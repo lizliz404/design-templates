@@ -1,0 +1,31 @@
+{
+ "browser": {
+  "mode": "connect",
+  "cdp_endpoint": "http://127.0.0.1:9444",
+  "target_id": "8494FE3F482A96088C8E3F3526F4120C"
+ },
+ "start_url": {"url": "https://grok.com/"},
+ "environment": {
+  "viewport": {"width": 1440, "height": 913, "device_scale_factor": 1},
+  "service_workers": "allow"
+ },
+ "capture": {
+  "after_each_step": ["screenshot", "accessibility", "url"],
+  "at_end": ["screenshot", "accessibility", "url"],
+  "events": ["console", "page-errors", "network", "websockets"],
+  "network": {"request_body": false, "response_body": false, "header_values": true},
+  "limits": {"max_events": 20000, "max_total_event_allocation_bytes": 67108864, "max_network_transactions": 2048}
+ },
+ "actions": [
+  {"step_id": "settle", "action": "wait_for_timeout", "duration_ms": 2500},
+  {"step_id": "open-chat", "action": "click", "locator": {"kind": "role", "role": "button", "name": "LangGraph 依赖复杂度与替代方案对比"}, "timeout_ms": 15000},
+  {"step_id": "chat-open", "action": "wait_for_timeout", "duration_ms": 3500},
+  {"step_id": "scroll-msg", "action": "press", "locator": {"kind": "css", "selector": "body"}, "key": "End"},
+  {"step_id": "msg-bottom", "action": "wait_for_timeout", "duration_ms": 1200},
+  {"step_id": "toggle-pane", "action": "click", "locator": {"kind": "role", "role": "button", "name": "Toggle right pane"}, "timeout_ms": 15000},
+  {"step_id": "pane-open", "action": "wait_for_timeout", "duration_ms": 2500},
+  {"step_id": "hover-actions", "action": "click", "locator": {"kind": "role", "role": "button", "name": "Actions for LangGraph 依赖复杂度与替代方案对比"}, "timeout_ms": 10000},
+  {"step_id": "ctx-menu", "action": "wait_for_timeout", "duration_ms": 1200},
+  {"step_id": "esc-1", "action": "press", "locator": {"kind": "css", "selector": "body"}, "key": "Escape"}
+ ]
+}

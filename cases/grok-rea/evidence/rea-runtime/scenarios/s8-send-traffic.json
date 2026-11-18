@@ -1,0 +1,114 @@
+{
+ "browser": {
+  "mode": "connect",
+  "cdp_endpoint": "http://127.0.0.1:9444",
+  "target_id": "8494FE3F482A96088C8E3F3526F4120C"
+ },
+ "start_url": {
+  "url": "https://grok.com/"
+ },
+ "environment": {
+  "viewport": {
+   "width": 1440,
+   "height": 913,
+   "device_scale_factor": 1
+  },
+  "service_workers": "allow"
+ },
+ "capture": {
+  "after_each_step": [
+   "url"
+  ],
+  "at_end": [
+   "screenshot",
+   "url"
+  ],
+  "events": [
+   "network",
+   "websockets",
+   "page-errors"
+  ],
+  "network": {
+   "request_body": false,
+   "response_body": false,
+   "header_values": true
+  },
+  "limits": {
+   "max_events": 20000,
+   "max_event_allocation_bytes": 33554432,
+   "max_total_event_allocation_bytes": 134217728,
+   "max_network_transactions": 2048,
+   "max_network_body_bytes": 524288,
+   "max_network_body_allocation_bytes": 33554432,
+   "max_network_header_allocation_bytes": 8388608,
+   "max_network_metadata_allocation_bytes": 8388608
+  }
+ },
+ "actions": [
+  {
+   "step_id": "settle",
+   "action": "wait_for_timeout",
+   "duration_ms": 2500
+  },
+  {
+   "step_id": "switch-private",
+   "action": "click",
+   "locator": {
+    "kind": "role",
+    "role": "button",
+    "name": "Switch to Private Chat"
+   },
+   "timeout_ms": 15000
+  },
+  {
+   "step_id": "private-open",
+   "action": "wait_for_timeout",
+   "duration_ms": 1500
+  },
+  {
+   "step_id": "type-probe",
+   "action": "fill",
+   "locator": {
+    "kind": "role",
+    "role": "textbox",
+    "name": "Message Grok"
+   },
+   "value": {
+    "source": "literal",
+    "value": "Third REA probe: reply with the single word READY."
+   },
+   "timeout_ms": 10000
+  },
+  {
+   "step_id": "send",
+   "action": "press",
+   "locator": {
+    "kind": "role",
+    "role": "textbox",
+    "name": "Message Grok"
+   },
+   "key": "Enter",
+   "timeout_ms": 10000
+  },
+  {
+   "step_id": "t5",
+   "action": "wait_for_timeout",
+   "duration_ms": 5000
+  },
+  {
+   "step_id": "t10",
+   "action": "wait_for_timeout",
+   "duration_ms": 5000
+  },
+  {
+   "step_id": "t15",
+   "action": "wait_for_timeout",
+   "duration_ms": 5000
+  },
+  {
+   "step_id": "t23",
+   "action": "wait_for_timeout",
+   "duration_ms": 8000
+  }
+ ]
+}

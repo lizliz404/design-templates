@@ -1,0 +1,15 @@
+# 含个人数据/大体积的原始证据不进 git（见 ../CAPTURE.md 隐私规则）
+out-*.json
+home-inspect.json
+observe-send.json
+s0-out.json
+bundle-analysis-summary.json
+out-bundle-analysis.json
+bundle/
+bundle-css/
+all.css
+shots-*/
+cur*.json
+cur*.png
+drive-send.mjs
+err-*.log
