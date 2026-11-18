@@ -1,0 +1,32 @@
+# Retrieved 2026-11-18 via Exa web_fetch (box curl to grok.com received Cloudflare 403 managed challenge).
+# Source URL: https://grok.com/robots.txt
+
+User-Agent: *
+Allow: /
+Allow: /chat$
+Allow: /chat/$
+Allow: /c$
+Allow: /c/$
+Disallow: /rest
+Disallow: /share-links
+Disallow: /c/
+Disallow: /chat/
+Disallow: /project/*
+Disallow: /_worker/*
+
+User-Agent: GPTBot
+User-Agent: ChatGPT-User
+User-Agent: PerplexityBot
+User-Agent: ClaudeBot
+User-Agent: Google-Extended
+User-Agent: Applebot-Extended
+Allow: /$
+Allow: /chat$
+Allow: /imagine
+Allow: /plans$
+Allow: /plans/business$
+Allow: /project$
+Allow: /automations$
+Disallow: /
+
+Sitemap: https://grok.com/sitemap.xml

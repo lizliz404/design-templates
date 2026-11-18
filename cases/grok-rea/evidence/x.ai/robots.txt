@@ -1,0 +1,11 @@
+# Retrieved 2026-11-18 via curl (HTTP 200) from https://x.ai/robots.txt
+
+User-agent: *
+Allow: /
+Disallow: /tools/
+
+Sitemap: https://x.ai/sitemap.xml
+
+# Content Signals — declare AI/search usage preferences
+# See: https://contentsignals.org/
+Content-Signal: ai-train=yes, search=yes, ai-input=yes

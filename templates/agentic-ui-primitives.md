@@ -185,7 +185,12 @@ orb 是 agent 状态原语的一种；资产仓在 `ui-patterns/ai-thinking-orb/
 
 **2026-11-17 补充（shelf-radar w15 审计实证）**：该工作台实走了「assistant-ui 无头原语 + 全手写 1,156 行 CSS」路线——runtime 选型对，皮肤层绕路：同栈本可直接 `r.assistant-ui.com` styled 件（base 口味）或 AI Elements 皮肤挂 `MessagePrimitive`，省掉整套自写视觉层。**教训归约：上 runtime 时同步评估 §3 T1 皮肤源，不默认手写皮。**
 
-## 9 · 调研日志（产地与验真史）
+## 9 · 公开产品对照（不是轮子）
+
+闭源 Agent 产品仍不进 §3/§4 的比较池。若要看一个把聊天本身当作产品（而不是工作台右侧 rail）的公开 Web 面——访客空态、composer 内技能芯片、Fast 模式下拉、Imagine 兄弟面换了一张更厚的输入壳——只读案例在 [`../cases/grok-rea/`](../cases/grok-rea/README.md)（2026-11-18，grok.com / x.ai）。结论与未知项以该目录的 `TEARDOWN.md` 为准；不要把对方的 CSS token 或 `/rest` 字面量当成本栈合同。
+
+## 10 · 调研日志（产地与验真史）
+
 
 | 日期 | 触发 | 产出 |
 |---|---|---|
@@ -194,3 +199,4 @@ orb 是 agent 状态原语的一种；资产仓在 `ui-patterns/ai-thinking-orb/
 | 2026-11-11 | orb 归并裁决 | §8.2（原 ai-thinking-orb SKILL 降格资产仓） |
 | 2026-11-12 | shelf-radar 聊天工作台选型 | AI Elements 换房东、CopilotKit 云闸、chatbot-ui 死证、§8.4 选型顺序、二轮新验真（prompt-kit/NLUX/AntDX/MUIX/ChatKit/付费排） |
 | 2026-11-17 | Liz 定义 Tier-1 概念 + w15 聊天面审计实证 | §2 Tier 分级；§3 T1 表经 web+Exa 两轮验真九家（shadcn AI Elements/coss ui/assistant-ui registry/Kibo/prompt-kit/ElevenLabs UI/Nexus UI/chatcn/21st-dev，旧 Beautiful UI/LocalMode/BoardUI 归位）；llm-ui 补 §8.1；@a2ui/react + mcp-ui + Manifest UI 补 §4；卡带懒加载与 orb paused 帧两个生产破口入 §5/§7/§8.2；全文按 Tier 重构（原 §2/§6/§8/§9/§10 归并入 §3/§4/§8） |
+| 2026-11-18 | Liz 要求把 grok.com 做成 design-templates 案例 | 新增 `cases/grok-rea/`；本节补公开产品对照指针，不把 Grok 放入 T1 池 |

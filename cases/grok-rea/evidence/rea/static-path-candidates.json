@@ -1,0 +1,3162 @@
+[
+  {
+    "path": "/plans",
+    "count": 4,
+    "files": [
+      "0chfz361vvovk.js",
+      "1icmc4mcrtc5t.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/conversations",
+    "count": 3,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/conversations/{conversationId}",
+    "count": 3,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/user-memory-blurb",
+    "count": 3,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/automations/{taskId}",
+    "count": 3,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/system-prompt/{systemPromptId}",
+    "count": 3,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/tasks",
+    "count": 3,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/workspaces/{workspaceId}",
+    "count": 3,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/project",
+    "count": 2,
+    "files": [
+      "0chfz361vvovk.js",
+      "1icmc4mcrtc5t.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/conversations/{conversationId}/responses",
+    "count": 2,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/import-memory",
+    "count": 2,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/memories_v2/{companionId}",
+    "count": 2,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/memory",
+    "count": 2,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/share_links/{shareLinkId}",
+    "count": 2,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-deployer/v1/projects/{project_id}/custom-domains",
+    "count": 2,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/automations",
+    "count": 2,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/conversations/{conversationId}/files",
+    "count": 2,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/grok-for-teams/blocked-urls",
+    "count": 2,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/grok-for-teams/collections",
+    "count": 2,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/grok-for-teams/team-settings",
+    "count": 2,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/user-settings",
+    "count": 2,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/user-skills",
+    "count": 2,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/user-skills/{name}",
+    "count": 2,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/verified-skills",
+    "count": 2,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/verified-skills/{name}",
+    "count": 2,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/voice/saved-voices",
+    "count": 2,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/voice/share-link/{shareToken}",
+    "count": 2,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/voice/voices",
+    "count": 2,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/voice/voices/{voiceId}",
+    "count": 2,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/workspaces",
+    "count": 2,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/workspaces/{workspaceId}/collections",
+    "count": 2,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/workspaces/{workspaceId}/connectors",
+    "count": 2,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/workspaces/{workspaceId}/files",
+    "count": 2,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "https://cdn.grok.com/",
+    "count": 2,
+    "files": [
+      "0chfz361vvovk.js",
+      "1icmc4mcrtc5t.js"
+    ]
+  },
+  {
+    "path": "/_data",
+    "count": 1,
+    "files": [
+      "0k0g8wmnrfznl.js"
+    ]
+  },
+  {
+    "path": "/api/hightouch/signed-up",
+    "count": 1,
+    "files": [
+      "0chfz361vvovk.js"
+    ]
+  },
+  {
+    "path": "/api/log_metric",
+    "count": 1,
+    "files": [
+      "1icmc4mcrtc5t.js"
+    ]
+  },
+  {
+    "path": "/automations",
+    "count": 1,
+    "files": [
+      "1icmc4mcrtc5t.js"
+    ]
+  },
+  {
+    "path": "/chat",
+    "count": 1,
+    "files": [
+      "0chfz361vvovk.js"
+    ]
+  },
+  {
+    "path": "/chat/",
+    "count": 1,
+    "files": [
+      "0chfz361vvovk.js"
+    ]
+  },
+  {
+    "path": "/chat/:chatId",
+    "count": 1,
+    "files": [
+      "0chfz361vvovk.js"
+    ]
+  },
+  {
+    "path": "/chat/:slug*?",
+    "count": 1,
+    "files": [
+      "1icmc4mcrtc5t.js"
+    ]
+  },
+  {
+    "path": "/com/imagine",
+    "count": 1,
+    "files": [
+      "1icmc4mcrtc5t.js"
+    ]
+  },
+  {
+    "path": "/com/plans",
+    "count": 1,
+    "files": [
+      "1icmc4mcrtc5t.js"
+    ]
+  },
+  {
+    "path": "/history",
+    "count": 1,
+    "files": [
+      "1icmc4mcrtc5t.js"
+    ]
+  },
+  {
+    "path": "/imagine",
+    "count": 1,
+    "files": [
+      "0chfz361vvovk.js"
+    ]
+  },
+  {
+    "path": "/imagine/",
+    "count": 1,
+    "files": [
+      "0chfz361vvovk.js"
+    ]
+  },
+  {
+    "path": "/imagine/:slug*?",
+    "count": 1,
+    "files": [
+      "1icmc4mcrtc5t.js"
+    ]
+  },
+  {
+    "path": "/imagine/canvas/:conversationId",
+    "count": 1,
+    "files": [
+      "1icmc4mcrtc5t.js"
+    ]
+  },
+  {
+    "path": "/imagine/canvas/new",
+    "count": 1,
+    "files": [
+      "1icmc4mcrtc5t.js"
+    ]
+  },
+  {
+    "path": "/imagine/canvas/share/:shareLinkId",
+    "count": 1,
+    "files": [
+      "1icmc4mcrtc5t.js"
+    ]
+  },
+  {
+    "path": "/imagine/director/:conversationId",
+    "count": 1,
+    "files": [
+      "1icmc4mcrtc5t.js"
+    ]
+  },
+  {
+    "path": "/imagine/director/new",
+    "count": 1,
+    "files": [
+      "1icmc4mcrtc5t.js"
+    ]
+  },
+  {
+    "path": "/imagine/director/recents",
+    "count": 1,
+    "files": [
+      "1icmc4mcrtc5t.js"
+    ]
+  },
+  {
+    "path": "/imagine/director/share/:shareLinkId",
+    "count": 1,
+    "files": [
+      "1icmc4mcrtc5t.js"
+    ]
+  },
+  {
+    "path": "/imagine/download",
+    "count": 1,
+    "files": [
+      "1icmc4mcrtc5t.js"
+    ]
+  },
+  {
+    "path": "/plans/business",
+    "count": 1,
+    "files": [
+      "1icmc4mcrtc5t.js"
+    ]
+  },
+  {
+    "path": "/plans/referral",
+    "count": 1,
+    "files": [
+      "1icmc4mcrtc5t.js"
+    ]
+  },
+  {
+    "path": "/project/:slug*",
+    "count": 1,
+    "files": [
+      "1icmc4mcrtc5t.js"
+    ]
+  },
+  {
+    "path": "/rest/a/c/{conversationId}",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/add-mobile-device-notification-token",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/app-builder-conversations",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/app-deployments",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/bot-chat-attachment",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/choose_sbs_response",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/conversation-starters",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/conversations-many",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/conversations/deleted",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/conversations/exists/{conversationId}",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/conversations/from-ai-overview",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/conversations/inflight-response/{responseId}",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/conversations/new",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/conversations/reconnect-response-v2/{responseId}",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/conversations/reconnect-response/{responseId}",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/conversations/restore",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/conversations/soft/{conversationId}",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/conversations/{conversationId}/ask-to-share",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/conversations/{conversationId}/continue-project",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/conversations/{conversationId}/deploy-app",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/conversations/{conversationId}/download-workspace",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/conversations/{conversationId}/export-github",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/conversations/{conversationId}/load-responses",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/conversations/{conversationId}/model-responses",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/conversations/{conversationId}/response-node",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/conversations/{conversationId}/share",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/conversations/{conversationId}/sharing",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/conversations/{conversationId}/stop-inflight-responses",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/conversations/{conversationId}/title",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/conversations/{conversationId}/user-responses",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/conversations/{conversationId}/warm-sandbox",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/conversations_v2/{conversationId}",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/fetch-suggestions",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/file-metadata/{fileMetadataId}",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/google-drive/files",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/google-drive/files/{id}",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/image-generations",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/import-memory/status",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/memories_v2/soft/{companionId}",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/memory_v2/soft/{id}",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/memory_v2/{id}",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/migrate-conversations",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/migrate-file",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/migrate-memory",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/migrate-responses",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/onboarding-events",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/quick-answer",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/read-response-audio/{responseId}",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/read-response/{responseId}",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/run-code",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/share-links/{shareLinkId}/workspace-preview-session",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/share_links",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/share_links/summaries",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/share_links/{shareLinkId}/clone",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/share_links/{shareLinkId}/clone-sandbox",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/share_links/{shareLinkId}/subagents/{subagentConversationId}",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/share_links_data/{shareLinkId}",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/suggestions",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/template-chat",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/template-prompt",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/text-to-speech",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/tool-responses",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/tts-voices",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/upload-file",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/upload-file-v2/abort",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/upload-file-v2/complete",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/upload-file-v2/import-gif",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/upload-file-v2/init",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/upload-file-v2/patch",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/upload-file-v2/status",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/v2/conversations/{conversationId}/responses/{responseId}/tool-results",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/voice/post-recording",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-chat/voice/share",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/app-deployer/v1/custom-domains/{domain_id}",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/app-deployer/v1/custom-domains/{domain_id}:remove",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/app-deployer/v1/deployments/{deployment_id}",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/app-deployer/v1/deployments/{deployment_id}/build-logs",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/app-deployer/v1/deployments/{deployment_id}/status",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/app-deployer/v1/deployments:latest",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/app-deployer/v1/moderation-reports",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/app-deployer/v1/ping",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/app-deployer/v1/projects",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/app-deployer/v1/projects/{project_id}/env-vars",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/app-deployer/v1/projects/{project_id}/env-vars:batchDelete",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/app-deployer/v1/projects/{project_id}/env-vars:batchSet",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/app-deployer/v1/projects/{project_id}/forking",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/app-deployer/v1/projects/{project_id}/og-image",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/app-deployer/v1/projects/{project_id}/remix-eligibility",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/app-deployer/v1/projects/{project_id}/shares",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/app-deployer/v1/projects/{project_id}/shares:add",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/app-deployer/v1/projects/{project_id}/shares:remove",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/app-deployer/v1/projects/{project_id}/visibility",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/app-deployer/v1/projects/{project_id}/x-share:initiate",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/app-deployer/v1/projects/{project_id}/xai-api-key",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/app-deployer/v1/projects/{project_id}:unpublish",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/app-deployer/v1/projects:init",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/app-deployer/v1/x-shares/{share_id}",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/automations/catalog",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/automations/trigger-resources",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/automations/webhook/rotate-secret",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/automations/{taskId}/enabled",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/automations/{taskId}/run",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/automations/{taskId}/runs",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/catalog-connectors/list",
+    "count": 1,
+    "files": [
+      "0chfz361vvovk.js"
+    ]
+  },
+  {
+    "path": "/rest/connectors/assets/list",
+    "count": 1,
+    "files": [
+      "0chfz361vvovk.js"
+    ]
+  },
+  {
+    "path": "/rest/connectors/box/access-token",
+    "count": 1,
+    "files": [
+      "0chfz361vvovk.js"
+    ]
+  },
+  {
+    "path": "/rest/connectors/create",
+    "count": 1,
+    "files": [
+      "0chfz361vvovk.js"
+    ]
+  },
+  {
+    "path": "/rest/connectors/finance/accounts",
+    "count": 1,
+    "files": [
+      "0chfz361vvovk.js"
+    ]
+  },
+  {
+    "path": "/rest/connectors/finance/connections",
+    "count": 1,
+    "files": [
+      "0chfz361vvovk.js"
+    ]
+  },
+  {
+    "path": "/rest/connectors/finance/connections/delete",
+    "count": 1,
+    "files": [
+      "0chfz361vvovk.js"
+    ]
+  },
+  {
+    "path": "/rest/connectors/finance/plaid/complete-session",
+    "count": 1,
+    "files": [
+      "0chfz361vvovk.js"
+    ]
+  },
+  {
+    "path": "/rest/connectors/finance/plaid/exchange",
+    "count": 1,
+    "files": [
+      "0chfz361vvovk.js"
+    ]
+  },
+  {
+    "path": "/rest/connectors/finance/plaid/link-token",
+    "count": 1,
+    "files": [
+      "0chfz361vvovk.js"
+    ]
+  },
+  {
+    "path": "/rest/connectors/finance/plaid/reauth-complete",
+    "count": 1,
+    "files": [
+      "0chfz361vvovk.js"
+    ]
+  },
+  {
+    "path": "/rest/connectors/get",
+    "count": 1,
+    "files": [
+      "0chfz361vvovk.js"
+    ]
+  },
+  {
+    "path": "/rest/connectors/google-drive/access-token",
+    "count": 1,
+    "files": [
+      "0chfz361vvovk.js"
+    ]
+  },
+  {
+    "path": "/rest/connectors/list",
+    "count": 1,
+    "files": [
+      "0chfz361vvovk.js"
+    ]
+  },
+  {
+    "path": "/rest/connectors/list-available-v2",
+    "count": 1,
+    "files": [
+      "0chfz361vvovk.js"
+    ]
+  },
+  {
+    "path": "/rest/connectors/list-available-v2-admin",
+    "count": 1,
+    "files": [
+      "0chfz361vvovk.js"
+    ]
+  },
+  {
+    "path": "/rest/connectors/list-for-user",
+    "count": 1,
+    "files": [
+      "0chfz361vvovk.js"
+    ]
+  },
+  {
+    "path": "/rest/connectors/list-v2",
+    "count": 1,
+    "files": [
+      "0chfz361vvovk.js"
+    ]
+  },
+  {
+    "path": "/rest/connectors/list-v2-admin",
+    "count": 1,
+    "files": [
+      "0chfz361vvovk.js"
+    ]
+  },
+  {
+    "path": "/rest/connectors/onedrive/access-token",
+    "count": 1,
+    "files": [
+      "0chfz361vvovk.js"
+    ]
+  },
+  {
+    "path": "/rest/connectors/remove",
+    "count": 1,
+    "files": [
+      "0chfz361vvovk.js"
+    ]
+  },
+  {
+    "path": "/rest/connectors/sync-logs",
+    "count": 1,
+    "files": [
+      "0chfz361vvovk.js"
+    ]
+  },
+  {
+    "path": "/rest/connectors/sync/trigger",
+    "count": 1,
+    "files": [
+      "0chfz361vvovk.js"
+    ]
+  },
+  {
+    "path": "/rest/connectors/update",
+    "count": 1,
+    "files": [
+      "0chfz361vvovk.js"
+    ]
+  },
+  {
+    "path": "/rest/conversations/files/content",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/conversations/files/download-zip",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/conversations/files/imagine-asset",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/conversations/files/list",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/conversations/{conversationId}/chat-attachments",
+    "count": 1,
+    "files": [
+      "0da-zi2zy6tzb.js"
+    ]
+  },
+  {
+    "path": "/rest/conversations/{conversationId}/files/content",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/conversations/{conversationId}/files/upload",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/datasource-credentials/delete",
+    "count": 1,
+    "files": [
+      "0chfz361vvovk.js"
+    ]
+  },
+  {
+    "path": "/rest/datasource-credentials/get",
+    "count": 1,
+    "files": [
+      "0chfz361vvovk.js"
+    ]
+  },
+  {
+    "path": "/rest/datasource-credentials/set",
+    "count": 1,
+    "files": [
+      "0chfz361vvovk.js"
+    ]
+  },
+  {
+    "path": "/rest/grok-business/manageable-admin-teams",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/grok-for-teams/blocked-urls/commit",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/grok-for-teams/blocked-urls/upload-url",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/grok-for-teams/collections/{collectionId}",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/grok-for-teams/collections/{collectionId}/documents",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/grok-for-teams/collections/{collectionId}/documents/{fileId}",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/grok-for-teams/collections/{collection_id}",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/grok-for-teams/collections/{collection_id}/documents",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/grok-for-teams/collections/{collection_id}/metadata",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/grok-for-teams/embedding-models",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/grok-for-teams/migrate-personal",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/grok-for-teams/team-members",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/grok-for-teams/team-public-settings",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/grok-for-teams/team-stats",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/issue-report",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/mcp-app/call-tool",
+    "count": 1,
+    "files": [
+      "0chfz361vvovk.js"
+    ]
+  },
+  {
+    "path": "/rest/mcp-app/list-resource-templates",
+    "count": 1,
+    "files": [
+      "0chfz361vvovk.js"
+    ]
+  },
+  {
+    "path": "/rest/mcp-app/list-resources",
+    "count": 1,
+    "files": [
+      "0chfz361vvovk.js"
+    ]
+  },
+  {
+    "path": "/rest/mcp-app/read-resource",
+    "count": 1,
+    "files": [
+      "0chfz361vvovk.js"
+    ]
+  },
+  {
+    "path": "/rest/mcp/discovered-tools/list",
+    "count": 1,
+    "files": [
+      "0chfz361vvovk.js"
+    ]
+  },
+  {
+    "path": "/rest/mcp/oauth-credentials/set",
+    "count": 1,
+    "files": [
+      "0chfz361vvovk.js"
+    ]
+  },
+  {
+    "path": "/rest/mcp/server-configs/build",
+    "count": 1,
+    "files": [
+      "0chfz361vvovk.js"
+    ]
+  },
+  {
+    "path": "/rest/mcp/validate-url",
+    "count": 1,
+    "files": [
+      "0chfz361vvovk.js"
+    ]
+  },
+  {
+    "path": "/rest/media/assets/{assetId}/layers",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/canvas/assets",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/canvas/create",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/canvas/delete",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/canvas/ensure-conversation",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/canvas/get",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/canvas/list",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/canvas/node/add-to-group",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/canvas/node/bulk-get",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/canvas/node/create",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/canvas/node/delete",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/canvas/node/list",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/canvas/node/patch",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/canvas/node/remove-from-group",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/canvas/node/restore",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/canvas/node/update",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/canvas/set-thumbnail",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/canvas/update",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/collection/assets/add",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/collection/assets/list",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/collection/assets/remove",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/collection/create",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/collection/delete",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/collection/for-asset",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/collection/get",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/collection/list",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/collection/update",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/conversation/create",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/conversation/get",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/folder/bulk-add",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/folder/bulk-remove",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/folder/create",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/folder/delete",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/folder/list",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/folder/update",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/generate-music",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/generate-voice",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/gifs/search",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/gifs/trending",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/imagine/delete-all",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/imagine/generation_estimate",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/imagine/quota_info",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/pipeline/cancel",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/pipeline/resume",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/pipeline/run",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/pipeline/template-folder/create",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/pipeline/template-folder/delete",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/pipeline/template-folder/list",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/pipeline/template-folder/update",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/pipeline/template/create",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/pipeline/template/delete",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/pipeline/template/fork",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/pipeline/template/get",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/pipeline/template/list",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/pipeline/template/publish",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/pipeline/template/rollback",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/pipeline/template/save",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/pipeline/template/unsave",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/pipeline/template/update",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/post/bulk-get",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/post/bulk-unlike",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/post/create",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/post/create-link",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/post/delete",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/post/delete-all",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/post/folders",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/post/get",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/post/imagine-feed",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/post/like",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/post/list",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/post/list-shared-posts",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/post/prompt-details",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/post/set-visibility",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/post/unlike",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/projects/assets/add",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/reference/assets/add",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/reference/assets/remove",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/reference/create",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/reference/delete",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/reference/get",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/reference/list",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/reference/update",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/search/debug",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/search/query",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/search/status",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/search/trigger",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/segment",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/video-sequence/create",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/video/caption",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/video/music",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/media/video/upscale",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/models",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/models/imagine/overrides",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/modes",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/notifications/access-requests/{notificationId}/status",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/notifications/list",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/notifications/mark-read",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/notifications/update-access-request-status",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/oauth/auth-url",
+    "count": 1,
+    "files": [
+      "0chfz361vvovk.js"
+    ]
+  },
+  {
+    "path": "/rest/oauth/connector-scope-groups",
+    "count": 1,
+    "files": [
+      "0chfz361vvovk.js"
+    ]
+  },
+  {
+    "path": "/rest/oauth/delete-oauth-connector",
+    "count": 1,
+    "files": [
+      "0chfz361vvovk.js"
+    ]
+  },
+  {
+    "path": "/rest/oauth/exchange-code",
+    "count": 1,
+    "files": [
+      "0chfz361vvovk.js"
+    ]
+  },
+  {
+    "path": "/rest/onboarding-prompts/create",
+    "count": 1,
+    "files": [
+      "0chfz361vvovk.js"
+    ]
+  },
+  {
+    "path": "/rest/onboarding-prompts/delete",
+    "count": 1,
+    "files": [
+      "0chfz361vvovk.js"
+    ]
+  },
+  {
+    "path": "/rest/onboarding-prompts/list",
+    "count": 1,
+    "files": [
+      "0chfz361vvovk.js"
+    ]
+  },
+  {
+    "path": "/rest/onboarding-prompts/update",
+    "count": 1,
+    "files": [
+      "0chfz361vvovk.js"
+    ]
+  },
+  {
+    "path": "/rest/onboarding/for-user",
+    "count": 1,
+    "files": [
+      "0chfz361vvovk.js"
+    ]
+  },
+  {
+    "path": "/rest/plan/profile",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/plan/surfaces",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/products",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/rate-limits",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/report-email-code",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/shared-connectors/catalog-admin",
+    "count": 1,
+    "files": [
+      "0chfz361vvovk.js"
+    ]
+  },
+  {
+    "path": "/rest/shared-connectors/tools/list",
+    "count": 1,
+    "files": [
+      "0chfz361vvovk.js"
+    ]
+  },
+  {
+    "path": "/rest/shared-connectors/tools/set",
+    "count": 1,
+    "files": [
+      "0chfz361vvovk.js"
+    ]
+  },
+  {
+    "path": "/rest/sharepoint/sites/list",
+    "count": 1,
+    "files": [
+      "0chfz361vvovk.js"
+    ]
+  },
+  {
+    "path": "/rest/sharepoint/sites/set-allowed",
+    "count": 1,
+    "files": [
+      "0chfz361vvovk.js"
+    ]
+  },
+  {
+    "path": "/rest/sharing/my-org-teams",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/sharing/search",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/skill-link/{token}",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/skill-link/{token}/install",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/skills",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/subscriptions",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/subscriptions/apple/report-purchase",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/subscriptions/billing-portal",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/subscriptions/billing-portal/update",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/subscriptions/braintree-client-token/new",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/subscriptions/customer/new",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/subscriptions/invoices",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/subscriptions/payment-methods",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/subscriptions/paypal-billing-agreement/new",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/subscriptions/subscribe-via-braintree/new",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/subscriptions/subscribe-via-paypal/new",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/subscriptions/subscribe/new",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/subscriptions/subscription/detail",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/subscriptions/subscription/update",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/subscriptions/subscription/update-preview",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/subscriptions/sync",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/suggestions/profile",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/suggestions/stream",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/system-prompt/create",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/system-prompt/list",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/task-schedules",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/task/task-schedules",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/task/tools",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/tasks/archive",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/tasks/conversation/{conversationId}",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/tasks/inactive",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/tasks/latest/results/{taskId}",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/tasks/responses/{conversationId}",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/tasks/results/{taskId}",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/tasks/stat",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/tasks/usage",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/team/connector-settings/get",
+    "count": 1,
+    "files": [
+      "0chfz361vvovk.js"
+    ]
+  },
+  {
+    "path": "/rest/team/connector-settings/set",
+    "count": 1,
+    "files": [
+      "0chfz361vvovk.js"
+    ]
+  },
+  {
+    "path": "/rest/team/history",
+    "count": 1,
+    "files": [
+      "0chfz361vvovk.js"
+    ]
+  },
+  {
+    "path": "/rest/teams-where-user-has-active-sub",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/tida-report",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/usage/free-usage-gates",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/user-skills/copy",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/user-skills/hidden",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/user-skills/search",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/user-skills/shared",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/user-skills/shared/search",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/user-skills/{name}/download",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/user-skills/{name}/enabled",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/user-skills/{name}/files/{filePath}",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/user-skills/{skillId}/hide",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/user-skills/{skillId}/link",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/user-skills/{skillId}/preview",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/user-skills/{skillId}/share",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/user-skills/{skillId}/shares",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/user-skills/{skillId}/unhide",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/verified-age/persona/callback",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/verified-age/persona/start",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/verified-age/persona/status",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/verified-age/selfie",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/verified-skills/promote",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/verified-skills/published",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/verified-skills/search",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/verified-skills/{name}/grants",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/verified-skills/{name}/publish",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/voice/admin/voices",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/voice/admin/voices/{voiceId}/approval",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/voice/align",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/voice/conversations/{conversationId}/grokcasts",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/voice/grokcasts",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/voice/grokcasts/{grokcastId}",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/voice/passphrase",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/voice/passphrase/{passphraseId}",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/voice/passphrase/{passphraseId}/verify",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/voice/saved-voices/{voiceId}",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/voice/search",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/voice/speech-to-text",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/voice/top",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/voice/transcribe",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/voice/voices/{voiceId}/personality",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/voice/voices/{voiceId}/share-link",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/voice/voices/{voiceId}/share-links",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/voice/voices/{voiceId}/visibility",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/workspaces/shared",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/workspaces/{workspaceId}/assets",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/workspaces/{workspaceId}/assets/{assetId}",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/workspaces/{workspaceId}/clone",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/workspaces/{workspaceId}/collections/{collectionId}",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/workspaces/{workspaceId}/computer-root",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/workspaces/{workspaceId}/computer-root/access",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/workspaces/{workspaceId}/connectors/{connectorId}",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/workspaces/{workspaceId}/conversations",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/workspaces/{workspaceId}/conversations/{conversationId}",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/workspaces/{workspaceId}/files/content",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/workspaces/{workspaceId}/files/mkdir",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/workspaces/{workspaceId}/files/move",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/workspaces/{workspaceId}/files/upload",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/workspaces/{workspaceId}/permissions",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/workspaces/{workspaceId}/permissions/email",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/workspaces/{workspaceId}/permissions/org",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/workspaces/{workspaceId}/permissions/public",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/workspaces/{workspaceId}/permissions/team",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/workspaces/{workspaceId}/permissions/user-id",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/workspaces/{workspaceId}/share",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/rest/workspaces/{workspaceId}/share-decision",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/share",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/share-links",
+    "count": 1,
+    "files": [
+      "1icmc4mcrtc5t.js"
+    ]
+  },
+  {
+    "path": "/share/",
+    "count": 1,
+    "files": [
+      "2ra8da99qxwti.js"
+    ]
+  },
+  {
+    "path": "/share/:id",
+    "count": 1,
+    "files": [
+      "1icmc4mcrtc5t.js"
+    ]
+  },
+  {
+    "path": "/shared-file/:id",
+    "count": 1,
+    "files": [
+      "1icmc4mcrtc5t.js"
+    ]
+  },
+  {
+    "path": "/sign-in",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "/sign-up",
+    "count": 1,
+    "files": [
+      "1402tpe9c_7-u.js"
+    ]
+  },
+  {
+    "path": "https://cdn.grok.com/_next/",
+    "count": 1,
+    "files": [
+      "turbopack-3mgj8ibfq21wg.js"
+    ]
+  },
+  {
+    "path": "https://grok.com",
+    "count": 1,
+    "files": [
+      "0chfz361vvovk.js"
+    ]
+  },
+  {
+    "path": "https://x.ai/bot",
+    "count": 1,
+    "files": [
+      "2ra8da99qxwti.js"
+    ]
+  }
+]

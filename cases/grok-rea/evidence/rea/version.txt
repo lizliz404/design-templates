@@ -1,0 +1,3 @@
+rea-agents 6.9.0
+command: npx -y rea-agents@latest analyze-javascript-application /absolute/path/to/evidence/grok-com-app --json
+date: 2026-11-18 Asia/Shanghai (UTC+8)

@@ -1,0 +1,2 @@
+body{--cookie-consent-surface:var(--background);--cookie-consent-on-primary:var(--background)}
+#onetrust-consent-sdk,#onetrust-banner-sdk,#onetrust-pc-sdk,#onetrust-consent-sdk .onetrust-pc-dark-filter,#ot-sdk-btn,#ot-sdk-btn-floating,#ot-sdk-btn-container,#ot-floating-button,.ot-floating-button,[id^=onetrust-][id$=-handler],[id^=onetrust-][id$=-button]{visibility:hidden!important;pointer-events:none!important;display:none!important}

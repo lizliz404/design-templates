@@ -1,3 +1,6 @@
 .spec-workflow/
 cases/anduril-rea/evidence/js-app-analysis.json
 .unipi/
+
+# grok-rea: full REA evidence is huge; keep the public summary in-tree
+cases/grok-rea/evidence/rea/analyze-javascript-application.json

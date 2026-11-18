@@ -1,0 +1,58 @@
+{
+  "cli": "npx -y rea-agents@latest",
+  "cli_version": "6.9.0",
+  "analyzed_at": "2026-11-18, Asia/Shanghai (UTC+8)",
+  "command": "npx -y rea-agents@latest analyze-javascript-application <case>/evidence/grok-com-app --json",
+  "then": "npx -y rea-agents@latest inspect-analysis-view with source.kind=evidence-file and view.kind=summary",
+  "artifact_path_in_case": "evidence/grok-com-app",
+  "artifact_sha256": "551457289b19f534aa957b5b1a18db85dd3dc060431980a6a74a884dce45e48c",
+  "parent_digest": "dfcb6122b6bba9bc2272083c68e267ae3737752768626972fcc3d52f87b8a76e",
+  "view_digest": "75e83fb6ee3c2fc697351e7a9a61d974b73b356e08b94f1559e318e1ba208939",
+  "statistics": {
+    "relevant_files": 21,
+    "nested_asar_containers": 0,
+    "text_bytes_read": 4297676,
+    "invalid_utf8_files": 0,
+    "parsed_javascript_files": 20,
+    "skipped_javascript_files": 1,
+    "visited_ast_nodes": 770741,
+    "findings": 644,
+    "modules": 0,
+    "parse_failures": 0
+  },
+  "coverage": {
+    "sources": 21,
+    "unmeasured_sources": 0,
+    "syntax": {
+      "complete": 20,
+      "recovered": 0,
+      "failed": 0,
+      "not-examined": 1
+    },
+    "semantics": {
+      "unknown_sources": 12,
+      "unexamined_sources": 1
+    },
+    "examination": {
+      "complete": 14,
+      "limited": 6,
+      "not-examined": 1
+    },
+    "electron_applicability": {
+      "observed": 0,
+      "unknown": 21
+    }
+  },
+  "application_coverage_status": "partial",
+  "semantic_coverage_status": "partial",
+  "semantic_unknowns": 77586,
+  "application_unknowns": 1,
+  "electron_windows": 0,
+  "findings": 644,
+  "notes": [
+    "Raw analyze-javascript-application JSON is ~191MB and is gitignored; rerun the command to regenerate.",
+    "20 of 21 JS files parsed; _next/static/chunks/1icmc4mcrtc5t.js hit the worker 1024 MiB heap limit and was not fully statically analyzed.",
+    "REA parsed bundles as inert text and did not execute them. Endpoint/path strings elsewhere in this case are static candidates, not a call map.",
+    "Not an Electron app (0 browser windows / IPC / preload)."
+  ]
+}

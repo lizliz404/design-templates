@@ -1,0 +1,202 @@
+{
+  "source": "urlscan.io public scan",
+  "uuid": "01a1eb92-76af-7358-a069-1e53f7cc3740",
+  "scan_time_utc": "2026-11-17T22:13:42.391Z",
+  "scan_time_asia_shanghai": "2026-11-18 06:13:42 Asia/Shanghai (UTC+8)",
+  "page_url": "https://grok.com/",
+  "page_status": 200,
+  "page_language_detected_by_urlscan": "de",
+  "page_geo_headers_observed": {
+    "x-country-code": "CH",
+    "x-region": "Zurich",
+    "x-region-code": "ZH"
+  },
+  "viewport_screenshot": "1600x1200",
+  "stats": {
+    "uniqIPs": 14,
+    "uniqCountries": 4,
+    "requests": 512,
+    "encodedDataLength": 10238448,
+    "dataLength": 42288104
+  },
+  "wappalyzer_as_shown_on_result_page": [
+    "Cloudflare_Bot_Management",
+    "Cloudflare_Browser_Insights",
+    "Google_Sign-in",
+    "Google_Tag_Manager",
+    "OneTrust",
+    "Snowplow_Analytics",
+    "Stripe",
+    "p5_js"
+  ],
+  "document_headers_sanitized": {
+    "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
+    "cf-cache-status": "DYNAMIC",
+    "content-type": "text/html; charset=utf-8",
+    "date": "Tue, 17 Nov 2026 22:13:28 GMT",
+    "permissions-policy": "camera=(self), microphone=(self), pointer-lock=(self)",
+    "referrer-policy": "origin-when-cross-origin",
+    "server": "\n                               104.18.29.234\n                              , Ascension Island,\n                              ASN13335\n                              (CLOUDFLARENET - Cloudflare, Inc., US),\n                              Reverse DNS",
+    "strict-transport-security": "max-age=31536000; includeSubDomains",
+    "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
+    "x-content-type-options": "nosniff",
+    "x-country-code": "CH",
+    "x-frame-options": "DENY",
+    "x-gtm-enabled": "1",
+    "x-region": "Zurich",
+    "x-region-code": "ZH",
+    "x-nonce": "<redacted per-request CSP nonce>"
+  },
+  "csp_directives_nonces_redacted": {
+    "default-src": "'self'",
+    "script-src": "'self' 'nonce-<redacted>' 'strict-dynamic' 'wasm-unsafe-eval' https://cdn.grok.com https://*.googleapis.com https://*.google.com https://*.withgoogle.com https://*.gstatic.com https://*.googletagmanager.com https://*.google-analytics.com https://*.googleadservices.com https://*.googlesyndication.com https://*.doubleclick.net https://*.cloudflareinsights.com https://unpkg.com/@googleworkspace/drive-picker-element@0/dist/index.iife.min.js https://*.reddit.com https://embed.reddit.com/widgets.js https://*.twitter.com https://*.x.com https://analytics.tiktok.com https://sgtm-prod-985009374134.us-central1.run.app https://cdn01.boxcdn.net https://*.boxcdn.net https://*.box.com https://*.boxcloud.com https://cdn.plaid.com https://cdn.cookielaw.org https://cookie-cdn.cookiepro.com https://geolocation.onetrust.com https://privacyportal.onetrust.com https://hcaptcha.com https://*.hcaptcha.com https://*.paypal.com https://*.paypalobjects.com https://*.braintreegateway.com",
+    "worker-src": "'self' blob: https://cdn.grok.com",
+    "style-src": "'self' 'unsafe-inline' https://*.googleapis.com https://accounts.google.com/gsi/style https://cdn.grok.com https://cdn01.boxcdn.net https://*.boxcdn.net https://*.box.com https://*.boxcloud.com https://hcaptcha.com https://*.hcaptcha.com",
+    "img-src": "'self' blob: data: https: https://assets.grok.com https://assets.grokusercontent.com https://cdn01.boxcdn.net https://*.boxcdn.net https://*.box.com https://*.boxcloud.com https://github.com https://avatars.githubusercontent.com https://media.x.ai",
+    "media-src": "'self' blob: https://assets.grok.com https://assets.grokusercontent.com https://*.googleapis.com https://*.x.ai wss://*.x.ai https://*.twimg.com https://cdn.grok.com",
+    "font-src": "'self' https://use.typekit.net https://fonts.gstatic.com https://cdn.grok.com https://cdn01.boxcdn.net https://*.boxcdn.net https://*.box.com https://*.boxcloud.com",
+    "frame-src": "'self' blob: data: com.grokapp: intent: https://assets.grok.com https://assets.grokusercontent.com https://www.archives.gov https://arxiv.org https://*.js.stripe.com https://*.stripe.com https://hcaptcha.com https://*.hcaptcha.com https://artifacts.grokusercontent.com https://*.googleapis.com https://*.google.com https://*.withgoogle.com https://*.gstatic.com https://*.googletagmanager.com https://*.google-analytics.com https://*.googleadservices.com https://*.googlesyndication.com https://*.doubleclick.net https://*.youtube.com https://*.microsoftonline.com https://*.live.com https://*.microsoft.com https://*.onedrive.com https://*.sharepoint.com https://challenges.cloudflare.com https://cdn01.boxcdn.net https://*.boxcdn.net https://*.box.com https://*.boxcloud.com https://cdn.plaid.com https://*.reddit.com https://groktpcontent.com https://data.x.ai https://*.twitter.com https://*.x.com https://*.grok-sandbox.com https://mcp-sandbox.grokusercontent.com https://*.paypal.com https://*.paypalobjects.com https://*.braintreegateway.com https://cdn.cookielaw.org https://cookie-cdn.cookiepro.com https://geolocation.onetrust.com https://privacyportal.onetrust.com",
+    "object-src": "'none'",
+    "base-uri": "'none'",
+    "form-action": "'self' https://*.microsoftonline.com https://*.live.com https://*.microsoft.com https://*.onedrive.com https://*.sharepoint.com https://*.paypal.com",
+    "frame-ancestors": "https://x.com https://starfleet.teachx.ai",
+    "block-all-mixed-content": "",
+    "connect-src": "'self' data: https://cdn.grok.com https://*.x.ai wss://*.x.ai https://*.twimg.com https://*.grok.com wss://*.grok.com https://*.grok-sandbox.com wss://*.grok-sandbox.com wss://*.cursorvm.com ws://localhost:* ws://127.0.0.1:* https://assets.grok.com https://assets.grokusercontent.com https://*.js.stripe.com https://*.stripe.com https://hcaptcha.com https://*.hcaptcha.com https://featureassets.org https://*.googleapis.com https://*.google.com https://*.withgoogle.com https://*.gstatic.com https://*.googletagmanager.com https://*.google-analytics.com https://*.googleadservices.com https://*.googlesyndication.com https://*.doubleclick.net https://*.microsoftonline.com https://*.live.com https://*.microsoft.com https://*.onedrive.com https://*.sharepoint.com https://cdn01.boxcdn.net https://*.boxcdn.net https://*.box.com https://*.boxcloud.com https://sandbox.plaid.com https://production.plaid.com https://*.mixpanel.com https://us-east-1.hightouch-events.com https://*.twitter.com https://*.x.com https://analytics.tiktok.com https://sgtm-prod-985009374134.us-central1.run.app https://cdn.cookielaw.org https://cookie-cdn.cookiepro.com https://geolocation.onetrust.com https://privacyportal.onetrust.com https://*.paypal.com https://*.paypalobjects.com https://*.braintreegateway.com https://*.braintree-api.com",
+    "upgrade-insecure-requests": ""
+  },
+  "link_preloads": [
+    {
+      "href": "https://cdn.grok.com/_next/static/chunks/405cndm4hvppz.css",
+      "params": "; rel=preload; as=style; nonce=\"<redacted>\""
+    },
+    {
+      "href": "https://cdn.grok.com/_next/static/chunks/2j0rxzwfnjige.css",
+      "params": "; rel=preload; as=style; nonce=\"<redacted>\""
+    },
+    {
+      "href": "https://cdn.grok.com/_next/static/chunks/0c-d5t8wyinmo.css",
+      "params": "; rel=preload; as=style; nonce=\"<redacted>\""
+    },
+    {
+      "href": "https://cdn.grok.com/_next/static/chunks/1lnntixjzt6bq.css",
+      "params": "; rel=preload; as=style; nonce=\"<redacted>\""
+    },
+    {
+      "href": "https://cdn.grok.com/_next/static/chunks/2rmc92cg_7zig.css",
+      "params": "; rel=preload; as=style; nonce=\"<redacted>\""
+    },
+    {
+      "href": "https://cdn.grok.com/_next/static/chunks/3eq2nokgd5_lo.js",
+      "params": "; rel=preload; as=script; fetchpriority=low; nonce=\"<redacted>\""
+    },
+    {
+      "href": "https://cdn.grok.com/_next/static/chunks/1efpnp-y60pru.js",
+      "params": "; rel=preload; as=script; fetchpriority=low; nonce=\"<redacted>\""
+    },
+    {
+      "href": "https://cdn.grok.com/_next/static/chunks/2kin14z89lwm5.js",
+      "params": "; rel=preload; as=script; fetchpriority=low; nonce=\"<redacted>\""
+    },
+    {
+      "href": "https://cdn.grok.com/_next/static/chunks/1icmc4mcrtc5t.js",
+      "params": "; rel=preload; as=script; fetchpriority=low; nonce=\"<redacted>\""
+    },
+    {
+      "href": "https://cdn.grok.com/_next/static/chunks/1402tpe9c_7-u.js",
+      "params": "; rel=preload; as=script; fetchpriority=low; nonce=\"<redacted>\""
+    },
+    {
+      "href": "https://cdn.grok.com/_next/static/chunks/02fehnmmi_x00.js",
+      "params": "; rel=preload; as=script; fetchpriority=low; nonce=\"<redacted>\""
+    },
+    {
+      "href": "https://cdn.grok.com/_next/static/chunks/308nsrcsc705g.js",
+      "params": "; rel=preload; as=script; fetchpriority=low; nonce=\"<redacted>\""
+    },
+    {
+      "href": "https://cdn.grok.com/_next/static/chunks/0da-zi2zy6tzb.js",
+      "params": "; rel=preload; as=script; fetchpriority=low; nonce=\"<redacted>\""
+    },
+    {
+      "href": "https://cdn.grok.com/_next/static/chunks/07-gyf2j6hss-.js",
+      "params": "; rel=preload; as=script; fetchpriority=low; nonce=\"<redacted>\""
+    },
+    {
+      "href": "https://cdn.grok.com/_next/static/chunks/32ey7dskpnz0l.js",
+      "params": "; rel=preload; as=script; fetchpriority=low; nonce=\"<redacted>\""
+    },
+    {
+      "href": "https://cdn.grok.com/_next/static/chunks/0chfz361vvovk.js",
+      "params": "; rel=preload; as=script; fetchpriority=low; nonce=\"<redacted>\""
+    },
+    {
+      "href": "https://cdn.grok.com/_next/static/chunks/2b0758qsx753e.js",
+      "params": "; rel=preload; as=script; fetchpriority=low; nonce=\"<redacted>\""
+    },
+    {
+      "href": "https://cdn.grok.com/_next/static/chunks/2detqpl9wrh9-.js",
+      "params": "; rel=preload; as=script; fetchpriority=low; nonce=\"<redacted>\""
+    },
+    {
+      "href": "https://cdn.grok.com/_next/static/chunks/0k0g8wmnrfznl.js",
+      "params": "; rel=preload; as=script; fetchpriority=low; nonce=\"<redacted>\""
+    },
+    {
+      "href": "https://cdn.grok.com/_next/static/chunks/2xtlt9l1e1z2c.js",
+      "params": "; rel=preload; as=script; fetchpriority=low; nonce=\"<redacted>\""
+    },
+    {
+      "href": "https://cdn.grok.com/_next/static/chunks/1kx6ktgrplp0t.js",
+      "params": "; rel=preload; as=script; fetchpriority=low; nonce=\"<redacted>\""
+    },
+    {
+      "href": "https://cdn.grok.com/_next/static/chunks/3fdr_oabh__le.js",
+      "params": "; rel=preload; as=script; fetchpriority=low; nonce=\"<redacted>\""
+    },
+    {
+      "href": "https://cdn.grok.com/_next/static/chunks/3h3jca63cjqxo.js",
+      "params": "; rel=preload; as=script; fetchpriority=low; nonce=\"<redacted>\""
+    },
+    {
+      "href": "https://cdn.grok.com/_next/static/chunks/2ra8da99qxwti.js",
+      "params": "; rel=preload; as=script; fetchpriority=low; nonce=\"<redacted>\""
+    },
+    {
+      "href": "https://cdn.grok.com/_next/static/chunks/3he6c43m4_o0z.js",
+      "params": "; rel=preload; as=script; fetchpriority=low; nonce=\"<redacted>\"\n<https://cdn.grok.com>; rel=dns-prefetch"
+    },
+    {
+      "href": "https://cdn.grok.com",
+      "params": "; rel=preconnect"
+    },
+    {
+      "href": "https://cdn.grok.com",
+      "params": "; rel=preconnect; crossorigin=\"\""
+    },
+    {
+      "href": "https://cdn.grok.com/_next/static/media/UniversalSans_Text_400.p.0kzgqcuw2bgx3.woff2",
+      "params": "; rel=preload; as=\"font\"; crossorigin=\"\"; nonce=\"<redacted>\"; type=\"font/woff2\""
+    },
+    {
+      "href": "https://cdn.grok.com/_next/static/media/UniversalSans_Text_550.p.2oz54pkhn1rbr.woff2",
+      "params": "; rel=preload; as=\"font\"; crossorigin=\"\"; nonce=\"<redacted>\"; type=\"font/woff2\""
+    },
+    {
+      "href": "https://cdn.grok.com/_next/static/chunks/405cndm4hvppz.css",
+      "params": "; rel=preload; as=\"style\"; nonce=\"<redacted>\""
+    },
+    {
+      "href": "https://cdn.grok.com/_next/static/chunks/2j0rxzwfnjige.css",
+      "params": "; rel=preload; as=\"style\"; nonce=\"<redacted>\""
+    },
+    {
+      "href": "https://cdn.grok.com/_next/static/chunks/0c-d5t8wyinmo.css",
+      "params": "; rel=preload; as=\"style\"; nonce=\"<redacted>\""
+    }
+  ],
+  "notes": [
+    "Cookies, Authorization, and CSP nonce values were redacted and are not stored.",
+    "The raw urlscan result HTML is not vendored; this extract plus public screenshots and a CDN subset are the retained evidence.",
+    "Do not treat CSP allowlists as an invitation to probe disallowed or authenticated APIs."
+  ]
+}

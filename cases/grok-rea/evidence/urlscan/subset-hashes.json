@@ -1,0 +1,452 @@
+[
+  {
+    "url": "https://cdn.grok.com/_next/static/chunks/02fehnmmi_x00.js",
+    "path": "grok-com-app/_next/static/chunks/02fehnmmi_x00.js",
+    "bytes": 288031,
+    "sha256": "deed6f0ef02a14e2762ce8ed578142d7b449be5e1d3d9d18da26c59839888f27",
+    "status": 200,
+    "content_type": "application/javascript",
+    "last_modified": "Tue, 17 Nov 2026 02:18:58 GMT",
+    "etag": "W/\"21050593b6bda5198bc18a4c45997035\""
+  },
+  {
+    "url": "https://cdn.grok.com/_next/static/chunks/07-gyf2j6hss-.js",
+    "path": "grok-com-app/_next/static/chunks/07-gyf2j6hss-.js",
+    "bytes": 211572,
+    "sha256": "4fc08bccdd3b2adeb476c7d2a3941ae32afe93d83a81141ef88a983cb20ea37a",
+    "status": 200,
+    "content_type": "application/javascript",
+    "last_modified": "Tue, 17 Nov 2026 02:18:58 GMT",
+    "etag": "W/\"cbefe7c136002fab8d27fe67b5efab60\""
+  },
+  {
+    "url": "https://cdn.grok.com/_next/static/chunks/0_3yfs9r86fla.css",
+    "path": "grok-com-app/_next/static/chunks/0_3yfs9r86fla.css",
+    "bytes": 380,
+    "sha256": "561acb0e8777460b459efe135a1670a12aeddf52212cf0fee79287b6d85a766f",
+    "status": 200,
+    "content_type": "text/css",
+    "last_modified": "Wed, 28 Oct 2026 05:12:09 GMT",
+    "etag": "\"01c71421d297b3c9df01139f384e1a82\""
+  },
+  {
+    "url": "https://cdn.grok.com/_next/static/chunks/0c-d5t8wyinmo.css",
+    "path": "grok-com-app/_next/static/chunks/0c-d5t8wyinmo.css",
+    "bytes": 437,
+    "sha256": "447b762abf05736725647065a566e358f320ef4c4521959d857ba5cb705ecc34",
+    "status": 200,
+    "content_type": "text/css",
+    "last_modified": "Thu, 01 Oct 2026 01:04:27 GMT",
+    "etag": "W/\"0a855c3948d74237e7560ed767f0baba\""
+  },
+  {
+    "url": "https://cdn.grok.com/_next/static/chunks/0chfz361vvovk.js",
+    "path": "grok-com-app/_next/static/chunks/0chfz361vvovk.js",
+    "bytes": 206871,
+    "sha256": "1761c482a7aba8c5ca06f97fb0d71dea4cb770ae126470be415b7e153941c9a6",
+    "status": 200,
+    "content_type": "application/javascript",
+    "last_modified": "Tue, 17 Nov 2026 16:50:29 GMT",
+    "etag": "W/\"a082d23c273e4818861ae8464b468932\""
+  },
+  {
+    "url": "https://cdn.grok.com/_next/static/chunks/0da-zi2zy6tzb.js",
+    "path": "grok-com-app/_next/static/chunks/0da-zi2zy6tzb.js",
+    "bytes": 218946,
+    "sha256": "5d56e2fac2f8921a1080ef0644c6ccd49050acb3b4a276a01544720ba836ee8d",
+    "status": 200,
+    "content_type": "application/javascript",
+    "last_modified": "Tue, 17 Nov 2026 02:18:59 GMT",
+    "etag": "W/\"88b68cf257d383d432bdf1a49dddf43e\""
+  },
+  {
+    "url": "https://cdn.grok.com/_next/static/chunks/0k0g8wmnrfznl.js",
+    "path": "grok-com-app/_next/static/chunks/0k0g8wmnrfznl.js",
+    "bytes": 173132,
+    "sha256": "fa0e25fc914346fb8211981e940d7bb9012eba6e173817c3bb18af908489cbbe",
+    "status": 200,
+    "content_type": "application/javascript",
+    "last_modified": "Tue, 17 Nov 2026 02:19:01 GMT",
+    "etag": "W/\"badd260f4e27f59624b9e5397a540439\""
+  },
+  {
+    "url": "https://cdn.grok.com/_next/static/chunks/0qaqre0hji6fz.css",
+    "path": "grok-com-app/_next/static/chunks/0qaqre0hji6fz.css",
+    "bytes": 810,
+    "sha256": "a5ca8df4fb479c46ba8b945ac57116d670793bf212b0df56f522a949242ae44f",
+    "status": 200,
+    "content_type": "text/css",
+    "last_modified": "Tue, 27 Oct 2026 21:22:45 GMT",
+    "etag": "W/\"769def79212faff3b6942277c4059eec\""
+  },
+  {
+    "url": "https://cdn.grok.com/_next/static/chunks/0tl0hzow-ghng.css",
+    "path": "grok-com-app/_next/static/chunks/0tl0hzow-ghng.css",
+    "bytes": 1786,
+    "sha256": "bc15bbebbbcace9807572ded617f0d650c5fbfdf708d278b7375ded9becd6871",
+    "status": 200,
+    "content_type": "text/css",
+    "last_modified": "Sat, 14 Nov 2026 22:10:30 GMT",
+    "etag": "W/\"bb053507547521d2a7730843aa1226be\""
+  },
+  {
+    "url": "https://cdn.grok.com/_next/static/chunks/1402tpe9c_7-u.js",
+    "path": "grok-com-app/_next/static/chunks/1402tpe9c_7-u.js",
+    "bytes": 442837,
+    "sha256": "595f439b84dc2041d8a2b57dc25a4618defecbbac95c17e6f5579864d3b7e0f7",
+    "status": 200,
+    "content_type": "application/javascript",
+    "last_modified": "Tue, 17 Nov 2026 02:19:04 GMT",
+    "etag": "W/\"6752c99dbbcdfd715289cbb31dc0fce5\""
+  },
+  {
+    "url": "https://cdn.grok.com/_next/static/chunks/16rhv-sqhetz2.css",
+    "path": "grok-com-app/_next/static/chunks/16rhv-sqhetz2.css",
+    "bytes": 713,
+    "sha256": "e1201f32c79894eb005b2ca30873c2f6552a38c8e4ca53e920bfca701b2feeed",
+    "status": 200,
+    "content_type": "text/css",
+    "last_modified": "Fri, 18 Sep 2026 23:22:07 GMT",
+    "etag": "W/\"974c04025e93094bc85504f62912e135\""
+  },
+  {
+    "url": "https://cdn.grok.com/_next/static/chunks/1efpnp-y60pru.js",
+    "path": "grok-com-app/_next/static/chunks/1efpnp-y60pru.js",
+    "bytes": 3577,
+    "sha256": "ee1c4d82ce5e17c583bf0b67e2d5b9f5c5361b2fd03d3accdf2fbeb9e7b1418d",
+    "status": 200,
+    "content_type": "application/javascript",
+    "last_modified": "Tue, 17 Nov 2026 02:19:06 GMT",
+    "etag": "W/\"855e821147ce257fde42dfd1dbde77b2\""
+  },
+  {
+    "url": "https://cdn.grok.com/_next/static/chunks/1icmc4mcrtc5t.js",
+    "path": "grok-com-app/_next/static/chunks/1icmc4mcrtc5t.js",
+    "bytes": 474105,
+    "sha256": "307013fe068742889deecac5bb001748eed2a13f87faa88a0ae0a902ce654133",
+    "status": 200,
+    "content_type": "application/javascript",
+    "last_modified": "Tue, 17 Nov 2026 16:50:36 GMT",
+    "etag": "W/\"ac8ef8775d20471323b7c22a4c63d400\""
+  },
+  {
+    "url": "https://cdn.grok.com/_next/static/chunks/1kx6ktgrplp0t.js",
+    "path": "grok-com-app/_next/static/chunks/1kx6ktgrplp0t.js",
+    "bytes": 162904,
+    "sha256": "8db4812517f7278bbb995482fe7790f1e5c9701e7346b94ac2984b3bac31d263",
+    "status": 200,
+    "content_type": "application/javascript",
+    "last_modified": "Tue, 17 Nov 2026 02:19:07 GMT",
+    "etag": "W/\"9464dea2f0e09f868ff6c7a0bc1f7339\""
+  },
+  {
+    "url": "https://cdn.grok.com/_next/static/chunks/1lnntixjzt6bq.css",
+    "path": "grok-com-app/_next/static/chunks/1lnntixjzt6bq.css",
+    "bytes": 626,
+    "sha256": "1a9d0cb6254d33646a5910fee69a4e186cb9c54799bdf39b3851b4830f23851f",
+    "status": 200,
+    "content_type": "text/css",
+    "last_modified": "Wed, 21 Oct 2026 19:32:55 GMT",
+    "etag": "W/\"25621f442e20d94a6823d24f68e04f20\""
+  },
+  {
+    "url": "https://cdn.grok.com/_next/static/chunks/2b0758qsx753e.js",
+    "path": "grok-com-app/_next/static/chunks/2b0758qsx753e.js",
+    "bytes": 183231,
+    "sha256": "d63c593259d8a30da712b9186bde7b3e633805be6f868e4e74fb1c8553406b0b",
+    "status": 200,
+    "content_type": "application/javascript",
+    "last_modified": "Tue, 17 Nov 2026 02:19:12 GMT",
+    "etag": "W/\"2760d894a1c9ab405e2001b32a383121\""
+  },
+  {
+    "url": "https://cdn.grok.com/_next/static/chunks/2detqpl9wrh9-.js",
+    "path": "grok-com-app/_next/static/chunks/2detqpl9wrh9-.js",
+    "bytes": 177076,
+    "sha256": "c3d535ae6ea43a155f34e239784dba12e4d44091772fe478e408275751b2c86c",
+    "status": 200,
+    "content_type": "application/javascript",
+    "last_modified": "Mon, 16 Nov 2026 23:39:08 GMT",
+    "etag": "W/\"424879f6fcf0d0af056c57603fb520d2\""
+  },
+  {
+    "url": "https://cdn.grok.com/_next/static/chunks/2eq-d4z3venf4.css",
+    "path": "grok-com-app/_next/static/chunks/2eq-d4z3venf4.css",
+    "bytes": 600,
+    "sha256": "0d73e1795a1689d01b150558adc67c5422e919c22330d8a367905e0ed567f40d",
+    "status": 200,
+    "content_type": "text/css",
+    "last_modified": "Sat, 07 Nov 2026 12:25:31 GMT",
+    "etag": "W/\"202444b83ccb7d68c8e3485687d49424\""
+  },
+  {
+    "url": "https://cdn.grok.com/_next/static/chunks/2hh198zosqc39.css",
+    "path": "grok-com-app/_next/static/chunks/2hh198zosqc39.css",
+    "bytes": 972,
+    "sha256": "f9c5f6ffa6f0e3bf5e11a61e8a5bac4fa0835a41ddf6d6a5dcf47a5535916bb4",
+    "status": 200,
+    "content_type": "text/css",
+    "last_modified": "Wed, 09 Sep 2026 16:51:04 GMT",
+    "etag": "W/\"6990301e0a6f6b23dd6a40f212dd7cab\""
+  },
+  {
+    "url": "https://cdn.grok.com/_next/static/chunks/2j0rxzwfnjige.css",
+    "path": "grok-com-app/_next/static/chunks/2j0rxzwfnjige.css",
+    "bytes": 12212,
+    "sha256": "2e129ae6782f9f6aa7c05b5e984db9bbac920340b1671f217f0fcc292924c260",
+    "status": 200,
+    "content_type": "text/css",
+    "last_modified": "Tue, 17 Nov 2026 02:19:13 GMT",
+    "etag": "W/\"5c9ff6eb61e62854155e51b644cb7c29\""
+  },
+  {
+    "url": "https://cdn.grok.com/_next/static/chunks/2kin14z89lwm5.js",
+    "path": "grok-com-app/_next/static/chunks/2kin14z89lwm5.js",
+    "bytes": 527561,
+    "sha256": "746fa2eeb2e10973410367626065c94bb252dbe57f8ef682a23a8f14bfef183b",
+    "status": 200,
+    "content_type": "application/javascript",
+    "last_modified": "Tue, 17 Nov 2026 02:19:13 GMT",
+    "etag": "W/\"d7c4a0840bed2101fc2210d8e65d737d\""
+  },
+  {
+    "url": "https://cdn.grok.com/_next/static/chunks/2pv_qsiv2504z.css",
+    "path": "grok-com-app/_next/static/chunks/2pv_qsiv2504z.css",
+    "bytes": 24382,
+    "sha256": "dd72d6328ec1158247450f275064e3e877bc5fba450f72f7c90ebb8b37160144",
+    "status": 200,
+    "content_type": "text/css",
+    "last_modified": "Thu, 08 Oct 2026 23:45:45 GMT",
+    "etag": "W/\"69ff43e0db2fda7b8d300312b9e438bc\""
+  },
+  {
+    "url": "https://cdn.grok.com/_next/static/chunks/2ra8da99qxwti.js",
+    "path": "grok-com-app/_next/static/chunks/2ra8da99qxwti.js",
+    "bytes": 143751,
+    "sha256": "40c7ec79dcbfa5a53b12a19f7e0692a78eb163694e428a005fd7a9f02b747842",
+    "status": 200,
+    "content_type": "application/javascript",
+    "last_modified": "Tue, 17 Nov 2026 02:19:14 GMT",
+    "etag": "W/\"3fc1d4694ec95f5b38022977fefe4f4c\""
+  },
+  {
+    "url": "https://cdn.grok.com/_next/static/chunks/2rmc92cg_7zig.css",
+    "path": "grok-com-app/_next/static/chunks/2rmc92cg_7zig.css",
+    "bytes": 672938,
+    "sha256": "793ab6183d2eca0cfb85b49299cb8198495c181577e61d83e4d121270e1e3e12",
+    "status": 200,
+    "content_type": "text/css",
+    "last_modified": "Tue, 17 Nov 2026 02:19:15 GMT",
+    "etag": "W/\"2f0fcf6902d45d748e39303e510733a4\""
+  },
+  {
+    "url": "https://cdn.grok.com/_next/static/chunks/2vjm979mjh09c.css",
+    "path": "grok-com-app/_next/static/chunks/2vjm979mjh09c.css",
+    "bytes": 77378,
+    "sha256": "0f85a28d0e9cc13d59f3e2f7abdcdc24766b4b709fa2811f2f02845f2453d7b4",
+    "status": 200,
+    "content_type": "text/css",
+    "last_modified": "Tue, 17 Nov 2026 03:30:16 GMT",
+    "etag": "W/\"0a03ef909885a15306a9b0d45186c1ed\""
+  },
+  {
+    "url": "https://cdn.grok.com/_next/static/chunks/2xtlt9l1e1z2c.js",
+    "path": "grok-com-app/_next/static/chunks/2xtlt9l1e1z2c.js",
+    "bytes": 163086,
+    "sha256": "7ac60c1f20efed468e710deea5b3d234b9e50f1bbff12953cd76020a9b17e9e6",
+    "status": 200,
+    "content_type": "application/javascript",
+    "last_modified": "Sun, 15 Nov 2026 12:26:01 GMT",
+    "etag": "W/\"76b8ec7a4fbc3d440f831ff4478e8b01\""
+  },
+  {
+    "url": "https://cdn.grok.com/_next/static/chunks/308nsrcsc705g.js",
+    "path": "grok-com-app/_next/static/chunks/308nsrcsc705g.js",
+    "bytes": 250155,
+    "sha256": "cfd36e755b441dbff8a4dba0350589a3d2dac06d326da72d2be40d1b5f61daf9",
+    "status": 200,
+    "content_type": "application/javascript",
+    "last_modified": "Tue, 17 Nov 2026 02:19:16 GMT",
+    "etag": "W/\"2ea1c51eac3426dbe1c5b1c0bb5d1d10\""
+  },
+  {
+    "url": "https://cdn.grok.com/_next/static/chunks/32ey7dskpnz0l.js",
+    "path": "grok-com-app/_next/static/chunks/32ey7dskpnz0l.js",
+    "bytes": 207290,
+    "sha256": "69cac47c737b9d138c5c34d1cd5c8a6f97b7244476446c47fc910746dea91277",
+    "status": 200,
+    "content_type": "application/javascript",
+    "last_modified": "Tue, 17 Nov 2026 02:19:17 GMT",
+    "etag": "W/\"ab8db89fdd1b685b34aecadf81c9afde\""
+  },
+  {
+    "url": "https://cdn.grok.com/_next/static/chunks/3eq2nokgd5_lo.js",
+    "path": "grok-com-app/_next/static/chunks/3eq2nokgd5_lo.js",
+    "bytes": 3241,
+    "sha256": "48cdd827d81bf586bf0abf18cf724f8458ec9630e8fb3ae68241474ea89399d4",
+    "status": 200,
+    "content_type": "application/javascript",
+    "last_modified": "Tue, 17 Nov 2026 02:19:19 GMT",
+    "etag": "W/\"3dbe6877e1e7eeaf1ee2bd65a0e5f7fc\""
+  },
+  {
+    "url": "https://cdn.grok.com/_next/static/chunks/3fdr_oabh__le.js",
+    "path": "grok-com-app/_next/static/chunks/3fdr_oabh__le.js",
+    "bytes": 157372,
+    "sha256": "6c020ed7e8c285f7abf95617d1b64c93e6b5b42ae685a610b761d7d4bc95094d",
+    "status": 200,
+    "content_type": "application/javascript",
+    "last_modified": "Tue, 17 Nov 2026 02:19:19 GMT",
+    "etag": "W/\"ab9f3a4c88f23ce3f237fbf5928aa1c8\""
+  },
+  {
+    "url": "https://cdn.grok.com/_next/static/chunks/3h3jca63cjqxo.js",
+    "path": "grok-com-app/_next/static/chunks/3h3jca63cjqxo.js",
+    "bytes": 150228,
+    "sha256": "fc3992d5b9b66a9283973ce26221c1c54f5d540fa0db36b54e94e807aa614dec",
+    "status": 200,
+    "content_type": "application/javascript",
+    "last_modified": "Sun, 15 Nov 2026 12:26:03 GMT",
+    "etag": "W/\"dfd929207a064118eef75b85e0dbd466\""
+  },
+  {
+    "url": "https://cdn.grok.com/_next/static/chunks/3he6c43m4_o0z.js",
+    "path": "grok-com-app/_next/static/chunks/3he6c43m4_o0z.js",
+    "bytes": 141156,
+    "sha256": "bc0d1f42696a9ee749041ae86dcbb841dc1266b5fac65252430ccdc11e318300",
+    "status": 200,
+    "content_type": "application/javascript",
+    "last_modified": "Tue, 17 Nov 2026 02:19:20 GMT",
+    "etag": "W/\"8c0189787cbef1119abfdbc958bb5644\""
+  },
+  {
+    "url": "https://cdn.grok.com/_next/static/chunks/3pxlif1pokhpg.css",
+    "path": "grok-com-app/_next/static/chunks/3pxlif1pokhpg.css",
+    "bytes": 528391,
+    "sha256": "b8a2b9b4f4b52af5ab44b36bb3f21c45b41e46c5629381680f45918135c18027",
+    "status": 200,
+    "content_type": "text/css",
+    "last_modified": "Tue, 17 Nov 2026 14:28:52 GMT",
+    "etag": "W/\"101170794e77c72df87db241bb60bfdc\""
+  },
+  {
+    "url": "https://cdn.grok.com/_next/static/chunks/3vsrbjz6yvywi.css",
+    "path": "grok-com-app/_next/static/chunks/3vsrbjz6yvywi.css",
+    "bytes": 2990,
+    "sha256": "73d8d5aaf133981c12367d5b6f036c63debe7a97fe99422f993a09e8e04ebff5",
+    "status": 200,
+    "content_type": "text/css",
+    "last_modified": "Wed, 09 Sep 2026 16:51:55 GMT",
+    "etag": "W/\"74825a55df2206d9de4212277f6472db\""
+  },
+  {
+    "url": "https://cdn.grok.com/_next/static/chunks/405cndm4hvppz.css",
+    "path": "grok-com-app/_next/static/chunks/405cndm4hvppz.css",
+    "bytes": 295560,
+    "sha256": "8eb72d9ca30616ea974358917f3d1a813b4942450f87ee5b9ad40aa09acedf5c",
+    "status": 200,
+    "content_type": "text/css",
+    "last_modified": "Tue, 17 Nov 2026 10:43:03 GMT",
+    "etag": "W/\"fa8900a4ef7bfa402f01281823a903ee\""
+  },
+  {
+    "url": "https://cdn.grok.com/_next/static/chunks/turbopack-3mgj8ibfq21wg.js",
+    "path": "grok-com-app/_next/static/chunks/turbopack-3mgj8ibfq21wg.js",
+    "bytes": 11554,
+    "sha256": "6b30a830e732560ada56642f5d0c1c54a9e6ca18a0a6e8636727acd8912adb19",
+    "status": 200,
+    "content_type": "application/javascript",
+    "last_modified": "Tue, 17 Nov 2026 02:19:24 GMT",
+    "etag": "W/\"f284a956950bc5ac62c231ad10955869\""
+  },
+  {
+    "url": "https://cdn.grok.com/_next/static/media/UniversalSans_Text_400.p.0kzgqcuw2bgx3.woff2",
+    "path": "grok-com-app/_next/static/media/UniversalSans_Text_400.p.0kzgqcuw2bgx3.woff2",
+    "bytes": 37436,
+    "sha256": "9fd5761ce2a410ace711709ba538804bae481f99cf0950e99d421da593e79e18",
+    "status": 200,
+    "content_type": "font/woff2",
+    "last_modified": "Wed, 09 Sep 2026 16:53:30 GMT",
+    "etag": "\"9f6a2a8e0f21e2377f6452225639c581\""
+  },
+  {
+    "url": "https://cdn.grok.com/_next/static/media/UniversalSans_Text_550.p.2oz54pkhn1rbr.woff2",
+    "path": "grok-com-app/_next/static/media/UniversalSans_Text_550.p.2oz54pkhn1rbr.woff2",
+    "bytes": 38892,
+    "sha256": "e6ecf6aaa4d146fcd426008afc1b7eea0dd6a08953eac301c00a1d9118042ebf",
+    "status": 200,
+    "content_type": "font/woff2",
+    "last_modified": "Wed, 09 Sep 2026 16:53:30 GMT",
+    "etag": "\"ad7c05a5a6cc687c2a8944061b1a9ce1\""
+  },
+  {
+    "url": "https://cdn.grok.com/_next/static/media/icons-lg.2jpcrx-rkrg4w.svg",
+    "path": "grok-com-app/_next/static/media/icons-lg.2jpcrx-rkrg4w.svg",
+    "bytes": 1749973,
+    "sha256": "e3ba401c29c8055357c6401a1af904066546d69ce072df5e277bb931c15e620a",
+    "status": 200,
+    "content_type": "image/svg+xml",
+    "last_modified": "Tue, 03 Nov 2026 16:21:49 GMT",
+    "etag": "W/\"3aff8bce05a69834ae972c68c6d89874\""
+  },
+  {
+    "url": "https://cdn.grok.com/_next/static/media/icons-md.0t71vq5s51dzf.svg",
+    "path": "grok-com-app/_next/static/media/icons-md.0t71vq5s51dzf.svg",
+    "bytes": 1714074,
+    "sha256": "1adb7b9c2c3b9917d593135b3c97e3745fb3817ce6e5d74555457eb83653bc28",
+    "status": 200,
+    "content_type": "image/svg+xml",
+    "last_modified": "Tue, 03 Nov 2026 16:21:49 GMT",
+    "etag": "W/\"832ac78073e149ab9f358095a23a7317\""
+  },
+  {
+    "url": "https://cdn.grok.com/_next/static/media/icons-sm.2s86q1kfondka.svg",
+    "path": "grok-com-app/_next/static/media/icons-sm.2s86q1kfondka.svg",
+    "bytes": 1669415,
+    "sha256": "1a4322f61f615fc4a973b443f6cd15b340982f4a800c9b75633dda28c0a02bc6",
+    "status": 200,
+    "content_type": "image/svg+xml",
+    "last_modified": "Thu, 05 Nov 2026 04:44:03 GMT",
+    "etag": "W/\"26ddfd872bc50087639b31656b79306a\""
+  },
+  {
+    "url": "https://cdn.grok.com/_next/static/media/icons-xl.0-ja3jmlo4f3s.svg",
+    "path": "grok-com-app/_next/static/media/icons-xl.0-ja3jmlo4f3s.svg",
+    "bytes": 1792627,
+    "sha256": "c86bd6cc957c8aeb99628e925ec1c22b2c0cfa1413eb4f7799921ae6a7b163cb",
+    "status": 200,
+    "content_type": "image/svg+xml",
+    "last_modified": "Thu, 05 Nov 2026 04:44:03 GMT",
+    "etag": "W/\"22c7b33761ee1a2b567a81dbbafb261c\""
+  },
+  {
+    "url": "https://cdn.grok.com/_next/static/media/icons-xs.0em9iv4dcr3m_.svg",
+    "path": "grok-com-app/_next/static/media/icons-xs.0em9iv4dcr3m_.svg",
+    "bytes": 1642324,
+    "sha256": "ed11fccd35faf8d27faff29006587a00877536c753c94b36ca469b3a8f94c8ed",
+    "status": 200,
+    "content_type": "image/svg+xml",
+    "last_modified": "Thu, 05 Nov 2026 04:44:03 GMT",
+    "etag": "W/\"32547e6931af3c8810286e31878bc647\""
+  },
+  {
+    "url": "https://cdn.grok.com/_next/static/media/x-mono-vf.40ur7kz57cw-p.ttf",
+    "path": "grok-com-app/_next/static/media/x-mono-vf.40ur7kz57cw-p.ttf",
+    "bytes": 52796,
+    "sha256": "ed9e2385e1bea00255d6b483ee5867423274ebc0366e03e7b39b466b7ef55aa6",
+    "status": 200,
+    "content_type": "font/ttf",
+    "last_modified": "Thu, 22 Oct 2026 19:10:54 GMT",
+    "etag": "\"98bf11128a17d23d04d582978cc8a614\""
+  },
+  {
+    "url": "https://cdn.grok.com/_next/static/media/x-vf.2-wx1-3hj_i0f.ttf",
+    "path": "grok-com-app/_next/static/media/x-vf.2-wx1-3hj_i0f.ttf",
+    "bytes": 202904,
+    "sha256": "42e93337b00c3b4c0d8f3b6380f07e16fcabddab18a44119d2f07b08b6339f47",
+    "status": 200,
+    "content_type": "font/ttf",
+    "last_modified": "Thu, 22 Oct 2026 19:10:54 GMT",
+    "etag": "\"0192ec864d885436484e10c3df29a4a9\""
+  }
+]

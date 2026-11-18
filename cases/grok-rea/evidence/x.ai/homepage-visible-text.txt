@@ -1,0 +1,357 @@
+SpaceXSI
+Products
+Solutions
+Developer
+Company
+Pricing
+News
+Contact Sales
+Try for free
+Products
+Grok
+Business
+Government
+Download
+iOS
+Android
+Grok on X
+Grok Bot
+Developers
+API Console
+Documentation
+Grok Build
+Try for free
+New
+Meet Grok 4.7
+·
+Our new model
+Frontier
+AI
+models
+for
+everything
+you
+build
+build
+.
+Reasoning, code, voice, images, and video.
+Trained on the world&#x27;s largest supercluster.
+Get API Access
+View Documentation
+Explain quantum entanglement simply
+Two particles become linked — measuring one instantly determines the other, regardless of distance.
+Why is the sky blue?
+Shorter blue wavelengths scatter more off air molecules than longer red ones.
+How do black holes form?
+Chat
+Explore →
+projects/main
+|
+11.60%
+|
+❯
+Migrate auth from sessions to JWT.
+Thinking...
+▸
+read_file
+src/middleware/auth.ts
+68 lines
+▸
+grep
+&quot;session&quot; src/
+4 matches
+▸
+read_file
+src/lib/jwt.ts
+42 lines
+|
+Audit auth middleware
+explore
+[
+running
+]
+|
+Design token rotation
+general
+[
+running
+]
+|
+Find session references
+explore
+[
+done
+]
+◆
+Thought for
+4.1s
+◆
+Edit
+src/middleware/auth.ts
+42
+export async function handler(req) {
+43
+const token = extractBearer(req);
+Build
+Explore →
+Bot
+Explore →
+Imagine
+Explore →
+Voice
+Explore →
+For developers
+One API.
+Every modality.
+Text, code, voice, images, and video — all through a single unified API. Start building in seconds.
+Get API Key
+Read Docs
+1M+
+API calls per day
+&lt;200ms
+Median latency
+5+
+Model families
+Copy
+import
+os
+from
+xai_sdk
+import
+Client
+from
+xai_sdk.chat
+import
+user
+client
+=
+Client(
+api_key
+=
+os.getenv(
+"XAI_API_KEY"
+)
+)
+chat
+=
+client.chat.create(
+model
+=
+"grok-4.7"
+)
+chat.append(user(
+"Explain quantum computing"
+))
+response
+=
+chat.sample()
+print
+(response.content)
+import
+{ xai }
+from
+"@ai-sdk/xai"
+;
+import
+{ generateText }
+from
+"ai"
+;
+const
+{
+text
+}
+=
+await
+generateText
+({
+model: xai.
+responses
+(
+"grok-4.7"
+),
+prompt:
+"Explain quantum computing"
+,
+});
+console.
+log
+(text);
+import
+OpenAI
+from
+"openai"
+;
+const
+client
+=
+new
+OpenAI
+({
+apiKey: process.env.
+XAI_API_KEY
+,
+baseURL:
+"https://api.x.ai/v1"
+,
+});
+const
+response
+=
+await
+client.chat.completions.
+create
+({
+model:
+"grok-4.7"
+,
+messages: [{ role:
+"user"
+, content:
+"Explain quantum computing"
+}],
+});
+console.
+log
+(response.choices[
+0
+].message.content);
+curl
+https://api.x.ai/v1/chat/completions
+\
+-H
+"Authorization: Bearer
+$XAI_API_KEY
+"
+\
+-H
+"Content-Type: application/json"
+\
+-d
+'{
+"model": "grok-4.7",
+"messages": [
+{ "role": "user", "content": "Explain quantum computing" }
+]
+}'
+Python
+TypeScript
+TypeScript (OpenAI SDK)
+cURL
+3
+0
+0
+300
+M+
+queries processed daily
+1
+5
+0
+150
+K
+GPUs in
+9
+0
+90
+days to build Colossus
+Latest news
+All posts
+Product
+·
+Nov 11, 2026
+Introducing Grok Bot 1.0
+Product
+·
+Nov 16, 2026
+Building an accounting team with Grok Bot
+Product
+·
+Nov 2, 2026
+Giving every team a data scientist with Grok Bot
+Product
+·
+Oct 27, 2026
+Your next sales teammate should be a Grok Bot
+Choose how to get started
+Build on your own
+Launch your AI-powered product with:
+Access to all Grok models
+Usage-based pricing
+Automatically increasing rate limits
+Comprehensive documentation and guides
+Start Building
+Get extra support
+Custom rate limits and hands-on support for your team.
+Dedicated onboarding support
+Custom rate limits
+Billing via monthly invoices
+Single sign-on and audit logging
+Data residency options
+Contact Sales
+© 2026 SpaceX Super Intelligence LLC
+Built with Grok
+Products
+Chat
+Build
+Imagine
+Voice
+Bot
+Grokipedia
+Download
+grok.com
+iOS
+Android
+Grok on X
+Solutions
+Business
+Startups
+Government
+Customer Support
+Legal
+Security
+Use Cases
+Grok Bot
+Overview
+Marketplace
+Guides
+Use Cases
+Changelog
+Developers
+API Overview
+Pricing
+Models
+Console
+Changelog
+Docs
+Status
+Enterprise
+Contact Sales
+FAQs
+BAA
+DPA
+Company
+About
+Colossus
+Careers
+Partners
+News
+Contact
+Trust
+Safety
+Security
+Privacy Portal
+Subprocessors
+Help Center
+Legal
+Terms
+Enterprise Terms
+Startup Terms
+Privacy
+Cookies
+AUP
+Brand
+Social
+@SpaceXSI
+@grok
+Discord
+Built with Grok

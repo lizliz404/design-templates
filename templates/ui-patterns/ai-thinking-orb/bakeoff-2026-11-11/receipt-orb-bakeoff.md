@@ -1,6 +1,6 @@
 # Receipt — orb-bakeoff
 
-Date: 2026-11-12 · Workspace: `/home/liz/fleet-orch/cfe-fb-1111/orb-bakeoff/` (scratch only, no repo changes, no commits)
+Date: 2026-11-12 · Workspace: scratch `orb-bakeoff/` (not a machine path; no repo changes, no commits)
 Method: Vite 6 + React 19.3 scratch app, both MIT packages installed side-by-side; headless chromium (puppeteer-core) captures at deviceScaleFactor 1 & 2; pixel forensics via ImageMagick + custom ASCII/stats scripts (`analyze.py`, `motion.py`, `mframes.py`, `shoot*.mjs` — all in workspace, rerunnable).
 
 ## Verdict
