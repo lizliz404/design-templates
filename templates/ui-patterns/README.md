@@ -6,6 +6,7 @@
 
 - **Data-dense B2B app craft** → [`data-dense-app-craft.md`](./data-dense-app-craft.md) + [`data-dense-b2b-app.md`](./data-dense-b2b-app.md)：tables、filters、forms、inboxes、dashboards、admin。
 - **AI workspace surfaces** → [`ai-workspace-surfaces.md`](./ai-workspace-surfaces.md)：Workspace 常驻切换与管理、主对象 + 右侧 Agent rail、低优先级 Activity 聚合、Board drag/edit/side peek，以及 Stepper → Mermaid → React Flow 可视化梯子；单个 chat 状态走 `../agentic-ui-primitives.md`。
+- **Multi-pane scroll architecture** → [`multi-pane-scroll-architecture.md`](./multi-pane-scroll-architecture.md)：壳锁 100dvh、每栏自滚 + `overscroll-behavior: contain` 断链、画布自吃 wheel、聊天「在底部才跟滚」+ 跳底 pill、hover+focus 行内动作、auto-fill/容器查询卡片网格、M3 断点 rail/抽屉化；修多栏滚动耦合先读它，页面编排仍走上一行，画布对象协议走 `../artifacts-canvas-workbench.md`。
 - **Icon system craft** → [`icon-system-craft.md`](./icon-system-craft.md)：Track A product chrome 的线重、尺寸与概念表；稳定生产线与 authored exceptions 分工；不是 favicon / wordmark / OG。
 - **Runeicons authoring workbench** → [`runeicons-authoring-workbench.md`](./runeicons-authoring-workbench.md)：与 Iconoir 同为一等图标决策候选；当前只作 Apache-2.0 路径编辑、五 style 与 SVG/JSX 动效导出工作台，未发布 packages 不进 runtime。
 - **Interface audit → refine toolchain** → [`interface-audit-refine-toolchain.md`](./interface-audit-refine-toolchain.md)：Jakub Interfaces skills 负责跨域审计与修复；Libraries.dev 与 Astryx 只填已证明的效果 / 组件缺口；Light Rails 只做许可隔离的单层 motion spike。
