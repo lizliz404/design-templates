@@ -52,6 +52,8 @@ description: >-
 
 ## 产品任务
 
+- **UI 技术选型 / 前沿开源与脚手架 / 响应式与同步 / 生成式 UI / 可验证开发** → [`reading-notes/ui-frontier-osint-dd-2026-11-23.md`](./reading-notes/ui-frontier-osint-dd-2026-11-23.md)；35 项、7 层职责与 12 份重点分析，区分稳定基线和试验路线；含版本许可、反证、退出成本与四帖出处，不绑定任何具体项目。
+
 - **分步图文叙事 / 业务页原生自然流默认 / 出海云 sticky 目录 / 可选局部停驻** → [`center-dwell-step-scroll.md`](./center-dwell-step-scroll.md)；自然流优先，A/B与旧CFE长停驻历史分开；含11-09两站真实参数对比、轻量修复、官方证据与输入验收，不默认叠平滑引擎。
 - **网页视频播放器 / 原生控件 / 审片 UI / HLS 与 DASH 选型** → [`web-video-player-due-diligence.md`](./web-video-player-due-diligence.md)；控件、状态、引擎与交付分层，维护状态和第一方尽调；不因皮肤需求默认改造媒体后端。
 - **Landing 首屏氛围 / 静图 WebP 是否够 / hero 背景视频 / 海报优先 / 4 秒体感** → [`landing-hero-background-video.md`](./landing-hero-background-video.md)；先第一性原理选型（静图默认，视频/Lottie/shader 条件启用）；上视频时体积 + 海报 LCP + CDN 优先于播放器；带控件 / HLS / 审片仍走上一行。
