@@ -53,7 +53,7 @@ description: >-
 ## 产品任务
 
 - **构建现代应用 / 全栈能力地图 / 后端与数据 / 身份与任务 / AI 与交付运维** → [`modern-application-osint-dd-2026-11-23.md`](./modern-application-osint-dd-2026-11-23.md)；主报告：74 个跨生态候选、16 份重点分析、6 种最小组合；从必需责任出发，核对许可、版本、维护、托管/自托管、恢复与退出，不限于前端。
-- **UI 技术选型 / 前沿开源与脚手架 / 响应式与同步 / 生成式 UI / 可验证开发** → [`reading-notes/ui-frontier-osint-dd-2026-11-23.md`](./reading-notes/ui-frontier-osint-dd-2026-11-23.md)；UI 专题分册：35 项、7 层职责与 12 份重点分析；含版本许可、反证、退出成本及新增线程纠偏；完整应用选型先读上方主报告。
+- **UI 技术选型 / 前沿开源与脚手架 / 响应式与同步 / 生成式 UI / 可验证开发** → [`reading-notes/ui-frontier-osint-dd-2026-11-23.md`](./reading-notes/ui-frontier-osint-dd-2026-11-23.md)；UI 专题分册：35 项、7 层职责与 12 份重点分析；含版本许可、反证、退出成本、线程纠偏及用户供图的首屏/依赖证据卡；完整应用选型先读上方主报告。
 
 - **分步图文叙事 / 业务页原生自然流默认 / 出海云 sticky 目录 / 可选局部停驻** → [`center-dwell-step-scroll.md`](./center-dwell-step-scroll.md)；自然流优先，A/B与旧CFE长停驻历史分开；含11-09两站真实参数对比、轻量修复、官方证据与输入验收，不默认叠平滑引擎。
 - **网页视频播放器 / 原生控件 / 审片 UI / HLS 与 DASH 选型** → [`web-video-player-due-diligence.md`](./web-video-player-due-diligence.md)；控件、状态、引擎与交付分层，维护状态和第一方尽调；不因皮肤需求默认改造媒体后端。
