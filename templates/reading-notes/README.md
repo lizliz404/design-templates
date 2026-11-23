@@ -2,6 +2,8 @@
 
 从 [`../x-design-reading-list-2026-10.md`](../x-design-reading-list-2026-10.md) 里的短文 / 清单提炼的要点，用我们自己的话转述，每篇附原文链接；不搬原文。长文、付费或视频只在清单里留注释。
 
+完整应用技术研究的主入口见 [全应用能力地图与尽调](../modern-application-osint-dd-2026-11-23.md)；本目录 UI 尽调为专题分册，不是全栈范围。
+
 - [`interface-cheat-sheet.md`](./interface-cheat-sheet.md)：interfaces.dev Interface Cheat Sheet，UI / 动效 / 排版 / 色彩 / 无障碍 / 布局 / 文案 7 组规则
 - [`expensive-main-thread.md`](./expensive-main-thread.md)：kciter《The Browser's Main Thread Is Expensive》，帧预算与 7 种减负手段
 - [`rauno-field-notes.md`](./rauno-field-notes.md)：Rauno field notes #3–#5，海报探索 / ghost input 表单 / 卡片堆叠导航
@@ -9,4 +11,4 @@
 - [`ricouii-free-commercial-fonts-2026-11.md`](./ricouii-free-commercial-fonts-2026-11.md)：@ricouii 免费商用英文字体短名单（无衬线 8 + 衬线 5）；书签，非已批准字栈
 - [`design-resource-triage-2026-11-09.md`](./design-resource-triage-2026-11-09.md)：三帖 24 个目的地核验，2 新来源 + 3 已有增强，其余逐项取舍。
 - [`meta-solver-platform-thread-2026-11-22.md`](./meta-solver-platform-thread-2026-11-22.md)：先识别硬结构再编译专用求解器；文首先是归纳，其后为宣布串、主帖与本会话全部回复原文及链接。
-- [`ui-frontier-osint-dd-2026-11-23.md`](./ui-frontier-osint-dd-2026-11-23.md)：UI 技术独立尽调，35 项与 7 层职责；稳定基线、前沿机制、迁移/许可/维护风险、5 条验证路线及四帖来源。
+- [`ui-frontier-osint-dd-2026-11-23.md`](./ui-frontier-osint-dd-2026-11-23.md)：UI 专题分册，35 项与 7 层职责；稳定基线、迁移/许可/维护风险、验证路线与六帖上下文；全应用研究转主报告。
