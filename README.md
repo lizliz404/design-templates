@@ -1,6 +1,6 @@
 # Design Templates
 
-一组可复用的设计资产：已落地页面的 `DESIGN.md`、产品与 Agent 界面原语、微模式、纸张质感配方，以及可执行的 craft / IA 清单。它不是灵感图库；先按任务选一条路由，再只取需要的机制。
+一组可复用的设计资产：已落地页面的 `DESIGN.md`、产品与 Agent 界面原语、微模式、纸张质感配方、公开产品只读拆解，以及可执行的 craft / IA 清单。它不是灵感图库；先按任务选一条路由，再只取需要的机制。
 
 在线版本：[lizliz.xyz/templates](https://lizliz.xyz/templates)；仓库：[lizliz404/design-templates](https://github.com/lizliz404/design-templates)。
 
@@ -11,6 +11,7 @@ graph TD
     ROUTER -->|"Agent / motion chrome"| CHROME["beautiful-ui · orb · paper-shaders<br/>threeui · vgpu · hand-drawn"]
     ROUTER -->|"Decks / diagrams"| DECKS["decks/ · visual-economy 先行"]
     ROUTER -->|"Craft / tokens"| CRAFT["checklist · typography · i18n<br/>IA · on-brand 生成合同"]
+    ROUTER -->|"拆解 / 参照"| TEAR["cases/ 只读拆解 · telegram-web-chat<br/>brand-identity · reading-notes/"]
     ROUTER -->|"找灵感"| INSPIRE["inspiration-sources.md 书签<br/>查完回路由，不 mirror"]
 ```
 
@@ -41,6 +42,10 @@ Beautiful UI 的 Agent 原语、thinking orb、Paper Shaders、ThreeUI hero 和 
 ### Craft / tokens
 
 高杠杆检查、字体、颜色与表面、i18n、IA / user journey 的入口在 [pack 主路由](templates/README.md)。
+
+### 拆解与参照
+
+`cases/` 的公开产品只读拆解（grok.com 三栏工作台等）、`telegram-web-chat/` 固定版本研究、`brand-identity/` 标识合同与 `reading-notes/` 序读收编同样从 [pack 主路由](templates/README.md) 进入：它们提供对照证据与工作方法，不作为模板直接套用。
 
 ### 灵感书签
 
@@ -73,10 +78,16 @@ design-templates/
   SKILL.md                  ← Agent 入口；链接到唯一主路由
   templates/
     README.md               ← 唯一 pack 主路由与 CRUD 约定
-    design/                 ← 页面 / 系统研究
-    ui-patterns/            ← 微模式
-    paper-shaders/          ← 氛围配方
+    design/                 ← 页面 / 系统研究（DESIGN.md + tokens + 证据）
+    ui-patterns/            ← 微模式与 agent chrome 合同（orb、工作台滚动等）
+    paper-shaders/          ← 氛围配方（still-to-webgl-theater 同源）
     decks/                  ← visual-economy 与上游 deck
+    telegram-web-chat/      ← 固定版本 Telegram Web 拆解 + 离线原型
+    brand-identity/         ← logo / favicon / OG 合同与参照捕获
+    cases/                  ← 公开产品只读拆解
+    reading-notes/          ← 长文序读收编
+    lab/ · isometric-figures/ · visual-footer-gallery/ · archive/
+    *.md                    ← 顶层契约：stack 选型、IA、字体、留白、i18n、checklist
 ```
 
 ## 原则
